@@ -23,6 +23,8 @@ To understand the data itself, you might need to dive into the <a
 href="http://www.unicode.org/reports/tr35/tr35-29.html">LDML
 specification</a>, which describes the schema of the CLDR XML files.
 
+Tested with CLDR releases 22 and 22.1.
+
 Usage
 =====
 
@@ -32,9 +34,9 @@ href="http://npmjs.org/">npm</a> installed, then run:
     $ npm install cldr
 
 Next up you need to download a <a
-href="http://cldr.unicode.org/index/downloads">CLDR release</a> or
-checkout the <a href="http://unicode.org/repos/cldr/">Subversion
-repo</a>.
+href="http://cldr.unicode.org/index/downloads">CLDR release</a> (look
+for `core.zip`) or checkout the <a
+href="http://unicode.org/repos/cldr/">Subversion repo</a>.
 
 Now you're ready to create a node-cldr instance and take it for a
 spin:
@@ -62,6 +64,16 @@ Output:
 
 Methods
 =======
+
+All the data extraction methods are synchronous, which means that XML
+documents that haven't already been loaded will be loaded using
+`fs.readFileSync`. The reasoning behind this is that the API would be
+awkward if all the extraction methods had to take callbacks. Also,
+`node-cldr` is unlikely to be used in a setting where performance is
+critical. However, if for some reason you want to avoid the
+synchronous loads, you can use `cldr.load(<arrayOfLocaleIds>, cb)` to
+load all the needed data in parallel before starting the extraction
+itself. Then all the needed documents will be loaded and ready.
 
 ### cldr.extractLanguageDisplayNames(localeId) ###
 
