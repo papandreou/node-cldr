@@ -533,17 +533,18 @@ function (n) {
 Extracts RBNF (<a
 href="http://www.unicode.org/reports/tr35/tr35-29.html#Rule-Based_Number_Formatting">rule-based
 number formatting</a>) functions for a locale. The 'types' parameter
-specifies the names of the functions you want, and the returned hash
-will contain the ones that were found plus their dependencies.
+specifies the names of the functions you want (defaults to all
+available), and the returned hash will contain the ones that were
+found plus their dependencies.
 
 The original function names have been converted to camelcase and
 prefixed with `render`, and you need to use that naming convention
 when specifying the `types` array as well.
 
 ```javascript
-cldr.extractRbnfFunctionByType('en_GB', ['renderRomanUpper']).renderRomanUpper(2012);
+cldr.extractRbnfFunctionByType('en_GB').renderRomanUpper(2012);
 'MMXII'
-cldr.extractRbnfFunctionByType('de', ['renderSpelloutOrdinal']).renderSpelloutOrdinal(2323);
+cldr.extractRbnfFunctionByType('de').renderSpelloutOrdinal(2323);
 'zwei­tausend­drei­hundert­drei­und­zwanzigste'
 ```
 
