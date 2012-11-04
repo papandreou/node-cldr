@@ -89,7 +89,7 @@ cldr.extractLanguageDisplayNames('it').en
 Extract a time zone ID (Olson) => display name hash for a locale:
 
 ```javascript
-cldr.extractLanguageDisplayNames('it')['Europe/Gibraltar']
+cldr.extractTimeZoneDisplayNames('it')['Europe/Gibraltar']
 'Gibilterra'
 ```
 
