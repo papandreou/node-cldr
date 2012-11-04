@@ -8,7 +8,7 @@ CLDR</a> (Common Localization Data Repository), including:
 * Date, time, and date-time formats
 * Date interval formats
 * Number formats, symbols, and digits for all number systems
-* Exemplar and elipisis characters
+* Exemplar and ellipsis characters
 * Day names, month names, quarter names, era names, and cyclic names
 * Patterns for rendering lists of items
 * Display names for languages, time zones, territories, scripts and currencies
@@ -31,7 +31,9 @@ Usage
 Make sure you have <a href="http://nodejs.org/">node.js</a> and <a
 href="http://npmjs.org/">npm</a> installed, then run:
 
-    $ npm install cldr
+```
+$ npm install cldr
+```
 
 Next up you need to download a <a
 href="http://cldr.unicode.org/index/downloads">CLDR release</a> (look
@@ -60,6 +62,45 @@ Output:
   ZM: 'Zambie',
   ZW: 'Zimbabwe',
   ZZ: 'région indéterminée' }
+```
+
+Properties
+==========
+
+### cldr.localeIds ###
+
+An array of locale ids for which data is available (656 in CLDR
+release 22.1). The locale ids are "normalized" to be all lower case
+with underscores separating the fragments. However, all methods that
+take a locale id as a parameter will accept any casing and both `-`
+and `_` as separators.
+
+### cldr.calendarIds ###
+
+An array of calendar ids for which data is available. In CLDR release
+22.1:
+
+```javascript
+[ 'buddhist', 'chinese', 'coptic', 'dangi', 'ethioaa', 'ethiopic',
+  'gregory', 'hebrew', 'indian', 'islamic','islamicc', 'iso8601',
+  'japanese', 'persian', 'roc' ]
+```
+
+### cldr.numberSystemIds ###
+
+An array of number system ids for which data is available. In CLDR
+release 22.1:
+
+```javascript
+[ 'arab', 'arabext', 'armn', 'armnlow', 'bali', 'beng', 'brah',
+  'cakm', 'cham', 'deva', 'ethi', 'finance', 'fullwide', 'geor',
+  'grek', 'greklow', 'gujr', 'guru', 'hanidec', 'hans', 'hansfin',
+  'hant', 'hantfin', 'hebr', 'java', 'jpan', 'jpanfin', 'kali',
+  'khmr', 'knda', 'lana', 'lanatham', 'laoo', 'latn', 'lepc',
+  'limb', 'mlym', 'mong', 'mtei', 'mymr', 'mymrshan', 'native',
+  'nkoo', 'olck', 'orya', 'osma', 'roman', 'romanlow', 'saur',
+  'shrd', 'sora', 'sund', 'takr', 'talu', 'taml', 'tamldec',
+  'telu', 'thai', 'tibt', 'traditio', 'vaii' ]
 ```
 
 Methods
@@ -295,10 +336,12 @@ cldr.extractTimeFormats('en_GB', 'gregorian')
   short: 'HH:mm' }
 ```
 
-### cldr.extractDateFormatItems(localeId='root', calendarId='gregorian', dateOrTime) ###
+### cldr.extractDateFormatItems(localeId='root', calendarId='gregorian') ###
 
-Extract a hash of date formats (ICU) for displaying dates and times
-at various detail levels for a calendar and locale:
+Extract a hash of <a
+href="http://www.unicode.org/reports/tr35/tr35-29.html#Date_Format_Patterns">ICU
+date formats</a> for displaying dates and times at various detail
+levels for a calendar and locale:
 
 ```javascript
 cldr.extractDateFormatItems('en_GB', 'gregorian');
@@ -375,7 +418,9 @@ cldr.extractNumberSymbols('en_GB', 'latn');
 
 ### cldr.extractNumberFormats(localeId='root', numberSystemId='latn) ###
 
-Extract the number formats for a given number system and locale:
+Extract the number formats (<a
+href="http://www.unicode.org/reports/tr35/tr35-29.html#Number_Format_Patterns">ICU
+DecimalFormat</a>) for a given number system and locale:
 
 ```javascript
 cldr.extractNumberFormats('en_GB', 'latn');
