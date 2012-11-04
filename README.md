@@ -63,8 +63,7 @@ Output:
 Methods
 =======
 
-cldr.extractLanguageDisplayNames(localeId)
-------------------------------------------
+### cldr.extractLanguageDisplayNames(localeId) ###
 
 Extract a locale ID => display name hash for a locale:
 
@@ -73,8 +72,7 @@ cldr.extractLanguageDisplayNames('it').en
 'inglese'
 ```
 
-cldr.extractTimeZoneDisplayNames(localeId)
-------------------------------------------
+### cldr.extractTimeZoneDisplayNames(localeId) ###
 
 Extract a time zone ID (Olson) => display name hash for a locale:
 
@@ -83,8 +81,7 @@ cldr.extractLanguageDisplayNames('it')['Europe/Gibraltar']
 'Gibilterra'
 ```
 
-cldr.extractTimeZoneFormats(localeId)
--------------------------------------
+### cldr.extractTimeZoneFormats(localeId) ###
 
 Extract a hash with ICU formats for displaying information about a
 time zone in a locale:
@@ -99,8 +96,7 @@ cldr.extractTimeZoneFormats('da');
   fallbackRegion: 'Tidszone for {1} ({0})' }
 ```
 
-cldr.extractTerritoryDisplayNames(localeId)
--------------------------------------------
+### cldr.extractTerritoryDisplayNames(localeId) ###
 
 Extract a territory ID => display name hash for a locale:
 
@@ -109,8 +105,7 @@ cldr.extractTerritoryDisplayNames('fr').US;
 'États-Unis'
 ```
 
-cldr.extractCurrencyInfoById(localeId)
---------------------------------------
+### cldr.extractCurrencyInfoById(localeId) ###
 
 Extract hash with currency ID keys mapping to currency info objects
 for a locale:
@@ -123,8 +118,7 @@ cldr.extractCurrencyInfoById('es').YUN;
   other: 'dinares convertibles yugoslavos' },
 ```
 
-cldr.extractScriptDisplayNames(localeId)
-----------------------------------------
+### cldr.extractScriptDisplayNames(localeId) ###
 
 Extract a script ID => display name hash for a locale:
 
@@ -133,8 +127,7 @@ cldr.extractScriptDisplayNames('en_US').Arab
 'Arabic'
 ```
 
-cldr.extractEraNames(localeId, calendarId)
-------------------------------------------
+### cldr.extractEraNames(localeId, calendarId) ###
 
 Extract a nested hash with era names in `wide` and `abbreviated`
 formats for a calendar and locale:
@@ -149,8 +142,7 @@ cldr.extractEraNames('es', 'gregorian');
      '1': 'd.C.' } }
 ```
 
-cldr.extractQuarterNames(localeId, calendarId)
-----------------------------------------------
+### cldr.extractQuarterNames(localeId, calendarId) ###
 
 Extract a nested hash with quarter names in various formats for a calendar and locale:
 
@@ -166,8 +158,7 @@ cldr.extractQuarterNames('es', 'gregorian');
      wide: { '0': '1.er trimestre', '1': '2.º trimestre', '2': '3.er trimestre', '3': '4.º trimestre' } } }
 ```
 
-cldr.extractDayPeriods(localeId, calendarId)
---------------------------------------------
+### cldr.extractDayPeriods(localeId, calendarId) ###
 
 Extract a nested hash with day periods in various formats for a
 calendar and locale:
@@ -184,8 +175,7 @@ cldr.extractDayPeriods('en_GB', 'gregorian');
      wide: { am: 'AM', pm: 'PM' } } }
 ```
 
-cldr.extractCyclicNames(localeId, calendarId)
----------------------------------------------
+### cldr.extractCyclicNames(localeId, calendarId) ###
 
 Extract a nested hash with cyclic names for a calendar and locale
 (only the `chinese` calendar contains these):
@@ -195,8 +185,7 @@ cldr.extractCyclicNames('en_US', 'chinese').zodiacs.format.abbreviated;
 { '1': 'Rat', '2': 'Ox', '3': 'Tiger', '4': 'Rabbit', '5': 'Dragon', '6': 'Snake', '7': 'Horse', '8': 'Goat', '9': 'Monkey', '10': 'Rooster', '11': 'Dog', '12': 'Pig' }
 ```
 
-cldr.extractMonthNames(localeId, calendarId)
---------------------------------------------
+### cldr.extractMonthNames(localeId, calendarId) ###
 
 Extract a nested hash with month names (in various contexts) for a
 calendar and locale:
@@ -207,8 +196,7 @@ cldr.extractMonthNames('nl', 'gregorian').format.wide;
   '7': 'augustus', '8': 'september', '9': 'oktober', '10': 'november', '11': 'december' }
 ```
 
-cldr.extractMonthPatterns(localeId, calendarId)
------------------------------------------------
+### cldr.extractMonthPatterns(localeId, calendarId) ###
 
 Extract a nested hash with month patterns (in various contexts) for a
 calendar and locale:
@@ -226,8 +214,7 @@ cldr.extractMonthPatterns('nl', 'chinese');
      wide: { leap: '{0}bis' } } }
 ```
 
-cldr.extractDayNames(localeId, calendarId)
-------------------------------------------
+### cldr.extractDayNames(localeId, calendarId) ###
 
 Extract a nested hash with day names (in various contexts) for a
 calendar and locale:
@@ -243,8 +230,7 @@ cldr.extractDayNames('en', 'gregorian').format.abbreviated;
   '6': 'Sat' }
 ```
 
-cldr.extractFields(localeId, calendarId)
-----------------------------------------
+### cldr.extractFields(localeId, calendarId) ###
 
 Extract a nested hash with display names (including relative) for
 various fields for a calendar and locale:
@@ -258,8 +244,7 @@ cldr.extractFields('en', 'gregorian').month
      '-1': 'Last month' } }
 ```
 
-cldr.extractDateTimePatterns(localeId, calendarId)
---------------------------------------------------
+### cldr.extractDateTimePatterns(localeId, calendarId) ###
 
 Extract a hash with ICU patterns that show how to build a date-time
 pattern out of a date pattern and a time pattern in various contexts
@@ -273,8 +258,7 @@ cldr.extractDateTimePatterns('en', 'gregorian')
   short: '{1}, {0}' }
 ```
 
-cldr.extractDateFormats(localeId, calendarId)
----------------------------------------------
+### cldr.extractDateFormats(localeId, calendarId) ###
 
 Extract a hash of basic date formats (ICU) for a calendar and locale:
 
@@ -286,8 +270,7 @@ cldr.extractDateFormats('en_GB', 'gregorian')
   short: 'dd/MM/yyyy' }
 ```
 
-cldr.extractTimeFormats(localeId, calendarId)
----------------------------------------------
+### cldr.extractTimeFormats(localeId, calendarId) ###
 
 Extract a hash of basic time formats (ICU) for a given calendar and
 locale:
@@ -300,8 +283,7 @@ cldr.extractTimeFormats('en_GB', 'gregorian')
   short: 'HH:mm' }
 ```
 
-cldr.extractDateFormatItems(localeId, calendarId, dateOrTime)
--------------------------------------------------------------
+### cldr.extractDateFormatItems(localeId, calendarId, dateOrTime) ###
 
 Extract a hash of date formats (ICU) for displaying dates and times
 at various detail levels for a calendar and locale:
@@ -319,8 +301,7 @@ cldr.extractDateFormatItems('en_GB', 'gregorian');
   yyyyMMMM: 'MMMM y' }
 ```
 
-cldr.extractDefaultDateTimePatternName(localeId, calendarId)
-------------------------------------------------------------
+### cldr.extractDefaultDateTimePatternName(localeId, calendarId) ###
 
 Extract the name of the default date time pattern for a locale and calendar:
 
@@ -329,8 +310,7 @@ cldr.extractDefaultDateTimePatternName('en_GB', 'gregorian');
 'medium'
 ```
 
-cldr.extractDateIntervalFormats(localeId, calendarId)
------------------------------------------------------
+### cldr.extractDateIntervalFormats(localeId, calendarId) ###
 
 Extract a nested hash with date interval display formats (ICU), keyed
 by the detail level and the 'greatest difference' field for a calendar
@@ -352,8 +332,7 @@ cldr.extractDateIntervalFormats('en_GB', 'gregorian');
   yMMMM: { M: 'MMMM–MMMM y', y: 'MMMM y – MMMM y' } }
 ```
 
-cldr.extractDateIntervalFallbackFormat(localeId, calendarId)
-------------------------------------------------------------
+### cldr.extractDateIntervalFallbackFormat(localeId, calendarId) ###
 
 Extract the date interval fallback format (ICU) for a given calendar
 and locale (to be used when the date interval formats don't offer a
@@ -364,8 +343,7 @@ cldr.extractDateIntervalFallbackFormat('en_GB', 'gregorian')
 '{0} – {1}'
 ```
 
-cldr.extractNumberSymbols(localeId, numberSystemId)
----------------------------------------------------
+### cldr.extractNumberSymbols(localeId, numberSystemId) ###
 
 Extract the number symbols for a given number system and locale:
 
@@ -383,8 +361,7 @@ cldr.extractNumberSymbols('en_GB', 'latn');
   nan: 'NaN' }
 ```
 
-cldr.extractNumberFormats(localeId, numberSystemId)
----------------------------------------------------
+### cldr.extractNumberFormats(localeId, numberSystemId) ###
 
 Extract the number formats for a given number system and locale:
 
@@ -407,8 +384,7 @@ cldr.extractNumberFormats('en_GB', 'latn');
   percent: { default: '#,##0%' } }
 ```
 
-cldr.extractDefaultNumberSystemId(localeId)
--------------------------------------------
+### cldr.extractDefaultNumberSystemId(localeId) ###
 
 Extract the id of the default number system for a locale:
 
@@ -419,8 +395,7 @@ cldr.extractDefaultNumberSystemId('ar')
 'arab'
 ```
 
-cldr.extractUnitPatterns(localeId)
-----------------------------------
+### cldr.extractUnitPatterns(localeId) ###
 
 Extract the unit patterns (ICU) for a locale (to be used with a plural rule function):
 
@@ -438,8 +413,7 @@ cldr.extractUnitPatterns('en_GB')
      other: '{0} years ago' } }
 ```
 
-cldr.extractDelimiters(localeId)
---------------------------------
+### cldr.extractDelimiters(localeId) ###
 
 Extract the delimiters for a locale:
 
@@ -451,8 +425,7 @@ cldr.extractDelimiters('en_GB');
   alternateQuotationEnd: '’' }
 ```
 
-cldr.extractListPatterns(localeId)
-----------------------------------
+### cldr.extractListPatterns(localeId) ###
 
 Extract the list patterns (ICU) for a locale:
 
@@ -464,8 +437,7 @@ cldr.extractListPatterns('en_GB');
   start: '{0}, {1}' }
 ```
 
-cldr.extractCharacters(localeId)
---------------------------------
+### cldr.extractCharacters(localeId) ###
 
 Extract information about various character classes, ellipsis patterns etc. for a locale:
 { exemplar:
@@ -476,8 +448,7 @@ Extract information about various character classes, ellipsis patterns etc. for 
   ellipsis: { final: '{0}…', initial: '…{0}', medial: '{0}… {1}' },
   moreInformation: '?' }
 
-cldr.extractPluralRuleFunction(localeId)
-----------------------------------------
+### cldr.extractPluralRuleFunction(localeId) ###
 
 Extract a plural rule function for a locale (See <a
 href="http://www.unicode.org/reports/tr35/tr35-29.html#Language_Plural_Rules">the
@@ -500,8 +471,7 @@ function (n) {
 }
 ```
 
-cldr.extractRbnfFunctionByType(localeId, types)
------------------------------------------------
+### cldr.extractRbnfFunctionByType(localeId, types) ###
 
 Extracts RBNF (<a
 href="http://www.unicode.org/reports/tr35/tr35-29.html#Rule-Based_Number_Formatting">rule-based
@@ -525,8 +495,7 @@ Note that some of the generated functions expect to be able to call
 for it, that can be made customizable, just file an issue.
 
 
-cldr.extractDigitsByNumberSystemId()
-------------------------------------
+### cldr.extractDigitsByNumberSystemId() ###
 
 Extract a hash of number system id => digits array. For some exotic
 number systems, 'digits' is a string starting with `render`. In that
