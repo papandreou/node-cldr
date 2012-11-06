@@ -121,7 +121,7 @@ itself. Then all the needed documents will be loaded and ready.
 Extract a locale ID => display name hash for a locale:
 
 ```javascript
-cldr.extractLanguageDisplayNames('it').en
+cldr.extractLanguageDisplayNames('it').en;
 'inglese'
 ```
 
@@ -130,7 +130,7 @@ cldr.extractLanguageDisplayNames('it').en
 Extract a time zone ID (Olson) => display name hash for a locale:
 
 ```javascript
-cldr.extractTimeZoneDisplayNames('it')['Europe/Gibraltar']
+cldr.extractTimeZoneDisplayNames('it')['Europe/Gibraltar'];
 'Gibilterra'
 ```
 
@@ -176,7 +176,7 @@ cldr.extractCurrencyInfoById('es').YUN;
 Extract a script ID => display name hash for a locale:
 
 ```javascript
-cldr.extractScriptDisplayNames('en_US').Arab
+cldr.extractScriptDisplayNames('en_US').Arab;
 'Arabic'
 ```
 
@@ -289,7 +289,7 @@ Extract a nested hash with display names (including relative) for
 various fields for a calendar and locale:
 
 ```javascript
-cldr.extractFields('en', 'gregorian').month
+cldr.extractFields('en', 'gregorian').month;
 { displayName: 'Month',
   relative:
    { '0': 'This month',
@@ -304,7 +304,7 @@ pattern out of a date pattern and a time pattern in various contexts
 for a calendar and locale:
 
 ```javascript
-cldr.extractDateTimePatterns('en', 'gregorian')
+cldr.extractDateTimePatterns('en', 'gregorian');
 { full: '{1} \'at\' {0}',
   long: '{1} \'at\' {0}',
   medium: '{1}, {0}',
@@ -316,7 +316,7 @@ cldr.extractDateTimePatterns('en', 'gregorian')
 Extract a hash of basic date formats (ICU) for a calendar and locale:
 
 ```javascript
-cldr.extractDateFormats('en_GB', 'gregorian')
+cldr.extractDateFormats('en_GB', 'gregorian');
 { full: 'EEEE, d MMMM y',
   long: 'd MMMM y',
   medium: 'd MMM y',
@@ -329,7 +329,7 @@ Extract a hash of basic time formats (ICU) for a given calendar and
 locale:
 
 ```javascript
-cldr.extractTimeFormats('en_GB', 'gregorian')
+cldr.extractTimeFormats('en_GB', 'gregorian');
 { full: 'HH:mm:ss zzzz',
   long: 'HH:mm:ss z',
   medium: 'HH:mm:ss',
@@ -394,7 +394,7 @@ and locale (to be used when the date interval formats don't offer a
 specific format):
 
 ```javascript
-cldr.extractDateIntervalFallbackFormat('en_GB', 'gregorian')
+cldr.extractDateIntervalFallbackFormat('en_GB', 'gregorian');
 '{0} – {1}'
 ```
 
@@ -446,9 +446,9 @@ cldr.extractNumberFormats('en_GB', 'latn');
 Extract the id of the default number system for a locale:
 
 ```javascript
-cldr.extractDefaultNumberSystemId('en_GB')
+cldr.extractDefaultNumberSystemId('en_GB');
 'latn'
-cldr.extractDefaultNumberSystemId('ar')
+cldr.extractDefaultNumberSystemId('ar');
 'arab'
 ```
 
@@ -457,7 +457,7 @@ cldr.extractDefaultNumberSystemId('ar')
 Extract the unit patterns (ICU) for a locale (to be used with a plural rule function):
 
 ```javascript
-cldr.extractUnitPatterns('en_GB')
+cldr.extractUnitPatterns('en_GB');
 { day: { one: '{0} day', other: '{0} days' },
   dayFuture: { one: 'In {0} day', other: 'In {0} days' },
   dayPast:
@@ -497,6 +497,9 @@ cldr.extractListPatterns('en_GB');
 ### cldr.extractCharacters(localeId='root') ###
 
 Extract information about various character classes, ellipsis patterns etc. for a locale:
+
+```javascript
+cldr.extractCharacters('en_GB');
 { exemplar:
    { default: [ 'a', 'b', 'c', 'd', 'e', [...], 'x', 'y', 'z' ],
      auxiliary: [ 'á', 'à', 'ă', 'â', 'å', [...], 'ü', 'ū', 'ÿ' ],
@@ -504,6 +507,7 @@ Extract information about various character classes, ellipsis patterns etc. for 
      punctuation: [ '\\-', '‐', '–', '—', ',', [...], '‡', '′', '″' ] },
   ellipsis: { final: '{0}…', initial: '…{0}', medial: '{0}… {1}' },
   moreInformation: '?' }
+```
 
 ### cldr.extractPluralRuleFunction(localeId='root') ###
 
@@ -512,12 +516,12 @@ href="http://www.unicode.org/reports/tr35/tr35-29.html#Language_Plural_Rules">th
 LDML spec</a> for an explanation):
 
 ```javascript
-cldr.extractPluralRuleFunction('en_GB').toString()
+cldr.extractPluralRuleFunction('en_GB').toString();
 function (n) {
     if (n === 1) return "one";
     return "other";
 }
-cldr.extractPluralRuleFunction('ar').toString()
+cldr.extractPluralRuleFunction('ar').toString();
 function (n) {
     if (n === 0) return "zero";
     if (n === 1) return "one";
