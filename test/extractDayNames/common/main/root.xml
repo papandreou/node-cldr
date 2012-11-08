@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<ldml>
+	<dates>
+		<calendars>
+			<calendar type="gregorian">
+				<days>
+					<default choice="format"/>
+					<dayContext type="format">
+						<default choice="wide"/>
+						<dayWidth type="abbreviated">
+							<alias source="locale" path="../dayWidth[@type='wide']"/>
+						</dayWidth>
+						<dayWidth type="narrow">
+							<alias source="locale" path="../../dayContext[@type='stand-alone']/dayWidth[@type='narrow']"/>
+						</dayWidth>
+						<dayWidth type="short">
+							<alias source="locale" path="../dayWidth[@type='abbreviated']"/>
+						</dayWidth>
+						<dayWidth type="wide">
+							<day type="sun">1</day>
+							<day type="mon">2</day>
+							<day type="tue">3</day>
+							<day type="wed">4</day>
+							<day type="thu">5</day>
+							<day type="fri">6</day>
+							<day type="sat">7</day>
+						</dayWidth>
+					</dayContext>
+					<dayContext type="stand-alone">
+						<dayWidth type="abbreviated">
+							<alias source="locale" path="../../dayContext[@type='format']/dayWidth[@type='abbreviated']"/>
+						</dayWidth>
+						<dayWidth type="narrow">
+							<day type="sun">1</day>
+							<day type="mon">2</day>
+							<day type="tue">3</day>
+							<day type="wed">4</day>
+							<day type="thu">5</day>
+							<day type="fri">6</day>
+							<day type="sat">7</day>
+						</dayWidth>
+						<dayWidth type="short">
+							<alias source="locale" path="../../dayContext[@type='format']/dayWidth[@type='short']"/>
+						</dayWidth>
+						<dayWidth type="wide">
+							<alias source="locale" path="../../dayContext[@type='format']/dayWidth[@type='wide']"/>
+						</dayWidth>
+					</dayContext>
+				</days>
+			</calendar>
+		</calendars>
+	</dates>
+</ldml>

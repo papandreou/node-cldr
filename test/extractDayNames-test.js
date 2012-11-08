@@ -1,0 +1,36 @@
+var Path = require('path'),
+    expect = require('expect.js'),
+//    cldr = require('../lib/Cldr')(Path.resolve(__dirname, 'extractDayNames'));
+    cldr = require('../lib/Cldr')(Path.resolve('/usr/share/cldr'));
+
+describe('cldr.extractDayNames("en")', function () {
+    var englishDayNames = cldr.extractDayNames('en');
+    it('should have the correct names', function () {
+        expect(englishDayNames.format).to.eql(
+            {
+                wide: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+
+                abbreviated: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+
+                'short': ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+
+                // Aliased to ../../dayContext[@type='stand-alone']/dayWidth[@type='narrow']
+                narrow: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+            }
+        );
+        expect(englishDayNames.standAlone).to.eql(
+            {
+                // Aliased to: ../../dayContext[@type='format']/dayWidth[@type='wide']
+                wide: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+
+                // Aliased to ../../dayContext[@type='format']/dayWidth[@type='abbreviated']
+                abbreviated: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+
+                // Aliased to: ../../dayContext[@type='format']/dayWidth[@type='short']
+                'short': ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+
+                narrow: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+            }
+        );
+    });
+});
