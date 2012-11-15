@@ -541,7 +541,7 @@ specifies the names of the functions you want (defaults to all
 available), and the returned hash will contain the ones that were
 found plus their dependencies.
 
-The original function names have been converted to camelcase and
+The original function names have been converted to camelCase and
 prefixed with `render`, and you need to use that naming convention
 when specifying the `types` array as well.
 
