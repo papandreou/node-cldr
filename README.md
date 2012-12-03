@@ -134,7 +134,7 @@ cldr.extractTimeZoneDisplayNames('it')['Europe/Gibraltar'];
 'Gibilterra'
 ```
 
-### cldr.extractTimeZoneFormats(localeId='root'='root') ###
+### cldr.extractTimeZoneFormats(localeId='root') ###
 
 Extract a hash with ICU formats for displaying information about a
 time zone in a locale:
