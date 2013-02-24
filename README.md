@@ -82,7 +82,7 @@ An array of calendar ids for which data is available. In CLDR release
 
 ```javascript
 [ 'buddhist', 'chinese', 'coptic', 'dangi', 'ethioaa', 'ethiopic',
-  'gregory', 'hebrew', 'indian', 'islamic','islamicc', 'iso8601',
+  'gregorian', 'hebrew', 'indian', 'islamic','islamicc', 'iso8601',
   'japanese', 'persian', 'roc' ]
 ```
 
