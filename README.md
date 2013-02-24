@@ -82,7 +82,7 @@ An array of calendar ids for which data is available. In CLDR release
 
 ```javascript
 [ 'buddhist', 'chinese', 'coptic', 'dangi', 'ethioaa', 'ethiopic',
-  'gregorian', 'hebrew', 'indian', 'islamic','islamicc', 'iso8601',
+  'gregorian', 'hebrew', 'indian', 'islamic', 'islamicc', 'iso8601',
   'japanese', 'persian', 'roc' ]
 ```
 
@@ -206,7 +206,7 @@ cldr.extractQuarterNames('es', 'gregorian');
      narrow: { '0': '1T', '1': '2T', '2': '3T', '3': '4T' },
      wide: { '0': '1er trimestre', '1': '2º trimestre', '2': '3er trimestre', '3': '4º trimestre' } },
   standalone:
-    { abbreviated: { '0': 'Q1', '1': 'Q2', '2': 'Q3', '3': 'Q4' },
+   { abbreviated: { '0': 'Q1', '1': 'Q2', '2': 'Q3', '3': 'Q4' },
      narrow: { '0': '1T', '1': '2T', '2': '3T', '3': '4T' },
      wide: { '0': '1.er trimestre', '1': '2.º trimestre', '2': '3.er trimestre', '3': '4.º trimestre' } } }
 ```
