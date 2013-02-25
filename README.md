@@ -15,7 +15,7 @@ CLDR</a> (Common Localization Data Repository), including:
 * Plural rule functions (converted to JavaScript functions)
 * Rule-based number formatting functions (converted to JavaScript functions)
 
-The extraction code was originally written for <a
+The extraction code was originally written for the <a
 href="https://github.com/papandreou/inter">inter i18n library</a>, but can be
 used on its own.
 
@@ -23,7 +23,8 @@ To understand the data itself, you might need to dive into the <a
 href="http://www.unicode.org/reports/tr35/tr35-29.html">LDML
 specification</a>, which describes the schema of the CLDR XML files.
 
-Tested with CLDR releases 22 and 22.1.
+Tested with CLDR releases 22 and 22.1 and presently comes bundled with
+the 22.1 release.
 
 Usage
 =====
@@ -35,16 +36,11 @@ href="http://npmjs.org/">npm</a> installed, then run:
 $ npm install cldr
 ```
 
-Next up you need to download a <a
-href="http://cldr.unicode.org/index/downloads">CLDR release</a> (look
-for `core.zip`) or checkout the <a
-href="http://unicode.org/repos/cldr/">Subversion repo</a>.
-
 Now you're ready to create a node-cldr instance and take it for a
 spin:
 
 ```javascript
-var cldr = require('cldr')('/path/to/cldr/release');
+var cldr = require('cldr');
 
 console.log(cldr.extractTerritoryDisplayNames('fr'));
 ```
@@ -62,6 +58,13 @@ Output:
   ZM: 'Zambie',
   ZW: 'Zimbabwe',
   ZZ: 'région indéterminée' }
+```
+
+Advanced users can also provide the path to another CLDR installation
+like this:
+
+```javascript
+var cldr = require('cldr').load('/path/to/cldr');
 ```
 
 Properties
