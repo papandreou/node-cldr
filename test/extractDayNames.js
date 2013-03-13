@@ -1,6 +1,6 @@
 var Path = require('path'),
     expect = require('expect.js'),
-    cldr = require('../lib/Cldr')(Path.resolve('/usr/share/cldr'));
+    cldr = require('../lib/cldr');
 
 describe('cldr.extractDayNames("en")', function () {
     var englishDayNames = cldr.extractDayNames('en');
