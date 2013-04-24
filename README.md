@@ -419,7 +419,7 @@ cldr.extractNumberSymbols('en_GB', 'latn');
   nan: 'NaN' }
 ```
 
-### cldr.extractNumberFormats(localeId='root', numberSystemId='latn) ###
+### cldr.extractNumberFormats(localeId='root', numberSystemId='latn') ###
 
 Extract the number formats (<a
 href="http://www.unicode.org/reports/tr35/tr35-29.html#Number_Format_Patterns">ICU
