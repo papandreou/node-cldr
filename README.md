@@ -208,7 +208,7 @@ cldr.extractQuarterNames('es', 'gregorian');
    { abbreviated: { '0': 'T1', '1': 'T2', '2': 'T3', '3': 'T4' },
      narrow: { '0': '1T', '1': '2T', '2': '3T', '3': '4T' },
      wide: { '0': '1er trimestre', '1': '2º trimestre', '2': '3er trimestre', '3': '4º trimestre' } },
-  standalone:
+  standAlone:
    { abbreviated: { '0': 'Q1', '1': 'Q2', '2': 'Q3', '3': 'Q4' },
      narrow: { '0': '1T', '1': '2T', '2': '3T', '3': '4T' },
      wide: { '0': '1.er trimestre', '1': '2.º trimestre', '2': '3.er trimestre', '3': '4.º trimestre' } } }
@@ -225,7 +225,7 @@ cldr.extractDayPeriods('en_GB', 'gregorian');
    { abbreviated: { am: 'AM', pm: 'PM' },
      narrow: { am: 'a', noon: 'n', pm: 'p' },
      wide: { am: 'am', pm: 'pm', noon: 'noon' } },
-  standalone:
+  standAlone:
    { abbreviated: { am: 'AM', pm: 'PM' },
      narrow: { am: 'AM', pm: 'PM' },
      wide: { am: 'AM', pm: 'PM' } } }
@@ -264,7 +264,7 @@ cldr.extractMonthPatterns('nl', 'chinese');
      narrow: { leap: '{0}b' },
      wide: { leap: '{0}bis' } },
   numeric: { all: { leap: '{0}bis' } },
-  standalone:
+  standAlone:
    { abbreviated: { leap: '{0}bis' },
      narrow: { leap: '{0}b' },
      wide: { leap: '{0}bis' } } }
