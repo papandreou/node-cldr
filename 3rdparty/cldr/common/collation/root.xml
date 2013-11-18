@@ -7,141 +7,688 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 8242 $"/>
-		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
+		<version number="$Revision: 9244 $"/>
+		<generation date="$Date: 2013-08-20 21:42:05 -0500 (Tue, 20 Aug 2013) $"/>
 		<language type="root" /> 
 	</identity>
 		<collations validSubLocales="chr chr_US ga ga_IE id id_ID it it_CH it_IT it_SM ka ka_GE ky ky_KG ms ms_Latn ms_Latn_BN ms_Latn_MY ms_Latn_SG nl nl_AW nl_BE nl_CW nl_NL nl_SR nl_SX pt pt_AO pt_BR pt_CV pt_GW pt_MO pt_MZ pt_PT pt_ST pt_TL st st_LS st_ZA sw sw_KE sw_TZ sw_UG xh xh_ZA zu zu_ZA">
-			<default type="standard"/>
+			<defaultCollation>standard</defaultCollation>
 			<collation type="standard">
 			</collation>
 			<collation type="search" >
 				<settings normalization="on"/>
-				<!-- root search, suppress contractions for Thai, Lao -->
-				<suppress_contractions>[เ-ไ ເ-ໄ]</suppress_contractions>
-				<rules>
-					<!-- root search rules for Symbols -->
-					<reset>=</reset>
-					<p>≠</p>
-					<!-- root search rules for Arabic, Hebrew -->
-					<reset>ا</reset>	<!-- 0627 ARABIC LETTER ALEF -->
-							<t>ﺎ</t><t>ﺍ</t>	<!-- FE8E, FE8D: FINAL FORM, ISOLATED FORM -->
-						<s>آ</s>		<!-- 0622 ARABIC LETTER ALEF WITH MADDA ABOVE -->
-							<t>ﺂ</t><t>ﺁ</t>	<!-- FE82, FE81: FINAL FORM, ISOLATED FORM -->
-						<s>أ</s>		<!-- 0623 ARABIC LETTER ALEF WITH HAMZA ABOVE -->
-							<t>ﺄ</t><t>ﺃ</t>	<!-- FE84, FE83: FINAL FORM, ISOLATED FORM -->
-						<s>إ</s>		<!-- 0625 ARABIC LETTER ALEF WITH HAMZA BELOW -->
-							<t>ﺈ</t><t>ﺇ</t>	<!-- FE88, FE87: FINAL FORM, ISOLATED FORM -->
-					<reset>و</reset>	<!-- 0648 ARABIC LETTER WAW -->
-							<t>ۥ</t>	<!-- 06E5: SMALL WAW -->
-							<t>ﻮ</t><t>ﻭ</t>	<!-- FEEE, FEED: FINAL FORM, ISOLATED FORM -->
-						<s>ؤ</s>		<!-- 0624 ARABIC LETTER WAW WITH HAMZA ABOVE -->
-							<t>ﺆ</t><t>ﺅ</t>	<!-- FE86, FE85: FINAL FORM, ISOLATED FORM -->
-					<reset>ي</reset>	<!-- 064A ARABIC LETTER YEH -->
-							<t>ۦ</t>	<!-- 06E6: ARABIC SMALL YEH -->
-							<t>ﻳ</t><t>ﻴ</t><t>ﻲ</t><t>ﻱ</t>	<!-- FEF3, FEF4, FEF2, FEF1: INITIAL FORM, MEDIAL FORM, FINAL FORM, ISOLATED FORM -->
-						<s>ئ</s>		<!-- 0626 ARABIC LETTER YEH WITH HAMZA ABOVE -->
-							<t>ﺋ</t><t>ﺌ</t><t>ﺊ</t><t>ﺉ</t>	<!-- FE8B, FE8C, FE8A, FE89: INITIAL FORM, MEDIAL FORM. FINAL FORM, ISOLATED FORM -->
-						<s>ى</s>		<!-- 0649 ARABIC LETTER ALEF MAKSURA -->
-							<t>ﯨ</t><t>ﯩ</t>	<!-- FBE8, FBE9: UIGHUR KAZAKH KIRGHIZ ALEF MAKSURA INITIAL FORM, MEDIAL FORM -->
-							<t>ﻰ</t><t>ﻯ</t>	<!-- FEF0, FEEF: FINAL FORM, ISOLATED FORM -->
-					<reset>ه</reset>	<!-- 0647 ARABIC LETTER HEH -->
-							<t>ﻫ</t><t>ﻬ</t><t>ﻪ</t><t>ﻩ</t>	<!-- FEEB, FEEC, FEEA, FEE9: INITIAL FORM, MEDIAL FORM, FINAL FORM;, ISOLATED FORM -->
-						<s>ة</s>		<!-- 0629 ARABIC LETTER TEH MARBUTA -->
-							<t>ﺔ</t><t>ﺓ</t>	<!-- FE94, FE93: FINAL FORM, ISOLATED FORM -->
-					<reset><last_primary_ignorable/></reset>
-						<s>׳</s>	<!-- 05F3 HEBREW PUNCTUATION GERESH -->
-						<s>״</s>	<!-- 05F4 HEBREW PUNCTUATION GERSHAYIM -->
-						<s>ـ</s>	<!-- 0640 ARABIC TATWEEL -->
-						<!-- Don't need explicit entries for 064B - 0652 ARABIC FATHATAN - ARABIC SUKUN;
-						these are already ignorable at level 1, and are not involved in contractions -->
-						<s>ฺ</s>	<!-- 0E3A THAI CHARACTER PHINTHU -->
-					<!-- root search rules for modern Korean jamos -->
-					<!-- Korean modern complex consonants, decompose: x(L) = CHOSEONG x, x(T) = JONGSEONG x -->
-					<reset>ᄀ</reset>	<!-- 1100 KIYEOK(L) = 11A8 KIYEOK(T) -->
-						<i>ᆨ</i>
-					<reset>ᄀᄀ</reset>	<!-- 1100 KIYEOK(L) + 1100 KIYEOK(L) = 1101 SSANGKIYEOK(L) = 11A9 SSANGKIYEOK(T) -->
-						<i>ᄁ</i>
-						<i>ᆩ</i>
-					<reset>ᄀᄉ</reset>	<!-- 1100 KIYEOK(L) + 1109 SIOS(L) = 11AA KIYEOK-SIOS(T) -->
-						<i>ᆪ</i>
-					<reset>ᄂ</reset>	<!-- 1102 NIEUN(L) = 11AB NIEUN(T) -->
-						<i>ᆫ</i>
-					<reset>ᄂᄌ</reset>	<!-- 1102 NIEUN(L) + 110C CIEUC(L) = 11AC NIEUN-CIEUC(T), also archaic 115C NIEUN-CIEUC(L) -->
-						<i>ᆬ</i>
-					<reset>ᄂᄒ</reset>	<!-- 1102 NIEUN(L) + 1112 HIEUH(L) = 11AD NIEUN-HIEUH(T), also archaic 115D NIEUN-HIEUH(L) -->
-						<i>ᆭ</i>
-					<reset>ᄃ</reset>	<!-- 1103 TIKEUT(L) = 11AE TIKEUT(T) -->
-						<i>ᆮ</i>
-					<reset>ᄃᄃ</reset>	<!-- 1103 TIKEUT(L) + 1103 TIKEUT(L) = 1104 SSANGTIKEUT(L) -->
-						<i>ᄄ</i>
-					<reset>ᄅ</reset>	<!-- 1105 RIEUL(L) = 11AF RIEUL(T) -->
-						<i>ᆯ</i>
-					<reset>ᄅᄀ</reset>	<!-- 1105 RIEUL(L) + 1100 KIYEOK(L) = 11B0 RIEUL-KIYEOK(T) -->
-						<i>ᆰ</i>
-					<reset>ᄅᄆ</reset>	<!-- 1105 RIEUL(L) + 1106 MIEUM(L) = 11B1 RIEUL-MIEUM(T) -->
-						<i>ᆱ</i>
-					<reset>ᄅᄇ</reset>	<!-- 1105 RIEUL(L) + 1107 PIEUP(L) = 11B2 RIEUL-PIEUP(T) -->
-						<i>ᆲ</i>
-					<reset>ᄅᄉ</reset>	<!-- 1105 RIEUL(L) + 1109 SIOS(L) = 11B3 RIEUL-SIOS(T) -->
-						<i>ᆳ</i>
-					<reset>ᄅᄐ</reset>	<!-- 1105 RIEUL(L) + 1110 THIEUTH(L) = 11B4 RIEUL-THIEUTH(T) -->
-						<i>ᆴ</i>
-					<reset>ᄅᄑ</reset>	<!-- 1105 RIEUL(L) + 1111 PHIEUPH(L) = 11B5 RIEUL-PHIEUPH(T) -->
-						<i>ᆵ</i>
-					<reset>ᄅᄒ</reset>	<!-- 1105 RIEUL(L) + 1112 HIEUH(L) = 11B6 RIEUL-HIEUH(T), also archic 111A RIEUL-HIEUH(L) -->
-						<i>ᆶ</i>
-					<reset>ᄆ</reset>	<!-- 1106 MIEUM(L) = 11B7 MIEUM(T) -->
-						<i>ᆷ</i>
-					<reset>ᄇ</reset>	<!-- 1107 PIEUP(L) = 11B8 PIEUP(T) -->
-						<i>ᆸ</i>
-					<reset>ᄇᄇ</reset>	<!-- 1107 PIEUP(L) + 1107 PIEUP(L) = 1108 SSANGPIEUP(L) -->
-						<i>ᄈ</i>
-					<reset>ᄇᄉ</reset>	<!-- 1107 PIEUP(L) + 1109 SIOS(L) = 11B9 PIEUP-SIOS(T), also archaic 1121 PIEUP-SIOS(L) -->
-						<i>ᆹ</i>
-					<reset>ᄉ</reset>	<!-- 1109 SIOS(L) = 11BA SIOS(T) -->
-						<i>ᆺ</i>
-					<reset>ᄉᄉ</reset>	<!-- 1109 SIOS(L) + 1109 SIOS(L) = 110A SSANGSIOS(L) = 11BB SSANGSIOS(T) -->
-						<i>ᄊ</i>
-						<i>ᆻ</i>
-					<reset>ᄋ</reset>	<!-- 110B IEUNG(L) = 11BC IEUNG(T) -->
-						<i>ᆼ</i>
-					<reset>ᄌ</reset>	<!-- 110C CIEUC(L) = 11BD CIEUC(T) -->
-						<i>ᆽ</i>
-					<reset>ᄌᄌ</reset>	<!-- 110C CIEUC(L) + 110C CIEUC(L) = 110D SSANGCIEUC(L) -->
-						<i>ᄍ</i>
-					<reset>ᄎ</reset>	<!-- 110E CHIEUCH(L) = 11BE CHIEUCH(T) -->
-						<i>ᆾ</i>
-					<reset>ᄏ</reset>	<!-- 110F KHIEUKH(L) = 11BF KHIEUKH(T) -->
-						<i>ᆿ</i>
-					<reset>ᄐ</reset>	<!-- 1110 THIEUTH(L) = 11C0 THIEUTH(T) -->
-						<i>ᇀ</i>
-					<reset>ᄑ</reset>	<!-- 1111 PHIEUPH(L) = 11C1 PHIEUPH(T) -->
-						<i>ᇁ</i>
-					<reset>ᄒ</reset>	<!-- 1112 HIEUH(L) = 11C2 HIEUH(T) -->
-						<i>ᇂ</i>
-					<!-- Korean modern complex vowels, decompose -->
-					<reset>ᅡᅵ</reset>	<!-- 1161 A(V) + 1175 I(V) = 1162 AE(V) -->
-						<i>ᅢ</i>
-					<reset>ᅣᅵ</reset>	<!-- 1163 YA(V) + 1175 I(V) = 1164 YAE(V) -->
-						<i>ᅤ</i>
-					<reset>ᅥᅵ</reset>	<!-- 1165 EO(V) + 1175 I(V) = 1166 E(V) -->
-						<i>ᅦ</i>
-					<reset>ᅧᅵ</reset>	<!-- 1167 YEO(V) + 1175 I(V) = 1168 YE(V) -->
-						<i>ᅨ</i>
-					<reset>ᅩᅡ</reset>	<!-- 1169 O(V) + 1161 A(V) = 116A WA(V) -->
-						<i>ᅪ</i>
-					<reset>ᅩᅡᅵ</reset>	<!-- 1169 O(V) + 1161 A(V) + 1175 I(V) = 116B WAE(V) -->
-						<i>ᅫ</i>
-					<reset>ᅩᅵ</reset>	<!-- 1169 O(V) + 1175 I(V) = 116C OE(V) -->
-						<i>ᅬ</i>
-					<reset>ᅮᅴ</reset>	<!-- 116E U(V) + 1174 YI(V) = 116F WEO(V) -->
-						<i>ᅯ</i>
-					<reset>ᅮᅴᅵ</reset>	<!-- 116E U(V) + 1174 YI(V) + 1175 I(V) = 1170 WE(V) -->
-						<i>ᅰ</i>
-					<reset>ᅮᅵ</reset>	<!-- 116E U(V) + 1175 I(V) = 1171 WI(V) -->
-						<i>ᅱ</i>
-				</rules>
+				<!-- root search, suppress contractions for Thai, Lao, Tai Viet -->
+				<suppress_contractions>[เ-ไ ເ-ໄ ꪵ ꪶ ꪹ ꪻ ꪼ]</suppress_contractions>
+				<cr><![CDATA[
+					# root search rules for Symbols
+					&'='<'≠'
+					# root search rules for Arabic, Hebrew
+					&ا	# 0627 ARABIC LETTER ALEF
+							<<<ﺎ<<<ﺍ	# FE8E, FE8D: FINAL FORM, ISOLATED FORM
+						<<آ		# 0622 ARABIC LETTER ALEF WITH MADDA ABOVE
+							<<<ﺂ<<<ﺁ	# FE82, FE81: FINAL FORM, ISOLATED FORM
+						<<أ		# 0623 ARABIC LETTER ALEF WITH HAMZA ABOVE
+							<<<ﺄ<<<ﺃ	# FE84, FE83: FINAL FORM, ISOLATED FORM
+						<<إ		# 0625 ARABIC LETTER ALEF WITH HAMZA BELOW
+							<<<ﺈ<<<ﺇ	# FE88, FE87: FINAL FORM, ISOLATED FORM
+					&و	# 0648 ARABIC LETTER WAW
+							<<<ۥ	# 06E5: SMALL WAW
+							<<<ﻮ<<<ﻭ	# FEEE, FEED: FINAL FORM, ISOLATED FORM
+						<<ؤ		# 0624 ARABIC LETTER WAW WITH HAMZA ABOVE
+							<<<ﺆ<<<ﺅ	# FE86, FE85: FINAL FORM, ISOLATED FORM
+					&ي	# 064A ARABIC LETTER YEH
+							<<<ۦ	# 06E6: ARABIC SMALL YEH
+							<<<ﻳ<<<ﻴ<<<ﻲ<<<ﻱ	# FEF3, FEF4, FEF2, FEF1: INITIAL FORM, MEDIAL FORM, FINAL FORM, ISOLATED FORM
+						<<ئ		# 0626 ARABIC LETTER YEH WITH HAMZA ABOVE
+							<<<ﺋ<<<ﺌ<<<ﺊ<<<ﺉ	# FE8B, FE8C, FE8A, FE89: INITIAL FORM, MEDIAL FORM. FINAL FORM, ISOLATED FORM
+						<<ى		# 0649 ARABIC LETTER ALEF MAKSURA
+							<<<ﯨ<<<ﯩ	# FBE8, FBE9: UIGHUR KAZAKH KIRGHIZ ALEF MAKSURA INITIAL FORM, MEDIAL FORM
+							<<<ﻰ<<<ﻯ	# FEF0, FEEF: FINAL FORM, ISOLATED FORM
+					&ه	# 0647 ARABIC LETTER HEH
+							<<<ﻫ<<<ﻬ<<<ﻪ<<<ﻩ	# FEEB, FEEC, FEEA, FEE9: INITIAL FORM, MEDIAL FORM, FINAL FORM;, ISOLATED FORM
+						<<ة		# 0629 ARABIC LETTER TEH MARBUTA
+							<<<ﺔ<<<ﺓ	# FE94, FE93: FINAL FORM, ISOLATED FORM
+					&[last primary ignorable]<<׳	# 05F3 HEBREW PUNCTUATION GERESH
+
+						<<״	# 05F4 HEBREW PUNCTUATION GERSHAYIM
+						<<ـ	# 0640 ARABIC TATWEEL
+						# Don't need explicit entries for 064B - 0652 ARABIC FATHATAN - ARABIC SUKUN;
+						# these are already ignorable at level 1, and are not involved in contractions
+						<<ฺ	# 0E3A THAI CHARACTER PHINTHU
+					# root search rules for modern Korean jamos
+					# Korean modern complex consonants, decompose: x(L) = CHOSEONG x, x(T) = JONGSEONG x
+					&ᄀ	# 1100 KIYEOK(L) = 11A8 KIYEOK(T)
+						=ᆨ
+					&ᄀᄀ	# 1100 KIYEOK(L) + 1100 KIYEOK(L) = 1101 SSANGKIYEOK(L) = 11A9 SSANGKIYEOK(T)
+						=ᄁ=ᆩ
+					&ᄀᄉ	# 1100 KIYEOK(L) + 1109 SIOS(L) = 11AA KIYEOK-SIOS(T)
+						=ᆪ
+					&ᄂ	# 1102 NIEUN(L) = 11AB NIEUN(T)
+						=ᆫ
+					&ᄂᄌ	# 1102 NIEUN(L) + 110C CIEUC(L) = 11AC NIEUN-CIEUC(T), also archaic 115C NIEUN-CIEUC(L)
+						=ᆬ
+					&ᄂᄒ	# 1102 NIEUN(L) + 1112 HIEUH(L) = 11AD NIEUN-HIEUH(T), also archaic 115D NIEUN-HIEUH(L)
+						=ᆭ
+					&ᄃ	# 1103 TIKEUT(L) = 11AE TIKEUT(T)
+						=ᆮ
+					&ᄃᄃ	# 1103 TIKEUT(L) + 1103 TIKEUT(L) = 1104 SSANGTIKEUT(L)
+						=ᄄ
+					&ᄅ	# 1105 RIEUL(L) = 11AF RIEUL(T)
+						=ᆯ
+					&ᄅᄀ	# 1105 RIEUL(L) + 1100 KIYEOK(L) = 11B0 RIEUL-KIYEOK(T)
+						=ᆰ
+					&ᄅᄆ	# 1105 RIEUL(L) + 1106 MIEUM(L) = 11B1 RIEUL-MIEUM(T)
+						=ᆱ
+					&ᄅᄇ	# 1105 RIEUL(L) + 1107 PIEUP(L) = 11B2 RIEUL-PIEUP(T)
+						=ᆲ
+					&ᄅᄉ	# 1105 RIEUL(L) + 1109 SIOS(L) = 11B3 RIEUL-SIOS(T)
+						=ᆳ
+					&ᄅᄐ	# 1105 RIEUL(L) + 1110 THIEUTH(L) = 11B4 RIEUL-THIEUTH(T)
+						=ᆴ
+					&ᄅᄑ	# 1105 RIEUL(L) + 1111 PHIEUPH(L) = 11B5 RIEUL-PHIEUPH(T)
+						=ᆵ
+					&ᄅᄒ	# 1105 RIEUL(L) + 1112 HIEUH(L) = 11B6 RIEUL-HIEUH(T), also archic 111A RIEUL-HIEUH(L)
+						=ᆶ
+					&ᄆ	# 1106 MIEUM(L) = 11B7 MIEUM(T)
+						=ᆷ
+					&ᄇ	# 1107 PIEUP(L) = 11B8 PIEUP(T)
+						=ᆸ
+					&ᄇᄇ	# 1107 PIEUP(L) + 1107 PIEUP(L) = 1108 SSANGPIEUP(L)
+						=ᄈ
+					&ᄇᄉ	# 1107 PIEUP(L) + 1109 SIOS(L) = 11B9 PIEUP-SIOS(T), also archaic 1121 PIEUP-SIOS(L)
+						=ᆹ
+					&ᄉ	# 1109 SIOS(L) = 11BA SIOS(T)
+						=ᆺ
+					&ᄉᄉ	# 1109 SIOS(L) + 1109 SIOS(L) = 110A SSANGSIOS(L) = 11BB SSANGSIOS(T)
+						=ᄊ=ᆻ
+					&ᄋ	# 110B IEUNG(L) = 11BC IEUNG(T)
+						=ᆼ
+					&ᄌ	# 110C CIEUC(L) = 11BD CIEUC(T)
+						=ᆽ
+					&ᄌᄌ	# 110C CIEUC(L) + 110C CIEUC(L) = 110D SSANGCIEUC(L)
+						=ᄍ
+					&ᄎ	# 110E CHIEUCH(L) = 11BE CHIEUCH(T)
+						=ᆾ
+					&ᄏ	# 110F KHIEUKH(L) = 11BF KHIEUKH(T)
+						=ᆿ
+					&ᄐ	# 1110 THIEUTH(L) = 11C0 THIEUTH(T)
+						=ᇀ
+					&ᄑ	# 1111 PHIEUPH(L) = 11C1 PHIEUPH(T)
+						=ᇁ
+					&ᄒ	# 1112 HIEUH(L) = 11C2 HIEUH(T)
+						=ᇂ
+					# Korean modern complex vowels, decompose
+					&ᅡᅵ	# 1161 A(V) + 1175 I(V) = 1162 AE(V)
+						=ᅢ
+					&ᅣᅵ	# 1163 YA(V) + 1175 I(V) = 1164 YAE(V)
+						=ᅤ
+					&ᅥᅵ	# 1165 EO(V) + 1175 I(V) = 1166 E(V)
+						=ᅦ
+					&ᅧᅵ	# 1167 YEO(V) + 1175 I(V) = 1168 YE(V)
+						=ᅨ
+					&ᅩᅡ	# 1169 O(V) + 1161 A(V) = 116A WA(V)
+						=ᅪ
+					&ᅩᅡᅵ	# 1169 O(V) + 1161 A(V) + 1175 I(V) = 116B WAE(V)
+						=ᅫ
+					&ᅩᅵ	# 1169 O(V) + 1175 I(V) = 116C OE(V)
+						=ᅬ
+					&ᅮᅴ	# 116E U(V) + 1174 YI(V) = 116F WEO(V)
+						=ᅯ
+					&ᅮᅴᅵ	# 116E U(V) + 1174 YI(V) + 1175 I(V) = 1170 WE(V)
+						=ᅰ
+					&ᅮᅵ	# 116E U(V) + 1175 I(V) = 1171 WI(V)
+						=ᅱ
+				]]></cr>
+			</collation>
+			<collation type="eor" references="European Standard EN13710:2011-06 - European Ordering Rules - Ordering of characters from Latin, Greek, Cyrillic, Georgian, and Armenian scripts">
+				<cr><![CDATA[
+				# 
+				#Latin letters: only a-z + þ are basic letters
+				&a
+				<<ᴀ # U+1D00
+				<<ⱥ # U+2C65
+				<<<Ⱥ # U+023A
+				<<ᶏ # U+1D8F
+				<<ɐ # U+0250
+				<<<Ɐ # U+2C6F
+				<<<ᵄ # U+1D44
+				<<ɑ # U+0251
+				<<<Ɑ # U+2C6D
+				<<<ᵅ # U+1D45
+				<<ᶐ # U+1D90
+				<<ɒ # U+0252
+				<<<Ɒ # U+2C70
+				<<<ᶛ # U+1D9B
+				&b
+				<<ʙ # U+0299
+				<<ƀ # U+0180
+				<<<Ƀ # U+0243
+				<<ᴯ # U+1D2F
+				<<ᴃ # U+1D03
+				<<ᵬ # U+1D6C
+				<<ᶀ # U+1D80
+				<<ɓ # U+0253
+				<<<Ɓ # U+0181
+				<<ƃ # U+0183
+				<<<Ƃ # U+0182
+				&c
+				<<ᴄ # U+1D04
+				<<ȼ # U+023C
+				<<<Ȼ # U+023B
+				<<ꞓ # U+A793
+				<<<Ꞓ # U+A792
+				<<ƈ # U+0188
+				<<<Ƈ # U+0187
+				<<ɕ # U+0255
+				<<<ᶝ # U+1D9D
+				<<ↄ # U+2184
+				<<<Ↄ # U+2183
+				<<ꜿ # U+A73F
+				<<<Ꜿ # U+A73E
+				&d
+				<<ᴅ # U+1D05
+				<<ᴆ # U+1D06
+				<<ᵭ # U+1D6D
+				<<ᶁ # U+1D81
+				<<ɖ # U+0256
+				<<<Ɖ # U+0189
+				<<ɗ # U+0257
+				<<<Ɗ # U+018A
+				<<ᶑ # U+1D91
+				<<ƌ # U+018C
+				<<<Ƌ # U+018B
+				<<ȡ # U+0221
+				<<ꝱ # U+A771
+				<<ẟ # U+1E9F
+				<<ƍ # U+018D
+				&e
+				<<ᴇ # U+1D07
+				<<ɇ # U+0247
+				<<<Ɇ # U+0246
+				<<ᶒ # U+1D92
+				<<ⱸ # U+2C78
+				<<ǝ # U+01DD
+				<<<Ǝ # U+018E
+				<<<ᴲ # U+1D32
+				<<ⱻ # U+2C7B
+				<<ə # U+0259
+				<<<Ə # U+018F
+				<<<ᵊ # U+1D4A
+				<<<ₔ # U+2094
+				<<ᶕ # U+1D95
+				<<ɛ # U+025B
+				<<<Ɛ # U+0190
+				<<<ℇ # U+2107
+				<<<ᵋ # U+1D4B
+				<<ᶓ # U+1D93
+				<<ɘ # U+0258
+				<<ɚ # U+025A
+				<<ɜ # U+025C
+				<<<ᶟ # U+1D9F
+				<<ᶔ # U+1D94
+				<<ᴈ # U+1D08
+				<<<ᵌ # U+1D4C
+				<<ɝ # U+025D
+				<<ɞ # U+025E
+				<<ʚ # U+029A
+				&f
+				<<ꜰ # U+A730
+				<<ᵮ # U+1D6E
+				<<ᶂ # U+1D82
+				<<ƒ # U+0192
+				<<<Ƒ # U+0191
+				<<ⅎ # U+214E
+				<<<Ⅎ # U+2132
+				<<ꟻ # U+A7FB
+				&g
+				<<ɡ # U+0261
+				<<<ᶢ # U+1DA2
+				<<ɢ # U+0262
+				<<<ᷛ # U+1DDB
+				<<ǥ # U+01E5
+				<<<Ǥ # U+01E4
+				<<ᶃ # U+1D83
+				<<ɠ # U+0260
+				<<<Ɠ # U+0193
+				<<ʛ # U+029B
+				<<ᵷ # U+1D77
+				<<ꝿ # U+A77F
+				<<<Ꝿ # U+A77E
+				<<ɣ # U+0263
+				<<<Ɣ # U+0194
+				<<<ˠ # U+02E0
+				<<ɤ # U+0264
+				<<ƣ # U+01A3
+				<<<Ƣ # U+01A2
+				&h
+				<<ʜ # U+029C
+				<<ɦ # U+0266
+				<<<Ɦ # U+A7AA
+				<<<ʱ # U+02B1
+				<<ⱨ # U+2C68
+				<<<Ⱨ # U+2C67
+				<<ⱶ # U+2C76
+				<<<Ⱶ # U+2C75
+				<<ꜧ # U+A727
+				<<<Ꜧ # U+A726
+				<<ɧ # U+0267
+				<<ɥ # U+0265
+				<<<Ɥ # U+A78D
+				<<<ᶣ # U+1DA3
+				<<ʮ # U+02AE
+				<<ʯ # U+02AF
+				&i
+				<<ı # U+0131
+				<<<𝚤 # U+1D6A4
+				<<ɪ # U+026A
+				<<<ᶦ # U+1DA6
+				<<ꟾ # U+A7FE
+				<<ᴉ # U+1D09
+				<<<ᵎ # U+1D4E
+				<<ɨ # U+0268
+				<<<Ɨ # U+0197
+				<<<ᶤ # U+1DA4
+				<<ᵻ # U+1D7B
+				<<<ᶧ # U+1DA7
+				<<ᶖ # U+1D96
+				<<ɩ # U+0269
+				<<<Ɩ # U+0196
+				<<<ᶥ # U+1DA5
+				<<ᵼ # U+1D7C
+				&j
+				<<ȷ # U+0237
+				<<<𝚥 # U+1D6A5
+				<<ᴊ # U+1D0A
+				<<ɉ # U+0249
+				<<<Ɉ # U+0248
+				<<ʝ # U+029D
+				<<<ᶨ # U+1DA8
+				<<ɟ # U+025F
+				<<<ᶡ # U+1DA1
+				<<ʄ # U+0284
+				&k
+				<<ᴋ # U+1D0B
+				<<ᶄ # U+1D84
+				<<ƙ # U+0199
+				<<<Ƙ # U+0198
+				<<ⱪ # U+2C6A
+				<<<Ⱪ # U+2C69
+				<<ꝁ # U+A741
+				<<<Ꝁ # U+A740
+				<<ꝃ # U+A743
+				<<<Ꝃ # U+A742
+				<<ꝅ # U+A745
+				<<<Ꝅ # U+A744
+				<<ĸ # U+0138
+				<<ʞ # U+029E
+				&l
+				<<ʟ # U+029F
+				<<<ᷞ # U+1DDE
+				<<<ᶫ # U+1DAB
+				<<ꝇ # U+A747
+				<<<Ꝇ # U+A746
+				<<ᴌ # U+1D0C
+				<<ꝉ # U+A749
+				<<<Ꝉ # U+A748
+				<<ƚ # U+019A
+				<<<Ƚ # U+023D
+				<<ⱡ # U+2C61
+				<<<Ⱡ # U+2C60
+				<<ɫ # U+026B
+				<<<Ɫ # U+2C62
+				<<ɬ # U+026C
+				<<ᶅ # U+1D85
+				<<<ᶪ # U+1DAA
+				<<ɭ # U+026D
+				<<<ᶩ # U+1DA9
+				<<ꞎ # U+A78E
+				<<ȴ # U+0234
+				<<ꝲ # U+A772
+				<<ꞁ # U+A781
+				<<<Ꞁ # U+A780
+				<<ƛ # U+019B
+				&m
+				<<ᴍ # U+1D0D
+				<<<ᷟ # U+1DDF
+				<<ᵯ # U+1D6F
+				<<ᶆ # U+1D86
+				<<ɱ # U+0271
+				<<<Ɱ # U+2C6E
+				<<<ᶬ # U+1DAC
+				<<ꟽ # U+A7FD
+				<<ꟿ # U+A7FF
+				<<ꝳ # U+A773
+				<<ɯ # U+026F
+				<<<Ɯ # U+019C
+				<<<ᵚ # U+1D5A
+				<<ꟺ # U+A7FA
+				<<ᴟ # U+1D1F
+				<<ɰ # U+0270
+				<<<ᶭ # U+1DAD
+				&n
+				<<ŉ # U+0149
+				<<ɴ # U+0274
+				<<<ᷡ # U+1DE1
+				<<<ᶰ # U+1DB0
+				<<ᴻ # U+1D3B
+				<<ᴎ # U+1D0E
+				<<ᵰ # U+1D70
+				<<ɲ # U+0272
+				<<<Ɲ # U+019D
+				<<<ᶮ # U+1DAE
+				<<ƞ # U+019E
+				<<<Ƞ # U+0220
+				<<ꞑ # U+A791
+				<<<Ꞑ # U+A790
+				<<ᶇ # U+1D87
+				<<ɳ # U+0273
+				<<<ᶯ # U+1DAF
+				<<ȵ # U+0235
+				<<ꝴ # U+A774
+				<<ŋ # U+014B
+				<<<Ŋ # U+014A
+				<<<ᵑ # U+1D51
+				&o
+				<<ᴏ # U+1D0F
+				<<ᴑ # U+1D11
+				<<ᴓ # U+1D13
+				<<ɔ # U+0254
+				<<<Ɔ # U+0186
+				<<<ᵓ # U+1D53
+				<<ᴐ # U+1D10
+				<<ᴒ # U+1D12
+				<<ᶗ # U+1D97
+				<<ꝍ # U+A74D
+				<<<Ꝍ # U+A74C
+				<<ᴖ # U+1D16
+				<<<ᵔ # U+1D54
+				<<ᴗ # U+1D17
+				<<<ᵕ # U+1D55
+				<<ⱺ # U+2C7A
+				<<ɵ # U+0275
+				<<<Ɵ # U+019F
+				<<<ᶱ # U+1DB1
+				<<ꝋ # U+A74B
+				<<<Ꝋ # U+A74A
+				<<ɷ # U+0277
+				<<ȣ # U+0223
+				<<<Ȣ # U+0222
+				<<<ᴽ # U+1D3D
+				<<ᴕ # U+1D15
+				&p
+				<<ᴘ # U+1D18
+				<<ᵽ # U+1D7D
+				<<<Ᵽ # U+2C63
+				<<ꝑ # U+A751
+				<<<Ꝑ # U+A750
+				<<ᵱ # U+1D71
+				<<ᶈ # U+1D88
+				<<ƥ # U+01A5
+				<<<Ƥ # U+01A4
+				<<ꝓ # U+A753
+				<<<Ꝓ # U+A752
+				<<ꝕ # U+A755
+				<<<Ꝕ # U+A754
+				<<ꟼ # U+A7FC
+				<<ɸ # U+0278
+				<<<ᶲ # U+1DB2
+				<<ⱷ # U+2C77
+				&q
+				<<ꝗ # U+A757
+				<<<Ꝗ # U+A756
+				<<ꝙ # U+A759
+				<<<Ꝙ # U+A758
+				<<ʠ # U+02A0
+				<<ɋ # U+024B
+				<<<Ɋ # U+024A
+				&r
+				<<ʀ # U+0280
+				<<<ᷢ # U+1DE2
+				<<<Ʀ # U+01A6
+				<<ꝛ # U+A75B
+				<<<ᷣ # U+1DE3
+				<<<Ꝛ # U+A75A
+				<<ᴙ # U+1D19
+				<<ɍ # U+024D
+				<<<Ɍ # U+024C
+				<<ᵲ # U+1D72
+				<<ɹ # U+0279
+				<<<ʴ # U+02B4
+				<<ᴚ # U+1D1A
+				<<ɺ # U+027A
+				<<ᶉ # U+1D89
+				<<ɻ # U+027B
+				<<<ʵ # U+02B5
+				<<ⱹ # U+2C79
+				<<ɼ # U+027C
+				<<ɽ # U+027D
+				<<<Ɽ # U+2C64
+				<<ɾ # U+027E
+				<<ᵳ # U+1D73
+				<<ɿ # U+027F
+				<<ʁ # U+0281
+				<<<ʶ # U+02B6
+				<<ꝵ # U+A775
+				<<ꝶ # U+A776
+				<<ꝝ # U+A75D
+				<<<Ꝝ # U+A75C
+				&s
+				<<ꜱ # U+A731
+				<<ᵴ # U+1D74
+				<<ᶊ # U+1D8A
+				<<ʂ # U+0282
+				<<<ᶳ # U+1DB3
+				<<ȿ # U+023F
+				<<<Ȿ # U+2C7E
+				<<ẜ # U+1E9C
+				<<ẝ # U+1E9D
+				<<ʃ # U+0283
+				<<<Ʃ # U+01A9
+				<<<ᶴ # U+1DB4
+				<<ᶋ # U+1D8B
+				<<ƪ # U+01AA
+				<<ʅ # U+0285
+				<<ᶘ # U+1D98
+				<<ʆ # U+0286
+				&t
+				<<ᴛ # U+1D1B
+				<<ŧ # U+0167
+				<<<Ŧ # U+0166
+				<<ⱦ # U+2C66
+				<<<Ⱦ # U+023E
+				<<ᵵ # U+1D75
+				<<ƫ # U+01AB
+				<<<ᶵ # U+1DB5
+				<<ƭ # U+01AD
+				<<<Ƭ # U+01AC
+				<<ʈ # U+0288
+				<<<Ʈ # U+01AE
+				<<ȶ # U+0236
+				<<ꝷ # U+A777
+				<<ʇ # U+0287
+				&u
+				<<ᴜ # U+1D1C
+				<<<ᶸ # U+1DB8
+				<<ᴝ # U+1D1D
+				<<<ᵙ # U+1D59
+				<<ᴞ # U+1D1E
+				<<ʉ # U+0289
+				<<<Ʉ # U+0244
+				<<<ᶶ # U+1DB6
+				<<ᵾ # U+1D7E
+				<<ᶙ # U+1D99
+				<<ʊ # U+028A
+				<<<Ʊ # U+01B1
+				<<<ᶷ # U+1DB7
+				<<ᵿ # U+1D7F
+				&v
+				<<ᴠ # U+1D20
+				<<ꝟ # U+A75F
+				<<<Ꝟ # U+A75E
+				<<ᶌ # U+1D8C
+				<<ʋ # U+028B
+				<<<Ʋ # U+01B2
+				<<<ᶹ # U+1DB9
+				<<ⱱ # U+2C71
+				<<ⱴ # U+2C74
+				<<ỽ # U+1EFD
+				<<<Ỽ # U+1EFC
+				<<ʌ # U+028C
+				<<<Ʌ # U+0245
+				<<<ᶺ # U+1DBA
+				&w
+				<<ᴡ # U+1D21
+				<<ⱳ # U+2C73
+				<<<Ⱳ # U+2C72
+				<<ʍ # U+028D
+				<<ƿ # U+01BF
+				<<<Ƿ # U+01F7
+				&x
+				<<ᶍ # U+1D8D
+				&y
+				<<ʏ # U+028F
+				<<ɏ # U+024F
+				<<<Ɏ # U+024E
+				<<ƴ # U+01B4
+				<<<Ƴ # U+01B3
+				<<ỿ # U+1EFF
+				<<<Ỿ # U+1EFE
+				<<ʎ # U+028E
+				<<ȝ # U+021D
+				<<<Ȝ # U+021C
+				&z
+				<<ᴢ # U+1D22
+				<<ƶ # U+01B6
+				<<<Ƶ # U+01B5
+				<<ᵶ # U+1D76
+				<<ᶎ # U+1D8E
+				<<ȥ # U+0225
+				<<<Ȥ # U+0224
+				<<ʐ # U+0290
+				<<<ᶼ # U+1DBC
+				<<ʑ # U+0291
+				<<<ᶽ # U+1DBD
+				<<ɀ # U+0240
+				<<<Ɀ # U+2C7F
+				<<ⱬ # U+2C6C
+				<<<Ⱬ # U+2C6B
+				<<ꝣ # U+A763
+				<<<Ꝣ # U+A762
+				<<ʒ # U+0292
+				<<<Ʒ # U+01B7
+				<<<ᶾ # U+1DBE
+				<<ǯ # U+01EF
+				<<<Ǯ # U+01EE
+				<<ᴣ # U+1D23
+				<<ƹ # U+01B9
+				<<<Ƹ # U+01B8
+				<<ᶚ # U+1D9A
+				<<ƺ # U+01BA
+				<<ʓ # U+0293
+				# Thorn
+				&þ
+				<<ꝥ # U+A765
+				<<<Ꝥ # U+A764
+				<<ꝧ # U+A767
+				<<<Ꝧ # U+A766
+				# Digraphs
+				&ae<<ᴁ<<ᴂ<<<ᵆ # U+1D01, U+1D02, and U+1D46
+				&dʑ<<ʥ # U+02A5
+				&dʒ<<ʤ # U+02A4
+				&hv<<ƕ<<<Ƕ # U+0195 and U+01F6
+				&lʒ<<ɮ # U+026E
+				&oe<<ɶ<<ᴔ # U+0276 and U+1D14
+				&tɕ<<ʨ # U+02A8
+				&ue<<ᵫ # U+1D6B
+
+				# Letters and modifiers not associated with a specific first or second 
+				# level letter are ignored.
+				&[last tertiary ignorable]
+				=ʻ # U+02BB
+				=ʽ # U+02BD
+				=ꝩ # U+A769
+				=Ꝩ # U+A768
+				=ꝫ # U+A76B
+				=Ꝫ # U+A76A
+				=ꝭ # U+A76D
+				=Ꝭ # U+A76C
+				=ꝯ # U+A76F
+				=᷒ # U+1DD2
+				=Ꝯ # U+A76E
+				=ꝰ # U+A770
+				=ꝸ # U+A778
+				=ƻ # U+01BB
+				=ꜫ # U+A72B
+				=Ꜫ # U+A72A
+				=ꜭ # U+A72D
+				=Ꜭ # U+A72C
+				=ꜯ # U+A72F
+				=Ꜯ # U+A72E
+				=ƨ # U+01A8
+				=Ƨ # U+01A7
+				=ƽ # U+01BD
+				=Ƽ # U+01BC
+				=ƅ # U+0185
+				=Ƅ # U+0184
+				=ʔ # U+0294
+				=ɂ # U+0242
+				=Ɂ # U+0241
+				=ˀ # U+02C0
+				=ʼ # U+02BC
+				=ˮ # U+02EE
+				=ʾ # U+02BE
+				=ꜣ # U+A723
+				=Ꜣ # U+A722
+				=ꞌ # U+A78C
+				=Ꞌ # U+A78B
+				=ʕ # U+0295
+				=ˤ # U+02E4
+				=ʿ # U+02BF
+				=ˁ # U+02C1
+				=ᴤ # U+1D24
+				=ᴥ # U+1D25
+				=ᵜ # U+1D5C
+				=ꜥ # U+A725
+				=Ꜥ # U+A724
+				=ʡ # U+02A1
+				=ʢ # U+02A2
+				=ʖ # U+0296
+				=ǀ # U+01C0
+				=ǁ # U+01C1
+				=ǂ # U+01C2
+				=ǃ # U+01C3
+				=ʗ # U+0297
+				=ʘ # U+0298
+				=ʬ # U+02AC
+				=ʭ # U+02AD
+				# Greek
+				&γ
+				<<ᴦ # U+1D26
+				&λ
+				<<ᴧ # U+1D27
+				&π
+				<<ᴨ # U+1D28
+				&ρ
+				<<ᴩ # U+1D29
+				&ψ
+				<<ᴪ # U+1D2A
+				# Cyrillic
+				&ђ
+				<<ѓ # U+0453
+				<<<Ѓ # U+0403
+				&й
+				<ҋ # U+048B
+				<<<Ҋ # U+048A
+				&л
+				<<ᴫ # U+1D2B
+				&ћ
+				<<ќ # U+045C
+				<<<Ќ # U+040C
+				# Georgian: unchanged
+				# Armenian
+				&ք # U+0584
+				<և # U+0587
+			]]></cr>
 			</collation>
 		</collations>
     <!-- for UCA rules please see: http://www.unicode.org/reports/tr10/ -->

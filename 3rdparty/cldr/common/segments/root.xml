@@ -7,8 +7,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 8242 $"/>
-		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
+		<version number="$Revision: 9292 $"/>
+		<generation date="$Date: 2013-08-30 13:34:15 -0500 (Fri, 30 Aug 2013) $"/>
 		<language type="root"/>
 	</identity>
 	<segmentations>
@@ -188,8 +188,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<rule id="21.02"> × $HY </rule>
 				<rule id="21.03"> × $NS </rule>
 				<rule id="21.04"> $BB × </rule>
-				<!-- LB 21  Do not break before hyphen-minus, other hyphens, fixed-width spaces, small kana and other non-starters, or after acute accents. -->
+				<!-- LB 21a  Do not break before hyphen-minus, other hyphens, fixed-width spaces, small kana and other non-starters, or after acute accents. -->
 				<rule id="21.1"> $HL ($HY | $BA) × </rule>
+				<!-- LB 21b CLDR addition, do not break after $SY if followed by $HL (break before already prevented by 13.02 above) -->
+				<rule id="21.2"> $SY × $HL </rule>
 				<!-- LB 22  Do not break between two ellipses, or between letters or numbers and ellipsis. -->
 				<rule id="22.01"> ($AL | $HL) × $IN </rule>
 				<rule id="22.02"> $ID × $IN </rule>

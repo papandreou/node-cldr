@@ -7,30 +7,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 8242 $" />
-		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $" />
+		<version number="$Revision: 8900 $" />
+		<generation date="$Date: 2013-06-12 17:21:10 -0500 (Wed, 12 Jun 2013) $" />
 		<language type="si" />
 	</identity>
 	<collations validSubLocales="si_LK">
 		<collation type="standard" references="Sri Lanka standard 1134 Part 1 - 2007 edition - Sri Lanka Standards Institution">
 			<settings normalization="on" reorder="Sinh Deva Beng Guru Gujr Orya Taml Telu Knda Mlym"/>
-			<rules>
-				<reset>ඖ</reset>
-				<p>ං</p>
-				<p>ඃ</p>
-				<reset>ඥ</reset>
-				<p>ඤ</p>
-			</rules>
+			<cr><![CDATA[
+				&ඖ<ං<ඃ
+				&ඥ<ඤ
+			]]></cr>
 		</collation>
 		<collation type="dictionary" references="Sri Lanka standard 1134 Part 1 - 2007 edition - Sri Lanka Standards Institution">
 			<settings normalization="on" reorder="Sinh Deva Beng Guru Gujr Orya Taml Telu Knda Mlym"/>
-			<rules>
-				<reset>ඖ</reset>
-				<p>ං</p>
-				<p>ඃ</p>
-				<reset>ජ්ඤ</reset>
-				<s>ඥ</s>
-			</rules>
+			<cr><![CDATA[
+				&ඖ<ං<ඃ
+				&ජ්ඤ<<ඥ
+			]]></cr>
 		</collation>
 	</collations>
 </ldml>

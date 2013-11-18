@@ -7,32 +7,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 8242 $"/>
-		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
+		<version number="$Revision: 8900 $"/>
+		<generation date="$Date: 2013-06-12 17:21:10 -0500 (Wed, 12 Jun 2013) $"/>
 		<language type="eo" /> 
 	</identity>
 		<collations>
 			<collation type="standard" >
-				<rules>
-					<reset>C</reset>
-					<p>ĉ</p>
-					<t>Ĉ</t>
-					<reset>G</reset>
-					<p>ĝ</p>
-					<t>Ĝ</t>
-					<reset>H</reset>
-					<p>ĥ</p>
-					<t>Ĥ</t>
-					<reset>J</reset>
-					<p>ĵ</p>
-					<t>Ĵ</t>
-					<reset>S</reset>
-					<p>ŝ</p>
-					<t>Ŝ</t>
-					<reset>U</reset>
-					<p>ŭ</p>
-					<t>Ŭ</t>
-				</rules>
+				<cr><![CDATA[
+					&C<ĉ<<<Ĉ
+					&G<ĝ<<<Ĝ
+					&H<ĥ<<<Ĥ
+					&J<ĵ<<<Ĵ
+					&S<ŝ<<<Ŝ
+					&U<ŭ<<<Ŭ
+				]]></cr>
 			</collation  >
 		</collations>
 </ldml>

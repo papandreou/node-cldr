@@ -7,23 +7,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 8242 $"/>
-		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
+		<version number="$Revision: 8900 $"/>
+		<generation date="$Date: 2013-06-12 17:21:10 -0500 (Wed, 12 Jun 2013) $"/>
 		<language type="nso"/> 
 	</identity>
 	<collations validSubLocales="nso_ZA">
 		<collation type="standard" >
-			<rules>
-				<reset>E</reset>
-				<p>ê</p>
-				<t>Ê</t>
-				<reset>O</reset>
-				<p>ô</p>
-				<t>Ô</t>
-				<reset>S</reset>
-				<p>š</p>
-				<t>Š</t>
-			</rules>
+			<cr><![CDATA[
+				&E<ê<<<Ê
+				&O<ô<<<Ô
+				&S<š<<<Š
+			]]></cr>
 		</collation  >
 	</collations>
 </ldml>

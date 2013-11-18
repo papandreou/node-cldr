@@ -7,53 +7,44 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 8242 $" />
-		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $" />
+		<version number="$Revision: 8900 $" />
+		<generation date="$Date: 2013-06-12 17:21:10 -0500 (Wed, 12 Jun 2013) $" />
 		<language type="gu" />
 	</identity>
 	<collations validSubLocales="gu_IN">
 		<collation type="standard" references="M. B. Belsare: Gujarati-English Dictionary ISBN:8120600908">
 			<settings normalization="on" reorder="Gujr Deva Beng Guru Orya Taml Telu Knda Mlym Sinh"/>
-			<rules>
-				<!--
-					The following tailoring is an adjustment of the DUCET collation
-					order for ANUSVARA, CANDRABINDU, and VISARGA. Instead of being
-					sorted with secondary weights, they are collated on primary level
-					before the independent vowels. CANDRABINDU is secondary different
-					from ANUSVARA.
-				-->
-				<reset>ૐ</reset>
-				<p>ં</p>
-				<s>ઁ</s>
-				<p>ઃ</p>
-			</rules>
+			<cr><![CDATA[
+				#
+				#	The following tailoring is an adjustment of the DUCET collation
+				#	order for ANUSVARA, CANDRABINDU, and VISARGA. Instead of being
+				#	sorted with secondary weights, they are collated on primary level
+				#	before the independent vowels. CANDRABINDU is secondary different
+				#	from ANUSVARA.
+				# 
+				&ૐ<ં<<ઁ<ઃ
+			]]></cr>
 		</collation>
 		<collation type="standard" references="http://www.eki.ee/wgrs/rom1_gu.pdf"
 			draft="unconfirmed" alt="proposed">
 			<settings normalization="on" reorder="Gujr Deva Beng Guru Orya Taml Telu Knda Mlym Sinh"/>
-			<rules>
+			<cr><![CDATA[
 
-				<!--
-					The following tailoring is an adjustment of the DUCET collation
-					order for ANUSVARA, CANDRABINDU, and VISARGA. Instead of being
-					sorted with secondary weights, they are collated on primary level
-					before the independent vowels. CANDRABINDU is secondary different
-					from ANUSVARA.
-				-->
-				<reset>ૐ</reset>
-				<p>ં</p>
-				<s>ઁ</s>
-				<p>ઃ</p>
-
-				<!--
-					The following tailoring is an adjustment of the DUCET collation
-					order for LLA. Instead of being sorted after LA, LLA is sorted
-					after HA.
-				-->
-				<reset>હ</reset>
-				<p>ળ</p>
-
-			</rules>
+				#
+				#	The following tailoring is an adjustment of the DUCET collation
+				#	order for ANUSVARA, CANDRABINDU, and VISARGA. Instead of being
+				#	sorted with secondary weights, they are collated on primary level
+				#	before the independent vowels. CANDRABINDU is secondary different
+				#	from ANUSVARA.
+				# 
+				&ૐ<ં<<ઁ<ઃ
+				#
+				#	The following tailoring is an adjustment of the DUCET collation
+				#	order for LLA. Instead of being sorted after LA, LLA is sorted
+				#	after HA.
+				# 
+				&હ<ળ
+			]]></cr>
 		</collation>
 	</collations>
 </ldml>

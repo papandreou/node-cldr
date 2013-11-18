@@ -7,41 +7,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 8242 $"/>
-		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
+		<version number="$Revision: 8900 $"/>
+		<generation date="$Date: 2013-06-12 17:21:10 -0500 (Wed, 12 Jun 2013) $"/>
 		<language type="as"/>
 	</identity>
 		<collations  validSubLocales="as_IN">
 <collation type="standard" references="http://www.eki.ee/wgrs/rom1_as.pdf">
 <settings normalization="on" reorder="Beng Deva Guru Gujr Orya Taml Telu Knda Mlym Sinh"/>
-<rules>
+<cr><![CDATA[
 
-<!--
-The following tailoring is an adjustment of the
-DUCET collation order for ANUSVARA, CANDRABINDU,
-and VISARGA. Instead of being sorted with secondary
-weights, they are collated on primary level between
-the independent vowels and the consonants.
--->
-<reset>ঔ</reset>
-<p>ং</p>
-<p>ঁ</p>
-<p>ঃ</p>
-
-<!--
-KHANDA-TA is sorted before TA.
--->
-<reset before="primary">ত</reset>
-<p>ৎ</p>
-<i>ত্‍</i>
-
-<!--
-KSSA is sorted after HA.
--->
-<reset>হ</reset>
-<p>ক্ষ</p>
-
-</rules>
+#
+# The following tailoring is an adjustment of the
+# DUCET collation order for ANUSVARA, CANDRABINDU,
+# and VISARGA. Instead of being sorted with secondary
+# weights, they are collated on primary level between
+# the independent vowels and the consonants.
+# 
+&ঔ<ং<ঁ<ঃ
+#
+# KHANDA-TA is sorted before TA.
+# 
+&[before 1]ত<ৎ=ত্\u200D
+#
+# KSSA is sorted after HA.
+# 
+&হ<ক্ষ
+]]></cr>
 </collation>
 		</collations>
 </ldml>

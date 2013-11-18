@@ -6,8 +6,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <supplementalData>
-  <version number="$Revision: 8242 $"/>
-	<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
+  <version number="$Revision: 9246 $"/>
+	<generation date="$Date: 2013-08-20 21:47:18 -0500 (Tue, 20 Aug 2013) $"/>
 	<transforms>
 		<transform source="Amharic" target="Latin" direction="forward" variant="BGN" draft="provisional">
 			<comment>
@@ -35,7 +35,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			# MINIMAL FILTER: Amharic-Latin
 			#
 			</comment>
-			<tRule>:: [ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖመሙሚማሜምሞሟሠሡሢሣሤሥሦረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍቐቑቒቓቔቕቖቘቚቛቜቝበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾወዉዊዋዌውዎዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗፘፙፚ፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻] ;</tRule>
+			<tRule>:: [ሀ-᎙] ;</tRule>
 			<tRule>:: NFD (NFC) ;</tRule>
 			<comment>
 			#
@@ -131,7 +131,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			#
 			# BGN Page 3 Rule 2:
 			#
-			# The characters romaznized with s in rows 5 and 7 may, instead, be
+			# The characters romanized with s in rows 5 and 7 may, instead, be
 			# romanized with š and s, respectively; and the chracters romanized
 			# with ts’ in rows 30 and 31 may, instead, be romanized with ts’ and
 			# t͟s’ respectively. 
@@ -189,6 +189,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<tRule>ቄ → k $ejective ē ; # ETHIOPIC SYLLABLE QEE</tRule>
 			<tRule>ቅ → k $ejective i ; # ETHIOPIC SYLLABLE QE</tRule>
 			<tRule>ቆ → k $ejective o ; # ETHIOPIC SYLLABLE QO</tRule>
+			<comment>
+			# No rule yet for ቇ U+1247 ETHIOPIC SYLLABLE QOA
+			</comment>
 			<tRule>ቈ → k $ejective o ; # ETHIOPIC SYLLABLE QWA</tRule>
 
 			<tRule>ቍ → k $ejective wi ; # ETHIOPIC SYLLABLE QWE</tRule>
@@ -275,6 +278,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<tRule>ኄ → ḫē ; # ETHIOPIC SYLLABLE XEE</tRule>
 			<tRule>ኅ → ḫi ; # ETHIOPIC SYLLABLE XE</tRule>
 			<tRule>ኆ → ḫo ; # ETHIOPIC SYLLABLE XO</tRule>
+			<comment>
+			# No rule yet for ኇ U+1287 ETHIOPIC SYLLABLE XOA
+			</comment>
 			<tRule>ኈ → ḫo; # ETHIOPIC SYLLABLE XWA</tRule>
 
 			<tRule>ኊ → ḫwī ; # ETHIOPIC SYLLABLE XWI</tRule>
@@ -353,6 +359,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<tRule>ኬ → kē ; # ETHIOPIC SYLLABLE KEE</tRule>
 			<tRule>ክ → ki ; # ETHIOPIC SYLLABLE KE</tRule>
 			<tRule>ኮ → ko ; # ETHIOPIC SYLLABLE KO</tRule>
+			<comment>
+			# No rule yet for ኯ U+12AF ETHIOPIC SYLLABLE KOA
+			</comment>
 			<tRule>ኰ → ko ; # ETHIOPIC SYLLABLE KWA</tRule>
 
 			<tRule>ኲ → kwī ; # ETHIOPIC SYLLABLE KWI</tRule>
@@ -379,6 +388,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<tRule>ኽ → ẖi ; # ETHIOPIC SYLLABLE KXE</tRule>
 			<tRule>ኾ → ẖo ; # ETHIOPIC SYLLABLE KXO</tRule>
 			<comment>
+			# No rule yet for ዀ U+12C0 ETHIOPIC SYLLABLE KXWA
+			# No rule yet for ዂ U+12C2 ETHIOPIC SYLLABLE KXWI
+			# No rule yet for ዃ U+12C3 ETHIOPIC SYLLABLE KXWAA
+			# No rule yet for ዄ U+12C4 ETHIOPIC SYLLABLE KXWEE
+			# No rule yet for ዅ U+12C5 ETHIOPIC SYLLABLE KXWE
+			</comment>
+			<comment>
 			#
 			########################################################################
 			#
@@ -394,6 +410,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<tRule>ዌ → wē ; # ETHIOPIC SYLLABLE WEE</tRule>
 			<tRule>ው → wi ; # ETHIOPIC SYLLABLE WE</tRule>
 			<tRule>ዎ → wo ; # ETHIOPIC SYLLABLE WO</tRule>
+			<comment>
+			# No rule yet for ዏ U+12CF ETHIOPIC SYLLABLE WOA
+			</comment>
 
 			<tRule>ዐ → $pharyngeal ā ; # ETHIOPIC SYLLABLE PHARYNGEAL A</tRule>
 			<tRule>ዑ → $pharyngeal u ; # ETHIOPIC SYLLABLE PHARYNGEAL U</tRule>
@@ -412,7 +431,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<tRule>ዞ → zo ; # ETHIOPIC SYLLABLE ZO</tRule>
 			<tRule>ዟ → zwa ; # ETHIOPIC SYLLABLE ZWA</tRule>
 
-			<tRule>ዠ → zhā ; # ETHIOPIC SYLLABLE ZHA</tRule>
+			<tRule>ዠ → zhe ; # ETHIOPIC SYLLABLE ZHA</tRule>
 			<tRule>ዡ → zhu ; # ETHIOPIC SYLLABLE ZHU</tRule>
 			<tRule>ዢ → zhī ; # ETHIOPIC SYLLABLE ZHI</tRule>
 			<tRule>ዣ → zha ; # ETHIOPIC SYLLABLE ZHAA</tRule>
@@ -420,6 +439,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<tRule>ዥ → zhi ; # ETHIOPIC SYLLABLE ZHE</tRule>
 			<tRule>ዦ → zho ; # ETHIOPIC SYLLABLE ZHO</tRule>
 			<tRule>ዧ → zhwa ; # ETHIOPIC SYLLABLE ZHWA</tRule>
+
+			<tRule>የ → ye ; # ETHIOPIC SYLLABLE YA</tRule>
+			<tRule>ዩ → yu ; # ETHIOPIC SYLLABLE YU</tRule>
+			<tRule>ዪ → yī ; # ETHIOPIC SYLLABLE YI</tRule>
+			<tRule>ያ → ya ; # ETHIOPIC SYLLABLE YAA</tRule>
+			<tRule>ዬ → yē ; # ETHIOPIC SYLLABLE YEE</tRule>
+			<tRule>ይ → yi ; # ETHIOPIC SYLLABLE YE</tRule>
+			<tRule>ዮ → yo ; # ETHIOPIC SYLLABLE YO</tRule>
 
 			<tRule>ደ → de ; # ETHIOPIC SYLLABLE DA</tRule>
 			<tRule>ዱ → du ; # ETHIOPIC SYLLABLE DU</tRule>
@@ -429,6 +456,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<tRule>ድ → di ; # ETHIOPIC SYLLABLE DE</tRule>
 			<tRule>ዶ → do ; # ETHIOPIC SYLLABLE DO</tRule>
 			<tRule>ዷ → dwa ; # ETHIOPIC SYLLABLE DWA</tRule>
+
+			<comment>
+			# No rule yet for ዸ U+12F8 ETHIOPIC SYLLABLE DDA ...
+			</comment>
 
 			<tRule>ጀ → je ; # ETHIOPIC SYLLABLE JA</tRule>
 			<tRule>ጁ → ju ; # ETHIOPIC SYLLABLE JU</tRule>
@@ -446,12 +477,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<tRule>ጌ → gē ; # ETHIOPIC SYLLABLE GEE</tRule>
 			<tRule>ግ → gi ; # ETHIOPIC SYLLABLE GE</tRule>
 			<tRule>ጎ → go ; # ETHIOPIC SYLLABLE GO</tRule>
+			<comment>
+			# No rule yet for ጏ U+130F ETHIOPIC SYLLABLE GOA
+			</comment>
 			<tRule>ጐ → go ; # ETHIOPIC SYLLABLE GWA</tRule>
 
 			<tRule>ጒ → gwī ; # ETHIOPIC SYLLABLE GWI</tRule>
 			<tRule>ጓ → gwa ; # ETHIOPIC SYLLABLE GWAA</tRule>
 			<tRule>ጔ → gwē ; # ETHIOPIC SYLLABLE GWEE</tRule>
 			<tRule>ጕ → gwi ; # ETHIOPIC SYLLABLE GWE</tRule>
+
+			<comment>
+			# No rule yet for ጘ U+1318 ETHIOPIC SYLLABLE GGA
+			# ...ጙጚጛጜጝጞ...
+			# No rule yet for ጟ U+131F ETHIOPIC SYLLABLE GGWAA
+			</comment>
 
 			<tRule>ጠ → t $ejective e ; # ETHIOPIC SYLLABLE THA</tRule>
 			<tRule>ጡ → t $ejective u ; # ETHIOPIC SYLLABLE THU</tRule>
@@ -485,7 +525,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			#
 			# BGN Page 3 Rule 2:
 			#
-			# The characters romaznized with s in rows 5 and 7 may, instead, be
+			# The characters romanized with s in rows 5 and 7 may, instead, be
 			# romanized with š and s, respectively; and the chracters romanized
 			# with ts’ in rows 30 and 31 may, instead, be romanized with ts’ and
 			# t͟s’ respectively. 
@@ -509,6 +549,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<tRule>ፄ → t͟s $ejective ē ; # ETHIOPIC SYLLABLE TZEE</tRule>
 			<tRule>ፅ → t͟s $ejective i ; # ETHIOPIC SYLLABLE TZE</tRule>
 			<tRule>ፆ → t͟s $ejective o ; # ETHIOPIC SYLLABLE TZO</tRule>
+
+			<comment>
+			# No rule yet for ፇ U+1347 ETHIOPIC SYLLABLE TZOA
+			</comment>
+
 			<comment>
 			#
 			########################################################################
@@ -539,6 +584,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<tRule>ፘ → rya ; # ETHIOPIC SYLLABLE RYA</tRule>
 			<tRule>ፙ → mya ; # ETHIOPIC SYLLABLE MYA</tRule>
 			<tRule>ፚ → fya ; # ETHIOPIC SYLLABLE FYA</tRule>
+
+			<comment>
+			# No rule yet for ፚ U+135A ETHIOPIC SYLLABLE FYA
+			</comment>
 
 			<tRule>ቨ → ve ; # ETHIOPIC SYLLABLE VA</tRule>
 			<tRule>ቩ → vu ; # ETHIOPIC SYLLABLE VU</tRule>
