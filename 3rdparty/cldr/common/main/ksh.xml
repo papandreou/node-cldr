@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7839 $"/>
-		<generation date="$Date: 2012-10-11 16:37:12 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8245 $"/>
+		<generation date="$Date: 2013-02-24 22:19:26 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="ksh"/>
 	</identity>
 	<localeDisplayNames>
@@ -664,6 +668,97 @@
 					</dateFormatLength>
 				</dateFormats>
 			</calendar>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern draft="unconfirmed">EEEE, 'dä' d. MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern draft="unconfirmed">d. MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern draft="unconfirmed">d. MMM. y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern draft="unconfirmed">d. M. y GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="d" draft="unconfirmed">d</dateFormatItem>
+						<dateFormatItem id="Ed" draft="unconfirmed">E 'dä' d.</dateFormatItem>
+						<dateFormatItem id="hm" draft="unconfirmed">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm" draft="unconfirmed">H:mm</dateFormatItem>
+						<dateFormatItem id="hms" draft="unconfirmed">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms" draft="unconfirmed">H:mm:ss</dateFormatItem>
+						<dateFormatItem id="M" draft="unconfirmed">L</dateFormatItem>
+						<dateFormatItem id="MEd" draft="unconfirmed">E d. M.</dateFormatItem>
+						<dateFormatItem id="MMM" draft="unconfirmed">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd" draft="unconfirmed">d. MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd" draft="unconfirmed">E d. MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd" draft="unconfirmed">d. MMMM</dateFormatItem>
+						<dateFormatItem id="ms" draft="unconfirmed">mm:ss</dateFormatItem>
+						<dateFormatItem id="y" draft="unconfirmed">y</dateFormatItem>
+						<dateFormatItem id="yM" draft="unconfirmed">Y-MM</dateFormatItem>
+						<dateFormatItem id="yMd" draft="unconfirmed">y-MM-dd</dateFormatItem>
+						<dateFormatItem id="yMEd" draft="unconfirmed">E y-MM-dd</dateFormatItem>
+						<dateFormatItem id="yMMM" draft="unconfirmed">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMd" draft="unconfirmed">d. MMM. y</dateFormatItem>
+						<dateFormatItem id="yMMMEd" draft="unconfirmed">E d. MMM. y</dateFormatItem>
+						<dateFormatItem id="yMMMM" draft="unconfirmed">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQ" draft="unconfirmed">QQQy</dateFormatItem>
+						<dateFormatItem id="yQQQQ" draft="unconfirmed">QQQQ y</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d" draft="unconfirmed">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h" draft="unconfirmed">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m" draft="unconfirmed">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M" draft="unconfirmed">M–M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d" draft="unconfirmed">dd. – dd. MM.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M" draft="unconfirmed">LLL–LLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y" draft="unconfirmed">y–y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M" draft="unconfirmed">MMM–MMM y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">MMM. y – MMM. y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M" draft="unconfirmed">MMMM–MMMM y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">MMMM y – MMMM y</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -843,7 +938,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern draft="unconfirmed">d. M. yyyy</pattern>
+							<pattern draft="unconfirmed">d. M. y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -917,18 +1012,18 @@
 							<greatestDifference id="y" draft="unconfirmed">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="unconfirmed">E yyyy-MM-dd – E yyyy-MM-dd</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E yyyy-MM-dd – E yyyy-MM-dd</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E yyyy-MM-dd – E yyyy-MM-dd</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM–MMM y</greatestDifference>
 							<greatestDifference id="y" draft="unconfirmed">MMM. y – MMM. y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E yyyy-MM-dd – E yyyy-MM-dd</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E yyyy-MM-dd – E yyyy-MM-dd</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E yyyy-MM-dd – E yyyy-MM-dd</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMMM–MMMM y</greatestDifference>
@@ -936,57 +1031,54 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName draft="unconfirmed">vür/noh Chr.</displayName>
-					</field>
-					<field type="year">
-						<displayName draft="unconfirmed">Johr</displayName>
-					</field>
-					<field type="month">
-						<displayName draft="unconfirmed">Mohnd</displayName>
-					</field>
-					<field type="week">
-						<displayName draft="unconfirmed">Woch</displayName>
-					</field>
-					<field type="day">
-						<displayName draft="unconfirmed">Daach</displayName>
-						<relative type="-2" draft="unconfirmed">vörjestere</relative>
-						<relative type="-1" draft="unconfirmed">jestere</relative>
-						<relative type="0" draft="unconfirmed">hück</relative>
-						<relative type="1" draft="unconfirmed">morje</relative>
-						<relative type="2" draft="unconfirmed">övvermorje</relative>
-					</field>
-					<field type="weekday">
-						<displayName draft="unconfirmed">Wochedaach</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName draft="unconfirmed">v.m./n.m.</displayName>
-					</field>
-					<field type="hour">
-						<displayName draft="unconfirmed">Schtund</displayName>
-					</field>
-					<field type="minute">
-						<displayName draft="unconfirmed">Menutt</displayName>
-					</field>
-					<field type="second">
-						<displayName draft="unconfirmed">Sekund</displayName>
-					</field>
-					<field type="zone">
-						<displayName draft="unconfirmed">Zickzon</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName draft="unconfirmed">vür/noh Chr.</displayName>
+			</field>
+			<field type="year">
+				<displayName draft="unconfirmed">Johr</displayName>
+			</field>
+			<field type="month">
+				<displayName draft="unconfirmed">Mohnd</displayName>
+			</field>
+			<field type="week">
+				<displayName draft="unconfirmed">Woch</displayName>
+			</field>
+			<field type="day">
+				<displayName draft="unconfirmed">Daach</displayName>
+				<relative type="-2" draft="unconfirmed">vörjestere</relative>
+				<relative type="-1" draft="unconfirmed">jestere</relative>
+				<relative type="0" draft="unconfirmed">hück</relative>
+				<relative type="1" draft="unconfirmed">morje</relative>
+				<relative type="2" draft="unconfirmed">övvermorje</relative>
+			</field>
+			<field type="weekday">
+				<displayName draft="unconfirmed">Wochedaach</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName draft="unconfirmed">v.m./n.m.</displayName>
+			</field>
+			<field type="hour">
+				<displayName draft="unconfirmed">Schtund</displayName>
+			</field>
+			<field type="minute">
+				<displayName draft="unconfirmed">Menutt</displayName>
+			</field>
+			<field type="second">
+				<displayName draft="unconfirmed">Sekund</displayName>
+			</field>
+			<field type="zone">
+				<displayName draft="unconfirmed">Zickzon</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat draft="unconfirmed">+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat draft="unconfirmed">GMT{0}</gmtFormat>
 			<regionFormat draft="unconfirmed">Zick vun {0}</regionFormat>
 			<fallbackFormat draft="unconfirmed">{1} ({0})</fallbackFormat>
 			<fallbackRegionFormat draft="unconfirmed">Zick vun {1} ({0})</fallbackRegionFormat>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity draft="unconfirmed">Beulah en Nood Dakota</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity draft="unconfirmed">- weße mer nit -</exemplarCity>
 			</zone>
@@ -1221,6 +1313,9 @@
 			</zone>
 			<zone type="America/Yakutat">
 				<exemplarCity draft="unconfirmed">Jakutat</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity draft="unconfirmed">Beulah en Nood Dakota</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity draft="unconfirmed">Neu Salem en Nood Dakota</exemplarCity>
@@ -2115,6 +2210,9 @@
 				<displayName draft="unconfirmed">södaffrekaanesche Rand</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName draft="unconfirmed">sambesche Kwacha (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName draft="unconfirmed">sambesche Kwacha</displayName>
 			</currency>
 			<currency type="ZWD">

@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7485 $"/>
-		<generation date="$Date: 2012-08-05 19:01:41 -0700 (Sun, 05 Aug 2012) $"/>
+		<version number="$Revision: 8245 $"/>
+		<generation date="$Date: 2013-02-24 22:19:26 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="bo"/>
 	</identity>
 	<localeDisplayNames>
@@ -280,6 +284,26 @@
 	</characters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>G སྦྱི་ལོ་y MMMMའི་ཙེས་dད</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>G y ལོ་འི་MMMཙེས་d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="yMMMd">y ལོ་འི་MMMཙེས་d</dateFormatItem>
+						<dateFormatItem id="yMMMMd">སྦྱི་ལོ་y MMMMའི་ཙེས་dད</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -435,48 +459,48 @@
 						<dateFormatItem id="yMMMMd">སྦྱི་ལོ་y MMMMའི་ཙེས་dད</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName draft="provisional">ལོ་རིམ།</displayName>
-					</field>
-					<field type="year">
-						<displayName draft="contributed">ལོ།</displayName>
-					</field>
-					<field type="month">
-						<displayName>ཟླ་བ་</displayName>
-					</field>
-					<field type="week">
-						<displayName draft="provisional">གཟའ་འཁོར།</displayName>
-					</field>
-					<field type="day">
-						<displayName draft="contributed">ཉིན།</displayName>
-						<relative type="-2">ཁས་ཉིན་ཀ་</relative>
-						<relative type="-1">ཁས་ས་</relative>
-						<relative type="0">དེ་རིང་</relative>
-						<relative type="1">སང་ཉིན་</relative>
-						<relative type="2">གནངས་ཉིན་ཀ་</relative>
-					</field>
-					<field type="weekday">
-						<displayName draft="provisional">གཟའ་འཁོར་གཅིག</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName draft="provisional">སྔ་དྲོ། ཕྱི་དྲོ།</displayName>
-					</field>
-					<field type="hour">
-						<displayName>ཆུ་ཙོ་</displayName>
-					</field>
-					<field type="minute">
-						<displayName draft="contributed">སྐར་མ།</displayName>
-					</field>
-					<field type="second">
-						<displayName draft="contributed">སྐར་ཆ།</displayName>
-					</field>
-					<field type="zone">
-						<displayName draft="contributed">དུས་ཚོད།</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName draft="provisional">ལོ་རིམ།</displayName>
+			</field>
+			<field type="year">
+				<displayName draft="contributed">ལོ།</displayName>
+			</field>
+			<field type="month">
+				<displayName>ཟླ་བ་</displayName>
+			</field>
+			<field type="week">
+				<displayName draft="provisional">གཟའ་འཁོར།</displayName>
+			</field>
+			<field type="day">
+				<displayName draft="contributed">ཉིན།</displayName>
+				<relative type="-2">ཁས་ཉིན་ཀ་</relative>
+				<relative type="-1">ཁས་ས་</relative>
+				<relative type="0">དེ་རིང་</relative>
+				<relative type="1">སང་ཉིན་</relative>
+				<relative type="2">གནངས་ཉིན་ཀ་</relative>
+			</field>
+			<field type="weekday">
+				<displayName draft="provisional">གཟའ་འཁོར་གཅིག</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName draft="provisional">སྔ་དྲོ། ཕྱི་དྲོ།</displayName>
+			</field>
+			<field type="hour">
+				<displayName>ཆུ་ཙོ་</displayName>
+			</field>
+			<field type="minute">
+				<displayName draft="contributed">སྐར་མ།</displayName>
+			</field>
+			<field type="second">
+				<displayName draft="contributed">སྐར་ཆ།</displayName>
+			</field>
+			<field type="zone">
+				<displayName draft="contributed">དུས་ཚོད།</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<zone type="Etc/Unknown">
 				<exemplarCity>མ་རྟོགས་པ</exemplarCity>
@@ -520,6 +544,7 @@
 		<currencies>
 			<currency type="CNY">
 				<displayName>ཡུ་ཨན་</displayName>
+				<symbol>¥</symbol>
 			</currency>
 			<currency type="INR">
 				<displayName>རྒྱ་གར་སྒོར་མོ་</displayName>
@@ -539,3 +564,4 @@
 		</messages>
 	</posix>
 </ldml>
+

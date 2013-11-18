@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7727 $"/>
-		<generation date="$Date: 2012-09-13 15:13:56 -0700 (Thu, 13 Sep 2012) $"/>
+		<version number="$Revision: 8245 $"/>
+		<generation date="$Date: 2013-02-24 22:19:26 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="ga"/>
 	</identity>
 	<localeDisplayNames>
@@ -526,6 +530,30 @@
 	</characters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE d MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>d MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>d MMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>dd/MM/y GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -660,7 +688,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>dd/MM/yyyy</pattern>
+							<pattern>dd/MM/y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -686,48 +714,48 @@
 						</timeFormat>
 					</timeFormatLength>
 				</timeFormats>
-				<fields>
-					<field type="era">
-						<displayName draft="unconfirmed">Ré</displayName>
-					</field>
-					<field type="year">
-						<displayName draft="unconfirmed">Bliain</displayName>
-					</field>
-					<field type="month">
-						<displayName draft="unconfirmed">Mí</displayName>
-					</field>
-					<field type="week">
-						<displayName draft="unconfirmed">Seachtain</displayName>
-					</field>
-					<field type="day">
-						<displayName draft="unconfirmed">Lá</displayName>
-						<relative type="-2" draft="unconfirmed">Arú inné</relative>
-						<relative type="-1" draft="unconfirmed">Inné</relative>
-						<relative type="0" draft="unconfirmed">Inniu</relative>
-						<relative type="1" draft="unconfirmed">Amárach</relative>
-						<relative type="2" draft="unconfirmed">Arú amárach</relative>
-					</field>
-					<field type="weekday">
-						<displayName draft="unconfirmed">Lá na seachtaine</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName draft="unconfirmed">a.m./p.m.</displayName>
-					</field>
-					<field type="hour">
-						<displayName draft="unconfirmed">Uair</displayName>
-					</field>
-					<field type="minute">
-						<displayName draft="unconfirmed">Nóiméad</displayName>
-					</field>
-					<field type="second">
-						<displayName draft="unconfirmed">Soicind</displayName>
-					</field>
-					<field type="zone">
-						<displayName draft="unconfirmed">Crios</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName draft="unconfirmed">Ré</displayName>
+			</field>
+			<field type="year">
+				<displayName draft="unconfirmed">Bliain</displayName>
+			</field>
+			<field type="month">
+				<displayName draft="unconfirmed">Mí</displayName>
+			</field>
+			<field type="week">
+				<displayName draft="unconfirmed">Seachtain</displayName>
+			</field>
+			<field type="day">
+				<displayName draft="unconfirmed">Lá</displayName>
+				<relative type="-2" draft="unconfirmed">Arú inné</relative>
+				<relative type="-1" draft="unconfirmed">Inné</relative>
+				<relative type="0" draft="unconfirmed">Inniu</relative>
+				<relative type="1" draft="unconfirmed">Amárach</relative>
+				<relative type="2" draft="unconfirmed">Arú amárach</relative>
+			</field>
+			<field type="weekday">
+				<displayName draft="unconfirmed">Lá na seachtaine</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName draft="unconfirmed">a.m./p.m.</displayName>
+			</field>
+			<field type="hour">
+				<displayName draft="unconfirmed">Uair</displayName>
+			</field>
+			<field type="minute">
+				<displayName draft="unconfirmed">Nóiméad</displayName>
+			</field>
+			<field type="second">
+				<displayName draft="unconfirmed">Soicind</displayName>
+			</field>
+			<field type="zone">
+				<displayName draft="unconfirmed">Crios</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat draft="unconfirmed">+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat draft="unconfirmed">MAG{0}</gmtFormat>
@@ -1501,6 +1529,9 @@
 				<displayName>Rand na hAfraice Theas</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>Kwacha Saimbiach (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>Kwacha Saimbiach</displayName>
 			</currency>
 			<currency type="ZRN">
@@ -1521,3 +1552,4 @@
 		</messages>
 	</posix>
 </ldml>
+

@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
     <identity>
-        <version number="$Revision: 5230 $"/>
-        <generation date="$Date: 2010-12-08 17:55:37 -0800 (Wed, 08 Dec 2010) $"/>
+        <version number="$Revision: 8268 $"/>
+        <generation date="$Date: 2013-03-01 08:26:02 -0600 (Fri, 01 Mar 2013) $"/>
         <language type="zh"/>
         <script type="Hant"/>
     </identity>
@@ -139,7 +144,7 @@
             </ruleset>
             <ruleset type="spellout-cardinal">
                 <rbnfrule value="-x">負→→;</rbnfrule>
-                <rbnfrule value="x.x">←←點→%%spellout-fraction→;</rbnfrule>
+                <rbnfrule value="x.x">←←點→→→;</rbnfrule>
                 <rbnfrule value="0">零;</rbnfrule>
                 <rbnfrule value="1">一;</rbnfrule>
                 <rbnfrule value="2">二;</rbnfrule>
@@ -163,7 +168,7 @@
             </ruleset>
             <ruleset type="spellout-cardinal-alternate2">
                 <rbnfrule value="-x">負→→;</rbnfrule>
-                <rbnfrule value="x.x">←←點→%%spellout-fraction→;</rbnfrule>
+                <rbnfrule value="x.x">=%spellout-cardinal=;</rbnfrule>
                 <rbnfrule value="0">零;</rbnfrule>
                 <rbnfrule value="1">一;</rbnfrule>
                 <rbnfrule value="2">兩;</rbnfrule>
@@ -188,22 +193,6 @@
             <ruleset type="cardinal-twenties" access="private">
                 <rbnfrule value="1">;</rbnfrule>
                 <rbnfrule value="2">二;</rbnfrule>
-            </ruleset>
-            <ruleset type="spellout-fraction" access="private">
-                <rbnfrule value="10">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="100">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="1000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="10000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="100000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="1000000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="10000000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="100000000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="1000000000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="10000000000">←0←;</rbnfrule>
-            </ruleset>
-            <ruleset type="spellout-fraction-digits" access="private">
-                <rbnfrule value="0">=%spellout-numbering=;</rbnfrule>
-                <rbnfrule value="10">←←→→;</rbnfrule>
             </ruleset>
             <ruleset type="spellout-ordinal">
                 <rbnfrule value="x.x">=#,###0.#=;</rbnfrule>

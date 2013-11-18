@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7372 $"/>
-		<generation date="$Date: 2012-07-05 23:00:00 -0700 (Thu, 5 July 2012) $"/>
+		<version number="$Revision: 8268 $"/>
+		<generation date="$Date: 2013-03-01 08:26:02 -0600 (Fri, 01 Mar 2013) $"/>
 		<language type="bs"/> 
 		<script type="Cyrl" /> 
 	</identity>
 	<collations  validSubLocales="bs_Cyrl_BA">
-		<alias source="sr" path="//ldml/collations"/>
+		<collation type="standard">
+			<rules><import source="sr"/></rules>
+		</collation>
     </collations>
 </ldml>

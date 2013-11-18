@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7830 $"/>
-		<generation date="$Date: 2012-10-11 02:06:51 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="vi"/>
 	</identity>
 	<localeDisplayNames>
@@ -978,6 +982,7 @@
 			<territory type="PN">Quần đảo Pitcairn</territory>
 			<territory type="PR">Puerto Rico</territory>
 			<territory type="PS">Lãnh thổ Palestine</territory>
+			<territory type="PS" alt="short">Palestine</territory>
 			<territory type="PT">Bồ Đào Nha</territory>
 			<territory type="PW">Palau</territory>
 			<territory type="PY">Paraguay</territory>
@@ -1042,6 +1047,7 @@
 			<territory type="VU">Vanuatu</territory>
 			<territory type="WF">Wallis và Futuna</territory>
 			<territory type="WS">Samoa</territory>
+			<territory type="XK">Kosovo</territory>
 			<territory type="YE">Yemen</territory>
 			<territory type="YT">Mayotte</territory>
 			<territory type="ZA">Nam Phi</territory>
@@ -1120,7 +1126,6 @@
 			<type type="coptic" key="calendar">Lịch Copts</type>
 			<type type="deva" key="numbers">Chữ số Devanagari</type>
 			<type type="dictionary" key="collation">Thứ tự sắp xếp theo từ điển</type>
-			<type type="direct" key="collation" draft="contributed">Trực tiếp</type>
 			<type type="ducet" key="collation">Thứ tự sắp xếp unicode mặc định</type>
 			<type type="ethi" key="numbers">Chữ số Ethiopia</type>
 			<type type="ethiopic" key="calendar">Lịch Ethiopia</type>
@@ -1264,19 +1269,19 @@
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
-							<pattern>dd-MM-yyyy G</pattern>
+							<pattern>dd-MM-y G</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>dd/MM/yyyy G</pattern>
+							<pattern>dd/MM/y G</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
 				<dateTimeFormats>
 					<availableFormats>
-						<dateFormatItem id="d">'Ngày' d</dateFormatItem>
-						<dateFormatItem id="Ed">E, d</dateFormatItem>
+						<dateFormatItem id="d">'Ngày' dd</dateFormatItem>
+						<dateFormatItem id="Ed">E, dd</dateFormatItem>
 						<dateFormatItem id="h" draft="contributed">h'h' a</dateFormatItem>
 						<dateFormatItem id="H" draft="contributed">HH'h'</dateFormatItem>
 						<dateFormatItem id="hm" draft="contributed">h:mm a</dateFormatItem>
@@ -1284,28 +1289,27 @@
 						<dateFormatItem id="hms" draft="contributed">h:mm:ss a</dateFormatItem>
 						<dateFormatItem id="Hms" draft="contributed">HH:mm:ss</dateFormatItem>
 						<dateFormatItem id="M" draft="contributed">'tháng' L</dateFormatItem>
-						<dateFormatItem id="Md">d-M</dateFormatItem>
-						<dateFormatItem id="MEd">E, d-M</dateFormatItem>
+						<dateFormatItem id="Md">dd-M</dateFormatItem>
+						<dateFormatItem id="MEd">E, dd-M</dateFormatItem>
 						<dateFormatItem id="MMdd">dd-MM</dateFormatItem>
 						<dateFormatItem id="MMM" draft="contributed">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
-						<dateFormatItem id="MMMEd">E, d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
-						<dateFormatItem id="MMMMEd">E, d MMMM</dateFormatItem>
+						<dateFormatItem id="MMMd">dd MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, dd MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd">dd MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E, dd MMMM</dateFormatItem>
 						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
 						<dateFormatItem id="ms" draft="contributed">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">'Năm' y G</dateFormatItem>
 						<dateFormatItem id="yM" draft="contributed">M/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yMEd">E, d-M-yyyy G</dateFormatItem>
+						<dateFormatItem id="yMd">dd-M-y G</dateFormatItem>
+						<dateFormatItem id="yMEd">E, dd-M-y G</dateFormatItem>
+						<dateFormatItem id="yMM">MM-y G</dateFormatItem>
 						<dateFormatItem id="yMMM">MMM y G</dateFormatItem>
-						<dateFormatItem id="yMMMd">d MMM y G</dateFormatItem>
-						<dateFormatItem id="yMMMEd">E, d MMM y G</dateFormatItem>
+						<dateFormatItem id="yMMMd">dd MMM y G</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, dd MMM y G</dateFormatItem>
 						<dateFormatItem id="yMMMM">MMMM y G</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y G</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y G</dateFormatItem>
-						<dateFormatItem id="yyyy">'Năm' y G</dateFormatItem>
-						<dateFormatItem id="yyyyMd">d-M-yyyy G</dateFormatItem>
-						<dateFormatItem id="yyyyMM">MM-yyyy G</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
 			</calendar>
@@ -1537,6 +1541,179 @@
 					</monthContext>
 				</months>
 			</calendar>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, 'ngày' dd MMMM 'năm' y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>'Ngày' dd 'tháng' M 'năm' y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>dd-MM-y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>dd/MM/y GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{0} {1}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{0} {1}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{0} {1}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{0} {1}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">'Ngày' dd</dateFormatItem>
+						<dateFormatItem id="Ed">E, dd</dateFormatItem>
+						<dateFormatItem id="h">h a</dateFormatItem>
+						<dateFormatItem id="H">HH</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">H:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">H:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">dd-M</dateFormatItem>
+						<dateFormatItem id="MEd">E, dd-M</dateFormatItem>
+						<dateFormatItem id="MMdd" draft="contributed">dd-MM</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">dd MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, dd MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd">dd MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E, dd MMMM</dateFormatItem>
+						<dateFormatItem id="mmss" draft="contributed">mm:ss</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">'Năm' y</dateFormatItem>
+						<dateFormatItem id="yM">M/y</dateFormatItem>
+						<dateFormatItem id="yMd">d/M/y</dateFormatItem>
+						<dateFormatItem id="yMEd">E, dd-M-y</dateFormatItem>
+						<dateFormatItem id="yMM">MM-y</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMd">dd MMM, y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, dd MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">'Ngày' dd-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h'h' a - h'h' a</greatestDifference>
+							<greatestDifference id="h">h'h' - h'h' a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH'h' - HH'h'</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm-h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm-h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm-HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="h">h:mm-h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm-h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h'h' a - h'h' a v</greatestDifference>
+							<greatestDifference id="h">h'h'-h'h' a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH'h'-HH'h' v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">'Tháng' M - 'Tháng' M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">dd/MM - dd/MM</greatestDifference>
+							<greatestDifference id="M">dd/MM - dd/MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">EEEE, dd/MM - EEEE, dd/MM</greatestDifference>
+							<greatestDifference id="M">EEEE, dd/MM - EEEE, dd/MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM-MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d" draft="contributed">'Ngày' dd 'tháng' M - 'Ngày' dd 'tháng' M</greatestDifference>
+							<greatestDifference id="M" draft="contributed">'Ngày' dd 'tháng' M - 'Ngày' dd 'tháng' M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d" draft="contributed">EEEE, 'ngày' dd - EEEE, 'ngày' dd 'tháng' M</greatestDifference>
+							<greatestDifference id="M" draft="contributed">EEEE, 'ngày' dd 'tháng' M - EEEE, 'ngày' dd 'tháng' M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y-y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">MM/y - MM/y</greatestDifference>
+							<greatestDifference id="y">MM/y - MM/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">dd/MM/y - dd/MM/y</greatestDifference>
+							<greatestDifference id="M">dd/MM/y - dd/MM/y</greatestDifference>
+							<greatestDifference id="y">dd/MM/y - dd/MM/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">EEEE, dd/MM/y - EEEE, dd/MM/y</greatestDifference>
+							<greatestDifference id="M">EEEE, dd/MM/y - EEEE, dd/MM/y</greatestDifference>
+							<greatestDifference id="y">EEEE, dd/MM/y - EEEE, dd/MM/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">'Tháng' M - 'Tháng' M 'năm' y</greatestDifference>
+							<greatestDifference id="y">'Tháng' M 'năm' y - 'Tháng' M 'năm' y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d" draft="contributed">'Ngày' dd 'tháng' M - 'Ngày' dd 'tháng' M 'năm' y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">'Ngày' dd 'tháng' M - 'Ngày' dd 'tháng' M 'năm' y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">'Ngày' dd 'tháng' M 'năm' y - 'Ngày' dd 'tháng' M 'năm' y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d" draft="contributed">EEEE, 'ngày' dd MMM - EEEE, 'ngày' dd MMM 'năm' y</greatestDifference>
+							<greatestDifference id="M">E, dd 'tháng' M - E, dd 'tháng' M, y</greatestDifference>
+							<greatestDifference id="y">E, dd 'tháng' M, y - E, dd 'tháng' M, y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">MMMM-MMMM y</greatestDifference>
+							<greatestDifference id="y">MMMM y – MMMM y</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1752,12 +1929,12 @@
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
-							<pattern>dd-MM-yyyy</pattern>
+							<pattern>dd-MM-y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>dd/MM/yyyy</pattern>
+							<pattern>dd/MM/y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -1805,8 +1982,8 @@
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
-						<dateFormatItem id="d">'Ngày' d</dateFormatItem>
-						<dateFormatItem id="Ed">E, d</dateFormatItem>
+						<dateFormatItem id="d">'Ngày' dd</dateFormatItem>
+						<dateFormatItem id="Ed">E, dd</dateFormatItem>
 						<dateFormatItem id="h">h a</dateFormatItem>
 						<dateFormatItem id="H">HH</dateFormatItem>
 						<dateFormatItem id="hm">h:mm a</dateFormatItem>
@@ -1814,33 +1991,32 @@
 						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
 						<dateFormatItem id="Hms">H:mm:ss</dateFormatItem>
 						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">d-M</dateFormatItem>
-						<dateFormatItem id="MEd">E, d-M</dateFormatItem>
+						<dateFormatItem id="Md">dd-M</dateFormatItem>
+						<dateFormatItem id="MEd">E, dd-M</dateFormatItem>
 						<dateFormatItem id="MMdd" draft="contributed">dd-MM</dateFormatItem>
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
-						<dateFormatItem id="MMMEd">E, d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
-						<dateFormatItem id="MMMMEd">E, d MMMM</dateFormatItem>
+						<dateFormatItem id="MMMd">dd MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, dd MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd">dd MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E, dd MMMM</dateFormatItem>
 						<dateFormatItem id="mmss" draft="contributed">mm:ss</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">'Năm' y</dateFormatItem>
-						<dateFormatItem id="yM">M/yyyy</dateFormatItem>
+						<dateFormatItem id="yM">M/y</dateFormatItem>
 						<dateFormatItem id="yMd">d/M/y</dateFormatItem>
-						<dateFormatItem id="yMEd">E, d-M-yyyy</dateFormatItem>
+						<dateFormatItem id="yMEd">E, dd-M-y</dateFormatItem>
+						<dateFormatItem id="yMM">MM-y</dateFormatItem>
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
-						<dateFormatItem id="yMMMd">d MMM, y</dateFormatItem>
-						<dateFormatItem id="yMMMEd">E, d MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMd">dd MMM, y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, dd MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
-						<dateFormatItem id="yyyy" draft="contributed">y</dateFormatItem>
-						<dateFormatItem id="yyyyMM">MM-yyyy</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
 						<intervalFormatItem id="d">
-							<greatestDifference id="d">'Ngày' d-d</greatestDifference>
+							<greatestDifference id="d">'Ngày' dd-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="h">
 							<greatestDifference id="a">h'h' a - h'h' a</greatestDifference>
@@ -1900,18 +2076,18 @@
 							<greatestDifference id="y">y-y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">MM/yyyy - MM/yyyy</greatestDifference>
-							<greatestDifference id="y">MM/yyyy - MM/yyyy</greatestDifference>
+							<greatestDifference id="M">MM/y - MM/y</greatestDifference>
+							<greatestDifference id="y">MM/y - MM/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">dd/MM/yyyy - dd/MM/yyyy</greatestDifference>
-							<greatestDifference id="M">dd/MM/yyyy - dd/MM/yyyy</greatestDifference>
-							<greatestDifference id="y">dd/MM/yyyy - dd/MM/yyyy</greatestDifference>
+							<greatestDifference id="d">dd/MM/y - dd/MM/y</greatestDifference>
+							<greatestDifference id="M">dd/MM/y - dd/MM/y</greatestDifference>
+							<greatestDifference id="y">dd/MM/y - dd/MM/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">EEEE, dd/MM/yyyy - EEEE, dd/MM/yyyy</greatestDifference>
-							<greatestDifference id="M">EEEE, dd/MM/yyyy - EEEE, dd/MM/yyyy</greatestDifference>
-							<greatestDifference id="y">EEEE, dd/MM/yyyy - EEEE, dd/MM/yyyy</greatestDifference>
+							<greatestDifference id="d">EEEE, dd/MM/y - EEEE, dd/MM/y</greatestDifference>
+							<greatestDifference id="M">EEEE, dd/MM/y - EEEE, dd/MM/y</greatestDifference>
+							<greatestDifference id="y">EEEE, dd/MM/y - EEEE, dd/MM/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">'Tháng' M - 'Tháng' M 'năm' y</greatestDifference>
@@ -1924,8 +2100,8 @@
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d" draft="contributed">EEEE, 'ngày' dd MMM - EEEE, 'ngày' dd MMM 'năm' y</greatestDifference>
-							<greatestDifference id="M">E, d 'tháng' M - E, d 'tháng' M, y</greatestDifference>
-							<greatestDifference id="y">E, d 'tháng' M, y - E, d 'tháng' M, y</greatestDifference>
+							<greatestDifference id="M">E, dd 'tháng' M - E, dd 'tháng' M, y</greatestDifference>
+							<greatestDifference id="y">E, dd 'tháng' M, y - E, dd 'tháng' M, y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM-MMMM y</greatestDifference>
@@ -1933,55 +2109,6 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>Thời đại</displayName>
-					</field>
-					<field type="year">
-						<displayName>Năm</displayName>
-						<relative type="-1">Năm ngoái</relative>
-						<relative type="0">Năm nay</relative>
-						<relative type="1">Năm sau</relative>
-					</field>
-					<field type="month">
-						<displayName>Tháng</displayName>
-						<relative type="-1">Tháng trước</relative>
-						<relative type="0">Tháng này</relative>
-						<relative type="1">Tháng sau</relative>
-					</field>
-					<field type="week">
-						<displayName>Tuần</displayName>
-						<relative type="-1">Tuần trước</relative>
-						<relative type="0">Tuần này</relative>
-						<relative type="1">Tuần sau</relative>
-					</field>
-					<field type="day">
-						<displayName>Ngày</displayName>
-						<relative type="-2">Ngày hôm kia</relative>
-						<relative type="-1">Ngày hôm qua</relative>
-						<relative type="0">Hôm nay</relative>
-						<relative type="1">Ngày mai</relative>
-						<relative type="2">Ngày kia</relative>
-					</field>
-					<field type="weekday">
-						<displayName>Ngày trong tuần</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>SA/CH</displayName>
-					</field>
-					<field type="hour">
-						<displayName>Giờ</displayName>
-					</field>
-					<field type="minute">
-						<displayName>Phút</displayName>
-					</field>
-					<field type="second">
-						<displayName>Giây</displayName>
-					</field>
-					<field type="zone">
-						<displayName>Múi giờ</displayName>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="hebrew">
 				<months>
@@ -2128,8 +2255,8 @@
 				</dateFormats>
 				<dateTimeFormats>
 					<availableFormats>
-						<dateFormatItem id="d">'Ngày' d</dateFormatItem>
-						<dateFormatItem id="Ed">E, d</dateFormatItem>
+						<dateFormatItem id="d">'Ngày' dd</dateFormatItem>
+						<dateFormatItem id="Ed">E, dd</dateFormatItem>
 						<dateFormatItem id="Gy">y G</dateFormatItem>
 						<dateFormatItem id="h" draft="contributed">h a</dateFormatItem>
 						<dateFormatItem id="H" draft="contributed">HH</dateFormatItem>
@@ -2138,35 +2265,27 @@
 						<dateFormatItem id="hms" draft="contributed">h:mm:ss a</dateFormatItem>
 						<dateFormatItem id="Hms" draft="contributed">HH:mm:ss</dateFormatItem>
 						<dateFormatItem id="M" draft="contributed">L</dateFormatItem>
-						<dateFormatItem id="Md">d-M</dateFormatItem>
-						<dateFormatItem id="MEd">E, d-M</dateFormatItem>
+						<dateFormatItem id="Md">dd-M</dateFormatItem>
+						<dateFormatItem id="MEd">E, dd-M</dateFormatItem>
 						<dateFormatItem id="MMdd">dd-MM</dateFormatItem>
 						<dateFormatItem id="MMM" draft="contributed">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
-						<dateFormatItem id="MMMEd">E, d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
-						<dateFormatItem id="MMMMEd">E, d MMMM</dateFormatItem>
+						<dateFormatItem id="MMMd">dd MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, dd MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd">dd MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E, dd MMMM</dateFormatItem>
 						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
 						<dateFormatItem id="ms" draft="contributed">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y G</dateFormatItem>
-						<dateFormatItem id="yM" draft="contributed">M/yyyy</dateFormatItem>
-						<dateFormatItem id="yMEd" draft="contributed">E, d-M-yyyy</dateFormatItem>
+						<dateFormatItem id="yM" draft="contributed">M/y</dateFormatItem>
+						<dateFormatItem id="yMd">dd-M-y G</dateFormatItem>
+						<dateFormatItem id="yMEd" draft="contributed">E, dd-M-y</dateFormatItem>
+						<dateFormatItem id="yMM">MM-y G</dateFormatItem>
 						<dateFormatItem id="yMMM" draft="contributed">MMM y</dateFormatItem>
-						<dateFormatItem id="yMMMEd" draft="contributed">E, d MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMd">dd MMM y G</dateFormatItem>
+						<dateFormatItem id="yMMMEd" draft="contributed">E, dd MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMM" draft="contributed">MMMM y</dateFormatItem>
-						<dateFormatItem id="yQQQ" draft="contributed">QQQ yyyy</dateFormatItem>
+						<dateFormatItem id="yQQQ" draft="contributed">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ" draft="contributed">QQQQ y</dateFormatItem>
-						<dateFormatItem id="yyQQQ">QQQ yy G</dateFormatItem>
-						<dateFormatItem id="yyyy">'Năm' y G</dateFormatItem>
-						<dateFormatItem id="yyyyMd">d-M-y G</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">E, d-M-y G</dateFormatItem>
-						<dateFormatItem id="yyyyMM">MM-y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">E, d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">MMMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQQ">QQQQ y G</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
 			</calendar>
@@ -2195,27 +2314,26 @@
 				</dateFormats>
 				<dateTimeFormats>
 					<availableFormats>
-						<dateFormatItem id="d">'Ngày' d</dateFormatItem>
-						<dateFormatItem id="Ed">E, d</dateFormatItem>
-						<dateFormatItem id="Md">d-M</dateFormatItem>
-						<dateFormatItem id="MEd">E, d-M</dateFormatItem>
+						<dateFormatItem id="d">'Ngày' dd</dateFormatItem>
+						<dateFormatItem id="Ed">E, dd</dateFormatItem>
+						<dateFormatItem id="Md">dd-M</dateFormatItem>
+						<dateFormatItem id="MEd">E, dd-M</dateFormatItem>
 						<dateFormatItem id="MMdd">dd-MM</dateFormatItem>
-						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
-						<dateFormatItem id="MMMEd">E, d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
-						<dateFormatItem id="MMMMEd">E, d MMMM</dateFormatItem>
+						<dateFormatItem id="MMMd">dd MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, dd MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd">dd MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E, dd MMMM</dateFormatItem>
 						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
-						<dateFormatItem id="yyQQQ">QQQ yy G</dateFormatItem>
-						<dateFormatItem id="yyyy">'Năm' y G</dateFormatItem>
-						<dateFormatItem id="yyyyMd">d-M-y G</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">E, d-M-y G</dateFormatItem>
-						<dateFormatItem id="yyyyMM">MM-y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">E, d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">MMMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQQ">QQQQ y G</dateFormatItem>
+						<dateFormatItem id="y">'Năm' y G</dateFormatItem>
+						<dateFormatItem id="yMd">dd-M-y G</dateFormatItem>
+						<dateFormatItem id="yMEd">E, dd-M-y G</dateFormatItem>
+						<dateFormatItem id="yMM">MM-y G</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y G</dateFormatItem>
+						<dateFormatItem id="yMMMd">dd MMM y G</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, dd MMM y G</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y G</dateFormatItem>
+						<dateFormatItem id="yQQQ">QQQ y G</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y G</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
 			</calendar>
@@ -2314,8 +2432,8 @@
 				</dateFormats>
 				<dateTimeFormats>
 					<availableFormats>
-						<dateFormatItem id="d">'Ngày' d</dateFormatItem>
-						<dateFormatItem id="Ed">E, d</dateFormatItem>
+						<dateFormatItem id="d">'Ngày' dd</dateFormatItem>
+						<dateFormatItem id="Ed">E, dd</dateFormatItem>
 						<dateFormatItem id="h" draft="contributed">h'h' a</dateFormatItem>
 						<dateFormatItem id="H" draft="contributed">HH'h'</dateFormatItem>
 						<dateFormatItem id="hm" draft="contributed">h:mm a</dateFormatItem>
@@ -2323,32 +2441,79 @@
 						<dateFormatItem id="hms" draft="contributed">h:mm:ss a</dateFormatItem>
 						<dateFormatItem id="Hms" draft="contributed">HH:mm:ss</dateFormatItem>
 						<dateFormatItem id="M" draft="contributed">'tháng' L</dateFormatItem>
-						<dateFormatItem id="Md">d-M</dateFormatItem>
-						<dateFormatItem id="MEd">E, d-M</dateFormatItem>
+						<dateFormatItem id="Md">dd-M</dateFormatItem>
+						<dateFormatItem id="MEd">E, dd-M</dateFormatItem>
 						<dateFormatItem id="MMdd">dd-MM</dateFormatItem>
 						<dateFormatItem id="MMM" draft="contributed">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
-						<dateFormatItem id="MMMEd">E, d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
-						<dateFormatItem id="MMMMEd">E, d MMMM</dateFormatItem>
+						<dateFormatItem id="MMMd">dd MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, dd MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd">dd MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E, dd MMMM</dateFormatItem>
 						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
 						<dateFormatItem id="ms" draft="contributed">mm:ss</dateFormatItem>
 						<dateFormatItem id="y" draft="contributed">y G</dateFormatItem>
-						<dateFormatItem id="yyQQQ">QQQ yy G</dateFormatItem>
-						<dateFormatItem id="yyyy">'Năm' y G</dateFormatItem>
-						<dateFormatItem id="yyyyMd">d-M-y G</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">E, d-M-y G</dateFormatItem>
-						<dateFormatItem id="yyyyMM">MM-y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">E, d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">MMMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQQ">QQQQ y G</dateFormatItem>
+						<dateFormatItem id="yMd">dd-M-y G</dateFormatItem>
+						<dateFormatItem id="yMEd">E, dd-M-y G</dateFormatItem>
+						<dateFormatItem id="yMM">MM-y G</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y G</dateFormatItem>
+						<dateFormatItem id="yMMMd">dd MMM y G</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, dd MMM y G</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y G</dateFormatItem>
+						<dateFormatItem id="yQQQ">QQQ y G</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y G</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>Thời đại</displayName>
+			</field>
+			<field type="year">
+				<displayName>Năm</displayName>
+				<relative type="-1">Năm ngoái</relative>
+				<relative type="0">Năm nay</relative>
+				<relative type="1">Năm sau</relative>
+			</field>
+			<field type="month">
+				<displayName>Tháng</displayName>
+				<relative type="-1">Tháng trước</relative>
+				<relative type="0">Tháng này</relative>
+				<relative type="1">Tháng sau</relative>
+			</field>
+			<field type="week">
+				<displayName>Tuần</displayName>
+				<relative type="-1">Tuần trước</relative>
+				<relative type="0">Tuần này</relative>
+				<relative type="1">Tuần sau</relative>
+			</field>
+			<field type="day">
+				<displayName>Ngày</displayName>
+				<relative type="-2">Ngày hôm kia</relative>
+				<relative type="-1">Ngày hôm qua</relative>
+				<relative type="0">Hôm nay</relative>
+				<relative type="1">Ngày mai</relative>
+				<relative type="2">Ngày kia</relative>
+			</field>
+			<field type="weekday">
+				<displayName>Ngày trong tuần</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>SA/CH</displayName>
+			</field>
+			<field type="hour">
+				<displayName>Giờ</displayName>
+			</field>
+			<field type="minute">
+				<displayName>Phút</displayName>
+			</field>
+			<field type="second">
+				<displayName>Giây</displayName>
+			</field>
+			<field type="zone">
+				<displayName>Múi giờ</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
@@ -2356,17 +2521,8 @@
 			<regionFormat>Giờ {0}</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<fallbackRegionFormat>Giờ {1} ({0})</fallbackRegionFormat>
-			<zone type="America/Lower_Princes">
-				<exemplarCity>Lower Prince's Quarter</exemplarCity>
-			</zone>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity>Beulah, Bắc Dakota</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity draft="contributed">Không rõ</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity draft="provisional">Curaçao</exemplarCity>
 			</zone>
 			<zone type="Antarctica/DumontDUrville">
 				<exemplarCity draft="contributed">Dumont D'Urville</exemplarCity>
@@ -2394,6 +2550,9 @@
 			</zone>
 			<zone type="Asia/Harbin">
 				<exemplarCity draft="contributed">Cáp Nhĩ Tân</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity draft="provisional">Curaçao</exemplarCity>
 			</zone>
 			<zone type="Europe/Prague">
 				<exemplarCity draft="contributed">Praha</exemplarCity>
@@ -2459,8 +2618,14 @@
 			<zone type="Africa/Sao_Tome">
 				<exemplarCity draft="provisional">São Tomé</exemplarCity>
 			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity>Lower Prince's Quarter</exemplarCity>
+			</zone>
 			<zone type="Asia/Taipei">
 				<exemplarCity>Đài Bắc</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity>Beulah, Bắc Dakota</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity>New Salem, Bắc Dakota</exemplarCity>
@@ -2535,25 +2700,11 @@
 					<daylight>Giờ Mùa Hè Tây Phi</daylight>
 				</long>
 			</metazone>
-			<metazone type="Aktyubinsk">
-				<long>
-					<generic draft="contributed">Giờ Aktyubinsk</generic>
-					<standard draft="contributed">Giờ Chuẩn Aktyubinsk</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Aktyubinsk</daylight>
-				</long>
-			</metazone>
 			<metazone type="Alaska">
 				<long>
 					<generic>Giờ Alaska</generic>
 					<standard>Giờ Chuẩn Alaska</standard>
 					<daylight>Giờ Mùa Hè Alaska</daylight>
-				</long>
-			</metazone>
-			<metazone type="Alaska_Hawaii">
-				<long>
-					<generic draft="contributed">Giờ Alaska-Hawaii</generic>
-					<standard draft="contributed">Giờ Chuẩn Alaska-Hawaii</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Alaska-Hawaii</daylight>
 				</long>
 			</metazone>
 			<metazone type="Almaty">
@@ -2647,13 +2798,6 @@
 					<daylight>Giờ Mùa Hè Armenia</daylight>
 				</long>
 			</metazone>
-			<metazone type="Ashkhabad">
-				<long>
-					<generic draft="contributed">Giờ Ashkhabad</generic>
-					<standard draft="contributed">Giờ Chuẩn Ashkhabad</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Ashkhabad</daylight>
-				</long>
-			</metazone>
 			<metazone type="Atlantic">
 				<long>
 					<generic>Giờ Đại Tây Dương</generic>
@@ -2703,25 +2847,11 @@
 					<daylight>Giờ Mùa Hè Azores</daylight>
 				</long>
 			</metazone>
-			<metazone type="Baku">
-				<long>
-					<generic draft="contributed">Giờ Baku</generic>
-					<standard draft="contributed">Giờ Chuẩn Baku</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Baku</daylight>
-				</long>
-			</metazone>
 			<metazone type="Bangladesh">
 				<long>
 					<generic>Giờ Bangladesh</generic>
 					<standard>Giờ Chuẩn Bangladesh</standard>
 					<daylight>Giờ Mùa Hè Bangladesh</daylight>
-				</long>
-			</metazone>
-			<metazone type="Bering">
-				<long>
-					<generic draft="contributed">Giờ Bering</generic>
-					<standard draft="contributed">Giờ Chuẩn Bering</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Bering</daylight>
 				</long>
 			</metazone>
 			<metazone type="Bhutan">
@@ -2732,13 +2862,6 @@
 			<metazone type="Bolivia">
 				<long>
 					<standard>Giờ Bolivia</standard>
-				</long>
-			</metazone>
-			<metazone type="Borneo">
-				<long>
-					<generic draft="contributed">Giờ Borneo</generic>
-					<standard draft="contributed">Giờ Chuẩn Borneo</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Borneo</daylight>
 				</long>
 			</metazone>
 			<metazone type="Brasilia">
@@ -2763,11 +2886,6 @@
 			<metazone type="Chamorro">
 				<long>
 					<standard>Giờ Chamorro</standard>
-				</long>
-			</metazone>
-			<metazone type="Changbai">
-				<long>
-					<standard draft="contributed">Giờ Changbai</standard>
 				</long>
 			</metazone>
 			<metazone type="Chatham">
@@ -2829,11 +2947,6 @@
 					<daylight draft="contributed">Giờ Mùa Hè Cuba</daylight>
 				</long>
 			</metazone>
-			<metazone type="Dacca">
-				<long>
-					<standard draft="contributed">Giờ Dacca</standard>
-				</long>
-			</metazone>
 			<metazone type="Davis">
 				<long>
 					<standard>Giờ Davis</standard>
@@ -2842,18 +2955,6 @@
 			<metazone type="DumontDUrville">
 				<long>
 					<standard>Giờ Dumont-d'Urville</standard>
-				</long>
-			</metazone>
-			<metazone type="Dushanbe">
-				<long>
-					<generic draft="contributed">Giờ Dushanbe</generic>
-					<standard draft="contributed">Giờ Chuẩn Dushanbe</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Dushanbe</daylight>
-				</long>
-			</metazone>
-			<metazone type="Dutch_Guiana">
-				<long>
-					<standard draft="contributed">Giờ Guiana thuộc Hà Lan</standard>
 				</long>
 			</metazone>
 			<metazone type="East_Timor">
@@ -2918,13 +3019,6 @@
 					<standard>Giờ Nam Cực và Nam Nước Pháp</standard>
 				</long>
 			</metazone>
-			<metazone type="Frunze">
-				<long>
-					<generic draft="contributed">Giờ Frunze</generic>
-					<standard draft="contributed">Giờ Chuẩn Frunze</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Frunze</daylight>
-				</long>
-			</metazone>
 			<metazone type="Galapagos">
 				<long>
 					<standard>Giờ Galapagos</standard>
@@ -2950,13 +3044,6 @@
 			<metazone type="GMT">
 				<long>
 					<standard>Giờ Trung Bình Greenwich</standard>
-				</long>
-			</metazone>
-			<metazone type="Greenland_Central">
-				<long>
-					<generic draft="contributed">Giờ Miền Trung Greenland</generic>
-					<standard draft="contributed">Giờ Chuẩn Miền Trung Greenland</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Miền Trung Greenland</daylight>
 				</long>
 			</metazone>
 			<metazone type="Greenland_Eastern">
@@ -3074,16 +3161,6 @@
 					<daylight draft="contributed">Giờ mùa hè Petropavlovsk-Kamchatski</daylight>
 				</long>
 			</metazone>
-			<metazone type="Karachi">
-				<long>
-					<standard draft="contributed">Giờ Karachi</standard>
-				</long>
-			</metazone>
-			<metazone type="Kashgar">
-				<long>
-					<standard draft="contributed">Giờ Kashgar</standard>
-				</long>
-			</metazone>
 			<metazone type="Kazakhstan_Eastern">
 				<long>
 					<standard>Giờ Miền Đông Kazakhstan</standard>
@@ -3092,13 +3169,6 @@
 			<metazone type="Kazakhstan_Western">
 				<long>
 					<standard>Giờ Miền Tây Kazakhstan</standard>
-				</long>
-			</metazone>
-			<metazone type="Kizilorda">
-				<long>
-					<generic draft="contributed">Giờ Kizilorda</generic>
-					<standard draft="contributed">Giờ Chuẩn Kizilorda</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Kizilorda</daylight>
 				</long>
 			</metazone>
 			<metazone type="Korea">
@@ -3120,18 +3190,6 @@
 					<daylight>Giờ Mùa Hè Krasnoyarsk</daylight>
 				</long>
 			</metazone>
-			<metazone type="Kuybyshev">
-				<long>
-					<generic draft="contributed">Giờ Kuybyshev</generic>
-					<standard draft="contributed">Giờ Chuẩn Kuybyshev</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Kuybyshev</daylight>
-				</long>
-			</metazone>
-			<metazone type="Kwajalein">
-				<long>
-					<standard draft="contributed">Giờ Kwajalein</standard>
-				</long>
-			</metazone>
 			<metazone type="Kyrgystan">
 				<long>
 					<standard>Giờ Kyrgystan</standard>
@@ -3145,11 +3203,6 @@
 			<metazone type="Line_Islands">
 				<long>
 					<standard>Giờ Quần Đảo Line</standard>
-				</long>
-			</metazone>
-			<metazone type="Long_Shu">
-				<long>
-					<standard draft="contributed">Giờ Long-Shu</standard>
 				</long>
 			</metazone>
 			<metazone type="Lord_Howe">
@@ -3176,11 +3229,6 @@
 					<generic>Giờ Magadan</generic>
 					<standard>Giờ Chuẩn Magadan</standard>
 					<daylight>Giờ mùa hè Magadan</daylight>
-				</long>
-			</metazone>
-			<metazone type="Malaya">
-				<long>
-					<standard draft="contributed">Giờ Malaya</standard>
 				</long>
 			</metazone>
 			<metazone type="Malaysia">
@@ -3392,28 +3440,16 @@
 					<daylight draft="contributed">Giờ mùa hè Samara</daylight>
 				</long>
 			</metazone>
-			<metazone type="Samarkand">
-				<long>
-					<generic draft="contributed">Giờ Samarkand</generic>
-					<standard draft="contributed">Giờ Chuẩn Samarkand</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Samarkand</daylight>
-				</long>
-			</metazone>
 			<metazone type="Samoa">
 				<long>
-					<standard>Giờ Chuẩn Samoa</standard>
+					<generic draft="contributed">Giờ Samoa</generic>
+					<standard draft="contributed">Giờ Chuẩn Samoa</standard>
+					<daylight draft="contributed">Giờ mùa hè Samoa</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
 				<long>
 					<standard draft="contributed">Giờ Seychelles</standard>
-				</long>
-			</metazone>
-			<metazone type="Shevchenko">
-				<long>
-					<generic draft="contributed">Giờ Shevchenko</generic>
-					<standard draft="contributed">Giờ Chuẩn Shevchenko</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Shevchenko</daylight>
 				</long>
 			</metazone>
 			<metazone type="Singapore">
@@ -3434,13 +3470,6 @@
 			<metazone type="Suriname">
 				<long>
 					<standard>Giờ Suriname</standard>
-				</long>
-			</metazone>
-			<metazone type="Sverdlovsk">
-				<long>
-					<generic draft="contributed">Giờ Sverdlovsk</generic>
-					<standard draft="contributed">Giờ Chuẩn Sverdlovsk</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Sverdlovsk</daylight>
 				</long>
 			</metazone>
 			<metazone type="Syowa">
@@ -3465,20 +3494,6 @@
 					<standard>Giờ Tajikistan</standard>
 				</long>
 			</metazone>
-			<metazone type="Tashkent">
-				<long>
-					<generic draft="contributed">Giờ Tashkent</generic>
-					<standard draft="contributed">Giờ Chuẩn Tashkent</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Tashkent</daylight>
-				</long>
-			</metazone>
-			<metazone type="Tbilisi">
-				<long>
-					<generic draft="contributed">Giờ Tbilisi</generic>
-					<standard draft="contributed">Giờ Chuẩn Tbilisi</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Tbilisi</daylight>
-				</long>
-			</metazone>
 			<metazone type="Tokelau">
 				<long>
 					<standard>Giờ Tokelau</standard>
@@ -3496,13 +3511,6 @@
 					<standard>Giờ Chuuk</standard>
 				</long>
 			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<generic draft="contributed">Giờ Thổ Nhĩ Kỳ</generic>
-					<standard draft="contributed">Giờ Chuẩn Thổ Nhĩ Kỳ</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Thổ Nhĩ Kỳ</daylight>
-				</long>
-			</metazone>
 			<metazone type="Turkmenistan">
 				<long>
 					<generic>Giờ Turkmenistan</generic>
@@ -3515,23 +3523,11 @@
 					<standard>Giờ Tuvalu</standard>
 				</long>
 			</metazone>
-			<metazone type="Uralsk">
-				<long>
-					<generic draft="contributed">Giờ Ural'sk</generic>
-					<standard draft="contributed">Giờ Chuẩn Ural'sk</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Ural'sk</daylight>
-				</long>
-			</metazone>
 			<metazone type="Uruguay">
 				<long>
 					<generic>Giờ Uruguay</generic>
 					<standard>Giờ Chuẩn Uruguay</standard>
 					<daylight>Giờ Mùa Hè Uruguay</daylight>
-				</long>
-			</metazone>
-			<metazone type="Urumqi">
-				<long>
-					<standard draft="contributed">Giờ Urumqi</standard>
 				</long>
 			</metazone>
 			<metazone type="Uzbekistan">
@@ -3594,20 +3590,6 @@
 					<generic>Giờ Yekaterinburg</generic>
 					<standard>Giờ Chuẩn Yekaterinburg</standard>
 					<daylight>Giờ mùa hè Yekaterinburg</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yerevan">
-				<long>
-					<generic draft="contributed">Giờ Yerevan</generic>
-					<standard draft="contributed">Giờ Chuẩn Yerevan</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Yerevan</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yukon">
-				<long>
-					<generic draft="contributed">Giờ Yukon</generic>
-					<standard draft="contributed">Giờ Chuẩn Yukon</standard>
-					<daylight draft="contributed">Giờ Mùa Hè Yukon</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -4558,6 +4540,9 @@
 				<displayName>Ran Nam Phi</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>Đồng kwacha của Zambia (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>Đồng kwacha của Zambia</displayName>
 			</currency>
 			<currency type="ZRN">

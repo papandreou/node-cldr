@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7465 $"/>
-		<generation date="$Date: 2012-08-01 21:53:17 -0700 (Wed, 01 Aug 2012) $"/>
+		<version number="$Revision: 8245 $"/>
+		<generation date="$Date: 2013-02-24 22:19:26 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="az"/>
 	</identity>
 	<localeDisplayNames>
@@ -939,7 +943,7 @@
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a b c ç d e ə f g ğ h x ı i {i\u0307} j k q l m n o ö p r s ş t u ü v y z]</exemplarCharacters>
+		<exemplarCharacters>[a b c ç d e ə f g ğ h x ı i İ j k q l m n o ö p r s ş t u ü v y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[w]</exemplarCharacters>
 		<exemplarCharacters type="index" draft="contributed">[A B C Ç D E Ə F G Ğ H X I İ J K Q L M N O Ö P R S Ş T U Ü V W Y Z]</exemplarCharacters>
 	</characters>
@@ -951,6 +955,40 @@
 	</delimiters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, d, MMMM, y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>d MMMM , y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>d MMM, y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern draft="unconfirmed">GGGGG yy/MM/dd</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, d, MMM</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM, y</dateFormatItem>
+						<dateFormatItem id="yMMMd">d MMM, y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, d, MMM, y</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1097,43 +1135,43 @@
 						<dateFormatItem id="yMMMEd">E, d, MMM, y</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>era</displayName>
-					</field>
-					<field type="year">
-						<displayName>il</displayName>
-					</field>
-					<field type="month">
-						<displayName>ay</displayName>
-					</field>
-					<field type="week">
-						<displayName>həftə</displayName>
-					</field>
-					<field type="day">
-						<displayName>bu gün</displayName>
-						<relative type="-1">dünən</relative>
-						<relative type="0">bu gün</relative>
-						<relative type="1">sabah</relative>
-					</field>
-					<field type="weekday">
-						<displayName>həftə günü</displayName>
-					</field>
-					<field type="hour">
-						<displayName>saat</displayName>
-					</field>
-					<field type="minute">
-						<displayName>dəqiqə</displayName>
-					</field>
-					<field type="second">
-						<displayName>saniyə</displayName>
-					</field>
-					<field type="zone">
-						<displayName>zona</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>era</displayName>
+			</field>
+			<field type="year">
+				<displayName>il</displayName>
+			</field>
+			<field type="month">
+				<displayName>ay</displayName>
+			</field>
+			<field type="week">
+				<displayName>həftə</displayName>
+			</field>
+			<field type="day">
+				<displayName>bu gün</displayName>
+				<relative type="-1">dünən</relative>
+				<relative type="0">bu gün</relative>
+				<relative type="1">sabah</relative>
+			</field>
+			<field type="weekday">
+				<displayName>həftə günü</displayName>
+			</field>
+			<field type="hour">
+				<displayName>saat</displayName>
+			</field>
+			<field type="minute">
+				<displayName>dəqiqə</displayName>
+			</field>
+			<field type="second">
+				<displayName>saniyə</displayName>
+			</field>
+			<field type="zone">
+				<displayName>zona</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<zone type="Etc/Unknown">
 				<exemplarCity draft="contributed">Bilinmir</exemplarCity>
@@ -1611,13 +1649,6 @@
 					<daylight>Şərq Avropa yay vaxtı</daylight>
 				</long>
 			</metazone>
-			<metazone type="Kuybyshev">
-				<long>
-					<generic>Kuybuşev vaxtı</generic>
-					<standard>Kuybuşev standart vaxtı</standard>
-					<daylight>Kuybuşev yay vaxtı</daylight>
-				</long>
-			</metazone>
 			<metazone type="Moscow">
 				<long>
 					<generic>Moskva vaxtı</generic>
@@ -1630,13 +1661,6 @@
 					<generic>Samara vaxtı</generic>
 					<standard>Samara standart vaxtı</standard>
 					<daylight>Samara yay vaxtı</daylight>
-				</long>
-			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<generic>Türkiya vaxtı</generic>
-					<standard>Türkiya standart vaxtı</standard>
-					<daylight>Türkiya yay vaxtı</daylight>
 				</long>
 			</metazone>
 			<metazone type="Volgograd">
@@ -2639,6 +2663,10 @@
 				<displayName count="other" draft="contributed">Cənub Afrika randı</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName draft="contributed">Zambiya kvaçı (1968-2012)</displayName>
+				<displayName count="other" draft="contributed">Zambiya kvaçı (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName draft="contributed">Zambiya kvaçı</displayName>
 				<displayName count="other" draft="contributed">Zambiya kvaçı</displayName>
 			</currency>
@@ -2686,3 +2714,4 @@
 		</messages>
 	</posix>
 </ldml>
+

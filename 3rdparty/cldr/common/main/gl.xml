@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7830 $"/>
-		<generation date="$Date: 2012-10-11 02:06:51 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="gl"/>
 	</identity>
 	<localeDisplayNames>
@@ -500,6 +504,7 @@
 			<territory type="PN">Illas Pitcairn</territory>
 			<territory type="PR" draft="contributed">Porto Rico</territory>
 			<territory type="PS">Territorios palestinos</territory>
+			<territory type="PS" alt="short">Palestina</territory>
 			<territory type="PT" draft="contributed">Portugal</territory>
 			<territory type="PW" draft="contributed">Palau</territory>
 			<territory type="PY" draft="contributed">Paraguai</territory>
@@ -564,6 +569,7 @@
 			<territory type="VU" draft="contributed">Vanuatu</territory>
 			<territory type="WF" draft="contributed">Wallis e Futuna</territory>
 			<territory type="WS" draft="contributed">Samoa</territory>
+			<territory type="XK">Kosovo</territory>
 			<territory type="YE" draft="contributed">Iemen</territory>
 			<territory type="YT" draft="contributed">Mayotte</territory>
 			<territory type="ZA" draft="contributed">Sudáfrica</territory>
@@ -717,6 +723,179 @@
 	</delimiters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern draft="contributed">EEEE dd MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern draft="contributed">dd MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern draft="contributed">d MMM, y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern draft="contributed">dd/MM/yy GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d" draft="contributed">d</dateFormatItem>
+						<dateFormatItem id="Ed">d E</dateFormatItem>
+						<dateFormatItem id="h">h a</dateFormatItem>
+						<dateFormatItem id="H">HH</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm" draft="contributed">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M" draft="contributed">L</dateFormatItem>
+						<dateFormatItem id="Md" draft="contributed">d-M</dateFormatItem>
+						<dateFormatItem id="MEd" draft="contributed">E, d-M</dateFormatItem>
+						<dateFormatItem id="MMdd" draft="contributed">dd/MM</dateFormatItem>
+						<dateFormatItem id="MMM" draft="contributed">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd" draft="contributed">d MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd" draft="contributed">E d MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd" draft="contributed">d MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMdd" draft="contributed">dd MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd" draft="contributed">E d MMMM</dateFormatItem>
+						<dateFormatItem id="ms" draft="contributed">mm:ss</dateFormatItem>
+						<dateFormatItem id="y" draft="contributed">y</dateFormatItem>
+						<dateFormatItem id="yM" draft="contributed">M-y</dateFormatItem>
+						<dateFormatItem id="yMd">d/M/y</dateFormatItem>
+						<dateFormatItem id="yMEd">E, d/M/y</dateFormatItem>
+						<dateFormatItem id="yMM" draft="contributed">MM/y</dateFormatItem>
+						<dateFormatItem id="yMMM" draft="contributed">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMd">d MMM, y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, d MMM, y</dateFormatItem>
+						<dateFormatItem id="yMMMM" draft="contributed">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQ" draft="contributed">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ" draft="contributed">QQQQ y</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a – h a</greatestDifference>
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a – h a v</greatestDifference>
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M–M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">d/M – d/M</greatestDifference>
+							<greatestDifference id="M">d/M – d/M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E, d/M – E, d/M</greatestDifference>
+							<greatestDifference id="M">E, d/M – E, d/M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM–MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">d–d MMM</greatestDifference>
+							<greatestDifference id="M">d MMM – d MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E, d MMM – E, d MMM</greatestDifference>
+							<greatestDifference id="M">E, d MMM – E, d MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y–y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">M/y – M/y</greatestDifference>
+							<greatestDifference id="y">M/y – M/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">d/M/y – d/M/y</greatestDifference>
+							<greatestDifference id="M">d/M/y – d/M/y</greatestDifference>
+							<greatestDifference id="y">d/M/y – d/M/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E, d/M/y – E, d/M/y</greatestDifference>
+							<greatestDifference id="M">E, d/M/y – E, d/M/y</greatestDifference>
+							<greatestDifference id="y">E, d/M/y – E, d/M/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM–MMM y</greatestDifference>
+							<greatestDifference id="y">MMM y – MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">d–d MMM, y</greatestDifference>
+							<greatestDifference id="M">d MMM – d MMM, y</greatestDifference>
+							<greatestDifference id="y">d MMM, y – d MMM, y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E, d MMM – E, d MMM, y</greatestDifference>
+							<greatestDifference id="M">E, d MMM – E, d MMM, y</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y – E, d MMM, y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
+							<greatestDifference id="y">MMMM y – MMMM y</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -959,17 +1138,16 @@
 						<dateFormatItem id="MMMMEd" draft="contributed">E d MMMM</dateFormatItem>
 						<dateFormatItem id="ms" draft="contributed">mm:ss</dateFormatItem>
 						<dateFormatItem id="y" draft="contributed">y</dateFormatItem>
-						<dateFormatItem id="yM" draft="contributed">M-yyyy</dateFormatItem>
+						<dateFormatItem id="yM" draft="contributed">M-y</dateFormatItem>
 						<dateFormatItem id="yMd">d/M/y</dateFormatItem>
 						<dateFormatItem id="yMEd">E, d/M/y</dateFormatItem>
+						<dateFormatItem id="yMM" draft="contributed">MM/y</dateFormatItem>
 						<dateFormatItem id="yMMM" draft="contributed">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMd">d MMM, y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E, d MMM, y</dateFormatItem>
 						<dateFormatItem id="yMMMM" draft="contributed">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ" draft="contributed">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ" draft="contributed">QQQQ y</dateFormatItem>
-						<dateFormatItem id="yyMM" draft="contributed">MM/yy</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM" draft="contributed">MMMM y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
@@ -1034,18 +1212,18 @@
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">M/yy – M/yy</greatestDifference>
-							<greatestDifference id="y">M/yy – M/yy</greatestDifference>
+							<greatestDifference id="M">M/y – M/y</greatestDifference>
+							<greatestDifference id="y">M/y – M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">d/M/yy – d/M/yy</greatestDifference>
-							<greatestDifference id="M">d/M/yy – d/M/yy</greatestDifference>
-							<greatestDifference id="y">d/M/yy – d/M/yy</greatestDifference>
+							<greatestDifference id="d">d/M/y – d/M/y</greatestDifference>
+							<greatestDifference id="M">d/M/y – d/M/y</greatestDifference>
+							<greatestDifference id="y">d/M/y – d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, d/M/yy – E, d/M/yy</greatestDifference>
-							<greatestDifference id="M">E, d/M/yy – E, d/M/yy</greatestDifference>
-							<greatestDifference id="y">E, d/M/yy – E, d/M/yy</greatestDifference>
+							<greatestDifference id="d">E, d/M/y – E, d/M/y</greatestDifference>
+							<greatestDifference id="M">E, d/M/y – E, d/M/y</greatestDifference>
+							<greatestDifference id="y">E, d/M/y – E, d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM–MMM y</greatestDifference>
@@ -1067,57 +1245,57 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>Era</displayName>
-					</field>
-					<field type="year">
-						<displayName draft="contributed">Ano</displayName>
-						<relative type="-1">Ano pasado</relative>
-						<relative type="0">Este ano</relative>
-						<relative type="1">Seguinte ano</relative>
-					</field>
-					<field type="month">
-						<displayName draft="contributed">Mes</displayName>
-						<relative type="-1">Mes pasado</relative>
-						<relative type="0">Este mes</relative>
-						<relative type="1">Mes seguinte</relative>
-					</field>
-					<field type="week">
-						<displayName draft="contributed">Semana</displayName>
-						<relative type="-1">Semana pasada</relative>
-						<relative type="0">Esta semana</relative>
-						<relative type="1">Semana seguinte</relative>
-					</field>
-					<field type="day">
-						<displayName draft="contributed">Día</displayName>
-						<relative type="-2" draft="contributed">antonte</relative>
-						<relative type="-1" draft="contributed">onte</relative>
-						<relative type="0" draft="contributed">hoxe</relative>
-						<relative type="1" draft="contributed">mañá</relative>
-						<relative type="2" draft="contributed">pasadomañá</relative>
-					</field>
-					<field type="weekday">
-						<displayName draft="contributed">Día da semana</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>a.m./p.m.</displayName>
-					</field>
-					<field type="hour">
-						<displayName draft="contributed">Hora</displayName>
-					</field>
-					<field type="minute">
-						<displayName draft="contributed">Minuto</displayName>
-					</field>
-					<field type="second">
-						<displayName draft="contributed">Segundo</displayName>
-					</field>
-					<field type="zone">
-						<displayName draft="contributed">Fuso horario</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>Era</displayName>
+			</field>
+			<field type="year">
+				<displayName draft="contributed">Ano</displayName>
+				<relative type="-1">Ano pasado</relative>
+				<relative type="0">Este ano</relative>
+				<relative type="1">Seguinte ano</relative>
+			</field>
+			<field type="month">
+				<displayName draft="contributed">Mes</displayName>
+				<relative type="-1">Mes pasado</relative>
+				<relative type="0">Este mes</relative>
+				<relative type="1">Mes seguinte</relative>
+			</field>
+			<field type="week">
+				<displayName draft="contributed">Semana</displayName>
+				<relative type="-1">Semana pasada</relative>
+				<relative type="0">Esta semana</relative>
+				<relative type="1">Semana seguinte</relative>
+			</field>
+			<field type="day">
+				<displayName draft="contributed">Día</displayName>
+				<relative type="-2" draft="contributed">antonte</relative>
+				<relative type="-1" draft="contributed">onte</relative>
+				<relative type="0" draft="contributed">hoxe</relative>
+				<relative type="1" draft="contributed">mañá</relative>
+				<relative type="2" draft="contributed">pasadomañá</relative>
+			</field>
+			<field type="weekday">
+				<displayName draft="contributed">Día da semana</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>a.m./p.m.</displayName>
+			</field>
+			<field type="hour">
+				<displayName draft="contributed">Hora</displayName>
+			</field>
+			<field type="minute">
+				<displayName draft="contributed">Minuto</displayName>
+			</field>
+			<field type="second">
+				<displayName draft="contributed">Segundo</displayName>
+			</field>
+			<field type="zone">
+				<displayName draft="contributed">Fuso horario</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat draft="contributed">+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat draft="contributed">GMT{0}</gmtFormat>
@@ -1125,17 +1303,11 @@
 			<regionFormat draft="contributed">Horario de {0}</regionFormat>
 			<fallbackFormat draft="contributed">{1} ({0})</fallbackFormat>
 			<fallbackRegionFormat>Horario de {1} ({0})</fallbackRegionFormat>
-			<zone type="America/Lower_Princes">
-				<exemplarCity>Lower Prince's Quarter</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Cidade descoñecida</exemplarCity>
 			</zone>
 			<zone type="America/Anguilla">
 				<exemplarCity>Anguila</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>Curaçao</exemplarCity>
 			</zone>
 			<zone type="Antarctica/South_Pole">
 				<exemplarCity draft="contributed">Polo Sul</exemplarCity>
@@ -1181,6 +1353,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>Cabo Verde</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>Curaçao</exemplarCity>
 			</zone>
 			<zone type="Africa/Djibouti">
 				<exemplarCity>Xibutí</exemplarCity>
@@ -1277,6 +1452,9 @@
 			</zone>
 			<zone type="Africa/Sao_Tome">
 				<exemplarCity>São Tomé</exemplarCity>
+			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity>Lower Prince's Quarter</exemplarCity>
 			</zone>
 			<zone type="Pacific/Honolulu">
 				<exemplarCity draft="contributed">Honolulú</exemplarCity>
@@ -2033,7 +2211,9 @@
 			</metazone>
 			<metazone type="Samoa">
 				<long>
+					<generic>Horario de Samoa</generic>
 					<standard>Horario estándar de Samoa</standard>
+					<daylight>Horario de verán de Samoa</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
@@ -2983,6 +3163,9 @@
 				<displayName draft="contributed">Rand sudafricano</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>Kwacha zambiano (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>Kwacha zambiano</displayName>
 			</currency>
 		</currencies>

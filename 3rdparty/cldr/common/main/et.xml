@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7832 $"/>
-		<generation date="$Date: 2012-10-11 11:59:15 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8663 $"/>
+		<generation date="$Date: 2013-05-02 15:03:19 -0500 (Thu, 02 May 2013) $"/>
 		<language type="et"/>
 	</identity>
 	<localeDisplayNames>
@@ -924,6 +928,7 @@
 			<territory type="PN">Pitcairn</territory>
 			<territory type="PR">Puerto Rico</territory>
 			<territory type="PS">Palestiina ala</territory>
+			<territory type="PS" alt="short">Palestiina</territory>
 			<territory type="PT">Portugal</territory>
 			<territory type="PW">Belau</territory>
 			<territory type="PY">Paraguay</territory>
@@ -1175,6 +1180,179 @@
 	</delimiters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, d. MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>d. MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>dd.MM.y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>dd.MM.yy GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">E, d</dateFormatItem>
+						<dateFormatItem id="h">h a</dateFormatItem>
+						<dateFormatItem id="H">HH</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm.ss a</dateFormatItem>
+						<dateFormatItem id="Hms">H:mm.ss</dateFormatItem>
+						<dateFormatItem id="M">M</dateFormatItem>
+						<dateFormatItem id="Md">d.M</dateFormatItem>
+						<dateFormatItem id="MEd">E, d.M</dateFormatItem>
+						<dateFormatItem id="MMdd">dd.MM</dateFormatItem>
+						<dateFormatItem id="MMM">MMMM</dateFormatItem>
+						<dateFormatItem id="MMMd">d. MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, d. MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd">d. MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E, d. MMMM</dateFormatItem>
+						<dateFormatItem id="mmss">mm.ss</dateFormatItem>
+						<dateFormatItem id="ms">mm.ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">M.y</dateFormatItem>
+						<dateFormatItem id="yMd">d.M.y</dateFormatItem>
+						<dateFormatItem id="yMEd">E, d.M y</dateFormatItem>
+						<dateFormatItem id="yMM">MM.y</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMd">d. MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, d. MMMM y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0}–{1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a – h a</greatestDifference>
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH.mm–HH.mm</greatestDifference>
+							<greatestDifference id="m">HH.mm–HH.mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">HH.mma–HH.mma v</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH.mm–HH.mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a – h a v</greatestDifference>
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M–M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">dd.MM–dd.MM</greatestDifference>
+							<greatestDifference id="M">dd.MM–dd.MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E, dd.MM–E, dd.MM</greatestDifference>
+							<greatestDifference id="M">E, dd.MM–E, dd.MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">LLL–LLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">d.–d. MMM</greatestDifference>
+							<greatestDifference id="M">d. MMM–d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E, d. MMM–E, d. MMM</greatestDifference>
+							<greatestDifference id="M">E, d. MMM–E, d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y–y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">MM.y–MM.y</greatestDifference>
+							<greatestDifference id="y">MM.y–MM.y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">dd.MM.y–dd.MM.y</greatestDifference>
+							<greatestDifference id="M">dd.MM.y–dd.MM.y</greatestDifference>
+							<greatestDifference id="y">dd.MM.y–dd.MM.y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E, dd.MM.y–E, dd.MM.y</greatestDifference>
+							<greatestDifference id="M">E, dd.MM.y–E, dd.MM.y</greatestDifference>
+							<greatestDifference id="y">E, dd.MM.y–E, dd.MM.y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM–MMM y</greatestDifference>
+							<greatestDifference id="y">MMM y–MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">d.–d. MMM y</greatestDifference>
+							<greatestDifference id="M">d. MMM–d. MMM y</greatestDifference>
+							<greatestDifference id="y">d. MMM y–d. MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E, d. MMM–E, d. MMM y</greatestDifference>
+							<greatestDifference id="M">E, d. MMM–E, d. MMM y</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y–E, d. MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
+							<greatestDifference id="y">MMMM y – MMMM y</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1421,7 +1599,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
-							<pattern>dd.MM.yyyy</pattern>
+							<pattern>dd.MM.y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
@@ -1497,13 +1675,13 @@
 						<dateFormatItem id="yM">M.y</dateFormatItem>
 						<dateFormatItem id="yMd">d.M.y</dateFormatItem>
 						<dateFormatItem id="yMEd">E, d.M y</dateFormatItem>
+						<dateFormatItem id="yMM">MM.y</dateFormatItem>
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMd">d. MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E, d. MMMM y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
-						<dateFormatItem id="yyyyMM">MM.yyyy</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0}–{1}</intervalFormatFallback>
@@ -1568,18 +1746,18 @@
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">MM.yy–MM.yy</greatestDifference>
-							<greatestDifference id="y">MM.yy–MM.yy</greatestDifference>
+							<greatestDifference id="M">MM.y–MM.y</greatestDifference>
+							<greatestDifference id="y">MM.y–MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">dd.MM.yy–dd.MM.yy</greatestDifference>
-							<greatestDifference id="M">dd.MM.yy–dd.MM.yy</greatestDifference>
-							<greatestDifference id="y">dd.MM.yy–dd.MM.yy</greatestDifference>
+							<greatestDifference id="d">dd.MM.y–dd.MM.y</greatestDifference>
+							<greatestDifference id="M">dd.MM.y–dd.MM.y</greatestDifference>
+							<greatestDifference id="y">dd.MM.y–dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, dd.MM.yy–E, dd.MM.yy</greatestDifference>
-							<greatestDifference id="M">E, dd.MM.yy–E, dd.MM.yy</greatestDifference>
-							<greatestDifference id="y">E, dd.MM.yy–E, dd.MM.yy</greatestDifference>
+							<greatestDifference id="d">E, dd.MM.y–E, dd.MM.y</greatestDifference>
+							<greatestDifference id="M">E, dd.MM.y–E, dd.MM.y</greatestDifference>
+							<greatestDifference id="y">E, dd.MM.y–E, dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM–MMM y</greatestDifference>
@@ -1601,57 +1779,57 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>ajastu</displayName>
-					</field>
-					<field type="year">
-						<displayName>aasta</displayName>
-						<relative type="-1">Eelmine aasta</relative>
-						<relative type="0">Sel aastal</relative>
-						<relative type="1">Järgmine aasta</relative>
-					</field>
-					<field type="month">
-						<displayName>kuu</displayName>
-						<relative type="-1">Eelmine kuu</relative>
-						<relative type="0">See kuu</relative>
-						<relative type="1">Järgmine kuu</relative>
-					</field>
-					<field type="week">
-						<displayName>nädal</displayName>
-						<relative type="-1">Eelmine nädal</relative>
-						<relative type="0">See nädal</relative>
-						<relative type="1">Järgmine nädal</relative>
-					</field>
-					<field type="day">
-						<displayName>päev</displayName>
-						<relative type="-2">üleeile</relative>
-						<relative type="-1">eile</relative>
-						<relative type="0">täna</relative>
-						<relative type="1">homme</relative>
-						<relative type="2">ülehomme</relative>
-					</field>
-					<field type="weekday">
-						<displayName>nädalapäev</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>enne/pärast lõunat</displayName>
-					</field>
-					<field type="hour">
-						<displayName>tund</displayName>
-					</field>
-					<field type="minute">
-						<displayName>minut</displayName>
-					</field>
-					<field type="second">
-						<displayName>sekund</displayName>
-					</field>
-					<field type="zone">
-						<displayName>vöönd</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>ajastu</displayName>
+			</field>
+			<field type="year">
+				<displayName>aasta</displayName>
+				<relative type="-1">Eelmine aasta</relative>
+				<relative type="0">Sel aastal</relative>
+				<relative type="1">Järgmine aasta</relative>
+			</field>
+			<field type="month">
+				<displayName>kuu</displayName>
+				<relative type="-1">Eelmine kuu</relative>
+				<relative type="0">See kuu</relative>
+				<relative type="1">Järgmine kuu</relative>
+			</field>
+			<field type="week">
+				<displayName>nädal</displayName>
+				<relative type="-1">Eelmine nädal</relative>
+				<relative type="0">See nädal</relative>
+				<relative type="1">Järgmine nädal</relative>
+			</field>
+			<field type="day">
+				<displayName>päev</displayName>
+				<relative type="-2">üleeile</relative>
+				<relative type="-1">eile</relative>
+				<relative type="0">täna</relative>
+				<relative type="1">homme</relative>
+				<relative type="2">ülehomme</relative>
+			</field>
+			<field type="weekday">
+				<displayName>nädalapäev</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>enne/pärast lõunat</displayName>
+			</field>
+			<field type="hour">
+				<displayName>tund</displayName>
+			</field>
+			<field type="minute">
+				<displayName>minut</displayName>
+			</field>
+			<field type="second">
+				<displayName>sekund</displayName>
+			</field>
+			<field type="zone">
+				<displayName>vöönd</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
@@ -1659,20 +1837,11 @@
 			<regionFormat>{0} aeg</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<fallbackRegionFormat>{1} ({0})</fallbackRegionFormat>
-			<zone type="America/Lower_Princes">
-				<exemplarCity>Lower Prince's Quarter</exemplarCity>
-			</zone>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity>Beulah, North Dakota</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>määramata</exemplarCity>
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity>Jerevan</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>Curaçao</exemplarCity>
 			</zone>
 			<zone type="Antarctica/South_Pole">
 				<exemplarCity>Lõunapoolus</exemplarCity>
@@ -1706,6 +1875,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>Roheneemesaared</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>Curaçao</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity>Jõulusaar</exemplarCity>
@@ -1857,6 +2029,9 @@
 			<zone type="Africa/Sao_Tome">
 				<exemplarCity>São Tomé</exemplarCity>
 			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity>Lower Prince's Quarter</exemplarCity>
+			</zone>
 			<zone type="Asia/Damascus">
 				<exemplarCity>Damaskus</exemplarCity>
 			</zone>
@@ -1874,6 +2049,9 @@
 			</zone>
 			<zone type="Europe/Zaporozhye">
 				<exemplarCity>Zaporožje</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity>Beulah, North Dakota</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity>New Salem, North Dakota</exemplarCity>
@@ -2423,18 +2601,6 @@
 					<daylight>Krasnojarski suveaeg</daylight>
 				</long>
 			</metazone>
-			<metazone type="Kuybyshev">
-				<long>
-					<generic>Kuibõševi aeg</generic>
-					<standard>Kuibõševi standardaeg</standard>
-					<daylight>Kuibõševi suveaeg</daylight>
-				</long>
-			</metazone>
-			<metazone type="Kwajalein">
-				<long>
-					<standard>Kwajalein'i aeg</standard>
-				</long>
-			</metazone>
 			<metazone type="Kyrgystan">
 				<long>
 					<standard>Kõrgõzstani aeg</standard>
@@ -2658,12 +2824,14 @@
 				<long>
 					<generic>Samara aeg</generic>
 					<standard>Samara standardaeg</standard>
-					<daylight>Samara suveag</daylight>
+					<daylight>Samara suveaeg</daylight>
 				</long>
 			</metazone>
 			<metazone type="Samoa">
 				<long>
+					<generic>Samoa aeg</generic>
 					<standard>Samoa standardaeg</standard>
+					<daylight>Samoa suveaeg</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
@@ -2728,13 +2896,6 @@
 			<metazone type="Truk">
 				<long>
 					<standard>Chuuki aeg</standard>
-				</long>
-			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<generic>Türgi aeg</generic>
-					<standard>Türgi standardaeg</standard>
-					<daylight>Türgi suveaeg</daylight>
 				</long>
 			</metazone>
 			<metazone type="Turkmenistan">
@@ -2913,7 +3074,7 @@
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat>
-					<pattern>#0.00¤;(#0.00¤)</pattern>
+					<pattern>#,##0.00 ¤;(#,##0.00 ¤)</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
 			<unitPattern count="one">{0} {1}</unitPattern>
@@ -3961,6 +4122,11 @@
 				<displayName count="other">LAVi randi</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>Sambia kvatša (1968-2012)</displayName>
+				<displayName count="one">Sambia kvatša (1968-2012)</displayName>
+				<displayName count="other">Sambia kvatšat (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>Sambia kvatša</displayName>
 				<displayName count="one">Sambia kvatša</displayName>
 				<displayName count="other">Sambia kvatšat</displayName>

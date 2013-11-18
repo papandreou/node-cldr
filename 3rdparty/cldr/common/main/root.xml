@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7830 $"/>
-		<generation date="$Date: 2012-10-11 02:06:51 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8245 $"/>
+		<generation date="$Date: 2013-02-24 22:19:26 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="root"/>
 	</identity>
 	<localeDisplayNames>
@@ -24,7 +28,10 @@
 		</codePatterns>
 	</localeDisplayNames>
 	<layout>
-		<orientation/>
+		<orientation>
+			<characterOrder>left-to-right</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
 	</layout>
 	<characters>
 		<exemplarCharacters>[]</exemplarCharacters>
@@ -43,7 +50,6 @@
 	</delimiters>
 	<dates>
 		<calendars>
-			<default choice="gregorian"/>
 			<calendar type="buddhist">
 				<months>
 					<alias source="locale" path="../../calendar[@type='gregorian']/months"/>
@@ -70,86 +76,18 @@
 					</eraNarrow>
 				</eras>
 				<dateFormats>
-					<default choice="medium"/>
-					<dateFormatLength type="full">
-						<dateFormat>
-							<pattern>EEEE, G y MMMM dd</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="long">
-						<dateFormat>
-							<pattern>G y MMMM d</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="medium">
-						<dateFormat>
-							<pattern>G y MMM d</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="short">
-						<dateFormat>
-							<pattern>GGGGG yyyy-MM-dd</pattern>
-						</dateFormat>
-					</dateFormatLength>
+					<alias source="locale" path="../../calendar[@type='generic']/dateFormats"/>
 				</dateFormats>
 				<timeFormats>
 					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
-					<default choice="medium"/>
-					<dateTimeFormatLength>
-						<alias source="locale" path="../../../calendar[@type='gregorian']/dateTimeFormats/dateTimeFormatLength"/>
-					</dateTimeFormatLength>
-					<availableFormats>
-						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="Ed">d E</dateFormatItem>
-						<dateFormatItem id="Gy">G y</dateFormatItem>
-						<dateFormatItem id="h">h a</dateFormatItem>
-						<dateFormatItem id="H">HH</dateFormatItem>
-						<dateFormatItem id="hm">h:mm a</dateFormatItem>
-						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
-						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">M-d</dateFormatItem>
-						<dateFormatItem id="MEd">E, M-d</dateFormatItem>
-						<dateFormatItem id="MMM">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
-						<dateFormatItem id="MMMEd">E MMM d</dateFormatItem>
-						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="y">G y</dateFormatItem>
-						<dateFormatItem id="yM">GGGGG yyyy-MM</dateFormatItem>
-						<dateFormatItem id="yMd">GGGGG yyyy-MM-dd</dateFormatItem>
-						<dateFormatItem id="yMEd">E, GGGGG yyyy-MM-dd</dateFormatItem>
-						<dateFormatItem id="yMMM">G y MMM</dateFormatItem>
-						<dateFormatItem id="yMMMd">G y MMM d</dateFormatItem>
-						<dateFormatItem id="yMMMEd">E, G y MMM d</dateFormatItem>
-						<dateFormatItem id="yQQQ">GGGGG y QQQ</dateFormatItem>
-						<dateFormatItem id="yQQQQ">G y QQQQ</dateFormatItem>
-					</availableFormats>
-					<appendItems>
-						<appendItem request="Day">{0} ({2}: {1})</appendItem>
-						<appendItem request="Day-Of-Week">{0} {1}</appendItem>
-						<appendItem request="Era">{0} {1}</appendItem>
-						<appendItem request="Hour">{0} ({2}: {1})</appendItem>
-						<appendItem request="Minute">{0} ({2}: {1})</appendItem>
-						<appendItem request="Month">{0} ({2}: {1})</appendItem>
-						<appendItem request="Quarter">{0} ({2}: {1})</appendItem>
-						<appendItem request="Second">{0} ({2}: {1})</appendItem>
-						<appendItem request="Timezone">{0} {1}</appendItem>
-						<appendItem request="Week">{0} ({2}: {1})</appendItem>
-						<appendItem request="Year">{0} {1}</appendItem>
-					</appendItems>
-					<intervalFormats>
-						<alias source="locale" path="../../../calendar[@type='gregorian']/dateTimeFormats/intervalFormats"/>
-					</intervalFormats>
+					<alias source="locale" path="../../calendar[@type='generic']/dateTimeFormats"/>
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="chinese">
 				<months>
-					<default choice="format"/>
 					<monthContext type="format">
-						<default choice="wide"/>
 						<monthWidth type="abbreviated">
 							<alias source="locale" path="../monthWidth[@type='wide']"/>
 						</monthWidth>
@@ -157,18 +95,18 @@
 							<alias source="locale" path="../../monthContext[@type='stand-alone']/monthWidth[@type='narrow']"/>
 						</monthWidth>
 						<monthWidth type="wide">
-							<month type="1">1</month>
-							<month type="2">2</month>
-							<month type="3">3</month>
-							<month type="4">4</month>
-							<month type="5">5</month>
-							<month type="6">6</month>
-							<month type="7">7</month>
-							<month type="8">8</month>
-							<month type="9">9</month>
-							<month type="10">10</month>
-							<month type="11">11</month>
-							<month type="12">12</month>
+							<month type="1">Month1</month>
+							<month type="2">Month2</month>
+							<month type="3">Month3</month>
+							<month type="4">Month4</month>
+							<month type="5">Month5</month>
+							<month type="6">Month6</month>
+							<month type="7">Month7</month>
+							<month type="8">Month8</month>
+							<month type="9">Month9</month>
+							<month type="10">Month10</month>
+							<month type="11">Month11</month>
+							<month type="12">Month12</month>
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
@@ -351,10 +289,9 @@
 					</cyclicNameSet>
 				</cyclicNameSets>
 				<dateFormats>
-					<default choice="medium"/>
 					<dateFormatLength type="full">
 						<dateFormat>
-							<pattern>EEEE, U MMMM dd</pattern>
+							<pattern>U MMMM d, EEEE</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
@@ -370,7 +307,7 @@
 					<dateFormatLength type="short">
 						<dateFormat>
 							<!-- using y here to be short in locales that may not understand U anyway -->
-							<pattern>y-M-d</pattern>
+							<pattern>y-MM-dd</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -378,13 +315,33 @@
 					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
-					<default choice="medium"/>
-					<dateTimeFormatLength>
-						<alias source="locale" path="../../../calendar[@type='gregorian']/dateTimeFormats/dateTimeFormatLength"/>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
 						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="Ed">d E</dateFormatItem>
+						<dateFormatItem id="Ed">d, E</dateFormatItem>
+						<dateFormatItem id="Gy">U</dateFormatItem>
+						<dateFormatItem id="GyMMM">U MMM</dateFormatItem>
+						<dateFormatItem id="GyMMMd">U MMM d</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">U MMM d, E</dateFormatItem>
 						<dateFormatItem id="h">h a</dateFormatItem>
 						<dateFormatItem id="H">HH</dateFormatItem>
 						<dateFormatItem id="hm">h:mm a</dateFormatItem>
@@ -392,26 +349,28 @@
 						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
 						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
 						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">M-d</dateFormatItem>
-						<dateFormatItem id="MEd">E, M-d</dateFormatItem>
+						<dateFormatItem id="Md">MM-dd</dateFormatItem>
+						<dateFormatItem id="MEd">MM-dd, E</dateFormatItem>
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
-						<dateFormatItem id="MMMEd">E MMM d</dateFormatItem>
+						<dateFormatItem id="MMMEd">MMM d, E</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">U</dateFormatItem>
-						<dateFormatItem id="yM">y-M</dateFormatItem>
-						<dateFormatItem id="yMd">y-M-d</dateFormatItem>
-						<dateFormatItem id="yMEd">E, y-M-d</dateFormatItem>
-						<dateFormatItem id="yMMM">U MMM</dateFormatItem>
-						<dateFormatItem id="yMMMd">U MMM d</dateFormatItem>
-						<dateFormatItem id="yMMMEd">E, U MMM d</dateFormatItem>
-						<dateFormatItem id="yQQQ">U QQQ</dateFormatItem>
-						<dateFormatItem id="yQQQQ">U QQQQ</dateFormatItem>
+						<dateFormatItem id="yMd">y-MM-dd</dateFormatItem>
+						<dateFormatItem id="yyyy">U</dateFormatItem>
+						<dateFormatItem id="yyyyM">y-MM</dateFormatItem>
+						<dateFormatItem id="yyyyMd">y-MM-dd</dateFormatItem>
+						<dateFormatItem id="yyyyMEd">y-MM-dd, E</dateFormatItem>
+						<dateFormatItem id="yyyyMMM">U MMM</dateFormatItem>
+						<dateFormatItem id="yyyyMMMd">U MMM d</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd">U MMM d, E</dateFormatItem>
+						<dateFormatItem id="yyyyQQQ">U QQQ</dateFormatItem>
+						<dateFormatItem id="yyyyQQQQ">U QQQQ</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Day">{0} ({2}: {1})</appendItem>
 						<appendItem request="Day-Of-Week">{0} {1}</appendItem>
-						<appendItem request="Era">{0} {1}</appendItem>
+						<appendItem request="Era">{1} {0}</appendItem>
 						<appendItem request="Hour">{0} ({2}: {1})</appendItem>
 						<appendItem request="Minute">{0} ({2}: {1})</appendItem>
 						<appendItem request="Month">{0} ({2}: {1})</appendItem>
@@ -419,7 +378,7 @@
 						<appendItem request="Second">{0} ({2}: {1})</appendItem>
 						<appendItem request="Timezone">{0} {1}</appendItem>
 						<appendItem request="Week">{0} ({2}: {1})</appendItem>
-						<appendItem request="Year">{0} {1}</appendItem>
+						<appendItem request="Year">{1} {0}</appendItem>
 					</appendItems>
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
@@ -459,60 +418,60 @@
 							<greatestDifference id="H">HH–HH v</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="M">
-							<greatestDifference id="M">M–M</greatestDifference>
+							<greatestDifference id="M">MM–MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="Md">
-							<greatestDifference id="d">MM-dd – dd</greatestDifference>
+							<greatestDifference id="d">MM-dd – MM-dd</greatestDifference>
 							<greatestDifference id="M">MM-dd – MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d">E, MM-dd – E, MM-dd</greatestDifference>
-							<greatestDifference id="M">E, MM-dd – E, MM-dd</greatestDifference>
+							<greatestDifference id="d">MM-dd, E – MM-dd, E</greatestDifference>
+							<greatestDifference id="M">MM-dd, E – MM-dd, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M">LLL–LLL</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
-							<greatestDifference id="d">MM-d – d</greatestDifference>
-							<greatestDifference id="M">MM-d – MM-d</greatestDifference>
+							<greatestDifference id="d">MMM d–d</greatestDifference>
+							<greatestDifference id="M">MMM d – MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d">E, MM-d – E, MM-d</greatestDifference>
-							<greatestDifference id="M">E, MM-d – E, MM-d</greatestDifference>
+							<greatestDifference id="d">MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="M">MMM d, E – MMM d, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
-							<greatestDifference id="y">y–y</greatestDifference>
+							<greatestDifference id="y">U–U</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">y-MM – MM</greatestDifference>
+							<greatestDifference id="M">y-MM – y-MM</greatestDifference>
 							<greatestDifference id="y">y-MM – y-MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">y-MM-dd – dd</greatestDifference>
-							<greatestDifference id="M">y-MM-dd – MM-dd</greatestDifference>
+							<greatestDifference id="d">y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="M">y-MM-dd – y-MM-dd</greatestDifference>
 							<greatestDifference id="y">y-MM-dd – y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, y-MM-dd – E, y-MM-dd</greatestDifference>
-							<greatestDifference id="M">E, y-MM-dd – E, y-MM-dd</greatestDifference>
-							<greatestDifference id="y">E, y-MM-dd – E, y-MM-dd</greatestDifference>
+							<greatestDifference id="d">y-MM-dd, E – y-MM-dd, E</greatestDifference>
+							<greatestDifference id="M">y-MM-dd, E – y-MM-dd, E</greatestDifference>
+							<greatestDifference id="y">y-MM-dd, E – y-MM-dd, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
-							<greatestDifference id="M">U MMM – MMM</greatestDifference>
+							<greatestDifference id="M">U MMM–MMM</greatestDifference>
 							<greatestDifference id="y">U MMM – U MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d">U MMM-d – d</greatestDifference>
-							<greatestDifference id="M">U MMM-d – MMM-d</greatestDifference>
-							<greatestDifference id="y">U MMM-d – U MMM-d</greatestDifference>
+							<greatestDifference id="d">U MMM d–d</greatestDifference>
+							<greatestDifference id="M">U MMM d – MMM d</greatestDifference>
+							<greatestDifference id="y">U MMM d – U MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, U MMM-d – E, U MMM-d</greatestDifference>
-							<greatestDifference id="M">E, U MMM-d – E, U MMM-d</greatestDifference>
-							<greatestDifference id="y">E, U MMM-d – E, U MMM-d</greatestDifference>
+							<greatestDifference id="d">U MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="M">U MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="y">U MMM d, E – U MMM d, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
-							<greatestDifference id="M">U MMMM – MMMM</greatestDifference>
+							<greatestDifference id="M">U MMMM–MMMM</greatestDifference>
 							<greatestDifference id="y">U MMMM – U MMMM</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
@@ -520,9 +479,7 @@
 			</calendar>
 			<calendar type="coptic">
 				<months>
-					<default choice="format"/>
 					<monthContext type="format">
-						<default choice="wide"/>
 						<monthWidth type="abbreviated">
 							<alias source="locale" path="../monthWidth[@type='wide']"/>
 						</monthWidth>
@@ -591,13 +548,13 @@
 					</eraNarrow>
 				</eras>
 				<dateFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateFormats"/>
+					<alias source="locale" path="../../calendar[@type='generic']/dateFormats"/>
 				</dateFormats>
 				<timeFormats>
 					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateTimeFormats"/>
+					<alias source="locale" path="../../calendar[@type='generic']/dateTimeFormats"/>
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="dangi">
@@ -631,9 +588,7 @@
 			</calendar>
 			<calendar type="ethiopic">
 				<months>
-					<default choice="format"/>
 					<monthContext type="format">
-						<default choice="wide"/>
 						<monthWidth type="abbreviated">
 							<alias source="locale" path="../monthWidth[@type='wide']"/>
 						</monthWidth>
@@ -702,13 +657,13 @@
 					</eraNarrow>
 				</eras>
 				<dateFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateFormats"/>
+					<alias source="locale" path="../../calendar[@type='generic']/dateFormats"/>
 				</dateFormats>
 				<timeFormats>
 					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateTimeFormats"/>
+					<alias source="locale" path="../../calendar[@type='generic']/dateTimeFormats"/>
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="ethiopic-amete-alem">
@@ -716,13 +671,13 @@
 					<alias source="locale" path="../../calendar[@type='ethiopic']/months"/>
 				</months>
 				<days>
-					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
+					<alias source="locale" path="../../calendar[@type='ethiopic']/days"/>
 				</days>
 				<quarters>
-					<alias source="locale" path="../../calendar[@type='gregorian']/quarters"/>
+					<alias source="locale" path="../../calendar[@type='ethiopic']/quarters"/>
 				</quarters>
 				<dayPeriods>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dayPeriods"/>
+					<alias source="locale" path="../../calendar[@type='ethiopic']/dayPeriods"/>
 				</dayPeriods>
 				<eras>
 					<eraNames>
@@ -736,20 +691,18 @@
 					</eraNarrow>
 				</eras>
 				<dateFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateFormats"/>
+					<alias source="locale" path="../../calendar[@type='ethiopic']/dateFormats"/>
 				</dateFormats>
 				<timeFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
+					<alias source="locale" path="../../calendar[@type='ethiopic']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateTimeFormats"/>
+					<alias source="locale" path="../../calendar[@type='ethiopic']/dateTimeFormats"/>
 				</dateTimeFormats>
 			</calendar>
-			<calendar type="gregorian">
+			<calendar type="generic">
 				<months>
-					<default choice="format"/>
 					<monthContext type="format">
-						<default choice="wide"/>
 						<monthWidth type="abbreviated">
 							<alias source="locale" path="../monthWidth[@type='wide']"/>
 						</monthWidth>
@@ -757,18 +710,18 @@
 							<alias source="locale" path="../../monthContext[@type='stand-alone']/monthWidth[@type='narrow']"/>
 						</monthWidth>
 						<monthWidth type="wide">
-							<month type="1">1</month>
-							<month type="2">2</month>
-							<month type="3">3</month>
-							<month type="4">4</month>
-							<month type="5">5</month>
-							<month type="6">6</month>
-							<month type="7">7</month>
-							<month type="8">8</month>
-							<month type="9">9</month>
-							<month type="10">10</month>
-							<month type="11">11</month>
-							<month type="12">12</month>
+							<month type="1">Month1</month>
+							<month type="2">Month2</month>
+							<month type="3">Month3</month>
+							<month type="4">Month4</month>
+							<month type="5">Month5</month>
+							<month type="6">Month6</month>
+							<month type="7">Month7</month>
+							<month type="8">Month8</month>
+							<month type="9">Month9</month>
+							<month type="10">Month10</month>
+							<month type="11">Month11</month>
+							<month type="12">Month12</month>
 						</monthWidth>
 					</monthContext>
 					<monthContext type="stand-alone">
@@ -795,9 +748,262 @@
 					</monthContext>
 				</months>
 				<days>
-					<default choice="format"/>
+					<alias source="locale" path="../../calendar[@type='gregorian']/days"/>
+				</days>
+				<quarters>
+					<alias source="locale" path="../../calendar[@type='gregorian']/quarters"/>
+				</quarters>
+				<dayPeriods>
+					<alias source="locale" path="../../calendar[@type='gregorian']/dayPeriods"/>
+				</dayPeriods>
+				<eras>
+					<eraNames>
+						<alias source="locale" path="../eraAbbr"/>
+					</eraNames>
+					<eraAbbr>
+						<era type="0">ERA0</era>
+						<era type="1">ERA1</era>
+					</eraAbbr>
+					<eraNarrow>
+						<alias source="locale" path="../eraAbbr"/>
+					</eraNarrow>
+				</eras>
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>G y MMMM d, EEEE</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>G y MMMM d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>G y MMM d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>GGGGG y-MM-dd</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<timeFormats>
+					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
+				</timeFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">d, E</dateFormatItem>
+						<dateFormatItem id="Gy">G y</dateFormatItem>
+						<dateFormatItem id="GyMMM">G y MMM</dateFormatItem>
+						<dateFormatItem id="GyMMMd">G y MMM d</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">G y MMM d, E</dateFormatItem>
+						<dateFormatItem id="h">h a</dateFormatItem>
+						<dateFormatItem id="H">HH</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">MM-dd</dateFormatItem>
+						<dateFormatItem id="MEd">MM-dd, E</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
+						<dateFormatItem id="MMMEd">MMM d, E</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">G y</dateFormatItem>
+						<dateFormatItem id="yyyy">G y</dateFormatItem>
+						<dateFormatItem id="yyyyM">GGGGG y-MM</dateFormatItem>
+						<dateFormatItem id="yyyyMd">GGGGG y-MM-dd</dateFormatItem>
+						<dateFormatItem id="yyyyMEd">GGGGG y-MM-dd, E</dateFormatItem>
+						<dateFormatItem id="yyyyMMM">G y MMM</dateFormatItem>
+						<dateFormatItem id="yyyyMMMd">G y MMM d</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd">G y MMM d, E</dateFormatItem>
+						<dateFormatItem id="yyyyQQQ">G y QQQ</dateFormatItem>
+						<dateFormatItem id="yyyyQQQQ">G y QQQQ</dateFormatItem>
+					</availableFormats>
+					<appendItems>
+						<appendItem request="Day">{0} ({2}: {1})</appendItem>
+						<appendItem request="Day-Of-Week">{0} {1}</appendItem>
+						<appendItem request="Era">{1} {0}</appendItem>
+						<appendItem request="Hour">{0} ({2}: {1})</appendItem>
+						<appendItem request="Minute">{0} ({2}: {1})</appendItem>
+						<appendItem request="Month">{0} ({2}: {1})</appendItem>
+						<appendItem request="Quarter">{0} ({2}: {1})</appendItem>
+						<appendItem request="Second">{0} ({2}: {1})</appendItem>
+						<appendItem request="Timezone">{0} {1}</appendItem>
+						<appendItem request="Week">{0} ({2}: {1})</appendItem>
+						<appendItem request="Year">{1} {0}</appendItem>
+					</appendItems>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a – h a</greatestDifference>
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a – h a v</greatestDifference>
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">MM–MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">MM-dd – MM-dd</greatestDifference>
+							<greatestDifference id="M">MM-dd – MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">MM-dd, E – MM-dd, E</greatestDifference>
+							<greatestDifference id="M">MM-dd, E – MM-dd, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">LLL–LLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">MMM d–d</greatestDifference>
+							<greatestDifference id="M">MMM d – MMM d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="M">MMM d, E – MMM d, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">G y–y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">GGGGG y-MM – y-MM</greatestDifference>
+							<greatestDifference id="y">GGGGG y-MM – y-MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">GGGGG y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="M">GGGGG y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="y">GGGGG y-MM-dd – y-MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">GGGGG y-MM-dd, E – y-MM-dd, E</greatestDifference>
+							<greatestDifference id="M">GGGGG y-MM-dd, E – y-MM-dd, E</greatestDifference>
+							<greatestDifference id="y">GGGGG y-MM-dd, E – y-MM-dd, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">G y MMM–MMM</greatestDifference>
+							<greatestDifference id="y">G y MMM – y MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">G y MMM d–d</greatestDifference>
+							<greatestDifference id="M">G y MMM d – MMM d</greatestDifference>
+							<greatestDifference id="y">G y MMM d – y MMM d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">G y MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="M">G y MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="y">G y MMM d, E – y MMM d, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">G y MMMM–MMMM</greatestDifference>
+							<greatestDifference id="y">G y MMMM – y MMMM</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
+			<calendar type="gregorian">
+				<months>
+					<monthContext type="format">
+						<monthWidth type="abbreviated">
+							<alias source="locale" path="../monthWidth[@type='wide']"/>
+						</monthWidth>
+						<monthWidth type="narrow">
+							<alias source="locale" path="../../monthContext[@type='stand-alone']/monthWidth[@type='narrow']"/>
+						</monthWidth>
+						<monthWidth type="wide">
+							<month type="1">Month1</month>
+							<month type="2">Month2</month>
+							<month type="3">Month3</month>
+							<month type="4">Month4</month>
+							<month type="5">Month5</month>
+							<month type="6">Month6</month>
+							<month type="7">Month7</month>
+							<month type="8">Month8</month>
+							<month type="9">Month9</month>
+							<month type="10">Month10</month>
+							<month type="11">Month11</month>
+							<month type="12">Month12</month>
+						</monthWidth>
+					</monthContext>
+					<monthContext type="stand-alone">
+						<monthWidth type="abbreviated">
+							<alias source="locale" path="../../monthContext[@type='format']/monthWidth[@type='abbreviated']"/>
+						</monthWidth>
+						<monthWidth type="narrow">
+							<month type="1">1</month>
+							<month type="2">2</month>
+							<month type="3">3</month>
+							<month type="4">4</month>
+							<month type="5">5</month>
+							<month type="6">6</month>
+							<month type="7">7</month>
+							<month type="8">8</month>
+							<month type="9">9</month>
+							<month type="10">10</month>
+							<month type="11">11</month>
+							<month type="12">12</month>
+						</monthWidth>
+						<monthWidth type="wide">
+							<alias source="locale" path="../../monthContext[@type='format']/monthWidth[@type='wide']"/>
+						</monthWidth>
+					</monthContext>
+				</months>
+				<days>
 					<dayContext type="format">
-						<default choice="wide"/>
 						<dayWidth type="abbreviated">
 							<alias source="locale" path="../dayWidth[@type='wide']"/>
 						</dayWidth>
@@ -808,13 +1014,13 @@
 							<alias source="locale" path="../dayWidth[@type='abbreviated']"/>
 						</dayWidth>
 						<dayWidth type="wide">
-							<day type="sun">1</day>
-							<day type="mon">2</day>
-							<day type="tue">3</day>
-							<day type="wed">4</day>
-							<day type="thu">5</day>
-							<day type="fri">6</day>
-							<day type="sat">7</day>
+							<day type="sun">Sun</day>
+							<day type="mon">Mon</day>
+							<day type="tue">Tue</day>
+							<day type="wed">Wed</day>
+							<day type="thu">Thu</day>
+							<day type="fri">Fri</day>
+							<day type="sat">Sat</day>
 						</dayWidth>
 					</dayContext>
 					<dayContext type="stand-alone">
@@ -822,13 +1028,13 @@
 							<alias source="locale" path="../../dayContext[@type='format']/dayWidth[@type='abbreviated']"/>
 						</dayWidth>
 						<dayWidth type="narrow">
-							<day type="sun">1</day>
-							<day type="mon">2</day>
-							<day type="tue">3</day>
-							<day type="wed">4</day>
-							<day type="thu">5</day>
-							<day type="fri">6</day>
-							<day type="sat">7</day>
+							<day type="sun">S</day>
+							<day type="mon">M</day>
+							<day type="tue">T</day>
+							<day type="wed">W</day>
+							<day type="thu">T</day>
+							<day type="fri">F</day>
+							<day type="sat">S</day>
 						</dayWidth>
 						<dayWidth type="short">
 							<alias source="locale" path="../../dayContext[@type='format']/dayWidth[@type='short']"/>
@@ -898,10 +1104,9 @@
 					</eraNarrow>
 				</eras>
 				<dateFormats>
-					<default choice="medium"/>
 					<dateFormatLength type="full">
 						<dateFormat>
-							<pattern>EEEE, y MMMM dd</pattern>
+							<pattern>y MMMM d, EEEE</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
@@ -916,12 +1121,11 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>yyyy-MM-dd</pattern>
+							<pattern>y-MM-dd</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
 				<timeFormats>
-					<default choice="medium"/>
 					<timeFormatLength type="full">
 						<timeFormat>
 							<pattern>HH:mm:ss zzzz</pattern>
@@ -944,7 +1148,6 @@
 					</timeFormatLength>
 				</timeFormats>
 				<dateTimeFormats>
-					<default choice="medium"/>
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
 							<pattern>{1} {0}</pattern>
@@ -967,7 +1170,11 @@
 					</dateTimeFormatLength>
 					<availableFormats>
 						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="Ed">d E</dateFormatItem>
+						<dateFormatItem id="Ed">d, E</dateFormatItem>
+						<dateFormatItem id="Gy">G y</dateFormatItem>
+						<dateFormatItem id="GyMMM">G y MMM</dateFormatItem>
+						<dateFormatItem id="GyMMMd">G y MMM d</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">G y MMM d, E</dateFormatItem>
 						<dateFormatItem id="h">h a</dateFormatItem>
 						<dateFormatItem id="H">HH</dateFormatItem>
 						<dateFormatItem id="hm">h:mm a</dateFormatItem>
@@ -975,26 +1182,26 @@
 						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
 						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
 						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">M-d</dateFormatItem>
-						<dateFormatItem id="MEd">E, M-d</dateFormatItem>
+						<dateFormatItem id="Md">MM-dd</dateFormatItem>
+						<dateFormatItem id="MEd">MM-dd, E</dateFormatItem>
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
-						<dateFormatItem id="MMMEd">E MMM d</dateFormatItem>
+						<dateFormatItem id="MMMEd">MMM d, E</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y</dateFormatItem>
-						<dateFormatItem id="yM">y-M</dateFormatItem>
-						<dateFormatItem id="yMd">y-M-d</dateFormatItem>
-						<dateFormatItem id="yMEd">E, y-M-d</dateFormatItem>
+						<dateFormatItem id="yM">y-MM</dateFormatItem>
+						<dateFormatItem id="yMd">y-MM-dd</dateFormatItem>
+						<dateFormatItem id="yMEd">y-MM-dd, E</dateFormatItem>
 						<dateFormatItem id="yMMM">y MMM</dateFormatItem>
 						<dateFormatItem id="yMMMd">y MMM d</dateFormatItem>
-						<dateFormatItem id="yMMMEd">E, y MMM d</dateFormatItem>
+						<dateFormatItem id="yMMMEd">y MMM d, E</dateFormatItem>
 						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
 						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Day">{0} ({2}: {1})</appendItem>
 						<appendItem request="Day-Of-Week">{0} {1}</appendItem>
-						<appendItem request="Era">{0} {1}</appendItem>
+						<appendItem request="Era">{1} {0}</appendItem>
 						<appendItem request="Hour">{0} ({2}: {1})</appendItem>
 						<appendItem request="Minute">{0} ({2}: {1})</appendItem>
 						<appendItem request="Month">{0} ({2}: {1})</appendItem>
@@ -1002,7 +1209,7 @@
 						<appendItem request="Second">{0} ({2}: {1})</appendItem>
 						<appendItem request="Timezone">{0} {1}</appendItem>
 						<appendItem request="Week">{0} ({2}: {1})</appendItem>
-						<appendItem request="Year">{0} {1}</appendItem>
+						<appendItem request="Year">{1} {0}</appendItem>
 					</appendItems>
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
@@ -1042,125 +1249,73 @@
 							<greatestDifference id="H">HH–HH v</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="M">
-							<greatestDifference id="M">M–M</greatestDifference>
+							<greatestDifference id="M">MM–MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="Md">
-							<greatestDifference id="d">MM-dd – dd</greatestDifference>
+							<greatestDifference id="d">MM-dd – MM-dd</greatestDifference>
 							<greatestDifference id="M">MM-dd – MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d">E, MM-dd – E, MM-dd</greatestDifference>
-							<greatestDifference id="M">E, MM-dd – E, MM-dd</greatestDifference>
+							<greatestDifference id="d">MM-dd, E – MM-dd, E</greatestDifference>
+							<greatestDifference id="M">MM-dd, E – MM-dd, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M">LLL–LLL</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
-							<greatestDifference id="d">MM-d – d</greatestDifference>
-							<greatestDifference id="M">MM-d – MM-d</greatestDifference>
+							<greatestDifference id="d">MMM d–d</greatestDifference>
+							<greatestDifference id="M">MMM d – MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d">E, MM-d – E, MM-d</greatestDifference>
-							<greatestDifference id="M">E, MM-d – E, MM-d</greatestDifference>
+							<greatestDifference id="d">MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="M">MMM d, E – MMM d, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">yyyy-MM – MM</greatestDifference>
-							<greatestDifference id="y">yyyy-MM – yyyy-MM</greatestDifference>
+							<greatestDifference id="M">y-MM – y-MM</greatestDifference>
+							<greatestDifference id="y">y-MM – y-MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">yyyy-MM-dd – dd</greatestDifference>
-							<greatestDifference id="M">yyyy-MM-dd – MM-dd</greatestDifference>
-							<greatestDifference id="y">yyyy-MM-dd – yyyy-MM-dd</greatestDifference>
+							<greatestDifference id="d">y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="M">y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="y">y-MM-dd – y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, yyyy-MM-dd – E, yyyy-MM-dd</greatestDifference>
-							<greatestDifference id="M">E, yyyy-MM-dd – E, yyyy-MM-dd</greatestDifference>
-							<greatestDifference id="y">E, yyyy-MM-dd – E, yyyy-MM-dd</greatestDifference>
+							<greatestDifference id="d">y-MM-dd, E – y-MM-dd, E</greatestDifference>
+							<greatestDifference id="M">y-MM-dd, E – y-MM-dd, E</greatestDifference>
+							<greatestDifference id="y">y-MM-dd, E – y-MM-dd, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
-							<greatestDifference id="M">yyyy-MM – MM</greatestDifference>
-							<greatestDifference id="y">yyyy-MM – yyyy-MM</greatestDifference>
+							<greatestDifference id="M">y MMM–MMM</greatestDifference>
+							<greatestDifference id="y">y MMM – y MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d">yyyy-MM-d – d</greatestDifference>
-							<greatestDifference id="M">yyyy-MM-dd – MM-d</greatestDifference>
-							<greatestDifference id="y">yyyy-MM-dd – yyyy-MM-dd</greatestDifference>
+							<greatestDifference id="d">y MMM d–d</greatestDifference>
+							<greatestDifference id="M">y MMM d – MMM d</greatestDifference>
+							<greatestDifference id="y">y MMM d – y MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, yyyy-MM-dd – E, yyyy-MM-dd</greatestDifference>
-							<greatestDifference id="M">E, yyyy-MM-dd – E, yyyy-MM-dd</greatestDifference>
-							<greatestDifference id="y">E, yyyy-MM-dd – E, yyyy-MM-dd</greatestDifference>
+							<greatestDifference id="d">y MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="M">y MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="y">y MMM d, E – y MMM d, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
-							<greatestDifference id="M">yyyy-MM – MM</greatestDifference>
-							<greatestDifference id="y">yyyy-MM – yyyy-MM</greatestDifference>
+							<greatestDifference id="M">y MMMM–MMMM</greatestDifference>
+							<greatestDifference id="y">y MMMM – y MMMM</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>Era</displayName>
-					</field>
-					<field type="year">
-						<displayName>Year</displayName>
-					</field>
-					<field type="month">
-						<displayName>Month</displayName>
-					</field>
-					<field type="week">
-						<displayName>Week</displayName>
-					</field>
-					<field type="day">
-						<displayName>Day</displayName>
-						<relative type="-1">Yesterday</relative>
-						<relative type="0">Today</relative>
-						<relative type="1">Tomorrow</relative>
-					</field>
-					<field type="weekday">
-						<displayName>Day of the Week</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>Dayperiod</displayName>
-					</field>
-					<field type="hour">
-						<displayName>Hour</displayName>
-					</field>
-					<field type="minute">
-						<displayName>Minute</displayName>
-					</field>
-					<field type="second">
-						<displayName>Second</displayName>
-					</field>
-					<field type="zone">
-						<displayName>Zone</displayName>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="hebrew">
 				<months>
-					<default choice="format"/>
 					<monthContext type="format">
-						<default choice="wide"/>
 						<monthWidth type="abbreviated">
 							<alias source="locale" path="../monthWidth[@type='wide']"/>
 						</monthWidth>
 						<monthWidth type="narrow">
-							<month type="1">1</month>
-							<month type="2">2</month>
-							<month type="3">3</month>
-							<month type="4">4</month>
-							<month type="5">5</month>
-							<month type="6">6</month>
-							<month type="7">7</month>
-							<month type="8">8</month>
-							<month type="9">9</month>
-							<month type="10">10</month>
-							<month type="11">11</month>
-							<month type="12">12</month>
-							<month type="13">13</month>
+							<alias source="locale" path="../../monthContext[@type='stand-alone']/monthWidth[@type='narrow']"/>
 						</monthWidth>
 						<monthWidth type="wide">
 							<month type="1">Tishri</month>
@@ -1184,7 +1339,19 @@
 							<alias source="locale" path="../../monthContext[@type='format']/monthWidth[@type='abbreviated']"/>
 						</monthWidth>
 						<monthWidth type="narrow">
-							<alias source="locale" path="../../monthContext[@type='format']/monthWidth[@type='narrow']"/>
+							<month type="1">1</month>
+							<month type="2">2</month>
+							<month type="3">3</month>
+							<month type="4">4</month>
+							<month type="5">5</month>
+							<month type="6">6</month>
+							<month type="7">7</month>
+							<month type="8">8</month>
+							<month type="9">9</month>
+							<month type="10">10</month>
+							<month type="11">11</month>
+							<month type="12">12</month>
+							<month type="13">13</month>
 						</monthWidth>
 						<monthWidth type="wide">
 							<alias source="locale" path="../../monthContext[@type='format']/monthWidth[@type='wide']"/>
@@ -1215,20 +1382,18 @@
 					</eraNarrow>
 				</eras>
 				<dateFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateFormats"/>
+					<alias source="locale" path="../../calendar[@type='generic']/dateFormats"/>
 				</dateFormats>
 				<timeFormats>
 					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateTimeFormats"/>
+					<alias source="locale" path="../../calendar[@type='generic']/dateTimeFormats"/>
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="indian">
 				<months>
-					<default choice="format"/>
 					<monthContext type="format">
-						<default choice="wide"/>
 						<monthWidth type="abbreviated">
 							<alias source="locale" path="../monthWidth[@type='wide']"/>
 						</monthWidth>
@@ -1294,20 +1459,18 @@
 					</eraNarrow>
 				</eras>
 				<dateFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateFormats"/>
+					<alias source="locale" path="../../calendar[@type='generic']/dateFormats"/>
 				</dateFormats>
 				<timeFormats>
 					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateTimeFormats"/>
+					<alias source="locale" path="../../calendar[@type='generic']/dateTimeFormats"/>
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="islamic">
 				<months>
-					<default choice="format"/>
 					<monthContext type="format">
-						<default choice="wide"/>
 						<monthWidth type="abbreviated">
 							<month type="1">Muh.</month>
 							<month type="2">Saf.</month>
@@ -1387,13 +1550,13 @@
 					</eraNarrow>
 				</eras>
 				<dateFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateFormats"/>
+					<alias source="locale" path="../../calendar[@type='generic']/dateFormats"/>
 				</dateFormats>
 				<timeFormats>
 					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateTimeFormats"/>
+					<alias source="locale" path="../../calendar[@type='generic']/dateTimeFormats"/>
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="islamic-civil">
@@ -1466,7 +1629,7 @@
 						<era type="19">Daidō (806-810)</era>
 						<era type="20">Kōnin (810-824)</era>
 						<era type="21">Tenchō (824-834)</era>
-						<era type="22">Shōwa (834-848)</era>
+						<era type="22">Jōwa (834-848)</era>
 						<era type="23">Kajō (848-851)</era>
 						<era type="24">Ninju (851-854)</era>
 						<era type="25">Saiko (854-857)</era>
@@ -1704,7 +1867,7 @@
 						<era type="19">Daidō (806-810)</era>
 						<era type="20">Kōnin (810-824)</era>
 						<era type="21">Tenchō (824-834)</era>
-						<era type="22">Shōwa (834-848)</era>
+						<era type="22">Jōwa (834-848)</era>
 						<era type="23">Kajō (848-851)</era>
 						<era type="24">Ninju (851-854)</era>
 						<era type="25">Saiko (854-857)</era>
@@ -1921,101 +2084,18 @@
 					</eraNarrow>
 				</eras>
 				<dateFormats>
-					<default choice="medium"/>
-					<dateFormatLength type="full">
-						<dateFormat>
-							<pattern>EEEE, G y MMMM dd</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="long">
-						<dateFormat>
-							<pattern>G y MMMM d</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="medium">
-						<dateFormat>
-							<pattern>G y MMM d</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="short">
-						<dateFormat>
-							<pattern>GGGGG yy-MM-dd</pattern>
-						</dateFormat>
-					</dateFormatLength>
+					<alias source="locale" path="../../calendar[@type='generic']/dateFormats"/>
 				</dateFormats>
 				<timeFormats>
 					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
-					<default choice="medium"/>
-					<dateTimeFormatLength type="full">
-						<dateTimeFormat>
-							<pattern>{1} {0}</pattern>
-						</dateTimeFormat>
-					</dateTimeFormatLength>
-					<dateTimeFormatLength type="long">
-						<dateTimeFormat>
-							<pattern>{1} {0}</pattern>
-						</dateTimeFormat>
-					</dateTimeFormatLength>
-					<dateTimeFormatLength type="medium">
-						<dateTimeFormat>
-							<pattern>{1} {0}</pattern>
-						</dateTimeFormat>
-					</dateTimeFormatLength>
-					<dateTimeFormatLength type="short">
-						<dateTimeFormat>
-							<pattern>{1} {0}</pattern>
-						</dateTimeFormat>
-					</dateTimeFormatLength>
-					<availableFormats>
-						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="Ed">d E</dateFormatItem>
-						<dateFormatItem id="Gy">G y</dateFormatItem>
-						<dateFormatItem id="h">h a</dateFormatItem>
-						<dateFormatItem id="H">HH</dateFormatItem>
-						<dateFormatItem id="hm">h:mm a</dateFormatItem>
-						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
-						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">M-d</dateFormatItem>
-						<dateFormatItem id="MEd">E, M-d</dateFormatItem>
-						<dateFormatItem id="MMM">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
-						<dateFormatItem id="MMMEd">E MMM d</dateFormatItem>
-						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="y">G y</dateFormatItem>
-						<dateFormatItem id="yyyy">G y</dateFormatItem>
-						<dateFormatItem id="yyyyM">GGGGG yy-MM</dateFormatItem>
-						<dateFormatItem id="yyyyMd">GGGGG yy-MM-dd</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">E, GGGGG yy-MM-dd</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">G y MMM</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">G y MMM d</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">E, G y MMM d</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">GGGGG y QQQ</dateFormatItem>
-						<dateFormatItem id="yyyyQQQQ">G y QQQQ</dateFormatItem>
-					</availableFormats>
-					<appendItems>
-						<appendItem request="Day">{0} ({2}: {1})</appendItem>
-						<appendItem request="Day-Of-Week">{0} {1}</appendItem>
-						<appendItem request="Era">{0} {1}</appendItem>
-						<appendItem request="Hour">{0} ({2}: {1})</appendItem>
-						<appendItem request="Minute">{0} ({2}: {1})</appendItem>
-						<appendItem request="Month">{0} ({2}: {1})</appendItem>
-						<appendItem request="Quarter">{0} ({2}: {1})</appendItem>
-						<appendItem request="Second">{0} ({2}: {1})</appendItem>
-						<appendItem request="Timezone">{0} {1}</appendItem>
-						<appendItem request="Week">{0} ({2}: {1})</appendItem>
-						<appendItem request="Year">{0} {1}</appendItem>
-					</appendItems>
+					<alias source="locale" path="../../calendar[@type='generic']/dateTimeFormats"/>
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="persian">
 				<months>
-					<default choice="format"/>
 					<monthContext type="format">
-						<default choice="wide"/>
 						<monthWidth type="abbreviated">
 							<alias source="locale" path="../monthWidth[@type='wide']"/>
 						</monthWidth>
@@ -2081,13 +2161,13 @@
 					</eraNarrow>
 				</eras>
 				<dateFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateFormats"/>
+					<alias source="locale" path="../../calendar[@type='generic']/dateFormats"/>
 				</dateFormats>
 				<timeFormats>
 					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
-					<alias source="locale" path="../../calendar[@type='gregorian']/dateTimeFormats"/>
+					<alias source="locale" path="../../calendar[@type='generic']/dateTimeFormats"/>
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="roc">
@@ -2117,83 +2197,54 @@
 					</eraNarrow>
 				</eras>
 				<dateFormats>
-					<default choice="medium"/>
-					<dateFormatLength type="full">
-						<dateFormat>
-							<pattern>EEEE, G y MMMM dd</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="long">
-						<dateFormat>
-							<pattern>G y MMMM d</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="medium">
-						<dateFormat>
-							<pattern>G y MMM d</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="short">
-						<dateFormat>
-							<pattern>GGGGG yyy-MM-dd</pattern>
-						</dateFormat>
-					</dateFormatLength>
+					<alias source="locale" path="../../calendar[@type='generic']/dateFormats"/>
 				</dateFormats>
 				<timeFormats>
 					<alias source="locale" path="../../calendar[@type='gregorian']/timeFormats"/>
 				</timeFormats>
 				<dateTimeFormats>
-					<default choice="medium"/>
-					<dateTimeFormatLength>
-						<alias source="locale" path="../../../calendar[@type='gregorian']/dateTimeFormats/dateTimeFormatLength"/>
-					</dateTimeFormatLength>
-					<availableFormats>
-						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="Ed">d E</dateFormatItem>
-						<dateFormatItem id="Gy">G y</dateFormatItem>
-						<dateFormatItem id="h">h a</dateFormatItem>
-						<dateFormatItem id="H">HH</dateFormatItem>
-						<dateFormatItem id="hm">h:mm a</dateFormatItem>
-						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
-						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">M-d</dateFormatItem>
-						<dateFormatItem id="MEd">E, M-d</dateFormatItem>
-						<dateFormatItem id="MMM">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
-						<dateFormatItem id="MMMEd">E MMM d</dateFormatItem>
-						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="y">G y</dateFormatItem>
-						<dateFormatItem id="yyyy">G y</dateFormatItem>
-						<dateFormatItem id="yyyyM">GGGGG yyy-MM</dateFormatItem>
-						<dateFormatItem id="yyyyMd">GGGGG yyy-MM-dd</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">E, GGGGG yyy-MM-dd</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">G y MMM</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">G y MMM d</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">E, G y MMM d</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">GGGGG y QQQ</dateFormatItem>
-						<dateFormatItem id="yyyyQQQQ">G y QQQQ</dateFormatItem>
-					</availableFormats>
-					<appendItems>
-						<appendItem request="Day">{0} ({2}: {1})</appendItem>
-						<appendItem request="Day-Of-Week">{0} {1}</appendItem>
-						<appendItem request="Era">{0} {1}</appendItem>
-						<appendItem request="Hour">{0} ({2}: {1})</appendItem>
-						<appendItem request="Minute">{0} ({2}: {1})</appendItem>
-						<appendItem request="Month">{0} ({2}: {1})</appendItem>
-						<appendItem request="Quarter">{0} ({2}: {1})</appendItem>
-						<appendItem request="Second">{0} ({2}: {1})</appendItem>
-						<appendItem request="Timezone">{0} {1}</appendItem>
-						<appendItem request="Week">{0} ({2}: {1})</appendItem>
-						<appendItem request="Year">{0} {1}</appendItem>
-					</appendItems>
-					<intervalFormats>
-						<alias source="locale" path="../../../calendar[@type='gregorian']/dateTimeFormats/intervalFormats"/>
-					</intervalFormats>
+					<alias source="locale" path="../../calendar[@type='generic']/dateTimeFormats"/>
 				</dateTimeFormats>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>Era</displayName>
+			</field>
+			<field type="year">
+				<displayName>Year</displayName>
+			</field>
+			<field type="month">
+				<displayName>Month</displayName>
+			</field>
+			<field type="week">
+				<displayName>Week</displayName>
+			</field>
+			<field type="day">
+				<displayName>Day</displayName>
+				<relative type="-1">Yesterday</relative>
+				<relative type="0">Today</relative>
+				<relative type="1">Tomorrow</relative>
+			</field>
+			<field type="weekday">
+				<displayName>Day of the Week</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>Dayperiod</displayName>
+			</field>
+			<field type="hour">
+				<displayName>Hour</displayName>
+			</field>
+			<field type="minute">
+				<displayName>Minute</displayName>
+			</field>
+			<field type="second">
+				<displayName>Second</displayName>
+			</field>
+			<field type="zone">
+				<displayName>Zone</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
@@ -2201,13 +2252,6 @@
 			<regionFormat>{0}</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<fallbackRegionFormat>{1} ({0})</fallbackRegionFormat>
-			<singleCountries list="Europe/Kiev Pacific/Majuro Africa/Bamako America/Godthab America/Santiago America/Guayaquil Asia/Shanghai Asia/Tashkent Asia/Kuala_Lumpur Europe/Madrid Europe/Lisbon Europe/London Pacific/Auckland Pacific/Tahiti"/>
-			<zone type="America/Lower_Princes">
-				<exemplarCity>Lower Prince's Quarter</exemplarCity>
-			</zone>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity>Beulah, North Dakota</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Unknown</exemplarCity>
 			</zone>
@@ -2235,6 +2279,12 @@
 			<zone type="Atlantic/Faeroe">
 				<exemplarCity>Faroe</exemplarCity>
 			</zone>
+			<zone type="America/Godthab">
+				<exemplarCity>Nuuk</exemplarCity>
+			</zone>
+			<zone type="America/Scoresbysund">
+				<exemplarCity>Ittoqqortoormiit</exemplarCity>
+			</zone>
 			<zone type="Asia/Calcutta">
 				<exemplarCity>Kolkata</exemplarCity>
 			</zone>
@@ -2249,6 +2299,12 @@
 			</zone>
 			<zone type="Atlantic/St_Helena">
 				<exemplarCity>St. Helena</exemplarCity>
+			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity>Lower Prince's Quarter</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity>Beulah, North Dakota</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity>New Salem, North Dakota</exemplarCity>
@@ -2813,6 +2869,12 @@
 		<currencyFormats numberSystem="beng">
 			<alias source="locale" path="../currencyFormats[@numberSystem='latn']"/>
 		</currencyFormats>
+		<currencyFormats numberSystem="brah">
+			<alias source="locale" path="../currencyFormats[@numberSystem='latn']"/>
+		</currencyFormats>
+		<currencyFormats numberSystem="cakm">
+			<alias source="locale" path="../currencyFormats[@numberSystem='latn']"/>
+		</currencyFormats>
 		<currencyFormats numberSystem="cham">
 			<alias source="locale" path="../currencyFormats[@numberSystem='latn']"/>
 		</currencyFormats>
@@ -2855,12 +2917,12 @@
 		<currencyFormats numberSystem="latn">
 			<currencySpacing>
 				<beforeCurrency>
-					<currencyMatch>[:letter:]</currencyMatch>
+					<currencyMatch>[:^S:]</currencyMatch>
 					<surroundingMatch>[:digit:]</surroundingMatch>
 					<insertBetween> </insertBetween>
 				</beforeCurrency>
 				<afterCurrency>
-					<currencyMatch>[:letter:]</currencyMatch>
+					<currencyMatch>[:^S:]</currencyMatch>
 					<surroundingMatch>[:digit:]</surroundingMatch>
 					<insertBetween> </insertBetween>
 				</afterCurrency>
@@ -2902,10 +2964,22 @@
 		<currencyFormats numberSystem="orya">
 			<alias source="locale" path="../currencyFormats[@numberSystem='latn']"/>
 		</currencyFormats>
+		<currencyFormats numberSystem="osma">
+			<alias source="locale" path="../currencyFormats[@numberSystem='latn']"/>
+		</currencyFormats>
 		<currencyFormats numberSystem="saur">
 			<alias source="locale" path="../currencyFormats[@numberSystem='latn']"/>
 		</currencyFormats>
+		<currencyFormats numberSystem="shrd">
+			<alias source="locale" path="../currencyFormats[@numberSystem='latn']"/>
+		</currencyFormats>
+		<currencyFormats numberSystem="sora">
+			<alias source="locale" path="../currencyFormats[@numberSystem='latn']"/>
+		</currencyFormats>
 		<currencyFormats numberSystem="sund">
+			<alias source="locale" path="../currencyFormats[@numberSystem='latn']"/>
+		</currencyFormats>
+		<currencyFormats numberSystem="takr">
 			<alias source="locale" path="../currencyFormats[@numberSystem='latn']"/>
 		</currencyFormats>
 		<currencyFormats numberSystem="talu">

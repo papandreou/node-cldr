@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7839 $"/>
-		<generation date="$Date: 2012-10-11 16:37:12 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="lo"/>
 	</identity>
 	<localeDisplayNames>
@@ -970,6 +974,7 @@
 			<territory type="PN">ຫມູ່ເກາະພິດແຄຣ໌ນ</territory>
 			<territory type="PR">ເປີໂຕລິໂກ</territory>
 			<territory type="PS">ປາເລດຕີນຽມເຕີລິດໂຕເລຍ</territory>
+			<territory type="PS" alt="short">ປາເລັສຕິນ</territory>
 			<territory type="PT">ໂປຕຸກກັນ</territory>
 			<territory type="PW">ປາເລົາ</territory>
 			<territory type="PY">ປາລາກວຍ</territory>
@@ -1034,6 +1039,7 @@
 			<territory type="VU">ວານົວຕູ</territory>
 			<territory type="WF">ວາລິສແລະຟຸຕູນາ</territory>
 			<territory type="WS">ຊາມົວ</territory>
+			<territory type="XK">ໂຄໂຊໂວ</territory>
 			<territory type="YE">ເຢເມນ</territory>
 			<territory type="YT">ມາຢອດ</territory>
 			<territory type="ZA">ອາຟະລິກາໃຕ້</territory>
@@ -1119,7 +1125,6 @@
 			<type type="coptic" key="calendar">ປະຕິທິນຄັອບຕິກ</type>
 			<type type="deva" key="numbers">ຕົວເລກເດວັນເນກາ</type>
 			<type type="dictionary" key="collation">ລຽງຕາມພົດຈະນານຸກົມ</type>
-			<type type="direct" key="collation">ໂດຍຕົງ</type>
 			<type type="ducet" key="collation">ລຽງຕາມລໍາດັບຕາມຢູນີໂຄດ</type>
 			<type type="ethi" key="numbers">ຕົວເລກເອທີໂອປິກ</type>
 			<type type="ethiopic" key="calendar">ປະຕິທິນເອທິໂອເປຍ</type>
@@ -1237,7 +1242,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern draft="unconfirmed">d/M/yyyy</pattern>
+							<pattern draft="unconfirmed">d/M/y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -1656,6 +1661,173 @@
 					</monthContext>
 				</months>
 			</calendar>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEEທີ d MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>d MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>d MMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>d/M/y GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1}, {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1}, {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1}, {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1}, {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">d E</dateFormatItem>
+						<dateFormatItem id="h">h ໂມງa</dateFormatItem>
+						<dateFormatItem id="H">HH</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">M-d</dateFormatItem>
+						<dateFormatItem id="MEd">E, M-d</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
+						<dateFormatItem id="MMMEd">E MMM d</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">y-M</dateFormatItem>
+						<dateFormatItem id="yMd">y-M-d</dateFormatItem>
+						<dateFormatItem id="yMEd">E, y-M-d</dateFormatItem>
+						<dateFormatItem id="yMMM">y MMM</dateFormatItem>
+						<dateFormatItem id="yMMMd">y MMM d</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, y MMM d</dateFormatItem>
+						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
+						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a – h a</greatestDifference>
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a – h a v</greatestDifference>
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M–M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">MM-dd – dd</greatestDifference>
+							<greatestDifference id="M">MM-dd – MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E, MM-dd – E, MM-dd</greatestDifference>
+							<greatestDifference id="M">E, MM-dd – E, MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">LLL–LLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">MM-d – d</greatestDifference>
+							<greatestDifference id="M">MM-d – MM-d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E, MM-d – E, MM-d</greatestDifference>
+							<greatestDifference id="M">E, MM-d – E, MM-d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y–y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">y-MM – MM</greatestDifference>
+							<greatestDifference id="y">y-MM – y-MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">y-MM-dd – dd</greatestDifference>
+							<greatestDifference id="M">y-MM-dd – MM-dd</greatestDifference>
+							<greatestDifference id="y">y-MM-dd – y-MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E, y-MM-dd – E, y-MM-dd</greatestDifference>
+							<greatestDifference id="M">E, y-MM-dd – E, y-MM-dd</greatestDifference>
+							<greatestDifference id="y">E, y-MM-dd – E, y-MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">y-MM – MM</greatestDifference>
+							<greatestDifference id="y">y-MM – y-MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">y-MM-d – d</greatestDifference>
+							<greatestDifference id="M">y-MM-dd – MM-d</greatestDifference>
+							<greatestDifference id="y">y-MM-dd – y-MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E, y-MM-dd – E, y-MM-dd</greatestDifference>
+							<greatestDifference id="M">E, y-MM-dd – E, y-MM-dd</greatestDifference>
+							<greatestDifference id="y">E, y-MM-dd – E, y-MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">y-MM – MM</greatestDifference>
+							<greatestDifference id="y">y-MM – y-MM</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1899,7 +2071,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>d/M/yyyy</pattern>
+							<pattern>d/M/y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -2035,79 +2207,39 @@
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">yyyy-MM – MM</greatestDifference>
-							<greatestDifference id="y">yyyy-MM – yyyy-MM</greatestDifference>
+							<greatestDifference id="M">y-MM – MM</greatestDifference>
+							<greatestDifference id="y">y-MM – y-MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">yyyy-MM-dd – dd</greatestDifference>
-							<greatestDifference id="M">yyyy-MM-dd – MM-dd</greatestDifference>
-							<greatestDifference id="y">yyyy-MM-dd – yyyy-MM-dd</greatestDifference>
+							<greatestDifference id="d">y-MM-dd – dd</greatestDifference>
+							<greatestDifference id="M">y-MM-dd – MM-dd</greatestDifference>
+							<greatestDifference id="y">y-MM-dd – y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, yyyy-MM-dd – E, yyyy-MM-dd</greatestDifference>
-							<greatestDifference id="M">E, yyyy-MM-dd – E, yyyy-MM-dd</greatestDifference>
-							<greatestDifference id="y">E, yyyy-MM-dd – E, yyyy-MM-dd</greatestDifference>
+							<greatestDifference id="d">E, y-MM-dd – E, y-MM-dd</greatestDifference>
+							<greatestDifference id="M">E, y-MM-dd – E, y-MM-dd</greatestDifference>
+							<greatestDifference id="y">E, y-MM-dd – E, y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
-							<greatestDifference id="M">yyyy-MM – MM</greatestDifference>
-							<greatestDifference id="y">yyyy-MM – yyyy-MM</greatestDifference>
+							<greatestDifference id="M">y-MM – MM</greatestDifference>
+							<greatestDifference id="y">y-MM – y-MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d">yyyy-MM-d – d</greatestDifference>
-							<greatestDifference id="M">yyyy-MM-dd – MM-d</greatestDifference>
-							<greatestDifference id="y">yyyy-MM-dd – yyyy-MM-dd</greatestDifference>
+							<greatestDifference id="d">y-MM-d – d</greatestDifference>
+							<greatestDifference id="M">y-MM-dd – MM-d</greatestDifference>
+							<greatestDifference id="y">y-MM-dd – y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, yyyy-MM-dd – E, yyyy-MM-dd</greatestDifference>
-							<greatestDifference id="M">E, yyyy-MM-dd – E, yyyy-MM-dd</greatestDifference>
-							<greatestDifference id="y">E, yyyy-MM-dd – E, yyyy-MM-dd</greatestDifference>
+							<greatestDifference id="d">E, y-MM-dd – E, y-MM-dd</greatestDifference>
+							<greatestDifference id="M">E, y-MM-dd – E, y-MM-dd</greatestDifference>
+							<greatestDifference id="y">E, y-MM-dd – E, y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
-							<greatestDifference id="M">yyyy-MM – MM</greatestDifference>
-							<greatestDifference id="y">yyyy-MM – yyyy-MM</greatestDifference>
+							<greatestDifference id="M">y-MM – MM</greatestDifference>
+							<greatestDifference id="y">y-MM – y-MM</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>ສະໄໝ</displayName>
-					</field>
-					<field type="year">
-						<displayName>ປີ</displayName>
-					</field>
-					<field type="month">
-						<displayName>ເດືອນ</displayName>
-					</field>
-					<field type="week">
-						<displayName>ອາທິດ</displayName>
-					</field>
-					<field type="day">
-						<displayName>ມື້</displayName>
-						<relative type="-2">ມື້ກ່ອນ</relative>
-						<relative type="-1">ວານນີ້</relative>
-						<relative type="0">ມື້ນີ້</relative>
-						<relative type="1">ມື້ອື່ນ</relative>
-						<relative type="2">ມື້ຮື</relative>
-					</field>
-					<field type="weekday">
-						<displayName>ມື້ຂອງອາທິດ</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>ເຊົ້າ/ແລງ</displayName>
-					</field>
-					<field type="hour">
-						<displayName>ຊົ່ວໂມງ</displayName>
-					</field>
-					<field type="minute">
-						<displayName>ນາທີ</displayName>
-					</field>
-					<field type="second">
-						<displayName>ວິນາທີ</displayName>
-					</field>
-					<field type="zone">
-						<displayName>ເວລາຕາມເຂດ</displayName>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="hebrew">
 				<months>
@@ -2397,7 +2529,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>yyyy-MM-dd</pattern>
+							<pattern>y-MM-dd</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -2418,7 +2550,7 @@
 						<dateFormatItem id="MMMEd">E MMM d</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y</dateFormatItem>
-						<dateFormatItem id="yM">M/yyyy</dateFormatItem>
+						<dateFormatItem id="yM">M/y</dateFormatItem>
 						<dateFormatItem id="yMEd">E M/d/y</dateFormatItem>
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E,MMM d,y</dateFormatItem>
@@ -2774,6 +2906,46 @@
 				</eras>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>ສະໄໝ</displayName>
+			</field>
+			<field type="year">
+				<displayName>ປີ</displayName>
+			</field>
+			<field type="month">
+				<displayName>ເດືອນ</displayName>
+			</field>
+			<field type="week">
+				<displayName>ອາທິດ</displayName>
+			</field>
+			<field type="day">
+				<displayName>ມື້</displayName>
+				<relative type="-2">ມື້ກ່ອນ</relative>
+				<relative type="-1">ວານນີ້</relative>
+				<relative type="0">ມື້ນີ້</relative>
+				<relative type="1">ມື້ອື່ນ</relative>
+				<relative type="2">ມື້ຮື</relative>
+			</field>
+			<field type="weekday">
+				<displayName>ມື້ຂອງອາທິດ</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>ເຊົ້າ/ແລງ</displayName>
+			</field>
+			<field type="hour">
+				<displayName>ຊົ່ວໂມງ</displayName>
+			</field>
+			<field type="minute">
+				<displayName>ນາທີ</displayName>
+			</field>
+			<field type="second">
+				<displayName>ວິນາທີ</displayName>
+			</field>
+			<field type="zone">
+				<displayName>ເວລາຕາມເຂດ</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
@@ -2781,12 +2953,6 @@
 			<regionFormat>ເວລາ {0}</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<fallbackRegionFormat>{1} ({0})</fallbackRegionFormat>
-			<zone type="America/Lower_Princes">
-				<exemplarCity>ໂລເວີແປຣນໂກຕາ</exemplarCity>
-			</zone>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity>ເບີລາ, ດາໂກຕາເໜືອ</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>ບໍ່ຮູ້ຈັກ</exemplarCity>
 			</zone>
@@ -2810,9 +2976,6 @@
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity>ເຍເຣວານ</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>ເຄີລາຄາວ</exemplarCity>
 			</zone>
 			<zone type="Africa/Luanda">
 				<exemplarCity>ແລມດາ</exemplarCity>
@@ -3176,6 +3339,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>ເຄບເວີດ</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>ເຄີລາຄາວ</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity>ຄຣິດສະມາດ</exemplarCity>
@@ -3789,6 +3955,9 @@
 			<zone type="America/El_Salvador">
 				<exemplarCity>ເອວຊັນວາເດີ</exemplarCity>
 			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity>ໂລເວີແປຣນໂກຕາ</exemplarCity>
+			</zone>
 			<zone type="Asia/Damascus">
 				<exemplarCity>ດາມັດກັດ</exemplarCity>
 			</zone>
@@ -3899,6 +4068,9 @@
 			</zone>
 			<zone type="America/Denver">
 				<exemplarCity>ເດັນເວີ</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity>ເບີລາ, ດາໂກຕາເໜືອ</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity>ນີວສາເລັມ, ດາໂກຕາເໜືອ</exemplarCity>
@@ -4033,25 +4205,11 @@
 					<daylight>ເວລາລະດູຮ້ອນອາຟຣິລິກາຕາເວັນຕົກ</daylight>
 				</long>
 			</metazone>
-			<metazone type="Aktyubinsk">
-				<long>
-					<generic>ເວລາອັກທຸຍບິງ</generic>
-					<standard>ເວລາມາດຕະຖານອັກທຸຍບິງ</standard>
-					<daylight>ເວລາລະດູຮ້ອນອັກທຸຍບິງ</daylight>
-				</long>
-			</metazone>
 			<metazone type="Alaska">
 				<long>
 					<generic>ເວລາອະແລສກາ</generic>
 					<standard>ເວລາມາດຕະຖານອະແລສກາ</standard>
 					<daylight>ເວລາຕອນທ່ຽງຂອງອະແລສກາ</daylight>
-				</long>
-			</metazone>
-			<metazone type="Alaska_Hawaii">
-				<long>
-					<generic>ເວລາອະແລສກາ-ຮາວາຍ</generic>
-					<standard>ເວລາມາດຕະຖານອະແລສກາ-ຮາວາຍ</standard>
-					<daylight>ເວລາຕອນທ່ຽງຂອງອະແລສກາ-ຮາວາຍ</daylight>
 				</long>
 			</metazone>
 			<metazone type="Almaty">
@@ -4138,13 +4296,6 @@
 					<daylight>ເວລາລະດູຮ້ອນອາເມເນຍ</daylight>
 				</long>
 			</metazone>
-			<metazone type="Ashkhabad">
-				<long>
-					<generic>ເວລາອາກກາບັດ</generic>
-					<standard>ເວລາມາດຕະຖານອາກກາບັດ</standard>
-					<daylight>ເວລາລະດູຮ້ອນອາກກາບັດ</daylight>
-				</long>
-			</metazone>
 			<metazone type="Atlantic">
 				<long>
 					<generic>ເວລາຂອງອາແລນຕິກ</generic>
@@ -4201,13 +4352,6 @@
 					<daylight>ເວລາ ລະດູຮ້ອນ ບັງກະລາເທດ</daylight>
 				</long>
 			</metazone>
-			<metazone type="Bering">
-				<long>
-					<generic>ເວລາຂອງເບຈິງ</generic>
-					<standard>ເວລາມາດຕະຖານຂອງເບຈິງ</standard>
-					<daylight>ເວລາຕອນທ່ຽງຂອງເບຈິງ</daylight>
-				</long>
-			</metazone>
 			<metazone type="Bhutan">
 				<long>
 					<standard>ເວລາ ບູຖານ</standard>
@@ -4216,13 +4360,6 @@
 			<metazone type="Bolivia">
 				<long>
 					<standard>ເວລາໂບລີເວີຍ</standard>
-				</long>
-			</metazone>
-			<metazone type="Borneo">
-				<long>
-					<generic>ເວລາບໍນຽວ</generic>
-					<standard>ເວລາມາດຕະຖານບໍນຽວ</standard>
-					<daylight>ເວລາລະດູຮ້ອນບໍນຽວ</daylight>
 				</long>
 			</metazone>
 			<metazone type="Brasilia">
@@ -4252,11 +4389,6 @@
 			<metazone type="Chamorro">
 				<long>
 					<standard>ເວລາຊາມໍໂລ</standard>
-				</long>
-			</metazone>
-			<metazone type="Changbai">
-				<long>
-					<standard>ເວລາຊ່າງໄປ</standard>
 				</long>
 			</metazone>
 			<metazone type="Chatham">
@@ -4318,11 +4450,6 @@
 					<daylight>ເວລາຕອນທ່ຽງຂອງຄິວບາ</daylight>
 				</long>
 			</metazone>
-			<metazone type="Dacca">
-				<long>
-					<standard>ເວລາດາຄາ</standard>
-				</long>
-			</metazone>
 			<metazone type="Davis">
 				<long>
 					<standard>ເວລາເດວິດ</standard>
@@ -4331,18 +4458,6 @@
 			<metazone type="DumontDUrville">
 				<long>
 					<standard>ເວລາດູມອງດູວິລ</standard>
-				</long>
-			</metazone>
-			<metazone type="Dushanbe">
-				<long>
-					<generic>ເວລາດູຊານເບ</generic>
-					<standard>ເວລາມາດຕະຖານດູຊານເບ</standard>
-					<daylight>ເວລາລະດູຮ້ອນດູຊານເບ</daylight>
-				</long>
-			</metazone>
-			<metazone type="Dutch_Guiana">
-				<long>
-					<standard>ເວລາຂອງດັດກີອານາ</standard>
 				</long>
 			</metazone>
 			<metazone type="East_Timor">
@@ -4407,13 +4522,6 @@
 					<standard>ເວລາຝຣັ່ງຕອນໃຕ້ແລະແອນຕາກຕິກ</standard>
 				</long>
 			</metazone>
-			<metazone type="Frunze">
-				<long>
-					<generic>ເວລາຝຸນ</generic>
-					<standard>ເວລາມາດຕະຖານຝຸນ</standard>
-					<daylight>ເວລາລະດູຮ້ອນຝຸນ</daylight>
-				</long>
-			</metazone>
 			<metazone type="Galapagos">
 				<long>
 					<standard>ເວລາກາລາປາໂກ</standard>
@@ -4439,13 +4547,6 @@
 			<metazone type="GMT">
 				<long>
 					<standard>ເວລາກຣີນີສ</standard>
-				</long>
-			</metazone>
-			<metazone type="Greenland_Central">
-				<long>
-					<generic>ເວລາກຮີນແລນກາງ</generic>
-					<standard>ເວລາມາດຕະຖານກຮີນແລນກາງ</standard>
-					<daylight>ເວລາລະດູຮ້ອນກຮີນແລນກາງ</daylight>
 				</long>
 			</metazone>
 			<metazone type="Greenland_Eastern">
@@ -4556,16 +4657,6 @@
 					<daylight>ເວລາກາງເວັນ ຍີ່ປູ່ນ</daylight>
 				</long>
 			</metazone>
-			<metazone type="Karachi">
-				<long>
-					<standard>ເວລາກາລາຈິ</standard>
-				</long>
-			</metazone>
-			<metazone type="Kashgar">
-				<long>
-					<standard>ເວລາຄັດກາ</standard>
-				</long>
-			</metazone>
 			<metazone type="Kazakhstan_Eastern">
 				<long>
 					<standard>ເວລາກາຊັກສະຖານຕາເວັນອອກ</standard>
@@ -4574,13 +4665,6 @@
 			<metazone type="Kazakhstan_Western">
 				<long>
 					<standard>ເວລາກາຊັກສະຖານຕາເວັນຕົກ</standard>
-				</long>
-			</metazone>
-			<metazone type="Kizilorda">
-				<long>
-					<generic>ເວລາຄີຊີລໍດາ</generic>
-					<standard>ເວລາມາດຕະຖານຄີຊີລໍດາ</standard>
-					<daylight>ເວລາລະດູຮ້ອນຄີຊີລໍດາ</daylight>
 				</long>
 			</metazone>
 			<metazone type="Korea">
@@ -4602,11 +4686,6 @@
 					<daylight>ເວລາລະດູຮ້ອນຄຣາສໂນຢາດສ</daylight>
 				</long>
 			</metazone>
-			<metazone type="Kwajalein">
-				<long>
-					<standard>ເວລາຄວາຈາເລນ</standard>
-				</long>
-			</metazone>
 			<metazone type="Kyrgystan">
 				<long>
 					<standard>ເວລາຄຣີກິສຖານ</standard>
@@ -4620,11 +4699,6 @@
 			<metazone type="Line_Islands">
 				<long>
 					<standard>ເວລາຫມູ່ເກາະໄລນ໌</standard>
-				</long>
-			</metazone>
-			<metazone type="Long_Shu">
-				<long>
-					<standard>ເວລາລອງຊູ</standard>
 				</long>
 			</metazone>
 			<metazone type="Lord_Howe">
@@ -4651,11 +4725,6 @@
 					<generic>ເວລາເມັກກາເດນ</generic>
 					<standard>ເວລາມາດຕະຖານເມັກກາເດນ</standard>
 					<daylight>ເວລາລະດູຮ້ອນເມັກກາເດນ</daylight>
-				</long>
-			</metazone>
-			<metazone type="Malaya">
-				<long>
-					<standard>ເວລາມາລາຢາ</standard>
 				</long>
 			</metazone>
 			<metazone type="Malaysia">
@@ -4860,28 +4929,16 @@
 					<daylight>ເວລາລະດູຮ້ອນສາຄາລິງ</daylight>
 				</long>
 			</metazone>
-			<metazone type="Samarkand">
-				<long>
-					<generic>ເວລາສະມາກການ</generic>
-					<standard>ເວລາມາດຕະຖານສະມາກການ</standard>
-					<daylight>ເວລາລະດູຮ້ອນສະມາກການ</daylight>
-				</long>
-			</metazone>
 			<metazone type="Samoa">
 				<long>
-					<standard>ເວລາຊາມົວ</standard>
+					<generic>ເວລາຊາມົວ</generic>
+					<standard>ເວລາມາດຕະຖານຊາມົວ</standard>
+					<daylight>ເວລາລະດູຮ້ອນຊາມົວ</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
 				<long>
 					<standard>ເວລາເຊເຊວ</standard>
-				</long>
-			</metazone>
-			<metazone type="Shevchenko">
-				<long>
-					<generic>ເວລາເຊບເຊນໂກ</generic>
-					<standard>ເວລາມາດຕະຖານເຊບເຊນໂກ</standard>
-					<daylight>ເວລາລະດູຮ້ອນເຊບເຊນໂກ</daylight>
 				</long>
 			</metazone>
 			<metazone type="Singapore">
@@ -4926,13 +4983,6 @@
 					<standard>ເວລາທາຈິກິສຖານ</standard>
 				</long>
 			</metazone>
-			<metazone type="Tashkent">
-				<long>
-					<generic>ເວລາທາສເກັນ</generic>
-					<standard>ເວລາມາດຕະຖານທາສເກັນ</standard>
-					<daylight>ເວລາລະດູຮ້ອນທາສເກັນ</daylight>
-				</long>
-			</metazone>
 			<metazone type="Tokelau">
 				<long>
 					<standard>ເວລາໂຕເກເລົາ</standard>
@@ -4962,23 +5012,11 @@
 					<standard>ເວລາຕູວາລູ</standard>
 				</long>
 			</metazone>
-			<metazone type="Uralsk">
-				<long>
-					<generic>ເວລາອູລາສ</generic>
-					<standard>ເວລາມາດຕະຖານອູລາສ</standard>
-					<daylight>ເວລາລະດູຮ້ອນອູລາສ</daylight>
-				</long>
-			</metazone>
 			<metazone type="Uruguay">
 				<long>
 					<generic>ເວລາອຸກູໄວ</generic>
 					<standard>ເວລາມາດຕະຖານອຸກູໄວ</standard>
 					<daylight>ເວລາລະດູຮ້ອນອຸກູໄວ</daylight>
-				</long>
-			</metazone>
-			<metazone type="Urumqi">
-				<long>
-					<standard>ເວລາອຸລຳຊີ</standard>
 				</long>
 			</metazone>
 			<metazone type="Uzbekistan">
@@ -5041,13 +5079,6 @@
 					<generic>ເວລາເຢກາເຕລິນເບີກ</generic>
 					<standard>ເວລາມາດຕະຖານເຢກາເຕລິນເບີກ</standard>
 					<daylight>ເວລາລະດູຮ້ອນເຢກາເຕລິນເບີກ</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yukon">
-				<long>
-					<generic>ເວລາຂອງຍູຄອນ</generic>
-					<standard>ເວລາມາດຕະຖານຍູຄອນ</standard>
-					<daylight>ເວລາຕອນທ່ຽງຂອງຍູຄອນ</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -6018,6 +6049,9 @@
 				<displayName>ແຣນ ອາຟຣິກາໃຕ້</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>ຄວາຊາ ຊັມເບຍ (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>ຄວາຊາ ຊັມເບຍ</displayName>
 			</currency>
 			<currency type="ZRN">

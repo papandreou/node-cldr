@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7838 $"/>
-		<generation date="$Date: 2012-10-11 15:53:21 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8663 $"/>
+		<generation date="$Date: 2013-05-02 15:03:19 -0500 (Thu, 02 May 2013) $"/>
 		<language type="bs"/>
 	</identity>
 	<localeDisplayNames>
@@ -1028,6 +1032,56 @@
 	</delimiters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, dd. MMMM y. G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>dd. MMMM y. G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>dd.MM.y. G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>dd.MM.yy. GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">E, dd.</dateFormatItem>
+						<dateFormatItem id="hm">hh:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">hh:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">dd.MM.</dateFormatItem>
+						<dateFormatItem id="MEd">E, dd.MM.</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">dd. MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, dd. MMM</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y.</dateFormatItem>
+						<dateFormatItem id="yM">MM.y.</dateFormatItem>
+						<dateFormatItem id="yMd">dd.MM.y.</dateFormatItem>
+						<dateFormatItem id="yMEd">E, dd.MM.y.</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y.</dateFormatItem>
+						<dateFormatItem id="yMMMd">dd. MMM y.</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, dd. MMM y.</dateFormatItem>
+						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
+						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1205,47 +1259,6 @@
 						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
-				<fields>
-					<!-- Copied from sr_Latn -->
-					<field type="era">
-						<displayName>era</displayName>
-					</field>
-					<field type="year">
-						<displayName>godina</displayName>
-					</field>
-					<field type="month">
-						<displayName>mesec</displayName>
-					</field>
-					<field type="week">
-						<displayName>nedelja</displayName>
-					</field>
-					<field type="day">
-						<displayName>dan</displayName>
-						<relative type="-2">prekjuče</relative>
-						<relative type="-1">juče</relative>
-						<relative type="0">danas</relative>
-						<relative type="1">sutra</relative>
-						<relative type="2">prekosutra</relative>
-					</field>
-					<field type="weekday">
-						<displayName>dan u nedelji</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>pre podne/ popodne</displayName>
-					</field>
-					<field type="hour">
-						<displayName>čas</displayName>
-					</field>
-					<field type="minute">
-						<displayName>minut</displayName>
-					</field>
-					<field type="second">
-						<displayName>sekund</displayName>
-					</field>
-					<field type="zone">
-						<displayName>zona</displayName>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="islamic">
 				<months>
@@ -1322,19 +1335,60 @@
 						<dateFormatItem id="MMMd">dd. MMM</dateFormatItem>
 						<dateFormatItem id="MMMEd">E, dd. MMM</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="yyyy">y. G</dateFormatItem>
-						<dateFormatItem id="yyyyM">MM.y. G</dateFormatItem>
-						<dateFormatItem id="yyyyMd">dd.MM.y. G</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">E, dd.MM.y. G</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">MMM y. G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">dd. MMM y. G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">E, dd. MMM y. G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">y G QQQ</dateFormatItem>
-						<dateFormatItem id="yyyyQQQQ">y G QQQQ</dateFormatItem>
+						<dateFormatItem id="y">y. G</dateFormatItem>
+						<dateFormatItem id="yM">MM.y. G</dateFormatItem>
+						<dateFormatItem id="yMd">dd.MM.y. G</dateFormatItem>
+						<dateFormatItem id="yMEd">E, dd.MM.y. G</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y. G</dateFormatItem>
+						<dateFormatItem id="yMMMd">dd. MMM y. G</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, dd. MMM y. G</dateFormatItem>
+						<dateFormatItem id="yQQQ">y G QQQ</dateFormatItem>
+						<dateFormatItem id="yQQQQ">y G QQQQ</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
 			</calendar>
 		</calendars>
+		<fields>
+			<!-- Copied from sr_Latn -->
+			<field type="era">
+				<displayName>era</displayName>
+			</field>
+			<field type="year">
+				<displayName>godina</displayName>
+			</field>
+			<field type="month">
+				<displayName>mesec</displayName>
+			</field>
+			<field type="week">
+				<displayName>nedelja</displayName>
+			</field>
+			<field type="day">
+				<displayName>dan</displayName>
+				<relative type="-2">prekjuče</relative>
+				<relative type="-1">juče</relative>
+				<relative type="0">danas</relative>
+				<relative type="1">sutra</relative>
+				<relative type="2">prekosutra</relative>
+			</field>
+			<field type="weekday">
+				<displayName>dan u nedelji</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>pre podne/ popodne</displayName>
+			</field>
+			<field type="hour">
+				<displayName>čas</displayName>
+			</field>
+			<field type="minute">
+				<displayName>minut</displayName>
+			</field>
+			<field type="second">
+				<displayName>sekund</displayName>
+			</field>
+			<field type="zone">
+				<displayName>zona</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<!-- This just had confirmed data for "Etc/Unknown" (different from the translation
 				 in sr_Latn). Fill in the other translations from data in sr_Latn.
@@ -1356,9 +1410,6 @@
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity draft="provisional">Jerevan</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>Kiraso</exemplarCity>
 			</zone>
 			<zone type="Antarctica/Rothera">
 				<exemplarCity>Rotera</exemplarCity>
@@ -1626,6 +1677,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity draft="provisional">Kape Verde</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>Kiraso</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity draft="provisional">Božićno ostrvo</exemplarCity>
@@ -2249,25 +2303,11 @@
 					<daylight>Zapadna Afrika letnje računanje vremena</daylight>
 				</long>
 			</metazone>
-			<metazone type="Aktyubinsk">
-				<long>
-					<generic>Aktjubinsk vreme</generic>
-					<standard>Aktjubinsk standardno vreme</standard>
-					<daylight>Aktjubinsk letnje računanje vremena</daylight>
-				</long>
-			</metazone>
 			<metazone type="Alaska">
 				<long>
 					<generic>Aljaska vreme</generic>
 					<standard>Aljaska standardno vreme</standard>
 					<daylight>Aljaska letnje računanje vremena</daylight>
-				</long>
-			</metazone>
-			<metazone type="Alaska_Hawaii">
-				<long>
-					<generic>Aljaska-Havaji vreme</generic>
-					<standard>Aljaska-Havaji standardno vreme</standard>
-					<daylight>Aljaska-Havaji letnje računanje vremena</daylight>
 				</long>
 			</metazone>
 			<metazone type="Almaty">
@@ -2361,13 +2401,6 @@
 					<daylight>Armenija letnje računanje vremena</daylight>
 				</long>
 			</metazone>
-			<metazone type="Ashkhabad">
-				<long>
-					<generic>Aškabad vreme</generic>
-					<standard>Aškabad standardno vreme</standard>
-					<daylight>Aškabad letnje računanje vremena</daylight>
-				</long>
-			</metazone>
 			<metazone type="Atlantic">
 				<long>
 					<generic>Atlantsko vreme</generic>
@@ -2417,25 +2450,11 @@
 					<daylight>Azori letnje računanje vremena</daylight>
 				</long>
 			</metazone>
-			<metazone type="Baku">
-				<long>
-					<generic>Baku vreme</generic>
-					<standard>Baku standardno vreme</standard>
-					<daylight>Baku letnje računanje vremena</daylight>
-				</long>
-			</metazone>
 			<metazone type="Bangladesh">
 				<long>
 					<generic>Bangladeš vreme</generic>
 					<standard>Bangladeš standardno vreme</standard>
 					<daylight>Bangladeš letnje računanje vremena</daylight>
-				</long>
-			</metazone>
-			<metazone type="Bering">
-				<long>
-					<generic>Bering vreme</generic>
-					<standard>Bering standardno vreme</standard>
-					<daylight>Bering letnje računanje vremena</daylight>
 				</long>
 			</metazone>
 			<metazone type="Bhutan">
@@ -2446,13 +2465,6 @@
 			<metazone type="Bolivia">
 				<long>
 					<standard>Bolivija vreme</standard>
-				</long>
-			</metazone>
-			<metazone type="Borneo">
-				<long>
-					<generic>Borneo vreme</generic>
-					<standard>Borneo standardno vreme</standard>
-					<daylight>Borneo letnje računanje vremena</daylight>
 				</long>
 			</metazone>
 			<metazone type="Brasilia">
@@ -2477,11 +2489,6 @@
 			<metazone type="Chamorro">
 				<long>
 					<standard>Čamoro standardno vreme</standard>
-				</long>
-			</metazone>
-			<metazone type="Changbai">
-				<long>
-					<standard>Čangbai vreme</standard>
 				</long>
 			</metazone>
 			<metazone type="Chatham">
@@ -2543,11 +2550,6 @@
 					<daylight>Kuba letnje računanje vremena</daylight>
 				</long>
 			</metazone>
-			<metazone type="Dacca">
-				<long>
-					<standard>Dača vreme</standard>
-				</long>
-			</metazone>
 			<metazone type="Davis">
 				<long>
 					<standard>Dejvis vreme</standard>
@@ -2556,18 +2558,6 @@
 			<metazone type="DumontDUrville">
 				<long>
 					<standard>Dimon d’Urvil vreme</standard>
-				</long>
-			</metazone>
-			<metazone type="Dushanbe">
-				<long>
-					<generic>Dušanbe vreme</generic>
-					<standard>Dušanbe standardno vreme</standard>
-					<daylight>Dušanbe letnje računanje vremena</daylight>
-				</long>
-			</metazone>
-			<metazone type="Dutch_Guiana">
-				<long>
-					<standard>Holandska Gvijana vreme</standard>
 				</long>
 			</metazone>
 			<metazone type="East_Timor">
@@ -2632,13 +2622,6 @@
 					<standard>Francuske Južne Teritorije vreme</standard>
 				</long>
 			</metazone>
-			<metazone type="Frunze">
-				<long>
-					<generic>Frunze vreme</generic>
-					<standard>Frunze standardno vreme</standard>
-					<daylight>Frunze letnje računanje vremena</daylight>
-				</long>
-			</metazone>
 			<metazone type="Galapagos">
 				<long>
 					<standard>Galapagos vreme</standard>
@@ -2664,13 +2647,6 @@
 			<metazone type="GMT">
 				<long>
 					<standard>Grinvič vreme</standard>
-				</long>
-			</metazone>
-			<metazone type="Greenland_Central">
-				<long>
-					<generic>Centralni Grenland vreme</generic>
-					<standard>Centralni Grenland standardno vreme</standard>
-					<daylight>Centralni Grenland letnje računanje vremena</daylight>
 				</long>
 			</metazone>
 			<metazone type="Greenland_Eastern">
@@ -2788,16 +2764,6 @@
 					<daylight>Petropavlovsk-Kamčatski letnje računanje vremena</daylight>
 				</long>
 			</metazone>
-			<metazone type="Karachi">
-				<long>
-					<standard>Karači vreme</standard>
-				</long>
-			</metazone>
-			<metazone type="Kashgar">
-				<long>
-					<standard>Kašgar vreme</standard>
-				</long>
-			</metazone>
 			<metazone type="Kazakhstan_Eastern">
 				<long>
 					<standard>Istočni Kazahstan vreme</standard>
@@ -2827,18 +2793,6 @@
 					<daylight>Krasnojarsk letnje računanje vremena</daylight>
 				</long>
 			</metazone>
-			<metazone type="Kuybyshev">
-				<long>
-					<generic>Kujbišev vreme</generic>
-					<standard>Kujbišev standardno vreme</standard>
-					<daylight>Kujbišev letnje računanje vemena</daylight>
-				</long>
-			</metazone>
-			<metazone type="Kwajalein">
-				<long>
-					<standard>Kvajalejnsko vreme</standard>
-				</long>
-			</metazone>
 			<metazone type="Kyrgystan">
 				<long>
 					<standard>Kirgizstan vreme</standard>
@@ -2852,11 +2806,6 @@
 			<metazone type="Line_Islands">
 				<long>
 					<standard>Lajn ostrva vreme</standard>
-				</long>
-			</metazone>
-			<metazone type="Long_Shu">
-				<long>
-					<standard>Long Šu vreme</standard>
 				</long>
 			</metazone>
 			<metazone type="Lord_Howe">
@@ -2878,11 +2827,6 @@
 					<generic>Magadan vreme</generic>
 					<standard>Magadan standardno vreme</standard>
 					<daylight>Magadan letnje računanje vremena</daylight>
-				</long>
-			</metazone>
-			<metazone type="Malaya">
-				<long>
-					<standard>Malaja vreme</standard>
 				</long>
 			</metazone>
 			<metazone type="Malaysia">
@@ -3094,28 +3038,16 @@
 					<daylight>Samara letnje računanje vremena</daylight>
 				</long>
 			</metazone>
-			<metazone type="Samarkand">
-				<long>
-					<generic>Samarkand vreme</generic>
-					<standard>Samarkand standardno vreme</standard>
-					<daylight>Samarkand letnje računanje vremena</daylight>
-				</long>
-			</metazone>
 			<metazone type="Samoa">
 				<long>
+					<generic>Samoa vreme</generic>
 					<standard>Samoa standardno vreme</standard>
+					<daylight>Samoa letnje računanje vremena</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
 				<long>
 					<standard>Sejšeli vreme</standard>
-				</long>
-			</metazone>
-			<metazone type="Shevchenko">
-				<long>
-					<generic>Ševčenko vreme</generic>
-					<standard>Ševčenko standardno vreme</standard>
-					<daylight>Ševčenko letnje računanje vremena</daylight>
 				</long>
 			</metazone>
 			<metazone type="Singapore">
@@ -3136,13 +3068,6 @@
 			<metazone type="Suriname">
 				<long>
 					<standard>Surinam vreme</standard>
-				</long>
-			</metazone>
-			<metazone type="Sverdlovsk">
-				<long>
-					<generic>Sverdlovsk vreme</generic>
-					<standard>Sverdlovsk standardno vreme</standard>
-					<daylight>Sverdlovsk letnje računanje vremena</daylight>
 				</long>
 			</metazone>
 			<metazone type="Syowa">
@@ -3167,20 +3092,6 @@
 					<standard>Tadžikistan vreme</standard>
 				</long>
 			</metazone>
-			<metazone type="Tashkent">
-				<long>
-					<generic>Taškent vreme</generic>
-					<standard>Taškent standardno vreme</standard>
-					<daylight>Taškent letnje računanje vremena</daylight>
-				</long>
-			</metazone>
-			<metazone type="Tbilisi">
-				<long>
-					<generic>Tbilisi vreme</generic>
-					<standard>Tbilisi standardno vreme</standard>
-					<daylight>Tbilisi letnje računanje vremena</daylight>
-				</long>
-			</metazone>
 			<metazone type="Tokelau">
 				<long>
 					<standard>Tokelo vreme</standard>
@@ -3198,13 +3109,6 @@
 					<standard>Truk vreme</standard>
 				</long>
 			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<generic>Turska vreme</generic>
-					<standard>Turska standardno vreme</standard>
-					<daylight>Turska letnje računanje vremena</daylight>
-				</long>
-			</metazone>
 			<metazone type="Turkmenistan">
 				<long>
 					<generic>Turkmenistan vreme</generic>
@@ -3217,23 +3121,11 @@
 					<standard>Tuvalu vreme</standard>
 				</long>
 			</metazone>
-			<metazone type="Uralsk">
-				<long>
-					<generic>Ural'sk vreme</generic>
-					<standard>Ural'sk standardno vreme</standard>
-					<daylight>Ural'sk letnje računanje vremena</daylight>
-				</long>
-			</metazone>
 			<metazone type="Uruguay">
 				<long>
 					<generic>Urugvaj vreme</generic>
 					<standard>Urugvaj standardno vreme</standard>
 					<daylight>Urugvaj letnje računanje vremena</daylight>
-				</long>
-			</metazone>
-			<metazone type="Urumqi">
-				<long>
-					<standard>Urumki vreme</standard>
 				</long>
 			</metazone>
 			<metazone type="Uzbekistan">
@@ -3296,20 +3188,6 @@
 					<generic>Jekaterinburg vreme</generic>
 					<standard>Jekaterinburg standardno vreme</standard>
 					<daylight>Jekaterinburg letnje računanje vremena</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yerevan">
-				<long>
-					<generic>Jerevan vreme</generic>
-					<standard>Jerevan standardno vreme</standard>
-					<daylight>Jerevan letnje računanje vremena</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yukon">
-				<long>
-					<generic>Jukon vreme</generic>
-					<standard>Jukon standardno vreme</standard>
-					<daylight>Jukon letnje računanje vremena</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -5320,6 +5198,13 @@
 				<displayName count="other">južnoafričkih randa</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>Zambijska kvača (1968-2012)</displayName>
+				<displayName count="one">zambijska kvača (1968-2012)</displayName>
+				<displayName count="few">zambijske kvače (1968-2012)</displayName>
+				<displayName count="many">zambijskih kvača (1968-2012)</displayName>
+				<displayName count="other">zambijske kvače (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>Zambijska kvača</displayName>
 				<displayName count="one">zambijska kvača</displayName>
 				<displayName count="few">zambijske kvače</displayName>

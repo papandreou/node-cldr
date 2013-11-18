@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7839 $"/>
-		<generation date="$Date: 2012-10-11 16:37:12 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="am"/>
 	</identity>
 	<localeDisplayNames>
@@ -509,6 +513,7 @@
 			<territory type="PN">ፒትካኢርን አይስላንድ</territory>
 			<territory type="PR">ፖርታ ሪኮ</territory>
 			<territory type="PS">የፍልስጤም ግዛት</territory>
+			<territory type="PS" alt="short">ፍልስጥኤም</territory>
 			<territory type="PT">ፖርቱጋል</territory>
 			<territory type="PW">ፓላው</territory>
 			<territory type="PY">ፓራጓይ</territory>
@@ -573,6 +578,7 @@
 			<territory type="VU">ቫኑአቱ</territory>
 			<territory type="WF">ዋሊስ እና ፉቱና ደሴቶች</territory>
 			<territory type="WS">ሳሞአ</territory>
+			<territory type="XK">ኮሶቮ</territory>
 			<territory type="YE">የመን</territory>
 			<territory type="YT">ሜይኦቴ</territory>
 			<territory type="ZA">ደቡብ አፍሪካ</territory>
@@ -839,6 +845,176 @@
 					</dateFormatLength>
 				</dateFormats>
 			</calendar>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, d MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>d MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>d MMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>dd/MM/y GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">E d</dateFormatItem>
+						<dateFormatItem id="h">h a</dateFormatItem>
+						<dateFormatItem id="H">H</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">M/d</dateFormatItem>
+						<dateFormatItem id="MEd">E, M/d</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">MMM d</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, MMM d</dateFormatItem>
+						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E, MMMM d</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">M/y</dateFormatItem>
+						<dateFormatItem id="yMd">d/M/y</dateFormatItem>
+						<dateFormatItem id="yMEd">E፣ d/M/y</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMd">d MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E፣ MMM d y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a – h a</greatestDifference>
+							<greatestDifference id="h">h – h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">hh–hh a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm – h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm – h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">hh:mm–hh:mm a</greatestDifference>
+							<greatestDifference id="m">hh:mm–hh:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="h">h:mm – h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm – h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">hh:mm–hh:mm a v</greatestDifference>
+							<greatestDifference id="m">hh:mm–hh:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a – h a v</greatestDifference>
+							<greatestDifference id="h">h – h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">hh–hh a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M–M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">d–d/M</greatestDifference>
+							<greatestDifference id="M">d/M – d/M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E d/M – E d/M</greatestDifference>
+							<greatestDifference id="M">E፣ d/M – E፣ d/M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM–MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">MMM d–d</greatestDifference>
+							<greatestDifference id="M">MMM d – MMM d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E d – E d፣ MMM</greatestDifference>
+							<greatestDifference id="M">E፣ MMM d – E፣ MMM d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y–y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">M/y – M/y</greatestDifference>
+							<greatestDifference id="y">M/y – M/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">d/M/y – d/M/y</greatestDifference>
+							<greatestDifference id="M">d/M/y – d/M/y</greatestDifference>
+							<greatestDifference id="y">d/M/y – d/M/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E፣ d/M/y – E፣ d/M/y</greatestDifference>
+							<greatestDifference id="M">E d/M/ – E d/M፣ y</greatestDifference>
+							<greatestDifference id="y">E፣ d/M/y – E፣ d/M/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM–MMM፣ y</greatestDifference>
+							<greatestDifference id="y">MMM y – MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">MMM d–d፣ y</greatestDifference>
+							<greatestDifference id="M">MMM d – MMM d፣ y</greatestDifference>
+							<greatestDifference id="y">MMM d፣ y – MMM d፣ y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E MMM d – E MMM d፣ y</greatestDifference>
+							<greatestDifference id="M">E MMM d – E MMM d፣ y</greatestDifference>
+							<greatestDifference id="y">E፣ MMM d፣ y – E፣ MMM d፣ y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
+							<greatestDifference id="y">MMMM y – MMMM y</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1086,7 +1262,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>dd/MM/yyyy</pattern>
+							<pattern>dd/MM/y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -1225,18 +1401,18 @@
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">M/yy – M/yy</greatestDifference>
-							<greatestDifference id="y">M/yy – M/yy</greatestDifference>
+							<greatestDifference id="M">M/y – M/y</greatestDifference>
+							<greatestDifference id="y">M/y – M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">d/M/yy – d/M/yy</greatestDifference>
-							<greatestDifference id="M">d/M/yy – d/M/yy</greatestDifference>
-							<greatestDifference id="y">d/M/yy – d/M/yy</greatestDifference>
+							<greatestDifference id="d">d/M/y – d/M/y</greatestDifference>
+							<greatestDifference id="M">d/M/y – d/M/y</greatestDifference>
+							<greatestDifference id="y">d/M/y – d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E፣ d/M/yy – E፣ d/M/yy</greatestDifference>
-							<greatestDifference id="M">E d/M/ – E d/M፣ yy</greatestDifference>
-							<greatestDifference id="y">E፣ d/M/yy – E፣ d/M/yy</greatestDifference>
+							<greatestDifference id="d">E፣ d/M/y – E፣ d/M/y</greatestDifference>
+							<greatestDifference id="M">E d/M/ – E d/M፣ y</greatestDifference>
+							<greatestDifference id="y">E፣ d/M/y – E፣ d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM–MMM፣ y</greatestDifference>
@@ -1258,55 +1434,6 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>ዘመን</displayName>
-					</field>
-					<field type="year">
-						<displayName>ዓመት</displayName>
-						<relative type="-1">ያለፈው ዓመት</relative>
-						<relative type="0">በዚህ ዓመት</relative>
-						<relative type="1">የሚቀጥለው ዓመት</relative>
-					</field>
-					<field type="month">
-						<displayName>ወር</displayName>
-						<relative type="-1">ያለፈው ወር</relative>
-						<relative type="0">በዚህ ወር</relative>
-						<relative type="1">የሚቀጥለው ወር</relative>
-					</field>
-					<field type="week">
-						<displayName>ሳምንት</displayName>
-						<relative type="-1">ባለፈው ሳምንት</relative>
-						<relative type="0">በዚህ ሣምንት</relative>
-						<relative type="1">የሚቀጥለው ሳምንት</relative>
-					</field>
-					<field type="day">
-						<displayName>ቀን</displayName>
-						<relative type="-2">ከትናንት ወዲያ</relative>
-						<relative type="-1">ትናንት</relative>
-						<relative type="0">ዛሬ</relative>
-						<relative type="1">ነገ</relative>
-						<relative type="2">ከነገ ወዲያ</relative>
-					</field>
-					<field type="weekday">
-						<displayName>አዘቦት</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>ጥዋት/ከሰዓት</displayName>
-					</field>
-					<field type="hour">
-						<displayName>ሰዓት</displayName>
-					</field>
-					<field type="minute">
-						<displayName>ደቂቃ</displayName>
-					</field>
-					<field type="second">
-						<displayName>ሰከንድ</displayName>
-					</field>
-					<field type="zone">
-						<displayName>የሰዓት ሰቅ</displayName>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="islamic">
 				<months>
@@ -1329,6 +1456,55 @@
 				</months>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>ዘመን</displayName>
+			</field>
+			<field type="year">
+				<displayName>ዓመት</displayName>
+				<relative type="-1">ያለፈው ዓመት</relative>
+				<relative type="0">በዚህ ዓመት</relative>
+				<relative type="1">የሚቀጥለው ዓመት</relative>
+			</field>
+			<field type="month">
+				<displayName>ወር</displayName>
+				<relative type="-1">ያለፈው ወር</relative>
+				<relative type="0">በዚህ ወር</relative>
+				<relative type="1">የሚቀጥለው ወር</relative>
+			</field>
+			<field type="week">
+				<displayName>ሳምንት</displayName>
+				<relative type="-1">ባለፈው ሳምንት</relative>
+				<relative type="0">በዚህ ሣምንት</relative>
+				<relative type="1">የሚቀጥለው ሳምንት</relative>
+			</field>
+			<field type="day">
+				<displayName>ቀን</displayName>
+				<relative type="-2">ከትናንት ወዲያ</relative>
+				<relative type="-1">ትናንት</relative>
+				<relative type="0">ዛሬ</relative>
+				<relative type="1">ነገ</relative>
+				<relative type="2">ከነገ ወዲያ</relative>
+			</field>
+			<field type="weekday">
+				<displayName>አዘቦት</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>ጥዋት/ከሰዓት</displayName>
+			</field>
+			<field type="hour">
+				<displayName>ሰዓት</displayName>
+			</field>
+			<field type="minute">
+				<displayName>ደቂቃ</displayName>
+			</field>
+			<field type="second">
+				<displayName>ሰከንድ</displayName>
+			</field>
+			<field type="zone">
+				<displayName>የሰዓት ሰቅ</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HHmm;-HHmm</hourFormat>
 			<gmtFormat>ጂ ኤም ቲ{0}</gmtFormat>
@@ -1336,95 +1512,8 @@
 			<regionFormat>{0} ጊዜ</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<fallbackRegionFormat>{1} ሰዓት({0})</fallbackRegionFormat>
-			<zone type="America/Lower_Princes">
-				<exemplarCity>የታችኛው ልዑል ሩብ</exemplarCity>
-			</zone>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity>ቤኡላህ, ሰሜን ዳኮታ</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+12">
-				<exemplarCity>ጂ ኤም ቲ+12</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-12">
-				<exemplarCity>ጂ ኤም ቲ-12</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+11">
-				<exemplarCity>ጂ ኤም ቲ+11</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-13">
-				<exemplarCity>ጂ ኤም ቲ-13</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+10">
-				<exemplarCity>ጂ ኤም ቲ+10</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-14">
-				<exemplarCity>ጂ ኤም ቲ-14</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+9">
-				<exemplarCity>ጂ ኤም ቲ+9</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+8">
-				<exemplarCity>ጂ ኤም ቲ+8</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+7">
-				<exemplarCity>ጂ ኤም ቲ+7</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+6">
-				<exemplarCity>ጂ ኤም ቲ+6</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+5">
-				<exemplarCity>ጂ ኤም ቲ+5</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+4">
-				<exemplarCity>ጂ ኤም ቲ+4</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+3">
-				<exemplarCity>ጂ ኤም ቲ+3</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+2">
-				<exemplarCity>ጂ ኤም ቲ+2</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+1">
-				<exemplarCity>ጂ ኤም ቲ+1</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT">
-				<exemplarCity>ጂ ኤም ቲ</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>ያልታወቀ ከተማ</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-1">
-				<exemplarCity>ጂ ኤም ቲ-1</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-2">
-				<exemplarCity>ጂ ኤም ቲ-2</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-3">
-				<exemplarCity>ጂ ኤም ቲ-3</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-4">
-				<exemplarCity>ጂ ኤም ቲ-4</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-5">
-				<exemplarCity>ጂ ኤም ቲ-5</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-6">
-				<exemplarCity>ጂ ኤም ቲ-6</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-7">
-				<exemplarCity>ጂ ኤም ቲ-7</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-8">
-				<exemplarCity>ጂ ኤም ቲ-8</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-9">
-				<exemplarCity>ጂ ኤም ቲ-9</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-10">
-				<exemplarCity>ጂ ኤም ቲ-10</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-11">
-				<exemplarCity>ጂ ኤም ቲ-11</exemplarCity>
 			</zone>
 			<zone type="Europe/Andorra">
 				<exemplarCity>አንዶራ</exemplarCity>
@@ -1446,9 +1535,6 @@
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity>ይሬቫን</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>ኩራሳዎ</exemplarCity>
 			</zone>
 			<zone type="Africa/Luanda">
 				<exemplarCity>ሉአንዳ</exemplarCity>
@@ -1812,6 +1898,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>ኬፕ ቬርደ</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>ኩራሳዎ</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity>ገና</exemplarCity>
@@ -2419,6 +2508,9 @@
 			<zone type="America/El_Salvador">
 				<exemplarCity>ኤልሳልቫዶር</exemplarCity>
 			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity>የታችኛው ልዑል ሩብ</exemplarCity>
+			</zone>
 			<zone type="Asia/Damascus">
 				<exemplarCity>ደማስቆ</exemplarCity>
 			</zone>
@@ -2529,6 +2621,9 @@
 			</zone>
 			<zone type="America/Denver">
 				<exemplarCity>ዴንቨር</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity>ቤኡላህ, ሰሜን ዳኮታ</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity>አዲስ ሳሌም, ሰሜን ዳኮታ</exemplarCity>
@@ -3348,7 +3443,9 @@
 			</metazone>
 			<metazone type="Samoa">
 				<long>
+					<generic>የሳሞዋ ሰዓት</generic>
 					<standard>የሳሞዋ መደበኛ ሰዓት</standard>
+					<daylight>የሳሞዋ የበጋ ሰዓት</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
@@ -4406,6 +4503,11 @@
 				<displayName count="other">የደቡብ አፍሪካ ራንድ</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>የዛምቢያ ክዋቻ (1968-2012)</displayName>
+				<displayName count="one">የዛምቢያ ክዋቻ (1968-2012)</displayName>
+				<displayName count="other">የዛምቢያ ክዋቻ (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>የዛምቢያ ክዋቻ</displayName>
 				<displayName count="one">የዛምቢያ ክዋቻ</displayName>
 				<displayName count="other">የዛምቢያ ክዋቻ</displayName>

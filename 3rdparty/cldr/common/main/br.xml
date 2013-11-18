@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7838 $"/>
-		<generation date="$Date: 2012-10-11 15:53:21 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8257 $"/>
+		<generation date="$Date: 2013-02-26 22:38:03 -0600 (Tue, 26 Feb 2013) $"/>
 		<language type="br"/>
 	</identity>
 	<localeDisplayNames>
@@ -864,7 +868,6 @@
 			<type type="coptic" key="calendar">deiziadur kopt</type>
 			<type type="deva" key="numbers">sifroù devanagari</type>
 			<type type="dictionary" key="collation">urzh rummañ ar geriadur</type>
-			<type type="direct" key="collation">eeun</type>
 			<type type="ducet" key="collation">urzh rummañ Unicode dre ziouer</type>
 			<type type="ethi" key="numbers">niveroù etiopiat</type>
 			<type type="ethiopic" key="calendar">deiziadur etiopiat</type>
@@ -1061,31 +1064,31 @@
 						</dayWidth>
 					</dayContext>
 				</days>
-				<fields>
-					<field type="month">
-						<displayName>miz</displayName>
-					</field>
-					<field type="week">
-						<displayName>sizhun</displayName>
-					</field>
-					<field type="day">
-						<relative type="-2">dercʼhent-decʼh</relative>
-						<relative type="-1">decʼh</relative>
-						<relative type="0">hiziv</relative>
-						<relative type="1">warcʼhoazh</relative>
-					</field>
-					<field type="hour">
-						<displayName>eur</displayName>
-					</field>
-					<field type="minute">
-						<displayName>munut</displayName>
-					</field>
-					<field type="second">
-						<displayName>eilenn</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="month">
+				<displayName>miz</displayName>
+			</field>
+			<field type="week">
+				<displayName>sizhun</displayName>
+			</field>
+			<field type="day">
+				<relative type="-2">dercʼhent-decʼh</relative>
+				<relative type="-1">decʼh</relative>
+				<relative type="0">hiziv</relative>
+				<relative type="1">warcʼhoazh</relative>
+			</field>
+			<field type="hour">
+				<displayName>eur</displayName>
+			</field>
+			<field type="minute">
+				<displayName>munut</displayName>
+			</field>
+			<field type="second">
+				<displayName>eilenn</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<zone type="Etc/Unknown">
 				<exemplarCity>kêr dianav</exemplarCity>
@@ -2273,6 +2276,13 @@
 				<displayName>rand Suafrika</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>kwacha Zambia (1968-2012)</displayName>
+				<displayName count="one">c'hwacha Zambia (1968-2012)</displayName>
+				<displayName count="two">gwacha Zambia (1968-2012)</displayName>
+				<displayName count="few">kwacha Zambia (1968-2012)</displayName>
+				<displayName count="other">kwacha Zambia (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>kwacha Zambia</displayName>
 				<displayName count="one">c'hwacha Zambia</displayName>
 				<displayName count="two">gwacha Zambia</displayName>

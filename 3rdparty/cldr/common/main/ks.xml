@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7855 $"/>
-		<generation date="$Date: 2012-10-16 21:24:31 -0700 (Tue, 16 Oct 2012) $"/>
+		<version number="$Revision: 8663 $"/>
+		<generation date="$Date: 2013-05-02 15:03:19 -0500 (Thu, 02 May 2013) $"/>
 		<language type="ks"/>
 	</identity>
 	<localeDisplayNames>
@@ -343,7 +347,7 @@
 			<language type="non">پرون نارسی</language>
 			<language type="nqo">ایٚن کو</language>
 			<language type="nr">جنوب ڈیٚبیل</language>
-			<language type="nso">جنوبی سوتھو</language>
+			<language type="nso">شمالی ستھو</language>
 			<language type="nub">نوٗبیَن زبان</language>
 			<language type="nv">نَواجو</language>
 			<language type="nwc">کلاسِکَل نیواری</language>
@@ -435,7 +439,7 @@
 			<language type="srr">سیٚریر</language>
 			<language type="ss">سواتی</language>
 			<language type="ssa">نیٖلو سہارَن زبان</language>
-			<language type="st">جنوٗبی سوتھو</language>
+			<language type="st">جنوبی ستھو</language>
 			<language type="su">سَنڈَنیٖز</language>
 			<language type="suk">سُکُما</language>
 			<language type="sus">سُسوٗ</language>
@@ -670,11 +674,11 @@
 			<territory type="AE">مُتحدہ عرَب امارات</territory>
 			<territory type="AF">اَفغانَستان</territory>
 			<territory type="AG">اٮ۪نٹِگُوا تہٕ باربوڑا</territory>
-			<territory type="AI">اینٛگوِلا</territory>
+			<territory type="AI">انگوئیلا</territory>
 			<territory type="AL">اٮ۪لبانِیا</territory>
 			<territory type="AM">اَرمانِیا</territory>
 			<territory type="AN">نَیدَرلینٛڑٕس اٮ۪نٹَیلٕس</territory>
-			<territory type="AO">اینٛگولا</territory>
+			<territory type="AO">انگولا</territory>
 			<territory type="AQ">اینٹارٹِکا</territory>
 			<territory type="AR">أرجَنٹینا</territory>
 			<territory type="AS">اَمریٖکَن سَموا</territory>
@@ -968,13 +972,85 @@
 		</codePatterns>
 	</localeDisplayNames>
 	<layout>
-		<orientation characters="right-to-left"/>
+		<orientation>
+			<characterOrder>right-to-left</characterOrder>
+		</orientation>
 	</layout>
 	<characters>
 		<exemplarCharacters>[\u06EA\u06ED \u064E \u064F \u0650 \u0654 \u0655 \u0656 \u0657 \u065A \u065B ء آ أ ٲ ؤ ا ٮ ب پ ت ث ٹ ج چ ح خ د ذ ڈ ر ز ڑ ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن ں ھ ہ و ۄ ی ۍ ے]</exemplarCharacters>
 	</characters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, MMMM d, y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>MMMM d, y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>MMM d, y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>M/d/yy GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="GGGGyMMMMEEEEdd">EEEE,dd MMMM GGGGy</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">M/d</dateFormatItem>
+						<dateFormatItem id="MEd">E, M/d</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">d-MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, MMM d</dateFormatItem>
+						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E, MMMM d</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">M/y</dateFormatItem>
+						<dateFormatItem id="yMEd">EEE, M/d/y</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">EEE, MMM d, y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1072,17 +1148,17 @@
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
-							<pattern>EEEE, MMMM d, yyyy</pattern>
+							<pattern>EEEE, MMMM d, y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
 						<dateFormat>
-							<pattern>MMMM d, yyyy</pattern>
+							<pattern>MMMM d, y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
-							<pattern>MMM d, yyyy</pattern>
+							<pattern>MMM d, y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
@@ -1149,54 +1225,16 @@
 						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
 						<dateFormatItem id="MMMMEd">E, MMMM d</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="y">yyyy</dateFormatItem>
-						<dateFormatItem id="yM">M/yyyy</dateFormatItem>
-						<dateFormatItem id="yMEd">EEE, M/d/yyyy</dateFormatItem>
-						<dateFormatItem id="yMMM">MMM yyyy</dateFormatItem>
-						<dateFormatItem id="yMMMEd">EEE, MMM d, yyyy</dateFormatItem>
-						<dateFormatItem id="yMMMM">MMMM yyyy</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">M/y</dateFormatItem>
+						<dateFormatItem id="yMEd">EEE, M/d/y</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">EEE, MMM d, y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>دور</displayName>
-					</field>
-					<field type="year">
-						<displayName>ؤری</displayName>
-					</field>
-					<field type="month">
-						<displayName>رٮ۪تھ</displayName>
-					</field>
-					<field type="week">
-						<displayName>ہفتہٕ</displayName>
-					</field>
-					<field type="day">
-						<displayName>دۄہ</displayName>
-						<relative type="-1">راتھ</relative>
-						<relative type="0">اَز</relative>
-						<relative type="1">پگاہ</relative>
-					</field>
-					<field type="weekday">
-						<displayName>ہفتُک دۄہ</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>صبح/رات</displayName>
-					</field>
-					<field type="hour">
-						<displayName>گٲنٛٹہٕ</displayName>
-					</field>
-					<field type="minute">
-						<displayName>مِنَٹ</displayName>
-					</field>
-					<field type="second">
-						<displayName>سٮ۪کَنڑ</displayName>
-					</field>
-					<field type="zone">
-						<displayName>زون</displayName>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="indian">
 				<months>
@@ -1219,6 +1257,44 @@
 				</months>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>دور</displayName>
+			</field>
+			<field type="year">
+				<displayName>ؤری</displayName>
+			</field>
+			<field type="month">
+				<displayName>رٮ۪تھ</displayName>
+			</field>
+			<field type="week">
+				<displayName>ہفتہٕ</displayName>
+			</field>
+			<field type="day">
+				<displayName>دۄہ</displayName>
+				<relative type="-1">راتھ</relative>
+				<relative type="0">اَز</relative>
+				<relative type="1">پگاہ</relative>
+			</field>
+			<field type="weekday">
+				<displayName>ہفتُک دۄہ</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>صبح/رات</displayName>
+			</field>
+			<field type="hour">
+				<displayName>گٲنٛٹہٕ</displayName>
+			</field>
+			<field type="minute">
+				<displayName>مِنَٹ</displayName>
+			</field>
+			<field type="second">
+				<displayName>سٮ۪کَنڑ</displayName>
+			</field>
+			<field type="zone">
+				<displayName>زون</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
@@ -1245,9 +1321,6 @@
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity>یےریٚوَن</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>کیوٗراکااو</exemplarCity>
 			</zone>
 			<zone type="Africa/Luanda">
 				<exemplarCity>لُعٮ۪نٛڑا</exemplarCity>
@@ -1593,6 +1666,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>کیپ ؤرڑے</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>کیوٗراکااو</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity>کرِسمَس</exemplarCity>
@@ -2396,25 +2472,11 @@
 					<daylight>مغربی افریٖقا سَمَر ٹایِم</daylight>
 				</long>
 			</metazone>
-			<metazone type="Aktyubinsk">
-				<long>
-					<generic>اٮ۪کٹیوٗبِنسک ٹایِم</generic>
-					<standard>اٮ۪کٹیوٗبِنسک سٹینڑاڑ ٹایِم</standard>
-					<daylight>اٮ۪کٹیوٗبِنسک سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
 			<metazone type="Alaska">
 				<long>
 					<generic>اٮ۪لاسکا ٹایِم</generic>
 					<standard>اٮ۪لاسکا سٹینڑاڑ ٹایِم</standard>
 					<daylight>اٮ۪لاسکا ڈےلایِٔٹ ٹایِم</daylight>
-				</long>
-			</metazone>
-			<metazone type="Alaska_Hawaii">
-				<long>
-					<generic>اٮ۪لاسکا حواے ٹایِم</generic>
-					<standard>اٮ۪لاسکا حواے سٹینڑاڑ ٹایِم</standard>
-					<daylight>اٮ۪لاسکا حواے ڈےلایِٔٹ ٹایِم</daylight>
 				</long>
 			</metazone>
 			<metazone type="Almaty">
@@ -2508,13 +2570,6 @@
 					<daylight>ارمیٖنِیا سَمَر ٹایِم</daylight>
 				</long>
 			</metazone>
-			<metazone type="Ashkhabad">
-				<long>
-					<generic>اشخاباد ٹایِم</generic>
-					<standard>اشخاباد سٹینڑاڑ ٹایِم</standard>
-					<daylight>اشخاباد سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
 			<metazone type="Atlantic">
 				<long>
 					<generic>اٮ۪ٹلانٹِک ٹایِم</generic>
@@ -2564,25 +2619,11 @@
 					<daylight>اٮ۪زورٕس سَمَر ٹ</daylight>
 				</long>
 			</metazone>
-			<metazone type="Baku">
-				<long>
-					<generic>باکوٗ ٹایِم</generic>
-					<standard>باکوٗ سٹینڑاڑ ٹایِم</standard>
-					<daylight>باکوٗ سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
 			<metazone type="Bangladesh">
 				<long>
 					<generic>بَنٛگلادیش ٹایِم</generic>
 					<standard>بَنٛگلادیش سٹینڑاڑ ٹایِم</standard>
 					<daylight>بَنٛگلادیش سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
-			<metazone type="Bering">
-				<long>
-					<generic>بٔرِنٛگ ٹایِم</generic>
-					<standard>بٔرِنٛگ سٹینڑاڑ ٹایِم</standard>
-					<daylight>بٔرِنٛگ ڈےلایِٔٹ ٹایِم</daylight>
 				</long>
 			</metazone>
 			<metazone type="Bhutan">
@@ -2593,13 +2634,6 @@
 			<metazone type="Bolivia">
 				<long>
 					<standard>بولِوِیا ٹایِم</standard>
-				</long>
-			</metazone>
-			<metazone type="Borneo">
-				<long>
-					<generic>بورنِیو ٹایِم</generic>
-					<standard>بورنِیو سٹینڑاڑ ٹایِم</standard>
-					<daylight>بورنِیو سَمَر ٹایِم</daylight>
 				</long>
 			</metazone>
 			<metazone type="Brasilia">
@@ -2624,11 +2658,6 @@
 			<metazone type="Chamorro">
 				<long>
 					<standard>کٮ۪مورو سٹینڑاڑ ٹایِم</standard>
-				</long>
-			</metazone>
-			<metazone type="Changbai">
-				<long>
-					<standard>کٮ۪نگباے ٹایِم</standard>
 				</long>
 			</metazone>
 			<metazone type="Chatham">
@@ -2690,11 +2719,6 @@
 					<daylight>کیوٗبا ڈےلایِٔٹ ٹایِم</daylight>
 				</long>
 			</metazone>
-			<metazone type="Dacca">
-				<long>
-					<standard>ڈاکا ٹایِم</standard>
-				</long>
-			</metazone>
 			<metazone type="Davis">
 				<long>
 					<standard>ڑیوِس ٹایِم</standard>
@@ -2703,18 +2727,6 @@
 			<metazone type="DumontDUrville">
 				<long>
 					<standard>ڑمانٹ ڈی اُرویٖل ٹایِم</standard>
-				</long>
-			</metazone>
-			<metazone type="Dushanbe">
-				<long>
-					<generic>دَشانٛبے ٹایِم</generic>
-					<standard>دَشانٛبے سٹینڑاڑ ٹایِم</standard>
-					<daylight>دشانٛبے سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
-			<metazone type="Dutch_Guiana">
-				<long>
-					<standard>ڑَچ گیوٗٮ۪نا ٹایِم</standard>
 				</long>
 			</metazone>
 			<metazone type="East_Timor">
@@ -2779,13 +2791,6 @@
 					<standard>جنوٗبی فرٮ۪نٛچ ٹایِم</standard>
 				</long>
 			</metazone>
-			<metazone type="Frunze">
-				<long>
-					<generic>فرٛیوٗنٛز ٹایِم</generic>
-					<standard>فرٛیوٗنٛز سٹینڑاڑ ٹایِم</standard>
-					<daylight>فرٛیوٗنٛز سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
 			<metazone type="Galapagos">
 				<long>
 					<standard>گٮ۪لٮ۪پیٚگوز ٹایِم</standard>
@@ -2811,13 +2816,6 @@
 			<metazone type="GMT">
 				<long>
 					<standard>گرٛیٖن وِچ میٖن ٹایِم</standard>
-				</long>
-			</metazone>
-			<metazone type="Greenland_Central">
-				<long>
-					<generic>مرکزی گریٖنلینڑُک ٹایِم</generic>
-					<standard>مرکزی گریٖنلینڑُک سٹینڑاڑ ٹایِم</standard>
-					<daylight>مرکزی گریٖن لینڑُک سَمَر ٹایِم</daylight>
 				</long>
 			</metazone>
 			<metazone type="Greenland_Eastern">
@@ -2935,16 +2933,6 @@
 					<daylight>کَمچَٹکا سَمَر ٹایِم</daylight>
 				</long>
 			</metazone>
-			<metazone type="Karachi">
-				<long>
-					<standard>کَراچی ٹایِم</standard>
-				</long>
-			</metazone>
-			<metazone type="Kashgar">
-				<long>
-					<standard>کَشگَر ٹایِم</standard>
-				</long>
-			</metazone>
 			<metazone type="Kazakhstan_Eastern">
 				<long>
 					<standard>مشرِقی کَزاکھِستان ٹایِم</standard>
@@ -2953,13 +2941,6 @@
 			<metazone type="Kazakhstan_Western">
 				<long>
 					<standard>مغرِبی کَزاکھِستان ٹایِم</standard>
-				</long>
-			</metazone>
-			<metazone type="Kizilorda">
-				<long>
-					<generic>کِزِلوڑا ٹایِم</generic>
-					<standard>کِزِلوڑا سٹینڑاڑ ٹایِم</standard>
-					<daylight>کِزِلوڑا سَمَر ٹایِم</daylight>
 				</long>
 			</metazone>
 			<metazone type="Korea">
@@ -2981,18 +2962,6 @@
 					<daylight>کرٮ۪سنوےیارسک سَمَر ٹایِم</daylight>
 				</long>
 			</metazone>
-			<metazone type="Kuybyshev">
-				<long>
-					<generic>کَےبَےشٮ۪و ٹایِم</generic>
-					<standard>کَےبَےشٮ۪و سٹینڑاڑ ٹایِم</standard>
-					<daylight>کَےبَےشٮ۪و سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
-			<metazone type="Kwajalein">
-				<long>
-					<standard>کواجٮ۪لین ٹایِم</standard>
-				</long>
-			</metazone>
 			<metazone type="Kyrgystan">
 				<long>
 					<standard>کِرگِستان ٹایِم</standard>
@@ -3006,11 +2975,6 @@
 			<metazone type="Line_Islands">
 				<long>
 					<standard>لایِٔن ججیٖرُک ٹایِم</standard>
-				</long>
-			</metazone>
-			<metazone type="Long_Shu">
-				<long>
-					<standard>لانگ شوٗ ٹایِم</standard>
 				</long>
 			</metazone>
 			<metazone type="Lord_Howe">
@@ -3032,11 +2996,6 @@
 					<generic>مَگَدَن ٹایِم</generic>
 					<standard>مَگَدَن سٹینڑاڑ ٹایِم</standard>
 					<daylight>مَگَدَن سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
-			<metazone type="Malaya">
-				<long>
-					<standard>مَلَیا ٹایِم</standard>
 				</long>
 			</metazone>
 			<metazone type="Malaysia">
@@ -3248,28 +3207,16 @@
 					<daylight>سمٮ۪را سَمَر ٹایِم</daylight>
 				</long>
 			</metazone>
-			<metazone type="Samarkand">
-				<long>
-					<generic>سَمَرکَنٛد ٹایِم</generic>
-					<standard>سَمَرکَنٛد سٹینڑاڑ ٹایِم</standard>
-					<daylight>سَمَرکَنٛد سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
 			<metazone type="Samoa">
 				<long>
-					<standard>سٮ۪موآ</standard>
+					<generic>سٮ۪موآ ٹایِم</generic>
+					<standard>سٮ۪موآ سٹینڑاڑ ٹایِم</standard>
+					<daylight>سٮ۪موآ سَمَر ٹایِم</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
 				<long>
 					<standard>سیشٮ۪لٕز ٹایِم</standard>
-				</long>
-			</metazone>
-			<metazone type="Shevchenko">
-				<long>
-					<generic>شٮ۪وشٮ۪نکو ٹایِم</generic>
-					<standard>شٮ۪وشٮ۪نکو سٹینڑاڑ ٹایِم</standard>
-					<daylight>شٮ۪وشٮ۪نکو سَمَر ٹایِم</daylight>
 				</long>
 			</metazone>
 			<metazone type="Singapore">
@@ -3292,13 +3239,6 @@
 					<standard>سُرِنام ٹایِم</standard>
 				</long>
 			</metazone>
-			<metazone type="Sverdlovsk">
-				<long>
-					<generic>سٕؤرڑلووسک ٹایِم</generic>
-					<standard>سٕؤرڑلووسک سٹینڑاڑ ٹایِم</standard>
-					<daylight>سٕؤرڑلووسک سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
 			<metazone type="Syowa">
 				<long>
 					<standard>سیووا ٹایِم</standard>
@@ -3312,20 +3252,6 @@
 			<metazone type="Tajikistan">
 				<long>
 					<standard>تازِکِستان ٹایِم</standard>
-				</long>
-			</metazone>
-			<metazone type="Tashkent">
-				<long>
-					<generic>تاشکَند ٹایِم</generic>
-					<standard>تاشکَند سٹینڑاڑ ٹایِم</standard>
-					<daylight>تاشکند سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
-			<metazone type="Tbilisi">
-				<long>
-					<generic>تِبلِسی ٹایِم</generic>
-					<standard>تِبلِسی سٹینڑاڑ ٹایِم</standard>
-					<daylight>تِبلِسی سَمَر ٹایِم</daylight>
 				</long>
 			</metazone>
 			<metazone type="Tokelau">
@@ -3345,13 +3271,6 @@
 					<standard>ٹٔرک ٹایِم</standard>
 				</long>
 			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<generic>تُرکی ٹایِم</generic>
-					<standard>تُرکی سٹینڑاڑ ٹایِم</standard>
-					<daylight>تُرکی سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
 			<metazone type="Turkmenistan">
 				<long>
 					<generic>تُرکمٮ۪نِستان ٹایِم</generic>
@@ -3364,23 +3283,11 @@
 					<standard>ٹوٗوَلوٗ ٹایِم</standard>
 				</long>
 			</metazone>
-			<metazone type="Uralsk">
-				<long>
-					<generic>یوٗرالسک ٹایِم</generic>
-					<standard>یوٗرالسک سٹینڑاڑ ٹایِم</standard>
-					<daylight>یوٗرالسک سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
 			<metazone type="Uruguay">
 				<long>
 					<generic>یوٗرٮ۪گوَے ٹایِم</generic>
 					<standard>یوٗرٮ۪گوَے سٹینڑاڑ ٹایِم</standard>
 					<daylight>یوٗرٮ۪گوَے سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
-			<metazone type="Urumqi">
-				<long>
-					<standard>اُرُمکی ٹایِم</standard>
 				</long>
 			</metazone>
 			<metazone type="Uzbekistan">
@@ -3443,20 +3350,6 @@
 					<generic>یٮ۪کَٹٔرِنبٔرگ ٹایِم</generic>
 					<standard>یٮ۪کَٹٔرِنبٔرگ سٹینڑاڑ ٹایِم</standard>
 					<daylight>یٮ۪کَٹرِنبٔرگ سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yerevan">
-				<long>
-					<generic>ییٚرٮ۪وَن ٹایِم</generic>
-					<standard>ییٚرٮ۪وَن سٹینڑاڑ ٹایِم</standard>
-					<daylight>ییٚرٮ۪وَن سَمَر ٹایِم</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yukon">
-				<long>
-					<generic>یَکَن ٹایِم</generic>
-					<standard>یَکَن سٹینڑاڑ سٹینڑاڑ ٹایِم</standard>
-					<daylight>یَکَن ڈے لایِٹ ٹایِم</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -4246,6 +4139,9 @@
 				<displayName>ساوُتھ افریٖکاہُک رینڈ</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>زِمبابیُک کواچا (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>زِمبابیُک کواچا</displayName>
 			</currency>
 			<currency type="ZRN">

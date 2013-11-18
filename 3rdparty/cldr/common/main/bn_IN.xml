@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-	<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7847 $"/>
-		<generation date="$Date: 2012-10-15 11:02:42 -0700 (Mon, 15 Oct 2012) $"/>
+		<version number="$Revision: 8245 $"/>
+		<generation date="$Date: 2013-02-24 22:19:26 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="bn"/>
 		<territory type="IN"/>
 	</identity>
@@ -50,6 +54,32 @@
 	</characters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<quarters>
+					<quarterContext type="format">
+						<quarterWidth type="abbreviated">
+							<quarter type="1">ত্রৈমাসিক</quarter>
+							<quarter type="2">ষাণ্মাসিক</quarter>
+							<quarter type="3">চতুর্থাংশ ৩</quarter>
+							<quarter type="4">বার্ষিক</quarter>
+						</quarterWidth>
+						<quarterWidth type="wide">
+							<quarter type="1">ত্রৈমাসিক</quarter>
+							<quarter type="2">ষাণ্মাসিক</quarter>
+							<quarter type="3">তৃতীয় চতুর্থাংশ</quarter>
+							<quarter type="4">বার্ষিক</quarter>
+						</quarterWidth>
+					</quarterContext>
+					<quarterContext type="stand-alone">
+						<quarterWidth type="wide">
+							<quarter type="1">ত্রৈমাসিক</quarter>
+							<quarter type="2">ষাণ্মাসিক</quarter>
+							<quarter type="3">তৃতীয় চতুর্থাংশ</quarter>
+							<quarter type="4">বার্ষিক</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+			</calendar>
 			<calendar type="gregorian">
 				<quarters>
 					<quarterContext type="format">
@@ -75,19 +105,19 @@
 						</quarterWidth>
 					</quarterContext>
 				</quarters>
-				<fields>
-					<field type="day">
-						<relative type="-2">গতপরশু</relative>
-					</field>
-					<field type="hour">
-						<displayName>ঘণ্টা</displayName>
-					</field>
-					<field type="second">
-						<displayName>সেকেণ্ড</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="day">
+				<relative type="-2">গতপরশু</relative>
+			</field>
+			<field type="hour">
+				<displayName>ঘণ্টা</displayName>
+			</field>
+			<field type="second">
+				<displayName>সেকেণ্ড</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<metazone type="Alaska">
 				<long>
@@ -247,3 +277,4 @@
 		</currencies>
 	</numbers>
 </ldml>
+

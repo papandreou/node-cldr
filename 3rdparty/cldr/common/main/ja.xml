@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7839 $"/>
-		<generation date="$Date: 2012-10-11 16:37:12 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="ja"/>
 	</identity>
 	<localeDisplayNames>
@@ -981,6 +985,7 @@
 			<territory type="PN">ピトケアン諸島</territory>
 			<territory type="PR">プエルトリコ</territory>
 			<territory type="PS">パレスチナ</territory>
+			<territory type="PS" alt="short">パレスチナ</territory>
 			<territory type="PT">ポルトガル</territory>
 			<territory type="PW">パラオ</territory>
 			<territory type="PY">パラグアイ</territory>
@@ -1033,7 +1038,8 @@
 			<territory type="UA">ウクライナ</territory>
 			<territory type="UG">ウガンダ</territory>
 			<territory type="UM">米領太平洋諸島</territory>
-			<territory type="US">アメリカ</territory>
+			<territory type="US">アメリカ合衆国</territory>
+			<territory type="US" alt="short">アメリカ</territory>
 			<territory type="UY">ウルグアイ</territory>
 			<territory type="UZ">ウズベキスタン</territory>
 			<territory type="VA">バチカン市国</territory>
@@ -1045,6 +1051,7 @@
 			<territory type="VU">バヌアツ</territory>
 			<territory type="WF">ウォリス・フツナ</territory>
 			<territory type="WS">サモア</territory>
+			<territory type="XK">コソボ</territory>
 			<territory type="YE">イエメン</territory>
 			<territory type="YT">マヨット島</territory>
 			<territory type="ZA">南アフリカ</territory>
@@ -1134,7 +1141,6 @@
 			<type type="coptic" key="calendar">コプト暦</type>
 			<type type="deva" key="numbers">デーヴァナーガリー数字</type>
 			<type type="dictionary" key="collation">辞書順</type>
-			<type type="direct" key="collation" draft="contributed">直接</type>
 			<type type="ducet" key="collation">ユニコード照合順</type>
 			<type type="ethi" key="numbers">エチオピア数字</type>
 			<type type="ethiopic" key="calendar">エチオピア暦</type>
@@ -1252,9 +1258,9 @@
 		<exemplarCharacters type="auxiliary">[兌 拼 楔 錄 鳯]</exemplarCharacters>
 		<exemplarCharacters type="index" draft="contributed">[あ か さ た な は ま や ら わ]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[‾ _＿ \-－ ‐ — ― 〜 ・ ･ ,， 、､ ;； \:： !！ ?？ .． ‥ … 。｡ ＇＼ ‘ ’ &quot;＂ “ ” (（ )） \[［ \]］ \{｛ \}｝ 〈 〉 《 》 「｢ 」｣ 『 』 【 】 〔 〕 ‖ § ¶ @＠ *＊ /／ \\ \&amp;＆ #＃ %％ ‰ † ‡ ′ ″ 〃 ※]</exemplarCharacters>
-		<ellipsis type="final" draft="contributed">{0}...</ellipsis>
-		<ellipsis type="initial" draft="contributed">...{0}</ellipsis>
-		<ellipsis type="medial" draft="contributed">{0}...{1}</ellipsis>
+		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
+		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
+		<ellipsis type="medial" draft="contributed">{0}…{1}</ellipsis>
 		<moreInformation>?</moreInformation>
 	</characters>
 	<delimiters>
@@ -1301,8 +1307,12 @@
 						<dateFormatItem id="d">d日</dateFormatItem>
 						<dateFormatItem id="Ed">d日(E)</dateFormatItem>
 						<dateFormatItem id="EEEEd">d日EEEE</dateFormatItem>
-						<dateFormatItem id="GGGGyMd">GGGGy年M月d日</dateFormatItem>
-						<dateFormatItem id="Gy">Gy年</dateFormatItem>
+						<dateFormatItem id="Gy">GGGGy年</dateFormatItem>
+						<dateFormatItem id="GyMd">GGGGy年M月d日</dateFormatItem>
+						<dateFormatItem id="GyMMM">GGGGy年M月</dateFormatItem>
+						<dateFormatItem id="GyMMMd">GGGGy年M月d日</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">GGGGy年M月d日(E)</dateFormatItem>
+						<dateFormatItem id="GyMMMEEEEd">GGGGy年M月d日EEEE</dateFormatItem>
 						<dateFormatItem id="h">aK時</dateFormatItem>
 						<dateFormatItem id="H">H時</dateFormatItem>
 						<dateFormatItem id="hm">aK:mm</dateFormatItem>
@@ -1312,29 +1322,25 @@
 						<dateFormatItem id="M">M月</dateFormatItem>
 						<dateFormatItem id="Md">M/d</dateFormatItem>
 						<dateFormatItem id="MEd">M/d(E)</dateFormatItem>
-						<dateFormatItem id="MMdd">MM/dd</dateFormatItem>
+						<dateFormatItem id="MEEEEd">M/dEEEE</dateFormatItem>
 						<dateFormatItem id="MMM">M月</dateFormatItem>
 						<dateFormatItem id="MMMd">M月d日</dateFormatItem>
 						<dateFormatItem id="MMMEd">M月d日(E)</dateFormatItem>
 						<dateFormatItem id="MMMEEEEd">M月d日EEEE</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">GGGGy年</dateFormatItem>
-						<dateFormatItem id="yM" draft="contributed">GGGGy年M月</dateFormatItem>
-						<dateFormatItem id="yMEd" draft="contributed">GGGGy年M/d(E)</dateFormatItem>
-						<dateFormatItem id="yMMM" draft="contributed">GGGGy年M月</dateFormatItem>
-						<dateFormatItem id="yMMMEd" draft="contributed">GGGGy年M月d日(E)</dateFormatItem>
-						<dateFormatItem id="yMMMEEEEd" draft="contributed">GGGGy年M月d日EEEE</dateFormatItem>
-						<dateFormatItem id="yQQQ" draft="contributed">GGGGy QQQ</dateFormatItem>
-						<dateFormatItem id="yQQQQ" draft="contributed">GGGGy第Q四半期</dateFormatItem>
 						<dateFormatItem id="yyyy">GGGGy年</dateFormatItem>
+						<dateFormatItem id="yyyyM" draft="contributed">GGGGy年M月</dateFormatItem>
 						<dateFormatItem id="yyyyMd">Gy/M/d</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">Gy/M/d(E)</dateFormatItem>
+						<dateFormatItem id="yyyyMEd" draft="contributed">GGGGy年M/d(E)</dateFormatItem>
+						<dateFormatItem id="yyyyMEEEEd" draft="contributed">GGGGy年M/dEEEE</dateFormatItem>
 						<dateFormatItem id="yyyyMM">Gy/MM</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">GGGGy年M月</dateFormatItem>
+						<dateFormatItem id="yyyyMMM" draft="contributed">GGGGy年M月</dateFormatItem>
 						<dateFormatItem id="yyyyMMMd">GGGGy年M月d日</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">GGGGy年M月d日(E)</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEEEEd">GGGGy年M月d日EEEE</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">Gy/QQQ</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd" draft="contributed">GGGGy年M月d日(E)</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEEEEd" draft="contributed">GGGGy年M月d日EEEE</dateFormatItem>
+						<dateFormatItem id="yyyyQQQ" draft="contributed">GGGGy QQQ</dateFormatItem>
+						<dateFormatItem id="yyyyQQQQ" draft="contributed">GGGGy第Q四半期</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
 			</calendar>
@@ -1535,23 +1541,37 @@
 						<dateFormatItem id="d">d日</dateFormatItem>
 						<dateFormatItem id="Ed">d日(E)</dateFormatItem>
 						<dateFormatItem id="EEEEd">d日EEEE</dateFormatItem>
+						<dateFormatItem id="Gy">U年</dateFormatItem>
+						<dateFormatItem id="GyMMM">U年MMM</dateFormatItem>
+						<dateFormatItem id="GyMMMd">U年MMMd日</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">U年MMMd日(E)</dateFormatItem>
+						<dateFormatItem id="GyMMMEEEEd">U年MMMd日EEEE</dateFormatItem>
+						<dateFormatItem id="h">aK時</dateFormatItem>
+						<dateFormatItem id="H">H時</dateFormatItem>
+						<dateFormatItem id="hm">aK:mm</dateFormatItem>
+						<dateFormatItem id="Hm">H:mm</dateFormatItem>
+						<dateFormatItem id="hms">aK:mm:ss</dateFormatItem>
+						<dateFormatItem id="Hms">H:mm:ss</dateFormatItem>
 						<dateFormatItem id="M">MMM</dateFormatItem>
 						<dateFormatItem id="Md">M/d</dateFormatItem>
 						<dateFormatItem id="MEd">M/d(E)</dateFormatItem>
+						<dateFormatItem id="MEEEEd">M/dEEEE</dateFormatItem>
 						<dateFormatItem id="MMMd">MMMd日</dateFormatItem>
 						<dateFormatItem id="MMMEd">MMMd日(E)</dateFormatItem>
 						<dateFormatItem id="MMMEEEEd">MMMd日EEEE</dateFormatItem>
 						<dateFormatItem id="y">U年</dateFormatItem>
-						<dateFormatItem id="yM">U年M月</dateFormatItem>
 						<dateFormatItem id="yMd">U年M月d日</dateFormatItem>
-						<dateFormatItem id="yMEd">U年M月d日(E)</dateFormatItem>
-						<dateFormatItem id="yMEEEEd">U年M月d日EEEE</dateFormatItem>
-						<dateFormatItem id="yMMM">U年MMM</dateFormatItem>
-						<dateFormatItem id="yMMMd">U年MMMd日</dateFormatItem>
-						<dateFormatItem id="yMMMEd">U年MMMd日(E)</dateFormatItem>
-						<dateFormatItem id="yMMMEEEEd">U年MMMd日EEEE</dateFormatItem>
-						<dateFormatItem id="yQQQ">U/QQQ</dateFormatItem>
-						<dateFormatItem id="yQQQQ">UQQQQ</dateFormatItem>
+						<dateFormatItem id="yyyy">U年</dateFormatItem>
+						<dateFormatItem id="yyyyM">U年M月</dateFormatItem>
+						<dateFormatItem id="yyyyMd">U年M月d日</dateFormatItem>
+						<dateFormatItem id="yyyyMEd">U年M月d日(E)</dateFormatItem>
+						<dateFormatItem id="yyyyMEEEEd">U年M月d日EEEE</dateFormatItem>
+						<dateFormatItem id="yyyyMMM">U年MMM</dateFormatItem>
+						<dateFormatItem id="yyyyMMMd">U年MMMd日</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd">U年MMMd日(E)</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEEEEd">U年MMMd日EEEE</dateFormatItem>
+						<dateFormatItem id="yyyyQQQ">U/QQQ</dateFormatItem>
+						<dateFormatItem id="yyyyQQQQ">UQQQQ</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0}～{1}</intervalFormatFallback>
@@ -1849,6 +1869,187 @@
 					</monthContext>
 				</months>
 			</calendar>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>Gy年M月d日EEEE</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>Gy年M月d日</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>Gy/MM/dd</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>Gy/MM/dd</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">d日</dateFormatItem>
+						<dateFormatItem id="Ed">d日(E)</dateFormatItem>
+						<dateFormatItem id="EEEEd">d日EEEE</dateFormatItem>
+						<dateFormatItem id="Gy">Gy年</dateFormatItem>
+						<dateFormatItem id="GyMMM">Gy年M月</dateFormatItem>
+						<dateFormatItem id="GyMMMd">Gy年M月d日</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">Gy年M月d日(E)</dateFormatItem>
+						<dateFormatItem id="GyMMMEEEEd">Gy年M月d日EEEE</dateFormatItem>
+						<dateFormatItem id="h">aK時</dateFormatItem>
+						<dateFormatItem id="H">H時</dateFormatItem>
+						<dateFormatItem id="hm">aK:mm</dateFormatItem>
+						<dateFormatItem id="Hm">H:mm</dateFormatItem>
+						<dateFormatItem id="hms">aK:mm:ss</dateFormatItem>
+						<dateFormatItem id="Hms">H:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">M月</dateFormatItem>
+						<dateFormatItem id="Md">M/d</dateFormatItem>
+						<dateFormatItem id="MEd">M/d(E)</dateFormatItem>
+						<dateFormatItem id="MEEEEd">M/dEEEE</dateFormatItem>
+						<dateFormatItem id="MMM">M月</dateFormatItem>
+						<dateFormatItem id="MMMd">M月d日</dateFormatItem>
+						<dateFormatItem id="MMMEd">M月d日(E)</dateFormatItem>
+						<dateFormatItem id="MMMEEEEd">M月d日EEEE</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">Gy年</dateFormatItem>
+						<dateFormatItem id="yyyy">Gy年</dateFormatItem>
+						<dateFormatItem id="yyyyM">Gy/M</dateFormatItem>
+						<dateFormatItem id="yyyyMd">Gy/M/d</dateFormatItem>
+						<dateFormatItem id="yyyyMEd">Gy/M/d(E)</dateFormatItem>
+						<dateFormatItem id="yyyyMEEEEd">Gy/M/dEEEE</dateFormatItem>
+						<dateFormatItem id="yyyyMMM">Gy年M月</dateFormatItem>
+						<dateFormatItem id="yyyyMMMd">Gy年M月d日</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd">Gy年M月d日(E)</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEEEEd">Gy年M月d日EEEE</dateFormatItem>
+						<dateFormatItem id="yyyyQQQ">Gy/QQQ</dateFormatItem>
+						<dateFormatItem id="yyyyQQQQ">GyQQQQ</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0}～{1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d日～d日</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">aK時～aK時</greatestDifference>
+							<greatestDifference id="h">aK時～K時</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">H時～H時</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">aK時mm分～aK時mm分</greatestDifference>
+							<greatestDifference id="h">aK時mm分～K時mm分</greatestDifference>
+							<greatestDifference id="m">aK時mm分～K時mm分</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">H時mm分～H時mm分</greatestDifference>
+							<greatestDifference id="m">H時mm分～H時mm分</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">aK時mm分～aK時mm分(v)</greatestDifference>
+							<greatestDifference id="h">aK時mm分～K時mm分(v)</greatestDifference>
+							<greatestDifference id="m">aK時mm分～K時mm分(v)</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">H時mm分～H時mm分(v)</greatestDifference>
+							<greatestDifference id="m">H時mm分～H時mm分(v)</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">aK時～aK時(v)</greatestDifference>
+							<greatestDifference id="h">aK時～K時(v)</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">H時～H時(v)</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M月～M月</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">MM/dd～MM/dd</greatestDifference>
+							<greatestDifference id="M">MM/dd～MM/dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">MM/dd(E)～MM/dd(E)</greatestDifference>
+							<greatestDifference id="M">MM/dd(E)～MM/dd(E)</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">M月～M月</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">M月d日～d日</greatestDifference>
+							<greatestDifference id="M">M月d日～M月d日</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">M月d日(E)～d日(E)</greatestDifference>
+							<greatestDifference id="M">M月d日(E)～M月d日(E)</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMM">
+							<greatestDifference id="M">M月～M月</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">Gy年～y年</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">Gy/MM～y/MM</greatestDifference>
+							<greatestDifference id="y">Gy/MM～y/MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">Gy/MM/dd～y/MM/dd</greatestDifference>
+							<greatestDifference id="M">Gy/MM/dd～y/MM/dd</greatestDifference>
+							<greatestDifference id="y">Gy/MM/dd～y/MM/dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">Gy/MM/dd(E)～y/MM/dd(E)</greatestDifference>
+							<greatestDifference id="M">Gy/MM/dd(E)～y/MM/dd(E)</greatestDifference>
+							<greatestDifference id="y">Gy/MM/dd(E)～y/MM/dd(E)</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">Gy年M月～M月</greatestDifference>
+							<greatestDifference id="y">Gy年M月～y年M月</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">Gy年M月d日～d日</greatestDifference>
+							<greatestDifference id="M">Gy年M月d日～M月d日</greatestDifference>
+							<greatestDifference id="y">Gy年M月d日～y年M月d日</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">Gy年M月d日(E)～d日(E)</greatestDifference>
+							<greatestDifference id="M">Gy年M月d日(E)～M月d日(E)</greatestDifference>
+							<greatestDifference id="y">Gy年M月d日(E)～y年M月d日(E)</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">Gy年M月～M月</greatestDifference>
+							<greatestDifference id="y">Gy年M月～y年M月</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1986,8 +2187,8 @@
 						<era type="1">西暦</era>
 					</eraNames>
 					<eraAbbr>
-						<era type="0">BC</era>
-						<era type="1">AD</era>
+						<era type="0">紀元前</era>
+						<era type="1">西暦</era>
 					</eraAbbr>
 					<eraNarrow>
 						<era type="0">BC</era>
@@ -2007,12 +2208,12 @@
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
-							<pattern>yyyy/MM/dd</pattern>
+							<pattern>y/MM/dd</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>yyyy/MM/dd</pattern>
+							<pattern>y/MM/dd</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -2063,7 +2264,11 @@
 						<dateFormatItem id="d">d日</dateFormatItem>
 						<dateFormatItem id="Ed">d日(E)</dateFormatItem>
 						<dateFormatItem id="EEEEd">d日EEEE</dateFormatItem>
-						<dateFormatItem id="GGGGyMd">GGGGy年M月d日</dateFormatItem>
+						<dateFormatItem id="Gy">Gy年</dateFormatItem>
+						<dateFormatItem id="GyMMM">Gy年M月</dateFormatItem>
+						<dateFormatItem id="GyMMMd">Gy年M月d日</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">Gy年M月d日(E)</dateFormatItem>
+						<dateFormatItem id="GyMMMEEEEd">Gy年M月d日EEEE</dateFormatItem>
 						<dateFormatItem id="h">aK時</dateFormatItem>
 						<dateFormatItem id="H">H時</dateFormatItem>
 						<dateFormatItem id="hm">aK:mm</dateFormatItem>
@@ -2073,7 +2278,7 @@
 						<dateFormatItem id="M">M月</dateFormatItem>
 						<dateFormatItem id="Md">M/d</dateFormatItem>
 						<dateFormatItem id="MEd">M/d(E)</dateFormatItem>
-						<dateFormatItem id="MMdd">MM/dd</dateFormatItem>
+						<dateFormatItem id="MEEEEd">M/dEEEE</dateFormatItem>
 						<dateFormatItem id="MMM">M月</dateFormatItem>
 						<dateFormatItem id="MMMd">M月d日</dateFormatItem>
 						<dateFormatItem id="MMMEd">M月d日(E)</dateFormatItem>
@@ -2083,15 +2288,14 @@
 						<dateFormatItem id="yM">y/M</dateFormatItem>
 						<dateFormatItem id="yMd">y/M/d</dateFormatItem>
 						<dateFormatItem id="yMEd">y/M/d(E)</dateFormatItem>
+						<dateFormatItem id="yMEEEEd">y/M/dEEEE</dateFormatItem>
+						<dateFormatItem id="yMM">y/MM</dateFormatItem>
 						<dateFormatItem id="yMMM">y年M月</dateFormatItem>
 						<dateFormatItem id="yMMMd">y年M月d日</dateFormatItem>
 						<dateFormatItem id="yMMMEd">y年M月d日(E)</dateFormatItem>
 						<dateFormatItem id="yMMMEEEEd">y年M月d日EEEE</dateFormatItem>
 						<dateFormatItem id="yQQQ">y/QQQ</dateFormatItem>
 						<dateFormatItem id="yQQQQ">yQQQQ</dateFormatItem>
-						<dateFormatItem id="yyMMM">y年M月</dateFormatItem>
-						<dateFormatItem id="yyyy">y年</dateFormatItem>
-						<dateFormatItem id="yyyyMM">yyyy/MM</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0}～{1}</intervalFormatFallback>
@@ -2159,18 +2363,18 @@
 							<greatestDifference id="y">y年～y年</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">yy/MM～yy/MM</greatestDifference>
-							<greatestDifference id="y">yy/MM～yy/MM</greatestDifference>
+							<greatestDifference id="M">y/MM～y/MM</greatestDifference>
+							<greatestDifference id="y">y/MM～y/MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">yy/MM/dd～yy/MM/dd</greatestDifference>
-							<greatestDifference id="M">yy/MM/dd～yy/MM/dd</greatestDifference>
-							<greatestDifference id="y">yy/MM/dd～yy/MM/dd</greatestDifference>
+							<greatestDifference id="d">y/MM/dd～y/MM/dd</greatestDifference>
+							<greatestDifference id="M">y/MM/dd～y/MM/dd</greatestDifference>
+							<greatestDifference id="y">y/MM/dd～y/MM/dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">yy/MM/dd(E)～yy/MM/dd(E)</greatestDifference>
-							<greatestDifference id="M">yy/MM/dd(E)～yy/MM/dd(E)</greatestDifference>
-							<greatestDifference id="y">yy/MM/dd(E)～yy/MM/dd(E)</greatestDifference>
+							<greatestDifference id="d">y/MM/dd(E)～y/MM/dd(E)</greatestDifference>
+							<greatestDifference id="M">y/MM/dd(E)～y/MM/dd(E)</greatestDifference>
+							<greatestDifference id="y">y/MM/dd(E)～y/MM/dd(E)</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">y年M月～M月</greatestDifference>
@@ -2192,55 +2396,6 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>時代</displayName>
-					</field>
-					<field type="year">
-						<displayName>年</displayName>
-						<relative type="-1">昨年</relative>
-						<relative type="0">今年</relative>
-						<relative type="1">翌年</relative>
-					</field>
-					<field type="month">
-						<displayName>月</displayName>
-						<relative type="-1">先月</relative>
-						<relative type="0">今月</relative>
-						<relative type="1">翌月</relative>
-					</field>
-					<field type="week">
-						<displayName>週</displayName>
-						<relative type="-1">先週</relative>
-						<relative type="0">今週</relative>
-						<relative type="1">翌週</relative>
-					</field>
-					<field type="day">
-						<displayName>日</displayName>
-						<relative type="-2">一昨日</relative>
-						<relative type="-1">昨日</relative>
-						<relative type="0">今日</relative>
-						<relative type="1">明日</relative>
-						<relative type="2">明後日</relative>
-					</field>
-					<field type="weekday">
-						<displayName>曜日</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>午前/午後</displayName>
-					</field>
-					<field type="hour">
-						<displayName>時</displayName>
-					</field>
-					<field type="minute">
-						<displayName>分</displayName>
-					</field>
-					<field type="second">
-						<displayName>秒</displayName>
-					</field>
-					<field type="zone">
-						<displayName>タイムゾーン</displayName>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="hebrew">
 				<months>
@@ -3072,6 +3227,10 @@
 						<dateFormatItem id="Ed">d日(E)</dateFormatItem>
 						<dateFormatItem id="EEEEd">d日EEEE</dateFormatItem>
 						<dateFormatItem id="Gy">Gy年</dateFormatItem>
+						<dateFormatItem id="GyMMM">Gy年M月</dateFormatItem>
+						<dateFormatItem id="GyMMMd">Gy年M月d日</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">Gy年M月d日(E)</dateFormatItem>
+						<dateFormatItem id="GyMMMEEEEd">Gy年M月d日EEEE</dateFormatItem>
 						<dateFormatItem id="h">aK時</dateFormatItem>
 						<dateFormatItem id="H">H時</dateFormatItem>
 						<dateFormatItem id="hm">aK:mm</dateFormatItem>
@@ -3081,15 +3240,18 @@
 						<dateFormatItem id="M">M月</dateFormatItem>
 						<dateFormatItem id="Md">M/d</dateFormatItem>
 						<dateFormatItem id="MEd">M/d(E)</dateFormatItem>
+						<dateFormatItem id="MEEEEd">M/dEEEE</dateFormatItem>
 						<dateFormatItem id="MMM" draft="contributed">M月</dateFormatItem>
 						<dateFormatItem id="MMMd">M月d日</dateFormatItem>
 						<dateFormatItem id="MMMEd">M月d日(E)</dateFormatItem>
+						<dateFormatItem id="MMMEEEEd">M月d日EEEE</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">Gy年</dateFormatItem>
 						<dateFormatItem id="yyyy">Gy年</dateFormatItem>
 						<dateFormatItem id="yyyyMd">Gy/M/d</dateFormatItem>
 						<dateFormatItem id="yyyyMEd">Gy/M/d(E)</dateFormatItem>
-						<dateFormatItem id="yyyyMM">Gyy/MM</dateFormatItem>
+						<dateFormatItem id="yyyyMEEEEd">Gy/M/dEEEE</dateFormatItem>
+						<dateFormatItem id="yyyyMM">Gy/MM</dateFormatItem>
 						<dateFormatItem id="yyyyMMM">Gy年M月</dateFormatItem>
 						<dateFormatItem id="yyyyMMMd">Gy年M月d日</dateFormatItem>
 						<dateFormatItem id="yyyyMMMEd">Gy年M月d日(E)</dateFormatItem>
@@ -3203,64 +3365,57 @@
 						<era type="1">民国</era>
 					</eraAbbr>
 				</eras>
-				<dateFormats>
-					<dateFormatLength type="full">
-						<dateFormat>
-							<pattern>Gy年M月d日EEEE</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="long">
-						<dateFormat>
-							<pattern>Gy年M月d日</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="medium">
-						<dateFormat>
-							<pattern>Gy/MM/dd</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="short">
-						<dateFormat>
-							<pattern>Gy/MM/dd</pattern>
-						</dateFormat>
-					</dateFormatLength>
-				</dateFormats>
-				<dateTimeFormats>
-					<!-- per cldrbug 2835, copied from japanese -->
-					<availableFormats>
-						<dateFormatItem id="d">d日</dateFormatItem>
-						<dateFormatItem id="Ed">d日(E)</dateFormatItem>
-						<dateFormatItem id="EEEEd">d日EEEE</dateFormatItem>
-						<dateFormatItem id="Gy">Gy年</dateFormatItem>
-						<dateFormatItem id="h">aK時</dateFormatItem>
-						<dateFormatItem id="H">H時</dateFormatItem>
-						<dateFormatItem id="hm">aK:mm</dateFormatItem>
-						<dateFormatItem id="Hm">H:mm</dateFormatItem>
-						<dateFormatItem id="hms">aK:mm:ss</dateFormatItem>
-						<dateFormatItem id="Hms">H:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">M月</dateFormatItem>
-						<dateFormatItem id="Md">M/d</dateFormatItem>
-						<dateFormatItem id="MEd">M/d(E)</dateFormatItem>
-						<dateFormatItem id="MMM">M月</dateFormatItem>
-						<dateFormatItem id="MMMd">M月d日</dateFormatItem>
-						<dateFormatItem id="MMMEd">M月d日(E)</dateFormatItem>
-						<dateFormatItem id="MMMEEEEd">M月d日EEEE</dateFormatItem>
-						<dateFormatItem id="ms" draft="contributed">mm:ss</dateFormatItem>
-						<dateFormatItem id="y">Gy年</dateFormatItem>
-						<dateFormatItem id="yyyy">Gy年</dateFormatItem>
-						<dateFormatItem id="yyyyMd">Gy/M/d</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">Gy/M/d(E)</dateFormatItem>
-						<dateFormatItem id="yyyyMM">Gy/MM</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">Gy年M月</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">Gy年M月d日</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">Gy年M月d日(E)</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEEEEd">Gy年M月d日EEEE</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">Gy/QQQ</dateFormatItem>
-						<dateFormatItem id="yyyyQQQQ">GyQQQQ</dateFormatItem>
-					</availableFormats>
-				</dateTimeFormats>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>時代</displayName>
+			</field>
+			<field type="year">
+				<displayName>年</displayName>
+				<relative type="-1">昨年</relative>
+				<relative type="0">今年</relative>
+				<relative type="1">翌年</relative>
+			</field>
+			<field type="month">
+				<displayName>月</displayName>
+				<relative type="-1">先月</relative>
+				<relative type="0">今月</relative>
+				<relative type="1">翌月</relative>
+			</field>
+			<field type="week">
+				<displayName>週</displayName>
+				<relative type="-1">先週</relative>
+				<relative type="0">今週</relative>
+				<relative type="1">翌週</relative>
+			</field>
+			<field type="day">
+				<displayName>日</displayName>
+				<relative type="-2">一昨日</relative>
+				<relative type="-1">昨日</relative>
+				<relative type="0">今日</relative>
+				<relative type="1">明日</relative>
+				<relative type="2">明後日</relative>
+			</field>
+			<field type="weekday">
+				<displayName>曜日</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>午前/午後</displayName>
+			</field>
+			<field type="hour">
+				<displayName>時</displayName>
+			</field>
+			<field type="minute">
+				<displayName>分</displayName>
+			</field>
+			<field type="second">
+				<displayName>秒</displayName>
+			</field>
+			<field type="zone">
+				<displayName>タイムゾーン</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
@@ -3268,95 +3423,8 @@
 			<regionFormat>{0}時間</regionFormat>
 			<fallbackFormat>{1}（{0}）</fallbackFormat>
 			<fallbackRegionFormat>{1}時間（{0}）</fallbackRegionFormat>
-			<zone type="America/Lower_Princes">
-				<exemplarCity>ローワー・プリンセズ・クウォーター</exemplarCity>
-			</zone>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity>ノースダコタ州ビューラー</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+12">
-				<exemplarCity>グリニッジ標準時[GMT]+12</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-12">
-				<exemplarCity>グリニッジ標準時[GMT]-12</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+11">
-				<exemplarCity>グリニッジ標準時[GMT]+11</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-13">
-				<exemplarCity>グリニッジ標準時[GMT]-13</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+10">
-				<exemplarCity>グリニッジ標準時[GMT]+10</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-14">
-				<exemplarCity>グリニッジ標準時[GMT]-14</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+9">
-				<exemplarCity>グリニッジ標準時[GMT]+9</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+8">
-				<exemplarCity>グリニッジ標準時[GMT]+8</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+7">
-				<exemplarCity>グリニッジ標準時[GMT]+7</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+6">
-				<exemplarCity>グリニッジ標準時[GMT]+6</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+5">
-				<exemplarCity>グリニッジ標準時[GMT]+5</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+4">
-				<exemplarCity>グリニッジ標準時[GMT]+4</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+3">
-				<exemplarCity>グリニッジ標準時[GMT]+3</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+2">
-				<exemplarCity>グリニッジ標準時[GMT]+2</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+1">
-				<exemplarCity>グリニッジ標準時[GMT]+1</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT">
-				<exemplarCity>グリニッジ標準時[GMT]</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>地域不明</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-1">
-				<exemplarCity>グリニッジ標準時[GMT]-1</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-2">
-				<exemplarCity>グリニッジ標準時[GMT]-2</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-3">
-				<exemplarCity>グリニッジ標準時[GMT]-3</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-4">
-				<exemplarCity>グリニッジ標準時[GMT]-4</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-5">
-				<exemplarCity>グリニッジ標準時[GMT]-5</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-6">
-				<exemplarCity>グリニッジ標準時[GMT]-6</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-7">
-				<exemplarCity>グリニッジ標準時[GMT]-7</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-8">
-				<exemplarCity>グリニッジ標準時[GMT]-8</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-9">
-				<exemplarCity>グリニッジ標準時[GMT]-9</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-10">
-				<exemplarCity>グリニッジ標準時[GMT]-10</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-11">
-				<exemplarCity>グリニッジ標準時[GMT]-11</exemplarCity>
 			</zone>
 			<zone type="Europe/Andorra">
 				<exemplarCity>アンドラ</exemplarCity>
@@ -3378,9 +3446,6 @@
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity>エレバン</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>キュラソー</exemplarCity>
 			</zone>
 			<zone type="Africa/Luanda">
 				<exemplarCity>ルアンダ</exemplarCity>
@@ -3744,6 +3809,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>カーボベルデ</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>キュラソー</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity>クリスマス島</exemplarCity>
@@ -4357,6 +4425,9 @@
 			<zone type="America/El_Salvador">
 				<exemplarCity>エルサルバドル</exemplarCity>
 			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity>ローワー・プリンセズ・クウォーター</exemplarCity>
+			</zone>
 			<zone type="Asia/Damascus">
 				<exemplarCity>ダマスカス</exemplarCity>
 			</zone>
@@ -4467,6 +4538,9 @@
 			</zone>
 			<zone type="America/Denver">
 				<exemplarCity>デンバー</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity>ノースダコタ州ビューラー</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity>ノースダコタ州ニューセーラム</exemplarCity>
@@ -4601,25 +4675,11 @@
 					<daylight>西アフリカ夏時間</daylight>
 				</long>
 			</metazone>
-			<metazone type="Aktyubinsk">
-				<long>
-					<generic>アクチュービンスク時間</generic>
-					<standard>アクチュービンスク標準時</standard>
-					<daylight>アクチュービンスク夏時間</daylight>
-				</long>
-			</metazone>
 			<metazone type="Alaska">
 				<long>
 					<generic>アラスカ時間</generic>
 					<standard>アラスカ標準時</standard>
 					<daylight>アラスカ夏時間</daylight>
-				</long>
-			</metazone>
-			<metazone type="Alaska_Hawaii">
-				<long>
-					<generic>アラスカ・ハワイ時間</generic>
-					<standard>アラスカ・ハワイ標準時</standard>
-					<daylight>アラスカ・ハワイ夏時間</daylight>
 				</long>
 			</metazone>
 			<metazone type="Almaty">
@@ -4713,13 +4773,6 @@
 					<daylight>アルメニア夏時間</daylight>
 				</long>
 			</metazone>
-			<metazone type="Ashkhabad">
-				<long>
-					<generic>アシガバート時間</generic>
-					<standard>アシガバート標準時</standard>
-					<daylight>アシガバート夏時間</daylight>
-				</long>
-			</metazone>
 			<metazone type="Atlantic">
 				<long>
 					<generic>大西洋時間</generic>
@@ -4769,25 +4822,11 @@
 					<daylight>アゾレス夏時間</daylight>
 				</long>
 			</metazone>
-			<metazone type="Baku">
-				<long>
-					<generic>バクー時間</generic>
-					<standard>バクー標準時</standard>
-					<daylight>バクー夏時間</daylight>
-				</long>
-			</metazone>
 			<metazone type="Bangladesh">
 				<long>
 					<generic>バングラデシュ時間</generic>
 					<standard>バングラデシュ標準時</standard>
 					<daylight>バングラデシュ夏時間</daylight>
-				</long>
-			</metazone>
-			<metazone type="Bering">
-				<long>
-					<generic>ベーリング時間</generic>
-					<standard>ベーリング標準時</standard>
-					<daylight>ベーリング夏時間</daylight>
 				</long>
 			</metazone>
 			<metazone type="Bhutan">
@@ -4798,13 +4837,6 @@
 			<metazone type="Bolivia">
 				<long>
 					<standard>ボリビア時間</standard>
-				</long>
-			</metazone>
-			<metazone type="Borneo">
-				<long>
-					<generic>ボルネオ時間</generic>
-					<standard>ボルネオ標準時</standard>
-					<daylight>ボルネオ夏時間</daylight>
 				</long>
 			</metazone>
 			<metazone type="Brasilia">
@@ -4834,11 +4866,6 @@
 			<metazone type="Chamorro">
 				<long>
 					<standard>チャモロ時間</standard>
-				</long>
-			</metazone>
-			<metazone type="Changbai">
-				<long>
-					<standard>チャンバイ時間</standard>
 				</long>
 			</metazone>
 			<metazone type="Chatham">
@@ -4900,11 +4927,6 @@
 					<daylight>キューバ夏時間</daylight>
 				</long>
 			</metazone>
-			<metazone type="Dacca">
-				<long>
-					<standard>ダッカ時間</standard>
-				</long>
-			</metazone>
 			<metazone type="Davis">
 				<long>
 					<standard>デービス基地時間</standard>
@@ -4913,18 +4935,6 @@
 			<metazone type="DumontDUrville">
 				<long>
 					<standard>デュモン・デュルヴィル基地時間</standard>
-				</long>
-			</metazone>
-			<metazone type="Dushanbe">
-				<long>
-					<generic>ドゥシャンベ時間</generic>
-					<standard>ドゥシャンベ標準時</standard>
-					<daylight>ドゥシャンベ夏時間</daylight>
-				</long>
-			</metazone>
-			<metazone type="Dutch_Guiana">
-				<long>
-					<standard>オランダ領ギアナ標準時</standard>
 				</long>
 			</metazone>
 			<metazone type="East_Timor">
@@ -4989,13 +4999,6 @@
 					<standard>仏領南方南極時間</standard>
 				</long>
 			</metazone>
-			<metazone type="Frunze">
-				<long>
-					<generic>フルンゼ時間</generic>
-					<standard>フルンゼ標準時</standard>
-					<daylight>フルンゼ夏時間</daylight>
-				</long>
-			</metazone>
 			<metazone type="Galapagos">
 				<long>
 					<standard>ガラパゴス時間</standard>
@@ -5021,13 +5024,6 @@
 			<metazone type="GMT">
 				<long>
 					<standard>グリニッジ標準時</standard>
-				</long>
-			</metazone>
-			<metazone type="Greenland_Central">
-				<long>
-					<generic>グリーンランド中部時間</generic>
-					<standard>グリーンランド中部標準時</standard>
-					<daylight>グリーンランド中部夏時間</daylight>
 				</long>
 			</metazone>
 			<metazone type="Greenland_Eastern">
@@ -5150,16 +5146,6 @@
 					<daylight>ペトロパブロフスク・カムチャツキー夏時間</daylight>
 				</long>
 			</metazone>
-			<metazone type="Karachi">
-				<long>
-					<standard>カラチ時間</standard>
-				</long>
-			</metazone>
-			<metazone type="Kashgar">
-				<long>
-					<standard>カシュガル時間</standard>
-				</long>
-			</metazone>
 			<metazone type="Kazakhstan_Eastern">
 				<long>
 					<standard>東カザフスタン時間</standard>
@@ -5168,13 +5154,6 @@
 			<metazone type="Kazakhstan_Western">
 				<long>
 					<standard>西カザフスタン時間</standard>
-				</long>
-			</metazone>
-			<metazone type="Kizilorda">
-				<long>
-					<generic>キジロルダ時間</generic>
-					<standard>キジロルダ標準時</standard>
-					<daylight>キジロルダ夏時間</daylight>
 				</long>
 			</metazone>
 			<metazone type="Korea">
@@ -5196,18 +5175,6 @@
 					<daylight>クラスノヤルスク夏時間</daylight>
 				</long>
 			</metazone>
-			<metazone type="Kuybyshev">
-				<long>
-					<generic>クイビシェフ時間</generic>
-					<standard>クイビシェフ標準時</standard>
-					<daylight>クイビシェフ夏時間</daylight>
-				</long>
-			</metazone>
-			<metazone type="Kwajalein">
-				<long>
-					<standard>クェゼリン時間</standard>
-				</long>
-			</metazone>
 			<metazone type="Kyrgystan">
 				<long>
 					<standard>キルギスタン時間</standard>
@@ -5221,11 +5188,6 @@
 			<metazone type="Line_Islands">
 				<long>
 					<standard>ライン諸島時間</standard>
-				</long>
-			</metazone>
-			<metazone type="Long_Shu">
-				<long>
-					<standard draft="provisional">隴蜀時間</standard>
 				</long>
 			</metazone>
 			<metazone type="Lord_Howe">
@@ -5252,11 +5214,6 @@
 					<generic>マガダン時間</generic>
 					<standard>マガダン標準時</standard>
 					<daylight>マガダン夏時間</daylight>
-				</long>
-			</metazone>
-			<metazone type="Malaya">
-				<long>
-					<standard>マラヤ時間</standard>
 				</long>
 			</metazone>
 			<metazone type="Malaysia">
@@ -5468,28 +5425,16 @@
 					<daylight draft="contributed">サマラ夏時間</daylight>
 				</long>
 			</metazone>
-			<metazone type="Samarkand">
-				<long>
-					<generic>サマルカンド時間</generic>
-					<standard>サマルカンド標準時</standard>
-					<daylight>サマルカンド夏時間</daylight>
-				</long>
-			</metazone>
 			<metazone type="Samoa">
 				<long>
-					<standard>サモア時間</standard>
+					<generic>サモア時間</generic>
+					<standard>サモア標準時</standard>
+					<daylight>サモア夏時間</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
 				<long>
 					<standard>セーシェル時間</standard>
-				</long>
-			</metazone>
-			<metazone type="Shevchenko">
-				<long>
-					<generic>シェフチェンコ時間</generic>
-					<standard>シェフチェンコ標準時</standard>
-					<daylight>シェフチェンコ夏時間</daylight>
 				</long>
 			</metazone>
 			<metazone type="Singapore">
@@ -5510,13 +5455,6 @@
 			<metazone type="Suriname">
 				<long>
 					<standard>スリナム時間</standard>
-				</long>
-			</metazone>
-			<metazone type="Sverdlovsk">
-				<long>
-					<generic draft="provisional">スヴェルドロフスク時間</generic>
-					<standard draft="provisional">スヴェルドロフスク標準時</standard>
-					<daylight draft="provisional">スヴェルドロフスク夏時間</daylight>
 				</long>
 			</metazone>
 			<metazone type="Syowa">
@@ -5541,20 +5479,6 @@
 					<standard>タジキスタン時間</standard>
 				</long>
 			</metazone>
-			<metazone type="Tashkent">
-				<long>
-					<generic>タシュケント時間</generic>
-					<standard>タシュケント標準時</standard>
-					<daylight>タシュケント夏時間</daylight>
-				</long>
-			</metazone>
-			<metazone type="Tbilisi">
-				<long>
-					<generic>トビリシ時間</generic>
-					<standard>トビリシ標準時</standard>
-					<daylight>トビリシ夏時間</daylight>
-				</long>
-			</metazone>
 			<metazone type="Tokelau">
 				<long>
 					<standard>トケラウ時間</standard>
@@ -5572,13 +5496,6 @@
 					<standard>チューク時間</standard>
 				</long>
 			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<generic>トルコ時間</generic>
-					<standard>トルコ標準時</standard>
-					<daylight>トルコ夏時間</daylight>
-				</long>
-			</metazone>
 			<metazone type="Turkmenistan">
 				<long>
 					<generic>トルクメニスタン時間</generic>
@@ -5591,23 +5508,11 @@
 					<standard>ツバル時間</standard>
 				</long>
 			</metazone>
-			<metazone type="Uralsk">
-				<long>
-					<generic>オラル時間</generic>
-					<standard>オラル標準時</standard>
-					<daylight>オラル夏時間</daylight>
-				</long>
-			</metazone>
 			<metazone type="Uruguay">
 				<long>
 					<generic>ウルグアイ時間</generic>
 					<standard>ウルグアイ標準時</standard>
 					<daylight>ウルグアイ夏時間</daylight>
-				</long>
-			</metazone>
-			<metazone type="Urumqi">
-				<long>
-					<standard>ウルムチ時間</standard>
 				</long>
 			</metazone>
 			<metazone type="Uzbekistan">
@@ -5670,20 +5575,6 @@
 					<generic>エカテリンブルグ時間</generic>
 					<standard>エカテリンブルグ標準時</standard>
 					<daylight>エカテリンブルグ夏時間</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yerevan">
-				<long>
-					<generic>エレバン時間</generic>
-					<standard>エレバン標準時</standard>
-					<daylight>エレバン夏時間</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yukon">
-				<long>
-					<generic>ユーコン時間</generic>
-					<standard>ユーコン標準時</standard>
-					<daylight>ユーコン夏時間</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -6640,6 +6531,9 @@
 				<displayName>南アフリカ ランド</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>ザンビア クワチャ (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>ザンビア クワチャ</displayName>
 			</currency>
 			<currency type="ZRN">

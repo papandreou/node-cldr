@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7832 $"/>
-		<generation date="$Date: 2012-10-11 11:59:15 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="fa"/>
 	</identity>
 	<localeDisplayNames>
@@ -857,6 +861,7 @@
 			<territory type="PN">جزایر پیت‌کرن</territory>
 			<territory type="PR">پورتوریکو</territory>
 			<territory type="PS">سرزمین‌های فلسطینی</territory>
+			<territory type="PS" alt="short">فلسطین</territory>
 			<territory type="PT">پرتغال</territory>
 			<territory type="PW">پالائو</territory>
 			<territory type="PY">پاراگوئه</territory>
@@ -922,6 +927,7 @@
 			<territory type="VU">وانواتو</territory>
 			<territory type="WF">والیس و فیوتونا</territory>
 			<territory type="WS">ساموا</territory>
+			<territory type="XK">کوزووو</territory>
 			<territory type="YE">یمن</territory>
 			<territory type="YT">مایوت</territory>
 			<territory type="ZA">افریقای جنوبی</territory>
@@ -1074,7 +1080,9 @@
 		</codePatterns>
 	</localeDisplayNames>
 	<layout>
-		<orientation characters="right-to-left"/>
+		<orientation>
+			<characterOrder>right-to-left</characterOrder>
+		</orientation>
 	</layout>
 	<characters>
 		<exemplarCharacters>[\u064B \u064D \u064C \u0651 \u0654 آ ا ء أ ؤ ئ ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ه ة ی]</exemplarCharacters>
@@ -1094,6 +1102,184 @@
 	</delimiters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE d MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>d MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>d MMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>y/M/d G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1}، ساعت {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1}، ساعت {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1}،‏ {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1}،‏ {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">E d</dateFormatItem>
+						<dateFormatItem id="Gy">y G</dateFormatItem>
+						<dateFormatItem id="GyMMM">MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMd">d MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">E d MMM y G</dateFormatItem>
+						<dateFormatItem id="h">h a</dateFormatItem>
+						<dateFormatItem id="H">H</dateFormatItem>
+						<dateFormatItem id="HHmmZ">HH:mm (Z)</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">H:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">H:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">M/d</dateFormatItem>
+						<dateFormatItem id="MEd">E M/d</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">d LLL</dateFormatItem>
+						<dateFormatItem id="MMMEd">E d LLL</dateFormatItem>
+						<dateFormatItem id="MMMMd">d LLLL</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E d LLLL</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y G</dateFormatItem>
+						<dateFormatItem id="yyyy">y G</dateFormatItem>
+						<dateFormatItem id="yyyyM">y/M G</dateFormatItem>
+						<dateFormatItem id="yyyyMd">y/M/d G</dateFormatItem>
+						<dateFormatItem id="yyyyMEd">E y/M/d G</dateFormatItem>
+						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
+						<dateFormatItem id="yyyyMMMd">d MMM y G</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd">E d MMM y G</dateFormatItem>
+						<dateFormatItem id="yyyyQQQ">QQQQ y G</dateFormatItem>
+						<dateFormatItem id="yyyyQQQQ">QQQQ y G</dateFormatItem>
+					</availableFormats>
+					<appendItems>
+						<appendItem request="Day-Of-Week">{1} {0}</appendItem>
+					</appendItems>
+					<intervalFormats>
+						<intervalFormatFallback>{0} تا {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d تا d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a تا h a</greatestDifference>
+							<greatestDifference id="h">h تا h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">H تا H</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a تا h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm تا h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm تا h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">H:mm تا H:mm</greatestDifference>
+							<greatestDifference id="m">H:mm تا H:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a تا h:mm a (v)</greatestDifference>
+							<greatestDifference id="h">h:mm تا h:mm a (v)</greatestDifference>
+							<greatestDifference id="m">h:mm تا h:mm a (v)</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">H:mm تا H:mm (v)</greatestDifference>
+							<greatestDifference id="m">H:mm تا H:mm (v)</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a تا h a (v)</greatestDifference>
+							<greatestDifference id="h">h تا h a (v)</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">H تا H (v)</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M تا M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">M/d تا M/d</greatestDifference>
+							<greatestDifference id="M">M/d تا M/d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E M/d تا E M/d</greatestDifference>
+							<greatestDifference id="M">E M/d تا E M/d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">LLL تا LLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">d تا d LLL</greatestDifference>
+							<greatestDifference id="M">d LLL تا d LLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E d LLL تا E d LLL</greatestDifference>
+							<greatestDifference id="M">E d LLL تا E d LLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y تا y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">y/M تا y/M G</greatestDifference>
+							<greatestDifference id="y">y/M تا y/M G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">y/M/d تا y/M/d G</greatestDifference>
+							<greatestDifference id="M">y/M/d تا y/M/d G</greatestDifference>
+							<greatestDifference id="y">y/M/d تا y/M/d G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E y/M/d تا E y/M/d G</greatestDifference>
+							<greatestDifference id="M">E y/M/d تا E y/M/d G</greatestDifference>
+							<greatestDifference id="y">E y/M/d تا E y/M/d G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">LLL تا MMM y G</greatestDifference>
+							<greatestDifference id="y">MMM y تا MMM y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">d تا d MMM y G</greatestDifference>
+							<greatestDifference id="M">d LLL تا d MMM y G</greatestDifference>
+							<greatestDifference id="y">d MMM y تا d MMM y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E d LLL تا E d MMM y G</greatestDifference>
+							<greatestDifference id="M">E d LLL تا E d MMM y G</greatestDifference>
+							<greatestDifference id="y">E d MMM y تا E d MMM y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">LLLL تا MMMM y G</greatestDifference>
+							<greatestDifference id="y">MMMM y تا MMMM y G</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1335,7 +1521,6 @@
 					</eraNarrow>
 				</eras>
 				<dateFormats>
-					<default choice="long" draft="unconfirmed"/>
 					<dateFormatLength type="full">
 						<dateFormat>
 							<pattern>EEEE d MMMM y</pattern>
@@ -1353,7 +1538,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>yyyy/M/d</pattern>
+							<pattern>y/M/d</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -1403,7 +1588,10 @@
 					<availableFormats>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="Ed">E d</dateFormatItem>
-						<dateFormatItem id="GGGGyyyyMMMMd">d MMMM y GGGG</dateFormatItem>
+						<dateFormatItem id="Gy">y G</dateFormatItem>
+						<dateFormatItem id="GyMMM">MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMd">d MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">E d MMM y G</dateFormatItem>
 						<dateFormatItem id="h">h a</dateFormatItem>
 						<dateFormatItem id="H">H</dateFormatItem>
 						<dateFormatItem id="HHmmZ">HH:mm (Z)</dateFormatItem>
@@ -1429,11 +1617,9 @@
 						<dateFormatItem id="yMMMd">d MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E d MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yMMMMEEEEd">EEEE d MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
-						<dateFormatItem id="yyyyM">yyyy/M</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">MMMM yyyy</dateFormatItem>
-						<dateFormatItem id="yyyyMMMMEEEEd">EEEE d MMMM yyyy</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Day-Of-Week">{1} {0}</appendItem>
@@ -1501,18 +1687,18 @@
 							<greatestDifference id="y">y تا y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">yyyy/M تا yyyy/M</greatestDifference>
-							<greatestDifference id="y">yyyy/M تا yyyy/M</greatestDifference>
+							<greatestDifference id="M">y/M تا y/M</greatestDifference>
+							<greatestDifference id="y">y/M تا y/M</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">yyyy/M/d تا yyyy/M/d</greatestDifference>
-							<greatestDifference id="M">yyyy/M/d تا yyyy/M/d</greatestDifference>
-							<greatestDifference id="y">yyyy/M/d تا yyyy/M/d</greatestDifference>
+							<greatestDifference id="d">y/M/d تا y/M/d</greatestDifference>
+							<greatestDifference id="M">y/M/d تا y/M/d</greatestDifference>
+							<greatestDifference id="y">y/M/d تا y/M/d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E yyyy/M/d تا E yyyy/M/d</greatestDifference>
-							<greatestDifference id="M">E yyyy/M/d تا E yyyy/M/d</greatestDifference>
-							<greatestDifference id="y">E yyyy/M/d تا E yyyy/M/d</greatestDifference>
+							<greatestDifference id="d">E y/M/d تا E y/M/d</greatestDifference>
+							<greatestDifference id="M">E y/M/d تا E y/M/d</greatestDifference>
+							<greatestDifference id="y">E y/M/d تا E y/M/d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">LLL تا MMM y</greatestDifference>
@@ -1534,55 +1720,6 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>دوره</displayName>
-					</field>
-					<field type="year">
-						<displayName>سال</displayName>
-						<relative type="-1">سال گذشته</relative>
-						<relative type="0">امسال</relative>
-						<relative type="1">سال آینده</relative>
-					</field>
-					<field type="month">
-						<displayName>ماه</displayName>
-						<relative type="-1">ماه گذشته</relative>
-						<relative type="0">این ماه</relative>
-						<relative type="1">ماه آینده</relative>
-					</field>
-					<field type="week">
-						<displayName>هفته</displayName>
-						<relative type="-1">هفتهٔ گذشته</relative>
-						<relative type="0">این هفته</relative>
-						<relative type="1">هفتهٔ آینده</relative>
-					</field>
-					<field type="day">
-						<displayName>روز</displayName>
-						<relative type="-2">پریروز</relative>
-						<relative type="-1">دیروز</relative>
-						<relative type="0">امروز</relative>
-						<relative type="1">فردا</relative>
-						<relative type="2">پس‌فردا</relative>
-					</field>
-					<field type="weekday">
-						<displayName>روز هفته</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>قبل/بعدازظهر</displayName>
-					</field>
-					<field type="hour">
-						<displayName>ساعت</displayName>
-					</field>
-					<field type="minute">
-						<displayName>دقیقه</displayName>
-					</field>
-					<field type="second">
-						<displayName>ثانیه</displayName>
-					</field>
-					<field type="zone">
-						<displayName>منطقهٔ زمانی</displayName>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="hebrew">
 				<months>
@@ -1788,7 +1925,6 @@
 					</eraAbbr>
 				</eras>
 				<dateFormats>
-					<default choice="long" draft="unconfirmed"/>
 					<dateFormatLength type="full">
 						<dateFormat>
 							<pattern>EEEE d MMMM y GGGG</pattern>
@@ -1801,7 +1937,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
-							<pattern>yyyy/M/d G</pattern>
+							<pattern>y/M/d G</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
@@ -1814,6 +1950,10 @@
 					<availableFormats>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="Ed">E d</dateFormatItem>
+						<dateFormatItem id="Gy">y G</dateFormatItem>
+						<dateFormatItem id="GyMMM">MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMd">d MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">E d MMM y G</dateFormatItem>
 						<dateFormatItem id="h">h a</dateFormatItem>
 						<dateFormatItem id="H">H</dateFormatItem>
 						<dateFormatItem id="hm">h:mm a</dateFormatItem>
@@ -1830,8 +1970,8 @@
 						<dateFormatItem id="MMMMEd">E d LLLL</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y</dateFormatItem>
-						<dateFormatItem id="yM">yyyy/M</dateFormatItem>
-						<dateFormatItem id="yMEd">E yyyy/M/d</dateFormatItem>
+						<dateFormatItem id="yM">y/M</dateFormatItem>
+						<dateFormatItem id="yMEd">E y/M/d</dateFormatItem>
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E d MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
@@ -1941,6 +2081,55 @@
 				</eras>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>دوره</displayName>
+			</field>
+			<field type="year">
+				<displayName>سال</displayName>
+				<relative type="-1">سال گذشته</relative>
+				<relative type="0">امسال</relative>
+				<relative type="1">سال آینده</relative>
+			</field>
+			<field type="month">
+				<displayName>ماه</displayName>
+				<relative type="-1">ماه گذشته</relative>
+				<relative type="0">این ماه</relative>
+				<relative type="1">ماه آینده</relative>
+			</field>
+			<field type="week">
+				<displayName>هفته</displayName>
+				<relative type="-1">هفتهٔ گذشته</relative>
+				<relative type="0">این هفته</relative>
+				<relative type="1">هفتهٔ آینده</relative>
+			</field>
+			<field type="day">
+				<displayName>روز</displayName>
+				<relative type="-2">پریروز</relative>
+				<relative type="-1">دیروز</relative>
+				<relative type="0">امروز</relative>
+				<relative type="1">فردا</relative>
+				<relative type="2">پس‌فردا</relative>
+			</field>
+			<field type="weekday">
+				<displayName>روز هفته</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>قبل/بعدازظهر</displayName>
+			</field>
+			<field type="hour">
+				<displayName>ساعت</displayName>
+			</field>
+			<field type="minute">
+				<displayName>دقیقه</displayName>
+			</field>
+			<field type="second">
+				<displayName>ثانیه</displayName>
+			</field>
+			<field type="zone">
+				<displayName>منطقهٔ زمانی</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;−HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
@@ -1948,12 +2137,6 @@
 			<regionFormat>وقت {0}</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<fallbackRegionFormat>وقت {1} ({0})</fallbackRegionFormat>
-			<zone type="America/Lower_Princes">
-				<exemplarCity>بخش شاهزاده‌‌نشین پایین</exemplarCity>
-			</zone>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity>بیولا، داکوتای شمالی</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>شهر نامشخص</exemplarCity>
 			</zone>
@@ -1977,9 +2160,6 @@
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity>ایروان</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>کوراسائو</exemplarCity>
 			</zone>
 			<zone type="Africa/Luanda">
 				<exemplarCity>لواندا</exemplarCity>
@@ -2343,6 +2523,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>کیپ‌ورد</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>کوراسائو</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity>کریسمس</exemplarCity>
@@ -2956,6 +3139,9 @@
 			<zone type="America/El_Salvador">
 				<exemplarCity>السالوادور</exemplarCity>
 			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity>بخش شاهزاده‌‌نشین پایین</exemplarCity>
+			</zone>
 			<zone type="Asia/Damascus">
 				<exemplarCity>دمشق</exemplarCity>
 			</zone>
@@ -3066,6 +3252,9 @@
 			</zone>
 			<zone type="America/Denver">
 				<exemplarCity>دنور</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity>بیولا، داکوتای شمالی</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity>نیوسالم، داکوتای شمالی</exemplarCity>
@@ -3200,13 +3389,6 @@
 					<daylight>وقت تابستانی آلاسکا</daylight>
 				</long>
 			</metazone>
-			<metazone type="Alaska_Hawaii">
-				<long>
-					<generic>وقت آلاسکا‐هاوائی</generic>
-					<standard>وقت عادی آلاسکا‐هاوائی</standard>
-					<daylight>وقت تابستانی آلاسکا‐هاوائی</daylight>
-				</long>
-			</metazone>
 			<metazone type="Almaty">
 				<long>
 					<generic>وقت آلماآتا</generic>
@@ -3284,13 +3466,6 @@
 					<daylight>وقت تابستانی ارمنستان</daylight>
 				</long>
 			</metazone>
-			<metazone type="Ashkhabad">
-				<long>
-					<generic>وقت عشق‌آباد</generic>
-					<standard>وقت عادی عشق‌آباد</standard>
-					<daylight>وقت تابستانی عشق‌آباد</daylight>
-				</long>
-			</metazone>
 			<metazone type="Atlantic">
 				<long>
 					<generic>وقت آتلانتیک</generic>
@@ -3340,25 +3515,11 @@
 					<daylight>وقت تابستانی آزور</daylight>
 				</long>
 			</metazone>
-			<metazone type="Baku">
-				<long>
-					<generic>وقت باکو</generic>
-					<standard>وقت عادی باکو</standard>
-					<daylight>وقت تابستانی باکو</daylight>
-				</long>
-			</metazone>
 			<metazone type="Bangladesh">
 				<long>
 					<generic>وقت بنگلادش</generic>
 					<standard>وقت عادی بنگلادش</standard>
 					<daylight>وقت تابستانی بنگلادش</daylight>
-				</long>
-			</metazone>
-			<metazone type="Bering">
-				<long>
-					<generic>وقت برینگ</generic>
-					<standard>وقت عادی برینگ</standard>
-					<daylight>وقت تابستانی برینگ</daylight>
 				</long>
 			</metazone>
 			<metazone type="Bhutan">
@@ -3464,18 +3625,6 @@
 					<standard>وقت دومون دورویل</standard>
 				</long>
 			</metazone>
-			<metazone type="Dushanbe">
-				<long>
-					<generic>وقت دوشنبه</generic>
-					<standard>وقت عادی دوشنبه</standard>
-					<daylight>وقت تابستانی دوشنبه</daylight>
-				</long>
-			</metazone>
-			<metazone type="Dutch_Guiana">
-				<long>
-					<standard>وقت گویان هلند</standard>
-				</long>
-			</metazone>
 			<metazone type="East_Timor">
 				<long>
 					<standard>وقت تیمور شرقی</standard>
@@ -3563,13 +3712,6 @@
 			<metazone type="GMT">
 				<long>
 					<standard>وقت گرینویچ</standard>
-				</long>
-			</metazone>
-			<metazone type="Greenland_Central">
-				<long>
-					<generic>وقت مرکز گروئنلند</generic>
-					<standard>وقت عادی مرکز گروئنلند</standard>
-					<daylight>وقت تابستانی مرکز گروئنلند</daylight>
 				</long>
 			</metazone>
 			<metazone type="Greenland_Eastern">
@@ -3685,16 +3827,6 @@
 					<generic>وقت پتروپاولوسک‐کامچاتسکی</generic>
 					<standard>وقت عادی پتروپاولوسک‐کامچاتسکی</standard>
 					<daylight>وقت تابستانی پتروپاولوسک‐کامچاتسکی</daylight>
-				</long>
-			</metazone>
-			<metazone type="Karachi">
-				<long>
-					<standard>وقت کراچی</standard>
-				</long>
-			</metazone>
-			<metazone type="Kashgar">
-				<long>
-					<standard>وقت کاشغر</standard>
 				</long>
 			</metazone>
 			<metazone type="Kazakhstan_Eastern">
@@ -3976,16 +4108,11 @@
 					<daylight>وقت تابستانی سامارا</daylight>
 				</long>
 			</metazone>
-			<metazone type="Samarkand">
-				<long>
-					<generic>وقت سمرقند</generic>
-					<standard>وقت عادی سمرقند</standard>
-					<daylight>وقت تابستانی سمرقند</daylight>
-				</long>
-			</metazone>
 			<metazone type="Samoa">
 				<long>
-					<standard>وقت ساموا</standard>
+					<generic>وقت ساموا</generic>
+					<standard>وقت عادی ساموا</standard>
+					<daylight>وقت تابستانی ساموا</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
@@ -4035,20 +4162,6 @@
 					<standard>وقت تاجیکستان</standard>
 				</long>
 			</metazone>
-			<metazone type="Tashkent">
-				<long>
-					<generic>وقت تاشکند</generic>
-					<standard>وقت عادی تاشکند</standard>
-					<daylight>وقت تابستانی تاشکند</daylight>
-				</long>
-			</metazone>
-			<metazone type="Tbilisi">
-				<long>
-					<generic>وقت تفلیس</generic>
-					<standard>وقت عادی تفلیس</standard>
-					<daylight>وقت تابستانی تفلیس</daylight>
-				</long>
-			</metazone>
 			<metazone type="Tokelau">
 				<long>
 					<standard>وقت توکلائو</standard>
@@ -4064,13 +4177,6 @@
 			<metazone type="Truk">
 				<long>
 					<standard>وقت چوئوک</standard>
-				</long>
-			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<generic>وقت ترکیه</generic>
-					<standard>وقت عادی ترکیه</standard>
-					<daylight>وقت تابستانی ترکیه</daylight>
 				</long>
 			</metazone>
 			<metazone type="Turkmenistan">
@@ -4090,11 +4196,6 @@
 					<generic>وقت اروگوئه</generic>
 					<standard>وقت عادی اروگوئه</standard>
 					<daylight>وقت تابستانی اروگوئه</daylight>
-				</long>
-			</metazone>
-			<metazone type="Urumqi">
-				<long>
-					<standard>وقت ارومچی</standard>
 				</long>
 			</metazone>
 			<metazone type="Uzbekistan">
@@ -4157,20 +4258,6 @@
 					<generic>وقت یکاترینبورگ</generic>
 					<standard>وقت عادی یکاترینبورگ</standard>
 					<daylight>وقت تابستانی یکاترینبورگ</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yerevan">
-				<long>
-					<generic>وقت ایروان</generic>
-					<standard>وقت عادی ایروان</standard>
-					<daylight>وقت تابستانی ایروان</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yukon">
-				<long>
-					<generic>وقت یوکان</generic>
-					<standard>وقت عادی یوکان</standard>
-					<daylight>وقت تابستانی یوکان</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -4892,6 +4979,9 @@
 				<displayName>راند افریقای جنوبی</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>کواچای زامبیا (۱۹۶۸ تا ۲۰۱۲)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>کواچای زامبیا</displayName>
 			</currency>
 			<currency type="ZWD">

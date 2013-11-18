@@ -1,14 +1,21 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE supplementalData SYSTEM '../../common/dtd/ldmlSupplemental.dtd'>
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <supplementalData>
-  <version number='$Revision: 7549 $'/>
-  <generation date='$Date: 2012-08-13 17:03:06 -0700 (Mon, 13 Aug 2012) $'/>
+  <version number='$Revision: 8242 $'/>
+  <generation date='$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $'/>
   <transforms>
-      <transform source='Han' target='Latin' direction='both'>
+      <transform source='Han' target='Latin' direction='forward'>
           <comment># Warning: does not do round-trip mapping!!</comment>
           <comment># Convert CJK characters</comment>
           <tRule>::Han-Spacedhan();</tRule>
-          <comment># Start RAW data for converting CJK characters</comment>
+          <comment># Convert compounds; these are added individually, not derived from Unihan kMandarin</comment>
+           <tRule>藏文→zàngwén;</tRule>
+          <comment># Start RAW data for converting single CJK characters, derived from Unihan kMandarin</comment>
            <tRule>[呵锕阿𠼞𥥩𨉚]→ā;</tRule>
            <tRule>[嗄]→á;</tRule>
            <tRule>[啊]→a;</tRule>

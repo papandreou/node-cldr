@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
     <identity>
-        <version number="$Revision: 7662 $"/>
-        <generation date="$Date: 2012-08-30 13:12:35 -0700 (Thu, 30 Aug 2012) $"/>
+        <version number="$Revision: 8242 $"/>
+        <generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
         <language type="zh"/>
     </identity>
     <rbnf>
@@ -95,7 +100,7 @@
                 <rbnfrule value="20">←←拾[→→];</rbnfrule>
                 <rbnfrule value="100">←←佰[→%%financialnumber2→];</rbnfrule>
                 <rbnfrule value="1000">←←仟[→%%financialnumber3→];</rbnfrule>
-                <rbnfrule value="10000">←←萬[→%%financialnumber4→];</rbnfrule>
+                <rbnfrule value="10000">←←万[→%%financialnumber4→];</rbnfrule> <!-- See Chinese standard GBT15835 for details on financial numbers http://ccl.pku.edu.cn/doubtfire/Papers/GBT15835-2011.pdf -->
                 <rbnfrule value="100000000">←←亿[→%%financialnumber5→];</rbnfrule>
                 <rbnfrule value="1000000000000">←←兆[→%%financialnumber8→];</rbnfrule>
                 <rbnfrule value="10000000000000000">←←京[→%%financialnumber13→];</rbnfrule>
@@ -138,7 +143,7 @@
             </ruleset>
             <ruleset type="spellout-cardinal">
                 <rbnfrule value="-x">负→→;</rbnfrule>
-                <rbnfrule value="x.x">←←点→%%spellout-fraction→;</rbnfrule>
+                <rbnfrule value="x.x">←←点→→→;</rbnfrule>
                 <rbnfrule value="0">零;</rbnfrule>
                 <rbnfrule value="1">一;</rbnfrule>
                 <rbnfrule value="2">二;</rbnfrule>
@@ -195,7 +200,7 @@
             </ruleset>
             <ruleset type="spellout-cardinal-alternate2">
                 <rbnfrule value="-x">负→→;</rbnfrule>
-                <rbnfrule value="x.x">←←点→%%spellout-fraction→;</rbnfrule>
+                <rbnfrule value="x.x">=%spellout-cardinal=;</rbnfrule>
                 <rbnfrule value="0">零;</rbnfrule>
                 <rbnfrule value="1">一;</rbnfrule>
                 <rbnfrule value="2">两;</rbnfrule>
@@ -249,22 +254,6 @@
                 <rbnfrule value="10">零一=%spellout-cardinal-alternate2=;</rbnfrule>
                 <rbnfrule value="20">零=%spellout-cardinal-alternate2=;</rbnfrule>
                 <rbnfrule value="1000000000000">=%spellout-cardinal-alternate2=;</rbnfrule>
-            </ruleset>
-            <ruleset type="spellout-fraction" access="private">
-                <rbnfrule value="10">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="100">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="1000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="10000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="100000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="1000000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="10000000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="100000000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="1000000000">←%%spellout-fraction-digits←;</rbnfrule>
-                <rbnfrule value="10000000000">←0←;</rbnfrule>
-            </ruleset>
-            <ruleset type="spellout-fraction-digits" access="private">
-                <rbnfrule value="0">=%spellout-numbering=;</rbnfrule>
-                <rbnfrule value="10">←←→→;</rbnfrule>
             </ruleset>
             <ruleset type="spellout-ordinal">
                 <rbnfrule value="x.x">=#,###0.#=;</rbnfrule>

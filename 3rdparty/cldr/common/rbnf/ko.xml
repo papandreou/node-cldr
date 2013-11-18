@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
     <identity>
-        <version number="$Revision: 7631 $"/>
-        <generation date="$Date: 2012-08-23 10:25:15 -0700 (Thu, 23 Aug 2012) $"/>
+        <version number="$Revision: 8242 $"/>
+        <generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
         <language type="ko"/>
     </identity>
     <rbnf>
@@ -13,14 +18,14 @@
                 <rbnfrule value="0">=%spellout-numbering=;</rbnfrule>
             </ruleset>
             <ruleset type="spellout-numbering">
-                <rbnfrule value="0.x">=%spellout-cardinal-sinokorean=;</rbnfrule>
-                <rbnfrule value="x.x">←←점 →%%spellout-fraction→;</rbnfrule>
+                <rbnfrule value="0.x">←%spellout-cardinal-sinokorean←점→→→;</rbnfrule>
+                <rbnfrule value="x.x">←←점→→→;</rbnfrule>
                 <rbnfrule value="0">공;</rbnfrule>
                 <rbnfrule value="1">=%spellout-cardinal-sinokorean=;</rbnfrule>
             </ruleset>
             <ruleset type="spellout-cardinal-sinokorean">
                 <rbnfrule value="-x">마이너스 →→;</rbnfrule>
-                <rbnfrule value="x.x">←←점 →%%spellout-fraction→;</rbnfrule>
+                <rbnfrule value="x.x">←←점→→→;</rbnfrule>
                 <rbnfrule value="0">영;</rbnfrule>
                 <rbnfrule value="1">일;</rbnfrule>
                 <rbnfrule value="2">이;</rbnfrule>
@@ -46,7 +51,7 @@
             </ruleset>
             <ruleset type="spellout-cardinal-native-attributive">
                 <rbnfrule value="-x">마이너스 →→;</rbnfrule>
-                <rbnfrule value="x.x">←←점 →%%spellout-fraction→;</rbnfrule>
+                <rbnfrule value="x.x">=%spellout-cardinal-sinokorean=;</rbnfrule>
                 <rbnfrule value="0">영;</rbnfrule>
                 <rbnfrule value="1">한;</rbnfrule>
                 <rbnfrule value="2">두;</rbnfrule>
@@ -80,7 +85,7 @@
             </ruleset>
             <ruleset type="spellout-cardinal-native">
                 <rbnfrule value="-x">마이너스 →→;</rbnfrule>
-                <rbnfrule value="x.x">←←점 →%%spellout-fraction→;</rbnfrule>
+                <rbnfrule value="x.x">=%spellout-cardinal-sinokorean=;</rbnfrule>
                 <rbnfrule value="0">영;</rbnfrule>
                 <rbnfrule value="1">하나;</rbnfrule>
                 <rbnfrule value="2">둘;</rbnfrule>
@@ -104,7 +109,7 @@
             </ruleset>
             <ruleset type="spellout-cardinal-financial">
                 <rbnfrule value="-x">마이너스 →→;</rbnfrule>
-                <rbnfrule value="x.x">←←점 →%%spellout-fraction→;</rbnfrule>
+                <rbnfrule value="x.x">=%spellout-cardinal-sinokorean=;</rbnfrule>
                 <rbnfrule value="0">영;</rbnfrule>
                 <rbnfrule value="1">일;</rbnfrule>
                 <rbnfrule value="2">이;</rbnfrule>
@@ -260,31 +265,6 @@
                 <rbnfrule value="0">=%%spellout-ordinal-native-smaller=;</rbnfrule>
                 <rbnfrule value="2">둘;</rbnfrule>
                 <rbnfrule value="3">=%%spellout-ordinal-native-smaller=;</rbnfrule>
-            </ruleset>
-            <ruleset type="spellout-fraction" access="private">
-                <rbnfrule value="10">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="100">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="1000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="10000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="100000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="1000000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="10000000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="100000000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="1000000000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="10000000000">←0←;</rbnfrule>
-            </ruleset>
-            <ruleset type="spellout-fraction-digits" access="private">
-                <rbnfrule value="0">영;</rbnfrule>
-                <rbnfrule value="1">일;</rbnfrule>
-                <rbnfrule value="2">이;</rbnfrule>
-                <rbnfrule value="3">삼;</rbnfrule>
-                <rbnfrule value="4">사;</rbnfrule>
-                <rbnfrule value="5">오;</rbnfrule>
-                <rbnfrule value="6">육;</rbnfrule>
-                <rbnfrule value="7">칠;</rbnfrule>
-                <rbnfrule value="8">팔;</rbnfrule>
-                <rbnfrule value="9">구;</rbnfrule>
-                <rbnfrule value="10">←←→→;</rbnfrule>
             </ruleset>
         </rulesetGrouping>
     </rbnf>

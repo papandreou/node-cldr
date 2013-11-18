@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7611 $" />
-		<generation date="$Date: 2012-08-21 01:40:03 -0700 (Tue, 21 Aug 2012) $" />
+		<version number="$Revision: 8242 $" />
+		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $" />
 		<language type="ca" />
 	</identity>
 	<collations validSubLocales="ca_AD ca_ES">
@@ -134,7 +139,7 @@
 				<reset>ᅮᅵ</reset>	<!-- 116E U(V) + 1175 I(V) = 1171 WI(V) -->
 					<i>ᅱ</i>
 				<!-- Above are the standard root search collator rules. -->
-				<!-- Below are the rules specific to ca; don't need backwards="on" for search. -->
+				<!-- Below are the rules specific to ca. -->
 				<!-- Per Apple language group, these are modified from standard rules below -->
 				<!-- to make L primary-different from L-dot for search. -->
 				<reset>L</reset>
@@ -145,8 +150,7 @@
 			</rules>
 		</collation>
 		<collation type="standard"
-			references="Enciclopèdia Catalana: Diccionari da la llengua catalana ISBN 84-85194-46-2">
-			<settings backwards="on" />
+			references="Enciclopèdia Catalana: Diccionari de la llengua catalana ISBN 84-85194-46-2">
 			<rules>
 				<reset>L</reset>
 				<s>ŀ</s>
@@ -156,7 +160,6 @@
 			</rules>
 		</collation>
 		<collation draft="unconfirmed" alt="proposed" type="standard">
-			<settings backwards="on" />
 			<rules>
 				<reset>C</reset>
 				<p>ch</p>

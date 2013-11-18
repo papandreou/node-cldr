@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7839 $"/>
-		<generation date="$Date: 2012-10-11 16:37:12 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="ne"/>
 	</identity>
 	<localeDisplayNames>
@@ -503,6 +507,7 @@
 			<territory type="PN">पिटकाइर्न टापु</territory>
 			<territory type="PR" draft="contributed">प्युर्टोरिको</territory>
 			<territory type="PS">प्यालेस्टनी भू-भागहरु</territory>
+			<territory type="PS" alt="short">प्यालेसटाइन</territory>
 			<territory type="PT" draft="contributed">पोर्तुगल</territory>
 			<territory type="PW" draft="contributed">पलाउ</territory>
 			<territory type="PY" draft="contributed">प्यारागुये</territory>
@@ -567,6 +572,7 @@
 			<territory type="VU" draft="contributed">भानुआतु</territory>
 			<territory type="WF" draft="contributed">वालिस र फुटुना</territory>
 			<territory type="WS" draft="contributed">सामोआ</territory>
+			<territory type="XK">कोसोवो</territory>
 			<territory type="YE" draft="contributed">येमेन</territory>
 			<territory type="YT" draft="contributed">मायोट्ट</territory>
 			<territory type="ZA" draft="contributed">दक्षिण अफ्रिका</territory>
@@ -882,138 +888,51 @@
 						<era type="1">सन्</era>
 					</eraAbbr>
 				</eras>
-				<fields>
-					<field type="era">
-						<displayName draft="contributed">काल</displayName>
-					</field>
-					<field type="year">
-						<displayName draft="contributed">बर्ष</displayName>
-					</field>
-					<field type="month">
-						<displayName draft="contributed">महिना</displayName>
-					</field>
-					<field type="week">
-						<displayName draft="contributed">हप्ता</displayName>
-					</field>
-					<field type="day">
-						<displayName draft="contributed">बार</displayName>
-						<relative type="-2">अस्ति</relative>
-						<relative type="-1" draft="contributed">हिजो</relative>
-						<relative type="0">आज</relative>
-						<relative type="1">भोलि</relative>
-					</field>
-					<field type="weekday">
-						<displayName draft="contributed">हप्ताको बार</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName draft="contributed">पूर्व मध्यान्ह/उत्तर मध्यान्ह</displayName>
-					</field>
-					<field type="hour">
-						<displayName draft="contributed">घण्टा</displayName>
-					</field>
-					<field type="minute">
-						<displayName draft="contributed">मिनेट</displayName>
-					</field>
-					<field type="second">
-						<displayName draft="contributed">दोस्रो</displayName>
-					</field>
-					<field type="zone">
-						<displayName draft="contributed">क्षेत्र</displayName>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName draft="contributed">काल</displayName>
+			</field>
+			<field type="year">
+				<displayName draft="contributed">बर्ष</displayName>
+			</field>
+			<field type="month">
+				<displayName draft="contributed">महिना</displayName>
+			</field>
+			<field type="week">
+				<displayName draft="contributed">हप्ता</displayName>
+			</field>
+			<field type="day">
+				<displayName draft="contributed">बार</displayName>
+				<relative type="-2">अस्ति</relative>
+				<relative type="-1" draft="contributed">हिजो</relative>
+				<relative type="0">आज</relative>
+				<relative type="1">भोलि</relative>
+			</field>
+			<field type="weekday">
+				<displayName draft="contributed">हप्ताको बार</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName draft="contributed">पूर्व मध्यान्ह/उत्तर मध्यान्ह</displayName>
+			</field>
+			<field type="hour">
+				<displayName draft="contributed">घण्टा</displayName>
+			</field>
+			<field type="minute">
+				<displayName draft="contributed">मिनेट</displayName>
+			</field>
+			<field type="second">
+				<displayName draft="contributed">दोस्रो</displayName>
+			</field>
+			<field type="zone">
+				<displayName draft="contributed">क्षेत्र</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<regionFormat>{0} समय</regionFormat>
-			<zone type="America/Lower_Princes">
-				<exemplarCity>लोअर प्रिन्स्स क्वार्टर</exemplarCity>
-			</zone>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity>बेलुआ, उत्तर डोकोटा</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+12">
-				<exemplarCity>जीएम्‌टी‌+१२</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-12">
-				<exemplarCity>जीएम्‌टी-१२</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+11">
-				<exemplarCity>जीएम्‌टी‌+११</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-13">
-				<exemplarCity>जीएम्‌टी-१३</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+10">
-				<exemplarCity>जीएम्‌टी‌+१०</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-14">
-				<exemplarCity>जीएम्‌टी-१४</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+9">
-				<exemplarCity>जीएम्‌टी‌+९</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+8">
-				<exemplarCity>जीएम्‌टी‌+८</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+7">
-				<exemplarCity>जीएम्‌टी‌+७</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+6">
-				<exemplarCity>जीएम्‌टी‌+६</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+5">
-				<exemplarCity>जीएम्‌टी‌+५</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+4">
-				<exemplarCity>जीएम्‌टी‌+४</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+3">
-				<exemplarCity>जीएम्‌टी‌+३</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+2">
-				<exemplarCity>जीएम्‌टी‌+२</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT+1">
-				<exemplarCity>जीएम्‌टी‌+१</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT">
-				<exemplarCity>जीएम्‌टी</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>अज्ञात सिटी</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-1">
-				<exemplarCity>जीएम्‌टी-१</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-2">
-				<exemplarCity>जीएम्‌टी-२</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-3">
-				<exemplarCity>जीएम्‌टी-३</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-4">
-				<exemplarCity>जीएम्‌टी-४</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-5">
-				<exemplarCity>जीएम्‌टी-५</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-6">
-				<exemplarCity>जीएम्‌टी-६</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-7">
-				<exemplarCity>जीएम्‌टी-७</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-8">
-				<exemplarCity>जीएम्‌टी-८</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-9">
-				<exemplarCity>जीएम्‌टी-९</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-10">
-				<exemplarCity>जीएम्‌टी-१०</exemplarCity>
-			</zone>
-			<zone type="Etc/GMT-11">
-				<exemplarCity>जीएम्‌टी-११</exemplarCity>
 			</zone>
 			<zone type="Europe/Andorra">
 				<exemplarCity>आन्डोर्रा</exemplarCity>
@@ -1029,9 +948,6 @@
 			</zone>
 			<zone type="Europe/Tirane">
 				<exemplarCity>टिराने</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>कुराकाओ</exemplarCity>
 			</zone>
 			<zone type="Africa/Luanda">
 				<exemplarCity>ल्वान्डा</exemplarCity>
@@ -1380,6 +1296,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>केप भर्डे</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>कुराकाओ</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity>ख्रिस्टमस</exemplarCity>
@@ -1879,6 +1798,9 @@
 			<zone type="America/El_Salvador">
 				<exemplarCity>एल् साल्भाडोर</exemplarCity>
 			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity>लोअर प्रिन्स्स क्वार्टर</exemplarCity>
+			</zone>
 			<zone type="Africa/Mbabane">
 				<exemplarCity>एमबाबेन</exemplarCity>
 			</zone>
@@ -1962,6 +1884,9 @@
 			</zone>
 			<zone type="America/Denver">
 				<exemplarCity draft="contributed">डेन्भर</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity>बेलुआ, उत्तर डोकोटा</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity draft="contributed">नयाँ सालेम, उत्तर डाकोटा</exemplarCity>
@@ -2052,7 +1977,7 @@
 		</timeZoneNames>
 	</dates>
 	<numbers>
-		<defaultNumberingSystem>latn</defaultNumberingSystem>
+		<defaultNumberingSystem>deva</defaultNumberingSystem>
 		<otherNumberingSystems>
 			<native>deva</native>
 		</otherNumberingSystems>
@@ -2818,6 +2743,11 @@
 				<displayName count="other">दक्षिण अफ्रिकी र्‍यान्ड</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>जाम्बियाली क्वाचा (१९६८-२०१२)</displayName>
+				<displayName count="one">जाम्बियाली क्वाचा (१९६८-२०१२)</displayName>
+				<displayName count="other">जाम्बियाली क्वाचाहरू (१९६८-२०१२)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>जाम्बियाली क्वाचा</displayName>
 				<displayName count="one">जाम्बियाली क्वाचा</displayName>
 				<displayName count="other">जाम्बियाली क्वाचाहरू</displayName>

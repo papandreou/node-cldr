@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-	<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7847 $"/>
-		<generation date="$Date: 2012-10-15 11:02:42 -0700 (Mon, 15 Oct 2012) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="zh"/>
 		<script type="Hant"/>
 		<territory type="HK"/>
@@ -30,6 +34,7 @@
 			<territory type="019" draft="contributed">美洲地區</territory>
 			<territory type="029" draft="contributed">加勒比</territory>
 			<territory type="EA" draft="contributed">瑟塔與梅利拉</territory>
+			<territory type="XK">科索沃</territory>
 		</territories>
 		<variants>
 			<variant type="1901" draft="contributed">傳統德國拼字法</variant>
@@ -97,8 +102,8 @@
 		</measurementSystemNames>
 	</localeDisplayNames>
 	<characters>
-		<ellipsis type="final" draft="contributed">{0}...</ellipsis>
-		<ellipsis type="initial" draft="contributed">...{0}</ellipsis>
+		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
+		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
 		<ellipsis type="medial" draft="contributed">{0}…{1}</ellipsis>
 	</characters>
 	<dates>
@@ -108,6 +113,60 @@
 					<availableFormats>
 						<dateFormatItem id="Md" draft="contributed">M-d</dateFormatItem>
 						<dateFormatItem id="MEd" draft="contributed">M-d（E）</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>Gy年M月d日EEEE</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>Gy年M月d日</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>Gy年M月d日</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>d/M/yGGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1}{0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1}{0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="Ed" draft="contributed">d E</dateFormatItem>
+						<dateFormatItem id="Md" draft="contributed">d/M</dateFormatItem>
+						<dateFormatItem id="MEd" draft="contributed">E, d/M</dateFormatItem>
+						<dateFormatItem id="yyyyM" draft="contributed">M/yGGGGG</dateFormatItem>
+						<dateFormatItem id="yyyyMd" draft="contributed">d/M/yGGGGG</dateFormatItem>
+						<dateFormatItem id="yyyyMEd" draft="contributed">E, d/M/yGGGGG</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
 			</calendar>
@@ -130,7 +189,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>yy年M月d日</pattern>
+							<pattern>d/M/yy</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -174,22 +233,11 @@
 					</dateTimeFormatLength>
 					<availableFormats>
 						<dateFormatItem id="Ed" draft="contributed">d E</dateFormatItem>
-						<dateFormatItem id="Md" draft="contributed">M-d</dateFormatItem>
-						<dateFormatItem id="MEd" draft="contributed">E, M-d</dateFormatItem>
-						<dateFormatItem id="yyyyM" draft="provisional">yyyy/M</dateFormatItem>
+						<dateFormatItem id="Md" draft="contributed">d/M</dateFormatItem>
+						<dateFormatItem id="MEd" draft="contributed">E, d/M</dateFormatItem>
+						<dateFormatItem id="yM" draft="provisional">M/y</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="year">
-						<relative type="-1" draft="contributed">上年</relative>
-						<relative type="0" draft="contributed">本年</relative>
-						<relative type="1" draft="contributed">下年</relative>
-					</field>
-					<field type="month">
-						<relative type="-1" draft="contributed">上月</relative>
-						<relative type="1" draft="contributed">下月</relative>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="roc">
 				<dateTimeFormats>
@@ -200,10 +248,18 @@
 				</dateTimeFormats>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="year">
+				<relative type="-1" draft="contributed">上年</relative>
+				<relative type="0" draft="contributed">本年</relative>
+				<relative type="1" draft="contributed">下年</relative>
+			</field>
+			<field type="month">
+				<relative type="-1" draft="contributed">上月</relative>
+				<relative type="1" draft="contributed">下月</relative>
+			</field>
+		</fields>
 		<timeZoneNames>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity draft="contributed">比尤拉，北達科他州</exemplarCity>
-			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity draft="contributed">耶烈萬</exemplarCity>
 			</zone>
@@ -315,6 +371,9 @@
 			<zone type="Africa/Dar_es_Salaam">
 				<exemplarCity draft="contributed">達累斯薩拉姆</exemplarCity>
 			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity draft="contributed">比尤拉，北達科他州</exemplarCity>
+			</zone>
 			<zone type="America/St_Vincent">
 				<exemplarCity draft="contributed">聖文森特</exemplarCity>
 			</zone>
@@ -405,3 +464,4 @@
 		</messages>
 	</posix>
 </ldml>
+

@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7832 $"/>
-		<generation date="$Date: 2012-10-11 11:59:15 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="es"/>
 	</identity>
 	<localeDisplayNames>
@@ -735,7 +739,7 @@
 			<territory type="039">Europa meridional</territory>
 			<territory type="053">Australasia</territory>
 			<territory type="054">Melanesia</territory>
-			<territory type="057">Micronesia [057]</territory>
+			<territory type="057">Región de Micronesia</territory>
 			<territory type="061">Polinesia</territory>
 			<territory type="142">Asia</territory>
 			<territory type="143">Asia central</territory>
@@ -942,6 +946,7 @@
 			<territory type="PN">Islas Pitcairn</territory>
 			<territory type="PR">Puerto Rico</territory>
 			<territory type="PS">Territorios Palestinos</territory>
+			<territory type="PS" alt="short">Palestina</territory>
 			<territory type="PT">Portugal</territory>
 			<territory type="PW">Palau</territory>
 			<territory type="PY">Paraguay</territory>
@@ -995,6 +1000,7 @@
 			<territory type="UG">Uganda</territory>
 			<territory type="UM">Islas menores alejadas de los Estados Unidos</territory>
 			<territory type="US">Estados Unidos</territory>
+			<territory type="US" alt="short">EE. UU.</territory>
 			<territory type="UY">Uruguay</territory>
 			<territory type="UZ">Uzbekistán</territory>
 			<territory type="VA">Ciudad del Vaticano</territory>
@@ -1006,6 +1012,7 @@
 			<territory type="VU">Vanuatu</territory>
 			<territory type="WF">Wallis y Futuna</territory>
 			<territory type="WS">Samoa</territory>
+			<territory type="XK">Kosovo</territory>
 			<territory type="YE">Yemen</territory>
 			<territory type="YT">Mayotte</territory>
 			<territory type="ZA">Sudáfrica</territory>
@@ -1204,7 +1211,7 @@
 		<exemplarCharacters type="auxiliary">[ª à ă â å ä ã ā æ ç è ĕ ê ë ē ì ĭ î ï ī º ò ŏ ô ö ø ō œ ù ŭ û ū ÿ]</exemplarCharacters>
 		<exemplarCharacters type="index">[A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ¡ ? ¿ . … ' ‘ ’ &quot; “ ” « » ( ) \[ \] § @ * / \\ \&amp; # † ‡ ′ ″]</exemplarCharacters>
-		<ellipsis type="final">{0}...</ellipsis>
+		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">… {0}</ellipsis>
 		<ellipsis type="medial">{0}… {1}</ellipsis>
 		<moreInformation draft="contributed">[...]</moreInformation>
@@ -1218,67 +1225,11 @@
 	<dates>
 		<calendars>
 			<calendar type="buddhist">
-				<dateFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
-					<dateFormatLength type="full">
-						<dateFormat>
-							<pattern>EEEE, d 'de' MMMM 'de' y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="long">
-						<dateFormat>
-							<pattern>d 'de' MMMM 'de' y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="medium">
-						<dateFormat>
-							<pattern>dd/MM/y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="short">
-						<dateFormat>
-							<pattern>dd/MM/y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-				</dateFormats>
-				<dateTimeFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
-					<availableFormats>
-						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="Ed">E d</dateFormatItem>
-						<dateFormatItem id="Gy">y G</dateFormatItem>
-						<dateFormatItem id="h">hh a</dateFormatItem>
-						<dateFormatItem id="hm">hh:mm a</dateFormatItem>
-						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="hms">hh:mm:ss a</dateFormatItem>
-						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">d/M</dateFormatItem>
-						<dateFormatItem id="MEd">E, d/M</dateFormatItem>
-						<dateFormatItem id="MMd">d/MM</dateFormatItem>
-						<dateFormatItem id="MMM">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
-						<dateFormatItem id="MMMdd">dd-MMM</dateFormatItem>
-						<dateFormatItem id="MMMEd">E d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">d 'de' MMMM</dateFormatItem>
-						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="y">y G</dateFormatItem>
-						<dateFormatItem id="yM">M/y G</dateFormatItem>
-						<dateFormatItem id="yMd">d/M/y G</dateFormatItem>
-						<dateFormatItem id="yMEd">E d/M/y G</dateFormatItem>
-						<dateFormatItem id="yMMM">MMM y G</dateFormatItem>
-						<dateFormatItem id="yMMMd">d MMM y G</dateFormatItem>
-						<dateFormatItem id="yMMMEd">E, d MMM y G</dateFormatItem>
-						<dateFormatItem id="yMMMM">MMMM 'de' y G</dateFormatItem>
-						<dateFormatItem id="yQQQ">QQQ y G</dateFormatItem>
-						<dateFormatItem id="yQQQQ">QQQQ 'de' y G</dateFormatItem>
-						<dateFormatItem id="yyMM">MM/y G</dateFormatItem>
-						<dateFormatItem id="yyMMM">MMM-y G</dateFormatItem>
-						<dateFormatItem id="yyQQQ">QQQ y G</dateFormatItem>
-						<dateFormatItem id="yyQQQQ">QQQQ 'de' y G</dateFormatItem>
-						<dateFormatItem id="yyyyMM">MM/y G</dateFormatItem>
-					</availableFormats>
-				</dateTimeFormats>
+				<eras>
+					<eraAbbr>
+						<era type="0">BE</era>
+					</eraAbbr>
+				</eras>
 			</calendar>
 			<calendar type="chinese">
 				<dateFormats>
@@ -1303,6 +1254,215 @@
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">E d</dateFormatItem>
+						<dateFormatItem id="Gy">y</dateFormatItem>
+						<dateFormatItem id="GyMMM">M-y</dateFormatItem>
+						<dateFormatItem id="GyMMMd">d-M-y</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">E, d-M-y</dateFormatItem>
+						<dateFormatItem id="h">hh a</dateFormatItem>
+						<dateFormatItem id="H" draft="contributed">HH</dateFormatItem>
+						<dateFormatItem id="hm">hh:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">hh:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">d-M</dateFormatItem>
+						<dateFormatItem id="MEd">E, d-M</dateFormatItem>
+						<dateFormatItem id="MMM">L</dateFormatItem>
+						<dateFormatItem id="MMMd">d-M</dateFormatItem>
+						<dateFormatItem id="MMMEd">E d-M</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yyyy">y</dateFormatItem>
+						<dateFormatItem id="yyyyM">M-y</dateFormatItem>
+						<dateFormatItem id="yyyyMd">d-M-y</dateFormatItem>
+						<dateFormatItem id="yyyyMEd">E, d-M-y</dateFormatItem>
+						<dateFormatItem id="yyyyMMM">M-y</dateFormatItem>
+						<dateFormatItem id="yyyyMMMd">d-M-y</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd">E, d-M-y</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">M-y</dateFormatItem>
+						<dateFormatItem id="yyyyQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yyyyQQQQ">QQQQ y</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, d 'de' MMMM 'de' y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>d 'de' MMMM 'de' y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>dd/MM/y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>dd/MM/yy GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">E d</dateFormatItem>
+						<dateFormatItem id="Gy">y G</dateFormatItem>
+						<dateFormatItem id="GyMMM">MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMd">d MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">E, d 'de' MMMM 'de' y G</dateFormatItem>
+						<dateFormatItem id="h">hh a</dateFormatItem>
+						<dateFormatItem id="H" draft="contributed">HH</dateFormatItem>
+						<dateFormatItem id="hm">hh:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">hh:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">d/M</dateFormatItem>
+						<dateFormatItem id="MEd">E, d/M</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
+						<dateFormatItem id="MMMdd">dd-MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E d MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd">d 'de' MMMM</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y G</dateFormatItem>
+						<dateFormatItem id="yyyy">y G</dateFormatItem>
+						<dateFormatItem id="yyyyM">M/y GGGGG</dateFormatItem>
+						<dateFormatItem id="yyyyMd">d/M/y GGGGG</dateFormatItem>
+						<dateFormatItem id="yyyyMEd">E, d/M/y GGGGG</dateFormatItem>
+						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
+						<dateFormatItem id="yyyyMMMd">d MMM y G</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd">E, d 'de' MMMM 'de' y G</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">MMMM 'de' y G</dateFormatItem>
+						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
+						<dateFormatItem id="yyyyQQQQ">QQQQ 'de' y G</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a – h a</greatestDifference>
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H" draft="contributed">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm – h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm – h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm – HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm – HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="h">h:mm – h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm – h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm – HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm – HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a – h a v</greatestDifference>
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H" draft="provisional">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M–M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">d/M – d/M</greatestDifference>
+							<greatestDifference id="M">d/M – d/M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E d/M – E d/M</greatestDifference>
+							<greatestDifference id="M">E d/M – E d/M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM–MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">d–d MMM</greatestDifference>
+							<greatestDifference id="M">d MMM – d MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E d MMM – E d MMM</greatestDifference>
+							<greatestDifference id="M">E d MMM – E d MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y–y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">M/y – M/y G</greatestDifference>
+							<greatestDifference id="y">M/y – M/y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">d/M/y – d/M/y G</greatestDifference>
+							<greatestDifference id="M">d/M/y – d/M/y G</greatestDifference>
+							<greatestDifference id="y">d/M/y – d/M/y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E d/M/y – E d/M/y G</greatestDifference>
+							<greatestDifference id="M">E d/M/y – E d/M/y G</greatestDifference>
+							<greatestDifference id="y">E d/M/y – E d/M/y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM–MMM y G</greatestDifference>
+							<greatestDifference id="y">MMM y – MMM y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">d–d MMM y G</greatestDifference>
+							<greatestDifference id="M">d MMM – d MMM y G</greatestDifference>
+							<greatestDifference id="y">d MMM y – d MMM y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E d MMM – E d MMM y G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E d MMM – E d MMM y G</greatestDifference>
+							<greatestDifference id="y">E d MMM y – E d MMM y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">MMMM–MMMM y G</greatestDifference>
+							<greatestDifference id="y">MMMM y – MMMM y G</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
 			</calendar>
 			<calendar type="gregorian">
 				<months>
@@ -1485,7 +1645,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
-							<pattern>dd/MM/yyyy</pattern>
+							<pattern>dd/MM/y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
@@ -1540,6 +1700,10 @@
 					<availableFormats>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="Ed">E d</dateFormatItem>
+						<dateFormatItem id="Gy">y G</dateFormatItem>
+						<dateFormatItem id="GyMMM">MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMd">d MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">E, d 'de' MMMM 'de' y G</dateFormatItem>
 						<dateFormatItem id="h">hh a</dateFormatItem>
 						<dateFormatItem id="H" draft="contributed">HH</dateFormatItem>
 						<dateFormatItem id="hm">hh:mm a</dateFormatItem>
@@ -1561,15 +1725,13 @@
 						<dateFormatItem id="yM">M/y</dateFormatItem>
 						<dateFormatItem id="yMd">d/M/y</dateFormatItem>
 						<dateFormatItem id="yMEd">EEE, d/M/y</dateFormatItem>
+						<dateFormatItem id="yMM">MM/y</dateFormatItem>
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMd">d MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">EEE, d 'de' MMMM 'de' y</dateFormatItem>
 						<dateFormatItem id="yMMMM">MMMM 'de' y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ 'de' y</dateFormatItem>
-						<dateFormatItem id="yyMM">MM/yy</dateFormatItem>
-						<dateFormatItem id="yyMMM">MMM-yy</dateFormatItem>
-						<dateFormatItem id="yyyyMM">MM/yyyy</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
@@ -1634,18 +1796,18 @@
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">M/yy – M/yy</greatestDifference>
-							<greatestDifference id="y">M/yy – M/yy</greatestDifference>
+							<greatestDifference id="M">M/y – M/y</greatestDifference>
+							<greatestDifference id="y">M/y – M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">d/M/yy – d/M/yy</greatestDifference>
-							<greatestDifference id="M">d/M/yy – d/M/yy</greatestDifference>
-							<greatestDifference id="y">d/M/yy – d/M/yy</greatestDifference>
+							<greatestDifference id="d">d/M/y – d/M/y</greatestDifference>
+							<greatestDifference id="M">d/M/y – d/M/y</greatestDifference>
+							<greatestDifference id="y">d/M/y – d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E d/M/yy – E d/M/yy</greatestDifference>
-							<greatestDifference id="M">E d/M/yy – E d/M/yy</greatestDifference>
-							<greatestDifference id="y">E d/M/yy – E d/M/yy</greatestDifference>
+							<greatestDifference id="d">E d/M/y – E d/M/y</greatestDifference>
+							<greatestDifference id="M">E d/M/y – E d/M/y</greatestDifference>
+							<greatestDifference id="y">E d/M/y – E d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM–MMM y</greatestDifference>
@@ -1667,121 +1829,26 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>era</displayName>
-					</field>
-					<field type="year">
-						<displayName>año</displayName>
-						<relative type="-1" draft="contributed">el año pasado</relative>
-						<relative type="0" draft="contributed">este año</relative>
-						<relative type="1" draft="contributed">el próximo año</relative>
-					</field>
-					<field type="month">
-						<displayName>mes</displayName>
-						<relative type="-1" draft="contributed">el mes pasado</relative>
-						<relative type="0" draft="contributed">este mes</relative>
-						<relative type="1" draft="contributed">el próximo mes</relative>
-					</field>
-					<field type="week">
-						<displayName>semana</displayName>
-						<relative type="-1" draft="contributed">la semana pasada</relative>
-						<relative type="0" draft="contributed">esta semana</relative>
-						<relative type="1" draft="contributed">la próxima semana</relative>
-					</field>
-					<field type="day">
-						<displayName>día</displayName>
-						<relative type="-2">antes de ayer</relative>
-						<relative type="-1">ayer</relative>
-						<relative type="0">hoy</relative>
-						<relative type="1">mañana</relative>
-						<relative type="2">pasado mañana</relative>
-					</field>
-					<field type="weekday">
-						<displayName>día de la semana</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>periodo del día</displayName>
-					</field>
-					<field type="hour">
-						<displayName>hora</displayName>
-					</field>
-					<field type="minute">
-						<displayName>minuto</displayName>
-					</field>
-					<field type="second">
-						<displayName>segundo</displayName>
-					</field>
-					<field type="zone">
-						<displayName>zona</displayName>
-					</field>
-				</fields>
+			</calendar>
+			<calendar type="hebrew">
+				<eras>
+					<eraAbbr>
+						<era type="0">AM</era>
+					</eraAbbr>
+				</eras>
 			</calendar>
 			<calendar type="islamic">
-				<dateFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
-					<dateFormatLength type="full">
-						<dateFormat>
-							<pattern>EEEE, d 'de' MMMM 'de' y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="long">
-						<dateFormat>
-							<pattern>d 'de' MMMM 'de' y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="medium">
-						<dateFormat>
-							<pattern>dd/MM/y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="short">
-						<dateFormat>
-							<pattern>dd/MM/y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-				</dateFormats>
-				<dateTimeFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
-					<availableFormats>
-						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="Ed">E d</dateFormatItem>
-						<dateFormatItem id="h">hh a</dateFormatItem>
-						<dateFormatItem id="hm">hh:mm a</dateFormatItem>
-						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="hms">hh:mm:ss a</dateFormatItem>
-						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">d/M</dateFormatItem>
-						<dateFormatItem id="MEd">E, d/M</dateFormatItem>
-						<dateFormatItem id="MMd">d/MM</dateFormatItem>
-						<dateFormatItem id="MMM">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
-						<dateFormatItem id="MMMdd">dd-MMM</dateFormatItem>
-						<dateFormatItem id="MMMEd">E d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">d 'de' MMMM</dateFormatItem>
-						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="yMMMEd" draft="contributed">E d MMM y</dateFormatItem>
-						<dateFormatItem id="yyMM">MM/y G</dateFormatItem>
-						<dateFormatItem id="yyMMM">MMM-y G</dateFormatItem>
-						<dateFormatItem id="yyQQQ">QQQ y G</dateFormatItem>
-						<dateFormatItem id="yyQQQQ">QQQQ 'de' y G</dateFormatItem>
-						<dateFormatItem id="yyyy">y G</dateFormatItem>
-						<dateFormatItem id="yyyyM">M/y G</dateFormatItem>
-						<dateFormatItem id="yyyyMd">d/M/y G</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">E d/M/y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">E, d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">MMMM 'de' y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQQ">QQQQ 'de' y G</dateFormatItem>
-					</availableFormats>
-				</dateTimeFormats>
+				<eras>
+					<eraAbbr>
+						<era type="0">AH</era>
+					</eraAbbr>
+				</eras>
 			</calendar>
 			<calendar type="japanese">
+				<!-- need some non-empty element here to make inheritance work,
+					 this copy of generic dateFormats above is smaller than root japanese eras
+				-->
 				<dateFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
 					<dateFormatLength type="full">
 						<dateFormat>
 							<pattern>EEEE, d 'de' MMMM 'de' y G</pattern>
@@ -1799,48 +1866,10 @@
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>dd/MM/y GGGGG</pattern>
+							<pattern>dd/MM/yy GGGGG</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
-				<dateTimeFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
-					<availableFormats>
-						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="Ed">E d</dateFormatItem>
-						<dateFormatItem id="Gy">y G</dateFormatItem>
-						<dateFormatItem id="h">hh a</dateFormatItem>
-						<dateFormatItem id="hm">hh:mm a</dateFormatItem>
-						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="hms">hh:mm:ss a</dateFormatItem>
-						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">d/M</dateFormatItem>
-						<dateFormatItem id="MEd">E, d/M</dateFormatItem>
-						<dateFormatItem id="MMd">d/MM</dateFormatItem>
-						<dateFormatItem id="MMM">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
-						<dateFormatItem id="MMMdd">dd-MMM</dateFormatItem>
-						<dateFormatItem id="MMMEd">E d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">d 'de' MMMM</dateFormatItem>
-						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="y">y G</dateFormatItem>
-						<dateFormatItem id="yyMM">MM/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyMMM">MMM-y G</dateFormatItem>
-						<dateFormatItem id="yyQQQ">QQQ y G</dateFormatItem>
-						<dateFormatItem id="yyQQQQ">QQQQ 'de' y G</dateFormatItem>
-						<dateFormatItem id="yyyy">y G</dateFormatItem>
-						<dateFormatItem id="yyyyM">M/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMd">d/M/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">E d/M/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">E, d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">MMMM 'de' y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQQ">QQQQ 'de' y G</dateFormatItem>
-					</availableFormats>
-				</dateTimeFormats>
 			</calendar>
 			<calendar type="roc">
 				<eras>
@@ -1848,70 +1877,57 @@
 						<era type="0" draft="contributed">antes de R.O.C.</era>
 					</eraAbbr>
 				</eras>
-				<dateFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
-					<dateFormatLength type="full">
-						<dateFormat>
-							<pattern>EEEE, d 'de' MMMM 'de' y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="long">
-						<dateFormat>
-							<pattern>d 'de' MMMM 'de' y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="medium">
-						<dateFormat>
-							<pattern>dd/MM/y G</pattern>
-						</dateFormat>
-					</dateFormatLength>
-					<dateFormatLength type="short">
-						<dateFormat>
-							<pattern>dd/MM/y GGGGG</pattern>
-						</dateFormat>
-					</dateFormatLength>
-				</dateFormats>
-				<dateTimeFormats>
-					<!-- per cldrbug 2835, added from gregorian and adjusted for G -->
-					<availableFormats>
-						<dateFormatItem id="d">d</dateFormatItem>
-						<dateFormatItem id="Ed">E d</dateFormatItem>
-						<dateFormatItem id="Gy">y G</dateFormatItem>
-						<dateFormatItem id="h">hh a</dateFormatItem>
-						<dateFormatItem id="hm">hh:mm a</dateFormatItem>
-						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="hms">hh:mm:ss a</dateFormatItem>
-						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
-						<dateFormatItem id="M">L</dateFormatItem>
-						<dateFormatItem id="Md">d/M</dateFormatItem>
-						<dateFormatItem id="MEd">E, d/M</dateFormatItem>
-						<dateFormatItem id="MMd">d/MM</dateFormatItem>
-						<dateFormatItem id="MMM">LLL</dateFormatItem>
-						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
-						<dateFormatItem id="MMMdd">dd-MMM</dateFormatItem>
-						<dateFormatItem id="MMMEd">E d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">d 'de' MMMM</dateFormatItem>
-						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="y">y G</dateFormatItem>
-						<dateFormatItem id="yyMM">MM/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyMMM">MMM-y G</dateFormatItem>
-						<dateFormatItem id="yyQQQ">QQQ y G</dateFormatItem>
-						<dateFormatItem id="yyQQQQ">QQQQ 'de' y G</dateFormatItem>
-						<dateFormatItem id="yyyy">y G</dateFormatItem>
-						<dateFormatItem id="yyyyM">M/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMd">d/M/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMEd">E d/M/y GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMM">MM/y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMd">d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd">E, d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">MMMM 'de' y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
-						<dateFormatItem id="yyyyQQQQ">QQQQ 'de' y G</dateFormatItem>
-					</availableFormats>
-				</dateTimeFormats>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>era</displayName>
+			</field>
+			<field type="year">
+				<displayName>año</displayName>
+				<relative type="-1" draft="contributed">el año pasado</relative>
+				<relative type="0" draft="contributed">este año</relative>
+				<relative type="1" draft="contributed">el próximo año</relative>
+			</field>
+			<field type="month">
+				<displayName>mes</displayName>
+				<relative type="-1" draft="contributed">el mes pasado</relative>
+				<relative type="0" draft="contributed">este mes</relative>
+				<relative type="1" draft="contributed">el próximo mes</relative>
+			</field>
+			<field type="week">
+				<displayName>semana</displayName>
+				<relative type="-1" draft="contributed">la semana pasada</relative>
+				<relative type="0" draft="contributed">esta semana</relative>
+				<relative type="1" draft="contributed">la próxima semana</relative>
+			</field>
+			<field type="day">
+				<displayName>día</displayName>
+				<relative type="-2">antes de ayer</relative>
+				<relative type="-1">ayer</relative>
+				<relative type="0">hoy</relative>
+				<relative type="1">mañana</relative>
+				<relative type="2">pasado mañana</relative>
+			</field>
+			<field type="weekday">
+				<displayName>día de la semana</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>periodo del día</displayName>
+			</field>
+			<field type="hour">
+				<displayName>hora</displayName>
+			</field>
+			<field type="minute">
+				<displayName>minuto</displayName>
+			</field>
+			<field type="second">
+				<displayName>segundo</displayName>
+			</field>
+			<field type="zone">
+				<displayName>zona</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
@@ -1919,12 +1935,6 @@
 			<regionFormat>Hora de {0}</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<fallbackRegionFormat>Hora de {1} ({0})</fallbackRegionFormat>
-			<zone type="America/Lower_Princes">
-				<exemplarCity draft="contributed">Lower Prince's Quarter</exemplarCity>
-			</zone>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity draft="contributed">Beulah, Dakota del Norte</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Desconocida</exemplarCity>
 			</zone>
@@ -1939,9 +1949,6 @@
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity>Ereván</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity draft="contributed">Curazao</exemplarCity>
 			</zone>
 			<zone type="Antarctica/South_Pole">
 				<exemplarCity>Polo Sur</exemplarCity>
@@ -2071,6 +2078,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>Cabo Verde</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity draft="contributed">Curazao</exemplarCity>
 			</zone>
 			<zone type="Europe/Prague">
 				<exemplarCity>Praga</exemplarCity>
@@ -2351,6 +2361,9 @@
 			<zone type="Africa/Sao_Tome">
 				<exemplarCity>Santo Tomé</exemplarCity>
 			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity draft="contributed">Lower Prince's Quarter</exemplarCity>
+			</zone>
 			<zone type="Asia/Damascus">
 				<exemplarCity>Damasco</exemplarCity>
 			</zone>
@@ -2386,6 +2399,9 @@
 			</zone>
 			<zone type="America/Los_Angeles">
 				<exemplarCity>Los Ángeles</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity draft="contributed">Beulah, Dakota del Norte</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity draft="contributed">New Salem, Dakota del Norte</exemplarCity>
@@ -2454,25 +2470,11 @@
 					<daylight>Hora de verano de África occidental</daylight>
 				</long>
 			</metazone>
-			<metazone type="Aktyubinsk">
-				<long>
-					<generic draft="contributed">Hora de Aktyubinsk</generic>
-					<standard draft="contributed">Hora estándar de Aktyubinsk</standard>
-					<daylight draft="contributed">Hora de verano de Aktyubinsk</daylight>
-				</long>
-			</metazone>
 			<metazone type="Alaska">
 				<long>
 					<generic>Hora de Alaska</generic>
 					<standard>Hora estándar de Alaska</standard>
 					<daylight>Hora de verano de Alaska</daylight>
-				</long>
-			</metazone>
-			<metazone type="Alaska_Hawaii">
-				<long>
-					<generic draft="contributed">Hora de Alaska-Hawái</generic>
-					<standard draft="contributed">Hora estándar de Alaska-Hawái</standard>
-					<daylight draft="contributed">Hora de verano de Alaska-Hawái</daylight>
 				</long>
 			</metazone>
 			<metazone type="Amazon">
@@ -2559,13 +2561,6 @@
 					<daylight>Hora de verano de Armenia</daylight>
 				</long>
 			</metazone>
-			<metazone type="Ashkhabad">
-				<long>
-					<generic draft="contributed">Hora de Asjabad</generic>
-					<standard draft="contributed">Hora estándar de Asjabad</standard>
-					<daylight draft="contributed">Hora de verano de Asjabad</daylight>
-				</long>
-			</metazone>
 			<metazone type="Atlantic">
 				<long>
 					<generic>Hora del Atlántico</generic>
@@ -2615,25 +2610,11 @@
 					<daylight>Hora de verano de las Azores</daylight>
 				</long>
 			</metazone>
-			<metazone type="Baku">
-				<long>
-					<generic draft="contributed">Hora de Bakú</generic>
-					<standard draft="contributed">Hora estándar de Bakú</standard>
-					<daylight draft="contributed">Hora de verano de Bakú</daylight>
-				</long>
-			</metazone>
 			<metazone type="Bangladesh">
 				<long>
 					<generic>Hora de Bangladés</generic>
 					<standard>Hora estándar de Bangladés</standard>
 					<daylight>Hora de verano de Bangladés</daylight>
-				</long>
-			</metazone>
-			<metazone type="Bering">
-				<long>
-					<generic draft="contributed">Hora de Bering</generic>
-					<standard draft="contributed">Hora estándar de Bering</standard>
-					<daylight draft="contributed">Hora de verano de Bering</daylight>
 				</long>
 			</metazone>
 			<metazone type="Bhutan">
@@ -2644,13 +2625,6 @@
 			<metazone type="Bolivia">
 				<long>
 					<standard>Hora de Bolivia</standard>
-				</long>
-			</metazone>
-			<metazone type="Borneo">
-				<long>
-					<generic draft="contributed">Hora de Borneo</generic>
-					<standard draft="contributed">Hora estándar de Borneo</standard>
-					<daylight draft="contributed">Hora de verano de Borneo</daylight>
 				</long>
 			</metazone>
 			<metazone type="Brasilia">
@@ -2675,11 +2649,6 @@
 			<metazone type="Chamorro">
 				<long>
 					<standard>Hora estándar de Chamorro</standard>
-				</long>
-			</metazone>
-			<metazone type="Changbai">
-				<long>
-					<standard draft="contributed">Hora de Changbai</standard>
 				</long>
 			</metazone>
 			<metazone type="Chatham">
@@ -2741,11 +2710,6 @@
 					<daylight>Hora de verano de Cuba</daylight>
 				</long>
 			</metazone>
-			<metazone type="Dacca">
-				<long>
-					<standard draft="contributed">Hora de Dacca</standard>
-				</long>
-			</metazone>
 			<metazone type="Davis">
 				<long>
 					<standard>Hora de Davis</standard>
@@ -2754,18 +2718,6 @@
 			<metazone type="DumontDUrville">
 				<long>
 					<standard>Hora de Dumont-d’Urville</standard>
-				</long>
-			</metazone>
-			<metazone type="Dushanbe">
-				<long>
-					<generic draft="contributed">Hora de Dusambé</generic>
-					<standard draft="contributed">Hora estándar de Dusambé</standard>
-					<daylight draft="contributed">Hora de verano de Dusambé</daylight>
-				</long>
-			</metazone>
-			<metazone type="Dutch_Guiana">
-				<long>
-					<standard draft="contributed">Hora de la Guayana Holandesa</standard>
 				</long>
 			</metazone>
 			<metazone type="East_Timor">
@@ -2830,13 +2782,6 @@
 					<standard>Hora de las Tierras Australes y Antárticas Francesas</standard>
 				</long>
 			</metazone>
-			<metazone type="Frunze">
-				<long>
-					<generic draft="contributed">Hora de Frunze</generic>
-					<standard draft="contributed">Hora estándar de Frunze</standard>
-					<daylight draft="contributed">Hora de verano de Frunze</daylight>
-				</long>
-			</metazone>
 			<metazone type="Galapagos">
 				<long>
 					<standard>Hora de Galápagos</standard>
@@ -2862,13 +2807,6 @@
 			<metazone type="GMT">
 				<long>
 					<standard>Hora del meridiano de Greenwich</standard>
-				</long>
-			</metazone>
-			<metazone type="Greenland_Central">
-				<long>
-					<generic>Hora de Groenlandia central</generic>
-					<standard>Hora estándar de Groenlandia central</standard>
-					<daylight>Hora de verano de Groenlandia central</daylight>
 				</long>
 			</metazone>
 			<metazone type="Greenland_Eastern">
@@ -2986,16 +2924,6 @@
 					<daylight draft="contributed">Hora de verano de Kamchatka</daylight>
 				</long>
 			</metazone>
-			<metazone type="Karachi">
-				<long>
-					<standard draft="contributed">Hora de Karachi</standard>
-				</long>
-			</metazone>
-			<metazone type="Kashgar">
-				<long>
-					<standard draft="contributed">Hora de Kashgar</standard>
-				</long>
-			</metazone>
 			<metazone type="Kazakhstan_Eastern">
 				<long>
 					<standard draft="contributed">Hora de Kazajistán oriental</standard>
@@ -3004,13 +2932,6 @@
 			<metazone type="Kazakhstan_Western">
 				<long>
 					<standard draft="contributed">Hora de Kazajistán occidental</standard>
-				</long>
-			</metazone>
-			<metazone type="Kizilorda">
-				<long>
-					<generic draft="contributed">Hora de Kizil Orda</generic>
-					<standard draft="contributed">Hora estándar de Kizil Orda</standard>
-					<daylight draft="contributed">Hora de verano de Kizil Orda</daylight>
 				</long>
 			</metazone>
 			<metazone type="Korea">
@@ -3032,18 +2953,6 @@
 					<daylight draft="contributed">Hora de verano de Krasnoyarsk</daylight>
 				</long>
 			</metazone>
-			<metazone type="Kuybyshev">
-				<long>
-					<generic>Hora de Kuíbyshev</generic>
-					<standard>Hora estándar de Kuíbyshev</standard>
-					<daylight>Hora de verano de Kuíbyshev</daylight>
-				</long>
-			</metazone>
-			<metazone type="Kwajalein">
-				<long>
-					<standard draft="contributed">Hora de Kwajalein</standard>
-				</long>
-			</metazone>
 			<metazone type="Kyrgystan">
 				<long>
 					<standard draft="contributed">Hora de Kirguistán</standard>
@@ -3057,11 +2966,6 @@
 			<metazone type="Line_Islands">
 				<long>
 					<standard>Hora de las Espóradas Ecuatoriales</standard>
-				</long>
-			</metazone>
-			<metazone type="Long_Shu">
-				<long>
-					<standard draft="contributed">Hora de Long-Shu</standard>
 				</long>
 			</metazone>
 			<metazone type="Lord_Howe">
@@ -3088,11 +2992,6 @@
 					<generic draft="contributed">Hora de Magadán</generic>
 					<standard draft="contributed">Hora estándar de Magadán</standard>
 					<daylight draft="contributed">Hora de verano de Magadán</daylight>
-				</long>
-			</metazone>
-			<metazone type="Malaya">
-				<long>
-					<standard draft="contributed">Hora de Malaya</standard>
 				</long>
 			</metazone>
 			<metazone type="Malaysia">
@@ -3304,28 +3203,16 @@
 					<daylight>Hora de verano de Samara</daylight>
 				</long>
 			</metazone>
-			<metazone type="Samarkand">
-				<long>
-					<generic draft="contributed">Hora de Samarcanda</generic>
-					<standard draft="contributed">Hora estándar de Samarcanda</standard>
-					<daylight draft="contributed">Hora de verano de Samarcanda</daylight>
-				</long>
-			</metazone>
 			<metazone type="Samoa">
 				<long>
+					<generic draft="contributed">Hora de Samoa</generic>
 					<standard draft="contributed">Hora estándar de Samoa</standard>
+					<daylight draft="contributed">Hora de verano de Samoa</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
 				<long>
 					<standard draft="provisional">Hora de las islas Seychelles</standard>
-				</long>
-			</metazone>
-			<metazone type="Shevchenko">
-				<long>
-					<generic draft="contributed">Hora de Shevchenko</generic>
-					<standard draft="contributed">Hora estándar de Shevchenko</standard>
-					<daylight draft="contributed">Hora de verano de Shevchenko</daylight>
 				</long>
 			</metazone>
 			<metazone type="Singapore">
@@ -3346,13 +3233,6 @@
 			<metazone type="Suriname">
 				<long>
 					<standard>Hora de Surinam</standard>
-				</long>
-			</metazone>
-			<metazone type="Sverdlovsk">
-				<long>
-					<generic draft="contributed">Hora de Sverdlovsk</generic>
-					<standard draft="contributed">Hora estándar de Sverdlovsk</standard>
-					<daylight draft="contributed">Hora de verano de Sverdlovsk</daylight>
 				</long>
 			</metazone>
 			<metazone type="Syowa">
@@ -3377,20 +3257,6 @@
 					<standard draft="contributed">Hora de Tayikistán</standard>
 				</long>
 			</metazone>
-			<metazone type="Tashkent">
-				<long>
-					<generic draft="contributed">Hora de Tashkent</generic>
-					<standard draft="contributed">Hora estándar de Tashkent</standard>
-					<daylight draft="contributed">Hora de verano de Tashkent</daylight>
-				</long>
-			</metazone>
-			<metazone type="Tbilisi">
-				<long>
-					<generic draft="contributed">Hora de Tbilisi</generic>
-					<standard draft="contributed">Hora estándar de Tbilisi</standard>
-					<daylight draft="contributed">Hora de verano de Tbilisi</daylight>
-				</long>
-			</metazone>
 			<metazone type="Tokelau">
 				<long>
 					<standard>Hora de Tokelau</standard>
@@ -3408,13 +3274,6 @@
 					<standard>Hora de Chuuk</standard>
 				</long>
 			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<generic>Hora de Turquía</generic>
-					<standard>Hora estándar de Turquía</standard>
-					<daylight>Hora de verano de Turquía</daylight>
-				</long>
-			</metazone>
 			<metazone type="Turkmenistan">
 				<long>
 					<generic draft="contributed">Hora de Turkmenistán</generic>
@@ -3427,23 +3286,11 @@
 					<standard>Hora de Tuvalu</standard>
 				</long>
 			</metazone>
-			<metazone type="Uralsk">
-				<long>
-					<generic draft="contributed">Hora de Oral</generic>
-					<standard draft="contributed">Hora estándar de Oral</standard>
-					<daylight draft="contributed">Hora de verano de Oral</daylight>
-				</long>
-			</metazone>
 			<metazone type="Uruguay">
 				<long>
 					<generic>Hora de Uruguay</generic>
 					<standard>Hora estándar de Uruguay</standard>
 					<daylight>Hora de verano de Uruguay</daylight>
-				</long>
-			</metazone>
-			<metazone type="Urumqi">
-				<long>
-					<standard draft="contributed">Hora de Ürümqi</standard>
 				</long>
 			</metazone>
 			<metazone type="Uzbekistan">
@@ -3506,20 +3353,6 @@
 					<generic draft="contributed">Hora de Ekaterimburgo</generic>
 					<standard draft="contributed">Hora estándar de Ekaterimburgo</standard>
 					<daylight draft="contributed">Hora de verano de Ekaterimburgo</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yerevan">
-				<long>
-					<generic draft="contributed">Hora de Ereván</generic>
-					<standard draft="contributed">Hora estándar de Ereván</standard>
-					<daylight draft="contributed">Hora de verano de Ereván</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yukon">
-				<long>
-					<generic draft="contributed">Hora del Yukón</generic>
-					<standard draft="contributed">Hora estándar del Yukón</standard>
-					<daylight draft="contributed">Hora de verano del Yukón</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -4921,6 +4754,11 @@
 				<displayName count="other" draft="contributed">rands sudafricanos</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>kwacha zambiano (1968-2012)</displayName>
+				<displayName count="one" draft="contributed">kwacha zambiano (1968-2012)</displayName>
+				<displayName count="other" draft="contributed">kwachas zambianos (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>kwacha zambiano</displayName>
 				<displayName count="one" draft="contributed">kwacha zambiano</displayName>
 				<displayName count="other" draft="contributed">kwachas zambianos</displayName>

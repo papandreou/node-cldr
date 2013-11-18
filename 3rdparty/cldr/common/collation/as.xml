@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 4126 $"/>
-		<generation date="$Date: 2009-05-05 16:33:13 -0700 (Tue, 05 May 2009) $"/>
+		<version number="$Revision: 8242 $"/>
+		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="as"/>
 	</identity>
 		<collations  validSubLocales="as_IN">
 <collation type="standard" references="http://www.eki.ee/wgrs/rom1_as.pdf">
-<settings normalization="on"/>
+<settings normalization="on" reorder="Beng Deva Guru Gujr Orya Taml Telu Knda Mlym Sinh"/>
 <rules>
 
 <!--
@@ -27,7 +32,8 @@ the independent vowels and the consonants.
 KHANDA-TA is sorted before TA.
 -->
 <reset before="primary">ত</reset>
-<p>ত্‍</p>
+<p>ৎ</p>
+<i>ত্‍</i>
 
 <!--
 KSSA is sorted after HA.

@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7830 $"/>
-		<generation date="$Date: 2012-10-11 02:06:51 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8663 $"/>
+		<generation date="$Date: 2013-05-02 15:03:19 -0500 (Thu, 02 May 2013) $"/>
 		<language type="brx"/>
 	</identity>
 	<localeDisplayNames>
@@ -983,6 +987,56 @@
 	</delimiters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, MMMM d, y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>MMMM d, y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>MMM d, y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>M/d/yy GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="GGGGyMMMMEEEEdd">EEEE,dd MMMM GGGGy</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">M/d</dateFormatItem>
+						<dateFormatItem id="MEd">E, M/d</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">d-MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, MMM d</dateFormatItem>
+						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E, MMMM d</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">M/y</dateFormatItem>
+						<dateFormatItem id="yMEd">E, M/d/y</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, MMM d, y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1135,54 +1189,16 @@
 						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
 						<dateFormatItem id="MMMMEd">E, MMMM d</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
-						<dateFormatItem id="y">yyyy</dateFormatItem>
-						<dateFormatItem id="yM">M/yyyy</dateFormatItem>
-						<dateFormatItem id="yMEd">E, M/d/yyyy</dateFormatItem>
-						<dateFormatItem id="yMMM">MMM yyyy</dateFormatItem>
-						<dateFormatItem id="yMMMEd">E, MMM d, yyyy</dateFormatItem>
-						<dateFormatItem id="yMMMM">MMMM yyyy</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">M/y</dateFormatItem>
+						<dateFormatItem id="yMEd">E, M/d/y</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, MMM d, y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>जौथाय</displayName>
-					</field>
-					<field type="year">
-						<displayName>बोसोर</displayName>
-					</field>
-					<field type="month">
-						<displayName>दान</displayName>
-					</field>
-					<field type="week">
-						<displayName>सबथा/हबथा</displayName>
-					</field>
-					<field type="day">
-						<displayName>सान</displayName>
-						<relative type="-1">मैया</relative>
-						<relative type="0">दिनै</relative>
-						<relative type="1">गाबोन</relative>
-					</field>
-					<field type="weekday">
-						<displayName>सप्ताह के दिन</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>फुं/बेलासे</displayName>
-					</field>
-					<field type="hour">
-						<displayName>रिंगा</displayName>
-					</field>
-					<field type="minute">
-						<displayName>मिनिथ</displayName>
-					</field>
-					<field type="second">
-						<displayName>सेखेन्द</displayName>
-					</field>
-					<field type="zone">
-						<displayName>ओनसोल</displayName>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="indian">
 				<months>
@@ -1205,6 +1221,44 @@
 				</months>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>जौथाय</displayName>
+			</field>
+			<field type="year">
+				<displayName>बोसोर</displayName>
+			</field>
+			<field type="month">
+				<displayName>दान</displayName>
+			</field>
+			<field type="week">
+				<displayName>सबथा/हबथा</displayName>
+			</field>
+			<field type="day">
+				<displayName>सान</displayName>
+				<relative type="-1">मैया</relative>
+				<relative type="0">दिनै</relative>
+				<relative type="1">गाबोन</relative>
+			</field>
+			<field type="weekday">
+				<displayName>सप्ताह के दिन</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>फुं/बेलासे</displayName>
+			</field>
+			<field type="hour">
+				<displayName>रिंगा</displayName>
+			</field>
+			<field type="minute">
+				<displayName>मिनिथ</displayName>
+			</field>
+			<field type="second">
+				<displayName>सेखेन्द</displayName>
+			</field>
+			<field type="zone">
+				<displayName>ओनसोल</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<zone type="Etc/Unknown">
 				<exemplarCity>अज्ञात</exemplarCity>
@@ -1229,9 +1283,6 @@
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity>येरेवान</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>क्यूरासाओं</exemplarCity>
 			</zone>
 			<zone type="Africa/Luanda">
 				<exemplarCity>लुआँडा</exemplarCity>
@@ -1577,6 +1628,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>केप वॅर्दे</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>क्यूरासाओं</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity>क्रिस्मस आइलैंड</exemplarCity>
@@ -2386,25 +2440,11 @@
 					<daylight>पश्चीम अफ्रीका समर टाईम</daylight>
 				</long>
 			</metazone>
-			<metazone type="Aktyubinsk">
-				<long>
-					<generic>आक्त्युबीनस्क टाईम</generic>
-					<standard>आक्त्युबीनस्क स्टैंडर्ड टाईम</standard>
-					<daylight>आक्त्युबीनस्क समर टाईम</daylight>
-				</long>
-			</metazone>
 			<metazone type="Alaska">
 				<long>
 					<generic>अलास्का टाईम</generic>
 					<standard>अलास्का स्टैंडर्ड टाईम</standard>
 					<daylight>अलास्का डेलाईट टाईम</daylight>
-				</long>
-			</metazone>
-			<metazone type="Alaska_Hawaii">
-				<long>
-					<generic>अलास्का हवाई टाईम</generic>
-					<standard>अलास्का हवाई स्टैंडर्ड टाईम</standard>
-					<daylight>अलास्का हवाई डेलाईट टाईम</daylight>
 				</long>
 			</metazone>
 			<metazone type="Almaty">
@@ -2498,13 +2538,6 @@
 					<daylight>आरमीनी समर टाईम</daylight>
 				</long>
 			</metazone>
-			<metazone type="Ashkhabad">
-				<long>
-					<generic>अश्काबाद टाईम</generic>
-					<standard>अश्काबाद स्टैंडर्ड टाईम</standard>
-					<daylight>अश्काबाद समर टाईम</daylight>
-				</long>
-			</metazone>
 			<metazone type="Atlantic">
 				<long>
 					<generic>अटलांटीक टाईम</generic>
@@ -2554,25 +2587,11 @@
 					<daylight>आज़ोर समर टाईम</daylight>
 				</long>
 			</metazone>
-			<metazone type="Baku">
-				<long>
-					<generic>बाकु टाईम</generic>
-					<standard>बाकु स्टैंडर्ड टाईम</standard>
-					<daylight>बाकु समर टाईम</daylight>
-				</long>
-			</metazone>
 			<metazone type="Bangladesh">
 				<long>
 					<generic>बांगलादेश टाईम</generic>
 					<standard>बांगलादेश स्टैंडर्ड टाईम</standard>
 					<daylight>बांगलादेश समर टाईम</daylight>
-				</long>
-			</metazone>
-			<metazone type="Bering">
-				<long>
-					<generic>बेरींग टाईम</generic>
-					<standard>बेरींग स्टैंडर्ड टाईम</standard>
-					<daylight>बेरींग डेलाईट टाईम</daylight>
 				</long>
 			</metazone>
 			<metazone type="Bhutan">
@@ -2583,13 +2602,6 @@
 			<metazone type="Bolivia">
 				<long>
 					<standard>बोलिविया स्टैंडर्ड टाईम</standard>
-				</long>
-			</metazone>
-			<metazone type="Borneo">
-				<long>
-					<generic>बोर्नीओ टाईम</generic>
-					<standard>बोर्नीओ स्टैंडर्ड टाईम</standard>
-					<daylight>बोर्नीओ समर टाईम</daylight>
 				</long>
 			</metazone>
 			<metazone type="Brasilia">
@@ -2614,11 +2626,6 @@
 			<metazone type="Chamorro">
 				<long>
 					<standard>चामरो स्टैंडर्ड टाईम</standard>
-				</long>
-			</metazone>
-			<metazone type="Changbai">
-				<long>
-					<standard>चांगबाई स्टैंडर्ड टाईम</standard>
 				</long>
 			</metazone>
 			<metazone type="Chatham">
@@ -2680,11 +2687,6 @@
 					<daylight>क्युबा डेलाईट टाईम</daylight>
 				</long>
 			</metazone>
-			<metazone type="Dacca">
-				<long>
-					<standard>ढ़ाका स्टैंडर्ड टाईम</standard>
-				</long>
-			</metazone>
 			<metazone type="Davis">
 				<long>
 					<standard>डेवीस स्टैंडर्ड टाईम</standard>
@@ -2693,18 +2695,6 @@
 			<metazone type="DumontDUrville">
 				<long>
 					<standard>ड्युमों ड्युरवील स्टैंडर्ड टाईम</standard>
-				</long>
-			</metazone>
-			<metazone type="Dushanbe">
-				<long>
-					<generic>दुशांबे टाईम</generic>
-					<standard>दुशांबे स्टैंडर्ड टाईम</standard>
-					<daylight>दुशांबे समर टाईम</daylight>
-				</long>
-			</metazone>
-			<metazone type="Dutch_Guiana">
-				<long>
-					<standard>डच गियना स्टैंडर्ड टाईम</standard>
 				</long>
 			</metazone>
 			<metazone type="East_Timor">
@@ -2769,13 +2759,6 @@
 					<standard>दक्षिण फ्रान्सीसी स्टैंडर्ड टाईम</standard>
 				</long>
 			</metazone>
-			<metazone type="Frunze">
-				<long>
-					<generic>फ़्रुन्ज़े टाईम</generic>
-					<standard>फ़्रुन्ज़े स्टैंडर्ड टाईम</standard>
-					<daylight>फ़्रुन्ज़े समर टाईम</daylight>
-				</long>
-			</metazone>
 			<metazone type="Galapagos">
 				<long>
 					<standard>गालापागोस स्टैंडर्ड टाईम</standard>
@@ -2801,13 +2784,6 @@
 			<metazone type="GMT">
 				<long>
 					<standard>ग्रीनीच स्टैंडर्ड टाईम</standard>
-				</long>
-			</metazone>
-			<metazone type="Greenland_Central">
-				<long>
-					<generic>ग्रीनलैण्ड सैन्ट्रल टाईम</generic>
-					<standard>ग्रीनलैण्ड सैन्ट्रल स्टैंडर्ड टाईम</standard>
-					<daylight>ग्रीनलैण्ड सैन्ट्रल समर टाईम</daylight>
 				</long>
 			</metazone>
 			<metazone type="Greenland_Eastern">
@@ -2928,16 +2904,6 @@
 					<daylight>पेत्रोपावलोस्क कामचटका समर टाईम</daylight>
 				</long>
 			</metazone>
-			<metazone type="Karachi">
-				<long>
-					<standard>कराची स्टैंडर्ड टाईम</standard>
-				</long>
-			</metazone>
-			<metazone type="Kashgar">
-				<long>
-					<standard>कशगार स्टैंडर्ड टाईम</standard>
-				</long>
-			</metazone>
 			<metazone type="Kazakhstan_Eastern">
 				<long>
 					<standard>क़ज़ाख़स्तान टाईम</standard>
@@ -2946,13 +2912,6 @@
 			<metazone type="Kazakhstan_Western">
 				<long>
 					<standard>वेस्टर्न क़ज़ाख़स्तान टाईम</standard>
-				</long>
-			</metazone>
-			<metazone type="Kizilorda">
-				<long>
-					<generic>कीज़ीलोर्डा टाईम</generic>
-					<standard>कीज़ीलोर्डा स्टैंडर्ड टाईम</standard>
-					<daylight>कीज़ीलोर्डा डेलाईट टाईम</daylight>
 				</long>
 			</metazone>
 			<metazone type="Korea">
@@ -2974,18 +2933,6 @@
 					<daylight>क्रासनोयार्स्क समर टाईम</daylight>
 				</long>
 			</metazone>
-			<metazone type="Kuybyshev">
-				<long>
-					<generic>कुयबिशेव टाईम</generic>
-					<standard>कुयबिशेव स्टैंडर्ड टाईम</standard>
-					<daylight>कुयबिशेव समर टाईम</daylight>
-				</long>
-			</metazone>
-			<metazone type="Kwajalein">
-				<long>
-					<standard>क्वाजलेइन स्टैंडर्ड टाईम</standard>
-				</long>
-			</metazone>
 			<metazone type="Kyrgystan">
 				<long>
 					<standard>क़ीर्ग़स्तान स्टैंडर्ड टाईम</standard>
@@ -2999,11 +2946,6 @@
 			<metazone type="Line_Islands">
 				<long>
 					<standard>लाईन द्वीप स्टैंडर्ड टाईम</standard>
-				</long>
-			</metazone>
-			<metazone type="Long_Shu">
-				<long>
-					<standard>लॉंग शु स्टैंडर्ड टाईम</standard>
 				</long>
 			</metazone>
 			<metazone type="Lord_Howe">
@@ -3025,11 +2967,6 @@
 					<generic>मगदन टाईम</generic>
 					<standard>मगदन स्टैंडर्ड टाईम</standard>
 					<daylight>मगदन समर टाईम</daylight>
-				</long>
-			</metazone>
-			<metazone type="Malaya">
-				<long>
-					<standard>मलाय स्टैंडर्ड टाईम</standard>
 				</long>
 			</metazone>
 			<metazone type="Malaysia">
@@ -3241,28 +3178,16 @@
 					<daylight>समारा समर टाईम</daylight>
 				</long>
 			</metazone>
-			<metazone type="Samarkand">
-				<long>
-					<generic>समरकंद टाईम</generic>
-					<standard>समरकंद स्टैंडर्ड टाईम</standard>
-					<daylight>समरकंद समर टाईम</daylight>
-				</long>
-			</metazone>
 			<metazone type="Samoa">
 				<long>
+					<generic>समोआ टाईम</generic>
 					<standard>समोआ स्टैंडर्ड टाईम</standard>
+					<daylight>समोआ समर टाईम</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
 				<long>
 					<standard>सेशेल्स स्टैंडर्ड टाईम</standard>
-				</long>
-			</metazone>
-			<metazone type="Shevchenko">
-				<long>
-					<generic>शेवचेनको टाईम</generic>
-					<standard>शेवचेनको स्टैंडर्ड टाईम</standard>
-					<daylight>शेवचेनको समर टाईम</daylight>
 				</long>
 			</metazone>
 			<metazone type="Singapore">
@@ -3285,13 +3210,6 @@
 					<standard>सुरीनाम स्टैंडर्ड टाईम</standard>
 				</long>
 			</metazone>
-			<metazone type="Sverdlovsk">
-				<long>
-					<generic>स्वेर्दलोव्स्क टाईम</generic>
-					<standard>स्वेर्दलोव्स्क स्टैंडर्ड टाईम</standard>
-					<daylight>स्वेर्दलोव्स्क समर टाईम</daylight>
-				</long>
-			</metazone>
 			<metazone type="Syowa">
 				<long>
 					<standard>सीओवा स्टैंडर्ड टाईम</standard>
@@ -3305,20 +3223,6 @@
 			<metazone type="Tajikistan">
 				<long>
 					<standard>ताजीक़ीस्तान स्टैंडर्ड टाईम</standard>
-				</long>
-			</metazone>
-			<metazone type="Tashkent">
-				<long>
-					<generic>ताशकंद टाईम</generic>
-					<standard>ताशकंद स्टैंडर्ड टाईम</standard>
-					<daylight>ताशकंद समर टाईम</daylight>
-				</long>
-			</metazone>
-			<metazone type="Tbilisi">
-				<long>
-					<generic>तीबीलीसी टाईम</generic>
-					<standard>तीबीलीसी स्टैंडर्ड टाईम</standard>
-					<daylight>तीबीलीसी समर टाईम</daylight>
 				</long>
 			</metazone>
 			<metazone type="Tokelau">
@@ -3338,13 +3242,6 @@
 					<standard>ट्रुक स्टैंडर्ड टाईम</standard>
 				</long>
 			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<generic>तुर्की टाईम</generic>
-					<standard>तुर्की स्टैंडर्ड टाईम</standard>
-					<daylight>तुर्की समर टाईम</daylight>
-				</long>
-			</metazone>
 			<metazone type="Turkmenistan">
 				<long>
 					<generic>तुर्कमेनीस्तान टाईम</generic>
@@ -3357,23 +3254,11 @@
 					<standard>तुवालु स्टैंडर्ड टाईम</standard>
 				</long>
 			</metazone>
-			<metazone type="Uralsk">
-				<long>
-					<generic>ऊरालस्क टाईम</generic>
-					<standard>ऊरालस्क स्टैंडर्ड टाईम</standard>
-					<daylight>ऊरालस्क समर टाईम</daylight>
-				</long>
-			</metazone>
 			<metazone type="Uruguay">
 				<long>
 					<generic>ऊरुगुए टाईम</generic>
 					<standard>ऊरुगुए स्टैंडर्ड टाईम</standard>
 					<daylight>ऊरुगुए समर टाईम</daylight>
-				</long>
-			</metazone>
-			<metazone type="Urumqi">
-				<long>
-					<standard>ऊरुमकी स्टैंडर्ड टाईम</standard>
 				</long>
 			</metazone>
 			<metazone type="Uzbekistan">
@@ -3436,20 +3321,6 @@
 					<generic>येकातेरीनाबुर्ग टाईम</generic>
 					<standard>येकातेरीनाबुर्ग स्टैंडर्ड टाईम</standard>
 					<daylight>येकातेरीनाबुर्ग समर टाईम</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yerevan">
-				<long>
-					<generic>येरेवान टाईम</generic>
-					<standard>येरेवान स्टैंडर्ड टाईम</standard>
-					<daylight>येरेवान समर टाईम</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yukon">
-				<long>
-					<generic>युकॉन टाईम</generic>
-					<standard>युकॉन स्टैंडर्ड टाईम</standard>
-					<daylight>युकॉन डेलाईट टाईम</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -4287,6 +4158,9 @@
 				<displayName>दक्षिण अफ़्रीकी रॅण्ड</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>ज़ाम्बियाई क्वाचा (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>ज़ाम्बियाई क्वाचा</displayName>
 			</currency>
 			<currency type="ZRN">

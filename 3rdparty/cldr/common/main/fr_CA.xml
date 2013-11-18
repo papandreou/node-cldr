@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7847 $"/>
-		<generation date="$Date: 2012-10-15 11:02:42 -0700 (Mon, 15 Oct 2012) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="fr"/>
 		<territory type="CA"/>
 	</identity>
@@ -28,6 +32,8 @@
 			<territory type="GS" draft="contributed">Géorgie du Sud et les îles Sandwich du Sud</territory>
 			<territory type="MK" alt="variant" draft="contributed">Macédoine</territory>
 			<territory type="ST" draft="contributed">Sao Tomé-et-Principe</territory>
+			<territory type="US" alt="short">É.-U.</territory>
+			<territory type="XK">Kosovo</territory>
 		</territories>
 		<keys>
 			<key type="calendar" draft="contributed">Calendrier</key>
@@ -96,11 +102,110 @@
 	</delimiters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>G y-MM-dd</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>GGGGG yy-MM-dd</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="Md">M-d</dateFormatItem>
+						<dateFormatItem id="MEd">E M-d</dateFormatItem>
+						<dateFormatItem id="MMd">MM-d</dateFormatItem>
+						<dateFormatItem id="MMdd">MM-dd</dateFormatItem>
+						<dateFormatItem id="yyyyM">G y-MM</dateFormatItem>
+						<dateFormatItem id="yyyyMd">G y-MM-dd</dateFormatItem>
+						<dateFormatItem id="yyyyMEd">E G y-MM-dd</dateFormatItem>
+						<dateFormatItem id="yyyyMM">G y-MM</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">MM-dd – MM-dd</greatestDifference>
+							<greatestDifference id="M">MM-dd – MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E MM-dd – E MM-dd</greatestDifference>
+							<greatestDifference id="M">E MM-dd – E MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">G y–y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">G y-MM – y-MM</greatestDifference>
+							<greatestDifference id="y">G y-MM – y-MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">G y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="M">G y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="y">G y-MM-dd – y-MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">'du' E y-MM-dd 'au' E y-MM-dd G</greatestDifference>
+							<greatestDifference id="M">'du' E y-MM-dd 'au' E y-MM-dd G</greatestDifference>
+							<greatestDifference id="y">'du' E y-MM-dd 'au' E y-MM-dd G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="y">'de' MMM y 'à' MMM y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="M">'du' d MMM 'au' d MMM y G</greatestDifference>
+							<greatestDifference id="y">'du' d MMM y 'au' d MMM y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">'du' E d 'au' E d MMM y G</greatestDifference>
+							<greatestDifference id="M">'du' E d MMM 'au' E d MMM y G</greatestDifference>
+							<greatestDifference id="y">'du' E d MMM y 'au' E d MMM y G</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">MMMM – MMMM y G</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<dateFormats>
 					<dateFormatLength type="medium">
 						<dateFormat>
-							<pattern>yyyy-MM-dd</pattern>
+							<pattern>y-MM-dd</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
@@ -122,10 +227,10 @@
 						<dateFormatItem id="MEd">E M-d</dateFormatItem>
 						<dateFormatItem id="MMd">MM-d</dateFormatItem>
 						<dateFormatItem id="MMdd">MM-dd</dateFormatItem>
-						<dateFormatItem id="yM">yyyy-MM</dateFormatItem>
-						<dateFormatItem id="yMd">yyyy-MM-dd</dateFormatItem>
-						<dateFormatItem id="yMEd">E yyyy-MM-dd</dateFormatItem>
-						<dateFormatItem id="yyMM">yy-MM</dateFormatItem>
+						<dateFormatItem id="yM">y-MM</dateFormatItem>
+						<dateFormatItem id="yMd">y-MM-dd</dateFormatItem>
+						<dateFormatItem id="yMEd">E y-MM-dd</dateFormatItem>
+						<dateFormatItem id="yMM">y-MM</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatItem id="d">
@@ -171,18 +276,18 @@
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">yy-MM – yy-MM</greatestDifference>
-							<greatestDifference id="y">yy-MM – yy-MM</greatestDifference>
+							<greatestDifference id="M">y-MM – y-MM</greatestDifference>
+							<greatestDifference id="y">y-MM – y-MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">yy-MM-dd – yy-MM-dd</greatestDifference>
-							<greatestDifference id="M">yy-MM-dd – yy-MM-dd</greatestDifference>
-							<greatestDifference id="y">yy-MM-dd – yy-MM-dd</greatestDifference>
+							<greatestDifference id="d">y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="M">y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="y">y-MM-dd – y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">'du' E yy-MM-dd 'au' E yy-MM-dd</greatestDifference>
-							<greatestDifference id="M">'du' E yy-MM-dd 'au' E yy-MM-dd</greatestDifference>
-							<greatestDifference id="y">'du' E yy-MM-dd 'au' E yy-MM-dd</greatestDifference>
+							<greatestDifference id="d">'du' E y-MM-dd 'au' E y-MM-dd</greatestDifference>
+							<greatestDifference id="M">'du' E y-MM-dd 'au' E y-MM-dd</greatestDifference>
+							<greatestDifference id="y">'du' E y-MM-dd 'au' E y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="y">'de' MMM y 'à' MMM y</greatestDifference>
@@ -201,25 +306,25 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="year">
-						<relative type="-1" draft="contributed">L'année dernière</relative>
-						<relative type="0" draft="contributed">Cette année</relative>
-						<relative type="1" draft="contributed">L'année prochaine</relative>
-					</field>
-					<field type="month">
-						<relative type="-1" draft="contributed">Le mois dernier</relative>
-						<relative type="0" draft="contributed">Ce mois-ci</relative>
-						<relative type="1" draft="contributed">Le mois prochain</relative>
-					</field>
-					<field type="week">
-						<relative type="-1" draft="contributed">La semaine dernière</relative>
-						<relative type="0" draft="contributed">Cette semaine</relative>
-						<relative type="1" draft="contributed">La semaine prochaine</relative>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="year">
+				<relative type="-1" draft="contributed">L'année dernière</relative>
+				<relative type="0" draft="contributed">Cette année</relative>
+				<relative type="1" draft="contributed">L'année prochaine</relative>
+			</field>
+			<field type="month">
+				<relative type="-1" draft="contributed">Le mois dernier</relative>
+				<relative type="0" draft="contributed">Ce mois-ci</relative>
+				<relative type="1" draft="contributed">Le mois prochain</relative>
+			</field>
+			<field type="week">
+				<relative type="-1" draft="contributed">La semaine dernière</relative>
+				<relative type="0" draft="contributed">Cette semaine</relative>
+				<relative type="1" draft="contributed">La semaine prochaine</relative>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<regionFormat draft="contributed">Heure de {0}</regionFormat>
 			<fallbackRegionFormat draft="contributed">Heure de {1} ({0})</fallbackRegionFormat>

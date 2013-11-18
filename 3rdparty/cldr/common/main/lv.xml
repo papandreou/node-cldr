@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7839 $"/>
-		<generation date="$Date: 2012-10-11 16:37:12 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="lv"/>
 	</identity>
 	<localeDisplayNames>
@@ -897,6 +901,7 @@
 			<territory type="PN">Pitkērna</territory>
 			<territory type="PR">Puertoriko</territory>
 			<territory type="PS">Palestīna</territory>
+			<territory type="PS" alt="short">Palestīna</territory>
 			<territory type="PT">Portugāle</territory>
 			<territory type="PW">Palau</territory>
 			<territory type="PY">Paragvaja</territory>
@@ -961,6 +966,7 @@
 			<territory type="VU">Vanuatu</territory>
 			<territory type="WF">Volisa un Futuna</territory>
 			<territory type="WS">Samoa</territory>
+			<territory type="XK">Kosova</territory>
 			<territory type="YE">Jemena</territory>
 			<territory type="YT">Majota</territory>
 			<territory type="ZA">Dienvidāfrikas Republika</territory>
@@ -1136,6 +1142,177 @@
 	</delimiters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, G y. 'gada' d. MMMM</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>G y. 'gada' d. MMMM</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>G y. 'gada' d. MMM</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>dd.MM.yy GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">E, d.</dateFormatItem>
+						<dateFormatItem id="h">h a</dateFormatItem>
+						<dateFormatItem id="H">HH</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">dd.MM.</dateFormatItem>
+						<dateFormatItem id="MEd">E, dd.MM.</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">d. MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, d. MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd">d. MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd">E, d. MMMM</dateFormatItem>
+						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y. 'g'.</dateFormatItem>
+						<dateFormatItem id="yM">MM.y.</dateFormatItem>
+						<dateFormatItem id="yMd">d.M.y.</dateFormatItem>
+						<dateFormatItem id="yMEd">E, d.M.y.</dateFormatItem>
+						<dateFormatItem id="yMMM">y. 'g'. MMM</dateFormatItem>
+						<dateFormatItem id="yMMMd">y. 'g'. d. MMM</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, y. 'g'. d. MMM</dateFormatItem>
+						<dateFormatItem id="yMMMM">y. 'g'. MMMM</dateFormatItem>
+						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d.–d.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a – h a</greatestDifference>
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a – h a v</greatestDifference>
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">MM.–MM.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">dd.MM.–dd.MM.</greatestDifference>
+							<greatestDifference id="M">dd.MM–dd.MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">E, dd.MM – E, dd.MM</greatestDifference>
+							<greatestDifference id="M">E, dd.MM – E, dd.MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">LLL–LLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">d.–d. MMM</greatestDifference>
+							<greatestDifference id="M">d. MMM – d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">E, d. MMM – E, d. MMM</greatestDifference>
+							<greatestDifference id="M">E, d. MMM – E, d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y.–y.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">MM.y.–MM.y.</greatestDifference>
+							<greatestDifference id="y">MM.y.–MM.y.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">dd.MM.y.–dd.MM.y.</greatestDifference>
+							<greatestDifference id="M">dd.MM.y.–dd.MM.y.</greatestDifference>
+							<greatestDifference id="y">dd.MM.y.–dd.MM.y.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">E, dd.MM.y. – E, dd.MM.y.</greatestDifference>
+							<greatestDifference id="M">E, dd.MM.y. – E, dd.MM.y.</greatestDifference>
+							<greatestDifference id="y">E, dd.MM.y. – E, dd.MM.y.</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">y. 'gada' MMM–MMM</greatestDifference>
+							<greatestDifference id="y">y. 'gada' MMM – y. 'gada' MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">y. 'gada' d.–d. MMM</greatestDifference>
+							<greatestDifference id="M">y. 'gada' d. MMM – d. MMM</greatestDifference>
+							<greatestDifference id="y">y. 'gada' d. MMM – y. 'gada' d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">E, y. 'gada' d. MMM – E, y. 'gada' d. MMM</greatestDifference>
+							<greatestDifference id="M">E, y. 'gada' d. MMM – E, y. 'gada' d. MMM</greatestDifference>
+							<greatestDifference id="y">E, y. 'gada' d. MMM – E, y. 'gada' d. MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">MM.y.–MM.y.</greatestDifference>
+							<greatestDifference id="y">MM.y.–MM.y.</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1450,16 +1627,15 @@
 						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y. 'g'.</dateFormatItem>
-						<dateFormatItem id="yM">MM.yyyy.</dateFormatItem>
+						<dateFormatItem id="yM">MM.y.</dateFormatItem>
 						<dateFormatItem id="yMd">d.M.y.</dateFormatItem>
 						<dateFormatItem id="yMEd">E, d.M.y.</dateFormatItem>
-						<dateFormatItem id="yMMM">yyyy. 'g'. MMM</dateFormatItem>
+						<dateFormatItem id="yMMM">y. 'g'. MMM</dateFormatItem>
 						<dateFormatItem id="yMMMd">y. 'g'. d. MMM</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E, y. 'g'. d. MMM</dateFormatItem>
 						<dateFormatItem id="yMMMM">y. 'g'. MMMM</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
-						<dateFormatItem id="yyyy">y. 'g'.</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
@@ -1524,18 +1700,18 @@
 							<greatestDifference id="y">y.–y.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">MM.yyyy.–MM.yyyy.</greatestDifference>
-							<greatestDifference id="y">MM.yyyy.–MM.yyyy.</greatestDifference>
+							<greatestDifference id="M">MM.y.–MM.y.</greatestDifference>
+							<greatestDifference id="y">MM.y.–MM.y.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">dd.MM.yyyy.–dd.MM.yyyy.</greatestDifference>
-							<greatestDifference id="M">dd.MM.yy.–dd.MM.yy.</greatestDifference>
-							<greatestDifference id="y">dd.MM.yy.–dd.MM.yy.</greatestDifference>
+							<greatestDifference id="d">dd.MM.y.–dd.MM.y.</greatestDifference>
+							<greatestDifference id="M">dd.MM.y.–dd.MM.y.</greatestDifference>
+							<greatestDifference id="y">dd.MM.y.–dd.MM.y.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, dd.MM.yy. – E, dd.MM.yy.</greatestDifference>
-							<greatestDifference id="M">E, dd.MM.yy. – E, dd.MM.yy.</greatestDifference>
-							<greatestDifference id="y">E, dd.MM.yy. – E, dd.MM.yy.</greatestDifference>
+							<greatestDifference id="d">E, dd.MM.y. – E, dd.MM.y.</greatestDifference>
+							<greatestDifference id="M">E, dd.MM.y. – E, dd.MM.y.</greatestDifference>
+							<greatestDifference id="y">E, dd.MM.y. – E, dd.MM.y.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">y. 'gada' MMM–MMM</greatestDifference>
@@ -1552,60 +1728,11 @@
 							<greatestDifference id="y">E, y. 'gada' d. MMM – E, y. 'gada' d. MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
-							<greatestDifference id="M">MM.yyyy.–MM.yyyy.</greatestDifference>
-							<greatestDifference id="y">MM.yyyy.–MM.yyyy.</greatestDifference>
+							<greatestDifference id="M">MM.y.–MM.y.</greatestDifference>
+							<greatestDifference id="y">MM.y.–MM.y.</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>Ēra</displayName>
-					</field>
-					<field type="year">
-						<displayName>Gads</displayName>
-						<relative type="-1">Pagājušajā gadā</relative>
-						<relative type="0">Šogad</relative>
-						<relative type="1">Nākamgad</relative>
-					</field>
-					<field type="month">
-						<displayName>Mēnesis</displayName>
-						<relative type="-1">Pagājušajā mēnesī</relative>
-						<relative type="0">Šomēnes</relative>
-						<relative type="1">Nākammēnes</relative>
-					</field>
-					<field type="week">
-						<displayName>Nedēļa</displayName>
-						<relative type="-1">Pagājušajā nedēļā</relative>
-						<relative type="0">Šonedēļ</relative>
-						<relative type="1">Nākamnedēļ</relative>
-					</field>
-					<field type="day">
-						<displayName>Diena</displayName>
-						<relative type="-2">aizvakar</relative>
-						<relative type="-1">vakar</relative>
-						<relative type="0">šodien</relative>
-						<relative type="1">rīt</relative>
-						<relative type="2">parīt</relative>
-					</field>
-					<field type="weekday">
-						<displayName>Nedēļas diena</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>Pirmspusd./pēcpusd.</displayName>
-					</field>
-					<field type="hour">
-						<displayName>Stundas</displayName>
-					</field>
-					<field type="minute">
-						<displayName>Minūtes</displayName>
-					</field>
-					<field type="second">
-						<displayName>Sekundes</displayName>
-					</field>
-					<field type="zone">
-						<displayName>Laika josla</displayName>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="hebrew">
 				<months>
@@ -1650,6 +1777,55 @@
 				</months>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>Ēra</displayName>
+			</field>
+			<field type="year">
+				<displayName>Gads</displayName>
+				<relative type="-1">Pagājušajā gadā</relative>
+				<relative type="0">Šogad</relative>
+				<relative type="1">Nākamgad</relative>
+			</field>
+			<field type="month">
+				<displayName>Mēnesis</displayName>
+				<relative type="-1">Pagājušajā mēnesī</relative>
+				<relative type="0">Šomēnes</relative>
+				<relative type="1">Nākammēnes</relative>
+			</field>
+			<field type="week">
+				<displayName>Nedēļa</displayName>
+				<relative type="-1">Pagājušajā nedēļā</relative>
+				<relative type="0">Šonedēļ</relative>
+				<relative type="1">Nākamnedēļ</relative>
+			</field>
+			<field type="day">
+				<displayName>Diena</displayName>
+				<relative type="-2">aizvakar</relative>
+				<relative type="-1">vakar</relative>
+				<relative type="0">šodien</relative>
+				<relative type="1">rīt</relative>
+				<relative type="2">parīt</relative>
+			</field>
+			<field type="weekday">
+				<displayName>Nedēļas diena</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>Pirmspusd./pēcpusd.</displayName>
+			</field>
+			<field type="hour">
+				<displayName>Stundas</displayName>
+			</field>
+			<field type="minute">
+				<displayName>Minūtes</displayName>
+			</field>
+			<field type="second">
+				<displayName>Sekundes</displayName>
+			</field>
+			<field type="zone">
+				<displayName>Laika josla</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
@@ -1657,12 +1833,6 @@
 			<regionFormat>Laika josla: {0}</regionFormat>
 			<fallbackFormat>{0} ({1})</fallbackFormat>
 			<fallbackRegionFormat>Laika josla: {1} ({0})</fallbackRegionFormat>
-			<zone type="America/Lower_Princes">
-				<exemplarCity>Louerprinseskvotera</exemplarCity>
-			</zone>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity>Bjula</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>nezināma pilsēta</exemplarCity>
 			</zone>
@@ -1686,9 +1856,6 @@
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity>Erevāna</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>Kirasao</exemplarCity>
 			</zone>
 			<zone type="Antarctica/Rothera">
 				<exemplarCity>Rotera</exemplarCity>
@@ -2019,6 +2186,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>Kaboverde</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>Kirasao</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity>Ziemsvētku Sala</exemplarCity>
@@ -2554,6 +2724,9 @@
 			<zone type="America/El_Salvador">
 				<exemplarCity>Salvadora</exemplarCity>
 			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity>Louerprinseskvotera</exemplarCity>
+			</zone>
 			<zone type="Asia/Damascus">
 				<exemplarCity>Damaska</exemplarCity>
 			</zone>
@@ -2640,6 +2813,9 @@
 			</zone>
 			<zone type="America/Denver">
 				<exemplarCity>Denvera</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity>Bjula</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity>Ņūsalema, Ziemeļdakota</exemplarCity>
@@ -2829,13 +3005,6 @@
 					<daylight>Armēnijas vasaras laiks</daylight>
 				</long>
 			</metazone>
-			<metazone type="Ashkhabad">
-				<long>
-					<generic>Ašhabadas laiks</generic>
-					<standard>Ašhabadas ziemas laiks</standard>
-					<daylight>Ašhabadas vasaras laiks</daylight>
-				</long>
-			</metazone>
 			<metazone type="Atlantic">
 				<long>
 					<generic>Atlantijas laiks</generic>
@@ -2885,13 +3054,6 @@
 					<daylight>Azoru salu vasaras laiks</daylight>
 				</long>
 			</metazone>
-			<metazone type="Baku">
-				<long>
-					<generic>Baku laiks</generic>
-					<standard>Baku ziemas laiks</standard>
-					<daylight>Baku vasaras laiks</daylight>
-				</long>
-			</metazone>
 			<metazone type="Bangladesh">
 				<long>
 					<generic>Bangladešas laiks</generic>
@@ -2907,13 +3069,6 @@
 			<metazone type="Bolivia">
 				<long>
 					<standard>Bolīvijas laiks</standard>
-				</long>
-			</metazone>
-			<metazone type="Borneo">
-				<long>
-					<generic>Borneo laiks</generic>
-					<standard>Borneo ziemas laiks</standard>
-					<daylight>Borneo vasaras laiks</daylight>
 				</long>
 			</metazone>
 			<metazone type="Brasilia">
@@ -3009,13 +3164,6 @@
 					<standard>Dimondirvilas laiks</standard>
 				</long>
 			</metazone>
-			<metazone type="Dushanbe">
-				<long>
-					<generic>Dušanbe laiks</generic>
-					<standard>Dušanbe ziemas laiks</standard>
-					<daylight>Dušanbe vasaras laiks</daylight>
-				</long>
-			</metazone>
 			<metazone type="East_Timor">
 				<long>
 					<standard>Austrumtimoras laiks</standard>
@@ -3091,13 +3239,6 @@
 			<metazone type="French_Southern">
 				<long>
 					<standard>Francijas Dienidjūru un Antarktikas teritorijas laiks</standard>
-				</long>
-			</metazone>
-			<metazone type="Frunze">
-				<long>
-					<generic>Frunzes laiks</generic>
-					<standard>Frunzes ziemas laiks</standard>
-					<daylight>Frunzes vasaras laiks</daylight>
 				</long>
 			</metazone>
 			<metazone type="Galapagos">
@@ -3264,13 +3405,6 @@
 					<generic>Krasnojarskas laiks</generic>
 					<standard>Krasnojarskas ziemas laiks</standard>
 					<daylight>Krasnojarskas vasaras laiks</daylight>
-				</long>
-			</metazone>
-			<metazone type="Kuybyshev">
-				<long>
-					<generic>Kuibiševas laiks</generic>
-					<standard>Kuibiševas ziemas laiks</standard>
-					<daylight>Kuibiševas vasaras laiks</daylight>
 				</long>
 			</metazone>
 			<metazone type="Kyrgystan">
@@ -3499,16 +3633,11 @@
 					<daylight>Samaras vasaras laiks</daylight>
 				</long>
 			</metazone>
-			<metazone type="Samarkand">
-				<long>
-					<generic>Samarkandas laiks</generic>
-					<standard>Samarkandas ziemas laiks</standard>
-					<daylight>Samarkandas vasaras laiks</daylight>
-				</long>
-			</metazone>
 			<metazone type="Samoa">
 				<long>
-					<standard>Samoa standarta laiks</standard>
+					<generic>Samoa laiks</generic>
+					<standard>Samoa ziemas laiks</standard>
+					<daylight>Samoa vasaras laiks</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
@@ -3536,13 +3665,6 @@
 					<standard>Surinamas laiks</standard>
 				</long>
 			</metazone>
-			<metazone type="Sverdlovsk">
-				<long>
-					<generic>Sverdlovskas laiks</generic>
-					<standard>Sverdlovskas ziemas laiks</standard>
-					<daylight>Sverdlovskas vasaras laiks</daylight>
-				</long>
-			</metazone>
 			<metazone type="Syowa">
 				<long>
 					<standard>Šovas laiks</standard>
@@ -3565,20 +3687,6 @@
 					<standard>Tadžikistānas laiks</standard>
 				</long>
 			</metazone>
-			<metazone type="Tashkent">
-				<long>
-					<generic>Taškentas laiks</generic>
-					<standard>Taškentas ziemas laiks</standard>
-					<daylight>Taškentas vasaras laiks</daylight>
-				</long>
-			</metazone>
-			<metazone type="Tbilisi">
-				<long>
-					<generic>Tbilisi laiks</generic>
-					<standard>Tbilisi ziemas laiks</standard>
-					<daylight>Tbilisi vasaras laiks</daylight>
-				</long>
-			</metazone>
 			<metazone type="Tokelau">
 				<long>
 					<standard>Tokelau laiks</standard>
@@ -3594,13 +3702,6 @@
 			<metazone type="Truk">
 				<long>
 					<standard>Čūkas laiks</standard>
-				</long>
-			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<generic>Turcijas laiks</generic>
-					<standard>Turcijas ziemas laiks</standard>
-					<daylight>Turcijas vasaras laiks</daylight>
 				</long>
 			</metazone>
 			<metazone type="Turkmenistan">
@@ -3682,20 +3783,6 @@
 					<generic>Jekaterinburgas laiks</generic>
 					<standard>Jekaterinburgas ziemas laiks</standard>
 					<daylight>Jekaterinburgas vasaras laiks</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yerevan">
-				<long>
-					<generic>Erevānas laiks</generic>
-					<standard>Erevānas ziemas laiks</standard>
-					<daylight>Erevānas vasaras laiks</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yukon">
-				<long>
-					<generic>Jukonas laiks</generic>
-					<standard>Jukonas ziemas laiks</standard>
-					<daylight>Jukonas vasaras laiks</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -4955,6 +5042,12 @@
 				<displayName count="other">Dienvidāfrikas randi</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>Zambijas kvača (1968-2012)</displayName>
+				<displayName count="zero">Zambijas kvačas (1968-2012)</displayName>
+				<displayName count="one">Zambijas kvača (1968-2012)</displayName>
+				<displayName count="other">Zambijas kvačas (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>Zambijas kvača</displayName>
 				<displayName count="zero">Zambijas kvačas</displayName>
 				<displayName count="one">Zambijas kvača</displayName>

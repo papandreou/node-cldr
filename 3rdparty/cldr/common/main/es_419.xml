@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-	<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7847 $"/>
-		<generation date="$Date: 2012-10-15 11:02:42 -0700 (Mon, 15 Oct 2012) $"/>
+		<version number="$Revision: 8245 $"/>
+		<generation date="$Date: 2013-02-24 22:19:26 -0600 (Sun, 24 Feb 2013) $"/>
 		<language type="es"/>
 		<territory type="419"/>
 	</identity>
@@ -74,6 +78,13 @@
 	</localeDisplayNames>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateTimeFormats>
+					<availableFormats>
+						<dateFormatItem id="yMEd" draft="contributed">E d/M/y G</dateFormatItem>
+					</availableFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<days>
 					<dayContext type="stand-alone">
@@ -103,25 +114,25 @@
 						<dateFormatItem id="yMEd" draft="contributed">E d/M/y</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="year">
-						<relative type="-1" draft="contributed">Año pasado</relative>
-						<relative type="0" draft="contributed">Este año</relative>
-						<relative type="1" draft="contributed">Año próximo</relative>
-					</field>
-					<field type="month">
-						<relative type="-1" draft="contributed">El mes pasado</relative>
-						<relative type="0" draft="contributed">Este mes</relative>
-						<relative type="1" draft="contributed">Mes próximo</relative>
-					</field>
-					<field type="week">
-						<relative type="-1" draft="contributed">Semana pasada</relative>
-						<relative type="0" draft="contributed">Esta semana</relative>
-						<relative type="1" draft="contributed">Próxima semana</relative>
-					</field>
-				</fields>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="year">
+				<relative type="-1" draft="contributed">Año pasado</relative>
+				<relative type="0" draft="contributed">Este año</relative>
+				<relative type="1" draft="contributed">Año próximo</relative>
+			</field>
+			<field type="month">
+				<relative type="-1" draft="contributed">El mes pasado</relative>
+				<relative type="0" draft="contributed">Este mes</relative>
+				<relative type="1" draft="contributed">Mes próximo</relative>
+			</field>
+			<field type="week">
+				<relative type="-1" draft="contributed">Semana pasada</relative>
+				<relative type="0" draft="contributed">Esta semana</relative>
+				<relative type="1" draft="contributed">Próxima semana</relative>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<zone type="America/Coral_Harbour">
 				<exemplarCity draft="contributed">Atikokan</exemplarCity>
@@ -236,3 +247,4 @@
 		</unit>
 	</units>
 </ldml>
+

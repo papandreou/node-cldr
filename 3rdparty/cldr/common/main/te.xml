@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7839 $"/>
-		<generation date="$Date: 2012-10-11 16:37:12 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8671 $"/>
+		<generation date="$Date: 2013-05-03 14:17:48 -0500 (Fri, 03 May 2013) $"/>
 		<language type="te"/>
 	</identity>
 	<localeDisplayNames>
@@ -892,6 +896,7 @@
 			<territory type="PN">పిట్కెర్న్</territory>
 			<territory type="PR">పోటోరికో</territory>
 			<territory type="PS">పాలిస్తినియాన్ ప్రాంతం</territory>
+			<territory type="PS" alt="short">పాలస్తీనా</territory>
 			<territory type="PT">పోర్చుగల్</territory>
 			<territory type="PW">పలావు</territory>
 			<territory type="PY">పెరగువే</territory>
@@ -956,6 +961,7 @@
 			<territory type="VU">వనౌటు</territory>
 			<territory type="WF">వాలిస్ మరియు ఫ్యుత్యునా</territory>
 			<territory type="WS">సమోవా</territory>
+			<territory type="XK">కొసోవో</territory>
 			<territory type="YE">యెమెన్</territory>
 			<territory type="YT">మాయొట్టి</territory>
 			<territory type="ZA">దక్షిణ ఆఫ్రికా రాజ్యం</territory>
@@ -1119,6 +1125,177 @@
 	</delimiters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE d MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>d MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>d MMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>dd-MM-yy GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="Ed">E d</dateFormatItem>
+						<dateFormatItem id="h">h a</dateFormatItem>
+						<dateFormatItem id="H">HH</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">d/M</dateFormatItem>
+						<dateFormatItem id="MEd">E, d/M</dateFormatItem>
+						<dateFormatItem id="MMdd">dd-MM</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">E, d MMM</dateFormatItem>
+						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">M/y</dateFormatItem>
+						<dateFormatItem id="yMd">d/M/y</dateFormatItem>
+						<dateFormatItem id="yMEd">E, d/M/y</dateFormatItem>
+						<dateFormatItem id="yMM">MM-y</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMd">d, MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMEd">E, d, MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
+						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a – h a</greatestDifference>
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a – h a v</greatestDifference>
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M–M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d" draft="provisional">dd - dd - MM</greatestDifference>
+							<greatestDifference id="M" draft="provisional">dd - dd - MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d" draft="provisional">E, dd-MM - E, dd-MM</greatestDifference>
+							<greatestDifference id="M" draft="provisional">E, dd-MM - E, dd-MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM–MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d" draft="provisional">d - d MMM</greatestDifference>
+							<greatestDifference id="M" draft="provisional">d MMM - d MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d" draft="provisional">E, d MMM - E, d MMM</greatestDifference>
+							<greatestDifference id="M" draft="provisional">E, d MMM - E, d MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y–y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">M/y – M/y</greatestDifference>
+							<greatestDifference id="y">M/y – M/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d" draft="provisional">d/M/y - d/M/y</greatestDifference>
+							<greatestDifference id="M" draft="provisional">d/M/y - d/M/y</greatestDifference>
+							<greatestDifference id="y" draft="provisional">d/M/y - d/M/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d" draft="provisional">E, d/M/y - E, d/M/y</greatestDifference>
+							<greatestDifference id="M" draft="provisional">E, d/M/y - E, d/M/y</greatestDifference>
+							<greatestDifference id="y" draft="provisional">E, d/M/y - E, d/M/y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM–MMM y</greatestDifference>
+							<greatestDifference id="y">MMM y – MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d" draft="provisional">d-d MMM, y</greatestDifference>
+							<greatestDifference id="M" draft="provisional">d MMM - d MMM, y</greatestDifference>
+							<greatestDifference id="y" draft="provisional">d MMM, y - d MMM, y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d" draft="provisional">E, d MMM - E, d MMM, y</greatestDifference>
+							<greatestDifference id="M" draft="provisional">E, d MMM - E, d MMM, y</greatestDifference>
+							<greatestDifference id="y" draft="provisional">E, d MMM, y - E, d MMM, y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
+							<greatestDifference id="y">MMMM y – MMMM y</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1449,13 +1626,13 @@
 						<dateFormatItem id="yM">M/y</dateFormatItem>
 						<dateFormatItem id="yMd">d/M/y</dateFormatItem>
 						<dateFormatItem id="yMEd">E, d/M/y</dateFormatItem>
+						<dateFormatItem id="yMM">MM-y</dateFormatItem>
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMd">d, MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E, d, MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
-						<dateFormatItem id="yyyyMM">MM-yyyy</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
@@ -1520,18 +1697,18 @@
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">M/yy – M/yy</greatestDifference>
-							<greatestDifference id="y">M/yy – M/yy</greatestDifference>
+							<greatestDifference id="M">M/y – M/y</greatestDifference>
+							<greatestDifference id="y">M/y – M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="provisional">d/M/yy - d/M/yy</greatestDifference>
-							<greatestDifference id="M" draft="provisional">d/M/yy - d/M/yy</greatestDifference>
-							<greatestDifference id="y" draft="provisional">d/M/yy - d/M/yy</greatestDifference>
+							<greatestDifference id="d" draft="provisional">d/M/y - d/M/y</greatestDifference>
+							<greatestDifference id="M" draft="provisional">d/M/y - d/M/y</greatestDifference>
+							<greatestDifference id="y" draft="provisional">d/M/y - d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="provisional">E, d/M/yy - E, d/M/yy</greatestDifference>
-							<greatestDifference id="M" draft="provisional">E, d/M/yy - E, d/M/yy</greatestDifference>
-							<greatestDifference id="y" draft="provisional">E, d/M/yy - E, d/M/yy</greatestDifference>
+							<greatestDifference id="d" draft="provisional">E, d/M/y - E, d/M/y</greatestDifference>
+							<greatestDifference id="M" draft="provisional">E, d/M/y - E, d/M/y</greatestDifference>
+							<greatestDifference id="y" draft="provisional">E, d/M/y - E, d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM–MMM y</greatestDifference>
@@ -1553,55 +1730,6 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>యుగం, శకము</displayName>
-					</field>
-					<field type="year">
-						<displayName>సంవత్సరం</displayName>
-						<relative type="-1">మునుపటి సంవత్సరం</relative>
-						<relative type="0">ఈ సంవత్సరం</relative>
-						<relative type="1">తర్వాతి సంవత్సరం</relative>
-					</field>
-					<field type="month">
-						<displayName>నెల</displayName>
-						<relative type="-1">గత నెల</relative>
-						<relative type="0">ఈ నెల</relative>
-						<relative type="1">తర్వాతి నెల</relative>
-					</field>
-					<field type="week">
-						<displayName>వారము</displayName>
-						<relative type="-1">గత వారం</relative>
-						<relative type="0">ఈ వారం</relative>
-						<relative type="1">తదుపరి వారం</relative>
-					</field>
-					<field type="day">
-						<displayName>దినం</displayName>
-						<relative type="-2">మొన్న</relative>
-						<relative type="-1">నిన్న</relative>
-						<relative type="0">ఈ రోజు</relative>
-						<relative type="1">రేపు</relative>
-						<relative type="2">ఎల్లుండి</relative>
-					</field>
-					<field type="weekday">
-						<displayName>వారంలో రోజు</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>AM/PM</displayName>
-					</field>
-					<field type="hour">
-						<displayName>గంట</displayName>
-					</field>
-					<field type="minute">
-						<displayName>నిమిషము</displayName>
-					</field>
-					<field type="second">
-						<displayName>క్షణం</displayName>
-					</field>
-					<field type="zone">
-						<displayName>మండలం</displayName>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="indian">
 				<months>
@@ -1629,6 +1757,55 @@
 				</eras>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>యుగం, శకము</displayName>
+			</field>
+			<field type="year">
+				<displayName>సంవత్సరం</displayName>
+				<relative type="-1">మునుపటి సంవత్సరం</relative>
+				<relative type="0">ఈ సంవత్సరం</relative>
+				<relative type="1">తర్వాతి సంవత్సరం</relative>
+			</field>
+			<field type="month">
+				<displayName>నెల</displayName>
+				<relative type="-1">గత నెల</relative>
+				<relative type="0">ఈ నెల</relative>
+				<relative type="1">తర్వాతి నెల</relative>
+			</field>
+			<field type="week">
+				<displayName>వారము</displayName>
+				<relative type="-1">గత వారం</relative>
+				<relative type="0">ఈ వారం</relative>
+				<relative type="1">తదుపరి వారం</relative>
+			</field>
+			<field type="day">
+				<displayName>దినం</displayName>
+				<relative type="-2">మొన్న</relative>
+				<relative type="-1">నిన్న</relative>
+				<relative type="0">ఈ రోజు</relative>
+				<relative type="1">రేపు</relative>
+				<relative type="2">ఎల్లుండి</relative>
+			</field>
+			<field type="weekday">
+				<displayName>వారంలో రోజు</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>AM/PM</displayName>
+			</field>
+			<field type="hour">
+				<displayName>గంట</displayName>
+			</field>
+			<field type="minute">
+				<displayName>నిమిషము</displayName>
+			</field>
+			<field type="second">
+				<displayName>క్షణం</displayName>
+			</field>
+			<field type="zone">
+				<displayName>మండలం</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
 			<gmtFormat>GMT{0}</gmtFormat>
@@ -1636,12 +1813,6 @@
 			<regionFormat>{0} సమయం</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<fallbackRegionFormat>{1} సమయం ({0})</fallbackRegionFormat>
-			<zone type="America/Lower_Princes">
-				<exemplarCity>లోయర్ ప్రిన్సెస్ క్వార్టర్</exemplarCity>
-			</zone>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity>బ్యులా, ఉత్తర డకోట</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>తెలియని నగరం</exemplarCity>
 			</zone>
@@ -1665,9 +1836,6 @@
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity>యెరెవన్</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity>కురాకవో</exemplarCity>
 			</zone>
 			<zone type="Africa/Luanda">
 				<exemplarCity>లువాండా</exemplarCity>
@@ -2031,6 +2199,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity>కేప్ వెర్డె</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity>కురాకవో</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity>క్రిస్మస్</exemplarCity>
@@ -2638,6 +2809,9 @@
 			<zone type="America/El_Salvador">
 				<exemplarCity>ఎల్ సాల్వడోర్</exemplarCity>
 			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity>లోయర్ ప్రిన్సెస్ క్వార్టర్</exemplarCity>
+			</zone>
 			<zone type="Asia/Damascus">
 				<exemplarCity>డమాస్కస్</exemplarCity>
 			</zone>
@@ -2748,6 +2922,9 @@
 			</zone>
 			<zone type="America/Denver">
 				<exemplarCity>డెన్వెర్</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity>బ్యులా, ఉత్తర డకోట</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity>న్యూ సలేమ్, దక్షిణ దకోట</exemplarCity>
@@ -2882,25 +3059,11 @@
 					<daylight>పశ్చిమ ఆఫ్రికా వేసవి సమయం</daylight>
 				</long>
 			</metazone>
-			<metazone type="Aktyubinsk">
-				<long>
-					<generic>అక్టియుబినిస్క్ సమయం</generic>
-					<standard>అక్టియుబినిస్క్ ప్రామాణిక సమయం</standard>
-					<daylight>అక్టియుబినిస్క్ వేసవి సమయం</daylight>
-				</long>
-			</metazone>
 			<metazone type="Alaska">
 				<long>
 					<generic>అలాస్కా సమయం</generic>
 					<standard>అలాస్కా ప్రామాణిక సమయం</standard>
 					<daylight>అలాస్కా పగటి సమయం</daylight>
-				</long>
-			</metazone>
-			<metazone type="Alaska_Hawaii">
-				<long>
-					<generic>అలాస్కా-హవాయి సమయం</generic>
-					<standard>అలాస్కా-హవాయి ప్రామాణిక సమయం</standard>
-					<daylight>అలాస్కా-హవాయి పగటి సమయం</daylight>
 				</long>
 			</metazone>
 			<metazone type="Almaty">
@@ -2994,13 +3157,6 @@
 					<daylight>ఆర్మేనియా వేసవి సమయం</daylight>
 				</long>
 			</metazone>
-			<metazone type="Ashkhabad">
-				<long>
-					<generic>అష్ఖాబాద్ సమయం</generic>
-					<standard>అష్ఖాబాద్ ప్రామాణిక సమయం</standard>
-					<daylight>అష్ఖాబాద్ వేసవి సమయం</daylight>
-				</long>
-			</metazone>
 			<metazone type="Atlantic">
 				<long>
 					<generic>అట్లాంటిక్ సమయం</generic>
@@ -3050,25 +3206,11 @@
 					<daylight>అజోర్స్ వేసవి సమయం</daylight>
 				</long>
 			</metazone>
-			<metazone type="Baku">
-				<long>
-					<generic>బాకు సమయం</generic>
-					<standard>బాకు ప్రామాణిక సమయం</standard>
-					<daylight>బాకు వేసవి సమయం</daylight>
-				</long>
-			</metazone>
 			<metazone type="Bangladesh">
 				<long>
 					<generic>బంగ్లాదేశ్ సమయం</generic>
 					<standard>బంగ్లాదేశ్ ప్రామాణిక సమయం</standard>
 					<daylight>బంగ్లాదేశ్ వేసవి సమయం</daylight>
-				</long>
-			</metazone>
-			<metazone type="Bering">
-				<long>
-					<generic>బెరింగ్ సమయం</generic>
-					<standard>బెరింగ్ ప్రామాణిక సమయం</standard>
-					<daylight>బెరింగ్ పగటి సమయం</daylight>
 				</long>
 			</metazone>
 			<metazone type="Bhutan">
@@ -3079,13 +3221,6 @@
 			<metazone type="Bolivia">
 				<long>
 					<standard>బొలీవియా సమయం</standard>
-				</long>
-			</metazone>
-			<metazone type="Borneo">
-				<long>
-					<generic>బొర్నియో సమయం</generic>
-					<standard>బొర్నియో ప్రామాణిక సమయం</standard>
-					<daylight>బొర్నియో వేసవి సమయం</daylight>
 				</long>
 			</metazone>
 			<metazone type="Brasilia">
@@ -3110,11 +3245,6 @@
 			<metazone type="Chamorro">
 				<long>
 					<standard>చామర్రో ప్రామాణిక సమయం</standard>
-				</long>
-			</metazone>
-			<metazone type="Changbai">
-				<long>
-					<standard>ఛాంగ్బాయి సమయం</standard>
 				</long>
 			</metazone>
 			<metazone type="Chatham">
@@ -3176,11 +3306,6 @@
 					<daylight>క్యూబా పగటి వెలుతురు సమయం</daylight>
 				</long>
 			</metazone>
-			<metazone type="Dacca">
-				<long>
-					<standard>డక్కా సమయం</standard>
-				</long>
-			</metazone>
 			<metazone type="Davis">
 				<long>
 					<standard>డేవిస్ సమయం</standard>
@@ -3189,18 +3314,6 @@
 			<metazone type="DumontDUrville">
 				<long>
 					<standard>డ్యూమాంట్-డి’ఉర్విల్లే సమయం</standard>
-				</long>
-			</metazone>
-			<metazone type="Dushanbe">
-				<long>
-					<generic>డుషాన్బె సమయం</generic>
-					<standard>డుషాన్బె ప్రామాణిక సమయం</standard>
-					<daylight>డుషాన్బె వేసవి సమయం</daylight>
-				</long>
-			</metazone>
-			<metazone type="Dutch_Guiana">
-				<long>
-					<standard>డచ్ గియానా సమయం</standard>
 				</long>
 			</metazone>
 			<metazone type="East_Timor">
@@ -3265,13 +3378,6 @@
 					<standard>ఫ్రెంచ్ దక్షిణ మరియు అంటార్కిటిక్ సమయం</standard>
 				</long>
 			</metazone>
-			<metazone type="Frunze">
-				<long>
-					<generic>ఫ్రున్జ్ సమయం</generic>
-					<standard>ఫ్రున్జ్ ప్రామాణిక సమయం</standard>
-					<daylight>ఫ్రున్జ్ వేసవి సమయం</daylight>
-				</long>
-			</metazone>
 			<metazone type="Galapagos">
 				<long>
 					<standard>గాలాపాగోస్ సమయం</standard>
@@ -3297,13 +3403,6 @@
 			<metazone type="GMT">
 				<long>
 					<standard>గ్రీన్‌విచ్ సగటు సమయం</standard>
-				</long>
-			</metazone>
-			<metazone type="Greenland_Central">
-				<long>
-					<generic>మధ్యమ గ్రీన్ ల్యాండ్ సమయం</generic>
-					<standard>మధ్యమ గ్రీన్ ల్యాండ్ ప్రామాణిక సమయం</standard>
-					<daylight>మధ్యమ గ్రీన్ ల్యాండ్ వేసని సమయం</daylight>
 				</long>
 			</metazone>
 			<metazone type="Greenland_Eastern">
@@ -3424,16 +3523,6 @@
 					<daylight>పెట్రోపావ్లోవ్స్క్-కామ్ఛాట్స్కి వేసవి సమయం</daylight>
 				</long>
 			</metazone>
-			<metazone type="Karachi">
-				<long>
-					<standard>కరాచి సమయం</standard>
-				</long>
-			</metazone>
-			<metazone type="Kashgar">
-				<long>
-					<standard>కాష్గార్ సమయం</standard>
-				</long>
-			</metazone>
 			<metazone type="Kazakhstan_Eastern">
 				<long>
 					<standard>తూర్పు కజకి‌స్థాన్ సమయం</standard>
@@ -3463,18 +3552,6 @@
 					<daylight>క్రాస్నోయార్స్క్ వేసవి సమయం</daylight>
 				</long>
 			</metazone>
-			<metazone type="Kuybyshev">
-				<long>
-					<generic>కుయిబైషెవ్ సమయం</generic>
-					<standard>కుయిబైషెవ్ ప్రామాణిక సమయం</standard>
-					<daylight>కుయిబైషెవ్ వేసవి సమయం</daylight>
-				</long>
-			</metazone>
-			<metazone type="Kwajalein">
-				<long>
-					<standard>క్వాజలేన్ సమయం</standard>
-				</long>
-			</metazone>
 			<metazone type="Kyrgystan">
 				<long>
 					<standard>కిర్గిస్థాన్ సమయం</standard>
@@ -3488,11 +3565,6 @@
 			<metazone type="Line_Islands">
 				<long>
 					<standard>లైన్ దీవుల సమయం</standard>
-				</long>
-			</metazone>
-			<metazone type="Long_Shu">
-				<long>
-					<standard>లాంగ్-షూ సమయం</standard>
 				</long>
 			</metazone>
 			<metazone type="Lord_Howe">
@@ -3519,11 +3591,6 @@
 					<generic>మగడాన్ సమయం</generic>
 					<standard>మగడాన్ ప్రామాణిక సమయం</standard>
 					<daylight>మగాడాన్ వేసవి సమయం</daylight>
-				</long>
-			</metazone>
-			<metazone type="Malaya">
-				<long>
-					<standard>మలయా సమయం</standard>
 				</long>
 			</metazone>
 			<metazone type="Malaysia">
@@ -3730,33 +3797,21 @@
 			</metazone>
 			<metazone type="Samara">
 				<long>
-					<generic>సమార సమయం</generic>
+					<generic>సమారా సమయం</generic>
 					<standard>సమారా ప్రామాణిక సమయం</standard>
 					<daylight>సమారా వేసవి సమయం</daylight>
 				</long>
 			</metazone>
-			<metazone type="Samarkand">
-				<long>
-					<generic>సమర్ఖండ్ సమయం</generic>
-					<standard>సమర్ఖండ్ ప్రామాణిక సమయం</standard>
-					<daylight>సమర్ఖండ్ వేసవి సమయం</daylight>
-				</long>
-			</metazone>
 			<metazone type="Samoa">
 				<long>
+					<generic>సమోవా సమయం</generic>
 					<standard>సమోవా ప్రామాణిక సమయం</standard>
+					<daylight>సమోవా వేసవి సమయం</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
 				<long>
 					<standard>సీషెల్స్ సమయం</standard>
-				</long>
-			</metazone>
-			<metazone type="Shevchenko">
-				<long>
-					<generic>షెవ్ఛెంకో సమయం</generic>
-					<standard>షెవ్ఛెంకో ప్రామాణిక సమయం</standard>
-					<daylight>షెవ్ఛెంకో వేసవి సమయం</daylight>
 				</long>
 			</metazone>
 			<metazone type="Singapore">
@@ -3777,13 +3832,6 @@
 			<metazone type="Suriname">
 				<long>
 					<standard>సూరినామ్ సమయం</standard>
-				</long>
-			</metazone>
-			<metazone type="Sverdlovsk">
-				<long>
-					<generic>స్వెర్డ్లోవ్స్క్ సమయం</generic>
-					<standard>స్వెర్డ్లోవ్స్క్ ప్రామాణిక సమయం</standard>
-					<daylight>స్వెర్డ్లోవ్స్క్ వేసవి సమయం</daylight>
 				</long>
 			</metazone>
 			<metazone type="Syowa">
@@ -3808,20 +3856,6 @@
 					<standard>తజికిస్థాన్ సమయం</standard>
 				</long>
 			</metazone>
-			<metazone type="Tashkent">
-				<long>
-					<generic>టాష్కెంట్ సమయం</generic>
-					<standard>టాష్కెంట్ ప్రామాణిక సమయం</standard>
-					<daylight>టాష్కెంట్ వేసవి సమయం</daylight>
-				</long>
-			</metazone>
-			<metazone type="Tbilisi">
-				<long>
-					<generic>టిబ్లీసీ సమయం</generic>
-					<standard>టిబ్లీసీ ప్రామాణిక సమయం</standard>
-					<daylight>టిబ్లీసీ వేసవి సమయం</daylight>
-				</long>
-			</metazone>
 			<metazone type="Tokelau">
 				<long>
 					<standard>టోకెలావ్ సమయం</standard>
@@ -3839,13 +3873,6 @@
 					<standard>చక్ సమయం</standard>
 				</long>
 			</metazone>
-			<metazone type="Turkey">
-				<long>
-					<generic>టర్కీ సమయం</generic>
-					<standard>టర్కీ ప్రామాణిక సమయం</standard>
-					<daylight>టర్కీ వేసవి సమయం</daylight>
-				</long>
-			</metazone>
 			<metazone type="Turkmenistan">
 				<long>
 					<generic>తుర్క్మెనిస్థాన్ సమయం</generic>
@@ -3858,23 +3885,11 @@
 					<standard>తువాలు సమయం</standard>
 				</long>
 			</metazone>
-			<metazone type="Uralsk">
-				<long>
-					<generic>ఉరాల్స్క్ సమయం</generic>
-					<standard>ఉరాల్స్క్ ప్రామాణిక సమయం</standard>
-					<daylight>ఉరాల్స్క్ వేసవి సమయం</daylight>
-				</long>
-			</metazone>
 			<metazone type="Uruguay">
 				<long>
 					<generic>ఉరుగ్వే సమయం</generic>
 					<standard>ఉరుగ్వే ప్రామాణిక సమయం</standard>
 					<daylight>ఉరుగ్వే వేసవి సమయం</daylight>
-				</long>
-			</metazone>
-			<metazone type="Urumqi">
-				<long>
-					<standard>ఉరుమ్కి సమయం</standard>
 				</long>
 			</metazone>
 			<metazone type="Uzbekistan">
@@ -3937,13 +3952,6 @@
 					<generic>యెకటెరింగ్‌బర్గ్ సమయం</generic>
 					<standard>ఎకటేరిన్బర్గ్ ప్రామాణిక సమయం</standard>
 					<daylight>ఏకాటెరిన్బర్గ్ వేసవి సమయం</daylight>
-				</long>
-			</metazone>
-			<metazone type="Yerevan">
-				<long>
-					<generic>ఏరెవాన్ సమయం</generic>
-					<standard>ఏరెవాన్ ప్రామాణిక సమయం</standard>
-					<daylight>ఏరెవాన్ వేసవి సమయం</daylight>
 				</long>
 			</metazone>
 		</timeZoneNames>
@@ -4545,6 +4553,9 @@
 				<displayName>దక్షిణ ఆఫ్రికా ర్యాండ్</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>జాంబియన్ క్వాచా (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>జాంబియన్ క్వాచా</displayName>
 			</currency>
 		</currencies>

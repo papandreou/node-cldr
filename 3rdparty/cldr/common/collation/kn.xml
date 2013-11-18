@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 4981 $" />
-		<generation date="$Date: 2010-06-11 12:35:21 -0700 (Fri, 11 Jun 2010) $" />
+		<version number="$Revision: 8242 $" />
+		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $" />
 		<language type="kn" />
 	</identity>
 	<collations validSubLocales="kn_IN">
 		<collation type="standard"
 			references="Kittel: Kannada-English Dictionary ISBN:8120600495">
-			<settings normalization="on" />
+			<settings normalization="on" reorder="Knda Deva Beng Guru Gujr Orya Taml Telu Mlym Sinh"/>
 			<rules>
 				<reset>ಔ</reset>
 				<p>ಂ</p>
@@ -20,7 +25,7 @@
 		</collation>
 		<collation type="traditional"
 			references="Kittel: Kannada-English Dictionary ISBN:8120600495">
-			<settings normalization="on" />
+			<settings normalization="on" reorder="Knda Deva Beng Guru Gujr Orya Taml Telu Mlym Sinh"/>
 			<rules>
 
 				<reset>ಔ</reset>

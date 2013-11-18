@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
 	<identity>
-		<version number="$Revision: 7839 $"/>
-		<generation date="$Date: 2012-10-11 16:37:12 -0700 (Thu, 11 Oct 2012) $"/>
+		<version number="$Revision: 8663 $"/>
+		<generation date="$Date: 2013-05-02 15:03:19 -0500 (Thu, 02 May 2013) $"/>
 		<language type="bg"/>
 	</identity>
 	<localeDisplayNames>
@@ -879,6 +883,7 @@
 			<territory type="PN">Питкайрн</territory>
 			<territory type="PR">Пуерто Рико</territory>
 			<territory type="PS">Палестински територии</territory>
+			<territory type="PS" alt="short">Палестина</territory>
 			<territory type="PT">Португалия</territory>
 			<territory type="PW">Палау</territory>
 			<territory type="PY">Парагвай</territory>
@@ -1113,7 +1118,7 @@
 	</localeDisplayNames>
 	<characters>
 		<exemplarCharacters>[а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ь ю я]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[{а\u0300} ѐ ё ѝ {о\u0300} {у\u0300} ъ ы ѣ э {ю\u0300} {я\u0300} ѫ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[{а\u0300} ѐ ё ѝ {о\u0300} {у\u0300} {ъ\u0300} ы ѣ э {ю\u0300} {я\u0300} ѫ]</exemplarCharacters>
 		<exemplarCharacters type="index" draft="contributed">[А Б В Г Д Е Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ю Я]</exemplarCharacters>
 		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
@@ -1128,6 +1133,179 @@
 	</delimiters>
 	<dates>
 		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>dd MMMM y G, EEEE</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>dd MMMM y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>dd.MM.y G</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>dd.MM.yy GGGGG</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1}, {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1}, {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1}, {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern draft="contributed">{1}, {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d" draft="contributed">d</dateFormatItem>
+						<dateFormatItem id="Ed" draft="contributed">E, d</dateFormatItem>
+						<dateFormatItem id="h" draft="contributed">h</dateFormatItem>
+						<dateFormatItem id="H">HH</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="M" draft="contributed">L</dateFormatItem>
+						<dateFormatItem id="Md" draft="contributed">d.M</dateFormatItem>
+						<dateFormatItem id="MEd" draft="contributed">E, d.MM</dateFormatItem>
+						<dateFormatItem id="MMdd">dd.MM</dateFormatItem>
+						<dateFormatItem id="MMM" draft="contributed">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd" draft="contributed">d MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">d MMM, E</dateFormatItem>
+						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMdd">dd MMMM</dateFormatItem>
+						<dateFormatItem id="mmss">mm:ss</dateFormatItem>
+						<dateFormatItem id="ms" draft="contributed">mm:ss</dateFormatItem>
+						<dateFormatItem id="y" draft="contributed">y 'г'.</dateFormatItem>
+						<dateFormatItem id="yM" draft="contributed">M.y 'г'.</dateFormatItem>
+						<dateFormatItem id="yMd">dd.MM.y</dateFormatItem>
+						<dateFormatItem id="yMEd" draft="contributed">E, d.MM.y 'г'.</dateFormatItem>
+						<dateFormatItem id="yMM">MM.y</dateFormatItem>
+						<dateFormatItem id="yMMM" draft="contributed">MMM y 'г'.</dateFormatItem>
+						<dateFormatItem id="yMMMd">dd MMM y</dateFormatItem>
+						<dateFormatItem id="yMMMEd" draft="contributed">E, d MMM y 'г'.</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
+						<dateFormatItem id="yQQQ" draft="contributed">QQQ y 'г'.</dateFormatItem>
+						<dateFormatItem id="yQQQQ" draft="contributed">QQQQ y 'г'.</dateFormatItem>
+					</availableFormats>
+					<intervalFormats>
+						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d-d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a" draft="contributed">H – H</greatestDifference>
+							<greatestDifference id="h">h-h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH-HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a" draft="contributed">H:mm – H:mm</greatestDifference>
+							<greatestDifference id="h">h:mm-h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm-h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm-HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a" draft="contributed">H:mm – H:mm v</greatestDifference>
+							<greatestDifference id="h">h:mm-h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm-h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm-HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm-HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a" draft="contributed">H – H v</greatestDifference>
+							<greatestDifference id="h">h-h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH-HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">M-M</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">dd.MM - dd.MM</greatestDifference>
+							<greatestDifference id="M">dd.MM - dd.MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">dd.MM, E - dd.MM, E</greatestDifference>
+							<greatestDifference id="M">dd.MM, E - dd.MM, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">MMM-MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">dd-dd MMM</greatestDifference>
+							<greatestDifference id="M">dd MMM - dd MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">d MMM, E - d MMM, E</greatestDifference>
+							<greatestDifference id="M">d MMM, E - d MMM, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y-y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">MM.y - MM.y</greatestDifference>
+							<greatestDifference id="y">MM.y - MM.y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">dd.MM.y - dd.MM.y</greatestDifference>
+							<greatestDifference id="M">dd.MM.y - dd.MM.y</greatestDifference>
+							<greatestDifference id="y">dd.MM.y - dd.MM.y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">dd.MM.y, E - dd.MM.y, E</greatestDifference>
+							<greatestDifference id="M">dd.MM.y, E - dd.MM.y, E</greatestDifference>
+							<greatestDifference id="y">dd.MM.y, E - dd.MM.y, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">MMM-MMM y</greatestDifference>
+							<greatestDifference id="y">MMM y - MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">dd-dd MMM y</greatestDifference>
+							<greatestDifference id="M">dd MMM - dd MMM y</greatestDifference>
+							<greatestDifference id="y">dd MMM y - dd MMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">d MMM y, E - d MMM y, E</greatestDifference>
+							<greatestDifference id="M">d MMM y, E - d MMM y, E</greatestDifference>
+							<greatestDifference id="y">d MMM y, E - d MMM y, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M" draft="contributed">MMMM–MMMM y 'г'.</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMMM y 'г'. – MMMM y 'г'.</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
 			<calendar type="gregorian">
 				<months>
 					<monthContext type="format">
@@ -1298,7 +1476,7 @@
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
-							<pattern>dd.MM.yyyy</pattern>
+							<pattern>dd.MM.y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
@@ -1372,19 +1550,15 @@
 						<dateFormatItem id="ms" draft="contributed">mm:ss</dateFormatItem>
 						<dateFormatItem id="y" draft="contributed">y 'г'.</dateFormatItem>
 						<dateFormatItem id="yM" draft="contributed">M.y 'г'.</dateFormatItem>
-						<dateFormatItem id="yMd">dd.MM.yy</dateFormatItem>
+						<dateFormatItem id="yMd">dd.MM.y</dateFormatItem>
 						<dateFormatItem id="yMEd" draft="contributed">E, d.MM.y 'г'.</dateFormatItem>
+						<dateFormatItem id="yMM">MM.y</dateFormatItem>
 						<dateFormatItem id="yMMM" draft="contributed">MMM y 'г'.</dateFormatItem>
 						<dateFormatItem id="yMMMd">dd MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMEd" draft="contributed">E, d MMM y 'г'.</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ" draft="contributed">QQQ y 'г'.</dateFormatItem>
 						<dateFormatItem id="yQQQQ" draft="contributed">QQQQ y 'г'.</dateFormatItem>
-						<dateFormatItem id="yyMM">MM.yy</dateFormatItem>
-						<dateFormatItem id="yyQQQ">QQQ yy</dateFormatItem>
-						<dateFormatItem id="yyyy">y</dateFormatItem>
-						<dateFormatItem id="yyyyMM">MM.yyyy</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">MMMM y</dateFormatItem>
-						<dateFormatItem id="yyyyQQQQ">QQQQ y 'г'.</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
@@ -1449,18 +1623,18 @@
 							<greatestDifference id="y">y-y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M">MM.yy - MM.yy</greatestDifference>
-							<greatestDifference id="y">MM.yy - MM.yy</greatestDifference>
+							<greatestDifference id="M">MM.y - MM.y</greatestDifference>
+							<greatestDifference id="y">MM.y - MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d">dd.MM.yy - dd.MM.yy</greatestDifference>
-							<greatestDifference id="M">dd.MM.yy - dd.MM.yy</greatestDifference>
-							<greatestDifference id="y">dd.MM.yy - dd.MM.yy</greatestDifference>
+							<greatestDifference id="d">dd.MM.y - dd.MM.y</greatestDifference>
+							<greatestDifference id="M">dd.MM.y - dd.MM.y</greatestDifference>
+							<greatestDifference id="y">dd.MM.y - dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">dd.MM.yy, E - dd.MM.yy, E</greatestDifference>
-							<greatestDifference id="M">dd.MM.yy, E - dd.MM.yy, E</greatestDifference>
-							<greatestDifference id="y">dd.MM.yy, E - dd.MM.yy, E</greatestDifference>
+							<greatestDifference id="d">dd.MM.y, E - dd.MM.y, E</greatestDifference>
+							<greatestDifference id="M">dd.MM.y, E - dd.MM.y, E</greatestDifference>
+							<greatestDifference id="y">dd.MM.y, E - dd.MM.y, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM-MMM y</greatestDifference>
@@ -1482,55 +1656,6 @@
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
-				<fields>
-					<field type="era">
-						<displayName>ера</displayName>
-					</field>
-					<field type="year">
-						<displayName>година</displayName>
-						<relative type="-1" draft="contributed">Миналата година</relative>
-						<relative type="0" draft="contributed">Тази година</relative>
-						<relative type="1" draft="contributed">Следващата година</relative>
-					</field>
-					<field type="month">
-						<displayName>месец</displayName>
-						<relative type="-1" draft="contributed">Миналия месец</relative>
-						<relative type="0" draft="contributed">Този месец</relative>
-						<relative type="1" draft="contributed">Следващия месец</relative>
-					</field>
-					<field type="week">
-						<displayName>седмица</displayName>
-						<relative type="-1" draft="contributed">Миналата седмица</relative>
-						<relative type="0" draft="contributed">Тази седмица</relative>
-						<relative type="1" draft="contributed">Следващата седмица</relative>
-					</field>
-					<field type="day">
-						<displayName>Ден</displayName>
-						<relative type="-2">Онзи ден</relative>
-						<relative type="-1">Вчера</relative>
-						<relative type="0">Днес</relative>
-						<relative type="1">Утре</relative>
-						<relative type="2">Вдругиден</relative>
-					</field>
-					<field type="weekday">
-						<displayName>Ден от седмицата</displayName>
-					</field>
-					<field type="dayperiod">
-						<displayName>ден</displayName>
-					</field>
-					<field type="hour">
-						<displayName>час</displayName>
-					</field>
-					<field type="minute">
-						<displayName>минута</displayName>
-					</field>
-					<field type="second">
-						<displayName>секунда</displayName>
-					</field>
-					<field type="zone">
-						<displayName>зона</displayName>
-					</field>
-				</fields>
 			</calendar>
 			<calendar type="hebrew">
 				<months>
@@ -1595,6 +1720,55 @@
 				</months>
 			</calendar>
 		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>ера</displayName>
+			</field>
+			<field type="year">
+				<displayName>година</displayName>
+				<relative type="-1" draft="contributed">Миналата година</relative>
+				<relative type="0" draft="contributed">Тази година</relative>
+				<relative type="1" draft="contributed">Следващата година</relative>
+			</field>
+			<field type="month">
+				<displayName>месец</displayName>
+				<relative type="-1" draft="contributed">Миналия месец</relative>
+				<relative type="0" draft="contributed">Този месец</relative>
+				<relative type="1" draft="contributed">Следващия месец</relative>
+			</field>
+			<field type="week">
+				<displayName>седмица</displayName>
+				<relative type="-1" draft="contributed">Миналата седмица</relative>
+				<relative type="0" draft="contributed">Тази седмица</relative>
+				<relative type="1" draft="contributed">Следващата седмица</relative>
+			</field>
+			<field type="day">
+				<displayName>Ден</displayName>
+				<relative type="-2">Онзи ден</relative>
+				<relative type="-1">Вчера</relative>
+				<relative type="0">Днес</relative>
+				<relative type="1">Утре</relative>
+				<relative type="2">Вдругиден</relative>
+			</field>
+			<field type="weekday">
+				<displayName>Ден от седмицата</displayName>
+			</field>
+			<field type="dayperiod">
+				<displayName>ден</displayName>
+			</field>
+			<field type="hour">
+				<displayName>час</displayName>
+			</field>
+			<field type="minute">
+				<displayName>минута</displayName>
+			</field>
+			<field type="second">
+				<displayName>секунда</displayName>
+			</field>
+			<field type="zone">
+				<displayName>зона</displayName>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<hourFormat>+HHmm;-HHmm</hourFormat>
 			<gmtFormat>Гриинуич{0}</gmtFormat>
@@ -1602,12 +1776,6 @@
 			<regionFormat draft="contributed">{0} време</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<fallbackRegionFormat draft="contributed">{1} време ({0})</fallbackRegionFormat>
-			<zone type="America/Lower_Princes">
-				<exemplarCity draft="contributed">Лоуър принсес куортър</exemplarCity>
-			</zone>
-			<zone type="America/North_Dakota/Beulah">
-				<exemplarCity draft="contributed">Бюла, Северна Дакота</exemplarCity>
-			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Неизвестен</exemplarCity>
 			</zone>
@@ -1631,9 +1799,6 @@
 			</zone>
 			<zone type="Asia/Yerevan">
 				<exemplarCity draft="contributed">Ереван</exemplarCity>
-			</zone>
-			<zone type="America/Curacao">
-				<exemplarCity draft="contributed">Кюрасао</exemplarCity>
 			</zone>
 			<zone type="Africa/Luanda">
 				<exemplarCity draft="contributed">Луанда</exemplarCity>
@@ -1997,6 +2162,9 @@
 			</zone>
 			<zone type="Atlantic/Cape_Verde">
 				<exemplarCity draft="contributed">Кабо Верде</exemplarCity>
+			</zone>
+			<zone type="America/Curacao">
+				<exemplarCity draft="contributed">Кюрасао</exemplarCity>
 			</zone>
 			<zone type="Indian/Christmas">
 				<exemplarCity draft="contributed">Рождество</exemplarCity>
@@ -2604,6 +2772,9 @@
 			<zone type="America/El_Salvador">
 				<exemplarCity draft="contributed">Салвадор</exemplarCity>
 			</zone>
+			<zone type="America/Lower_Princes">
+				<exemplarCity draft="contributed">Лоуър принсес куортър</exemplarCity>
+			</zone>
 			<zone type="Asia/Damascus">
 				<exemplarCity draft="contributed">Дамаск</exemplarCity>
 			</zone>
@@ -2714,6 +2885,9 @@
 			</zone>
 			<zone type="America/Denver">
 				<exemplarCity>Денвър</exemplarCity>
+			</zone>
+			<zone type="America/North_Dakota/Beulah">
+				<exemplarCity draft="contributed">Бюла, Северна Дакота</exemplarCity>
 			</zone>
 			<zone type="America/North_Dakota/New_Salem">
 				<exemplarCity>Ню Салем, Северна Дакота</exemplarCity>
@@ -3533,7 +3707,9 @@
 			</metazone>
 			<metazone type="Samoa">
 				<long>
+					<generic draft="contributed">Самоа време</generic>
 					<standard draft="contributed">Самоа – стандартно време</standard>
+					<daylight draft="contributed">Самоа – лятно часово време</daylight>
 				</long>
 			</metazone>
 			<metazone type="Seychelles">
@@ -3558,7 +3734,7 @@
 			</metazone>
 			<metazone type="Suriname">
 				<long>
-					<standard draft="contributed">Суринамско време</standard>
+					<standard>Суринамско време</standard>
 				</long>
 			</metazone>
 			<metazone type="Syowa">
@@ -4992,6 +5168,11 @@
 				<displayName count="other">южноафрикански ранда</displayName>
 			</currency>
 			<currency type="ZMK">
+				<displayName>Замбийска квача (1968-2012)</displayName>
+				<displayName count="one">замбийска квача (1968-2012)</displayName>
+				<displayName count="other">замбийски квачи (1968-2012)</displayName>
+			</currency>
+			<currency type="ZMW">
 				<displayName>Замбийска квача</displayName>
 				<displayName count="one">замбийска квача</displayName>
 				<displayName count="other">замбийски квачи</displayName>

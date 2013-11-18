@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
     <identity>
-        <version number="$Revision: 7411 $"/>
-        <generation date="$Date: 2012-07-13 19:27:43 -0700 (Fri, 13 Jul 2012) $"/>
+        <version number="$Revision: 8242 $"/>
+        <generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
         <language type="km"/>
     </identity>
     <rbnf>
@@ -16,7 +21,7 @@
             </ruleset>
             <ruleset type="spellout-numbering">
                 <rbnfrule value="-x">ដក​→→;</rbnfrule>
-                <rbnfrule value="x.x">←←​ចុច​→%%spellout-fraction→;</rbnfrule>
+                <rbnfrule value="x.x">←←​ចុច​→→→;</rbnfrule>
                 <rbnfrule value="0">សូន្យ;</rbnfrule>
                 <rbnfrule value="1">មួយ;</rbnfrule>
                 <rbnfrule value="2">ពីរ;</rbnfrule>
@@ -43,22 +48,6 @@
                 <rbnfrule value="1000000">←←​លាន[​→→];</rbnfrule>
                 <rbnfrule value="10000000000">←←​ពាន់​កោដិ[​→→];</rbnfrule>
                 <rbnfrule value="1000000000000">=#,##0=;</rbnfrule>
-            </ruleset>
-            <ruleset type="spellout-fraction" access="private">
-                <rbnfrule value="10">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="100">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="1000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="10000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="100000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="1000000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="10000000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="100000000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="1000000000">←%%spellout-fraction-digits←←;</rbnfrule>
-                <rbnfrule value="10000000000">←0←;</rbnfrule>
-            </ruleset>
-            <ruleset type="spellout-fraction-digits" access="private">
-                <rbnfrule value="0">=%spellout-numbering=;</rbnfrule>
-                <rbnfrule value="10">←←​→→;</rbnfrule>
             </ruleset>
             <ruleset type="spellout-cardinal">
                 <rbnfrule value="0">=%spellout-numbering=;</rbnfrule>

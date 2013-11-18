@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE supplementalData SYSTEM "../../common/dtd/ldmlSupplemental.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 
 <supplementalData>
-	<version number="$Revision: 7825 $"/>
-	<generation date="$Date: 2012-10-10 14:45:31 -0700 (Wed, 10 Oct 2012) $"/>
+	<version number="$Revision: 8274 $"/>
+	<generation date="$Date: 2013-03-06 11:15:16 -0600 (Wed, 06 Mar 2013) $"/>
 
 	<windowsZones>
-		<mapTimezones otherVersion="7dc0101" typeVersion="2012f">
+		<mapTimezones otherVersion="7dd0000" typeVersion="2013a">
 
 			<!-- (UTC-12:00) International Date Line West -->
 			<mapZone other="Dateline Standard Time" territory="001" type="Etc/GMT+12"/>
@@ -169,7 +174,7 @@
 
 			<!-- (UTC-03:00) Brasilia -->
 			<mapZone other="E. South America Standard Time" territory="001" type="America/Sao_Paulo"/>
-			<mapZone other="E. South America Standard Time" territory="BR" type="America/Sao_Paulo"/>
+			<mapZone other="E. South America Standard Time" territory="BR" type="America/Sao_Paulo America/Araguaina"/>
 
 			<!-- (UTC-03:00) Buenos Aires -->
 			<mapZone other="Argentina Standard Time" territory="001" type="America/Buenos_Aires"/>
@@ -178,7 +183,7 @@
 			<!-- (UTC-03:00) Cayenne, Fortaleza -->
 			<mapZone other="SA Eastern Standard Time" territory="001" type="America/Cayenne"/>
 			<mapZone other="SA Eastern Standard Time" territory="AQ" type="Antarctica/Rothera"/>
-			<mapZone other="SA Eastern Standard Time" territory="BR" type="America/Fortaleza America/Araguaina America/Belem America/Maceio America/Recife America/Santarem"/>
+			<mapZone other="SA Eastern Standard Time" territory="BR" type="America/Fortaleza America/Belem America/Maceio America/Recife America/Santarem"/>
 			<mapZone other="SA Eastern Standard Time" territory="FK" type="Atlantic/Stanley"/>
 			<mapZone other="SA Eastern Standard Time" territory="GF" type="America/Cayenne"/>
 			<mapZone other="SA Eastern Standard Time" territory="SR" type="America/Paramaribo"/>
@@ -259,11 +264,12 @@
 			<mapZone other="W. Europe Standard Time" territory="AD" type="Europe/Andorra"/>
 			<mapZone other="W. Europe Standard Time" territory="AT" type="Europe/Vienna"/>
 			<mapZone other="W. Europe Standard Time" territory="CH" type="Europe/Zurich"/>
-			<mapZone other="W. Europe Standard Time" territory="DE" type="Europe/Berlin"/>
+			<mapZone other="W. Europe Standard Time" territory="DE" type="Europe/Berlin Europe/Busingen"/>
 			<mapZone other="W. Europe Standard Time" territory="GI" type="Europe/Gibraltar"/>
 			<mapZone other="W. Europe Standard Time" territory="IT" type="Europe/Rome"/>
 			<mapZone other="W. Europe Standard Time" territory="LI" type="Europe/Vaduz"/>
 			<mapZone other="W. Europe Standard Time" territory="LU" type="Europe/Luxembourg"/>
+			<mapZone other="W. Europe Standard Time" territory="LY" type="Africa/Tripoli"/>
 			<mapZone other="W. Europe Standard Time" territory="MC" type="Europe/Monaco"/>
 			<mapZone other="W. Europe Standard Time" territory="MT" type="Europe/Malta"/>
 			<mapZone other="W. Europe Standard Time" territory="NL" type="Europe/Amsterdam"/>
@@ -318,10 +324,6 @@
 			<mapZone other="Namibia Standard Time" territory="001" type="Africa/Windhoek"/>
 			<mapZone other="Namibia Standard Time" territory="NA" type="Africa/Windhoek"/>
 
-			<!-- (UTC+02:00) Amman -->
-			<mapZone other="Jordan Standard Time" territory="001" type="Asia/Amman"/>
-			<mapZone other="Jordan Standard Time" territory="JO" type="Asia/Amman"/>
-
 			<!-- (UTC+02:00) Athens, Bucharest -->
 			<mapZone other="GTB Standard Time" territory="001" type="Europe/Bucharest"/>
 			<mapZone other="GTB Standard Time" territory="GR" type="Europe/Athens"/>
@@ -351,7 +353,6 @@
 			<mapZone other="South Africa Standard Time" territory="BW" type="Africa/Gaborone"/>
 			<mapZone other="South Africa Standard Time" territory="CD" type="Africa/Lubumbashi"/>
 			<mapZone other="South Africa Standard Time" territory="LS" type="Africa/Maseru"/>
-			<mapZone other="South Africa Standard Time" territory="LY" type="Africa/Tripoli"/>
 			<mapZone other="South Africa Standard Time" territory="MW" type="Africa/Blantyre"/>
 			<mapZone other="South Africa Standard Time" territory="MZ" type="Africa/Maputo"/>
 			<mapZone other="South Africa Standard Time" territory="RW" type="Africa/Kigali"/>
@@ -378,6 +379,10 @@
 			<!-- (UTC+02:00) Jerusalem -->
 			<mapZone other="Israel Standard Time" territory="001" type="Asia/Jerusalem"/>
 			<mapZone other="Israel Standard Time" territory="IL" type="Asia/Jerusalem"/>
+
+			<!-- (UTC+03:00) Amman -->
+			<mapZone other="Jordan Standard Time" territory="001" type="Asia/Amman"/>
+			<mapZone other="Jordan Standard Time" territory="JO" type="Asia/Amman"/>
 
 			<!-- (UTC+03:00) Baghdad -->
 			<mapZone other="Arabic Standard Time" territory="001" type="Asia/Baghdad"/>
@@ -594,7 +599,7 @@
 
 			<!-- (UTC+10:00) Yakutsk -->
 			<mapZone other="Yakutsk Standard Time" territory="001" type="Asia/Yakutsk"/>
-			<mapZone other="Yakutsk Standard Time" territory="RU" type="Asia/Yakutsk"/>
+			<mapZone other="Yakutsk Standard Time" territory="RU" type="Asia/Yakutsk Asia/Khandyga"/>
 
 			<!-- (UTC+11:00) Solomon Is., New Caledonia -->
 			<mapZone other="Central Pacific Standard Time" territory="001" type="Pacific/Guadalcanal"/>
@@ -607,7 +612,7 @@
 
 			<!-- (UTC+11:00) Vladivostok -->
 			<mapZone other="Vladivostok Standard Time" territory="001" type="Asia/Vladivostok"/>
-			<mapZone other="Vladivostok Standard Time" territory="RU" type="Asia/Vladivostok Asia/Sakhalin"/>
+			<mapZone other="Vladivostok Standard Time" territory="RU" type="Asia/Vladivostok Asia/Sakhalin Asia/Ust-Nera"/>
 
 			<!-- (UTC+12:00) Auckland, Wellington -->
 			<mapZone other="New Zealand Standard Time" territory="001" type="Pacific/Auckland"/>

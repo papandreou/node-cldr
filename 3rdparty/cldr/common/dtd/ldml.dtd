@@ -1,13 +1,13 @@
 <!--
-Copyright © 2003-2012 Unicode, Inc. and others. All rights reserved. Distributed under the Terms of Use in http://www.unicode.org/copyright.html.
+Copyright © 2003-2013 Unicode, Inc. and others. All rights reserved. Distributed under the Terms of Use in http://www.unicode.org/copyright.html.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of the Unicode data files and any associated documentation (the "Data Files") or Unicode software and any associated documentation (the "Software") to deal in the Data Files or Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, and/or sell copies of the Data Files or Software, and to permit persons to whom the Data Files or Software are furnished to do so, provided that (a) the above copyright notice(s) and this permission notice appear with all copies of the Data Files or Software, (b) both the above copyright notice(s) and this permission notice appear in associated documentation, and (c) there is clear notice in each modified Data File or in the Software as well as in the documentation associated with the Data File(s) or Software that the data or software has been modified.
 
 THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA FILES OR SOFTWARE.
 
 Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in these Data Files or Software without prior written authorization of the copyright holder.
-$Revision: 7869 $
-$Date: 2012-10-22 09:35:18 -0700 (Mon, 22 Oct 2012) $
+$Revision: 8663 $
+$Date: 2013-05-02 15:03:19 -0500 (Thu, 02 May 2013) $
 -->
 
 <!ELEMENT ldml (identity, (alias | (fallback*, localeDisplayNames?, layout?, contextTransforms?, characters?, delimiters?, measurement?, dates?, numbers?, units?, listPatterns?, collations?, posix?, segmentations?, rbnf?, metadata?, references?, special*))) >
@@ -19,7 +19,7 @@ $Date: 2012-10-22 09:35:18 -0700 (Mon, 22 Oct 2012) $
 
 <!ELEMENT version EMPTY >
 <!ATTLIST version number CDATA #REQUIRED >
-<!ATTLIST version cldrVersion CDATA #FIXED "22.1" >
+<!ATTLIST version cldrVersion CDATA #FIXED "23.1" >
 
 <!ELEMENT generation EMPTY >
 <!ATTLIST generation date CDATA #REQUIRED >
@@ -64,8 +64,8 @@ $Date: 2012-10-22 09:35:18 -0700 (Mon, 22 Oct 2012) $
 <!ATTLIST alias alt NMTOKENS #IMPLIED >
 
 <!ELEMENT default (special*) >
-<!ATTLIST default type NMTOKEN #IMPLIED > <!-- deprecated in favor of choice -->
-<!ATTLIST default choice NMTOKEN #IMPLIED > <!-- really required, but needs to be optional to support type also -->
+<!ATTLIST default type NMTOKEN #IMPLIED > <!-- only used in collation, to be deprecated -->
+<!ATTLIST default choice NMTOKEN #IMPLIED > <!-- deprecated -->
 <!ATTLIST default draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST default references CDATA #IMPLIED >
 <!ATTLIST default alt NMTOKENS #IMPLIED >
@@ -201,13 +201,16 @@ $Date: 2012-10-22 09:35:18 -0700 (Mon, 22 Oct 2012) $
 <!ATTLIST layout draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST layout references CDATA #IMPLIED >
 
-<!ELEMENT orientation ( special* ) >
-<!ATTLIST orientation characters ( left-to-right | right-to-left | top-to-bottom | bottom-to-top ) "left-to-right" >
-<!ATTLIST orientation lines ( left-to-right | right-to-left | top-to-bottom | bottom-to-top ) "top-to-bottom" >
+<!ELEMENT orientation ( characterOrder*, lineOrder*, special* ) >
+<!ATTLIST orientation characters ( left-to-right | right-to-left | top-to-bottom | bottom-to-top ) #IMPLIED > <!-- deprecated -->
+<!ATTLIST orientation lines ( left-to-right | right-to-left | top-to-bottom | bottom-to-top ) #IMPLIED > <!-- deprecated -->
 <!ATTLIST orientation draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST orientation standard CDATA #IMPLIED > <!-- the "standard" attribute is deprecated everywhere. -->
 <!ATTLIST orientation references CDATA #IMPLIED >
 <!ATTLIST orientation alt NMTOKENS #IMPLIED >
+
+<!ELEMENT characterOrder ( #PCDATA ) >
+<!ELEMENT lineOrder ( #PCDATA ) >
 
 <!ELEMENT inList ( #PCDATA ) > <!-- deprecated, use contextTransforms -->
 <!ATTLIST inList casing ( titlecase-words | titlecase-firstword | lowercase-words | mixed ) #IMPLIED > <!-- deprecated -->
@@ -393,7 +396,7 @@ $Date: 2012-10-22 09:35:18 -0700 (Mon, 22 Oct 2012) $
 
 <!-- ######################################################### -->
 
-<!ELEMENT dates (alias | (localizedPatternChars*, dateRangePattern*, calendars?, timeZoneNames?, special*)) >
+<!ELEMENT dates (alias | (localizedPatternChars*, dateRangePattern*, calendars?, fields?, timeZoneNames?, special*)) >
 <!ATTLIST dates draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST dates standard CDATA #IMPLIED > <!-- the "standard" attribute is deprecated everywhere. -->
 <!ATTLIST dates references CDATA #IMPLIED >
@@ -418,7 +421,7 @@ $Date: 2012-10-22 09:35:18 -0700 (Mon, 22 Oct 2012) $
 <!ATTLIST calendars draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST calendars validSubLocales CDATA #IMPLIED >
 
-<!ELEMENT calendar (alias | (months?, monthNames?, monthAbbr?, monthPatterns?, days?, dayNames?, dayAbbr?, quarters?, week?, am*, pm*, dayPeriods?, eras?, cyclicNameSets?, dateFormats?, timeFormats?, dateTimeFormats?, fields*, special*))>
+<!ELEMENT calendar (alias | (months?, monthNames?, monthAbbr?, monthPatterns?, days?, dayNames?, dayAbbr?, quarters?, week?, am*, pm*, dayPeriods?, eras?, cyclicNameSets?, dateFormats?, timeFormats?, dateTimeFormats?, fields*, special*))> <!-- fields is deprecated here -->
 <!ATTLIST calendar type NMTOKEN #REQUIRED >
 <!ATTLIST calendar draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST calendar standard CDATA #IMPLIED > <!-- the "standard" attribute is deprecated everywhere. -->
@@ -484,10 +487,10 @@ $Date: 2012-10-22 09:35:18 -0700 (Mon, 22 Oct 2012) $
 
 
 <!-- START_DEPRECATED -->
-<!ELEMENT monthNames ( alias | (month*, special*)) >
+<!ELEMENT monthNames ( alias | (month*, special*)) > <!-- deprecated -->
 <!ATTLIST monthNames draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 
-<!ELEMENT monthAbbr ( alias | (month*, special*)) >
+<!ELEMENT monthAbbr ( alias | (month*, special*)) > <!-- deprecated -->
 <!ATTLIST monthAbbr draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!-- END_DEPRECATED-->
 
@@ -550,40 +553,40 @@ $Date: 2012-10-22 09:35:18 -0700 (Mon, 22 Oct 2012) $
 
 <!-- START_DEPRECATED-->
 
-<!ELEMENT dayAbbr ( alias | (day*, special*)) >
+<!ELEMENT dayAbbr ( alias | (day*, special*)) > <!-- deprecated -->
 <!ATTLIST dayAbbr draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 
-<!ELEMENT dayNames ( alias | (day*, special*)) >
+<!ELEMENT dayNames ( alias | (day*, special*)) > <!-- deprecated -->
 <!ATTLIST dayNames draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 
 
-<!ELEMENT week (alias | (minDays*, firstDay*, weekendStart*, weekendEnd*, special*)) >
+<!ELEMENT week (alias | (minDays*, firstDay*, weekendStart*, weekendEnd*, special*)) > <!-- deprecated, use supplemental weekData -->
 <!ATTLIST week draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST week standard CDATA #IMPLIED > <!-- the "standard" attribute is deprecated everywhere. -->
 <!ATTLIST week references CDATA #IMPLIED >
 <!ATTLIST week alt NMTOKENS #IMPLIED >
 <!ATTLIST week validSubLocales CDATA #IMPLIED >
 
-<!ELEMENT minDays (special*) >
+<!ELEMENT minDays (special*) > <!-- deprecated in ldml, use supplemental -->
 <!ATTLIST minDays count ( 1 | 2 | 3 | 4 | 5 | 6 | 7 ) #REQUIRED >
 <!ATTLIST minDays draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST minDays references CDATA #IMPLIED >
 <!ATTLIST minDays alt NMTOKENS #IMPLIED >
 
-<!ELEMENT firstDay (special*) >
+<!ELEMENT firstDay (special*) > <!-- deprecated in ldml, use supplemental -->
 <!ATTLIST firstDay day NMTOKEN #REQUIRED >
 <!ATTLIST firstDay draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST firstDay references CDATA #IMPLIED >
 <!ATTLIST firstDay alt NMTOKENS #IMPLIED >
 
-<!ELEMENT weekendStart (special*) >
+<!ELEMENT weekendStart (special*) > <!-- deprecated in ldml, use supplemental -->
 <!ATTLIST weekendStart day ( sun | mon | tue | wed | thu | fri | sat ) #REQUIRED >
 <!ATTLIST weekendStart time CDATA "00:00" > <!-- the "time" attribute is deprecated everywhere. -->
 <!ATTLIST weekendStart draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST weekendStart references CDATA #IMPLIED >
 <!ATTLIST weekendStart alt NMTOKENS #IMPLIED >
 
-<!ELEMENT weekendEnd (special*) >
+<!ELEMENT weekendEnd (special*) > <!-- deprecated in ldml, use supplemental -->
 <!ATTLIST weekendEnd day ( sun | mon | tue | wed | thu | fri | sat ) #REQUIRED >
 <!ATTLIST weekendEnd time CDATA "24:00" > <!-- the "time" attribute is deprecated everywhere. -->
 <!ATTLIST weekendEnd draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
@@ -858,7 +861,7 @@ $Date: 2012-10-22 09:35:18 -0700 (Mon, 22 Oct 2012) $
 <!ATTLIST preferenceOrdering draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST preferenceOrdering references CDATA #IMPLIED >
 
-<!ELEMENT singleCountries EMPTY >
+<!ELEMENT singleCountries EMPTY > <!-- deprecated -->
 <!ATTLIST singleCountries list CDATA #REQUIRED >
 <!ATTLIST singleCountries alt NMTOKENS #IMPLIED >
 <!ATTLIST singleCountries draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
@@ -1359,12 +1362,12 @@ $Date: 2012-10-22 09:35:18 -0700 (Mon, 22 Oct 2012) $
 <!ATTLIST nostr alt NMTOKENS #IMPLIED >
 
 <!-- START_DEPRECATED -->
-<!ELEMENT yesexpr ( #PCDATA ) >
+<!ELEMENT yesexpr ( #PCDATA ) > <!-- deprecated. -->
 <!ATTLIST yesexpr draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST yesexpr references CDATA #IMPLIED >
 <!ATTLIST yesexpr alt NMTOKENS #IMPLIED >
 
-<!ELEMENT noexpr ( #PCDATA ) >
+<!ELEMENT noexpr ( #PCDATA ) > <!-- deprecated. -->
 <!ATTLIST noexpr draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST noexpr references CDATA #IMPLIED >
 <!ATTLIST noexpr alt NMTOKENS #IMPLIED >

@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!--
+Copyright © 1991-2013 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
 <ldml>
     <identity>
-        <version number="$Revision: 7363 $"/>
-        <generation date="$Date: 2012-07-02 22:20:50 -0700 (Mon, 02 Jul 2012) $"/>
+        <version number="$Revision: 8242 $"/>
+        <generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
         <language type="fi"/>
     </identity>
     <rbnf>
@@ -12,8 +17,6 @@
                 <rbnfrule value="-x">miinus →→;</rbnfrule>
                 <rbnfrule value="x.x">=#,###0.#=;</rbnfrule>
                 <rbnfrule value="0">=%spellout-numbering=;</rbnfrule>
-                <rbnfrule value="1100" radix="100">←←­sataa[­→→];</rbnfrule>
-                <rbnfrule value="10000">=%spellout-numbering=;</rbnfrule>
             </ruleset>
             <ruleset type="spellout-numbering">
                 <rbnfrule value="0">=%spellout-cardinal=;</rbnfrule>
@@ -34,18 +37,16 @@
                 <rbnfrule value="10">kymmenen;</rbnfrule>
                 <rbnfrule value="11">→→toista;</rbnfrule>
                 <rbnfrule value="20">←←kymmentä[­→→];</rbnfrule>
-                <rbnfrule value="100">←←sata[­→→];</rbnfrule>
-                <rbnfrule value="200">←←sataa[­→→];</rbnfrule>
-                <rbnfrule value="1000">←←­tuhat[ →→];</rbnfrule>
-                <rbnfrule value="2000">←←­tuhatta[ →→];</rbnfrule>
+                <rbnfrule value="100">sata[­→→];</rbnfrule>
+                <rbnfrule value="200">←←­sataa[­→→];</rbnfrule>
+                <rbnfrule value="1000">tuhat[­→→];</rbnfrule>
+                <rbnfrule value="2000">←←­tuhatta[­→→];</rbnfrule>
                 <rbnfrule value="1000000">←← miljoona[ →→];</rbnfrule>
-                <rbnfrule value="2000000">←← miljoonan[ →→];</rbnfrule>
+                <rbnfrule value="2000000">←← miljoonaa[ →→];</rbnfrule>
                 <rbnfrule value="1000000000">←← miljardi[ →→];</rbnfrule>
-                <rbnfrule value="2000000000">←← miljardin[ →→];</rbnfrule>
+                <rbnfrule value="2000000000">←← miljardia[ →→];</rbnfrule>
                 <rbnfrule value="1000000000000">←← biljoona[ →→];</rbnfrule>
-                <rbnfrule value="2000000000000">←← biljoonan[ →→];</rbnfrule>
-                <rbnfrule value="1000000000000000">←← biljardi[ →→];</rbnfrule>
-                <rbnfrule value="2000000000000000">←← biljardin[ →→];</rbnfrule>
+                <rbnfrule value="2000000000000">←← biljoonaa[ →→];</rbnfrule>
                 <rbnfrule value="1000000000000000000">=#,##0=;</rbnfrule>
             </ruleset>
         </rulesetGrouping>
