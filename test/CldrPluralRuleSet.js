@@ -29,6 +29,14 @@ describe('CldrPluralRuleSet', function () {
         );
 
         expect(
+            {},
+            'to encode to',
+            function (n) {
+                return "other";
+            }
+        );
+
+        expect(
             {
                 one: 'i = 1 and v = 0 @integer 1',
                 two: 'i = 2 and v = 0 @integer 2',
