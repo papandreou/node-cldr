@@ -6,8 +6,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <supplementalData>
-  <version number="$Revision: 8242 $"/>
-	<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
+  <version number="$Revision: 9146 $"/>
+	<generation date="$Date: 2013-08-07 01:01:14 -0500 (Wed, 07 Aug 2013) $"/>
 	<transforms>
 		<transform source="Simplified" target="Traditional" direction="both">
 			<comment># Copyright (c) 2005-2007,2010 Apple Inc., Unicode Inc.,</comment>
@@ -1774,6 +1774,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<tRule>㑩↔儸;</tRule>
 			<tRule>傩↔儺;</tRule>
 			<tRule>俨↔儼;</tRule>
+			<comment># Preserve 丰 for traditional in some cases</comment>
+			<tRule>丰标不凡→丰標不凡;</tRule>
+			<tRule>丰}[度情茸姿神采]→丰;</tRule>
+			<tRule>丰仪→丰儀;</tRule>
+			<tRule>丰韵→丰韻;</tRule>
+			<tRule>张三丰→張三丰;</tRule>
 			<tRule>丰↔豐;</tRule>
 			<tRule>兑↔兌;</tRule>
 			<tRule>儿↔兒;</tRule>

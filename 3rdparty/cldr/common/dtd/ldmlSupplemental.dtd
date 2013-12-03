@@ -7,15 +7,15 @@ THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
 
 Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in these Data Files or Software without prior written authorization of the copyright holder.
 
-    $Revision: 8663 $
-    $Date: 2013-05-02 15:03:19 -0500 (Thu, 02 May 2013) $
+    $Revision: 9236 $
+    $Date: 2013-08-20 03:22:45 -0500 (Tue, 20 Aug 2013) $
 -->
 
 <!ELEMENT supplementalData ( version, generation?, cldrVersion?, currencyData?, territoryContainment?, languageData?, territoryInfo?, postalCodeData?, calendarData?, calendarPreferenceData?, weekData?, timeData?, measurementData?, timezoneData?, characters?, transforms?, metadata?, codeMappings?, parentLocales?, likelySubtags?, metazoneInfo?, plurals?, telephoneCodeData?, numberingSystems?, bcp47KeywordMappings?,  gender?, references?, languageMatching?, dayPeriodRuleSet?, metaZones?, primaryZones?, windowsZones?, coverageLevels?) > <!-- metazoneInfo is deprecated here -->
 
 <!ELEMENT version EMPTY >
 <!ATTLIST version number CDATA #REQUIRED >
-<!ATTLIST version cldrVersion CDATA #FIXED "23.1" >
+<!ATTLIST version cldrVersion CDATA #FIXED "24" >
 
 <!ELEMENT generation EMPTY >
 <!ATTLIST generation date CDATA #REQUIRED >
@@ -32,6 +32,7 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 <!ATTLIST info iso4217 NMTOKEN #REQUIRED >
 <!ATTLIST info digits NMTOKEN #IMPLIED >
 <!ATTLIST info rounding NMTOKEN #IMPLIED >
+<!ATTLIST info cashDigits NMTOKEN #IMPLIED >
 <!ATTLIST info cashRounding NMTOKEN #IMPLIED >
 <!ATTLIST info draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST info references CDATA #IMPLIED >
@@ -363,7 +364,7 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 <!ATTLIST pluralRules references CDATA #IMPLIED >
 
 <!ELEMENT pluralRule ( #PCDATA ) >
-<!ATTLIST pluralRule count (zero | one | two | few | many) #REQUIRED > <!-- 'other' is implicitly everything else -->
+<!ATTLIST pluralRule count (zero | one | two | few | many | other) #REQUIRED > <!-- 'other' is implicitly everything else -->
 <!ATTLIST pluralRule draft ( approved | contributed | provisional | unconfirmed ) #IMPLIED >
 <!ATTLIST pluralRule references CDATA #IMPLIED >
 

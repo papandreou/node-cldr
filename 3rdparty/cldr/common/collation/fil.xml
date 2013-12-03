@@ -7,20 +7,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 8242 $"/>
-		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
+		<version number="$Revision: 8900 $"/>
+		<generation date="$Date: 2013-06-12 17:21:10 -0500 (Wed, 12 Jun 2013) $"/>
 		<language type="fil" /> 
 	</identity>
 		<collations validSubLocales="fil_PH">
 			<collation type="standard" references="http://std.dkuug.dk/jtc1/sc2/wg2/docs/N2300.htm (N2165)">
-				<rules>
-					<reset>N</reset>
-                    <p>ñ</p>
-                    <t>Ñ</t>
-                    <p>ng</p>
-                    <t>Ng</t>
-                    <t>NG</t>
-				</rules>
+				<cr><![CDATA[
+					&N<ñ<<<Ñ<ng<<<Ng<<<NG
+				]]></cr>
 			</collation>
 		</collations>
 </ldml>

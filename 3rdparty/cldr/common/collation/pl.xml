@@ -7,40 +7,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 8242 $"/>
-		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
+		<version number="$Revision: 8900 $"/>
+		<generation date="$Date: 2013-06-12 17:21:10 -0500 (Wed, 12 Jun 2013) $"/>
 		<language type="pl" /> 
 	</identity>
 	<collations  validSubLocales="pl_PL">
 		<collation type="standard" references="Wielki slownik polsko-angielski ISBN 83-85840-15-X">
-			<rules>
-				<reset>A</reset>
-				<p>ą</p>
-				<t>Ą</t>
-				<reset>C</reset>
-				<p>ć</p>
-				<t>Ć</t>
-				<reset>E</reset>
-				<p>ę</p>
-				<t>Ę</t>
-				<reset>L</reset>
-				<p>ł</p>
-				<t>Ł</t>
-				<reset>N</reset>
-				<p>ń</p>
-				<t>Ń</t>
-				<reset>O</reset>
-				<p>ó</p>
-				<t>Ó</t>
-				<reset>S</reset>
-				<p>ś</p>
-				<t>Ś</t>
-				<reset>Z</reset>
-				<p>ź</p>
-				<t>Ź</t>
-				<p>ż</p>
-				<t>Ż</t>
-			</rules>
+			<cr><![CDATA[
+				&A<ą<<<Ą
+				&C<ć<<<Ć
+				&E<ę<<<Ę
+				&L<ł<<<Ł
+				&N<ń<<<Ń
+				&O<ó<<<Ó
+				&S<ś<<<Ś
+				&Z<ź<<<Ź<ż<<<Ż
+			]]></cr>
 		</collation  >
 	</collations>
 </ldml>

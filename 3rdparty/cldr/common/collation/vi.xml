@@ -7,36 +7,39 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 8242 $"/>
-		<generation date="$Date: 2013-02-24 21:06:02 -0600 (Sun, 24 Feb 2013) $"/>
-		<language type="vi" /> 
+		<version number="$Revision: 8900 $"/>
+		<generation date="$Date: 2013-06-12 17:21:10 -0500 (Wed, 12 Jun 2013) $"/>
+		<language type="vi"/> 
 	</identity>
-		<collations validSubLocales="vi_VN">
-			<collation type="standard" >
-				<settings normalization="on"  />
-				<rules>
-					<reset>̀</reset>
-					<sc>̣̉̃́</sc>
-					<reset>a</reset>
-					<p>ă</p>
-					<t>Ă</t>
-					<p>â</p>
-					<t>Â</t>
-					<reset>d</reset>
-					<p>đ</p>
-					<t>Đ</t>
-					<reset>e</reset>
-					<p>ê</p>
-					<t>Ê</t>
-					<reset>o</reset>
-					<p>ô</p>
-					<t>Ô</t>
-					<p>ơ</p>
-					<t>Ơ</t>
-					<reset>u</reset>
-					<p>ư</p>
-					<t>Ư</t>
-				</rules>
-			</collation  >
-		</collations>
+	<collations validSubLocales="vi_VN">
+		<collation type="standard">
+			<settings normalization="on"/>
+			<cr><![CDATA[
+				&̀<<̉<<̃<<́<<̣
+				&a<ă<<<Ă<â<<<Â
+				&d<đ<<<Đ
+				&e<ê<<<Ê
+				&o<ô<<<Ô<ơ<<<Ơ
+				&u<ư<<<Ư
+			]]></cr>
+		</collation>
+		<collation type="traditional">
+			<settings normalization="on"/>
+			<cr><![CDATA[
+				&̀<<̉<<̃<<́<<̣
+				&a<ă<<<Ă<â<<<Â
+				&C<ch<<<Ch<<<CH
+				&d<đ<<<Đ
+				&e<ê<<<Ê
+				&G<gh<<<Gh<<<GH<gi<<<Gi<<<GI
+				&K<kh<<<Kh<<<KH
+				&N<nh<<<Nh<<<NH<ng<<<Ng<<<NG<ngh<<<Ngh<<<NGh<<<NGH
+				&o<ô<<<Ô<ơ<<<Ơ
+				&P<ph<<<Ph<<<PH
+				&Q<qu<<<Qu<<<QU
+				&T<th<<<Th<<<TH<tr<<<Tr<<<TR
+				&u<ư<<<Ư
+			]]></cr>
+		</collation>
+	</collations>
 </ldml>
