@@ -23,8 +23,8 @@ To understand the data itself, you might need to dive into the <a
 href="http://www.unicode.org/reports/tr35/tr35-29.html">LDML
 specification</a>, which describes the schema of the CLDR XML files.
 
-Tested with CLDR releases 22 and 22.1 and presently comes bundled with
-the 22.1 release.
+Comes bundled with the CLDR 24 release and isn't attempting to be backwards
+compatible with earlier versions.
 
 Usage
 =====
