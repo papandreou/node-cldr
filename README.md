@@ -460,17 +460,9 @@ cldr.extractDefaultNumberSystemId('ar');
 Extract the unit patterns (ICU) for a locale (to be used with a plural rule function):
 
 ```javascript
-cldr.extractUnitPatterns('en_GB');
-{ day: { one: '{0} day', other: '{0} days' },
-  dayFuture: { one: 'In {0} day', other: 'In {0} days' },
-  dayPast:
-   { one: '{0} day ago',
-     other: '{0} days ago' },
-  hour: { one: '{0} hour', other: '{0} hours' },
-  [...]
-  yearPast:
-   { one: '{0} year ago',
-     other: '{0} years ago' } }
+cldr.extractUnitPatterns('en_GB').unit.long.massKilogram
+{ one: '{0} kilogram',
+  other: '{0} kilograms' }
 ```
 
 ### cldr.extractDelimiters(localeId='root') ###
