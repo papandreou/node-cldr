@@ -542,7 +542,7 @@ when specifying the `types` array as well.
 cldr.extractRbnfFunctionByType('en_GB').renderRomanUpper(2012);
 'MMXII'
 cldr.extractRbnfFunctionByType('de').renderSpelloutOrdinal(2323);
-'zwei­tausend­drei­hundert­drei­und­zwanzigste'
+'zwei tausend drei hundert drei und zwanzigste'
 ```
 
 Note that some of the generated functions expect to be able to call
