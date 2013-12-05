@@ -359,15 +359,6 @@ cldr.extractDateFormatItems('en_GB', 'gregorian');
   yyyyMMMM: 'MMMM y' }
 ```
 
-### cldr.extractDefaultDateTimePatternName(localeId='root', calendarId='gregorian') ###
-
-Extract the name of the default date time pattern for a locale and calendar:
-
-```javascript
-cldr.extractDefaultDateTimePatternName('en_GB', 'gregorian');
-'medium'
-```
-
 ### cldr.extractDateIntervalFormats(localeId='root', calendarId='gregorian') ###
 
 Extract a nested hash with date interval display formats (ICU), keyed
