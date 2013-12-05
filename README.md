@@ -286,13 +286,13 @@ cldr.extractDayNames('en', 'gregorian').format.abbreviated;
   '6': 'Sat' }
 ```
 
-### cldr.extractFields(localeId='root', calendarId='gregorian') ###
+### cldr.extractFields(localeId='root') ###
 
 Extract a nested hash with display names (including relative) for
-various fields for a calendar and locale:
+various fields for a locale:
 
 ```javascript
-cldr.extractFields('en', 'gregorian').month;
+cldr.extractFields('en').month;
 { displayName: 'Month',
   relative:
    { '0': 'This month',
