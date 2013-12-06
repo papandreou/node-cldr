@@ -480,6 +480,11 @@ cldr.extractDelimiters('en_GB');
 Extract the list patterns (ICU) for a locale:
 
 ```javascript
+Object.keys(cldr.extractListPatterns('en_GB'));
+[ 'default',
+  'unit',
+  'unitNarrow',
+  'unitShort' ]
 cldr.extractListPatterns('en_GB').default;
 { '2': '{0} and {1}',
   end: '{0} and {1}',
