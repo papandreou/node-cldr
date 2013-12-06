@@ -458,7 +458,7 @@ cldr.extractDefaultNumberSystemId('ar');
 Extract the unit patterns (ICU) for a locale (to be used with a plural rule function):
 
 ```javascript
-cldr.extractUnitPatterns('en_GB').unit.long.massKilogram
+cldr.extractUnitPatterns('en_GB').long.unit.massKilogram
 { one: '{0} kilogram',
   other: '{0} kilograms' }
 ```
