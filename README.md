@@ -119,6 +119,17 @@ synchronous loads, you can use `cldr.load(<arrayOfLocaleIds>, cb)` to
 load all the needed data in parallel before starting the extraction
 itself. Then all the needed documents will be loaded and ready.
 
+### cldr.extractLocaleDisplayPattern(localeId='root') ###
+
+Extract a locale display pattern hash for a locale:
+
+```javascript
+cldr.extractLocaleDisplayPattern('en_GB');
+{ localePattern: '{0} ({1})',
+  localeSeparator: '{0}, {1}',
+  localeKeyTypePattern: '{0}: {1}' }
+```
+
 ### cldr.extractLanguageDisplayNames(localeId='root') ###
 
 Extract a locale ID => display name hash for a locale:
@@ -149,7 +160,7 @@ cldr.extractTimeZoneFormats('da');
   gmtZero: 'GMT',
   region: 'Tidszone for {0}',
   fallback: '{1} ({0})',
-  fallbackRegion: 'Tidszone for {1} ({0})' }
+  regions: { daylight: '{0} (+1)', standard: '{0} (+0)' } }
 ```
 
 ### cldr.extractTerritoryDisplayNames(localeId='root') ###
@@ -181,6 +192,77 @@ Extract a script ID => display name hash for a locale:
 ```javascript
 cldr.extractScriptDisplayNames('en_US').Arab;
 'Arabic'
+```
+
+### cldr.extractKeyTypes(localeId='root') ###
+
+Extract keys and their associated types for a locale.
+
+```javascript
+cldr.extractKeyTypes('en').calendar;
+{ displayName: 'Calendar',
+  types: 
+   { buddhist: 'Buddhist Calendar',
+     chinese: 'Chinese Calendar',
+     coptic: 'Coptic Calendar',
+     dangi: 'Dangi Calendar',
+     ethiopic: 'Ethiopic Calendar',
+     ethiopicAmeteAlem: 'Ethiopic Amete Alem Calendar',
+     gregorian: 'Gregorian Calendar',
+     hebrew: 'Hebrew Calendar',
+     indian: 'Indian National Calendar',
+     islamic: 'Islamic Calendar',
+     islamicCivil: 'Islamic Calendar (tabular, civil epoch)',
+     islamicRgsa: 'Islamic Calendar (Saudi Arabia, sighting)',
+     islamicTbla: 'Islamic Calendar (tabular, astronomical epoch)',
+     islamicUmalqura: 'Islamic Calendar (Umm al-Qura)',
+     iso8601: 'ISO-8601 Calendar',
+     japanese: 'Japanese Calendar',
+     persian: 'Persian Calendar',
+     roc: 'Minguo Calendar' } }
+```
+
+```javascript
+cldr.extractKeyTypes('en').x;
+{ displayName: 'Private-Use' }
+```
+
+### cldr.extractTransformNames(localeId='root') ###
+
+Extract a hash of transform names for a locale.
+
+```javascript
+cldr.extractTransformNames('en');
+{ BGN: 'BGN',
+  Numeric: 'Numeric',
+  Tone: 'Tone',
+  UNGEGN: 'UNGEGN',
+  'x-Accents': 'Accents',
+  'x-Fullwidth': 'Fullwidth',
+  'x-Halfwidth': 'Halfwidth',
+  'x-Jamo': 'Jamo',
+  'x-Pinyin': 'Pinyin',
+  'x-Publishing': 'Publishing' }
+```
+
+### cldr.extractMeasurementSystemNames(localeId='root') ###
+
+Extract a hash of measurement system names for a locale.
+
+```javascript
+cldr.extractMeasurementSystemNames('en');
+{ metric: 'Metric', UK: 'UK', US: 'US' }
+```
+
+### cldr.extractCodePatterns(localeId='root') ###
+
+Extract a hash of code patterns for a locale.
+
+```javascript
+> cldr.extractCodePatterns('en');
+{ language: 'Language: {0}',
+  script: 'Script: {0}',
+  territory: 'Region: {0}' }
 ```
 
 ### cldr.extractEraNames(localeId='root', calendarId='gregorian') ###

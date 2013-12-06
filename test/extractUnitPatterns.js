@@ -3,7 +3,7 @@ var expect = require('unexpected'),
 
 describe('extractUnitPatterns', function () {
     it('should extract the British English patterns correctly', function () {
-		var britishUnitPatterns = cldr.extractUnitPatterns('en_GB');
+        var britishUnitPatterns = cldr.extractUnitPatterns('en_GB');
         expect(britishUnitPatterns, 'to only have keys', ['unit', 'compoundUnit']);
         expect(britishUnitPatterns.unit, 'to only have keys', ['long', 'short', 'narrow']);
         expect(britishUnitPatterns.unit.long, 'to have keys', ['angleArcSecond', 'volumeLiter']);

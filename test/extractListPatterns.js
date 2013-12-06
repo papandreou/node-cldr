@@ -3,7 +3,7 @@ var expect = require('unexpected'),
 
 describe('extractListPatterns', function () {
     it('should extract the British English list patterns correctly', function () {
-		var britishListPatterns = cldr.extractListPatterns('en_GB');
+        var britishListPatterns = cldr.extractListPatterns('en_GB');
         expect(britishListPatterns, 'to only have keys', ['default', 'unit', 'unit-narrow', 'unit-short']);
         expect(britishListPatterns.default, 'to equal', {
             2: '{0} and {1}',
