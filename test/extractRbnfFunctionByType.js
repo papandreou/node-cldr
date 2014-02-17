@@ -29,13 +29,13 @@ describe('extractRbnfFunctionByType', function () {
                     if (isFractional && n > 1) return this.renderSpelloutCardinal(Math.floor(n)) + " koma " + this.renderSpelloutCardinal(parseInt(String(n).replace(/\d*\./, ""), 10));
                     if (n >= 1e18) return this.renderNumber(n, "#,##0");
                     if (n >= 2e15) return this.renderSpelloutCardinal(Math.floor(n / 1e15)) + " biljardit" + (n === 2e15 ? "" : " " + this.renderSpelloutCardinal(n % 1e15));
-                    if (n >= 1e15) return this.renderSpelloutCardinal(Math.floor(n / 1e15)) + " biljard" + (n === 1e15 ? "" : " " + this.renderSpelloutCardinal(n % 1e14));
+                    if (n >= 1e15) return this.renderSpelloutCardinal(Math.floor(n / 1e15)) + " biljard" + (n === 1e15 ? "" : " " + this.renderSpelloutCardinal(n % 1e15));
                     if (n >= 2e12) return this.renderSpelloutCardinal(Math.floor(n / 1e12)) + " biljonit" + (n === 2e12 ? "" : " " + this.renderSpelloutCardinal(n % 1e12));
-                    if (n >= 1e12) return this.renderSpelloutCardinal(Math.floor(n / 1e12)) + " biljon" + (n === 1e12 ? "" : " " + this.renderSpelloutCardinal(n % 1e11));
+                    if (n >= 1e12) return this.renderSpelloutCardinal(Math.floor(n / 1e12)) + " biljon" + (n === 1e12 ? "" : " " + this.renderSpelloutCardinal(n % 1e12));
                     if (n >= 2e9) return this.renderSpelloutCardinal(Math.floor(n / 1e9)) + " miljardit" + (n === 2e9 ? "" : " " + this.renderSpelloutCardinal(n % 1e9));
-                    if (n >= 1e9) return this.renderSpelloutCardinal(Math.floor(n / 1e9)) + " miljard" + (n === 1e9 ? "" : " " + this.renderSpelloutCardinal(n % 1e8));
+                    if (n >= 1e9) return this.renderSpelloutCardinal(Math.floor(n / 1e9)) + " miljard" + (n === 1e9 ? "" : " " + this.renderSpelloutCardinal(n % 1e9));
                     if (n >= 2e6) return this.renderSpelloutCardinal(Math.floor(n / 1e6)) + " miljonit" + (n === 2e6 ? "" : " " + this.renderSpelloutCardinal(n % 1e6));
-                    if (n >= 1e6) return this.renderSpelloutCardinal(Math.floor(n / 1e6)) + " miljon" + (n === 1e6 ? "" : " " + this.renderSpelloutCardinal(n % 1e5));
+                    if (n >= 1e6) return this.renderSpelloutCardinal(Math.floor(n / 1e6)) + " miljon" + (n === 1e6 ? "" : " " + this.renderSpelloutCardinal(n % 1e6));
                     if (n >= 1e3) return this.renderSpelloutCardinal(Math.floor(n / 1e3)) + " tuhat" + (n === 1e3 ? "" : " " + this.renderSpelloutCardinal(n % 1e3));
                     if (n >= 100) return this.renderSpelloutCardinal(Math.floor(n / 100)) + "sada" + (n === 100 ? "" : " " + this.renderSpelloutCardinal(n % 100));
                     if (n >= 20) return this.renderSpelloutCardinal(Math.floor(n / 10)) + "kümmend" + (n === 20 ? "" : " " + this.renderSpelloutCardinal(n % 10));
