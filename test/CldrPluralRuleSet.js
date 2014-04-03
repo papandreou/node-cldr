@@ -5,10 +5,10 @@ var unexpected = require('unexpected'),
 describe('CldrPluralRuleSet', function () {
     var expect = unexpected.clone();
 
-    expect.addAssertion('to encode to', function (value) {
+    expect.addAssertion('to encode to', function (expect, subject, value) {
         var cldrPluralRuleSet = new CldrPluralRuleSet();
         Object.keys(this.obj).forEach(function (count) {
-            cldrPluralRuleSet.addRule(this.obj[count], count);
+            cldrPluralRuleSet.addRule(subject[count], count);
         }, this);
         var beautifiedFunction = uglifyJs.uglify.gen_code(['toplevel', [['stat', ['function', null, ['n'], cldrPluralRuleSet.toJavaScriptFunctionBodyAst()]]]], {beautify: true});
         if (typeof value === 'function') {

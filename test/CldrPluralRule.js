@@ -6,8 +6,8 @@ describe('CldrPluralRule', function () {
     var expect = unexpected.clone();
 
     // `value` is a string of JavaScript source code rather than an AST so the tests can be more compact:
-    expect.addAssertion('to encode to', function (value) {
-        expect(uglifyJs.uglify.gen_code(new CldrPluralRule(this.obj).toJavaScriptAst(), {beautify: true}), 'to equal', value);
+    expect.addAssertion('to encode to', function (expect, subject, value) {
+        expect(uglifyJs.uglify.gen_code(new CldrPluralRule(subject).toJavaScriptAst(), {beautify: true}), 'to equal', value);
     });
 
     it('should encode some assorted test cases correctly', function () {

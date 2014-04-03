@@ -14,8 +14,8 @@ function beautifyJavaScript(functionOrAst) {
 
 describe('extractRbnfFunctionByType', function () {
     var expect = unexpected.clone();
-    expect.addAssertion('to have the same ast as', function (value) {
-        expect(beautifyJavaScript(this.obj), 'to equal', beautifyJavaScript(value));
+    expect.addAssertion('to have the same ast as', function (expect, subject, value) {
+        expect(beautifyJavaScript(subject), 'to equal', beautifyJavaScript(value));
     });
 
     describe('#renderSpelloutCardinal', function () {
