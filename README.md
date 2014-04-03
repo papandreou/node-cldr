@@ -574,6 +574,17 @@ cldr.extractListPatterns('en_GB').default;
   start: '{0}, {1}' }
 ```
 
+### cldr.extractLayout(localeId='root') ###
+
+Extract information about the writing direction for a locale:
+
+```javascript
+cldr.extractLayout('ar');
+{ orientation:
+   { characterOrder: 'right-to-left',
+     lineOrder: 'top-to-bottom' } }
+```
+
 ### cldr.extractCharacters(localeId='root') ###
 
 Extract information about various character classes, ellipsis patterns etc. for a locale:
