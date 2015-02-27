@@ -64,7 +64,7 @@ describe('CldrPluralRuleSet', function () {
             'to encode to',
             function (n) {
                 var i = Math.floor(Math.abs(n)),
-                    t = parseInt(n.toString().replace(/^[^.]*\.?|0+$/g, ''), 10);
+                    t = parseInt(n.toString().replace(/^[^.]*\.?|0+$/g, ''), 10) || 0;
                 if (typeof n === 'string') n = parseInt(n, 10);
                 if (n === 1 || !(t === 0) && (i === 0 || i === 1)) return 'one';
                 return 'other';
@@ -72,7 +72,7 @@ describe('CldrPluralRuleSet', function () {
         );
     });
 
-    it('should encode the Lativian plural rule function from CLDR 24 correctly', function () {
+    it('should encode the Latvian plural rule function from CLDR 24 correctly', function () {
         expect(
             {
                 zero: 'n % 10 = 0 or n % 100 = 11..19 or v = 2 and f % 100 = 11..19 @integer 0, 10~20, 30, 40, 50, 60, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …',
@@ -82,7 +82,7 @@ describe('CldrPluralRuleSet', function () {
             'to encode to',
             function (n) {
                 var v = n.toString().replace(/^[^.]*\.?/, '').length,
-                    f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10);
+                    f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
                 if (typeof n === 'string') n = parseInt(n, 10);
                 if (n % 10 === 0 || n % 100 === Math.floor(n % 100) && n % 100 >= 11 && n % 100 <= 19 || v === 2 && f % 100 === Math.floor(f % 100) && f % 100 >= 11 && f % 100 <= 19) return "zero";
                 if (n % 10 === 1 && (!(n % 100 === 11) || v === 2 && f % 10 === 1 && (!(f % 100 === 11) || !(v === 2) && f % 10 === 1))) return 'one';
