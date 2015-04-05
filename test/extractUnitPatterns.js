@@ -8,7 +8,7 @@ describe('extractUnitPatterns', function () {
         expect(britishUnitPatterns.long, 'to only have keys', ['unit', 'compoundUnit']);
         expect(britishUnitPatterns.long.unit, 'to have keys', ['angleArcSecond', 'volumeLiter']);
         expect(britishUnitPatterns.long.unit.volumeLiter, 'to have keys', ['one', 'other']);
-        expect(britishUnitPatterns.long.unit.volumeLiter.other, 'to equal', '{0} litres');
+        expect(britishUnitPatterns.long.unit.volumeLiter.other, 'to equal', '{0} liters');
 
         expect(britishUnitPatterns.long.compoundUnit, 'to only have key', 'per');
         expect(britishUnitPatterns.short.compoundUnit.per, 'to equal', '{0}/{1}');

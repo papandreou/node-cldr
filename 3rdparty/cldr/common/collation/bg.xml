@@ -7,20 +7,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9614 $"/>
-		<generation date="$Date: 2014-01-07 06:59:31 -0600 (Tue, 07 Jan 2014) $"/>
+		<version number="$Revision: 11056 $"/>
+		<generation date="$Date: 2014-11-16 18:56:17 -0600 (Sun, 16 Nov 2014) $"/>
 		<language type="bg"/> 
 	</identity>
 	<collations  >
 		<collation type="standard">
 			<settings reorder="Cyrl"/>
-			<suppress_contractions>[АаӘәГгЕеЖжЗзІіОоӨөКкУуЧчЫыЭэѴѵ]</suppress_contractions>
-			<!--
-				List of UCA contractions remaining after suppression:
-
-				Й 0418 0306 CYRILLIC CAPITAL LETTER SHORT I
-				й 0438 0306 CYRILLIC SMALL LETTER SHORT I
-			-->
+			<!-- The root collation already sorts й/Й as a base letter. -->
 		</collation>
 	</collations>
 </ldml>

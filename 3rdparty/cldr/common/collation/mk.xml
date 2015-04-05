@@ -7,22 +7,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
     <identity>
-        <version number="$Revision: 9614 $"/>
-        <generation date="$Date: 2014-01-07 06:59:31 -0600 (Tue, 07 Jan 2014) $"/>
+        <version number="$Revision: 11056 $"/>
+        <generation date="$Date: 2014-11-16 18:56:17 -0600 (Sun, 16 Nov 2014) $"/>
         <language type="mk"/> 
     </identity>
 	<collations >
 		<collation type="standard">
 			<settings reorder="Cyrl"/>
-			<suppress_contractions>[АаӘәЕеЖжЗзИиІіОоӨөУуЧчЫыЭэѴѵ]</suppress_contractions>
-			<!--
-				List of UCA contractions remaining after suppression:
-
-				Ѓ 0413 0301 CYRILLIC CAPITAL LETTER GJE
-				ѓ 0433 0301 CYRILLIC SMALL LETTER GJE
-				Ќ 041A 0301 CYRILLIC CAPITAL LETTER KJE
-				ќ 043A 0301 CYRILLIC SMALL LETTER KJE
-			-->
+			<suppress_contractions>[Ии]</suppress_contractions>
+			<cr><![CDATA[
+			    &ԃ<ѓ<<<Ѓ
+			    &ћ<ќ<<<Ќ
+			]]></cr>
 		</collation>
 	</collations>
 </ldml>

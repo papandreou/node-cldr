@@ -9,7 +9,7 @@ describe('extractListPatterns', function () {
             2: '{0} and {1}',
             start: '{0}, {1}',
             middle: '{0}, {1}',
-            end: '{0} and {1}'
+            end: '{0}, and {1}'
         });
     });
 });
