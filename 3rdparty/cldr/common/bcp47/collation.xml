@@ -7,11 +7,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 
 <ldmlBCP47>
-    <version number="$Revision: 9755 $"/>
-    <generation date="$Date: 2014-02-21 14:02:14 -0600 (Fri, 21 Feb 2014) $"/>
+    <version number="$Revision: 10827 $"/>
+    <generation date="$Date: 2014-08-15 19:06:15 -0500 (Fri, 15 Aug 2014) $"/>
     <keyword>
         <key name="co" description="Collation type key" alias="collation">
             <type name="big5han" description="Pinyin ordering for Latin, big5 charset ordering for CJK characters (used in Chinese)"/>
+            <type name="compat" description="A previous version of the ordering, for compatibility" since="26"/>
             <type name="dict" description="Dictionary style ordering (such as in Sinhala)" alias="dictionary"/>
             <type name="direct" description="Binary code point order (used in Hindi)" deprecated="true"/>
             <type name="ducet" description="The default Unicode collation element table order" since="2.0.1"/>
@@ -51,7 +52,7 @@ For terms of use, see http://www.unicode.org/copyright.html
             <type name="false" description="No special case ordering" alias="no"/>
         </key>
 
-        <key name="kh" description="Collation parameter key for special Hiragana handling" alias="colHiraganaQuaternary">
+        <key name="kh" deprecated="true" description="Collation parameter key for special Hiragana handling" alias="colHiraganaQuaternary">
             <type name="true" description="Hiragana to be sorted before all non-variable on quaternary level" alias="yes"/>
             <type name="false" description="No special handling for Hiragana" alias="no"/>
         </key>

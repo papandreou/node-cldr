@@ -6,8 +6,8 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA FILES OR SOFTWARE.
 
 Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in these Data Files or Software without prior written authorization of the copyright holder.
-$Revision: 9774 $
-$Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
+$Revision: 10825 $
+$Date: 2014-08-15 18:55:42 -0500 (Fri, 15 Aug 2014) $
 -->
 
 <!ELEMENT ldml (identity, (alias | (fallback*, localeDisplayNames?, layout?, contextTransforms?, characters?, delimiters?, measurement?, dates?, numbers?, units?, listPatterns?, collations?, posix?, segmentations?, rbnf?, metadata?, references?, special*))) >
@@ -19,7 +19,7 @@ $Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
 
 <!ELEMENT version EMPTY >
 <!ATTLIST version number CDATA #REQUIRED >
-<!ATTLIST version cldrVersion CDATA #FIXED "25" >
+<!ATTLIST version cldrVersion CDATA #FIXED "26" >
 
 <!ELEMENT generation EMPTY >
 <!ATTLIST generation date CDATA #REQUIRED >
@@ -665,7 +665,7 @@ $Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
 <!ATTLIST cyclicNameSets validSubLocales CDATA #IMPLIED >
 
 <!ELEMENT cyclicNameSet ( alias | (cyclicNameContext*, special*)) >
-<!ATTLIST cyclicNameSet type ( years | months | days | dayParts | zodiacs ) #REQUIRED >
+<!ATTLIST cyclicNameSet type ( years | months | days | dayParts | zodiacs | solarTerms ) #REQUIRED >
 <!ATTLIST cyclicNameSet alt NMTOKENS #IMPLIED >
 <!ATTLIST cyclicNameSet draft ( approved | contributed | provisional | unconfirmed ) #IMPLIED >
 <!ATTLIST cyclicNameSet references CDATA #IMPLIED >
@@ -943,7 +943,7 @@ $Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
 <!ATTLIST fields validSubLocales CDATA #IMPLIED >
 
 <!ELEMENT field ( alias | (displayName*, relative*, relativeTime*, special*)) >
-<!ATTLIST field type ( era | year | month | week | day | weekday | sun | mon | tue | wed | thu | fri | sat | dayperiod | hour | minute | second | zone ) #IMPLIED >
+<!ATTLIST field type ( era | year | year-short | year-narrow | quarter | quarter-short | quarter-narrow | month | month-short | month-narrow | week | week-short | week-narrow | day | day-short | day-narrow | weekday | sun | sun-short | sun-narrow | mon | mon-short | mon-narrow | tue | tue-short | tue-narrow | wed | wed-short | wed-narrow | thu | thu-short | thu-narrow | fri | fri-short | fri-narrow | sat | sat-short | sat-narrow | dayperiod | hour | hour-short | hour-narrow | minute | minute-short | minute-narrow | second | second-short | second-narrow | zone ) #IMPLIED >
 <!ATTLIST field alt NMTOKENS #IMPLIED >
 <!ATTLIST field draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST field standard CDATA #IMPLIED > <!-- the "standard" attribute is deprecated everywhere. -->
@@ -977,7 +977,7 @@ $Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
 
 <!-- ######################################################### -->
 
-<!ELEMENT numbers (alias | (defaultNumberingSystem*, otherNumberingSystems*, symbols*, decimalFormats*, scientificFormats*, percentFormats*, currencyFormats*, currencies?, miscPatterns*, special*)) >
+<!ELEMENT numbers (alias | (defaultNumberingSystem*, otherNumberingSystems*, minimumGroupingDigits*, symbols*, decimalFormats*, scientificFormats*, percentFormats*, currencyFormats*, currencies?, miscPatterns*, special*)) >
 <!ATTLIST numbers alt NMTOKENS #IMPLIED >
 <!ATTLIST numbers draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST numbers standard CDATA #IMPLIED > <!-- the "standard" attribute is deprecated everywhere. -->
@@ -1005,7 +1005,7 @@ $Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
 <!ATTLIST finance alt NMTOKENS #IMPLIED >
 <!ATTLIST finance draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 
-<!ELEMENT symbols (alias | (decimal*, group*, list*, percentSign*, nativeZeroDigit*, patternDigit*, plusSign*, minusSign*, exponential*, superscriptingExponent*, perMille*, infinity*, nan*, currencyDecimal*, currencyGroup*, special*)) >
+<!ELEMENT symbols (alias | (decimal*, group*, list*, percentSign*, nativeZeroDigit*, patternDigit*, plusSign*, minusSign*, exponential*, superscriptingExponent*, perMille*, infinity*, nan*, currencyDecimal*, currencyGroup*, timeSeparator*, special*)) >
 <!ATTLIST symbols alt NMTOKENS #IMPLIED >
 <!ATTLIST symbols draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST symbols standard CDATA #IMPLIED > <!-- the "standard" attribute is deprecated everywhere. -->
@@ -1089,6 +1089,16 @@ $Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
 <!ATTLIST nan draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST nan references CDATA #IMPLIED >
 <!ATTLIST nan numberSystem CDATA #IMPLIED > <!-- deprecated -->
+
+<!ELEMENT timeSeparator ( #PCDATA ) >
+<!ATTLIST timeSeparator alt NMTOKENS #IMPLIED >
+<!ATTLIST timeSeparator draft ( approved | contributed | provisional | unconfirmed ) #IMPLIED > 
+<!ATTLIST timeSeparator references CDATA #IMPLIED >
+
+<!ELEMENT minimumGroupingDigits ( #PCDATA ) >
+<!ATTLIST minimumGroupingDigits alt NMTOKENS #IMPLIED >
+<!ATTLIST minimumGroupingDigits draft ( approved | contributed | provisional | unconfirmed ) #IMPLIED > 
+<!ATTLIST minimumGroupingDigits references CDATA #IMPLIED >
 
 <!ELEMENT currencyDecimal ( #PCDATA ) >
 <!ATTLIST currencyDecimal alt NMTOKENS #IMPLIED >
@@ -1258,7 +1268,7 @@ $Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
 <!ATTLIST compoundUnit references CDATA #IMPLIED >
 <!ATTLIST compoundUnit validSubLocales CDATA #IMPLIED >
 
-<!ELEMENT unit (alias | (unitPattern*, special*)) >
+<!ELEMENT unit (alias | (displayName*, unitPattern*, perUnitPattern*, special*)) >
 <!ATTLIST unit type NMTOKEN #REQUIRED >
 <!ATTLIST unit alt NMTOKENS #IMPLIED >
 <!ATTLIST unit draft ( approved | contributed | provisional | unconfirmed ) #IMPLIED >
@@ -1277,6 +1287,11 @@ $Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
 <!ATTLIST unitPattern draft ( approved | contributed | provisional | unconfirmed ) #IMPLIED >
 <!ATTLIST unitPattern references CDATA #IMPLIED >
 <!ATTLIST unitPattern validSubLocales CDATA #IMPLIED >
+
+<!ELEMENT perUnitPattern ( #PCDATA ) >
+<!ATTLIST perUnitPattern alt NMTOKENS #IMPLIED >
+<!ATTLIST perUnitPattern draft ( approved | contributed | provisional | unconfirmed ) #IMPLIED >
+<!ATTLIST perUnitPattern references CDATA #IMPLIED >
 
 <!ELEMENT compoundUnitPattern ( #PCDATA ) >
 <!ATTLIST compoundUnitPattern alt NMTOKENS #IMPLIED >
@@ -1321,7 +1336,7 @@ $Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
 
 <!ELEMENT collation (alias | (base?, import*, settings?, suppress_contractions?, optimize?, (cr* | rules?), special*)) >
 <!ATTLIST collation type NMTOKEN "standard" >
-<!ATTLIST collation visibility ( internal | external ) "external" > 
+<!ATTLIST collation visibility ( internal | external ) "external" >  <!-- deprecated -->
 <!ATTLIST collation alt NMTOKENS #IMPLIED >
 <!ATTLIST collation draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED > <!-- true and false are deprecated. -->
 <!ATTLIST collation standard CDATA #IMPLIED > <!-- the "standard" attribute is deprecated everywhere. -->
@@ -1331,7 +1346,7 @@ $Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
 <!ELEMENT base (alias|special) > <!-- deprecated collations/collation/base, see CLDR ticket #6332 -->
 
 <!ELEMENT import EMPTY >
-<!ATTLIST import source CDATA #REQUIRED >
+<!ATTLIST import source CDATA #REQUIRED > <!-- value "locale" is deprecated -->
 <!ATTLIST import type CDATA #IMPLIED >
 
 <!ELEMENT settings (special*) >
@@ -1442,7 +1457,7 @@ $Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
 <!ATTLIST segmentations references CDATA #IMPLIED >
 <!ATTLIST segmentations validSubLocales CDATA #IMPLIED >
 
-<!ELEMENT segmentation ( alias | (variables?, segmentRules?, exceptions?) | special*) >
+<!ELEMENT segmentation ( alias | (variables?, segmentRules?, exceptions?, suppressions?) | special*) >
 <!ATTLIST segmentation type NMTOKEN #REQUIRED >
 <!ATTLIST segmentation alt NMTOKENS #IMPLIED >
 <!ATTLIST segmentation draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED ><!-- true and false are deprecated. -->
@@ -1465,10 +1480,16 @@ $Date: 2014-02-24 17:14:10 -0600 (Mon, 24 Feb 2014) $
 <!ATTLIST rule draft ( approved | contributed | provisional | unconfirmed | true | false ) #IMPLIED ><!-- true and false are deprecated. -->
 <!ATTLIST rule references CDATA #IMPLIED >
 
-<!ELEMENT exceptions ( exception* ) >
+<!ELEMENT exceptions ( exception* ) > <!-- deprecated, use suppressions instead -->
 
-<!ELEMENT exception ( #PCDATA ) >
-<!ATTLIST exception draft ( approved | contributed | provisional | unconfirmed ) #IMPLIED >
+<!ELEMENT exception ( #PCDATA ) > <!-- deprecated -->
+<!ATTLIST exception draft ( approved | contributed | provisional | unconfirmed ) #IMPLIED > <!-- deprecated -->
+
+<!ELEMENT suppressions ( suppression* ) >
+<!ATTLIST suppressions type NMTOKEN "standard" >
+<!ATTLIST suppressions draft ( approved | contributed | provisional | unconfirmed ) #IMPLIED >
+
+<!ELEMENT suppression ( #PCDATA ) > <!-- deprecated -->
 
 <!ELEMENT rbnf ( alias | rulesetGrouping*) >
 
