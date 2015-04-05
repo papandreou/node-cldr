@@ -7,7 +7,7 @@ describe('CldrPluralRuleSet', function () {
 
     expect.addAssertion('to encode to', function (expect, subject, value) {
         var cldrPluralRuleSet = new CldrPluralRuleSet();
-        Object.keys(this.obj).forEach(function (count) {
+        Object.keys(subject).forEach(function (count) {
             cldrPluralRuleSet.addRule(subject[count], count);
         }, this);
         var beautifiedFunction = uglifyJs.uglify.gen_code(['toplevel', [['stat', ['function', null, ['n'], cldrPluralRuleSet.toJavaScriptFunctionBodyAst()]]]], {beautify: true});
