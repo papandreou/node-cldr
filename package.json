@@ -5,7 +5,8 @@
   "main": "lib/cldr.js",
   "scripts": {
     "test": "mocha --check-leaks",
-    "prepublish": "npm test"
+    "prepublish": "npm test",
+    "coverage": "istanbul cover --report text --report lcov -x lib/cldrPluralRuleTermFunctionByName.js _mocha"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "xpath": "0.0.7"
   },
   "devDependencies": {
+    "istanbul": "0.3.18",
     "mocha": "2.2.1",
     "unexpected": "6.4.0"
   },
