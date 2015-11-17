@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2014 Unicode, Inc.
+<!-- Copyright © 1991-2015 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11323 $"/>
-		<generation date="$Date: 2015-02-26 15:25:28 -0600 (Thu, 26 Feb 2015) $"/>
+		<version number="$Revision: 11914 $"/>
 		<language type="ur"/>
 		<territory type="IN"/>
 	</identity>
@@ -53,9 +52,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="VI">امریکی جزائر ورجن</territory>
 		</territories>
 		<types>
-			<type type="armnlow" key="numbers">آرمینیائی لوئر کیس اعداد</type>
-			<type type="greklow" key="numbers">یونانی لوئر کیس اعداد</type>
-			<type type="tibt" key="numbers">تبتی ہندسے</type>
+			<type key="numbers" type="armnlow">آرمینیائی لوئر کیس اعداد</type>
+			<type key="numbers" type="greklow">یونانی لوئر کیس اعداد</type>
+			<type key="numbers" type="tibt">تبتی ہندسے</type>
 		</types>
 	</localeDisplayNames>
 	<dates>
@@ -68,17 +67,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
-			</calendar>
-			<calendar type="gregorian">
-				<eras>
-					<eraNames>
-						<era type="1">عیسوی</era>
-					</eraNames>
-					<eraAbbr>
-						<era type="0">قبل مسیح</era>
-						<era type="1">عیسوی</era>
-					</eraAbbr>
-				</eras>
 			</calendar>
 		</calendars>
 		<fields>
@@ -174,10 +162,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="fri">
 				<relative type="-1">پچھلے جمعہ</relative>
 			</field>
-			<field type="sat">
-				<relative type="-1">پچھلے ہفتہ</relative>
-				<relative type="0">اس ہفتہ</relative>
-			</field>
 			<field type="hour-short">
 				<relativeTime type="past">
 					<relativeTimePattern count="one">{0} گھنٹے قبل</relativeTimePattern>
@@ -242,9 +226,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</zone>
 			<zone type="America/Glace_Bay">
 				<exemplarCity>گلیس بے</exemplarCity>
-			</zone>
-			<zone type="Atlantic/Faeroe">
-				<exemplarCity>فارو</exemplarCity>
 			</zone>
 			<zone type="Africa/Accra">
 				<exemplarCity>اکرا</exemplarCity>

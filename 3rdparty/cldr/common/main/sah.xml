@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2014 Unicode, Inc.
+<!-- Copyright © 1991-2015 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 10753 $"/>
-		<generation date="$Date: 2014-08-11 11:10:03 -0500 (Mon, 11 Aug 2014) $"/>
+		<version number="$Revision: 11914 $"/>
 		<language type="sah"/>
 	</identity>
 	<localeDisplayNames>
@@ -78,6 +77,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="003" draft="contributed">Хотугу Эмиэрикэ</territory>
 			<territory type="005" draft="contributed">Соҕуруу Эмиэрикэ</territory>
 			<territory type="CN" draft="contributed">Кытай</territory>
+			<territory type="RU">Арассыыйа</territory>
 		</territories>
 		<measurementSystemNames>
 			<measurementSystemName type="metric" draft="contributed">Мэтриичэскэй</measurementSystemName>
@@ -430,14 +430,44 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<decimal draft="contributed">.</decimal>
 			<group draft="contributed">,</group>
 		</symbols>
+		<currencyFormats numberSystem="latn">
+			<currencyFormatLength type="short">
+				<currencyFormat type="standard">
+					<pattern type="1000" count="other" draft="provisional">¤ 0K</pattern>
+					<pattern type="10000" count="other" draft="provisional">¤ 00K</pattern>
+					<pattern type="100000" count="other" draft="provisional">¤ 000K</pattern>
+					<pattern type="1000000" count="other" draft="provisional">¤ 0M</pattern>
+					<pattern type="10000000" count="other" draft="provisional">¤ 00M</pattern>
+					<pattern type="100000000" count="other" draft="provisional">¤ 000M</pattern>
+					<pattern type="1000000000" count="other" draft="provisional">¤ 0G</pattern>
+					<pattern type="10000000000" count="other" draft="provisional">¤ 00G</pattern>
+					<pattern type="100000000000" count="other" draft="provisional">¤ 000G</pattern>
+					<pattern type="1000000000000" count="other" draft="provisional">¤ 0T</pattern>
+					<pattern type="10000000000000" count="other" draft="provisional">¤ 00T</pattern>
+					<pattern type="100000000000000" count="other" draft="provisional">¤ 000T</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+		</currencyFormats>
 		<currencies>
 			<currency type="RUB">
-				<symbol>руб.</symbol>
+				<symbol>₽</symbol>
 			</currency>
 		</currencies>
 	</numbers>
 	<units>
 		<unitLength type="long">
+			<unit type="duration-year">
+				<displayName draft="contributed">сыл</displayName>
+				<unitPattern count="other">{0} сыл</unitPattern>
+			</unit>
+			<unit type="duration-month">
+				<displayName draft="contributed">ый</displayName>
+				<unitPattern count="other">{0} ый</unitPattern>
+			</unit>
+			<unit type="duration-week">
+				<displayName draft="contributed">нэдиэлэ</displayName>
+				<unitPattern count="other">{0} нэдиэлэ</unitPattern>
+			</unit>
 			<unit type="duration-day">
 				<displayName draft="contributed">күн</displayName>
 				<unitPattern count="other">{0} күн</unitPattern>
@@ -450,24 +480,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName draft="contributed">мүнүүтэ</displayName>
 				<unitPattern count="other">{0} мүнүүтэ</unitPattern>
 			</unit>
-			<unit type="duration-month">
-				<displayName draft="contributed">ый</displayName>
-				<unitPattern count="other">{0} ый</unitPattern>
-			</unit>
 			<unit type="duration-second">
 				<displayName draft="contributed">сөкүүндэ</displayName>
 				<unitPattern count="other">{0} сөкүүндэ</unitPattern>
 			</unit>
-			<unit type="duration-week">
-				<displayName draft="contributed">нэдиэлэ</displayName>
-				<unitPattern count="other">{0} нэдиэлэ</unitPattern>
-			</unit>
-			<unit type="duration-year">
-				<displayName draft="contributed">сыл</displayName>
-				<unitPattern count="other">{0} сыл</unitPattern>
-			</unit>
 		</unitLength>
 		<unitLength type="short">
+			<unit type="duration-year">
+				<displayName draft="contributed">сыл</displayName>
+			</unit>
+			<unit type="duration-month">
+				<displayName draft="contributed">ый</displayName>
+			</unit>
+			<unit type="duration-week">
+				<displayName draft="contributed">нэдиэлэ</displayName>
+			</unit>
 			<unit type="duration-day">
 				<displayName draft="contributed">күн</displayName>
 			</unit>
@@ -477,18 +504,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="duration-minute">
 				<displayName draft="contributed">мүнүүтэ</displayName>
 			</unit>
-			<unit type="duration-month">
-				<displayName draft="contributed">ый</displayName>
-			</unit>
 			<unit type="duration-second">
 				<displayName draft="contributed">сөкүүндэ</displayName>
-			</unit>
-			<unit type="duration-week">
-				<displayName draft="contributed">нэдиэлэ</displayName>
-			</unit>
-			<unit type="duration-year">
-				<displayName draft="contributed">сыл</displayName>
 			</unit>
 		</unitLength>
 	</units>
 </ldml>
+

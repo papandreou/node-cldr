@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2014 Unicode, Inc.
+<!-- Copyright © 1991-2015 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11093 $"/>
-		<generation date="$Date: 2015-01-02 21:36:02 -0600 (Fri, 02 Jan 2015) $"/>
+		<version number="$Revision: 11914 $"/>
 		<language type="os"/>
 	</identity>
 	<localeDisplayNames>
@@ -122,10 +121,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="numbers" draft="contributed">Нымӕцтӕ</key>
 		</keys>
 		<types>
-			<type type="gregorian" key="calendar" draft="contributed">Грегориан къӕлиндар</type>
-			<type type="hebrew" key="calendar" draft="contributed">Уирӕгты къӕлиндар</type>
-			<type type="latn" key="numbers" draft="contributed">Нырыккон цифрӕтӕ</type>
-			<type type="persian" key="calendar" draft="contributed">Персайнаг къӕлиндар</type>
+			<type key="calendar" type="gregorian" draft="contributed">Грегориан къӕлиндар</type>
+			<type key="calendar" type="hebrew" draft="contributed">Уирӕгты къӕлиндар</type>
+			<type key="calendar" type="persian" draft="contributed">Персайнаг къӕлиндар</type>
+			<type key="numbers" type="latn" draft="contributed">Нырыккон цифрӕтӕ</type>
 		</types>
 		<measurementSystemNames>
 			<measurementSystemName type="metric" draft="contributed">Метрикон</measurementSystemName>
@@ -278,7 +277,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="2" draft="contributed">фев.</month>
 							<month type="3" draft="contributed">мар.</month>
 							<month type="4" draft="contributed">апр.</month>
-							<month type="5" draft="contributed">мая</month>
+							<month type="5" draft="contributed">майы</month>
 							<month type="6" draft="contributed">июны</month>
 							<month type="7" draft="contributed">июлы</month>
 							<month type="8" draft="contributed">авг.</month>
@@ -320,7 +319,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<monthWidth type="abbreviated">
 							<month type="1" draft="contributed">Янв.</month>
 							<month type="2" draft="contributed">Февр.</month>
-							<month type="3" draft="contributed">Март</month>
+							<month type="3" draft="contributed">Март.</month>
 							<month type="4" draft="contributed">Апр.</month>
 							<month type="5" draft="contributed">Май</month>
 							<month type="6" draft="contributed">Июнь</month>
@@ -770,6 +769,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<pattern draft="contributed">¤ #,##0.00</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
+			<currencyFormatLength type="short">
+				<currencyFormat type="standard">
+					<pattern type="1000" count="one" draft="provisional">¤ 0K</pattern>
+					<pattern type="1000" count="other" draft="provisional">¤ 0K</pattern>
+					<pattern type="10000" count="one" draft="provisional">¤ 00K</pattern>
+					<pattern type="10000" count="other" draft="provisional">¤ 00K</pattern>
+					<pattern type="100000" count="one" draft="provisional">¤ 000K</pattern>
+					<pattern type="100000" count="other" draft="provisional">¤ 000K</pattern>
+					<pattern type="1000000" count="one" draft="provisional">¤ 0M</pattern>
+					<pattern type="1000000" count="other" draft="provisional">¤ 0M</pattern>
+					<pattern type="10000000" count="one" draft="provisional">¤ 00M</pattern>
+					<pattern type="10000000" count="other" draft="provisional">¤ 00M</pattern>
+					<pattern type="100000000" count="one" draft="provisional">¤ 000M</pattern>
+					<pattern type="100000000" count="other" draft="provisional">¤ 000M</pattern>
+					<pattern type="1000000000" count="one" draft="provisional">¤ 0G</pattern>
+					<pattern type="1000000000" count="other" draft="provisional">¤ 0G</pattern>
+					<pattern type="10000000000" count="one" draft="provisional">¤ 00G</pattern>
+					<pattern type="10000000000" count="other" draft="provisional">¤ 00G</pattern>
+					<pattern type="100000000000" count="one" draft="provisional">¤ 000G</pattern>
+					<pattern type="100000000000" count="other" draft="provisional">¤ 000G</pattern>
+					<pattern type="1000000000000" count="one" draft="provisional">¤ 0T</pattern>
+					<pattern type="1000000000000" count="other" draft="provisional">¤ 0T</pattern>
+					<pattern type="10000000000000" count="one" draft="provisional">¤ 00T</pattern>
+					<pattern type="10000000000000" count="other" draft="provisional">¤ 00T</pattern>
+					<pattern type="100000000000000" count="one" draft="provisional">¤ 000T</pattern>
+					<pattern type="100000000000000" count="other" draft="provisional">¤ 000T</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
 			<unitPattern count="one" draft="contributed">{0} {1}</unitPattern>
 			<unitPattern count="other" draft="contributed">{0} {1}</unitPattern>
 		</currencyFormats>
@@ -817,6 +844,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</numbers>
 	<units>
 		<unitLength type="long">
+			<unit type="duration-year">
+				<displayName draft="contributed">азы</displayName>
+				<unitPattern count="one">{0} аз</unitPattern>
+				<unitPattern count="other">{0} азы</unitPattern>
+			</unit>
+			<unit type="duration-month">
+				<displayName draft="contributed">мӕйы</displayName>
+				<unitPattern count="one">{0} мӕй</unitPattern>
+				<unitPattern count="other">{0} мӕйы</unitPattern>
+			</unit>
+			<unit type="duration-week">
+				<displayName draft="contributed">къуырийы</displayName>
+				<unitPattern count="one">{0} къуыри</unitPattern>
+				<unitPattern count="other">{0} къуырийы</unitPattern>
+			</unit>
 			<unit type="duration-day">
 				<displayName draft="contributed">боны</displayName>
 				<unitPattern count="one">{0} бон</unitPattern>
@@ -832,28 +874,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} минут</unitPattern>
 				<unitPattern count="other">{0} минуты</unitPattern>
 			</unit>
-			<unit type="duration-month">
-				<displayName draft="contributed">мӕйы</displayName>
-				<unitPattern count="one">{0} мӕй</unitPattern>
-				<unitPattern count="other">{0} мӕйы</unitPattern>
-			</unit>
 			<unit type="duration-second">
 				<displayName draft="contributed">секунды</displayName>
 				<unitPattern count="one">{0} секунд</unitPattern>
 				<unitPattern count="other">{0} секунды</unitPattern>
 			</unit>
-			<unit type="duration-week">
-				<displayName draft="contributed">къуырийы</displayName>
-				<unitPattern count="one">{0} къуыри</unitPattern>
-				<unitPattern count="other">{0} къуырийы</unitPattern>
-			</unit>
-			<unit type="duration-year">
-				<displayName draft="contributed">азы</displayName>
-				<unitPattern count="one">{0} аз</unitPattern>
-				<unitPattern count="other">{0} азы</unitPattern>
-			</unit>
 		</unitLength>
 		<unitLength type="short">
+			<unit type="duration-year">
+				<displayName draft="contributed">азы</displayName>
+			</unit>
+			<unit type="duration-month">
+				<displayName draft="contributed">мӕйы</displayName>
+			</unit>
+			<unit type="duration-week">
+				<displayName draft="contributed">къуырийы</displayName>
+			</unit>
 			<unit type="duration-day">
 				<displayName draft="contributed">боны</displayName>
 				<unitPattern count="one">{0} бон</unitPattern>
@@ -869,17 +905,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} мин.</unitPattern>
 				<unitPattern count="other">{0} мин.</unitPattern>
 			</unit>
-			<unit type="duration-month">
-				<displayName draft="contributed">мӕйы</displayName>
-			</unit>
 			<unit type="duration-second">
 				<displayName draft="contributed">секунды</displayName>
-			</unit>
-			<unit type="duration-week">
-				<displayName draft="contributed">къуырийы</displayName>
-			</unit>
-			<unit type="duration-year">
-				<displayName draft="contributed">азы</displayName>
 			</unit>
 		</unitLength>
 	</units>

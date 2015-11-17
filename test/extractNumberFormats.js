@@ -12,7 +12,7 @@ describe('extractNumberPatterns', function () {
         expect(britishNumberPatterns.decimal.long, 'to have keys', [1000, 10000, 100000]);
         expect(britishNumberPatterns.decimal.short, 'to have keys', [1000, 10000, 100000]);
 
-        expect(britishNumberPatterns.currency, 'to only have keys', ['default', 'one', 'other', 'currencySpacing']);
+        expect(britishNumberPatterns.currency, 'to only have keys', ['default', 'short', 'one', 'other', 'currencySpacing']);
         expect(britishNumberPatterns.currency.currencySpacing, 'to equal', {
             beforeCurrency: {
               currencyMatch: /[^\u0024+<->\u005E`\u007C~¢-¦¨©¬®-±´¸×÷˂-˅˒-˟˥-˫˭˯-˿͵΄΅϶҂֏؆-؈؋؎؏۞۩۽۾߶৲৳৺৻૱୰௳-௺౿൹฿༁-༃༓༕-༗༚-༟༴༶༸྾-࿅࿇-࿌࿎࿏࿕-࿘႞႟᎐-᎙៛᥀᧞-᧿᭡-᭪᭴-᭼᾽᾿-῁῍-῏῝-῟῭-`´῾⁄⁒⁺-⁼₊-₌₠-₹℀℁℃-℆℈℉℔№-℘℞-℣℥℧℩℮℺℻⅀-⅄⅊-⅍⅏←-⌨⌫-⏳␀-␦⑀-⑊⒜-ⓩ─-⛿✁-❧➔-⟄⟇-⟥⟰-⦂⦙-⧗⧜-⧻⧾-⭌⭐-⭙⳥-⳪⺀-⺙⺛-⻳⼀-⿕⿰-⿻〄〒〓〠〶〷〾〿゛゜㆐㆑㆖-㆟㇀-㇣㈀-㈞㈪-㉇㉐㉠-㉿㊊-㊰㋀-㋾㌀-㏿䷀-䷿꒐-꓆꜀-꜖꜠꜡꞉꞊꠨-꠫꠶-꠹꩷-꩹﬩﮲-﯁﷼﷽﹢﹤-﹦﹩＄＋＜-＞＾｀｜～￠-￦￨-￮￼�]/,

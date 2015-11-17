@@ -7,21 +7,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11056 $"/>
-		<generation date="$Date: 2014-11-16 18:56:17 -0600 (Sun, 16 Nov 2014) $"/>
+		<version number="$Revision: 11914 $"/>
 		<language type="ky"/>
 	</identity>
 	<collations>
 		<collation type="standard">
-			<settings reorder="Cyrl"/>
-			<!-- Mostly standard Cyrillic sort order,
-			  see http://en.wikipedia.org/wiki/Kyrgyz_alphabets#Correspondence_chart
-			  Tilek Mamutov (Google) confirms that ё and й should sort as base letters,
-			  but for string search ё should only be secondary-different from е. -->
-			<!-- The root collation already sorts й/Й as a base letter. -->
-			<cr><![CDATA[
-			    &е<ё<<<Ё
-			]]></cr>
+<!-- Mostly standard Cyrillic sort order,
+  see http://en.wikipedia.org/wiki/Kyrgyz_alphabets#Correspondence_chart
+  Tilek Mamutov (Google) confirms that ё and й should sort as base letters,
+  but for string search ё should only be secondary-different from е. -->
+<cr><![CDATA[
+[reorder Cyrl]
+# The root collation already sorts й/Й as a base letter.
+&е<ё<<<Ё
+]]></cr>
 		</collation>
 	</collations>
 </ldml>

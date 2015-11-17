@@ -7,19 +7,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 10634 $"/>
-		<generation date="$Date: 2014-07-09 11:54:16 -0500 (Wed, 09 Jul 2014) $"/>
+		<version number="$Revision: 11914 $"/>
 		<language type="az" /> 
 	</identity>
 		<collations >
 			<collation type="search">
-				<import source="und" type="search"/>
-				<import source="az" type="standard"/>
-				<settings reorder="others"/>  <!-- reset to no reordering -->
+				<cr><![CDATA[
+					[import und-u-co-search]
+					[import az-u-co-standard]
+					[reorder others]  # reset to no reordering
+				]]></cr>
 			</collation>
 			<collation type="standard" >
-				<settings reorder="Latn Cyrl"/>
 				<cr><![CDATA[
+					[reorder Latn Cyrl]
 					&C<ç<<<Ç
 					&G<ğ<<<Ğ
 					&[before 1]i<ı<<<I

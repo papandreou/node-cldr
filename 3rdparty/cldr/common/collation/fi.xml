@@ -7,18 +7,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 10812 $"/>
-		<generation date="$Date: 2014-08-14 16:51:39 -0500 (Thu, 14 Aug 2014) $"/>
+		<version number="$Revision: 11914 $"/>
 		<language type="fi" /> 
 	</identity>
 		<collations>
 			<collation type="search">
-				<import source="und" type="search"/>
-				<!--
-				Below are the rules specific to fi.
-				Per Apple language group, V and W should match for search.
-				-->
-				<import source="fi" type="trad"/>
+				<cr><![CDATA[
+					[import und-u-co-search]
+					# Below are the rules specific to fi.
+					# Per Apple language group, V and W should match for search.
+					[import fi-u-co-trad]
+				]]></cr>
 			</collation>
 			<collation type="traditional">
 				<!-- v and w used to be only secondary-different. -->

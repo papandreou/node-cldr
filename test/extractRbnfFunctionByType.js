@@ -63,7 +63,7 @@ describe('extractRbnfFunctionByType', function () {
         it('should render a number correctly in Danish', function () {
             var danishRbnfFunctionByType = cldr.extractRbnfFunctionByType('da_dk');
             danishRbnfFunctionByType.renderNumber = String;
-            expect(danishRbnfFunctionByType.renderSpelloutNumbering(2439871).replace(/\u00ad/g, ''), 'to equal', 'to millioner og firehundred og niogtredive tusind og ottehundred og enoghalvfjerds');
+            expect(danishRbnfFunctionByType.renderSpelloutNumbering(2439871).replace(/\u00ad/g, ''), 'to equal', 'to millioner firehundrede og niogtredive tusinde ottehundrede og enoghalvfjerds');
         });
     });
 });
