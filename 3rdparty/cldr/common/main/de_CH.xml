@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2014 Unicode, Inc.
+<!-- Copyright © 1991-2015 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11170 $"/>
-		<generation date="$Date: 2015-02-09 23:12:33 -0600 (Mon, 09 Feb 2015) $"/>
+		<version number="$Revision: 11987 $"/>
 		<language type="de"/>
 		<territory type="CH"/>
 	</identity>
@@ -34,11 +33,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<keys>
 			<key type="colCaseFirst" draft="contributed">Sortierung nach Gross- bzw. Kleinbuchstaben</key>
 			<key type="colCaseLevel" draft="contributed">Sortierung nach Gross- oder Kleinschreibung</key>
+			<key type="ms">Mass-System</key>
 		</keys>
 		<types>
-			<type type="no" key="colCaseLevel" draft="contributed">Ohne Gross-/Kleinschreibung sortieren</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Grossbuchstaben zuerst aufführen</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Nach Gross-/Kleinschreibung sortieren</type>
+			<type key="colCaseFirst" type="upper" draft="contributed">Grossbuchstaben zuerst aufführen</type>
+			<type key="colCaseLevel" type="no" draft="contributed">Ohne Gross-/Kleinschreibung sortieren</type>
+			<type key="colCaseLevel" type="yes" draft="contributed">Nach Gross-/Kleinschreibung sortieren</type>
+			<type key="ms" type="uksystem">britisches Mass-System</type>
+			<type key="ms" type="ussystem">US Mass-System</type>
 		</types>
 	</localeDisplayNames>
 	<characters>
@@ -50,6 +52,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<decimal>.</decimal>
 			<group>'</group>
 		</symbols>
+		<percentFormats numberSystem="latn">
+			<percentFormatLength>
+				<percentFormat>
+					<pattern draft="contributed">#,##0%</pattern>
+				</percentFormat>
+			</percentFormatLength>
+		</percentFormats>
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
@@ -63,8 +72,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one">Weissrussischer Rubel</displayName>
 				<displayName count="other">Weissrussische Rubel</displayName>
 			</currency>
-			<currency type="CHF">
-				<symbol>CHF</symbol>
+			<currency type="EUR">
+				<symbol draft="contributed">EUR</symbol>
+				<symbol alt="narrow" draft="contributed">EUR</symbol>
 			</currency>
 		</currencies>
 	</numbers>
@@ -79,6 +89,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Fuss</displayName>
 				<unitPattern count="one">{0} Fuss</unitPattern>
 				<unitPattern count="other">{0} Fuss</unitPattern>
+				<perUnitPattern>{0} pro Fuss</perUnitPattern>
 			</unit>
 			<unit type="volume-cubic-foot">
 				<displayName>Kubikfuss</displayName>

@@ -7,23 +7,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 10632 $"/>
-		<generation date="$Date: 2014-07-08 21:39:31 -0500 (Tue, 08 Jul 2014) $"/>
+		<version number="$Revision: 11914 $"/>
 		<language type="he" /> 
 	</identity>
-		<collations  >
-			<collation type="search" >
-				<import source="und" type="search"/>
+		<collations>
+			<collation type="search">
 				<cr><![CDATA[
+					[import und-u-co-search]
 					‎&׳	# 05F3 HEBREW PUNCTUATION GERESH, ignorable
 						<<''	# APOSTROPHE, Hebrew-specific addition, should match GERESH
 					‎&״	# 05F4 HEBREW PUNCTUATION GERSHAYIM, ignorable
 						<<'\"'	# QUOTATION MARK, Hebrew-specific addition, should match GERSHAYIM 
 				]]></cr>
 			</collation>
-			<collation type="standard" >
-				<settings normalization="on" reorder="Hebr"/>
+			<collation type="standard">
 				<cr><![CDATA[
+					[normalization on]
+					[reorder Hebr]
 					&[before 2]''<<׳ # GERESH just before APOSTROPHE (secondary difference)
 					&[before 2]'\"'<<״ # GERSHAYIM just before QUOTATION MARK (secondary difference)
 				]]></cr>

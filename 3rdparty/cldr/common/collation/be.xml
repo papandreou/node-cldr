@@ -7,17 +7,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11056 $"/>
-		<generation date="$Date: 2014-11-16 18:56:17 -0600 (Sun, 16 Nov 2014) $"/>
+		<version number="$Revision: 11914 $"/>
 		<language type="be"/> 
 	</identity>
-	<collations  >
+	<collations>
 		<collation type="standard">
-			<settings reorder="Cyrl"/>
-			<!-- The root collation already sorts й/Й as a base letter. -->
 			<cr><![CDATA[
-			    &Е<ё<<<Ё
-			    &у<ў<<<Ў
+[reorder Cyrl]
+# The root collation already sorts й/Й as a base letter.
+&Е<ё<<<Ё
+&у<ў<<<Ў
 			]]></cr>
 		</collation>
 	</collations>

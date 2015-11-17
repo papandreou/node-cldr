@@ -7,16 +7,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 10631 $"/>
-		<generation date="$Date: 2014-07-08 18:08:10 -0500 (Tue, 08 Jul 2014) $"/>
+		<version number="$Revision: 11914 $"/>
 		<language type="nn" /> 
 	</identity>
-		<collations  >
-			<collation type="search" >
-				<import source="nb" type="search"/>
-			</collation>
-			<collation type="standard" >
-				<import source="nb" type="standard"/>
-			</collation>
-		</collations>
+	<collations>
+		<collation type="search">
+			<cr><![CDATA[
+				[import nb-u-co-search]
+			]]></cr>
+		</collation>
+		<collation type="standard">
+			<cr><![CDATA[
+				[import nb-u-co-standard]
+			]]></cr>
+		</collation>
+	</collations>
 </ldml>

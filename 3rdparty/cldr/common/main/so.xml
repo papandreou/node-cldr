@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2014 Unicode, Inc.
+<!-- Copyright © 1991-2015 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11093 $"/>
-		<generation date="$Date: 2015-01-02 21:36:02 -0600 (Fri, 02 Jan 2015) $"/>
+		<version number="$Revision: 11914 $"/>
 		<language type="so"/>
 	</identity>
 	<localeDisplayNames>
@@ -108,7 +107,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sq" draft="unconfirmed">Albaaniyaan</language>
 			<language type="sr" draft="unconfirmed">Seerbiyaan</language>
 			<language type="st" draft="unconfirmed">Sesooto</language>
-			<language type="su" draft="unconfirmed">Suudaaniis</language>
 			<language type="sv">Swiidhis</language>
 			<language type="sw" draft="unconfirmed">Sawaaxili</language>
 			<language type="ta">Tamiil</language>
@@ -373,9 +371,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="currency" draft="unconfirmed">Lacag</key>
 		</keys>
 		<types>
-			<type type="hebrew" key="calendar" draft="unconfirmed">Habeentiriska yuhuudda</type>
-			<type type="islamic" key="calendar" draft="unconfirmed">Habeentiriska islaamka</type>
-			<type type="japanese" key="calendar" draft="unconfirmed">Habeentiriska jabbaanka</type>
+			<type key="calendar" type="hebrew" draft="unconfirmed">Habeentiriska yuhuudda</type>
+			<type key="calendar" type="islamic" draft="unconfirmed">Habeentiriska islaamka</type>
+			<type key="calendar" type="japanese" draft="unconfirmed">Habeentiriska jabbaanka</type>
 		</types>
 	</localeDisplayNames>
 	<characters>
@@ -828,6 +826,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currencyFormatLength>
 				<currencyFormat type="standard">
 					<pattern>¤#,##0.00</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+			<currencyFormatLength type="short">
+				<currencyFormat type="standard">
+					<pattern type="1000" count="one" draft="provisional">¤0K</pattern>
+					<pattern type="1000" count="other" draft="provisional">¤0K</pattern>
+					<pattern type="10000" count="one" draft="provisional">¤00K</pattern>
+					<pattern type="10000" count="other" draft="provisional">¤00K</pattern>
+					<pattern type="100000" count="one" draft="provisional">¤000K</pattern>
+					<pattern type="100000" count="other" draft="provisional">¤000K</pattern>
+					<pattern type="1000000" count="one" draft="provisional">¤0M</pattern>
+					<pattern type="1000000" count="other" draft="provisional">¤0M</pattern>
+					<pattern type="10000000" count="one" draft="provisional">¤00M</pattern>
+					<pattern type="10000000" count="other" draft="provisional">¤00M</pattern>
+					<pattern type="100000000" count="one" draft="provisional">¤000M</pattern>
+					<pattern type="100000000" count="other" draft="provisional">¤000M</pattern>
+					<pattern type="1000000000" count="one" draft="provisional">¤0G</pattern>
+					<pattern type="1000000000" count="other" draft="provisional">¤0G</pattern>
+					<pattern type="10000000000" count="one" draft="provisional">¤00G</pattern>
+					<pattern type="10000000000" count="other" draft="provisional">¤00G</pattern>
+					<pattern type="100000000000" count="one" draft="provisional">¤000G</pattern>
+					<pattern type="100000000000" count="other" draft="provisional">¤000G</pattern>
+					<pattern type="1000000000000" count="one" draft="provisional">¤0T</pattern>
+					<pattern type="1000000000000" count="other" draft="provisional">¤0T</pattern>
+					<pattern type="10000000000000" count="one" draft="provisional">¤00T</pattern>
+					<pattern type="10000000000000" count="other" draft="provisional">¤00T</pattern>
+					<pattern type="100000000000000" count="one" draft="provisional">¤000T</pattern>
+					<pattern type="100000000000000" count="other" draft="provisional">¤000T</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
 		</currencyFormats>

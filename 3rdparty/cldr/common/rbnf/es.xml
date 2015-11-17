@@ -7,8 +7,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
     <identity>
-        <version number="$Revision: 10101 $"/>
-        <generation date="$Date: 2014-04-17 00:36:20 -0500 (Thu, 17 Apr 2014) $"/>
+        <version number="$Revision: 11914 $"/>
         <language type="es"/>
     </identity>
     <rbnf>
@@ -203,9 +202,7 @@ For terms of use, see http://www.unicode.org/copyright.html
                 <rbnfrule value="8">octavo;</rbnfrule>
                 <rbnfrule value="9">noveno;</rbnfrule>
                 <rbnfrule value="10">décimo;</rbnfrule>
-                <rbnfrule value="11">undécimo;</rbnfrule>
-                <rbnfrule value="12">duodécimo;</rbnfrule>
-                <rbnfrule value="13">decimo→→;</rbnfrule>
+                <rbnfrule value="11">decimo→→;</rbnfrule>
                 <rbnfrule value="20">vigésimo[ →→];</rbnfrule>
                 <rbnfrule value="30">trigésimo[ →→];</rbnfrule>
                 <rbnfrule value="40">cuadragésimo[ →→];</rbnfrule>
@@ -252,9 +249,7 @@ For terms of use, see http://www.unicode.org/copyright.html
                 <rbnfrule value="8">octava;</rbnfrule>
                 <rbnfrule value="9">novena;</rbnfrule>
                 <rbnfrule value="10">décima;</rbnfrule>
-                <rbnfrule value="11">undécima;</rbnfrule>
-                <rbnfrule value="12">duodécima;</rbnfrule>
-                <rbnfrule value="13">decimo→→;</rbnfrule>
+                <rbnfrule value="11">decimo→→;</rbnfrule>
                 <rbnfrule value="20">vigésima[ →→];</rbnfrule>
                 <rbnfrule value="30">trigésima[ →→];</rbnfrule>
                 <rbnfrule value="40">cuadragésima[ →→];</rbnfrule>
@@ -293,15 +288,15 @@ For terms of use, see http://www.unicode.org/copyright.html
             </ruleset>
             <ruleset type="digits-ordinal-masculine-adjective">
                 <rbnfrule value="-x">−→→;</rbnfrule>
-                <rbnfrule value="0">=#,##0==%%dord-mascabbrev=;</rbnfrule>
+                <rbnfrule value="0">=#,##0=.=%%dord-mascabbrev=;</rbnfrule>
             </ruleset>
             <ruleset type="digits-ordinal-masculine">
                 <rbnfrule value="-x">−→→;</rbnfrule>
-                <rbnfrule value="0">=#,##0=º;</rbnfrule>
+                <rbnfrule value="0">=#,##0=.º;</rbnfrule>
             </ruleset>
             <ruleset type="digits-ordinal-feminine">
                 <rbnfrule value="-x">−→→;</rbnfrule>
-                <rbnfrule value="0">=#,##0=ª;</rbnfrule>
+                <rbnfrule value="0">=#,##0=.ª;</rbnfrule>
             </ruleset>
             <ruleset type="digits-ordinal">
                 <rbnfrule value="0">=%digits-ordinal-masculine=;</rbnfrule>

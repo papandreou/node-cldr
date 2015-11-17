@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2014 Unicode, Inc.
+<!-- Copyright © 1991-2015 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11159 $"/>
-		<generation date="$Date: 2015-01-30 13:45:39 -0600 (Fri, 30 Jan 2015) $"/>
+		<version number="$Revision: 11979 $"/>
 		<language type="en"/>
 		<territory type="GB"/>
 	</identity>
 	<localeDisplayNames>
+		<languages>
+			<language type="nds_NL">West Low German</language>
+		</languages>
 		<keys>
 			<key type="colNormalization">Normalised Sorting</key>
 		</keys>
 		<types>
-			<type type="no" key="colNormalization">Sort Without Normalisation</type>
-			<type type="yes" key="colNormalization">Sort Unicode Normalised</type>
+			<type key="colNormalization" type="no">Sort Without Normalisation</type>
+			<type key="colNormalization" type="yes">Sort Unicode Normalised</type>
 		</types>
 	</localeDisplayNames>
 	<dates>
@@ -25,9 +27,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<calendar type="gregorian">
 				<dayPeriods>
 					<dayPeriodContext type="format">
+						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="am">am</dayPeriod>
+							<dayPeriod type="noon">noon</dayPeriod>
+							<dayPeriod type="pm">pm</dayPeriod>
+						</dayPeriodWidth>
+						<dayPeriodWidth type="narrow">
+							<dayPeriod type="noon">n</dayPeriod>
+						</dayPeriodWidth>
 						<dayPeriodWidth type="wide">
-							<dayPeriod type="am">a.m.</dayPeriod>
-							<dayPeriod type="pm">p.m.</dayPeriod>
+							<dayPeriod type="am">am</dayPeriod>
+							<dayPeriod type="noon">noon</dayPeriod>
+							<dayPeriod type="pm">pm</dayPeriod>
+						</dayPeriodWidth>
+					</dayPeriodContext>
+					<dayPeriodContext type="stand-alone">
+						<dayPeriodWidth type="narrow">
+							<dayPeriod type="am">a</dayPeriod>
+							<dayPeriod type="noon">n</dayPeriod>
+							<dayPeriod type="pm">p</dayPeriod>
+						</dayPeriodWidth>
+						<dayPeriodWidth type="wide">
+							<dayPeriod type="am">am</dayPeriod>
+							<dayPeriod type="pm">pm</dayPeriod>
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>
@@ -56,8 +78,151 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</calendar>
 		</calendars>
 		<fields>
+			<field type="year-short">
+				<displayName>yr</displayName>
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} yr</relativeTimePattern>
+					<relativeTimePattern count="other">in {0} yr</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} yr ago</relativeTimePattern>
+					<relativeTimePattern count="other">{0} yr ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="year-narrow">
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} yr</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} yr ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="quarter-short">
+				<displayName>qtr</displayName>
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} qtr</relativeTimePattern>
+					<relativeTimePattern count="other">in {0} qtr</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} qtr ago</relativeTimePattern>
+					<relativeTimePattern count="other">{0} qtr ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="quarter-narrow">
+				<displayName>qtr</displayName>
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} qtr</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} qtr ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="month-short">
+				<displayName>mo</displayName>
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} mo</relativeTimePattern>
+					<relativeTimePattern count="other">in {0} mo</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} mo ago</relativeTimePattern>
+					<relativeTimePattern count="other">{0} mo ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="month-narrow">
+				<displayName>mo</displayName>
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} mo</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} mo ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="week-short">
+				<displayName>wk</displayName>
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} wk</relativeTimePattern>
+					<relativeTimePattern count="other">in {0} wk</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} wk ago</relativeTimePattern>
+					<relativeTimePattern count="other">{0} wk ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="week-narrow">
+				<displayName>wk</displayName>
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} wk</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} wk ago</relativeTimePattern>
+					<relativeTimePattern count="other">{0} wk ago</relativeTimePattern>
+				</relativeTime>
+			</field>
 			<field type="dayperiod">
-				<displayName>a.m./p.m.</displayName>
+				<displayName>am/pm</displayName>
+			</field>
+			<field type="hour-short">
+				<displayName>hr</displayName>
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} hr</relativeTimePattern>
+					<relativeTimePattern count="other">in {0} hr</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} hr ago</relativeTimePattern>
+					<relativeTimePattern count="other">{0} hr ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="hour-narrow">
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} hr</relativeTimePattern>
+					<relativeTimePattern count="other">in {0} hr</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} hr ago</relativeTimePattern>
+					<relativeTimePattern count="other">{0} hr ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="minute-short">
+				<displayName>min</displayName>
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} min</relativeTimePattern>
+					<relativeTimePattern count="other">in {0} min</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} min ago</relativeTimePattern>
+					<relativeTimePattern count="other">{0} min ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="minute-narrow">
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} min</relativeTimePattern>
+					<relativeTimePattern count="other">in {0} min</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} min ago</relativeTimePattern>
+					<relativeTimePattern count="other">{0} min ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="second-short">
+				<displayName>sec</displayName>
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} sec</relativeTimePattern>
+					<relativeTimePattern count="other">in {0} sec</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} sec ago</relativeTimePattern>
+					<relativeTimePattern count="other">{0} sec ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="second-narrow">
+				<relativeTime type="future">
+					<relativeTimePattern count="one">in {0} sec</relativeTimePattern>
+					<relativeTimePattern count="other">in {0} sec</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} sec ago</relativeTimePattern>
+					<relativeTimePattern count="other">{0} sec ago</relativeTimePattern>
+				</relativeTime>
 			</field>
 		</fields>
 		<timeZoneNames>
@@ -104,12 +269,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</currencies>
 	</numbers>
 	<units>
+		<unitLength type="long">
+			<unit type="mass-stone">
+				<displayName>stone</displayName>
+				<unitPattern count="one">{0} stone</unitPattern>
+				<unitPattern count="other">{0} stone</unitPattern>
+			</unit>
+			<unit type="temperature-kelvin">
+				<displayName>kelvin</displayName>
+				<unitPattern count="one">{0} kelvin</unitPattern>
+				<unitPattern count="other">{0} kelvin</unitPattern>
+			</unit>
+		</unitLength>
 		<unitLength type="short">
-			<unit type="volume-liter">
-				<unitPattern count="one">{0} l</unitPattern>
-				<unitPattern count="other">{0} l</unitPattern>
+			<unit type="duration-hour">
+				<perUnitPattern>{0}ph</perUnitPattern>
+			</unit>
+			<unit type="duration-second">
+				<perUnitPattern>{0}ps</perUnitPattern>
+			</unit>
+			<unit type="mass-stone">
+				<displayName>stone</displayName>
 			</unit>
 		</unitLength>
 	</units>
+	<listPatterns>
+		<listPattern>
+			<listPatternPart type="end">{0} and {1}</listPatternPart>
+		</listPattern>
+	</listPatterns>
 </ldml>
 

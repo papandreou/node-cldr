@@ -7,17 +7,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
     <identity>
-        <version number="$Revision: 11056 $"/>
-        <generation date="$Date: 2014-11-16 18:56:17 -0600 (Sun, 16 Nov 2014) $"/>
+        <version number="$Revision: 11914 $"/>
         <language type="mk"/> 
     </identity>
-	<collations >
+	<collations>
 		<collation type="standard">
-			<settings reorder="Cyrl"/>
-			<suppress_contractions>[Ии]</suppress_contractions>
 			<cr><![CDATA[
-			    &ԃ<ѓ<<<Ѓ
-			    &ћ<ќ<<<Ќ
+[reorder Cyrl]
+[suppressContractions [Ии]]
+&ԃ<ѓ<<<Ѓ
+&ћ<ќ<<<Ќ
 			]]></cr>
 		</collation>
 	</collations>

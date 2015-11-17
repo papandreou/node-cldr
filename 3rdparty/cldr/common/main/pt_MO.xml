@@ -1,17 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2014 Unicode, Inc.
+<!-- Copyright © 1991-2015 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 10669 $"/>
-		<generation date="$Date: 2014-07-23 16:10:33 -0500 (Wed, 23 Jul 2014) $"/>
+		<version number="$Revision: 11914 $"/>
 		<language type="pt"/>
 		<territory type="MO"/>
 	</identity>
 	<dates>
+		<calendars>
+			<calendar type="gregorian">
+				<timeFormats>
+					<timeFormatLength type="full">
+						<timeFormat>
+							<pattern>h:mm:ss a zzzz</pattern>
+						</timeFormat>
+					</timeFormatLength>
+					<timeFormatLength type="long">
+						<timeFormat>
+							<pattern>h:mm:ss a z</pattern>
+						</timeFormat>
+					</timeFormatLength>
+					<timeFormatLength type="medium">
+						<timeFormat>
+							<pattern>h:mm:ss a</pattern>
+						</timeFormat>
+					</timeFormatLength>
+					<timeFormatLength type="short">
+						<timeFormat>
+							<pattern>h:mm a</pattern>
+						</timeFormat>
+					</timeFormatLength>
+				</timeFormats>
+			</calendar>
+		</calendars>
 		<timeZoneNames>
 			<metazone type="Azores">
 				<short>
@@ -51,3 +76,4 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</currencies>
 	</numbers>
 </ldml>
+
