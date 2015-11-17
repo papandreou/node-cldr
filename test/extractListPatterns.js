@@ -9,6 +9,17 @@ describe('extractListPatterns', function () {
             2: '{0} and {1}',
             start: '{0}, {1}',
             middle: '{0}, {1}',
+            end: '{0} and {1}'
+        });
+    });
+
+    it('should extract the American English list patterns correctly', function () {
+		var britishListPatterns = cldr.extractListPatterns('en_US');
+        expect(britishListPatterns, 'to only have keys', ['default', 'unit', 'unitNarrow', 'unitShort']);
+        expect(britishListPatterns.default, 'to equal', {
+            2: '{0} and {1}',
+            start: '{0}, {1}',
+            middle: '{0}, {1}',
             end: '{0}, and {1}'
         });
     });
