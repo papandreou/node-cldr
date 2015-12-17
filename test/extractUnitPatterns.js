@@ -14,16 +14,4 @@ describe('extractUnitPatterns', function () {
         expect(britishUnitPatterns.short.compoundUnit.per, 'to equal', '{0}/{1}');
         expect(britishUnitPatterns.long.compoundUnit.per, 'to equal', '{0} per {1}');
     });
-
-    it('should throw when attempting to extract from a non-existent top-level locale', function () {
-        expect(function () {
-            cldr.extractUnitPatterns('foobarquux');
-        }, 'to throw', 'No data for locale id: foobarquux');
-    });
-
-    it('should allow extracting a non-existent sublocale', function () {
-        expect(function () {
-            cldr.extractUnitPatterns('da_foobarquux');
-        }, 'not to throw');
-    });
 });
