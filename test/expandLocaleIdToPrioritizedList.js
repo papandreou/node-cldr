@@ -14,3 +14,14 @@ describe('cldr.expandLocaleIdToPrioritizedList("en_GB")', function () {
         expect(cldr.expandLocaleIdToPrioritizedList('en_GB')[2], 'to be', 'en');
     });
 });
+
+describe('cldr.expandLocaleIdToPrioritizedList("en-GB-oed")', function () {
+    it('should resolve the prioritized list correctly', function () {
+        expect(cldr.expandLocaleIdToPrioritizedList('en-GB-oed'), 'to equal', [
+            'en_gb_oed',
+            'en_gb',
+            'en_001',
+            'en'
+        ]);
+    });
+});
