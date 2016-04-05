@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11947 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="hi"/>
 	</identity>
 	<localeDisplayNames>
@@ -440,8 +440,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">सुमेरियन</language>
 			<language type="sv">स्वीडिश</language>
 			<language type="sw">स्वाहिली</language>
+			<language type="sw_CD">कांगो स्वाहिली</language>
 			<language type="swb" draft="provisional">कोमोरियन</language>
-			<language type="swc">कांगो स्वाहिली</language>
 			<language type="syc">क्लासिकल सिरिएक</language>
 			<language type="syr">सिरिएक</language>
 			<language type="ta">तमिल</language>
@@ -692,7 +692,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">एंग्विला</territory>
 			<territory type="AL">अल्बानिया</territory>
 			<territory type="AM">आर्मेनिया</territory>
-			<territory type="AN">नीदरलैंडी ऐंटील</territory>
 			<territory type="AO">अंगोला</territory>
 			<territory type="AQ">अंटार्कटिका</territory>
 			<territory type="AR">अर्जेंटीना</territory>
@@ -6110,6 +6109,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} वर्ग इंच</unitPattern>
 				<perUnitPattern draft="contributed">{0}/वर्ग इंच</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>कैरट</displayName>
+				<unitPattern count="one">{0} कैरट</unitPattern>
+				<unitPattern count="other">{0} कैरट</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>लीटर प्रति किलोमीटर</displayName>
 				<unitPattern count="one">{0} लीटर प्रति किलोमीटर</unitPattern>
@@ -6511,11 +6515,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} मिलीबार</unitPattern>
 				<unitPattern count="other">{0} मिलीबार</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>कैरट</displayName>
-				<unitPattern count="one">{0} कैरट</unitPattern>
-				<unitPattern count="other">{0} कैरट</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>किलोमीटर प्रति घंटा</displayName>
 				<unitPattern count="one">{0} किलोमीटर प्रति घंटा</unitPattern>
@@ -6768,6 +6767,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} व. इं.</unitPattern>
 				<unitPattern count="other">{0} व. इं.</unitPattern>
 				<perUnitPattern draft="contributed">{0}/वर्ग इंच</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>कैरट</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>लीटर/किमी</displayName>
@@ -7169,11 +7173,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>mbar</displayName>
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>कैरट</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>कि.मी./घं.</displayName>

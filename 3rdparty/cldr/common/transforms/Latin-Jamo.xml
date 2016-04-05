@@ -6,14 +6,16 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <supplementalData>
-  <version number="$Revision: 11914 $"/>
+	<version number="$Revision: 12287 $"/>
 	<transforms>
-		<transform source="Latin" target="Jamo" direction="forward">
-			<tRule>::[[:script=Latin:][:M:]-];</tRule>
-			<tRule>::NFD;</tRule>
-			<tRule>::Lower;</tRule>
-			<tRule>::Latin-ConjoiningJamo;</tRule>
-			<tRule>::[[:script=Latin:][:M:]] NFC;</tRule>
+		<transform source="Latn" target="Jamo" direction="forward" alias="Latin-Jamo und-Jamo-t-und-latn">
+			<tRule>
+::[[:script=Latin:][:M:]-];
+::NFD;
+::Lower;
+::Latin-ConjoiningJamo;
+::[[:script=Latin:][:M:]] NFC;
+			</tRule>
 		</transform>
 	</transforms>
 </supplementalData>

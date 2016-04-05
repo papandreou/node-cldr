@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11994 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="ka"/>
 	</identity>
 	<localeDisplayNames>
@@ -376,8 +376,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">შუმერული</language>
 			<language type="sv">შვედური</language>
 			<language type="sw">სუაჰილი</language>
+			<language type="sw_CD">კონგოს სუაჰილი</language>
 			<language type="swb">კომორული</language>
-			<language type="swc">კონგოს სუაჰილი</language>
 			<language type="syc">კლასიკური სირიული</language>
 			<language type="syr">სირიული</language>
 			<language type="ta">ტამილური</language>
@@ -627,7 +627,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">ანგილია</territory>
 			<territory type="AL">ალბანეთი</territory>
 			<territory type="AM">სომხეთი</territory>
-			<territory type="AN" draft="contributed">ნიდერლანდების ანტილები</territory>
 			<territory type="AO">ანგოლა</territory>
 			<territory type="AQ">ანტარქტიკა</territory>
 			<territory type="AR">არგენტინა</territory>
@@ -5135,8 +5134,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>ქართული ლარი</displayName>
 				<displayName count="one">ქართული ლარი</displayName>
 				<displayName count="other">ქართული ლარი</displayName>
-				<symbol>GEL</symbol>
-				<symbol alt="variant" draft="contributed">₾</symbol>
+				<symbol>₾</symbol>
 			</currency>
 			<currency type="GHS">
 				<displayName>განური სედი</displayName>
@@ -6081,6 +6079,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} კვადრატული დუიმი</unitPattern>
 				<perUnitPattern>{0} კვადრატულ დუიმში</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>კარატი</displayName>
+				<unitPattern count="one">{0} კარატი</unitPattern>
+				<unitPattern count="other">{0} კარატი</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>ლიტრი კილომეტრზე</displayName>
 				<unitPattern count="one">{0} ლიტრი კილომეტრზე</unitPattern>
@@ -6482,11 +6485,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} მილიბარი</unitPattern>
 				<unitPattern count="other">{0} მილიბარი</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>კარატი</displayName>
-				<unitPattern count="one">{0} კარატი</unitPattern>
-				<unitPattern count="other">{0} კარატი</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>კილომეტრი საათში</displayName>
 				<unitPattern count="one">{0} კილომეტრი საათში</unitPattern>
@@ -6739,6 +6737,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} დუიმი²</unitPattern>
 				<unitPattern count="other">{0} დუიმი²</unitPattern>
 				<perUnitPattern>{0}/დუიმი²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>კარატი</displayName>
+				<unitPattern count="one">{0} კარ.</unitPattern>
+				<unitPattern count="other">{0} კარ.</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>ლიტრი/კმ</displayName>
@@ -7140,11 +7143,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>მბარი</displayName>
 				<unitPattern count="one">{0} მბარი</unitPattern>
 				<unitPattern count="other">{0} მბარი</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>კარატი</displayName>
-				<unitPattern count="one">{0} კარ.</unitPattern>
-				<unitPattern count="other">{0} კარ.</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>კმ/სთ</displayName>

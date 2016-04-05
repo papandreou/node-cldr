@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11914 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="fi"/>
 	</identity>
 	<localeDisplayNames>
@@ -539,8 +539,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">sumeri</language>
 			<language type="sv">ruotsi</language>
 			<language type="sw">swahili</language>
+			<language type="sw_CD">kingwana</language>
 			<language type="swb">komori</language>
-			<language type="swc">kingwana</language>
 			<language type="syc">muinaissyyria</language>
 			<language type="syr">syyria</language>
 			<language type="szl">sleesia</language>
@@ -852,7 +852,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Anguilla</territory>
 			<territory type="AL">Albania</territory>
 			<territory type="AM">Armenia</territory>
-			<territory type="AN">Alankomaiden Antillit</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antarktis</territory>
 			<territory type="AR">Argentiina</territory>
@@ -7099,6 +7098,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} neliötuumaa</unitPattern>
 				<perUnitPattern>{0} / neliötuuma</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>karaatit</displayName>
+				<unitPattern count="one">{0} karaatti</unitPattern>
+				<unitPattern count="other">{0} karaattia</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litrat per kilometri</displayName>
 				<unitPattern count="one">{0} litra per kilometri</unitPattern>
@@ -7515,11 +7519,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} millibaari</unitPattern>
 				<unitPattern count="other">{0} millibaaria</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karaatit</displayName>
-				<unitPattern count="one">{0} karaatti</unitPattern>
-				<unitPattern count="other">{0} karaattia</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometrit tunnissa</displayName>
 				<unitPattern count="one">{0} kilometri tunnissa</unitPattern>
@@ -7777,6 +7776,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>ka</displayName>
+				<unitPattern count="one">{0} ka</unitPattern>
+				<unitPattern count="other">{0} ka</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
@@ -8194,11 +8198,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>ka</displayName>
-				<unitPattern count="one">{0} ka</unitPattern>
-				<unitPattern count="other">{0} ka</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>
 				<unitPattern count="one">{0} km/h</unitPattern>
@@ -8456,6 +8455,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0}in²</unitPattern>
 				<unitPattern count="other">{0}in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>ka</displayName>
+				<unitPattern count="one">{0}ka</unitPattern>
+				<unitPattern count="other">{0}ka</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
@@ -8872,11 +8876,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>mbar</displayName>
 				<unitPattern count="one">{0}mbar</unitPattern>
 				<unitPattern count="other">{0}mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>ka</displayName>
-				<unitPattern count="one">{0}ka</unitPattern>
-				<unitPattern count="other">{0}ka</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>

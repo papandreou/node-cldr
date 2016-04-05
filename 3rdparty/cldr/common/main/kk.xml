@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11917 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="kk"/>
 	</identity>
 	<localeDisplayNames>
@@ -229,7 +229,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="st" draft="unconfirmed">сесото</language>
 			<language type="sv">швед тілі</language>
 			<language type="sw">суахили тілі</language>
-			<language type="swc">конго суахили тілі</language>
+			<language type="sw_CD">конго суахили тілі</language>
 			<language type="ta">тамил тілі</language>
 			<language type="te">телугу тілі</language>
 			<language type="teo">тесо тілі</language>
@@ -471,8 +471,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="KI">Кирибати</territory>
 			<territory type="KM">Комор</territory>
 			<territory type="KN">Сент-Китс және Невис</territory>
-			<territory type="KP">Оңтүстік Корея</territory>
-			<territory type="KR">Солтүстік Корея</territory>
+			<territory type="KP">Солтүстік Корея</territory>
+			<territory type="KR">Оңтүстік Корея</territory>
 			<territory type="KW">Кувейт</territory>
 			<territory type="KY">Кайман аралдары</territory>
 			<territory type="KZ">Қазақстан</territory>
@@ -715,8 +715,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<delimiters>
 		<quotationStart>«</quotationStart>
 		<quotationEnd>»</quotationEnd>
-		<alternateQuotationStart>&quot;</alternateQuotationStart>
-		<alternateQuotationEnd>&quot;</alternateQuotationEnd>
+		<alternateQuotationStart>“</alternateQuotationStart>
+		<alternateQuotationEnd>”</alternateQuotationEnd>
 	</delimiters>
 	<dates>
 		<calendars>
@@ -1569,6 +1569,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-short">
 				<displayName>күн</displayName>
 				<relative type="-2">алдыңғы күні</relative>
+				<relative type="-1">кеше</relative>
+				<relative type="0">бүгін</relative>
+				<relative type="1">ертең</relative>
+				<relative type="2">бүрсігүні</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} күннен кейін</relativeTimePattern>
 					<relativeTimePattern count="other">{0} күннен кейін</relativeTimePattern>
@@ -1580,6 +1584,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</field>
 			<field type="day-narrow">
 				<displayName>күн</displayName>
+				<relative type="-2">алдыңғы күні</relative>
+				<relative type="-1">кеше</relative>
+				<relative type="0">бүгін</relative>
+				<relative type="1">ертең</relative>
+				<relative type="2">бүрсігүні</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} күннен кейін</relativeTimePattern>
 					<relativeTimePattern count="other">{0} күннен кейін</relativeTimePattern>
@@ -5217,6 +5226,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} шаршы дюйм</unitPattern>
 				<perUnitPattern>{0}/дюйм²</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>карат</displayName>
+				<unitPattern count="one">{0} карат</unitPattern>
+				<unitPattern count="other">{0} карат</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>литр/километр</displayName>
 				<unitPattern count="one">{0} литр/километр</unitPattern>
@@ -5618,11 +5632,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} миллибар</unitPattern>
 				<unitPattern count="other">{0} миллибар</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>карат</displayName>
-				<unitPattern count="one">{0} карат</unitPattern>
-				<unitPattern count="other">{0} карат</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>километр/сағат</displayName>
 				<unitPattern count="one">{0} километр/сағат</unitPattern>
@@ -5875,6 +5884,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} дюйм²</unitPattern>
 				<unitPattern count="other">{0} дюйм²</unitPattern>
 				<perUnitPattern>{0}/дюйм²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>карат</displayName>
+				<unitPattern count="one">{0} КТ</unitPattern>
+				<unitPattern count="other">{0} КТ</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>литр/км</displayName>
@@ -6276,11 +6290,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>мбар</displayName>
 				<unitPattern count="one">{0} мб</unitPattern>
 				<unitPattern count="other">{0} мб</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>карат</displayName>
-				<unitPattern count="one">{0} КТ</unitPattern>
-				<unitPattern count="other">{0} КТ</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>км/сағ</displayName>

@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11994 $"/>
+		<version number="$Revision: 12217 $"/>
 		<language type="zh"/>
 		<script type="Hant"/>
 		<territory type="HK"/>
@@ -59,7 +59,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="smn" draft="contributed">伊納里薩米文</language>
 			<language type="sn" draft="contributed">修納文</language>
 			<language type="so" draft="contributed">索馬里文</language>
-			<language type="swc" draft="contributed">剛果史瓦希里文</language>
+			<language type="sw_CD">剛果史瓦希里文</language>
 			<language type="ta" draft="contributed">泰米爾文</language>
 			<language type="to" draft="contributed">湯加文</language>
 			<language type="ug" alt="variant">維吾爾語</language>
@@ -700,6 +700,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</field>
 			<field type="day-short">
 				<relative type="-2" draft="contributed">前日</relative>
+				<relative type="-1" draft="contributed">昨日</relative>
+				<relative type="0" draft="contributed">今日</relative>
+				<relative type="1" draft="contributed">明日</relative>
 				<relative type="2" draft="contributed">後日</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="other" draft="contributed">{0} 日後</relativeTimePattern>
@@ -710,6 +713,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</field>
 			<field type="day-narrow">
 				<relative type="-2" draft="contributed">前日</relative>
+				<relative type="-1" draft="contributed">昨日</relative>
+				<relative type="0" draft="contributed">今日</relative>
+				<relative type="1" draft="contributed">明日</relative>
 				<relative type="2" draft="contributed">後日</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="other" draft="contributed">{0}日後</relativeTimePattern>

@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11917 $"/>
+		<version number="$Revision: 12306 $"/>
 		<language type="bn"/>
 	</identity>
 	<localeDisplayNames>
@@ -440,8 +440,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">সুমেরীয়</language>
 			<language type="sv">সুইডিশ</language>
 			<language type="sw">সোয়াহিলি</language>
+			<language type="sw_CD">কঙ্গো সোয়াহিলি</language>
 			<language type="swb" draft="provisional">কমোরিয়ান</language>
-			<language type="swc">কঙ্গো সোয়াহিলি</language>
 			<language type="syc">প্রাচীন সিরিও</language>
 			<language type="syr">সিরিয়াক</language>
 			<language type="ta">তামিল</language>
@@ -691,7 +691,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">এ্যাঙ্গুইলা</territory>
 			<territory type="AL">আলব্যানিয়া</territory>
 			<territory type="AM">আর্মেনিয়া</territory>
-			<territory type="AN">নেদারল্যান্ডস এ্যান্টিলিস</territory>
 			<territory type="AO">অ্যাঙ্গোলা</territory>
 			<territory type="AQ">অ্যান্টার্কটিকা</territory>
 			<territory type="AR">আর্জেন্টিনা</territory>
@@ -1526,8 +1525,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<dayPeriod type="night1">রাত্রি</dayPeriod>
 						</dayPeriodWidth>
 						<dayPeriodWidth type="narrow">
-							<dayPeriod type="am">পূর্বাহ্ণ</dayPeriod>
-							<dayPeriod type="pm">অপরাহ্ণ</dayPeriod>
+							<dayPeriod type="am">AM</dayPeriod>
+							<dayPeriod type="pm">PM</dayPeriod>
 							<dayPeriod type="morning1">ভোর</dayPeriod>
 							<dayPeriod type="morning2">সকাল</dayPeriod>
 							<dayPeriod type="afternoon1">দুপুর</dayPeriod>
@@ -1536,7 +1535,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<dayPeriod type="night1">রাত্রি</dayPeriod>
 						</dayPeriodWidth>
 						<dayPeriodWidth type="wide">
-							<dayPeriod type="am">AM</dayPeriod>
+							<dayPeriod type="am">পূর্বাহ্ণ</dayPeriod>
 							<dayPeriod type="pm">অপরাহ্ণ</dayPeriod>
 							<dayPeriod type="morning1">ভোর</dayPeriod>
 							<dayPeriod type="morning2">সকাল</dayPeriod>
@@ -2067,6 +2066,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-short">
 				<displayName>দিন</displayName>
 				<relative type="-2">গত পরশু</relative>
+				<relative type="-1">গতকাল</relative>
+				<relative type="0">আজ</relative>
+				<relative type="1">আগামীকাল</relative>
 				<relative type="2">আগামী পরশু</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} দিনের মধ্যে</relativeTimePattern>
@@ -2080,6 +2082,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-narrow">
 				<displayName>দিন</displayName>
 				<relative type="-2">গত পরশু</relative>
+				<relative type="-1">গতকাল</relative>
+				<relative type="0">আজ</relative>
+				<relative type="1">আগামীকাল</relative>
 				<relative type="2">আগামী পরশু</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} দিনের মধ্যে</relativeTimePattern>
@@ -6133,6 +6138,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>প্রতি বর্গ ইঞ্চিতে {0}</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>ক্যারেট</displayName>
+				<unitPattern count="one">{0} ক্যারেট</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>লিটার, প্রতি কিলোমিটারে</displayName>
 				<unitPattern count="one">{0} লিটার, প্রতি কিলোমিটারে</unitPattern>
@@ -6534,11 +6544,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} মিলিবার</unitPattern>
 				<unitPattern count="other">{0} মিলিবার</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>ক্যারেট</displayName>
-				<unitPattern count="one">{0} ক্যারেট</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>ঘন্টা প্রতি কিলোমিটার</displayName>
 				<unitPattern count="one">{0} ঘন্টা প্রতি কিলোমিটার</unitPattern>
@@ -6791,6 +6796,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>লিটার/কিমি</displayName>
@@ -7192,11 +7202,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>mbar</displayName>
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>kt</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>ঘন্টা প্রতি কিলোমিটার</displayName>

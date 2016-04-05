@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11974 $"/>
+		<version number="$Revision: 12307 $"/>
 		<language type="kea"/>
 	</identity>
 	<localeDisplayNames>
@@ -178,7 +178,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="su">sundanes</language>
 			<language type="sv">sueku</language>
 			<language type="sw">suaíli</language>
-			<language type="swc">suaíli kongoles</language>
+			<language type="sw_CD">suaíli kongoles</language>
 			<language type="ta">tamil</language>
 			<language type="te">telugu</language>
 			<language type="tg">tajik</language>
@@ -286,7 +286,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Angila</territory>
 			<territory type="AL">Albania</territory>
 			<territory type="AM">Armenia</territory>
-			<territory type="AN">Antilhas Olandeza</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antartika</territory>
 			<territory type="AR">Arjentina</territory>
@@ -985,6 +984,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</quarters>
 				<dayPeriods>
 					<dayPeriodContext type="format">
+						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="am">am</dayPeriod>
+							<dayPeriod type="pm">pm</dayPeriod>
+						</dayPeriodWidth>
 						<dayPeriodWidth type="narrow">
 							<dayPeriod type="am">a</dayPeriod>
 							<dayPeriod type="pm">p</dayPeriod>
@@ -2398,6 +2401,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>pulegada kuadradu</displayName>
 				<unitPattern count="other">{0} pulegada kuadradu</unitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>kilati</displayName>
+				<unitPattern count="other">{0} kilati</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litru pur kilómetru</displayName>
 				<unitPattern count="other">{0} litru pur kilómetru</unitPattern>
@@ -2559,10 +2566,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="power-watt">
 				<displayName>watt</displayName>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>kilati</displayName>
-				<unitPattern count="other">{0} kilati</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilómetru pur ora</displayName>
 				<unitPattern count="other">{0} kilómetru pur ora</unitPattern>
@@ -2720,6 +2723,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="area-square-inch">
 				<displayName>in²</displayName>
 				<unitPattern count="other">{0} in²</unitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
@@ -3004,10 +3011,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="pressure-millibar">
 				<displayName>mbar</displayName>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>kt</displayName>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>

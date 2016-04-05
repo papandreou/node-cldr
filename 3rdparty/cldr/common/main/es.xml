@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12015 $"/>
+		<version number="$Revision: 12318 $"/>
 		<language type="es"/>
 	</identity>
 	<localeDisplayNames>
@@ -460,8 +460,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">sumerio</language>
 			<language type="sv">sueco</language>
 			<language type="sw">suajili</language>
+			<language type="sw_CD">suajili del Congo</language>
 			<language type="swb">comorense</language>
-			<language type="swc">suajili del Congo</language>
 			<language type="syc">siríaco clásico</language>
 			<language type="syr">siriaco</language>
 			<language type="ta">tamil</language>
@@ -705,7 +705,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Anguila</territory>
 			<territory type="AL">Albania</territory>
 			<territory type="AM">Armenia</territory>
-			<territory type="AN">Antillas Neerlandesas</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antártida</territory>
 			<territory type="AR">Argentina</territory>
@@ -1170,8 +1169,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[a á b c d e é f g h i í j k l m n ñ o ó p q r s t u ú ü v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[ª à ă â å ä ã ā æ ç è ĕ ê ë ē ì ĭ î ï ī º ò ŏ ô ö ø ō œ ù ŭ û ū ÿ]</exemplarCharacters>
+		<exemplarCharacters>[a á b c d e é f g h i í ï j k l m n ñ o ó p q r s t u ú ü v w x y ý z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[ª à ă â å ä ã ā æ ç è ĕ ê ë ē ì ĭ î ī º ò ŏ ô ö ø ō œ ù ŭ û ū ÿ]</exemplarCharacters>
 		<exemplarCharacters type="index">[A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ¡ ? ¿ . … ' ‘ ’ &quot; “ ” « » ( ) \[ \] § @ * / \\ \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
@@ -6448,6 +6447,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} pulgadas cuadradas</unitPattern>
 				<perUnitPattern>{0} por pulgada cuadrada</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>quilates</displayName>
+				<unitPattern count="one">{0} quilate</unitPattern>
+				<unitPattern count="other">{0} quilates</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litros por kilómetro</displayName>
 				<unitPattern count="one">{0} litro por kilómetro</unitPattern>
@@ -6849,11 +6853,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} milibar</unitPattern>
 				<unitPattern count="other">{0} milibares</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>quilates</displayName>
-				<unitPattern count="one">{0} quilate</unitPattern>
-				<unitPattern count="other">{0} quilates</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilómetros por hora</displayName>
 				<unitPattern count="one">{0} kilómetro por hora</unitPattern>
@@ -7106,6 +7105,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>c</displayName>
+				<unitPattern count="one">{0} c</unitPattern>
+				<unitPattern count="other">{0} c</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
@@ -7507,11 +7511,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>mbar</displayName>
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>c</displayName>
-				<unitPattern count="one">{0} c</unitPattern>
-				<unitPattern count="other">{0} c</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>

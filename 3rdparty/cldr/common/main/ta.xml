@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11955 $"/>
+		<version number="$Revision: 12316 $"/>
 		<language type="ta"/>
 	</identity>
 	<localeDisplayNames>
@@ -443,8 +443,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">சுமேரியன்</language>
 			<language type="sv">ஸ்வீடிஷ்</language>
 			<language type="sw">சுவாஹிலி</language>
+			<language type="sw_CD">காங்கோ சுவாஹிலி</language>
 			<language type="swb">கொமோரியன்</language>
-			<language type="swc">காங்கோ சுவாஹிலி</language>
 			<language type="syc">பாரம்பரிய சிரியாக்</language>
 			<language type="syr">சிரியாக்</language>
 			<language type="ta">தமிழ்</language>
@@ -694,7 +694,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">அங்குய்லா</territory>
 			<territory type="AL">அல்பேனியா</territory>
 			<territory type="AM">அர்மேனியா</territory>
-			<territory type="AN">நெதர்லாந்து ஆண்டில்லெஸ்</territory>
 			<territory type="AO">அங்கோலா</territory>
 			<territory type="AQ">அண்டார்டிகா</territory>
 			<territory type="AR">அர்ஜென்டினா</territory>
@@ -799,7 +798,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="HT">ஹைட்டி</territory>
 			<territory type="HU">ஹங்கேரி</territory>
 			<territory type="IC">கேனரி தீவுகள்</territory>
-			<territory type="ID">இந்தோனேஷியா</territory>
+			<territory type="ID">இந்தோனேசியா</territory>
 			<territory type="IE">அயர்லாந்து</territory>
 			<territory type="IL">இஸ்ரேல்</territory>
 			<territory type="IM">ஐல் ஆஃப் மேன்</territory>
@@ -2128,6 +2127,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-short">
 				<displayName>நாள்</displayName>
 				<relative type="-2">நேற்று முன் தினம்</relative>
+				<relative type="-1">நேற்று</relative>
+				<relative type="0">இன்று</relative>
+				<relative type="1">நாளை</relative>
 				<relative type="2">நாளை மறுநாள்</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} நாளில்</relativeTimePattern>
@@ -2141,6 +2143,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-narrow">
 				<displayName>நா.</displayName>
 				<relative type="-2">நேற்று முன் தினம்</relative>
+				<relative type="-1">நேற்று</relative>
+				<relative type="0">இன்று</relative>
+				<relative type="1">நாளை</relative>
 				<relative type="2">நாளை மறுநாள்</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} நா.</relativeTimePattern>
@@ -4093,17 +4098,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</metazone>
 			<metazone type="Indonesia_Central">
 				<long>
-					<standard>மத்திய இந்தோனேஷிய நேரம்</standard>
+					<standard>மத்திய இந்தோனேசியா நேரம்</standard>
 				</long>
 			</metazone>
 			<metazone type="Indonesia_Eastern">
 				<long>
-					<standard>கிழக்கத்திய இந்தோனேஷிய நேரம்</standard>
+					<standard>கிழக்கத்திய இந்தோனேசியா நேரம்</standard>
 				</long>
 			</metazone>
 			<metazone type="Indonesia_Western">
 				<long>
-					<standard>மேற்கத்திய இந்தோனேஷியா நேரம்</standard>
+					<standard>மேற்கத்திய இந்தோனேசியா நேரம்</standard>
 				</long>
 			</metazone>
 			<metazone type="Iran">
@@ -5862,6 +5867,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} சதுர அங்குலங்கள்</unitPattern>
 				<perUnitPattern>{0}/சதுர அங்குலம்</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>காரட்கள்</displayName>
+				<unitPattern count="one">{0} காரட்</unitPattern>
+				<unitPattern count="other">{0} காரட்கள்</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>லிட்டர்கள்/கிலோமீட்டர்</displayName>
 				<unitPattern count="one">{0} லிட்டர்/கிலோமீட்டர்</unitPattern>
@@ -6263,11 +6273,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} மில்லிபார்</unitPattern>
 				<unitPattern count="other">{0} மில்லிபார்கள்</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>காரட்கள்</displayName>
-				<unitPattern count="one">{0} காரட்</unitPattern>
-				<unitPattern count="other">{0} காரட்கள்</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>கிலோமீட்டர்கள்/மணிநேரம்</displayName>
 				<unitPattern count="one">{0} கிலோமீட்டர்/மணிநேரம்</unitPattern>
@@ -6520,6 +6525,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} அங்.²</unitPattern>
 				<unitPattern count="other">{0} அங்.²</unitPattern>
 				<perUnitPattern>{0}/அங்.²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>காரட்கள்</displayName>
+				<unitPattern count="one">{0} கார.</unitPattern>
+				<unitPattern count="other">{0} கார.</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>லி./கி.மீ.</displayName>
@@ -6921,11 +6931,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>மில்லிபார்</displayName>
 				<unitPattern count="one">{0} மி.பா.</unitPattern>
 				<unitPattern count="other">{0} மி.பா.</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>காரட்கள்</displayName>
-				<unitPattern count="one">{0} கார.</unitPattern>
-				<unitPattern count="other">{0} கார.</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>கி.மீ./மணிநேரம்</displayName>

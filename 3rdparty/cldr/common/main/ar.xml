@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11994 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="ar"/>
 	</identity>
 	<localeDisplayNames>
@@ -458,8 +458,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">السومارية</language>
 			<language type="sv">السويدية</language>
 			<language type="sw">السواحلية</language>
+			<language type="sw_CD">الكونغو السواحلية</language>
 			<language type="swb">القمرية</language>
-			<language type="swc">الكونغو السواحلية</language>
 			<language type="syc">سريانية تقليدية</language>
 			<language type="syr">السريانية</language>
 			<language type="ta">التاميلية</language>
@@ -699,7 +699,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">أنغويلا</territory>
 			<territory type="AL">ألبانيا</territory>
 			<territory type="AM">أرمينيا</territory>
-			<territory type="AN">جزر الأنتيل الهولندية</territory>
 			<territory type="AO">أنغولا</territory>
 			<territory type="AQ">أنتاركتيكا</territory>
 			<territory type="AR">الأرجنتين</territory>
@@ -1351,7 +1350,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
 						<dateFormatItem id="MMMEd">E، d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
 						<dateFormatItem id="ms" draft="contributed">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y G</dateFormatItem>
 						<dateFormatItem id="yyyy">y G</dateFormatItem>
@@ -2204,7 +2203,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
 						<dateFormatItem id="MMMEd">E، d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
 						<dateFormatItem id="y">y G</dateFormatItem>
 						<dateFormatItem id="yyyy">y G</dateFormatItem>
 						<dateFormatItem id="yyyyM">M‏/y G</dateFormatItem>
@@ -7989,6 +7988,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} بوصة مربعة</unitPattern>
 				<perUnitPattern>{0} لكل بوصة مربعة</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>قيراط</displayName>
+				<unitPattern count="zero">{0} قيراط</unitPattern>
+				<unitPattern count="one">{0} قيراط</unitPattern>
+				<unitPattern count="two">{0} قيراط</unitPattern>
+				<unitPattern count="few">{0} قيراط</unitPattern>
+				<unitPattern count="many">{0} قيراط</unitPattern>
+				<unitPattern count="other">{0} قيراط</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>لتر لكل كيلومتر</displayName>
 				<unitPattern count="zero">{0} لتر لكل كيلومتر</unitPattern>
@@ -8123,7 +8131,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="few">{0} سنوات</unitPattern>
 				<unitPattern count="many">{0} سنة</unitPattern>
 				<unitPattern count="other">{0} سنة</unitPattern>
-				<perUnitPattern>في السنة</perUnitPattern>
+				<perUnitPattern>{0} في السنة</perUnitPattern>
 			</unit>
 			<unit type="duration-month">
 				<displayName>شهور</displayName>
@@ -8698,15 +8706,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="many">{0} مللي بار</unitPattern>
 				<unitPattern count="other">{0} مللي بار</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>قيراط</displayName>
-				<unitPattern count="zero">{0} قيراط</unitPattern>
-				<unitPattern count="one">{0} قيراط</unitPattern>
-				<unitPattern count="two">{0} قيراط</unitPattern>
-				<unitPattern count="few">{0} قيراط</unitPattern>
-				<unitPattern count="many">{0} قيراط</unitPattern>
-				<unitPattern count="other">{0} قيراط</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>كيلومتر في الساعة</displayName>
 				<unitPattern count="zero">{0} كيلومتر في الساعة</unitPattern>
@@ -9147,6 +9146,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="many">{0} بوصة مربعة</unitPattern>
 				<unitPattern count="other">{0} بوصة مربعة</unitPattern>
 				<perUnitPattern>{0}/بوصة مربعة</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>قيراط</displayName>
+				<unitPattern count="zero">{0} قيراط</unitPattern>
+				<unitPattern count="one">{0} قيراط</unitPattern>
+				<unitPattern count="two">{0} قيراط</unitPattern>
+				<unitPattern count="few">{0} قيراط</unitPattern>
+				<unitPattern count="many">{0} قيراط</unitPattern>
+				<unitPattern count="other">{0} قيراط</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>لتر/كم</displayName>
@@ -9856,15 +9864,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="few">{0} مللي بار</unitPattern>
 				<unitPattern count="many">{0} مللي بار</unitPattern>
 				<unitPattern count="other">{0} مللي بار</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>قيراط</displayName>
-				<unitPattern count="zero">{0} قيراط</unitPattern>
-				<unitPattern count="one">{0} قيراط</unitPattern>
-				<unitPattern count="two">{0} قيراط</unitPattern>
-				<unitPattern count="few">{0} قيراط</unitPattern>
-				<unitPattern count="many">{0} قيراط</unitPattern>
-				<unitPattern count="other">{0} قيراط</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>كم/س</displayName>

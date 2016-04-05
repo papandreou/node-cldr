@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11977 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="th"/>
 	</identity>
 	<localeDisplayNames>
@@ -536,8 +536,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">ซูเมอ</language>
 			<language type="sv">สวีเดน</language>
 			<language type="sw">สวาฮีลี</language>
+			<language type="sw_CD">สวาฮีลี-คองโก</language>
 			<language type="swb">โคเมอเรียน</language>
-			<language type="swc">สวาฮีลี-คองโก</language>
 			<language type="syc">ซีเรียแบบดั้งเดิม</language>
 			<language type="syr">ซีเรีย</language>
 			<language type="szl" draft="contributed">ไซลีเซีย</language>
@@ -842,7 +842,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">แองกวิลลา</territory>
 			<territory type="AL">แอลเบเนีย</territory>
 			<territory type="AM">อาร์เมเนีย</territory>
-			<territory type="AN">เนเธอร์แลนด์แอนทิลลิส</territory>
 			<territory type="AO">แองโกลา</territory>
 			<territory type="AQ">แอนตาร์กติกา</territory>
 			<territory type="AR">อาร์เจนตินา</territory>
@@ -3914,6 +3913,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-short">
 				<displayName>วัน</displayName>
 				<relative type="-2">เมื่อวานซืน</relative>
+				<relative type="-1">เมื่อวาน</relative>
+				<relative type="0">วันนี้</relative>
+				<relative type="1">พรุ่งนี้</relative>
 				<relative type="2">มะรืนนี้</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="other">ใน {0} วัน</relativeTimePattern>
@@ -3925,6 +3927,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-narrow">
 				<displayName>วัน</displayName>
 				<relative type="-2">เมื่อวานซืน</relative>
+				<relative type="-1">เมื่อวาน</relative>
+				<relative type="0">วันนี้</relative>
+				<relative type="1">พรุ่งนี้</relative>
 				<relative type="2">มะรืนนี้</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="other">ใน {0} วัน</relativeTimePattern>
@@ -7916,6 +7921,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} ตร.นิ้ว</unitPattern>
 				<perUnitPattern>{0} ต่อตารางนิ้ว</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>กะรัต</displayName>
+				<unitPattern count="other">{0} กะรัต</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>ลิตรต่อกิโลเมตร</displayName>
 				<unitPattern count="other">{0} ลิตรต่อกิโลเมตร</unitPattern>
@@ -8240,10 +8249,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>มิลลิบาร์</displayName>
 				<unitPattern count="other">{0} มิลลิบาร์</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>กะรัต</displayName>
-				<unitPattern count="other">{0} กะรัต</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>กิโลเมตรต่อชั่วโมง</displayName>
 				<unitPattern count="other">{0} กิโลเมตรต่อชั่วโมง</unitPattern>
@@ -8449,6 +8454,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>ตร.นิ้ว</displayName>
 				<unitPattern count="other">{0} ตร.นิ้ว</unitPattern>
 				<perUnitPattern>{0} ต่อตารางนิ้ว</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>กะรัต</displayName>
+				<unitPattern count="other">{0} กะรัต</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>ลิตร/กม.</displayName>
@@ -8773,10 +8782,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="pressure-millibar">
 				<displayName>มิลลิบาร์</displayName>
 				<unitPattern count="other">{0} มิลลิบาร์</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>กะรัต</displayName>
-				<unitPattern count="other">{0} กะรัต</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>กม./ชั่วโมง</displayName>

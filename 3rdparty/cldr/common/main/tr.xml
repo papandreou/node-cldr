@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11917 $"/>
+		<version number="$Revision: 12373 $"/>
 		<language type="tr"/>
 	</identity>
 	<localeDisplayNames>
@@ -534,8 +534,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">Sümerce</language>
 			<language type="sv">İsveççe</language>
 			<language type="sw">Svahili</language>
+			<language type="sw_CD">Kongo Svahili</language>
 			<language type="swb">Komorca</language>
-			<language type="swc">Kongo Svahili</language>
 			<language type="syc">Klasik Süryanice</language>
 			<language type="syr">Süryanice</language>
 			<language type="szl" draft="contributed">Silezyaca</language>
@@ -839,7 +839,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Anguilla</territory>
 			<territory type="AL">Arnavutluk</territory>
 			<territory type="AM">Ermenistan</territory>
-			<territory type="AN">Hollanda Antilleri</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antarktika</territory>
 			<territory type="AR">Arjantin</territory>
@@ -890,7 +889,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CV">Cape Verde</territory>
 			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Christmas Adası</territory>
-			<territory type="CY">Güney Kıbrıs Rum Kesimi</territory>
+			<territory type="CY">Kıbrıs</territory>
 			<territory type="CZ">Çek Cumhuriyeti</territory>
 			<territory type="DE">Almanya</territory>
 			<territory type="DG">Diego Garcia</territory>
@@ -2387,6 +2386,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-short">
 				<displayName>gün</displayName>
 				<relative type="-2">evvelsi gün</relative>
+				<relative type="-1">dün</relative>
+				<relative type="0">bugün</relative>
+				<relative type="1">yarın</relative>
 				<relative type="2">öbür gün</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} gün sonra</relativeTimePattern>
@@ -2400,6 +2402,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-narrow">
 				<displayName>gün</displayName>
 				<relative type="-2">evvelsi gün</relative>
+				<relative type="-1">dün</relative>
+				<relative type="0">bugün</relative>
+				<relative type="1">yarın</relative>
 				<relative type="2">öbür gün</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} gün sonra</relativeTimePattern>
@@ -6821,13 +6826,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>metrekare</displayName>
 				<unitPattern count="one">{0} metrekare</unitPattern>
 				<unitPattern count="other">{0} metrekare</unitPattern>
-				<perUnitPattern>/metrekare</perUnitPattern>
+				<perUnitPattern>{0}/metrekare</perUnitPattern>
 			</unit>
 			<unit type="area-square-centimeter">
 				<displayName>santimetrekare</displayName>
 				<unitPattern count="one">{0} santimetrekare</unitPattern>
 				<unitPattern count="other">{0} santimetrekare</unitPattern>
-				<perUnitPattern>/santimetrekare</perUnitPattern>
+				<perUnitPattern>{0}/santimetrekare</perUnitPattern>
 			</unit>
 			<unit type="area-square-mile">
 				<displayName>mil kare</displayName>
@@ -6854,6 +6859,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} inç kare</unitPattern>
 				<unitPattern count="other">{0} inç kare</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>ayar</displayName>
+				<unitPattern count="one">{0} ayar</unitPattern>
+				<unitPattern count="other">{0} ayar</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litre/kilometre</displayName>
@@ -7271,11 +7281,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} milibar</unitPattern>
 				<unitPattern count="other">{0} milibar</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>ayar</displayName>
-				<unitPattern count="one">{0} ayar</unitPattern>
-				<unitPattern count="other">{0} ayar</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometre/saat</displayName>
 				<unitPattern count="one">{0} kilometre/saat</unitPattern>
@@ -7325,7 +7330,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>metreküp</displayName>
 				<unitPattern count="one">{0} metreküp</unitPattern>
 				<unitPattern count="other">{0} metreküp</unitPattern>
-				<perUnitPattern>/metreküp</perUnitPattern>
+				<perUnitPattern>{0}/metreküp</perUnitPattern>
 			</unit>
 			<unit type="volume-cubic-centimeter">
 				<displayName>santimetreküp</displayName>
@@ -7533,6 +7538,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>ayar</displayName>
+				<unitPattern count="one">{0} ayar</unitPattern>
+				<unitPattern count="other">{0} ayar</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
@@ -7950,11 +7960,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>ayar</displayName>
-				<unitPattern count="one">{0} ayar</unitPattern>
-				<unitPattern count="other">{0} ayar</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/sa</displayName>
 				<unitPattern count="one">{0} km/sa</unitPattern>
@@ -8189,6 +8194,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="area-square-inch">
 				<unitPattern count="one" draft="contributed">{0} in²</unitPattern>
 				<unitPattern count="other" draft="contributed">{0} in²</unitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<unitPattern count="one" draft="contributed">{0} ayar</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} ayar</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<unitPattern count="one" draft="contributed">{0} l/km</unitPattern>
@@ -8519,10 +8528,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="pressure-millibar">
 				<unitPattern count="one" draft="contributed">{0} mb</unitPattern>
 				<unitPattern count="other" draft="contributed">{0} mb</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<unitPattern count="one" draft="contributed">{0} ayar</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} ayar</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/sa</displayName>

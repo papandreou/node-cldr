@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12032 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="es"/>
 		<territory type="GT"/>
 	</identity>
@@ -160,6 +160,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<fields>
 			<field type="day">
 				<relative type="-2">antier</relative>
+				<relative type="-1">ayer</relative>
+				<relative type="0">hoy</relative>
+				<relative type="1">mañana</relative>
+				<relative type="2">pasado mañana</relative>
 			</field>
 		</fields>
 	</dates>
@@ -259,6 +263,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 		</unitLength>
 		<unitLength type="short">
+			<unit type="concentr-karat">
+				<unitPattern count="one" draft="contributed">{0} ct</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} ct</unitPattern>
+			</unit>
 			<unit type="electric-volt">
 				<displayName draft="contributed">voltios</displayName>
 			</unit>
@@ -267,10 +275,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="power-watt">
 				<displayName draft="contributed">vatios</displayName>
-			</unit>
-			<unit type="proportion-karat">
-				<unitPattern count="one" draft="contributed">{0} ct</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} ct</unitPattern>
 			</unit>
 			<unit type="volume-acre-foot">
 				<displayName draft="contributed">acre pie</displayName>

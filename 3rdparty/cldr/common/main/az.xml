@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11983 $"/>
+		<version number="$Revision: 12307 $"/>
 		<language type="az"/>
 	</identity>
 	<localeDisplayNames>
@@ -437,7 +437,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux" draft="contributed">sumeryan</language>
 			<language type="sv">isveç</language>
 			<language type="sw">suahili</language>
-			<language type="swc">Konqo suahilicəsi</language>
+			<language type="sw_CD">Konqo suahilicəsi</language>
 			<language type="syr" draft="contributed">siryak</language>
 			<language type="ta">tamil</language>
 			<language type="te">teluqu</language>
@@ -679,7 +679,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Angila</territory>
 			<territory type="AL">Albaniya</territory>
 			<territory type="AM">Ermənistan</territory>
-			<territory type="AN" draft="contributed">Hollandiya antilleri</territory>
 			<territory type="AO">Anqola</territory>
 			<territory type="AQ">Antarktika</territory>
 			<territory type="AR">Argentina</territory>
@@ -1396,6 +1395,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</quarters>
 				<dayPeriods>
 					<dayPeriodContext type="format">
+						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="midnight">gecəyarı</dayPeriod>
+							<dayPeriod type="am">AM</dayPeriod>
+							<dayPeriod type="noon">günorta</dayPeriod>
+							<dayPeriod type="pm">PM</dayPeriod>
+							<dayPeriod type="morning1">sübh</dayPeriod>
+							<dayPeriod type="morning2">səhər</dayPeriod>
+							<dayPeriod type="afternoon1">gündüz</dayPeriod>
+							<dayPeriod type="evening1">axşamüstü</dayPeriod>
+							<dayPeriod type="night1">axşam</dayPeriod>
+							<dayPeriod type="night2">gecə</dayPeriod>
+						</dayPeriodWidth>
 						<dayPeriodWidth type="narrow">
 							<dayPeriod type="midnight">gecəyarı</dayPeriod>
 							<dayPeriod type="am">a</dayPeriod>
@@ -5985,6 +5996,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} kvadrat düym</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>karat</displayName>
+				<unitPattern count="one">{0} karat</unitPattern>
+				<unitPattern count="other">{0} karat</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litr/kilometr</displayName>
 				<unitPattern count="one">{0} litr/kilometr</unitPattern>
@@ -6391,11 +6407,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} millibar</unitPattern>
 				<unitPattern count="other">{0} millibar</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karat</displayName>
-				<unitPattern count="one">{0} karat</unitPattern>
-				<unitPattern count="other">{0} karat</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometr/saat</displayName>
 				<unitPattern count="one">{0} kilometr/saat</unitPattern>
@@ -6648,6 +6659,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>L/km</displayName>
@@ -7055,11 +7071,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>kt</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometr/saat</displayName>
 				<unitPattern count="one">{0} km/saat</unitPattern>
@@ -7447,13 +7458,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</coordinateUnit>
 		</unitLength>
 		<durationUnit type="hm">
-			<durationUnitPattern>st:dqdq</durationUnitPattern>
+			<durationUnitPattern>h:mm</durationUnitPattern>
 		</durationUnit>
 		<durationUnit type="hms">
-			<durationUnitPattern>st:dqdq:snsn</durationUnitPattern>
+			<durationUnitPattern>h:mm:ss</durationUnitPattern>
 		</durationUnit>
 		<durationUnit type="ms">
-			<durationUnitPattern>dq:snsn</durationUnitPattern>
+			<durationUnitPattern>m:ss</durationUnitPattern>
 		</durationUnit>
 	</units>
 	<listPatterns>

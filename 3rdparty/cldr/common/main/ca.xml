@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11994 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="ca"/>
 	</identity>
 	<localeDisplayNames>
@@ -496,8 +496,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">sumeri</language>
 			<language type="sv">suec</language>
 			<language type="sw">suahili</language>
+			<language type="sw_CD">suahili del Congo</language>
 			<language type="swb">comorià</language>
-			<language type="swc">suahili del Congo</language>
 			<language type="syc">siríac clàssic</language>
 			<language type="syr">siríac</language>
 			<language type="szl" draft="contributed">silesià</language>
@@ -789,7 +789,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Anguilla</territory>
 			<territory type="AL">Albània</territory>
 			<territory type="AM">Armènia</territory>
-			<territory type="AN">Antilles Neerlandeses</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antàrtida</territory>
 			<territory type="AR">Argentina</territory>
@@ -7001,6 +7000,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} polzades quadrades</unitPattern>
 				<perUnitPattern>{0} per polzada quadrada</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>quirats</displayName>
+				<unitPattern count="one">{0} quirat</unitPattern>
+				<unitPattern count="other">{0} quirats</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litres per quilòmetre</displayName>
 				<unitPattern count="one">{0} litre per quilòmetre</unitPattern>
@@ -7402,11 +7406,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} mil·libar</unitPattern>
 				<unitPattern count="other">{0} mil·libars</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>quirats</displayName>
-				<unitPattern count="one">{0} quirat</unitPattern>
-				<unitPattern count="other">{0} quirats</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>quilòmetres per hora</displayName>
 				<unitPattern count="one">{0} quilòmetre per hora</unitPattern>
@@ -7659,6 +7658,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>ct</displayName>
+				<unitPattern count="one">{0} ct</unitPattern>
+				<unitPattern count="other">{0} ct</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
@@ -8060,11 +8064,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>mbar</displayName>
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>ct</displayName>
-				<unitPattern count="one">{0} ct</unitPattern>
-				<unitPattern count="other">{0} ct</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>

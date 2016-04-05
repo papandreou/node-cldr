@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11919 $"/>
+		<version number="$Revision: 12307 $"/>
 		<language type="lv"/>
 	</identity>
 	<localeDisplayNames>
@@ -460,8 +460,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">šumeru</language>
 			<language type="sv">zviedru</language>
 			<language type="sw">svahili</language>
+			<language type="sw_CD">Kongo svahili</language>
 			<language type="swb">komoru</language>
-			<language type="swc">Kongo svahili</language>
 			<language type="syc">klasiskā sīriešu</language>
 			<language type="syr">sīriešu</language>
 			<language type="ta">tamilu</language>
@@ -659,7 +659,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Angilja</territory>
 			<territory type="AL">Albānija</territory>
 			<territory type="AM">Armēnija</territory>
-			<territory type="AN">Nīderlandes Antiļas</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antarktika</territory>
 			<territory type="AR">Argentīna</territory>
@@ -1501,7 +1500,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<dayPeriodContext type="format">
 						<dayPeriodWidth type="abbreviated">
 							<dayPeriod type="midnight" draft="contributed">pusnaktī</dayPeriod>
+							<dayPeriod type="am">priekšp.</dayPeriod>
 							<dayPeriod type="noon" draft="contributed">pusd.</dayPeriod>
+							<dayPeriod type="pm">pēcp.</dayPeriod>
 							<dayPeriod type="morning1" draft="contributed">no rīta</dayPeriod>
 							<dayPeriod type="afternoon1" draft="contributed">pēcpusd.</dayPeriod>
 							<dayPeriod type="evening1" draft="contributed">vakarā</dayPeriod>
@@ -6059,14 +6060,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="zero">{0} kvadrātmetri</unitPattern>
 				<unitPattern count="one">{0} kvadrātmetrs</unitPattern>
 				<unitPattern count="other">{0} kvadrātmetri</unitPattern>
-				<perUnitPattern draft="contributed">uz kvadrātmetru</perUnitPattern>
+				<perUnitPattern draft="contributed">{0} uz kvadrātmetru</perUnitPattern>
 			</unit>
 			<unit type="area-square-centimeter">
 				<displayName>kvadrātcentimetri</displayName>
 				<unitPattern count="zero">{0} kvadrātcentimetri</unitPattern>
 				<unitPattern count="one">{0} kvadrātcentimetrs</unitPattern>
 				<unitPattern count="other">{0} kvadrātcentimetri</unitPattern>
-				<perUnitPattern draft="contributed">uz kvadrātcentimetru</perUnitPattern>
+				<perUnitPattern draft="contributed">{0} uz kvadrātcentimetru</perUnitPattern>
 			</unit>
 			<unit type="area-square-mile">
 				<displayName>kvadrātjūdzes</displayName>
@@ -6098,6 +6099,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} kvadrātcolla</unitPattern>
 				<unitPattern count="other">{0} kvadrātcollas</unitPattern>
 				<perUnitPattern draft="contributed">{0} uz kvadrātcollu</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>karāti</displayName>
+				<unitPattern count="zero">{0} karāti</unitPattern>
+				<unitPattern count="one">{0} karāts</unitPattern>
+				<unitPattern count="other">{0} karāti</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litri uz kilometru</displayName>
@@ -6576,12 +6583,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} milibārs</unitPattern>
 				<unitPattern count="other">{0} milibāri</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karāti</displayName>
-				<unitPattern count="zero">{0} karāti</unitPattern>
-				<unitPattern count="one">{0} karāts</unitPattern>
-				<unitPattern count="other">{0} karāti</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometri stundā</displayName>
 				<unitPattern count="zero">{0} kilometri stundā</unitPattern>
@@ -6641,14 +6642,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="zero">{0} kubikmetri</unitPattern>
 				<unitPattern count="one">{0} kubikmetrs</unitPattern>
 				<unitPattern count="other">{0} kubikmetri</unitPattern>
-				<perUnitPattern draft="contributed">uz kubikmetru</perUnitPattern>
+				<perUnitPattern draft="contributed">{0} uz kubikmetru</perUnitPattern>
 			</unit>
 			<unit type="volume-cubic-centimeter">
 				<displayName>kubikcentimetri</displayName>
 				<unitPattern count="zero">{0} kubikcentimetri</unitPattern>
 				<unitPattern count="one">{0} kubikcentimetrs</unitPattern>
 				<unitPattern count="other">{0} kubikcentimetri</unitPattern>
-				<perUnitPattern draft="contributed">uz kubikcentimetru</perUnitPattern>
+				<perUnitPattern draft="contributed">{0} uz kubikcentimetru</perUnitPattern>
 			</unit>
 			<unit type="volume-cubic-mile">
 				<displayName>kubikjūdzes</displayName>
@@ -6691,7 +6692,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="zero">{0} litri</unitPattern>
 				<unitPattern count="one">{0} litrs</unitPattern>
 				<unitPattern count="other">{0} litri</unitPattern>
-				<perUnitPattern draft="contributed">uz litru</perUnitPattern>
+				<perUnitPattern draft="contributed">{0} uz litru</perUnitPattern>
 			</unit>
 			<unit type="volume-deciliter">
 				<displayName>decilitri</displayName>
@@ -6875,6 +6876,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern draft="contributed">{0} uz collu²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
+				<unitPattern count="zero">{0} kt</unitPattern>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
@@ -7353,12 +7360,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="zero">{0} mbar</unitPattern>
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>kt</displayName>
-				<unitPattern count="zero">{0} kt</unitPattern>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/st.</displayName>

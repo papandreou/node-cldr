@@ -6,15 +6,16 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <supplementalData>
-  <version number="$Revision: 11914 $"/>
+	<version number="$Revision: 12263 $"/>
 	<transforms>
-		<transform source="Gujarati" target="Telugu" direction="forward">
-			<tRule>::[।-॥ઁ-ઃઅ-ઍએ-ઑઓ-નપ-રલ-ળવ-હ઼-ૅે-ૉો-્ૐૠૡ૦-૯];</tRule>
-			<tRule>::NFD;</tRule>
-			<tRule>::Gujarati-InterIndic;</tRule>
-			<tRule>::InterIndic-Telugu;</tRule>
-			<tRule>::NFC;</tRule>
+		<transform source="Gujr" target="Telu" direction="forward" alias="Gujarati-Telugu und-Telu-t-und-gujr">
+			<tRule>
+::[।-॥ઁ-ઃઅ-ઍએ-ઑઓ-નપ-રલ-ળવ-હ઼-ૅે-ૉો-્ૐૠૡ૦-૯];
+::NFD;
+::Gujarati-InterIndic;
+::InterIndic-Telugu;
+::NFC;
+			</tRule>
 		</transform>
 	</transforms>
 </supplementalData>
-

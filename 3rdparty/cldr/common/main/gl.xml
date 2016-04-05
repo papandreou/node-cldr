@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11994 $"/>
+		<version number="$Revision: 12376 $"/>
 		<language type="gl"/>
 	</identity>
 	<localeDisplayNames>
@@ -243,7 +243,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="su">sondanés</language>
 			<language type="sv">sueco</language>
 			<language type="sw">swahili</language>
-			<language type="swc">swc</language>
+			<language type="sw_CD">swc</language>
 			<language type="ta">tamil</language>
 			<language type="te">telugu</language>
 			<language type="teo">teso</language>
@@ -371,7 +371,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Anguila</territory>
 			<territory type="AL">Albania</territory>
 			<territory type="AM">Armenia</territory>
-			<territory type="AN" draft="contributed">Antillas Holandesas</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antártida</territory>
 			<territory type="AR">Arxentina</territory>
@@ -4145,10 +4144,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
-					<pattern>¤#,##0.00</pattern>
+					<pattern>#,##0.00 ¤</pattern>
 				</currencyFormat>
 				<currencyFormat type="accounting">
-					<pattern>¤#,##0.00;(¤#,##0.00)</pattern>
+					<pattern>#,##0.00 ¤</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
 			<currencyFormatLength type="short">
@@ -5461,6 +5460,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} polgadas cadradas</unitPattern>
 				<perUnitPattern>{0} por polgada cadrada</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>quilates</displayName>
+				<unitPattern count="one">{0} quilate</unitPattern>
+				<unitPattern count="other">{0} quilates</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litros por quilómetro</displayName>
 				<unitPattern count="one">{0} litro por quilómetro</unitPattern>
@@ -5862,11 +5866,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} milibar</unitPattern>
 				<unitPattern count="other">{0} milibares</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>quilates</displayName>
-				<unitPattern count="one">{0} quilate</unitPattern>
-				<unitPattern count="other">{0} quilates</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>quilómetros por hora</displayName>
 				<unitPattern count="one">{0} quilómetro por hora</unitPattern>
@@ -6119,6 +6118,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0} por in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>quilates</displayName>
+				<unitPattern count="one">{0} ct</unitPattern>
+				<unitPattern count="other">{0} ct</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litros/km</displayName>
@@ -6520,11 +6524,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>mbar</displayName>
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>quilates</displayName>
-				<unitPattern count="one">{0} ct</unitPattern>
-				<unitPattern count="other">{0} ct</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/hora</displayName>

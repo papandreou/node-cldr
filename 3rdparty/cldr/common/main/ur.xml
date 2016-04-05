@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11917 $"/>
+		<version number="$Revision: 12311 $"/>
 		<language type="ur"/>
 	</identity>
 	<localeDisplayNames>
@@ -238,7 +238,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="su">سنڈانیز</language>
 			<language type="sv">سویڈش</language>
 			<language type="sw">سواحلی</language>
-			<language type="swc">کانگو سواحلی</language>
+			<language type="sw_CD">کانگو سواحلی</language>
 			<language type="ta">تمل</language>
 			<language type="te">تیلگو</language>
 			<language type="teo">تیسو</language>
@@ -365,7 +365,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">انگوئیلا</territory>
 			<territory type="AL">البانیہ</territory>
 			<territory type="AM">آرمینیا</territory>
-			<territory type="AN">نیدرلینڈز انٹیلیز</territory>
 			<territory type="AO">انگولا</territory>
 			<territory type="AQ">انٹارکٹیکا</territory>
 			<territory type="AR">ارجنٹینا</territory>
@@ -1674,6 +1673,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-short">
 				<displayName>دن</displayName>
 				<relative type="-2">گزشتہ پرسوں</relative>
+				<relative type="-1">گزشتہ کل</relative>
+				<relative type="0">آج</relative>
+				<relative type="1">آئندہ کل</relative>
 				<relative type="2">آنے والا پرسوں</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} دن میں</relativeTimePattern>
@@ -1687,6 +1689,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-narrow">
 				<displayName>دن</displayName>
 				<relative type="-2">گزشتہ پرسوں</relative>
+				<relative type="-1">گزشتہ کل</relative>
+				<relative type="0">آج</relative>
+				<relative type="1">آئندہ کل</relative>
 				<relative type="2">آنے والا پرسوں</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} دنوں میں</relativeTimePattern>
@@ -5377,6 +5382,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} مربع انچ</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>قیراط</displayName>
+				<unitPattern count="one">{0} قیراط</unitPattern>
+				<unitPattern count="other">{0} قیراط</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>L/km</displayName>
 				<unitPattern count="one">{0} L/km</unitPattern>
@@ -5778,11 +5788,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} ملی بار</unitPattern>
 				<unitPattern count="other">{0} ملی بار</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>قیراط</displayName>
-				<unitPattern count="one">{0} قیراط</unitPattern>
-				<unitPattern count="other">{0} قیراط</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>کلومیٹر فی گھنٹہ</displayName>
 				<unitPattern count="one">{0} کلومیٹر فی گھنٹہ</unitPattern>
@@ -6035,6 +6040,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>قیراط</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>L/km</displayName>
@@ -6437,11 +6447,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} ملی بار</unitPattern>
 				<unitPattern count="other">{0} ملی بار</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>قیراط</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>کلومیٹر/گھنٹہ</displayName>
 				<unitPattern count="one">{0} kph</unitPattern>
@@ -6730,7 +6735,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} یارڈ</unitPattern>
 			</unit>
 			<unit type="length-foot">
-				<unitPattern count="one">'{0}</unitPattern>
+				<unitPattern count="one">{0}′</unitPattern>
 				<unitPattern count="other">{0}′</unitPattern>
 			</unit>
 			<unit type="length-inch">

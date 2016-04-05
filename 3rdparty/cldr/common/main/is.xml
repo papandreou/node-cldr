@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11917 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="is"/>
 	</identity>
 	<localeDisplayNames>
@@ -446,8 +446,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">súmerska</language>
 			<language type="sv">sænska</language>
 			<language type="sw">svahílí</language>
+			<language type="sw_CD">Kongó-svahílí</language>
 			<language type="swb" draft="unconfirmed">shimaoríska</language>
-			<language type="swc">Kongó-svahílí</language>
 			<language type="syc">klassísk sýrlenska</language>
 			<language type="syr">sýrlenska</language>
 			<language type="ta">tamílska</language>
@@ -665,7 +665,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Angvilla</territory>
 			<territory type="AL">Albanía</territory>
 			<territory type="AM">Armenía</territory>
-			<territory type="AN">Hollensku Antillur</territory>
 			<territory type="AO">Angóla</territory>
 			<territory type="AQ">Suðurskautslandið</territory>
 			<territory type="AR">Argentína</territory>
@@ -1975,6 +1974,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-short">
 				<displayName>dagur</displayName>
 				<relative type="-2">í fyrradag</relative>
+				<relative type="-1">í gær</relative>
+				<relative type="0">í dag</relative>
+				<relative type="1">á morgun</relative>
 				<relative type="2">eftir tvo daga</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">eftir {0} dag</relativeTimePattern>
@@ -1988,6 +1990,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-narrow">
 				<displayName>d.</displayName>
 				<relative type="-2">í fyrradag</relative>
+				<relative type="-1">í gær</relative>
+				<relative type="0">í dag</relative>
+				<relative type="1">á morgun</relative>
 				<relative type="2">eftir tvo daga</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">+{0} dag</relativeTimePattern>
@@ -5819,6 +5824,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} fertommur</unitPattern>
 				<perUnitPattern>{0} á fertommu</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>karöt</displayName>
+				<unitPattern count="one">{0} karat</unitPattern>
+				<unitPattern count="other">{0} karöt</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>lítrar á kílómetra</displayName>
 				<unitPattern count="one">{0} lítri á kílómetra</unitPattern>
@@ -6215,11 +6225,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} millibar</unitPattern>
 				<unitPattern count="other">{0} millibör</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karöt</displayName>
-				<unitPattern count="one">{0} karat</unitPattern>
-				<unitPattern count="other">{0} karöt</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kílómetrar á klukkustund</displayName>
 				<unitPattern count="one">{0} kílómetri á klukkustund</unitPattern>
@@ -6472,6 +6477,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} t²</unitPattern>
 				<unitPattern count="other">{0} t²</unitPattern>
 				<perUnitPattern>{0}/t²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>lítrar/km</displayName>
@@ -6873,11 +6883,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>mbar</displayName>
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbör</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>kt</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kílómetrar á klukkustund</displayName>

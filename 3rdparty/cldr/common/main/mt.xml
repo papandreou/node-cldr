@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11994 $"/>
+		<version number="$Revision: 12307 $"/>
 		<language type="mt"/>
 	</identity>
 	<localeDisplayNames>
@@ -487,7 +487,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Angwilla</territory>
 			<territory type="AL">Albanija</territory>
 			<territory type="AM">Armenja</territory>
-			<territory type="AN">Antilles Olandiżi</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antartika</territory>
 			<territory type="AR">Arġentina</territory>
@@ -1103,6 +1102,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</quarters>
 				<dayPeriods>
 					<dayPeriodContext type="format">
+						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="am">AM</dayPeriod>
+							<dayPeriod type="pm">PM</dayPeriod>
+						</dayPeriodWidth>
 						<dayPeriodWidth type="wide">
 							<dayPeriod type="am">AM</dayPeriod>
 							<dayPeriod type="pm">PM</dayPeriod>
@@ -1513,6 +1516,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="many">{0}′</unitPattern>
 				<unitPattern count="other">{0}′</unitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>karati</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="few">{0} kt</unitPattern>
+				<unitPattern count="many">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>L/km</displayName>
 				<unitPattern count="one">{0} litru kull kilometru</unitPattern>
@@ -1555,15 +1565,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="many">{0} lx</unitPattern>
 				<unitPattern count="other">{0} lx</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karati</displayName>
+		</unitLength>
+		<unitLength type="short">
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
 				<unitPattern count="one">{0} kt</unitPattern>
 				<unitPattern count="few">{0} kt</unitPattern>
 				<unitPattern count="many">{0} kt</unitPattern>
 				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
-		</unitLength>
-		<unitLength type="short">
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>L/km</displayName>
 				<unitPattern count="one">{0} L/km</unitPattern>
@@ -1611,13 +1621,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="few">{0} lx</unitPattern>
 				<unitPattern count="many">{0} lx</unitPattern>
 				<unitPattern count="other">{0} lx</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>kt</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="few">{0} kt</unitPattern>
-				<unitPattern count="many">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 		</unitLength>
 		<unitLength type="narrow">

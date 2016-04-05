@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11914 $"/>
+		<version number="$Revision: 12307 $"/>
 		<language type="hsb"/>
 	</identity>
 	<localeDisplayNames>
@@ -242,7 +242,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="su">sundanezišćina</language>
 			<language type="sv">šwedšćina</language>
 			<language type="sw">suahelšćina</language>
-			<language type="swc">kongoska suahelšćina</language>
+			<language type="sw_CD">kongoska suahelšćina</language>
 			<language type="ta">tamilšćina</language>
 			<language type="te">telugu</language>
 			<language type="teo">teso</language>
@@ -1056,6 +1056,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</quarters>
 				<dayPeriods>
 					<dayPeriodContext type="format">
+						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="am">dopołdnja</dayPeriod>
+							<dayPeriod type="pm">popołdnju</dayPeriod>
+						</dayPeriodWidth>
 						<dayPeriodWidth type="narrow">
 							<dayPeriod type="am">dop.</dayPeriod>
 							<dayPeriod type="pm">pop.</dayPeriod>
@@ -4660,6 +4664,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="few">{0} kwadratne cóle</unitPattern>
 				<unitPattern count="other">{0} kwadratnych cólow</unitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>karaty</displayName>
+				<unitPattern count="one">{0} karat</unitPattern>
+				<unitPattern count="two">{0} karataj</unitPattern>
+				<unitPattern count="few">{0} karaty</unitPattern>
+				<unitPattern count="other">{0} karatow</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litry na kilometer</displayName>
 				<unitPattern count="one">{0} liter na kilometer</unitPattern>
@@ -4778,7 +4789,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="two">{0} hodźinje</unitPattern>
 				<unitPattern count="few">{0} hodźiny</unitPattern>
 				<unitPattern count="other">{0} hodźinow</unitPattern>
-				<perUnitPattern>na hodźinu</perUnitPattern>
+				<perUnitPattern>{0} na hodźinu</perUnitPattern>
 			</unit>
 			<unit type="duration-minute">
 				<displayName>minuty</displayName>
@@ -4793,7 +4804,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="two">{0} sekundźe</unitPattern>
 				<unitPattern count="few">{0} sekundy</unitPattern>
 				<unitPattern count="other">{0} sekundow</unitPattern>
-				<perUnitPattern>na sekundu</perUnitPattern>
+				<perUnitPattern>{0} na sekundu</perUnitPattern>
 			</unit>
 			<unit type="duration-millisecond">
 				<displayName>milisekundy</displayName>
@@ -5180,13 +5191,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="few">{0} milibary</unitPattern>
 				<unitPattern count="other">{0} milibarow</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karaty</displayName>
-				<unitPattern count="one">{0} karat</unitPattern>
-				<unitPattern count="two">{0} karataj</unitPattern>
-				<unitPattern count="few">{0} karaty</unitPattern>
-				<unitPattern count="other">{0} karatow</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometry na hodźinu</displayName>
 				<unitPattern count="one">{0} kilometer na hodźinu</unitPattern>
@@ -5482,6 +5486,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="two">{0} in²</unitPattern>
 				<unitPattern count="few">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="two">{0} kt</unitPattern>
+				<unitPattern count="few">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
@@ -6002,13 +6013,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="two">{0} mbar</unitPattern>
 				<unitPattern count="few">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>kt</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="two">{0} kt</unitPattern>
-				<unitPattern count="few">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>

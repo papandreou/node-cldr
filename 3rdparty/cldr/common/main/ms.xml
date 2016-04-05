@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11994 $"/>
+		<version number="$Revision: 12416 $"/>
 		<language type="ms"/>
 	</identity>
 	<localeDisplayNames>
@@ -288,8 +288,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="su">Sunda</language>
 			<language type="sv">Sweden</language>
 			<language type="sw">Swahili</language>
+			<language type="sw_CD">Congo Swahili</language>
 			<language type="swb">Comoria</language>
-			<language type="swc">Congo Swahili</language>
 			<language type="ta">Tamil</language>
 			<language type="te">Telugu</language>
 			<language type="teo">Teso</language>
@@ -425,7 +425,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Anguilla</territory>
 			<territory type="AL">Albania</territory>
 			<territory type="AM">Armenia</territory>
-			<territory type="AN">Netherlands Antilles</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antartika</territory>
 			<territory type="AR">Argentina</territory>
@@ -1031,7 +1030,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="H">HH</dateFormatItem>
 						<dateFormatItem id="hm">h:mm a</dateFormatItem>
 						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="Hmm">H:mm</dateFormatItem>
 						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
 						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
 						<dateFormatItem id="M">L</dateFormatItem>
@@ -1050,7 +1048,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
 						<dateFormatItem id="yyyyMMMd">d MMM y G</dateFormatItem>
 						<dateFormatItem id="yyyyMMMEd">E, d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">G y MMMM</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">MMMM y G</dateFormatItem>
 						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
 						<dateFormatItem id="yyyyQQQQ">QQQQ y G</dateFormatItem>
 					</availableFormats>
@@ -1513,7 +1511,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="H">HH</dateFormatItem>
 						<dateFormatItem id="hm">h:mm a</dateFormatItem>
 						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
-						<dateFormatItem id="Hmm">H:mm</dateFormatItem>
 						<dateFormatItem id="hms">h:mm:ss a</dateFormatItem>
 						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
 						<dateFormatItem id="hmsv">h:mm:ss a v</dateFormatItem>
@@ -1536,7 +1533,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMd">d MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E, d MMM y</dateFormatItem>
-						<dateFormatItem id="yMMMM">y MMMM</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
 					</availableFormats>
@@ -5298,6 +5295,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} inci persegi</unitPattern>
 				<perUnitPattern>{0} setiap inci persegi</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>karat</displayName>
+				<unitPattern count="other">{0} karat</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>liter sekilometer</displayName>
 				<unitPattern count="other">{0} liter sekilometer</unitPattern>
@@ -5622,10 +5623,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>milibar</displayName>
 				<unitPattern count="other">{0} milibar</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karat</displayName>
-				<unitPattern count="other">{0} karat</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometer sejam</displayName>
 				<unitPattern count="other">{0} kilometer sejam</unitPattern>
@@ -5831,6 +5828,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>inci²</displayName>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0} setiap in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>karat</displayName>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>liter/km</displayName>
@@ -6155,10 +6156,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="pressure-millibar">
 				<displayName>mbar</displayName>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>karat</displayName>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/jam</displayName>

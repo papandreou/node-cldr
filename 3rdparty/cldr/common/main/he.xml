@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11917 $"/>
+		<version number="$Revision: 12307 $"/>
 		<language type="he"/>
 	</identity>
 	<localeDisplayNames>
@@ -462,8 +462,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">שומרית</language>
 			<language type="sv">שוודית</language>
 			<language type="sw">סווהילית</language>
+			<language type="sw_CD">סווהילי קונגולטזית</language>
 			<language type="swb" draft="provisional">קומורו</language>
-			<language type="swc">סווהילי קונגולטזית</language>
 			<language type="syc" draft="contributed">סירית קלאסית</language>
 			<language type="syr">סורית</language>
 			<language type="ta">טמילית</language>
@@ -651,7 +651,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">אנגילה</territory>
 			<territory type="AL">אלבניה</territory>
 			<territory type="AM">ארמניה</territory>
-			<territory type="AN">אנטילים הולנדיים</territory>
 			<territory type="AO">אנגולה</territory>
 			<territory type="AQ">אנטארקטיקה</territory>
 			<territory type="AR">ארגנטינה</territory>
@@ -1089,10 +1088,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<moreInformation>?</moreInformation>
 	</characters>
 	<delimiters>
-		<quotationStart>״</quotationStart>
-		<quotationEnd>״</quotationEnd>
-		<alternateQuotationStart>׳</alternateQuotationStart>
-		<alternateQuotationEnd>׳</alternateQuotationEnd>
+		<quotationStart>”</quotationStart>
+		<quotationEnd>”</quotationEnd>
+		<alternateQuotationStart>’</alternateQuotationStart>
+		<alternateQuotationEnd>’</alternateQuotationEnd>
 	</delimiters>
 	<dates>
 		<calendars>
@@ -1488,6 +1487,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</quarters>
 				<dayPeriods>
 					<dayPeriodContext type="format">
+						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="midnight">חצות</dayPeriod>
+							<dayPeriod type="am">לפנה״צ</dayPeriod>
+							<dayPeriod type="pm">אחה״צ</dayPeriod>
+							<dayPeriod type="morning1">בוקר</dayPeriod>
+							<dayPeriod type="afternoon1">צהריים</dayPeriod>
+							<dayPeriod type="afternoon2">אחר הצהריים</dayPeriod>
+							<dayPeriod type="evening1">ערב</dayPeriod>
+							<dayPeriod type="night1">לילה</dayPeriod>
+						</dayPeriodWidth>
 						<dayPeriodWidth type="wide">
 							<dayPeriod type="midnight">חצות</dayPeriod>
 							<dayPeriod type="am">לפנה״צ</dayPeriod>
@@ -1616,7 +1625,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">d בMMM</dateFormatItem>
 						<dateFormatItem id="MMMEd">E, d בMMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMd">d בMMMM</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y</dateFormatItem>
 						<dateFormatItem id="yM">M.y</dateFormatItem>
@@ -1868,8 +1877,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="Ed" draft="provisional">E ה-d</dateFormatItem>
 						<dateFormatItem id="Gy">y G</dateFormatItem>
 						<dateFormatItem id="GyMMM">MMMM y G</dateFormatItem>
-						<dateFormatItem id="GyMMMd">d MMMM y G</dateFormatItem>
-						<dateFormatItem id="GyMMMEd">E, d MMMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMd">d בMMMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">E, d בMMMM y G</dateFormatItem>
 						<dateFormatItem id="M" draft="contributed">MMMM</dateFormatItem>
 						<dateFormatItem id="Md" draft="contributed">d בMMMM</dateFormatItem>
 						<dateFormatItem id="MEd" draft="contributed">E, d בMMMM</dateFormatItem>
@@ -2103,7 +2112,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">d בMMM</dateFormatItem>
 						<dateFormatItem id="MMMEd">E, d בMMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMd">d בMMMM</dateFormatItem>
 						<dateFormatItem id="y">y G</dateFormatItem>
 						<dateFormatItem id="yyyy">y G</dateFormatItem>
 						<dateFormatItem id="yyyyM">M/y</dateFormatItem>
@@ -6695,6 +6704,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} אינץ׳ רבוע</unitPattern>
 				<perUnitPattern>{0}/אינץ׳ רבוע</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>קראט</displayName>
+				<unitPattern count="one">קראט אחד</unitPattern>
+				<unitPattern count="two">{0} קראט</unitPattern>
+				<unitPattern count="many">{0} קראט</unitPattern>
+				<unitPattern count="other">{0} קראט</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>ליטרים/קילומטר</displayName>
 				<unitPattern count="one">{0} ליטר/קילומטר</unitPattern>
@@ -7250,13 +7266,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="many">{0} מיליבר</unitPattern>
 				<unitPattern count="other">{0} מיליבר</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>קראט</displayName>
-				<unitPattern count="one">קראט אחד</unitPattern>
-				<unitPattern count="two">{0} קראט</unitPattern>
-				<unitPattern count="many">{0} קראט</unitPattern>
-				<unitPattern count="other">{0} קראט</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>קילומטר לשעה</displayName>
 				<unitPattern count="one">{0} קילומטר לשעה</unitPattern>
@@ -7603,6 +7612,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="many">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName draft="contributed">kt</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="two">{0} kt</unitPattern>
+				<unitPattern count="many">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>ליטרים/ק״מ</displayName>
@@ -8158,13 +8174,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="two">{0} מיליבר</unitPattern>
 				<unitPattern count="many">{0} מ״ב</unitPattern>
 				<unitPattern count="other">{0} מ״ב</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName draft="contributed">kt</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="two">{0} kt</unitPattern>
-				<unitPattern count="many">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>קמ״ש</displayName>

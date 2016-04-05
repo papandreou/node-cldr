@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11989 $"/>
+		<version number="$Revision: 12390 $"/>
 		<language type="zh"/>
 		<script type="Hant"/>
 	</identity>
@@ -367,7 +367,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="moh">莫霍克文</language>
 			<language type="mos">莫西文</language>
 			<language type="mr">馬拉地文</language>
-			<language type="mrj" draft="contributed">西馬裏文</language>
+			<language type="mrj">馬里</language>
 			<language type="ms">馬來文</language>
 			<language type="mt">馬爾他文</language>
 			<language type="mua">蒙當文</language>
@@ -504,7 +504,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="smj">魯勒薩米文</language>
 			<language type="smn">伊納裡薩米文</language>
 			<language type="sms">斯科特薩米文</language>
-			<language type="sn">塞內加爾文</language>
+			<language type="sn">紹納文</language>
 			<language type="snk">索尼基文</language>
 			<language type="so">索馬利文</language>
 			<language type="sog">索格底亞納文</language>
@@ -522,8 +522,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">蘇美文</language>
 			<language type="sv">瑞典文</language>
 			<language type="sw">史瓦希里文</language>
+			<language type="sw_CD">史瓦希里文（剛果）</language>
 			<language type="swb">葛摩文</language>
-			<language type="swc">史瓦希里文（剛果）</language>
 			<language type="syc">古敘利亞文</language>
 			<language type="syr">敘利亞文</language>
 			<language type="szl" draft="contributed">西利西亞文</language>
@@ -547,7 +547,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="tli">特林基特文</language>
 			<language type="tly" draft="contributed">塔里什文</language>
 			<language type="tmh">塔馬奇克文</language>
-			<language type="tn">突尼西亞文</language>
+			<language type="tn">札那文</language>
 			<language type="to">東加文</language>
 			<language type="tog">東加文（尼亞薩）</language>
 			<language type="tpi">托比辛文</language>
@@ -824,7 +824,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">安圭拉</territory>
 			<territory type="AL">阿爾巴尼亞</territory>
 			<territory type="AM">亞美尼亞</territory>
-			<territory type="AN">荷屬安地列斯</territory>
 			<territory type="AO">安哥拉</territory>
 			<territory type="AQ">南極洲</territory>
 			<territory type="AR">阿根廷</territory>
@@ -2589,6 +2588,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<dayPeriodContext type="format">
 						<dayPeriodWidth type="abbreviated">
 							<dayPeriod type="midnight">午夜</dayPeriod>
+							<dayPeriod type="am">上午</dayPeriod>
+							<dayPeriod type="pm">下午</dayPeriod>
 							<dayPeriod type="morning1">清晨</dayPeriod>
 							<dayPeriod type="morning2">上午</dayPeriod>
 							<dayPeriod type="afternoon1">中午</dayPeriod>
@@ -8082,6 +8083,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} 平方英寸</unitPattern>
 				<perUnitPattern>每平方英寸 {0}</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>克拉</displayName>
+				<unitPattern count="other">{0} 克拉</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>每公里公升</displayName>
 				<unitPattern count="other">每公里 {0} 公升</unitPattern>
@@ -8418,10 +8423,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>毫巴</displayName>
 				<unitPattern count="other">{0} 毫巴</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>克拉</displayName>
-				<unitPattern count="other">{0} 克拉</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>每小時公里</displayName>
 				<unitPattern count="other">每小時 {0} 公里</unitPattern>
@@ -8630,6 +8631,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>平方英寸</displayName>
 				<unitPattern count="other">{0} 平方英寸</unitPattern>
 				<perUnitPattern>{0}/平方英寸</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>克拉</displayName>
+				<unitPattern count="other">{0} 克拉</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>公升/公里</displayName>
@@ -8967,10 +8972,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>毫巴</displayName>
 				<unitPattern count="other">{0} 毫巴</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>克拉</displayName>
-				<unitPattern count="other">{0} 克拉</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>公里/小時</displayName>
 				<unitPattern count="other">{0} 公里/小時</unitPattern>
@@ -9158,6 +9159,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="area-square-inch">
 				<unitPattern count="other" draft="contributed">{0}in²</unitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<unitPattern count="other" draft="contributed">{0}kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<unitPattern count="other" draft="contributed">{0}L/km</unitPattern>
@@ -9410,9 +9414,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="pressure-millibar">
 				<unitPattern count="other">{0}毫巴</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<unitPattern count="other" draft="contributed">{0}kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>公里/小時</displayName>

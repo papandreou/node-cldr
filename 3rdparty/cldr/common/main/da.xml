@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11944 $"/>
+		<version number="$Revision: 12387 $"/>
 		<language type="da"/>
 	</identity>
 	<localeDisplayNames>
@@ -328,7 +328,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="moh">mohawk</language>
 			<language type="mos">mossi</language>
 			<language type="mr">marathisk</language>
-			<language type="ms">malay</language>
+			<language type="ms">malajisk</language>
 			<language type="mt">maltesisk</language>
 			<language type="mua">mundang</language>
 			<language type="mul">flere sprog</language>
@@ -460,8 +460,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">sumerisk</language>
 			<language type="sv">svensk</language>
 			<language type="sw">swahili</language>
+			<language type="sw_CD">congolesisk swahili</language>
 			<language type="swb">shimaore</language>
-			<language type="swc">congolesisk swahili</language>
 			<language type="syc">klassisk syrisk</language>
 			<language type="syr">syrisk</language>
 			<language type="ta">tamilsk</language>
@@ -744,7 +744,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Anguilla</territory>
 			<territory type="AL">Albanien</territory>
 			<territory type="AM">Armenien</territory>
-			<territory type="AN">Hollandske Antiller</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antarktis</territory>
 			<territory type="AR">Argentina</territory>
@@ -915,7 +914,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="NF">Norfolk Island</territory>
 			<territory type="NG">Nigeria</territory>
 			<territory type="NI">Nicaragua</territory>
-			<territory type="NL">Nederlandene</territory>
+			<territory type="NL">Holland</territory>
 			<territory type="NO">Norge</territory>
 			<territory type="NP">Nepal</territory>
 			<territory type="NR">Nauru</territory>
@@ -2191,6 +2190,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-short">
 				<displayName>dag</displayName>
 				<relative type="-2">i forgårs</relative>
+				<relative type="-1">i går</relative>
+				<relative type="0">i dag</relative>
+				<relative type="1">i morgen</relative>
 				<relative type="2">i overmorgen</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">om {0} dag</relativeTimePattern>
@@ -2204,6 +2206,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-narrow">
 				<displayName>dag</displayName>
 				<relative type="-2">i forgårs</relative>
+				<relative type="-1">i går</relative>
+				<relative type="0">i dag</relative>
+				<relative type="1">i morgen</relative>
 				<relative type="2">i overmorgen</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">om {0} dag</relativeTimePattern>
@@ -6370,7 +6375,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">
-			<pattern type="atLeast">{0} eller derover</pattern>
+			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}-{1}</pattern>
 		</miscPatterns>
 	</numbers>
@@ -6461,6 +6466,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} kvadrattomme</unitPattern>
 				<unitPattern count="other">{0} kvadrattommer</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>karat</displayName>
+				<unitPattern count="one">{0} karat</unitPattern>
+				<unitPattern count="other">{0} karat</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>liter pr. kilometer</displayName>
@@ -6863,11 +6873,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} millibar</unitPattern>
 				<unitPattern count="other">{0} millibar</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karat</displayName>
-				<unitPattern count="one">{0} karat</unitPattern>
-				<unitPattern count="other">{0} karat</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometer i timen</displayName>
 				<unitPattern count="one">kilometer i timen</unitPattern>
@@ -7120,6 +7125,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>karat</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
@@ -7521,11 +7531,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>mbar</displayName>
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>karat</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/t</displayName>

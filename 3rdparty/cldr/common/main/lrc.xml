@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11997 $"/>
+		<version number="$Revision: 12307 $"/>
 		<language type="lrc"/>
 	</identity>
 	<localeDisplayNames>
@@ -218,7 +218,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="su">سوٙدانی</language>
 			<language type="sv">سوٙئدی</language>
 			<language type="sw">سأڤاحیلی</language>
-			<language type="swc">سأڤاحیلی کونگو</language>
+			<language type="sw_CD">سأڤاحیلی کونگو</language>
 			<language type="ta">تامیل</language>
 			<language type="te">تئلئگو</language>
 			<language type="teo">تئسو</language>
@@ -344,7 +344,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</layout>
 	<characters>
 		<exemplarCharacters>[\u0659 \u065B آ أ ؤ ئ ا ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع غ ف ڤ ق ک گ ل م ن ھ ە و ۉ ۊ ی ؽ]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[\u200B \u200C \u200D \u200E \u200F \u064B \u064C \u064D \u064E \u064F \u0650 \u0651 \u0652 \u0654 إ ة ك ه ى ي]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u200B\u200C\u200D\u200E\u200F \u064B \u064C \u064D \u064E \u064F \u0650 \u0651 \u0652 \u0654 إ ة ك ه ى ي]</exemplarCharacters>
 		<exemplarCharacters type="index">[آ ا ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن ھ و ی]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[\- ‐ ، ٫ ٬ ؛ \: ! ؟ . … ‹ › « » ( ) \[ \] * / \\]</exemplarCharacters>
 	</characters>
@@ -540,6 +540,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</quarters>
 				<dayPeriods>
 					<dayPeriodContext type="format">
+						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="am">AM</dayPeriod>
+							<dayPeriod type="pm">PM</dayPeriod>
+						</dayPeriodWidth>
 						<dayPeriodWidth type="wide">
 							<dayPeriod type="am">AM</dayPeriod>
 							<dayPeriod type="pm">PM</dayPeriod>
@@ -824,13 +828,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</numbers>
 	<units>
 		<durationUnit type="hm">
-			<durationUnitPattern>ساأت:دئقه</durationUnitPattern>
+			<durationUnitPattern>h:mm</durationUnitPattern>
 		</durationUnit>
 		<durationUnit type="hms">
-			<durationUnitPattern>ساأت:دئقه:ثانیه</durationUnitPattern>
+			<durationUnitPattern>h:mm:ss</durationUnitPattern>
 		</durationUnit>
 		<durationUnit type="ms">
-			<durationUnitPattern>دئیقه:ثانیه</durationUnitPattern>
+			<durationUnitPattern>m:ss</durationUnitPattern>
 		</durationUnit>
 	</units>
 	<listPatterns>

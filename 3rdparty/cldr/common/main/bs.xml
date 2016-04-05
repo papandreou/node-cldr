@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11977 $"/>
+		<version number="$Revision: 12307 $"/>
 		<language type="bs"/>
 	</identity>
 	<localeDisplayNames>
@@ -464,8 +464,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">sumerski</language>
 			<language type="sv">švedski</language>
 			<language type="sw">svahili</language>
+			<language type="sw_CD">kongoanski swahili</language>
 			<language type="swb" draft="provisional">komorski</language>
-			<language type="swc">kongoanski swahili</language>
 			<language type="syc">klasični sirijski</language>
 			<language type="syr">sirijski</language>
 			<language type="ta">tamilski</language>
@@ -752,7 +752,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Angvila</territory>
 			<territory type="AL">Albanija</territory>
 			<territory type="AM">Jermenija</territory>
-			<territory type="AN">Holandski Antili</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antarktika</territory>
 			<territory type="AR">Argentina</territory>
@@ -1674,7 +1673,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<dayPeriodContext type="format">
 						<dayPeriodWidth type="abbreviated">
 							<dayPeriod type="midnight">ponoć</dayPeriod>
+							<dayPeriod type="am">prijepodne</dayPeriod>
 							<dayPeriod type="noon">podne</dayPeriod>
+							<dayPeriod type="pm">popodne</dayPeriod>
 							<dayPeriod type="morning1">jutro</dayPeriod>
 							<dayPeriod type="afternoon1">poslijepodne</dayPeriod>
 							<dayPeriod type="evening1">večer</dayPeriod>
@@ -7013,6 +7014,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} kvadratnih inča</unitPattern>
 				<perUnitPattern>{0} po kvadratnom inču</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>karati</displayName>
+				<unitPattern count="one">{0} karat</unitPattern>
+				<unitPattern count="few">{0} karata</unitPattern>
+				<unitPattern count="other">{0} karata</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litri po kilometru</displayName>
 				<unitPattern count="one">{0} litar po kilometru</unitPattern>
@@ -7488,12 +7495,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="few">{0} milibara</unitPattern>
 				<unitPattern count="other">{0} milibara</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karati</displayName>
-				<unitPattern count="one">{0} karat</unitPattern>
-				<unitPattern count="few">{0} karata</unitPattern>
-				<unitPattern count="other">{0} karata</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometara na sat</displayName>
 				<unitPattern count="one">{0} kilometar na sat</unitPattern>
@@ -7793,6 +7794,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="few">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="few">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>L/km</displayName>
@@ -8271,12 +8278,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="few">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>kt</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="few">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>

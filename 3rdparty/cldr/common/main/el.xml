@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11994 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="el"/>
 	</identity>
 	<localeDisplayNames>
@@ -460,8 +460,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">Σουμερικά</language>
 			<language type="sv">Σουηδικά</language>
 			<language type="sw">Σουαχίλι</language>
+			<language type="sw_CD">Κονγκό Σουαχίλι</language>
 			<language type="swb">Κομόρρια</language>
-			<language type="swc">Κονγκό Σουαχίλι</language>
 			<language type="syc">Κλασικά Συριακά</language>
 			<language type="syr">Συριακά</language>
 			<language type="ta">Ταμίλ</language>
@@ -716,7 +716,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Ανγκουίλα</territory>
 			<territory type="AL">Αλβανία</territory>
 			<territory type="AM">Αρμενία</territory>
-			<territory type="AN">Ολλανδικές Αντίλλες</territory>
 			<territory type="AO">Ανγκόλα</territory>
 			<territory type="AQ">Ανταρκτική</territory>
 			<territory type="AR">Αργεντινή</territory>
@@ -1183,8 +1182,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<delimiters>
 		<quotationStart>«</quotationStart>
 		<quotationEnd>»</quotationEnd>
-		<alternateQuotationStart>&quot;</alternateQuotationStart>
-		<alternateQuotationEnd>&quot;</alternateQuotationEnd>
+		<alternateQuotationStart>“</alternateQuotationStart>
+		<alternateQuotationEnd>”</alternateQuotationEnd>
 	</delimiters>
 	<dates>
 		<calendars>
@@ -6404,6 +6403,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} τετραγωνικές ίντσες</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>καράτια</displayName>
+				<unitPattern count="one">{0} καράτι</unitPattern>
+				<unitPattern count="other">{0} καράτια</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>λίτρα ανά χιλιόμετρο</displayName>
 				<unitPattern count="one">{0} λίτρο ανά χιλιόμετρο</unitPattern>
@@ -6805,11 +6809,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} μιλιμπάρ</unitPattern>
 				<unitPattern count="other">{0} μιλιμπάρ</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>καράτια</displayName>
-				<unitPattern count="one">{0} καράτι</unitPattern>
-				<unitPattern count="other">{0} καράτια</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>χιλιόμετρα ανά ώρα</displayName>
 				<unitPattern count="one">{0} χιλιόμετρο ανά ώρα</unitPattern>
@@ -7062,6 +7061,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>καράτια</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>λίτρα/χλμ.</displayName>
@@ -7463,11 +7467,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>μιλιμπάρ</displayName>
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>καράτια</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>χλμ./ώρα</displayName>

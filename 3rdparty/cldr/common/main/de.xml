@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11972 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="de"/>
 	</identity>
 	<localeDisplayNames>
@@ -535,8 +535,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">Sumerisch</language>
 			<language type="sv">Schwedisch</language>
 			<language type="sw">Suaheli</language>
+			<language type="sw_CD">Kongo-Suaheli</language>
 			<language type="swb">Komorisch</language>
-			<language type="swc">Kongo-Suaheli</language>
 			<language type="syc">Altsyrisch</language>
 			<language type="syr">Syrisch</language>
 			<language type="szl" draft="contributed">Schlesisch (Polen)</language>
@@ -840,7 +840,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Anguilla</territory>
 			<territory type="AL">Albanien</territory>
 			<territory type="AM">Armenien</territory>
-			<territory type="AN">Niederländische Antillen</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antarktis</territory>
 			<territory type="AR">Argentinien</territory>
@@ -1820,7 +1819,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</dayPeriodWidth>
 						<dayPeriodWidth type="narrow">
 							<dayPeriod type="midnight">Mitternacht</dayPeriod>
-							<dayPeriod type="am">vorm.</dayPeriod>
+							<dayPeriod type="am">vm.</dayPeriod>
 							<dayPeriod type="pm">nm.</dayPeriod>
 							<dayPeriod type="morning1">morgens</dayPeriod>
 							<dayPeriod type="morning2">vormittags</dayPeriod>
@@ -2345,6 +2344,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-short">
 				<displayName>Tag</displayName>
 				<relative type="-2">vorgestern</relative>
+				<relative type="-1">gestern</relative>
+				<relative type="0">heute</relative>
+				<relative type="1">morgen</relative>
 				<relative type="2">übermorgen</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">in {0} Tag</relativeTimePattern>
@@ -2358,6 +2360,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-narrow">
 				<displayName>Tag</displayName>
 				<relative type="-2">vorgestern</relative>
+				<relative type="-1">gestern</relative>
+				<relative type="0">heute</relative>
+				<relative type="1">morgen</relative>
 				<relative type="2">übermorgen</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">in {0} Tag</relativeTimePattern>
@@ -6922,6 +6927,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} Quadratzoll</unitPattern>
 				<perUnitPattern>{0} pro Quadratzoll</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>Karat</displayName>
+				<unitPattern count="one">{0} Karat</unitPattern>
+				<unitPattern count="other">{0} Karat</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>Liter pro Kilometer</displayName>
 				<unitPattern count="one">{0} Liter pro Kilometer</unitPattern>
@@ -7271,7 +7281,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Unzen</displayName>
 				<unitPattern count="one">{0} Unze</unitPattern>
 				<unitPattern count="other">{0} Unzen</unitPattern>
-				<perUnitPattern>pro Unze</perUnitPattern>
+				<perUnitPattern>{0} pro Unze</perUnitPattern>
 			</unit>
 			<unit type="mass-ounce-troy">
 				<displayName>Feinunzen</displayName>
@@ -7337,11 +7347,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Millibar</displayName>
 				<unitPattern count="one">{0} Millibar</unitPattern>
 				<unitPattern count="other">{0} Millibar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>Karat</displayName>
-				<unitPattern count="one">{0} Karat</unitPattern>
-				<unitPattern count="other">{0} Karat</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>Kilometer pro Stunde</displayName>
@@ -7600,6 +7605,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>Karat</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
@@ -8017,11 +8027,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>Karat</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>
 				<unitPattern count="one">{0} km/h</unitPattern>
@@ -8257,6 +8262,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="area-square-inch">
 				<unitPattern count="one" draft="contributed">{0} in²</unitPattern>
 				<unitPattern count="other" draft="contributed">{0} in²</unitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<unitPattern count="one" draft="contributed">{0} kt</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<unitPattern count="one" draft="contributed">{0} l/km</unitPattern>
@@ -8600,10 +8609,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="pressure-millibar">
 				<unitPattern count="one" draft="contributed">{0} mbar</unitPattern>
 				<unitPattern count="other" draft="contributed">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<unitPattern count="one" draft="contributed">{0} kt</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>

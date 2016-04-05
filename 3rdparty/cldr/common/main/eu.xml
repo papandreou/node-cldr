@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11914 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="eu"/>
 	</identity>
 	<localeDisplayNames>
@@ -221,7 +221,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="su">sundanera</language>
 			<language type="sv">suediera</language>
 			<language type="sw">swahili</language>
-			<language type="swc">Kongoko swahilia</language>
+			<language type="sw_CD">Kongoko swahilia</language>
 			<language type="ta">tamilera</language>
 			<language type="te">teluguera</language>
 			<language type="teo">tesoera</language>
@@ -347,7 +347,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Angila</territory>
 			<territory type="AL">Albania</territory>
 			<territory type="AM">Armenia</territory>
-			<territory type="AN">Holandarren Antillak</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antartika</territory>
 			<territory type="AR">Argentina</territory>
@@ -762,10 +761,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<moreInformation>?</moreInformation>
 	</characters>
 	<delimiters>
-		<quotationStart>&quot;</quotationStart>
-		<quotationEnd>&quot;</quotationEnd>
-		<alternateQuotationStart>&quot;</alternateQuotationStart>
-		<alternateQuotationEnd>&quot;</alternateQuotationEnd>
+		<quotationStart>“</quotationStart>
+		<quotationEnd>”</quotationEnd>
+		<alternateQuotationStart>“</alternateQuotationStart>
+		<alternateQuotationEnd>”</alternateQuotationEnd>
 	</delimiters>
 	<dates>
 		<calendars>
@@ -5224,6 +5223,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} hazbete karratu</unitPattern>
 				<unitPattern count="other">{0} hazbete karratu</unitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>kilate</displayName>
+				<unitPattern count="one">{0} kilate</unitPattern>
+				<unitPattern count="other">{0} kilate</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litro kilometroko</displayName>
 				<unitPattern count="one">{0} litro kilometroko</unitPattern>
@@ -5596,11 +5600,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} milibar</unitPattern>
 				<unitPattern count="other">{0} milibar</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>kilate</displayName>
-				<unitPattern count="one">{0} kilate</unitPattern>
-				<unitPattern count="other">{0} kilate</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometro orduko</displayName>
 				<unitPattern count="one">{0} kilometro orduko</unitPattern>
@@ -5815,6 +5814,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>in²</displayName>
 				<unitPattern count="one">{0} in²</unitPattern>
 				<unitPattern count="other">{0} in²</unitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
@@ -6187,11 +6191,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>mb</displayName>
 				<unitPattern count="one">{0} mb</unitPattern>
 				<unitPattern count="other">{0} mb</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>kt</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>

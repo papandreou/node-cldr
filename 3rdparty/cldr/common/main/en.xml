@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11972 $"/>
+		<version number="$Revision: 12418 $"/>
 		<language type="en"/>
 	</identity>
 	<localeDisplayNames>
@@ -539,8 +539,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">Sumerian</language>
 			<language type="sv">Swedish</language>
 			<language type="sw">Swahili</language>
+			<language type="sw_CD">Congo Swahili</language>
 			<language type="swb">Comorian</language>
-			<language type="swc">Congo Swahili</language>
 			<language type="syc">Classical Syriac</language>
 			<language type="syr">Syriac</language>
 			<language type="szl">Silesian</language>
@@ -806,6 +806,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Yiii">Yi</script>
 			<script type="Zinh">Inherited</script>
 			<script type="Zmth">Mathematical Notation</script>
+			<script type="Zsye">Emoji</script>
 			<script type="Zsym">Symbols</script>
 			<script type="Zxxx">Unwritten</script>
 			<script type="Zyyy">Common</script>
@@ -851,7 +852,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Anguilla</territory>
 			<territory type="AL">Albania</territory>
 			<territory type="AM">Armenia</territory>
-			<territory type="AN">Netherlands Antilles</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antarctica</territory>
 			<territory type="AR">Argentina</territory>
@@ -1188,6 +1188,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="colReorder">Script/Block Reordering</key>
 			<key type="colStrength">Sorting Strength</key>
 			<key type="currency">Currency</key>
+			<key type="em">Emoji Presentation Style</key>
 			<key type="fw">First day of week</key>
 			<key type="hc">Hour Cycle (12 vs 24)</key>
 			<key type="kv">Highest Ignored</key>
@@ -1195,6 +1196,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="lw">Line Breaks In Words Setting</key>
 			<key type="ms">Measurement System</key>
 			<key type="numbers">Numbers</key>
+			<key type="rg">Region For Supplemental Data</key>
+			<key type="sd">Region Subdivision</key>
 			<key type="ss">Sentence Break Suppressions Type</key>
 			<key type="timezone">Time Zone</key>
 			<key type="va">Locale Variant</key>
@@ -1260,6 +1263,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type key="colStrength" type="quaternary">Sort Accents/Case/Width/Kana</type>
 			<type key="colStrength" type="secondary">Sort Accents</type>
 			<type key="colStrength" type="tertiary">Sort Accents/Case/Width</type>
+			<type key="em" type="default">Use Default Presentation For Emoji Characters</type>
+			<type key="em" type="emoji">Prefer Emoji Presentation For Emoji Characters</type>
+			<type key="em" type="text">Prefer Text Presentation For Emoji Characters</type>
+			<type key="fw" type="fri">First Day of Week Is Friday</type>
+			<type key="fw" type="mon">First Day of Week Is Monday</type>
+			<type key="fw" type="sat">First Day of Week Is Saturday</type>
+			<type key="fw" type="sun">First Day of Week Is Sunday</type>
+			<type key="fw" type="thu">First Day of Week Is Thursday</type>
+			<type key="fw" type="tue">First Day of Week Is Tuesday</type>
+			<type key="fw" type="wed">First Day of Week Is Wednesday</type>
 			<type key="hc" type="h11">12 Hour System (0–11)</type>
 			<type key="hc" type="h12">12 Hour System (1–12)</type>
 			<type key="hc" type="h23">24 Hour System (0–23)</type>
@@ -1435,18 +1448,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<month type="12">Mo12</month>
 						</monthWidth>
 						<monthWidth type="wide">
-							<month type="1">Month1</month>
-							<month type="2">Month2</month>
-							<month type="3">Month3</month>
-							<month type="4">Month4</month>
-							<month type="5">Month5</month>
-							<month type="6">Month6</month>
-							<month type="7">Month7</month>
-							<month type="8">Month8</month>
-							<month type="9">Month9</month>
-							<month type="10">Month10</month>
-							<month type="11">Month11</month>
-							<month type="12">Month12</month>
+							<month type="1">First Month</month>
+							<month type="2">Second Month</month>
+							<month type="3">Third Month</month>
+							<month type="4">Fourth Month</month>
+							<month type="5">Fifth Month</month>
+							<month type="6">Sixth Month</month>
+							<month type="7">Seventh Month</month>
+							<month type="8">Eighth Month</month>
+							<month type="9">Ninth Month</month>
+							<month type="10">Tenth Month</month>
+							<month type="11">Eleventh Month</month>
+							<month type="12">Twelfth Month</month>
 						</monthWidth>
 					</monthContext>
 				</months>
@@ -3588,6 +3601,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<standard>Ponape Time</standard>
 				</long>
 			</metazone>
+			<metazone type="Pyongyang">
+				<long>
+					<standard>Pyongyang Time</standard>
+				</long>
+			</metazone>
 			<metazone type="Qyzylorda">
 				<long>
 					<generic>Qyzylorda Time</generic>
@@ -5485,6 +5503,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} square inches</unitPattern>
 				<perUnitPattern>{0} per square inch</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>karats</displayName>
+				<unitPattern count="one">{0} karat</unitPattern>
+				<unitPattern count="other">{0} karats</unitPattern>
+			</unit>
+			<unit type="concentr-milligram-per-deciliter">
+				<displayName>milligrams per deciliter</displayName>
+				<unitPattern count="one">{0} milligram per deciliter</unitPattern>
+				<unitPattern count="other">{0} milligrams per deciliter</unitPattern>
+			</unit>
+			<unit type="concentr-millimole-per-liter">
+				<displayName>millimoles per liter</displayName>
+				<unitPattern count="one">{0} millimole per liter</unitPattern>
+				<unitPattern count="other">{0} millimoles per liter</unitPattern>
+			</unit>
+			<unit type="concentr-part-per-million">
+				<displayName>parts per million</displayName>
+				<unitPattern count="one">{0} part per million</unitPattern>
+				<unitPattern count="other">{0} parts per million</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>liters per kilometer</displayName>
 				<unitPattern count="one">{0} liter per kilometer</unitPattern>
@@ -5499,6 +5537,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>miles per gallon</displayName>
 				<unitPattern count="one">{0} mile per gallon</unitPattern>
 				<unitPattern count="other">{0} miles per gallon</unitPattern>
+			</unit>
+			<unit type="consumption-mile-per-gallon-imperial">
+				<displayName>miles per Imp. gallon</displayName>
+				<unitPattern count="one">{0} mile per Imp. gallon</unitPattern>
+				<unitPattern count="other">{0} miles per Imp. gallon</unitPattern>
 			</unit>
 			<unit type="digital-terabyte">
 				<displayName>terabytes</displayName>
@@ -5901,11 +5944,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} millibar</unitPattern>
 				<unitPattern count="other">{0} millibars</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karats</displayName>
-				<unitPattern count="one">{0} karat</unitPattern>
-				<unitPattern count="other">{0} karats</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometers per hour</displayName>
 				<unitPattern count="one">{0} kilometer per hour</unitPattern>
@@ -6035,6 +6073,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} gallons</unitPattern>
 				<perUnitPattern>{0} per gallon</perUnitPattern>
 			</unit>
+			<unit type="volume-gallon-imperial">
+				<displayName>Imp. gallons</displayName>
+				<unitPattern count="one">{0} Imp. gallon</unitPattern>
+				<unitPattern count="other">{0} Imp. gallons</unitPattern>
+				<perUnitPattern>{0} per Imp. gallon</perUnitPattern>
+			</unit>
 			<unit type="volume-quart">
 				<displayName>quarts</displayName>
 				<unitPattern count="one">{0} quart</unitPattern>
@@ -6153,6 +6197,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>karats</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
+			</unit>
+			<unit type="concentr-milligram-per-deciliter">
+				<displayName>mg/dL</displayName>
+				<unitPattern count="one">{0} mg/dL</unitPattern>
+				<unitPattern count="other">{0} mg/dL</unitPattern>
+			</unit>
+			<unit type="concentr-millimole-per-liter">
+				<displayName>millimol/liter</displayName>
+				<unitPattern count="one">{0} mmol/L</unitPattern>
+				<unitPattern count="other">{0} mmol/L</unitPattern>
+			</unit>
+			<unit type="concentr-part-per-million">
+				<displayName>parts/million</displayName>
+				<unitPattern count="one">{0} ppm</unitPattern>
+				<unitPattern count="other">{0} ppm</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>liters/km</displayName>
 				<unitPattern count="one">{0} L/km</unitPattern>
@@ -6167,6 +6231,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>miles/gal</displayName>
 				<unitPattern count="one">{0} mpg</unitPattern>
 				<unitPattern count="other">{0} mpg</unitPattern>
+			</unit>
+			<unit type="consumption-mile-per-gallon-imperial">
+				<displayName>miles/gal Imp.</displayName>
+				<unitPattern count="one">{0} mpg Imp.</unitPattern>
+				<unitPattern count="other">{0} mpg Imp.</unitPattern>
 			</unit>
 			<unit type="digital-terabyte">
 				<displayName>TByte</displayName>
@@ -6569,11 +6638,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karats</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/hour</displayName>
 				<unitPattern count="one">{0} kph</unitPattern>
@@ -6699,6 +6763,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} gal</unitPattern>
 				<unitPattern count="other">{0} gal</unitPattern>
 			</unit>
+			<unit type="volume-gallon-imperial">
+				<displayName>Imp. gal</displayName>
+				<unitPattern count="one">{0} gal Imp.</unitPattern>
+				<unitPattern count="other">{0} gal Imp.</unitPattern>
+			</unit>
 			<unit type="volume-quart">
 				<displayName>qts</displayName>
 				<unitPattern count="one">{0} qt</unitPattern>
@@ -6801,6 +6870,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0}in²</unitPattern>
 				<unitPattern count="other">{0}in²</unitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>karat</displayName>
+				<unitPattern count="one">{0}kt</unitPattern>
+				<unitPattern count="other">{0}kt</unitPattern>
+			</unit>
+			<unit type="concentr-milligram-per-deciliter">
+				<displayName>mg/dL</displayName>
+				<unitPattern count="one">{0}mg/dL</unitPattern>
+				<unitPattern count="other">{0}mg/dL</unitPattern>
+			</unit>
+			<unit type="concentr-millimole-per-liter">
+				<displayName>mmol/L</displayName>
+				<unitPattern count="one">{0}mmol/L</unitPattern>
+				<unitPattern count="other">{0}mmol/L</unitPattern>
+			</unit>
+			<unit type="concentr-part-per-million">
+				<displayName>ppm</displayName>
+				<unitPattern count="one">{0}ppm</unitPattern>
+				<unitPattern count="other">{0}ppm</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>L/km</displayName>
 				<unitPattern count="one">{0}L/km</unitPattern>
@@ -6815,6 +6904,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>mpg</displayName>
 				<unitPattern count="one">{0}mpg</unitPattern>
 				<unitPattern count="other">{0}mpg</unitPattern>
+			</unit>
+			<unit type="consumption-mile-per-gallon-imperial">
+				<displayName>mpg Imp</displayName>
+				<unitPattern count="one">{0}mpgIm</unitPattern>
+				<unitPattern count="other">{0}mpgIm</unitPattern>
 			</unit>
 			<unit type="digital-terabyte">
 				<displayName>TByte</displayName>
@@ -7196,11 +7290,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0}mb</unitPattern>
 				<unitPattern count="other">{0}mb</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karat</displayName>
-				<unitPattern count="one">{0}kt</unitPattern>
-				<unitPattern count="other">{0}kt</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/hr</displayName>
 				<unitPattern count="one">{0}kph</unitPattern>
@@ -7329,6 +7418,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0}gal</unitPattern>
 				<unitPattern count="other">{0}gal</unitPattern>
 				<perUnitPattern>{0}/gal</perUnitPattern>
+			</unit>
+			<unit type="volume-gallon-imperial">
+				<displayName>Imp gal</displayName>
+				<unitPattern count="one">{0}galIm</unitPattern>
+				<unitPattern count="other">{0}galIm</unitPattern>
+				<perUnitPattern>{0}/galIm</perUnitPattern>
 			</unit>
 			<unit type="volume-quart">
 				<displayName>qt</displayName>

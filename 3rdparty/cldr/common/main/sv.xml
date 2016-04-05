@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11994 $"/>
+		<version number="$Revision: 12366 $"/>
 		<language type="sv"/>
 	</identity>
 	<localeDisplayNames>
@@ -534,8 +534,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">sumeriska</language>
 			<language type="sv">svenska</language>
 			<language type="sw">swahili</language>
+			<language type="sw_CD">Kongo-swahili</language>
 			<language type="swb">shimaoré</language>
-			<language type="swc">Kongo-swahili</language>
 			<language type="syc">klassisk syriska</language>
 			<language type="syr">syriska</language>
 			<language type="szl" draft="contributed">silesiska</language>
@@ -842,7 +842,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">Anguilla</territory>
 			<territory type="AL">Albanien</territory>
 			<territory type="AM">Armenien</territory>
-			<territory type="AN">Nederländska Antillerna</territory>
 			<territory type="AO">Angola</territory>
 			<territory type="AQ">Antarktis</territory>
 			<territory type="AR">Argentina</territory>
@@ -2095,21 +2094,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<timeFormatLength type="full">
 						<timeFormat>
 							<pattern>'kl'. HH:mm:ss zzzz</pattern>
+							<pattern alt="variant">'kl'. HH.mm.ss zzzz</pattern>
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="long">
 						<timeFormat>
 							<pattern>HH:mm:ss z</pattern>
+							<pattern alt="variant">HH.mm.ss z</pattern>
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="medium">
 						<timeFormat>
 							<pattern>HH:mm:ss</pattern>
+							<pattern alt="variant">HH.mm.ss</pattern>
 						</timeFormat>
 					</timeFormatLength>
 					<timeFormatLength type="short">
 						<timeFormat>
 							<pattern>HH:mm</pattern>
+							<pattern alt="variant">HH.mm</pattern>
 						</timeFormat>
 					</timeFormatLength>
 				</timeFormats>
@@ -5516,6 +5519,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<infinity>∞</infinity>
 			<nan>¤¤¤</nan>
 			<timeSeparator draft="contributed">:</timeSeparator>
+			<timeSeparator alt="variant" draft="contributed">.</timeSeparator>
 		</symbols>
 		<decimalFormats numberSystem="latn">
 			<decimalFormatLength>
@@ -7481,6 +7485,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} kvadrattum</unitPattern>
 				<perUnitPattern>{0} per kvadrattum</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>karat</displayName>
+				<unitPattern count="one">{0} karat</unitPattern>
+				<unitPattern count="other">{0} karat</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>liter per kilometer</displayName>
 				<unitPattern count="one">{0} liter per kilometer</unitPattern>
@@ -7897,11 +7906,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} millibar</unitPattern>
 				<unitPattern count="other">{0} millibar</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>karat</displayName>
-				<unitPattern count="one">{0} karat</unitPattern>
-				<unitPattern count="other">{0} karat</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometer per timme</displayName>
 				<unitPattern count="one">{0} kilometer per timme</unitPattern>
@@ -8159,6 +8163,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} tum²</unitPattern>
 				<unitPattern count="other">{0} tum²</unitPattern>
 				<perUnitPattern>{0}/tum²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>karat</displayName>
+				<unitPattern count="one">{0} kt</unitPattern>
+				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>liter/km</displayName>
@@ -8575,11 +8584,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>mbar</displayName>
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>karat</displayName>
-				<unitPattern count="one">{0} kt</unitPattern>
-				<unitPattern count="other">{0} kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>
@@ -9407,12 +9411,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</unitLength>
 		<durationUnit type="hm">
 			<durationUnitPattern>h:mm</durationUnitPattern>
+			<durationUnitPattern alt="variant">h.mm</durationUnitPattern>
 		</durationUnit>
 		<durationUnit type="hms">
 			<durationUnitPattern>h:mm:ss</durationUnitPattern>
+			<durationUnitPattern alt="variant">h.mm.ss</durationUnitPattern>
 		</durationUnit>
 		<durationUnit type="ms">
 			<durationUnitPattern>m:ss</durationUnitPattern>
+			<durationUnitPattern alt="variant">m.ss</durationUnitPattern>
 		</durationUnit>
 	</units>
 	<listPatterns>

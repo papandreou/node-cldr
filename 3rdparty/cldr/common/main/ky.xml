@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11919 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="ky"/>
 	</identity>
 	<localeDisplayNames>
@@ -209,7 +209,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="su">сунданча</language>
 			<language type="sv">шведче</language>
 			<language type="sw">суахиличе</language>
-			<language type="swc">конго суахаличе</language>
+			<language type="sw_CD">конго суахаличе</language>
 			<language type="ta">тамилче</language>
 			<language type="te">телугуча</language>
 			<language type="teo">тесочо</language>
@@ -1555,6 +1555,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-short">
 				<displayName>күн</displayName>
 				<relative type="-2">мурдагы күнү</relative>
+				<relative type="-1">кечээ</relative>
+				<relative type="0">бүгүн</relative>
+				<relative type="1">эртеӊ</relative>
 				<relative type="2">бүрсүгүнү</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} күндөн кийин</relativeTimePattern>
@@ -1568,6 +1571,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="day-narrow">
 				<displayName>күн</displayName>
 				<relative type="-2">мурдагы күнү</relative>
+				<relative type="-1">кечээ</relative>
+				<relative type="0">бүгүн</relative>
+				<relative type="1">эртеӊ</relative>
 				<relative type="2">бүрсүгүнү</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">+{0} күн</relativeTimePattern>
@@ -5200,6 +5206,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} чарчы дюйм</unitPattern>
 				<perUnitPattern>чарчы дюймуна {0}</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>карат</displayName>
+				<unitPattern count="one">{0} карат</unitPattern>
+				<unitPattern count="other">{0} карат</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>километрине литр</displayName>
 				<unitPattern count="one">километрине {0} литр</unitPattern>
@@ -5601,11 +5612,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} миллибар</unitPattern>
 				<unitPattern count="other">{0} миллибар</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>карат</displayName>
-				<unitPattern count="one">{0} карат</unitPattern>
-				<unitPattern count="other">{0} карат</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>саатына километр</displayName>
 				<unitPattern count="one">саатына {0} километр</unitPattern>
@@ -5858,6 +5864,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} дюйм²</unitPattern>
 				<unitPattern count="other">{0} дюйм²</unitPattern>
 				<perUnitPattern>дюйм²/{0}</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>карат</displayName>
+				<unitPattern count="one">{0} кт</unitPattern>
+				<unitPattern count="other">{0} кт</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>км/литр</displayName>
@@ -6260,11 +6271,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="one">{0} мбар</unitPattern>
 				<unitPattern count="other">{0} мбар</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>карат</displayName>
-				<unitPattern count="one">{0} кт</unitPattern>
-				<unitPattern count="other">{0} кт</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>км/саат</displayName>
 				<unitPattern count="one">{0} км/с</unitPattern>
@@ -6649,13 +6655,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</coordinateUnit>
 		</unitLength>
 		<durationUnit type="hm">
-			<durationUnitPattern>ст:мүн</durationUnitPattern>
+			<durationUnitPattern>h:mm</durationUnitPattern>
 		</durationUnit>
 		<durationUnit type="hms">
-			<durationUnitPattern>ст:мүн:сек</durationUnitPattern>
+			<durationUnitPattern>h:mm:ss</durationUnitPattern>
 		</durationUnit>
 		<durationUnit type="ms">
-			<durationUnitPattern>мүн:сек</durationUnitPattern>
+			<durationUnitPattern>m:ss</durationUnitPattern>
 		</durationUnit>
 	</units>
 	<listPatterns>

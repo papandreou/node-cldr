@@ -5,7 +5,7 @@
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11919 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="root"/>
 	</identity>
 	<localeDisplayNames>
@@ -3530,7 +3530,7 @@
 				<symbol alt="narrow">£</symbol>
 			</currency>
 			<currency type="GEL">
-				<symbol alt="variant">₾</symbol>
+				<symbol alt="narrow">₾</symbol>
 			</currency>
 			<currency type="GIP">
 				<symbol alt="narrow">£</symbol>
@@ -3955,6 +3955,22 @@
 				<unitPattern count="other">{0} in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
+				<unitPattern count="other">{0} kt</unitPattern>
+			</unit>
+			<unit type="concentr-milligram-per-deciliter">
+				<displayName>mg/dL</displayName>
+				<unitPattern count="other">{0} mg/dL</unitPattern>
+			</unit>
+			<unit type="concentr-millimole-per-liter">
+				<displayName>mmol/L</displayName>
+				<unitPattern count="other">{0} mmol/L</unitPattern>
+			</unit>
+			<unit type="concentr-part-per-million">
+				<displayName>ppm</displayName>
+				<unitPattern count="other">{0} ppm</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>L/km</displayName>
 				<unitPattern count="other">{0} L/km</unitPattern>
@@ -3964,8 +3980,12 @@
 				<unitPattern count="other">{0} L/100km</unitPattern>
 			</unit>
 			<unit type="consumption-mile-per-gallon">
-				<displayName>mpg</displayName>
-				<unitPattern count="other">{0} mpg</unitPattern>
+				<displayName>mpg US</displayName>
+				<unitPattern count="other">{0} mpg US</unitPattern>
+			</unit>
+			<unit type="consumption-mile-per-gallon-imperial">
+				<displayName>mpg Imp.</displayName>
+				<unitPattern count="other">{0} mpg Imp.</unitPattern>
 			</unit>
 			<unit type="digital-terabyte">
 				<displayName>TB</displayName>
@@ -4303,10 +4323,6 @@
 				<displayName>mbar</displayName>
 				<unitPattern count="other">{0} mbar</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>kt</displayName>
-				<unitPattern count="other">{0} kt</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>
 				<unitPattern count="other">{0} km/h</unitPattern>
@@ -4411,9 +4427,14 @@
 				<unitPattern count="other">{0} bu</unitPattern>
 			</unit>
 			<unit type="volume-gallon">
-				<displayName>gal</displayName>
-				<unitPattern count="other">{0} gal</unitPattern>
-				<perUnitPattern>{0}/gal</perUnitPattern>
+				<displayName>US gal</displayName>
+				<unitPattern count="other">{0} gal US</unitPattern>
+				<perUnitPattern>{0}/gal US</perUnitPattern>
+			</unit>
+			<unit type="volume-gallon-imperial">
+				<displayName>Imp. gal</displayName>
+				<unitPattern count="other">{0} gal Imp.</unitPattern>
+				<perUnitPattern>{0}/gal Imp.</perUnitPattern>
 			</unit>
 			<unit type="volume-quart">
 				<displayName>qt</displayName>

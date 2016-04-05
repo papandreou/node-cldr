@@ -6,7 +6,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 11994 $"/>
+		<version number="$Revision: 12293 $"/>
 		<language type="ko"/>
 	</identity>
 	<localeDisplayNames>
@@ -460,8 +460,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="sux">수메르어</language>
 			<language type="sv">스웨덴어</language>
 			<language type="sw">스와힐리어</language>
+			<language type="sw_CD">콩고 스와힐리어</language>
 			<language type="swb" draft="contributed">코모로어</language>
-			<language type="swc" draft="contributed">콩고 스와힐리어</language>
 			<language type="syc">시리아어 (고전)</language>
 			<language type="syr">시리아어</language>
 			<language type="ta">타밀어</language>
@@ -747,7 +747,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI">앵귈라</territory>
 			<territory type="AL">알바니아</territory>
 			<territory type="AM">아르메니아</territory>
-			<territory type="AN">네덜란드령 안틸레스</territory>
 			<territory type="AO">앙골라</territory>
 			<territory type="AQ">남극 대륙</territory>
 			<territory type="AR">아르헨티나</territory>
@@ -4717,7 +4716,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic>알마티 표준 시간</generic>
 					<standard>알마티 표준 표준시</standard>
-					<daylight>알마티 서머 타임</daylight>
+					<daylight>알마티 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="Amazon">
@@ -4759,7 +4758,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic draft="contributed">아나디리 시간</generic>
 					<standard draft="contributed">아나디리 표준시</standard>
-					<daylight draft="contributed">아나디리 서머 타임</daylight>
+					<daylight draft="contributed">아나디리 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="Apia">
@@ -4773,14 +4772,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic>악타우 표준 시간</generic>
 					<standard>악타우 표준 표준시</standard>
-					<daylight>악타우 서머 타임</daylight>
+					<daylight>악타우 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="Aqtobe">
 				<long>
 					<generic>악퇴베 표준 시간</generic>
 					<standard>악퇴베 표준 표준시</standard>
-					<daylight>악퇴베 서머 타임</daylight>
+					<daylight>악퇴베 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="Arabian">
@@ -4955,7 +4954,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic>쿡 제도 시간</generic>
 					<standard>쿡 제도 표준시</standard>
-					<daylight>쿡 제도 절반 서머 타임</daylight>
+					<daylight>쿡 제도 절반 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="Cuba">
@@ -5015,7 +5014,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic>서유럽 시간</generic>
 					<standard>서유럽 표준시</standard>
-					<daylight>서유럽 서머 타임</daylight>
+					<daylight>서유럽 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="Falkland">
@@ -5029,7 +5028,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic>피지 시간</generic>
 					<standard>피지 표준시</standard>
-					<daylight>피지 서머 타임</daylight>
+					<daylight>피지 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="French_Guiana">
@@ -5181,7 +5180,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic draft="contributed">페트로파블롭스크-캄차츠키 시간</generic>
 					<standard draft="contributed">페트로파블롭스크-캄차츠키 표준시</standard>
-					<daylight draft="contributed">페트로파블롭스크-캄차츠키 서머 타임</daylight>
+					<daylight draft="contributed">페트로파블롭스크-캄차츠키 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="Kazakhstan_Eastern">
@@ -5239,7 +5238,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic>마카오 시간</generic>
 					<standard>마카오 표준 시간</standard>
-					<daylight>마카오 서머 타임</daylight>
+					<daylight>마카오 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="Macquarie">
@@ -5450,7 +5449,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic>키질로르다 시간</generic>
 					<standard>키질로르다 표준 시간</standard>
-					<daylight>키질로르다 서머 타임</daylight>
+					<daylight>키질로르다 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="Reunion">
@@ -5474,7 +5473,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic draft="contributed">사마라 시간</generic>
 					<standard draft="contributed">사마라 표준시</standard>
-					<daylight draft="contributed">사마라 서머 타임</daylight>
+					<daylight draft="contributed">사마라 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="Samoa">
@@ -5540,7 +5539,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic>통가 시간</generic>
 					<standard>통가 표준시</standard>
-					<daylight>통가 서머 타임</daylight>
+					<daylight>통가 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="Truk">
@@ -5578,7 +5577,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic>바누아투 시간</generic>
 					<standard>바누아투 표준시</standard>
-					<daylight>바누아투 서머 타임</daylight>
+					<daylight>바누아투 하계 표준시</daylight>
 				</long>
 			</metazone>
 			<metazone type="Venezuela">
@@ -7078,6 +7077,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0}제곱인치</unitPattern>
 				<perUnitPattern>제곱인치당 {0}</perUnitPattern>
 			</unit>
+			<unit type="concentr-karat">
+				<displayName>캐럿</displayName>
+				<unitPattern count="other">{0}캐럿</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>킬로미터당 리터</displayName>
 				<unitPattern count="other">킬로미터당 {0}리터</unitPattern>
@@ -7402,10 +7405,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>밀리바</displayName>
 				<unitPattern count="other">{0}밀리바</unitPattern>
 			</unit>
-			<unit type="proportion-karat">
-				<displayName>캐럿</displayName>
-				<unitPattern count="other">{0}캐럿</unitPattern>
-			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>시간당 킬로미터</displayName>
 				<unitPattern count="other">시속 {0}킬로미터</unitPattern>
@@ -7611,6 +7610,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>in²</displayName>
 				<unitPattern count="other">{0}in²</unitPattern>
 				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
+				<unitPattern count="other">{0}kt</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>L/km</displayName>
@@ -7935,10 +7938,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="pressure-millibar">
 				<displayName>mbar</displayName>
 				<unitPattern count="other" draft="contributed">{0}mb</unitPattern>
-			</unit>
-			<unit type="proportion-karat">
-				<displayName>kt</displayName>
-				<unitPattern count="other">{0}kt</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>
