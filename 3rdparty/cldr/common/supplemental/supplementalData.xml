@@ -7,7 +7,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 
 <supplementalData>
-    <version number="$Revision: 12447 $"/>
+    <version number="$Revision: 13091 $"/>
     <currencyData>
         <fractions>
             <info iso4217="ADP" digits="0" rounding="0"/>
@@ -17,12 +17,13 @@ For terms of use, see http://www.unicode.org/copyright.html
             <info iso4217="BHD" digits="3" rounding="0"/>
             <info iso4217="BIF" digits="0" rounding="0"/>
             <info iso4217="BYR" digits="0" rounding="0"/>
+            <info iso4217="BYN" digits="2" rounding="0"/>
             <info iso4217="CAD" digits="2" rounding="0" cashRounding="5"/>
             <info iso4217="CHF" digits="2" rounding="0" cashRounding="5"/>
             <info iso4217="CLF" digits="4" rounding="0"/>
             <info iso4217="CLP" digits="0" rounding="0"/>
             <info iso4217="COP" digits="0" rounding="0"/>
-            <info iso4217="CRC" digits="0" rounding="0"/>
+            <info iso4217="CRC" digits="2" rounding="0" cashDigits="0" cashRounding="0"/>
             <info iso4217="CZK" digits="2" rounding="0" cashDigits="0" cashRounding="0"/>
             <info iso4217="DEFAULT" digits="2" rounding="0"/>
             <info iso4217="DJF" digits="0" rounding="0"/>
@@ -82,7 +83,7 @@ Note: When reading these dates, you should read them as inclusive date ranges.
 The date ranges are like date ranges that you see on tomb stones,
 but some dates are approximate. Some date ranges overlap due to
 revolts, invasions, new constitutions, and slow planned adoption of new currency.
-The length of time for these change overs vary widely. 
+The length of time for these change overs vary widely.
 Sometimes, hyperinflation will cause more than one currency to be in effect
 in one year. Dates without a "to" attribute mean that the currency is still
 in use.
@@ -103,7 +104,7 @@ application of trade, commerce or banking. ... At its seventeenth session
 codes for International Standard ISO 4217, "Codes for the representation of
 currencies and funds", would be suitable for use in international trade.
 
-Most of this list was derived from the following sources: 
+Most of this list was derived from the following sources:
 http://www.iso.org/iso/en/prods-services/popstds/currencycodeslist.html
 http://www.globalfindata.com/gh/index.html
 http://europa.eu.int/comm/translation/currencies/entable1.htm
@@ -276,7 +277,8 @@ The printed version of ISO-4217:2001
             <currency iso4217="ZAR" from="1961-02-14" to="1976-08-23"/>
         </region>
         <region iso3166="BY">
-            <currency iso4217="BYR" from="2000-01-01"/>
+            <currency iso4217="BYN" from="2016-07-01"/>
+            <currency iso4217="BYR" from="2000-01-01" to="2017-01-01"/>
             <currency iso4217="BYB" from="1994-08-01" to="2000-12-31"/><!-- This was a valid currency according to eu.int -->
             <currency iso4217="RUR" from="1991-12-25" to="1994-11-08"/>
             <currency iso4217="SUR" from="1961-01-01" to="1991-12-25"/>
@@ -1002,8 +1004,8 @@ The printed version of ISO-4217:2001
             <currency iso4217="XAF" from="1993-01-01"/>
         </region>
         <region iso3166="TF">
-        <!-- Part of the Antarctic claimed by France (whose sovereignty is not recognised 
-        internationally), makes up the French Southern and Antarctic Lands (TAAF) 
+        <!-- Part of the Antarctic claimed by France (whose sovereignty is not recognised
+        internationally), makes up the French Southern and Antarctic Lands (TAAF)
         administered from Saint-Pierre de la Réunion. No indigenous population -->
             <currency iso4217="EUR" from="1999-01-01"/>
             <currency iso4217="FRF" from="1959-01-01" to="2002-02-17"/>
@@ -1208,7 +1210,7 @@ XXX Code for transations where no currency is involved
     </currencyData>
     <territoryContainment> <!-- based on UN data, at http://unstats.un.org/unsd/methods/m49/m49regin.htm -->
         <group type="001" contains="019 002 150 142 009"/> <!--World -->
-        <group type="001" contains="EU" status="grouping"/> <!--European Union -->
+        <group type="001" contains="EU EZ UN" status="grouping"/> <!--European Union, Eurozone, United Nations -->
         <group type="001" contains="QU" status="deprecated"/> <!--European Union -->
         <group type="011" contains="BF BJ CI CV GH GM GN GW LR ML MR NE NG SH SL SN TG"/> <!--Western Africa -->
         <group type="013" contains="BZ CR GT HN MX NI PA SV"/> <!--Central America -->
@@ -1249,6 +1251,8 @@ XXX Code for transations where no currency is involved
         <group type="009" contains="053 054 057 061 QO"/> <!--Oceania -->
         <group type="QO" contains="AQ BV CC CX GS HM IO TF UM AC CP DG TA"/> <!--Outlying Oceania -->
         <group type="EU" contains="AT BE CY CZ DE DK EE ES FI FR GB GR HR HU IE IT LT LU LV MT NL PL PT SE SI SK BG RO" grouping="true"/> <!-- European Union, see http://europa.eu/abc/european_countries/index_en.htm -->
+        <group type="EZ" contains="AT BE CY DE EE ES FI FR GR IE IT LT LU LV MT NL PT SI SK" grouping="true"/> <!-- Eurozone, see https://en.wikipedia.org/wiki/Eurozone -->
+        <group type="UN" contains="AD AE AF AG AL AM AO AR AT AU AZ BA BB BD BE BF BG BH BI BJ BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG ER ES ET FI FJ FM FR GA GB GD GE GH GM GN GQ GR GT GW GY HN HR HT HU ID IE IL IN IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MR MT MU MV MX MW MY MZ NA NE NG NI NL NO NR NP NZ OM PA PE PG PH PK PL PT PW PY QA RO RS RU RW SA SB SC SD SE SG SI SK SL SM SN SO SR SS ST SV SY SZ TD TG TH TJ TL TM TN TO TR TT TV TZ UA UG US UY UZ VC VE VN VU WS YE ZA ZM ZW" grouping="true"/> <!-- United Nations, see https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations -->
     </territoryContainment>
     <!-- Start of Generated Data: see https://sites.google.com/site/cldr/development/updating-codes/update-language-script-info -->
 	<languageData>
@@ -1454,6 +1458,7 @@ XXX Code for transations where no currency is involved
 		<language type="crs" scripts="Latn"/>
 		<language type="crs" territories="SC" alt="secondary"/>
 		<language type="cs" scripts="Latn" territories="CZ"/>
+		<language type="cs" territories="SK" alt="secondary"/>
 		<language type="csb" scripts="Latn" territories="PL" alt="secondary"/>
 		<language type="csw" scripts="Cans"/>
 		<language type="ctd" scripts="Latn"/>
@@ -1469,8 +1474,8 @@ XXX Code for transations where no currency is involved
 		<language type="dav" scripts="Latn"/>
 		<language type="dcc" scripts="Arab"/>
 		<language type="dcc" territories="IN" alt="secondary"/>
-		<language type="de" scripts="Latn" territories="AT BE CH DE LI LU"/>
-		<language type="de" scripts="Runr" territories="BR DK KZ NL PL US" alt="secondary"/>
+		<language type="de" scripts="Latn" territories="AT BE CH DE IT LI LU"/>
+		<language type="de" scripts="Runr" territories="BR CZ DK FR GB HU KZ NL PL SI SK US" alt="secondary"/>
 		<language type="del" scripts="Latn"/>
 		<language type="den" scripts="Latn"/>
 		<language type="den" scripts="Cans" alt="secondary"/>
@@ -1505,11 +1510,11 @@ XXX Code for transations where no currency is involved
 		<language type="eky" scripts="Kali"/>
 		<language type="el" scripts="Grek" territories="CY GR"/>
 		<language type="en" scripts="Latn" territories="AG AI AS AU BB BI BM BS BW BZ CA CC CK CM CX DG DM ER FJ FK FM GB GD GG GH GI GM GU GY HK IE IM IN IO JE JM KE KI KN KY LC LR LS MG MH MP MS MT MU MW NA NF NG NR NU NZ PG PH PK PN PR PW RW SB SC SD SG SH SL SS SX SZ TC TK TO TT TV TZ UG UM US VC VG VI VU WS ZA ZM ZW"/>
-		<language type="en" scripts="Dsrt Shaw" territories="AC AR AT BA BD BE BG BR CH CL CY CZ DE DK DZ EG ES ET FI FR GR HR HU IL IQ IT JO KZ LB LK LT MA MX MY NL PL PT RO SE SI SK TA TH TR YE" alt="secondary"/>
+		<language type="en" scripts="Dsrt Shaw" territories="AC AR AT BA BD BE BG BR CH CL CY CZ DE DK DZ EE EG ES ET FI FR GR HR HU IL IQ IT JO KZ LB LK LT LU LV MA MX MY NL PL PT RO SE SI SK TA TH TR YE" alt="secondary"/>
 		<language type="enm" scripts="Latn" alt="secondary"/>
 		<language type="eo" scripts="Latn"/>
 		<language type="es" scripts="Latn" territories="AR BO CL CO CR CU DO EA EC ES GQ GT HN IC MX NI PA PE PR PY SV UY VE"/>
-		<language type="es" territories="AD BZ DE GI PH US" alt="secondary"/>
+		<language type="es" territories="AD BZ DE FR GI PH PT RO US" alt="secondary"/>
 		<language type="esu" scripts="Latn"/>
 		<language type="et" scripts="Latn" territories="EE"/>
 		<language type="ett" scripts="Ital Latn" alt="secondary"/>
@@ -1527,7 +1532,7 @@ XXX Code for transations where no currency is involved
 		<language type="ffm" scripts="Latn"/>
 		<language type="ffm" territories="ML" alt="secondary"/>
 		<language type="fi" scripts="Latn" territories="FI"/>
-		<language type="fi" territories="SE" alt="secondary"/>
+		<language type="fi" territories="EE SE" alt="secondary"/>
 		<language type="fia" scripts="Arab"/>
 		<language type="fil" scripts="Latn" territories="PH"/>
 		<language type="fil" scripts="Tglg" territories="US" alt="secondary"/>
@@ -1537,7 +1542,7 @@ XXX Code for transations where no currency is involved
 		<language type="fon" scripts="Latn"/>
 		<language type="fon" territories="BJ" alt="secondary"/>
 		<language type="fr" scripts="Latn" territories="BE BF BI BJ BL CA CD CF CG CH CI CM DJ DZ FR GA GF GN GP GQ HT KM LU MA MC MF MG ML MQ MU NC NE PF PM RE RW SC SN SY TD TG TN VU WF YT"/>
-		<language type="fr" scripts="Dupl" territories="DE IT NL TF US" alt="secondary"/>
+		<language type="fr" scripts="Dupl" territories="DE GB IT NL PT RO TF US" alt="secondary"/>
 		<language type="frc" scripts="Latn"/>
 		<language type="frm" scripts="Latn" alt="secondary"/>
 		<language type="fro" scripts="Latn" alt="secondary"/>
@@ -1597,6 +1602,7 @@ XXX Code for transations where no currency is involved
 		<language type="grc" scripts="Cprt Grek Linb" alt="secondary"/>
 		<language type="grt" scripts="Beng"/>
 		<language type="gsw" scripts="Latn" territories="CH LI"/>
+		<language type="gsw" territories="DE" alt="secondary"/>
 		<language type="gu" scripts="Gujr"/>
 		<language type="gu" territories="IN" alt="secondary"/>
 		<language type="gub" scripts="Latn"/>
@@ -1641,7 +1647,7 @@ XXX Code for transations where no currency is involved
 		<language type="hoj" territories="IN" alt="secondary"/>
 		<language type="hop" scripts="Latn"/>
 		<language type="hr" scripts="Latn" territories="BA HR"/>
-		<language type="hr" territories="AT RS" alt="secondary"/>
+		<language type="hr" territories="AT RS SI" alt="secondary"/>
 		<language type="hsb" scripts="Latn"/>
 		<language type="hsn" scripts="Hans"/>
 		<language type="hsn" territories="CN" alt="secondary"/>
@@ -1671,7 +1677,7 @@ XXX Code for transations where no currency is involved
 		<language type="inh" scripts="Arab Latn" territories="RU" alt="secondary"/>
 		<language type="is" scripts="Latn" territories="IS"/>
 		<language type="it" scripts="Latn" territories="CH IT SM"/>
-		<language type="it" territories="DE FR HR US VA" alt="secondary"/>
+		<language type="it" territories="DE FR HR MT US VA" alt="secondary"/>
 		<language type="iu" scripts="Cans Latn"/>
 		<language type="iu" territories="CA" alt="secondary"/>
 		<language type="izh" scripts="Latn"/>
@@ -2023,7 +2029,6 @@ XXX Code for transations where no currency is involved
 		<language type="prd" scripts="Arab"/>
 		<language type="prg" scripts="Latn" alt="secondary"/>
 		<language type="pro" scripts="Latn" alt="secondary"/>
-		<language type="prs" scripts="Arab"/>
 		<language type="ps" scripts="Arab" territories="AF"/>
 		<language type="ps" territories="PK" alt="secondary"/>
 		<language type="pt" scripts="Latn" territories="AO BR CV GQ GW MO MZ PT ST TL"/>
@@ -2064,7 +2069,7 @@ XXX Code for transations where no currency is involved
 		<language type="rom" scripts="Cyrl" alt="secondary"/>
 		<language type="rtm" scripts="Latn"/>
 		<language type="ru" scripts="Cyrl" territories="BY KG KZ RU UA"/>
-		<language type="ru" territories="DE EE LV SJ UZ" alt="secondary"/>
+		<language type="ru" territories="BG DE EE LT LV PL SJ UZ" alt="secondary"/>
 		<language type="rue" scripts="Cyrl"/>
 		<language type="rug" scripts="Latn"/>
 		<language type="rup" scripts="Latn"/>
@@ -2119,7 +2124,7 @@ XXX Code for transations where no currency is involved
 		<language type="sid" scripts="Latn"/>
 		<language type="sid" territories="ET" alt="secondary"/>
 		<language type="sk" scripts="Latn" territories="SK"/>
-		<language type="sk" territories="RS" alt="secondary"/>
+		<language type="sk" territories="CZ RS" alt="secondary"/>
 		<language type="skr" scripts="Arab"/>
 		<language type="skr" territories="PK" alt="secondary"/>
 		<language type="sl" scripts="Latn" territories="SI"/>
@@ -2167,8 +2172,6 @@ XXX Code for transations where no currency is involved
 		<language type="sw" territories="CD" alt="secondary"/>
 		<language type="swb" scripts="Arab"/>
 		<language type="swb" scripts="Latn" territories="YT" alt="secondary"/>
-		<language type="swc" scripts="Latn"/>
-		<language type="swc" territories="CD" alt="secondary"/>
 		<language type="swg" scripts="Latn"/>
 		<language type="swv" scripts="Deva"/>
 		<language type="swv" territories="IN" alt="secondary"/>
@@ -2604,7 +2607,6 @@ XXX Code for transations where no currency is involved
 		<territory type="CD" gdp="57780000000" literacyPercent="66.8" population="79375100">	<!--Congo - Kinshasa-->
 			<languagePopulation type="sw" populationPercent="50" officialStatus="official_regional" references="R1122"/>	<!--Swahili-->
 			<languagePopulation type="lua" populationPercent="9.6" officialStatus="official_regional" references="R1092"/>	<!--Luba-Lulua-->
-			<languagePopulation type="swc" populationPercent="9" references="R1250"/>	<!--Congo Swahili-->
 			<languagePopulation type="fr" populationPercent="3.8" officialStatus="official" references="R1002"/>	<!--French-->
 			<languagePopulation type="ln" populationPercent="3.1" officialStatus="official_regional"/>	<!--Lingala-->
 			<languagePopulation type="lu" populationPercent="2.3" references="R1093"/>	<!--Luba-Katanga-->
@@ -2678,7 +2680,7 @@ XXX Code for transations where no currency is involved
 			<languagePopulation type="yav" populationPercent="0.0097"/>	<!--Yangben-->
 		</territory>
 		<territory type="CN" gdp="18090000000000" literacyPercent="95.1" population="1367490000">	<!--China-->
-			<languagePopulation type="yue" writingPercent="4.3" populationPercent="90" references="R1317"/>	<!--Cantonese-->
+			<languagePopulation type="yue" populationPercent="5.2" references="R1317"/>	<!--Cantonese-->
 			<languagePopulation type="zh_Hans" populationPercent="90" officialStatus="official"/>	<!--Chinese (Simplified)-->
 			<languagePopulation type="wuu" populationPercent="6"/>	<!--Wu Chinese-->
 			<languagePopulation type="hsn" populationPercent="2.9"/>	<!--Xiang Chinese-->
@@ -4580,9 +4582,8 @@ XXX Code for transations where no currency is involved
         <calendarPreference territories="TH" ordering="buddhist gregorian"/>
         <calendarPreference territories="TW" ordering="gregorian roc chinese"/>
     </calendarPreferenceData>
-
-    <weekData>
-          <minDays count="1" territories="001 GU UM US VI" />
+	<weekData>
+		<minDays count="1" territories="001 GU UM US VI"/>
           <minDays count="4" territories="
 			AD AN AT AX
 			BE BG
@@ -4603,8 +4604,8 @@ XXX Code for transations where no currency is involved
 			VA"
 		  />
 
-          <!-- Note, this firstDay is for the first day of the week in a calendar page view. -->
-          <!-- The first workday of the week (after the weekend) is distinct, and can be determined as the day after the weekendEnd day.  -->
+		<!-- Note, this firstDay is for the first day of the week in a calendar page view. -->
+		<!-- The first workday of the week (after the weekend) is distinct, and can be determined as the day after the weekendEnd day. -->
           <firstDay day="mon"  territories="
 			001
 			AD AI AL AM AN AT AX AZ
@@ -4628,8 +4629,8 @@ XXX Code for transations where no currency is involved
 			VA VN
 			XK"
 		  />
-          <firstDay day="fri"  territories="BD MV" />
-          <firstDay day="sat"  territories="AE AF BH DJ DZ EG IQ IR JO KW LY MA OM QA SD SY" />
+		<firstDay day="fri" territories="BD MV"/>
+		<firstDay day="sat" territories="AE AF BH DJ DZ EG IQ IR JO KW LY MA OM QA SD SY"/>
           <firstDay day="sun"  territories="
 			AG AR AS AU
 			BR BS BT BW BZ
@@ -4653,39 +4654,58 @@ XXX Code for transations where no currency is involved
 			YE
 			ZA ZW"
           />
-          <firstDay day="sun"  territories="GB" alt="variant" references="Shorter Oxford Dictionary (5th edition, 2002)"/>
-        
-          <weekendStart day="thu"  territories="AF"/>
-          <weekendStart day="fri"  territories="AE BH DZ EG IL IQ IR JO KW LY MA OM QA SA SD SY TN YE"/>
-          <weekendStart day="sat"  territories="001"/>
-          <weekendStart day="sun"  territories="IN"/>
-        
-          <weekendEnd day="fri"  territories="AF IR"/>
-          <weekendEnd day="sat"  territories="AE BH DZ EG IL IQ JO KW LY MA OM QA SA SD SY TN YE"/>
-          <weekendEnd day="sun"  territories="001"/>
-    </weekData>
+		<firstDay day="sun" territories="GB" alt="variant" references="Shorter Oxford Dictionary (5th edition, 2002)"/>
+		<weekendStart day="thu" territories="AF"/>
+		<weekendStart day="fri" territories="AE BH DZ EG IL IQ IR JO KW LY MA OM QA SA SD SY TN YE"/>
+		<weekendStart day="sat" territories="001"/>
+		<weekendStart day="sun" territories="IN"/>
+		<weekendEnd day="fri" territories="AF IR"/>
+		<weekendEnd day="sat" territories="AE BH DZ EG IL IQ JO KW LY MA OM QA SA SD SY TN YE"/>
+		<weekendEnd day="sun" territories="001"/>
+		
+		<weekOfPreference ordering="weekOfYear" locales="und"/>
+		<weekOfPreference ordering="weekOfYear weekOfMonth" locales="am az bs cs cy da el et hi ky lt mk sk ta th"/>
+		<weekOfPreference ordering="weekOfYear weekOfMonth weekOfInterval" locales="is mn no sv vi"/>
+		<weekOfPreference ordering="weekOfYear weekOfDate weekOfMonth" locales="fi zh-TW"/>
+		<weekOfPreference ordering="weekOfYear weekOfInterval" locales="zu"/>
+		<weekOfPreference ordering="weekOfDate" locales="ca es fr gl"/>
+		<weekOfPreference ordering="weekOfDate weekOfMonth" locales="en bn ja ka"/>
+		<weekOfPreference ordering="weekOfDate weekOfMonth weekOfInterval" locales="bg de iw pt ur zh"/>
+		<weekOfPreference ordering="weekOfDate weekOfYear weekOfMonth" locales="nl"/>
+		<weekOfPreference ordering="weekOfDate weekOfInterval weekOfMonth" locales="af"/>
+		<weekOfPreference ordering="weekOfMonth" locales="ar fil gu hu hy id kk ko"/>
+		<weekOfPreference ordering="weekOfMonth weekOfYear" locales="km mr"/>
+		<weekOfPreference ordering="weekOfMonth weekOfYear weekOfInterval weekOfDate" locales="ms tr"/>
+		<weekOfPreference ordering="weekOfMonth weekOfDate" locales="eu"/>
+		<weekOfPreference ordering="weekOfMonth weekOfDate weekOfYear" locales="kn ml pa"/>
+		<weekOfPreference ordering="weekOfMonth weekOfInterval" locales="fa hr it lv pl si sr uk uz"/>
+		<weekOfPreference ordering="weekOfMonth weekOfInterval weekOfYear" locales="sw te"/>
+		<weekOfPreference ordering="weekOfMonth weekOfInterval weekOfDate weekOfYear" locales="lo sq"/>
+		<weekOfPreference ordering="weekOfInterval" locales="sl"/>
+		<weekOfPreference ordering="weekOfInterval weekOfMonth" locales="be ro ru"/>
+	</weekData>
 
     <timeData>
 		<hours preferred="H" allowed="H" regions="AX BQ CP CZ DK FI ID IS ML NE RU SE SJ SK"/>
 		<hours preferred="H" allowed="H h" regions="001"/>
-		<hours preferred="H" allowed="H h hb hB" regions="AC AI BZ CC CK CX DG FK GB GG GI IE IM IO JE LT MK MN MS NF NR NU PN SH SX TA"/>
+		<hours preferred="H" allowed="H h hb hB" regions="AC AI BW BZ CC CK CX DG FK GB GG GI IE IM IO JE LT MK MN MS NF NG NR NU PN SH SX TA ZA"/>
 		<hours preferred="H" allowed="H h hB" regions="CF CM LU NP PF SC SN TF ca_ES gl_ES"/>
-		<hours preferred="H" allowed="H h hB hb" regions="KG KM LK MA"/>
+		<hours preferred="H" allowed="H h hB hb" regions="KG KM LK MA af_ZA"/>
 		<hours preferred="H" allowed="H h K" regions="JP"/>
 		<hours preferred="H" allowed="H hb hB h" regions="AF IR LA"/>
 		<hours preferred="H" allowed="H hB"
 			regions="AD AM AO AT AW BE BF BJ BL BR CG CI CV DE EE FR GA GF GN GP GW HR IL IT KZ MC MD MF MQ MZ NC NL PM PT RE RO SI SM SR ST TG TR WF YT"/>
 		<hours preferred="H" allowed="H hB h" regions="AZ BA BG CH GE LI ME RS UA UZ VA XK"/>
 		<hours preferred="H" allowed="H hB h hb" regions="AR BO CL CR CU EA EC ES GQ GT HN IC MX NI PE SV UY"/>
-		<hours preferred="H" allowed="H hB hb h" regions="LV TL"/>
+		<hours preferred="H" allowed="H hB hb h" regions="LV TL zu_ZA"/>
 		<hours preferred="H" allowed="hB H" regions="CD"/>
 		<hours preferred="H" allowed="hB hb h H" regions="KE MM TZ UG"/>
-		<hours preferred="h" allowed="h H" regions="AS BT DJ ER GH GL IN LS PG PW SO TO VU WS ZW"/>
+		<hours preferred="h" allowed="h H" regions="AS BT DJ ER GH GL IN LS PG PW SO TO VU WS"/>
 		<hours preferred="h" allowed="h H hb hB" regions="CY GR"/>
 		<hours preferred="h" allowed="h H hB" regions="AL TD fr_CA"/>
-		<hours preferred="h" allowed="h H hB hb" regions="CO DO KP KR NA PA PR VE af_ZA"/>
+		<hours preferred="h" allowed="h H hB hb" regions="CO DO KP KR NA PA PR VE"/>
 		<hours preferred="h" allowed="h hb H hB"
-			regions="AG AU BB BM BS BW CA DM FJ FM GD GM GU GY JM KI KN KY LC LR MH MP MW NG NZ SB SG SL SS SZ TC TT UM US VC VG VI ZA ZM"/>
+			regions="AG AU BB BM BS CA DM FJ FM GD GM GU GY JM KI KN KY LC LR MH MP MW NZ SB SG SL SS SZ TC TT UM US VC VG VI ZM"/>
 		<hours preferred="h" allowed="h hB H" regions="BD PK"/>
 		<hours preferred="h" allowed="h hB hb H" regions="AE BH DZ EG EH IQ JO KW LB LY MR OM PH PS QA SA SD SY TN YE"/>
 		<hours preferred="h" allowed="hb hB H h" regions="BN MY"/>
@@ -4693,7 +4713,7 @@ XXX Code for transations where no currency is involved
 		<hours preferred="h" allowed="hB h H hb" regions="KH"/>
 		<hours preferred="h" allowed="hB h hb H" regions="ta_IN"/>
 		<hours preferred="h" allowed="hB hb H h" regions="CN HK MO TW"/>
-		<hours preferred="h" allowed="hB hb h H" regions="ET gu_IN mr_IN pa_IN zu_ZA"/>
+		<hours preferred="h" allowed="hB hb h H" regions="ET gu_IN mr_IN pa_IN"/>
     </timeData>
 
     <measurementData>
@@ -5141,7 +5161,7 @@ XXX Code for transations where no currency is involved
         <territoryCodes type="ZM" numeric="894" alpha3="ZMB" fips10="ZA"/>
         <territoryCodes type="ZR" numeric="180" alpha3="ZAR"/>
         <territoryCodes type="ZW" numeric="716" alpha3="ZWE" fips10="ZI"/>
-        <territoryCodes type="ZZ" numeric="999" alpha3="ZZZ" internet="AAA AARP ABB ABBOTT ABOGADO ACADEMY ACCENTURE ACCOUNTANT ACCOUNTANTS ACO ACTIVE ACTOR ADAC ADS ADULT AEG AERO AFL AGENCY AIG AIRFORCE AIRTEL ALIBABA ALIPAY ALLFINANZ ALSACE AMICA AMSTERDAM ANALYTICS ANDROID APARTMENTS APP APPLE AQUARELLE ARAMCO ARCHI ARMY ARPA ARTE ASIA ASSOCIATES ATTORNEY AUCTION AUDI AUDIO AUTHOR AUTO AUTOS AXA AZURE BAIDU BAND BANK BAR BARCELONA BARCLAYCARD BARCLAYS BARGAINS BAUHAUS BAYERN BBC BBVA BCN BEATS BEER BENTLEY BERLIN BEST BET BHARTI BIBLE BID BIKE BING BINGO BIO BIZ BLACK BLACKFRIDAY BLOOMBERG BLUE BMS BMW BNL BNPPARIBAS BOATS BOEHRINGER BOM BOND BOO BOOK BOOTS BOSCH BOSTIK BOT BOUTIQUE BRADESCO BRIDGESTONE BROADWAY BROKER BROTHER BRUSSELS BUDAPEST BUGATTI BUILD BUILDERS BUSINESS BUY BUZZ BZH CAB CAFE CAL CALL CAMERA CAMP CANCERRESEARCH CANON CAPETOWN CAPITAL CAR CARAVAN CARDS CARE CAREER CAREERS CARS CARTIER CASA CASH CASINO CAT CATERING CBA CBN CEB CENTER CEO CERN CFA CFD CHANEL CHANNEL CHAT CHEAP CHLOE CHRISTMAS CHROME CHURCH CIPRIANI CIRCLE CISCO CITIC CITY CITYEATS CLAIMS CLEANING CLICK CLINIC CLINIQUE CLOTHING CLOUD CLUB CLUBMED COACH CODES COFFEE COLLEGE COLOGNE COM COMMBANK COMMUNITY COMPANY COMPARE COMPUTER COMSEC CONDOS CONSTRUCTION CONSULTING CONTACT CONTRACTORS COOKING COOL COOP CORSICA COUNTRY COUPONS COURSES CREDIT CREDITCARD CREDITUNION CRICKET CROWN CRS CRUISES CSC CUISINELLA CYMRU CYOU DABUR DAD DANCE DATE DATING DATSUN DAY DCLK DEALER DEALS DEGREE DELIVERY DELL DELOITTE DELTA DEMOCRAT DENTAL DENTIST DESI DESIGN DEV DIAMONDS DIET DIGITAL DIRECT DIRECTORY DISCOUNT DNP DOCS DOG DOHA DOMAINS DOOSAN DOWNLOAD DRIVE DUBAI DURBAN DVAG EARTH EAT EDEKA EDU EDUCATION EMAIL EMERCK ENERGY ENGINEER ENGINEERING ENTERPRISES EPSON EQUIPMENT ERNI ESQ ESTATE EUROVISION EUS EVENTS EVERBANK EXCHANGE EXPERT EXPOSED EXPRESS FAGE FAIL FAIRWINDS FAITH FAMILY FAN FANS FARM FASHION FAST FEEDBACK FERRERO FILM FINAL FINANCE FINANCIAL FIRESTONE FIRMDALE FISH FISHING FIT FITNESS FLIGHTS FLORIST FLOWERS FLSMIDTH FLY FOO FOOTBALL FORD FOREX FORSALE FORUM FOUNDATION FOX FRESENIUS FRL FROGANS FUND FURNITURE FUTBOL FYI GAL GALLERY GAME GARDEN GBIZ GDN GEA GENT GENTING GGEE GIFT GIFTS GIVES GIVING GLASS GLE GLOBAL GLOBO GMAIL GMO GMX GOLD GOLDPOINT GOLF GOO GOOG GOOGLE GOP GOT GOV GRAINGER GRAPHICS GRATIS GREEN GRIPE GROUP GUCCI GUGE GUIDE GUITARS GURU HAMBURG HANGOUT HAUS HEALTH HEALTHCARE HELP HELSINKI HERE HERMES HIPHOP HITACHI HIV HOCKEY HOLDINGS HOLIDAY HOMEDEPOT HOMES HONDA HORSE HOST HOSTING HOTELES HOTMAIL HOUSE HOW HSBC HYUNDAI IBM ICBC ICE ICU IFM IINET IMMO IMMOBILIEN INDUSTRIES INFINITI INFO ING INK INSTITUTE INSURANCE INSURE INT INTERNATIONAL INVESTMENTS IPIRANGA IRISH ISELECT IST ISTANBUL ITAU IWC JAGUAR JAVA JCB JETZT JEWELRY JLC JLL JMP JOBS JOBURG JOT JOY JPRS JUEGOS KAUFEN KDDI KFH KIA KIM KINDER KITCHEN KIWI KOELN KOMATSU KPN KRD KRED KYOTO LACAIXA LAMBORGHINI LAMER LANCASTER LAND LANDROVER LANXESS LASALLE LAT LATROBE LAW LAWYER LDS LEASE LECLERC LEGAL LEXUS LGBT LIAISON LIDL LIFE LIFEINSURANCE LIFESTYLE LIGHTING LIKE LIMITED LIMO LINCOLN LINDE LINK LIVE LIVING LIXIL LOAN LOANS LOL LONDON LOTTE LOTTO LOVE LTD LTDA LUPIN LUXE LUXURY MADRID MAIF MAISON MAKEUP MAN MANAGEMENT MANGO MARKET MARKETING MARKETS MARRIOTT MBA MED MEDIA MEET MELBOURNE MEME MEMORIAL MEN MENU MEO MIAMI MICROSOFT MIL MINI MMA MOBI MOBILY MODA MOE MOI MOM MONASH MONEY MONTBLANC MORMON MORTGAGE MOSCOW MOTORCYCLES MOV MOVIE MOVISTAR MTN MTPC MTR MUSEUM MUTUELLE NADEX NAGOYA NAME NAVY NEC NET NETBANK NETWORK NEUSTAR NEW NEWS NEXUS NGO NHK NICO NIKON NINJA NISSAN NOKIA NORTON NOWRUZ NRA NRW NTT NYC OBI OFFICE OKINAWA OMEGA ONE ONG ONL ONLINE OOO ORACLE ORANGE ORG ORGANIC ORIGINS OSAKA OTSUKA OVH PAGE PAMPEREDCHEF PANERAI PARIS PARS PARTNERS PARTS PARTY PET PHARMACY PHILIPS PHOTO PHOTOGRAPHY PHOTOS PHYSIO PIAGET PICS PICTET PICTURES PID PIN PING PINK PIZZA PLACE PLAY PLAYSTATION PLUMBING PLUS POHL POKER PORN POST PRAXI PRESS PRO PROD PRODUCTIONS PROF PROMO PROPERTIES PROPERTY PROTECTION PUB QPON QUEBEC RACING READ REALTOR REALTY RECIPES RED REDSTONE REDUMBRELLA REHAB REISE REISEN REIT REN RENT RENTALS REPAIR REPORT REPUBLICAN REST RESTAURANT REVIEW REVIEWS REXROTH RICH RICOH RIO RIP ROCHER ROCKS RODEO ROOM RSVP RUHR RUN RWE RYUKYU SAARLAND SAFE SAFETY SAKURA SALE SALON SAMSUNG SANDVIK SANDVIKCOROMANT SANOFI SAP SAPO SARL SAS SAXO SBS SCA SCB SCHAEFFLER SCHMIDT SCHOLARSHIPS SCHOOL SCHULE SCHWARZ SCIENCE SCOR SCOT SEAT SECURITY SEEK SELECT SENER SERVICES SEVEN SEW SEX SEXY SFR SHARP SHELL SHIA SHIKSHA SHOES SHOW SHRIRAM SINGLES SITE SKI SKIN SKY SKYPE SMILE SNCF SOCCER SOCIAL SOFTBANK SOFTWARE SOHU SOLAR SOLUTIONS SONY SOY SPACE SPIEGEL SPREADBETTING SRL STADA STAR STARHUB STATEFARM STATOIL STC STCGROUP STOCKHOLM STORAGE STUDIO STUDY STYLE SUCKS SUPPLIES SUPPLY SUPPORT SURF SURGERY SUZUKI SWATCH SWISS SYDNEY SYMANTEC SYSTEMS TAB TAIPEI TAOBAO TATAMOTORS TATAR TATTOO TAX TAXI TCI TEAM TECH TECHNOLOGY TEL TELEFONICA TEMASEK TENNIS THD THEATER THEATRE TICKETS TIENDA TIFFANY TIPS TIRES TIROL TMALL TODAY TOKYO TOOLS TOP TORAY TOSHIBA TOURS TOWN TOYOTA TOYS TRADE TRADING TRAINING TRAVEL TRAVELERS TRAVELERSINSURANCE TRUST TRV TUBE TUI TUSHU UBS UNICOM UNIVERSITY UNO UOL VACATIONS VANA VEGAS VENTURES VERISIGN VERSICHERUNG VET VIAJES VIDEO VILLAS VIN VIP VIRGIN VISION VISTA VISTAPRINT VIVA VLAANDEREN VODKA VOLKSWAGEN VOTE VOTING VOTO VOYAGE WALES WALTER WANG WANGGOU WATCH WATCHES WEATHER WEATHERCHANNEL WEBCAM WEBER WEBSITE WED WEDDING WEIR WHOSWHO WIEN WIKI WILLIAMHILL WIN WINDOWS WINE WME WORK WORKS WORLD WTC WTF XBOX XEROX XIN XN--11B4C3D XN--1QQW23A XN--30RR7Y XN--3BST00M XN--3DS443G XN--3E0B707E XN--3PXU8K XN--42C2D9A XN--45BRJ9C XN--45Q11C XN--4GBRIM XN--55QW42G XN--55QX5D XN--6FRZ82G XN--6QQ986B3XL XN--80ADXHKS XN--80AO21A XN--80ASEHDB XN--80ASWG XN--90A3AC XN--90AIS XN--9DBQ2A XN--9ET52U XN--B4W605FERD XN--C1AVG XN--C2BR7G XN--CG4BKI XN--CLCHC0EA0B2G2A9GCD XN--CZR694B XN--CZRS0T XN--CZRU2D XN--D1ACJ3B XN--D1ALF XN--ECKVDTC9D XN--EFVY88H XN--ESTV75G XN--FHBEI XN--FIQ228C5HS XN--FIQ64B XN--FIQS8S XN--FIQZ9S XN--FJQ720A XN--FLW351E XN--FPCRJ9C3D XN--FZC2C9E2C XN--G2XX48C XN--GECRJ9C XN--H2BRJ9C XN--HXT814E XN--I1B6B1A6A2E XN--IMR513N XN--IO0A7I XN--J1AEF XN--J1AMH XN--J6W193G XN--JLQ61U9W7B XN--KCRX77D1X4A XN--KPRW13D XN--KPRY57D XN--KPU716F XN--KPUT3I XN--L1ACC XN--LGBBAT1AD8J XN--MGB9AWBF XN--MGBA3A3EJT XN--MGBA3A4F16A XN--MGBAAM7A8H XN--MGBAB2BD XN--MGBAYH7GPA XN--MGBB9FBPOB XN--MGBBH1A71E XN--MGBC0A9AZCG XN--MGBERP4A5D4AR XN--MGBPL2FH XN--MGBT3DHD XN--MGBTX2B XN--MGBX4CD0AB XN--MK1BU44C XN--MXTQ1M XN--NGBC5AZD XN--NGBE9E0A XN--NODE XN--NQV7F XN--NQV7FS00EMA XN--NYQY26A XN--O3CW4H XN--OGBPF8FL XN--P1ACF XN--P1AI XN--PBT977C XN--PGBS0DH XN--PSSY2U XN--Q9JYB4C XN--QCKA1PMC XN--QXAM XN--RHQV96G XN--S9BRJ9C XN--SES554G XN--T60B56A XN--TCKWE XN--UNUP4Y XN--VERMGENSBERATER-CTB XN--VERMGENSBERATUNG-PWB XN--VHQUV XN--VUQ861B XN--WGBH1C XN--WGBL6A XN--XHQ521B XN--XKC2AL3HYE2A XN--XKC2DL3A5EE0H XN--Y9A3AQ XN--YFRO4I67O XN--YGBI2AMMX XN--ZFR164B XPERIA XXX XYZ YACHTS YAMAXUN YANDEX YODOBASHI YOGA YOKOHAMA YOUTUBE ZARA ZERO ZIP ZONE ZUERICH"/>
+        <territoryCodes type="ZZ" numeric="999" alpha3="ZZZ" internet="OMEO ALIBABA ALIPAY ALLFINANZ ALLSTATE ALLY ALSACE ALSTOM AMERICANEXPRESS AMERICANFAMILY AMEX AMFAM AMICA AMSTERDAM ANALYTICS ANDROID ANQUAN ANZ APARTMENTS APP APPLE AQUARELLE ARAMCO ARCHI ARMY ARPA ART ARTE ASDA ASIA ASSOCIATES ATHLETA ATTORNEY AUCTION AUDI AUDIBLE AUDIO AUSPOST AUTHOR AUTO AUTOS AVIANCA AWS AXA AZURE BABY BAIDU BANAMEX BANANAREPUBLIC BAND BANK BAR BARCELONA BARCLAYCARD BARCLAYS BAREFOOT BARGAINS BAUHAUS BAYERN BBC BBT BBVA BCG BCN BEATS BEAUTY BEER BENTLEY BERLIN BEST BESTBUY BET BHARTI BIBLE BID BIKE BING BINGO BIO BIZ BLACK BLACKFRIDAY BLANCO BLOCKBUSTER BLOG BLOOMBERG BLUE BMS BMW BNL BNPPARIBAS BOATS BOEHRINGER BOFA BOM BOND BOO BOOK BOOKING BOOTS BOSCH BOSTIK BOT BOUTIQUE BRADESCO BRIDGESTONE BROADWAY BROKER BROTHER BRUSSELS BUDAPEST BUGATTI BUILD BUILDERS BUSINESS BUY BUZZ BZH CAB CAFE CAL CALL CALVINKLEIN CAM CAMERA CAMP CANCERRESEARCH CANON CAPETOWN CAPITAL CAPITALONE CAR CARAVAN CARDS CARE CAREER CAREERS CARS CARTIER CASA CASH CASINO CAT CATERING CBA CBN CBRE CBS CEB CENTER CEO CERN CFA CFD CHANEL CHANNEL CHASE CHAT CHEAP CHINTAI CHLOE CHRISTMAS CHROME CHRYSLER CHURCH CIPRIANI CIRCLE CISCO CITADEL CITI CITIC CITY CITYEATS CLAIMS CLEANING CLICK CLINIC CLINIQUE CLOTHING CLOUD CLUB CLUBMED COACH CODES COFFEE COLLEGE COLOGNE COM COMCAST COMMBANK COMMUNITY COMPANY COMPARE COMPUTER COMSEC CONDOS CONSTRUCTION CONSULTING CONTACT CONTRACTORS COOKING COOKINGCHANNEL COOL COOP CORSICA COUNTRY COUPON COUPONS COURSES CREDIT CREDITCARD CREDITUNION CRICKET CROWN CRS CRUISES CSC CUISINELLA CYMRU CYOU DABUR DAD DANCE DATE DATING DATSUN DAY DCLK DDS DEAL DEALER DEALS DEGREE DELIVERY DELL DELOITTE DELTA DEMOCRAT DENTAL DENTIST DESI DESIGN DEV DHL DIAMONDS DIET DIGITAL DIRECT DIRECTORY DISCOUNT DISCOVER DISH DIY DNP DOCS DOCTOR DODGE DOG DOHA DOMAINS DOT DOWNLOAD DRIVE DTV DUBAI DUCK DUNLOP DUNS DUPONT DURBAN DVAG EARTH EAT ECO EDEKA EDU EDUCATION EMAIL EMERCK ENERGY ENGINEER ENGINEERING ENTERPRISES EPOST EPSON EQUIPMENT ERICSSON ERNI ESQ ESTATE ESURANCE EUROVISION EUS EVENTS EVERBANK EXCHANGE EXPERT EXPOSED EXPRESS EXTRASPACE FAGE FAIL FAIRWINDS FAITH FAMILY FAN FANS FARM FARMERS FASHION FAST FEDEX FEEDBACK FERRARI FERRERO FIAT FIDELITY FILM FINAL FINANCE FINANCIAL FIRE FIRESTONE FIRMDALE FISH FISHING FIT FITNESS FLICKR FLIGHTS FLIR FLORIST FLOWERS FLY FOO FOODNETWORK FOOTBALL FORD FOREX FORSALE FORUM FOUNDATION FOX FRESENIUS FRL FROGANS FRONTDOOR FRONTIER FTR FUJITSU FUJIXEROX FUND FURNITURE FUTBOL FYI GAL GALLERY GALLO GALLUP GAME GAMES GAP GARDEN GBIZ GDN GEA GENT GENTING GEORGE GGEE GIFT GIFTS GIVES GIVING GLADE GLASS GLE GLOBAL GLOBO GMAIL GMBH GMO GMX GODADDY GOLD GOLDPOINT GOLF GOO GOODHANDS GOODYEAR GOOG GOOGLE GOP GOT GOV GRAINGER GRAPHICS GRATIS GREEN GRIPE GROUP GUARDIAN GUCCI GUGE GUIDE GUITARS GURU HAMBURG HANGOUT HAUS HBO HDFC HDFCBANK HEALTH HEALTHCARE HELP HELSINKI HERE HERMES HGTV HIPHOP HISAMITSU HITACHI HIV HKT HOCKEY HOLDINGS HOLIDAY HOMEDEPOT HOMEGOODS HOMES HOMESENSE HONDA HONEYWELL HORSE HOST HOSTING HOT HOTELES HOTMAIL HOUSE HOW HSBC HTC HUGHES HYATT HYUNDAI IBM ICBC ICE ICU IEEE IFM IINET IKANO IMAMAT IMDB IMMO IMMOBILIEN INDUSTRIES INFINITI INFO ING INK INSTITUTE INSURANCE INSURE INT INTEL INTERNATIONAL INTUIT INVESTMENTS IPIRANGA IRISH ISELECT ISMAILI IST ISTANBUL ITAU ITV IWC JAGUAR JAVA JCB JCP JEEP JETZT JEWELRY JLC JLL JMP JNJ JOBS JOBURG JOT JOY JPMORGAN JPRS JUEGOS JUNIPER KAUFEN KDDI KERRYHOTELS KERRYLOGISTICS KERRYPROPERTIES KFH KIA KIM KINDER KINDLE KITCHEN KIWI KOELN KOMATSU KOSHER KPMG KPN KRD KRED KUOKGROUP KYOTO LACAIXA LADBROKES LAMBORGHINI LAMER LANCASTER LANCIA LANCOME LAND LANDROVER LANXESS LASALLE LAT LATINO LATROBE LAW LAWYER LDS LEASE LECLERC LEFRAK LEGAL LEGO LEXUS LGBT LIAISON LIDL LIFE LIFEINSURANCE LIFESTYLE LIGHTING LIKE LILLY LIMITED LIMO LINCOLN LINDE LINK LIPSY LIVE LIVING LIXIL LOAN LOANS LOCKER LOCUS LOFT LOL LONDON LOTTE LOTTO LOVE LPL LPLFINANCIAL LTD LTDA LUNDBECK LUPIN LUXE LUXURY MACYS MADRID MAIF MAISON MAKEUP MAN MANAGEMENT MANGO MARKET MARKETING MARKETS MARRIOTT MARSHALLS MASERATI MATTEL MBA MCD MCDONALDS MCKINSEY MED MEDIA MEET MELBOURNE MEME MEMORIAL MEN MENU MEO METLIFE MIAMI MICROSOFT MIL MINI MINT MIT MITSUBISHI MLB MLS MMA MOBI MOBILY MODA MOE MOI MOM MONASH MONEY MONTBLANC MOPAR MORMON MORTGAGE MOSCOW MOTORCYCLES MOV MOVIE MOVISTAR MSD MTN MTPC MTR MUSEUM MUTUAL MUTUELLE NAB NADEX NAGOYA NAME NATIONWIDE NATURA NAVY NBA NEC NET NETBANK NETFLIX NETWORK NEUSTAR NEW NEWS NEXT NEXTDIRECT NEXUS NFL NGO NHK NICO NIKE NIKON NINJA NISSAN NISSAY NOKIA NORTHWESTERNMUTUAL NORTON NOW NOWRUZ NOWTV NRA NRW NTT NYC OBI OFF OFFICE OKINAWA OLAYAN OLAYANGROUP OLDNAVY OLLO OMEGA ONE ONG ONL ONLINE ONYOURSIDE OOO OPEN ORACLE ORANGE ORG ORGANIC ORIENTEXPRESS ORIGINS OSAKA OTSUKA OTT OVH PAGE PAMPEREDCHEF PANASONIC PANERAI PARIS PARS PARTNERS PARTS PARTY PASSAGENS PAY PCCW PET PFIZER PHARMACY PHILIPS PHOTO PHOTOGRAPHY PHOTOS PHYSIO PIAGET PICS PICTET PICTURES PID PIN PING PINK PIONEER PIZZA PLACE PLAY PLAYSTATION PLUMBING PLUS PNC POHL POKER POLITIE PORN POST PRAMERICA PRAXI PRESS PRIME PRO PROD PRODUCTIONS PROF PROGRESSIVE PROMO PROPERTIES PROPERTY PROTECTION PRU PRUDENTIAL PUB PWC QPON QUEBEC QUEST QVC RACING RAID READ REALESTATE REALTOR REALTY RECIPES RED REDSTONE REDUMBRELLA REHAB REISE REISEN REIT REN RENT RENTALS REPAIR REPORT REPUBLICAN REST RESTAURANT REVIEW REVIEWS REXROTH RICH RICHARDLI RICOH RIGHTATHOME RIO RIP ROCHER ROCKS RODEO ROOM RSVP RUHR RUN RWE RYUKYU SAARLAND SAFE SAFETY SAKURA SALE SALON SAMSCLUB SAMSUNG SANDVIK SANDVIKCOROMANT SANOFI SAP SAPO SARL SAS SAVE SAXO SBI SBS SCA SCB SCHAEFFLER SCHMIDT SCHOLARSHIPS SCHOOL SCHULE SCHWARZ SCIENCE SCJOHNSON SCOR SCOT SEAT SECURE SECURITY SEEK SELECT SENER SERVICES SES SEVEN SEW SEX SEXY SFR SHANGRILA SHARP SHAW SHELL SHIA SHIKSHA SHOES SHOP SHOPPING SHOUJI SHOW SHOWTIME SHRIRAM SILK SINA SINGLES SITE SKI SKIN SKY SKYPE SLING SMART SMILE SNCF SOCCER SOCIAL SOFTBANK SOFTWARE SOHU SOLAR SOLUTIONS SONG SONY SOY SPACE SPIEGEL SPOT SPREADBETTING SRL SRT STADA STAPLES STAR STARHUB STATEBANK STATEFARM STATOIL STC STCGROUP STOCKHOLM STORAGE STORE STREAM STUDIO STUDY STYLE SUCKS SUPPLIES SUPPLY SUPPORT SURF SURGERY SUZUKI SWATCH SWIFTCOVER SWISS SYDNEY SYMANTEC SYSTEMS TAB TAIPEI TALK TAOBAO TARGET TATAMOTORS TATAR TATTOO TAX TAXI TCI TDK TEAM TECH TECHNOLOGY TEL TELECITY TELEFONICA TEMASEK TENNIS TEVA THD THEATER THEATRE TIAA TICKETS TIENDA TIFFANY TIPS TIRES TIROL TJMAXX TJX TKMAXX TMALL TODAY TOKYO TOOLS TOP TORAY TOSHIBA TOTAL TOURS TOWN TOYOTA TOYS TRADE TRADING TRAINING TRAVEL TRAVELCHANNEL TRAVELERS TRAVELERSINSURANCE TRUST TRV TUBE TUI TUNES TUSHU TVS UBANK UBS UCONNECT UNICOM UNIVERSITY UNO UOL UPS VACATIONS VANA VANGUARD VEGAS VENTURES VERISIGN VERSICHERUNG VET VIAJES VIDEO VIG VIKING VILLAS VIN VIP VIRGIN VISA VISION VISTA VISTAPRINT VIVA VIVO VLAANDEREN VODKA VOLKSWAGEN VOTE VOTING VOTO VOYAGE VUELOS WALES WALMART WALTER WANG WANGGOU WARMAN WATCH WATCHES WEATHER WEATHERCHANNEL WEBCAM WEBER WEBSITE WED WEDDING WEIBO WEIR WHOSWHO WIEN WIKI WILLIAMHILL WIN WINDOWS WINE WINNERS WME WOLTERSKLUWER WOODSIDE WORK WORKS WORLD WTC WTF XBOX XEROX XFINITY XIHUAN XIN XN--11B4C3D XN--1CK2E1B XN--1QQW23A XN--30RR7Y XN--3BST00M XN--3DS443G XN--3E0B707E XN--3OQ18VL8PN36A XN--3PXU8K XN--42C2D9A XN--45BRJ9C XN--45Q11C XN--4GBRIM XN--55QW42G XN--55QX5D XN--5SU34J936BGSG XN--5TZM5G XN--6FRZ82G XN--6QQ986B3XL XN--80ADXHKS XN--80AO21A XN--80ASEHDB XN--80ASWG XN--8Y0A063A XN--90A3AC XN--90AE XN--90AIS XN--9DBQ2A XN--9ET52U XN--9KRT00A XN--B4W605FERD XN--BCK1B9A5DRE4C XN--C1AVG XN--C2BR7G XN--CCK2B3B XN--CG4BKI XN--CLCHC0EA0B2G2A9GCD XN--CZR694B XN--CZRS0T XN--CZRU2D XN--D1ACJ3B XN--D1ALF XN--E1A4C XN--ECKVDTC9D XN--EFVY88H XN--ESTV75G XN--FCT429K XN--FHBEI XN--FIQ228C5HS XN--FIQ64B XN--FIQS8S XN--FIQZ9S XN--FJQ720A XN--FLW351E XN--FPCRJ9C3D XN--FZC2C9E2C XN--FZYS8D69UVGM XN--G2XX48C XN--GCKR3F0F XN--GECRJ9C XN--H2BRJ9C XN--HXT814E XN--I1B6B1A6A2E XN--IMR513N XN--IO0A7I XN--J1AEF XN--J1AMH XN--J6W193G XN--JLQ61U9W7B XN--JVR189M XN--KCRX77D1X4A XN--KPRW13D XN--KPRY57D XN--KPU716F XN--KPUT3I XN--L1ACC XN--LGBBAT1AD8J XN--MGB9AWBF XN--MGBA3A3EJT XN--MGBA3A4F16A XN--MGBA7C0BBN0A XN--MGBAAM7A8H XN--MGBAB2BD XN--MGBAYH7GPA XN--MGBB9FBPOB XN--MGBBH1A71E XN--MGBC0A9AZCG XN--MGBCA7DZDO XN--MGBERP4A5D4AR XN--MGBPL2FH XN--MGBT3DHD XN--MGBTX2B XN--MGBX4CD0AB XN--MIX891F XN--MK1BU44C XN--MXTQ1M XN--NGBC5AZD XN--NGBE9E0A XN--NODE XN--NQV7F XN--NQV7FS00EMA XN--NYQY26A XN--O3CW4H XN--OGBPF8FL XN--P1ACF XN--P1AI XN--PBT977C XN--PGBS0DH XN--PSSY2U XN--Q9JYB4C XN--QCKA1PMC XN--QXAM XN--RHQV96G XN--ROVU88B XN--S9BRJ9C XN--SES554G XN--T60B56A XN--TCKWE XN--UNUP4Y XN--VERMGENSBERATER-CTB XN--VERMGENSBERATUNG-PWB XN--VHQUV XN--VUQ861B XN--W4R85EL8FHU5DNRA XN--W4RS40L XN--WGBH1C XN--WGBL6A XN--XHQ521B XN--XKC2AL3HYE2A XN--XKC2DL3A5EE0H XN--Y9A3AQ XN--YFRO4I67O XN--YGBI2AMMX XN--ZFR164B XPERIA XXX XYZ YACHTS YAHOO YAMAXUN YANDEX YODOBASHI YOGA YOKOHAMA YOU YOUTUBE YUN ZAPPOS ZARA ZERO ZIP ZIPPO ZONE ZUERICH"/>
     <!-- end of data generated with CountItems tool per http://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
 
 	    <currencyCodes type="AED" numeric="784"/>
@@ -5331,7 +5351,7 @@ XXX Code for transations where no currency is involved
 		<parentLocale parent="pt_PT" locales="pt_AO pt_CH pt_CV pt_GQ pt_GW pt_LU pt_MO pt_MZ pt_ST pt_TL"/>
 		<parentLocale parent="zh_Hant_HK" locales="zh_Hant_MO"/>
 	</parentLocales>
-	
+
 	<references>
 		<reference type="R1000" uri="https://www.cia.gov/cia/publications/factbook/geos/aa.html">Dutch official</reference>
 		<reference type="R1001" uri="http://www.migrationinformation.org/Feature/display.cfm?ID=72">At most 6% are not fluent in English</reference>

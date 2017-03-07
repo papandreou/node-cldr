@@ -7,7 +7,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
     <identity>
-        <version number="$Revision: 11914 $"/>
+        <version number="$Revision: 12722 $"/>
         <language type="fr"/>
         <territory type="CH"/>
     </identity>
@@ -18,7 +18,7 @@ For terms of use, see http://www.unicode.org/copyright.html
             </ruleset>
             <ruleset type="spellout-numbering-year">
                 <rbnfrule value="-x">moins →→;</rbnfrule>
-                <rbnfrule value="x.x">=#,###0.#=;</rbnfrule>
+                <rbnfrule value="x.x">=0.0=;</rbnfrule>
                 <rbnfrule value="0">=%spellout-numbering=;</rbnfrule>
                 <rbnfrule value="1100" radix="100">←%spellout-cardinal-masculine←-cent→%%cents-m→;</rbnfrule>
                 <rbnfrule value="10000">=%spellout-numbering=;</rbnfrule>
@@ -206,29 +206,6 @@ For terms of use, see http://www.unicode.org/copyright.html
                 <rbnfrule value="0">zéroième;</rbnfrule>
                 <rbnfrule value="1">première;</rbnfrule>
                 <rbnfrule value="2">=%%spellout-ordinal=;</rbnfrule>
-            </ruleset>
-        </rulesetGrouping>
-        <rulesetGrouping type="OrdinalRules">
-            <ruleset type="dord-mascabbrev" access="private">
-                <rbnfrule value="0">e;</rbnfrule>
-                <rbnfrule value="1">er;</rbnfrule>
-                <rbnfrule value="2">e;</rbnfrule>
-            </ruleset>
-            <ruleset type="digits-ordinal-masculine">
-                <rbnfrule value="-x">−→→;</rbnfrule>
-                <rbnfrule value="0">=#,##0==%%dord-mascabbrev=;</rbnfrule>
-            </ruleset>
-            <ruleset type="dord-femabbrev" access="private">
-                <rbnfrule value="0">e;</rbnfrule>
-                <rbnfrule value="1">re;</rbnfrule>
-                <rbnfrule value="2">e;</rbnfrule>
-            </ruleset>
-            <ruleset type="digits-ordinal-feminine">
-                <rbnfrule value="-x">−→→;</rbnfrule>
-                <rbnfrule value="0">=#,##0==%%dord-femabbrev=;</rbnfrule>
-            </ruleset>
-            <ruleset type="digits-ordinal">
-                <rbnfrule value="0">=%digits-ordinal-masculine=;</rbnfrule>
             </ruleset>
         </rulesetGrouping>
     </rbnf>

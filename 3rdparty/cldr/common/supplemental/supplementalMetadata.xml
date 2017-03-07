@@ -7,7 +7,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 
 <supplementalData>
-    <version number="$Revision: 12404 $"/>
+    <version number="$Revision: 12932 $"/>
     <metadata>
         <serialElements>
             attributeValues attributes base comment context exception extend i ic languageMatch last_non_ignorable last_secondary_ignorable last_tertiary_ignorable optimize p pc pluralRule rbnfrule reset rules ruleset s sc settings substitute suppress_contractions suppression t tRule tc variable x
@@ -160,6 +160,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<languageAlias type="zyb" replacement="za" reason="macrolanguage"/> <!-- Yongbei Zhuang ⇒ Zhuang -->
 			<languageAlias type="him" replacement="srx" reason="macrolanguage"/> <!-- Himachali ⇒ Sirmauri (= Pahari, Himachali) -->
 			<languageAlias type="mnk" replacement="man" reason="macrolanguage"/> <!-- Mandinka ⇒ Mandingo -->
+			<languageAlias type="bh" replacement="bho" reason="macrolanguage"/> <!-- Bihari ⇒ Bhojpuri -->
+			<languageAlias type="prs" replacement="fa_AF" reason="overlong"/> <!-- Dari ⇒ Farsi (Afganistan) -->
+			<languageAlias type="swc" replacement="sw_CD" reason="overlong"/> <!-- Dari ⇒ Farsi (Afganistan) -->
 			<!-- incorrect three-letter language codes -->
             <!-- start of data generated with CountItems tool per http://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
 			<languageAlias type="aar" replacement="aa" reason="overlong"/> <!-- [Afar] -->
@@ -177,7 +180,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<languageAlias type="bak" replacement="ba" reason="overlong"/> <!-- [Bashkir] -->
 			<languageAlias type="bel" replacement="be" reason="overlong"/> <!-- [Belarusian] -->
 			<languageAlias type="bul" replacement="bg" reason="overlong"/> <!-- [Bulgarian] -->
-			<languageAlias type="bih" replacement="bh" reason="overlong"/> <!-- [Bihari] -->
+			<languageAlias type="bih" replacement="bho" reason="overlong"/> <!-- [Bihari] -->
 			<languageAlias type="bis" replacement="bi" reason="overlong"/> <!-- [Bislama] -->
 			<languageAlias type="bam" replacement="bm" reason="overlong"/> <!-- [Bambara] -->
 			<languageAlias type="ben" replacement="bn" reason="overlong"/> <!-- [Bengali] -->
@@ -753,6 +756,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territoryAlias type="076" replacement="BR" reason="overlong"/> <!-- Brazil -->
 			<territoryAlias type="044" replacement="BS" reason="overlong"/> <!-- Bahamas -->
 			<territoryAlias type="064" replacement="BT" reason="overlong"/> <!-- Bhutan -->
+			<territoryAlias type="104" replacement="MM" reason="overlong"/> <!-- Myanmar (Burma) -->
 			<territoryAlias type="074" replacement="BV" reason="overlong"/> <!-- Bouvet Island -->
 			<territoryAlias type="072" replacement="BW" reason="overlong"/> <!-- Botswana -->
 			<territoryAlias type="112" replacement="BY" reason="overlong"/> <!-- Belarus -->
@@ -770,6 +774,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territoryAlias type="156" replacement="CN" reason="overlong"/> <!-- China -->
 			<territoryAlias type="170" replacement="CO" reason="overlong"/> <!-- Colombia -->
 			<territoryAlias type="188" replacement="CR" reason="overlong"/> <!-- Costa Rica -->
+			<territoryAlias type="891" replacement="RS ME" reason="overlong"/> <!-- null -->
 			<territoryAlias type="192" replacement="CU" reason="overlong"/> <!-- Cuba -->
 			<territoryAlias type="132" replacement="CV" reason="overlong"/> <!-- Cape Verde -->
 			<territoryAlias type="531" replacement="CW" reason="overlong"/> <!-- Curaçao -->
@@ -867,7 +872,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territoryAlias type="584" replacement="MH" reason="overlong"/> <!-- Marshall Islands -->
 			<territoryAlias type="807" replacement="MK" reason="overlong"/> <!-- Macedonia -->
 			<territoryAlias type="466" replacement="ML" reason="overlong"/> <!-- Mali -->
-			<territoryAlias type="104" replacement="MM" reason="overlong"/> <!-- Myanmar (Burma) -->
 			<territoryAlias type="496" replacement="MN" reason="overlong"/> <!-- Mongolia -->
 			<territoryAlias type="446" replacement="MO" reason="overlong"/> <!-- Macau SAR China -->
 			<territoryAlias type="580" replacement="MP" reason="overlong"/> <!-- Northern Mariana Islands -->
@@ -926,7 +930,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territoryAlias type="638" replacement="RE" reason="overlong"/> <!-- Réunion -->
 			<territoryAlias type="642" replacement="RO" reason="overlong"/> <!-- Romania -->
 			<territoryAlias type="688" replacement="RS" reason="overlong"/> <!-- Serbia -->
-			<territoryAlias type="891" replacement="RS ME" reason="overlong"/> <!-- Serbia and Montenegro -->
 			<territoryAlias type="643" replacement="RU" reason="overlong"/> <!-- Russia -->
 			<territoryAlias type="646" replacement="RW" reason="overlong"/> <!-- Rwanda -->
 			<territoryAlias type="682" replacement="SA" reason="overlong"/> <!-- Saudi Arabia -->
@@ -1221,7 +1224,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			ku_TR kw_GB ky_KG
 			lag_TZ lb_LU lg_UG lkt_US ln_CD lo_LA lrc_IR lt_LT lu_CD luo_KE luy_KE lv_LV
 			mas_KE mer_KE mfe_MU mg_MG mgh_MZ mgo_CM mi_NZ mk_MK ml_IN mn_MN mn_Mong_CN
-			moh_CA mr_IN ms_Arab_MY ms_MY mt_MT mua_CM my_MM mzn_IR
+			mni_IN moh_CA mr_IN ms_Arab_MY ms_MY mt_MT mua_CM my_MM mzn_IR
 			naq_NA nb_NO nd_ZW nds_DE ne_NP nl_NL nmg_CM nn_NO nnh_CM nqo_GN nr_ZA nso_ZA
 			nus_SS ny_MW nyn_UG
 			oc_FR om_ET or_IN os_GE

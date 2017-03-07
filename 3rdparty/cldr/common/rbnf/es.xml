@@ -7,7 +7,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
     <identity>
-        <version number="$Revision: 12154 $"/>
+        <version number="$Revision: 12733 $"/>
         <language type="es"/>
     </identity>
     <rbnf>
@@ -16,7 +16,7 @@ For terms of use, see http://www.unicode.org/copyright.html
                 <rbnfrule value="0">&amp;[last primary ignorable ] ←← ' ' ←← ',' ←← '-' ←← '­';</rbnfrule>
             </ruleset>
             <ruleset type="spellout-numbering-year">
-                <rbnfrule value="x.x">=#,###0.#=;</rbnfrule>
+                <rbnfrule value="x.x">=0.0=;</rbnfrule>
                 <rbnfrule value="0">=%spellout-numbering=;</rbnfrule>
             </ruleset>
             <ruleset type="spellout-numbering">
@@ -71,7 +71,7 @@ For terms of use, see http://www.unicode.org/copyright.html
                 <rbnfrule value="1000000">un millón[ →→];</rbnfrule>
                 <rbnfrule value="2000000">←%spellout-cardinal-masculine← millones[ →→];</rbnfrule>
                 <rbnfrule value="1000000000000">un billón[ →→];</rbnfrule>
-                <rbnfrule value="2000000000000">←%spellout-cardinal-masculine← billiones[ →→];</rbnfrule>
+                <rbnfrule value="2000000000000">←%spellout-cardinal-masculine← billones[ →→];</rbnfrule>
                 <rbnfrule value="1000000000000000000">=#,##0=;</rbnfrule>
             </ruleset>
             <ruleset type="spellout-cardinal-masculine">
@@ -105,7 +105,7 @@ For terms of use, see http://www.unicode.org/copyright.html
                 <rbnfrule value="1000000">un millón[ →→];</rbnfrule>
                 <rbnfrule value="2000000">←%spellout-cardinal-masculine← millones[ →→];</rbnfrule>
                 <rbnfrule value="1000000000000">un billón[ →→];</rbnfrule>
-                <rbnfrule value="2000000000000">←%spellout-cardinal-masculine← billiones[ →→];</rbnfrule>
+                <rbnfrule value="2000000000000">←%spellout-cardinal-masculine← billones[ →→];</rbnfrule>
                 <rbnfrule value="1000000000000000000">=#,##0=;</rbnfrule>
             </ruleset>
             <ruleset type="spellout-cardinal-feminine">
@@ -139,7 +139,7 @@ For terms of use, see http://www.unicode.org/copyright.html
                 <rbnfrule value="1000000">un millón[ →→];</rbnfrule>
                 <rbnfrule value="2000000">←%spellout-cardinal-masculine← millones[ →→];</rbnfrule>
                 <rbnfrule value="1000000000000">un billón[ →→];</rbnfrule>
-                <rbnfrule value="2000000000000">←%spellout-cardinal-masculine← billiones[ →→];</rbnfrule>
+                <rbnfrule value="2000000000000">←%spellout-cardinal-masculine← billones[ →→];</rbnfrule>
                 <rbnfrule value="1000000000000000000">=#,##0=;</rbnfrule>
             </ruleset>
             <ruleset type="spellout-ordinal-masculine-adjective">

@@ -7,7 +7,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 
 <ldmlBCP47>
-    <version number="$Revision: 12232 $"/>
+    <version number="$Revision: 12596 $"/>
     <keyword>
         <key name="co" description="Collation type key" alias="collation">
             <type name="big5han" description="Pinyin ordering for Latin, big5 charset ordering for CJK characters (used in Chinese)"/>
@@ -68,7 +68,12 @@ For terms of use, see http://www.unicode.org/copyright.html
         </key>
 
         <key name="kr" description="Collation reorder codes" valueType="multiple" alias="colReorder" since="21">
-            <type name="REORDER_CODE" description="One or more collation reorder codes, see LDML Part 5: Collation" since="21"/>
+            <type name="space" description="Whitespace reordering code, see LDML Part 5: Collation" since="21"/>
+            <type name="punct" description="Punctuation reordering code, see LDML Part 5: Collation" since="21"/>
+            <type name="symbol" description="Symbol reordering code (other than currency), see LDML Part 5: Collation" since="21"/>
+            <type name="currency" description="Currency reordering code, see LDML Part 5: Collation" since="21"/>
+            <type name="digit" description="Digit (number) reordering code, see LDML Part 5: Collation" since="21"/>
+            <type name="REORDER_CODE" description="Other collation reorder code — for script, see LDML Part 5: Collation" since="21"/>
         </key>
 
         <key name="ks" description="Collation parameter key for collation strength" alias="colStrength">

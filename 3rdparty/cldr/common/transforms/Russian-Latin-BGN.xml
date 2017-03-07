@@ -6,7 +6,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <supplementalData>
-	<version number="$Revision: 12243 $"/>
+	<version number="$Revision: 12563 $"/>
 	<transforms>
 		<transform source="ru" target="ru_Latn" variant="BGN" direction="forward" draft="provisional" alias="Russian-Latin/BGN ru-Latn-t-ru-m0-bgn">
 			<tRule><![CDATA[
@@ -43,14 +43,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 $prime = ʹ ;
 $doublePrime = ʺ ;
 $wordBoundary = [^[:L:][:M:][:N:]] ;
-$upperConsonants = [БВГДЖЙКЛМНПРСТФХЦЧШЩЭ] ;
-$lowerConsonants = [бвгджйклмнпрстфхцчшщэ] ;
-$consonants = [$upperConsonants $lowerConsonants] ;
 $upperVowels = [АЕЁЭИОУЫЮЯ] ;
 $lowerVowels = [аеёэиоуыюя] ;
 $vowels = [$upperVowels $lowerVowels] ;
-$lower = [$lowerConsonants $lowerVowels] ;
-$upper = [$upperConsonants $upperVowels] ;
+$upperConsonants = [[:Uppercase:]-$vowels] ;
+$lowerConsonants = [[:Lowercase:]-$vowels] ;
+$consonants = [$upperConsonants $lowerConsonants] ;
+$upper = [:Uppercase:];
+$lower = [:Lowercase:];
 
 
 ########################################################################

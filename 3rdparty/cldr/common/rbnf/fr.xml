@@ -7,7 +7,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
     <identity>
-        <version number="$Revision: 11914 $"/>
+        <version number="$Revision: 12722 $"/>
         <language type="fr"/>
     </identity>
     <rbnf>
@@ -17,7 +17,7 @@ For terms of use, see http://www.unicode.org/copyright.html
             </ruleset>
             <ruleset type="spellout-numbering-year">
                 <rbnfrule value="-x">moins →→;</rbnfrule>
-                <rbnfrule value="x.x">=#,###0.#=;</rbnfrule>
+                <rbnfrule value="x.x">=0.0=;</rbnfrule>
                 <rbnfrule value="0">=%spellout-numbering=;</rbnfrule>
                 <rbnfrule value="1100" radix="100">←%spellout-cardinal-masculine←-cent→%%cents-m→;</rbnfrule>
                 <rbnfrule value="10000">=%spellout-numbering=;</rbnfrule>
@@ -215,23 +215,21 @@ For terms of use, see http://www.unicode.org/copyright.html
             </ruleset>
         </rulesetGrouping>
         <rulesetGrouping type="OrdinalRules">
-            <ruleset type="dord-mascabbrev" access="private">
-                <rbnfrule value="0">e;</rbnfrule>
-                <rbnfrule value="1">er;</rbnfrule>
-                <rbnfrule value="2">e;</rbnfrule>
-            </ruleset>
             <ruleset type="digits-ordinal-masculine">
                 <rbnfrule value="-x">−→→;</rbnfrule>
-                <rbnfrule value="0">=#,##0==%%dord-mascabbrev=;</rbnfrule>
-            </ruleset>
-            <ruleset type="dord-femabbrev" access="private">
-                <rbnfrule value="0">e;</rbnfrule>
-                <rbnfrule value="1">re;</rbnfrule>
-                <rbnfrule value="2">e;</rbnfrule>
+                <rbnfrule value="0">=#,##0=$(ordinal,one{er}other{e})$;</rbnfrule>
             </ruleset>
             <ruleset type="digits-ordinal-feminine">
                 <rbnfrule value="-x">−→→;</rbnfrule>
-                <rbnfrule value="0">=#,##0==%%dord-femabbrev=;</rbnfrule>
+                <rbnfrule value="0">=#,##0=$(ordinal,one{re}other{e})$;</rbnfrule>
+            </ruleset>
+            <ruleset type="digits-ordinal-masculine-plural">
+                <rbnfrule value="-x">−→→;</rbnfrule>
+                <rbnfrule value="0">=#,##0=$(ordinal,one{ers}other{es})$;</rbnfrule>
+            </ruleset>
+            <ruleset type="digits-ordinal-feminine-plural">
+                <rbnfrule value="-x">−→→;</rbnfrule>
+                <rbnfrule value="0">=#,##0=$(ordinal,one{res}other{es})$;</rbnfrule>
             </ruleset>
             <ruleset type="digits-ordinal">
                 <rbnfrule value="0">=%digits-ordinal-masculine=;</rbnfrule>
