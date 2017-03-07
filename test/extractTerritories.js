@@ -17,14 +17,14 @@ describe('extractTerritories', function () {
 
     describe('for territories with alpha3 and numeric code', function () {
         it('should export the alpha3Code and numericCode properties as strings', function () {
-            expect(territories['US'], 'to satisfy', {
+            expect(territories.US, 'to satisfy', {
                 alpha3Code: 'USA',
                 numericCode: '840'
             });
         });
 
         it('should include zero-padding for territories with a numeric code lower than 100', function () {
-            expect(territories['AT'], 'to satisfy', {
+            expect(territories.AT, 'to satisfy', {
                 numericCode: '040'
             });
         });
@@ -33,7 +33,7 @@ describe('extractTerritories', function () {
     describe('for territories without alpha3 or without numeric code', function () {
         it('should not expose the numericCode or alpha3Code properties', function () {
             // Picked IC (Canary Islands) which currently has neither
-            expect(territories['IC'], 'not to have properties', ['numericCode', 'alpha3Code']);
+            expect(territories.IC, 'not to have properties', ['numericCode', 'alpha3Code']);
         });
     });
 

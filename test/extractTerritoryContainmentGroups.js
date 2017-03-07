@@ -12,8 +12,6 @@ describe('extractTerritoryContainmentGroups', function () {
     });
 
     it('only contains groups that are descendants of group 001', function () {
-        var isContainedByType = {};
-
         expect(Object.keys(territoryContainmentGroups), 'to have items satisfying', function (index) {
             var item = territoryContainmentGroups[index];
             expect((index === '001' || (('parent' in item) && Boolean(item.parent))), 'to be', true);

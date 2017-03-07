@@ -24,6 +24,7 @@ describe('extractRbnfFunctionByType', function () {
 
             it('should generate the correct code for the renderSpelloutCardinal rule', function () {
                 expect(estonianRbnfFunctionByType.renderSpelloutCardinal, 'to have the same ast as', function (n) {
+                    /* eslint-disable */
                     var isFractional = n !== Math.floor(n);
                     if (n < 0) return "miinus " + this.renderSpelloutCardinal(-n);
                     if (isFractional && n > 1) return this.renderSpelloutCardinal(Math.floor(n)) + " koma " + this.renderSpelloutCardinal(parseInt(String(n).replace(/\d*\./, ""), 10));
@@ -51,6 +52,7 @@ describe('extractRbnfFunctionByType', function () {
                     if (n >= 2) return "kaks";
                     if (n >= 1) return "üks";
                     if (n >= 0) return "null"
+                    /* eslint-enable */
                 });
             });
 

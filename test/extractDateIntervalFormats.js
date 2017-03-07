@@ -1,5 +1,4 @@
-var Path = require('path'),
-    expect = require('unexpected'),
+var expect = require('unexpected'),
     cldr = require('../lib/cldr');
 
 describe('cldr.extractDateIntervalFormats("en")', function () {

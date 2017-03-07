@@ -1,5 +1,5 @@
 var expect = require('unexpected'),
-    cldrPluralRuleTermFunctionByName = require('../lib/cldrPluralRuleTermFunctionByName');
+    cldrPluralRuleTermFunctionByName = require('../lib/cldrPluralRuleTermFunctionByName'),
     // http://unicode.org/reports/tr35/tr35-numbers.html#Operands
     expectedOutputByTermAndInput = {
         i: {'1': 1, '1.0': 1, '1.00': 1, '1.3': 1, '1.30': 1, '1.03': 1, '1.230': 1},
