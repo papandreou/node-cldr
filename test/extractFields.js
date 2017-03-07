@@ -61,6 +61,10 @@ describe('extractFields', function () {
                 0: 'this Saturday',
                 1: 'next Saturday',
                 '-1': 'last Saturday'
+            },
+            relativeTime: {
+                future: { one: 'in {0} Saturday', other: 'in {0} Saturdays' },
+                past: { one: '{0} Saturday ago', other: '{0} Saturdays ago' }
             }
         });
 
