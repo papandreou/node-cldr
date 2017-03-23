@@ -194,6 +194,15 @@ cldr.extractScriptDisplayNames('en_US').Arab;
 'Arabic'
 ```
 
+### cldr.extractVariantDisplayNames(localeId='root') ###
+
+Extract a variant ID => display name hash for a locale:
+
+```javascript
+cldr.extractVariantDisplayNames('fr').VALENCIA;
+'valencien'
+```
+
 ### cldr.extractKeyTypes(localeId='root') ###
 
 Extract keys and their associated types for a locale.
