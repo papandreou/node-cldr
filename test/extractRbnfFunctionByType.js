@@ -67,5 +67,15 @@ describe('extractRbnfFunctionByType', function () {
             danishRbnfFunctionByType.renderNumber = String;
             expect(danishRbnfFunctionByType.renderSpelloutNumbering(2439871).replace(/\u00ad/g, ''), 'to equal', 'to millioner firehundrede og niogtredive tusinde ottehundrede og enoghalvfjerds');
         });
+
+        // https://github.com/papandreou/node-cldr/issues/33
+        it('should render ordinals correctly in American English', function () {
+            var americanRbnfFunctionByType = cldr.extractRbnfFunctionByType('en_us');
+            americanRbnfFunctionByType.renderNumber = String;
+            expect(americanRbnfFunctionByType.renderDigitsOrdinal(1), 'to equal', '1st');
+            expect(americanRbnfFunctionByType.renderDigitsOrdinal(2), 'to equal', '2nd');
+            expect(americanRbnfFunctionByType.renderDigitsOrdinal(3), 'to equal', '3rd');
+            expect(americanRbnfFunctionByType.renderDigitsOrdinal(4), 'to equal', '4th');
+        });
     });
 });
