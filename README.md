@@ -609,20 +609,32 @@ cldr.extractCharacters('en_GB');
   moreInformation: '?' }
 ```
 
-### cldr.extractPluralRuleFunction(localeId='root') ###
+### cldr.extractPluralRuleFunction(localeId='root', 'cardinal'|'ordinal') ###
 
 Extract a plural rule function for a locale (See <a
 href="http://www.unicode.org/reports/tr35/tr35-29.html#Language_Plural_Rules">the
 LDML spec</a> for an explanation):
 
 ```javascript
-cldr.extractPluralRuleFunction('en_GB').toString();
+cldr.extractPluralRuleFunction('en_GB', 'cardinal').toString();
 function (n) {
+    if (typeof n === "string") n = parseInt(n, 10);
     if (n === 1) return "one";
     return "other";
 }
+
+cldr.extractPluralRuleFunction('en_GB', 'ordinal').toString();
+function (n) {
+    if (typeof n === "string") n = parseInt(n, 10);
+    if (n % 10 === 1 && !(n % 100 === 11)) return "one";
+    if (n % 10 === 2 && !(n % 100 === 12)) return "two";
+    if (n % 10 === 3 && !(n % 100 === 13)) return "few";
+    return "other";
+}
+
 cldr.extractPluralRuleFunction('ar').toString();
 function (n) {
+    if (typeof n === "string") n = parseInt(n, 10);
     if (n === 0) return "zero";
     if (n === 1) return "one";
     if (n === 2) return "two";
