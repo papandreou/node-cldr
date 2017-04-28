@@ -688,6 +688,23 @@ cldr.extractDigitsByNumberSystemId();
   [...] }
 ```
 
+
+### cldr.extractLanguageSupplementalData() ###
+
+Extract supplemental data for languages. These data contain a list of
+territories where the language is spoken, and scripts that are used
+with the language. Both territories and scripts can be either primary
+or secondary for the language.
+
+```javascript
+{ ar:
+  { scripts: [ 'Arab' ], territories: [ 'AE', 'BH', [...] ],
+    secondary: {
+      scripts: [ 'Syrc' ], territories: [ 'IR', 'SS' ] }
+  },
+  [...] }
+```
+
 License
 -------
 
