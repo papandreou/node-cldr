@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="kn"/>
 	</identity>
 	<localeDisplayNames>
@@ -767,8 +767,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">ಕುರಾಕಾವ್</territory>
 			<territory type="CX">ಕ್ರಿಸ್ಮಸ್ ದ್ವೀಪ</territory>
 			<territory type="CY">ಸೈಪ್ರಸ್</territory>
-			<territory type="CZ">ಝೆಕ್ ರಿಪಬ್ಲಿಕ್</territory>
-			<territory type="CZ" alt="variant">ಝೆಕಿಯಾ</territory>
+			<territory type="CZ">ಝೆಕಿಯಾ</territory>
+			<territory type="CZ" alt="variant">ಝೆಕ್ ರಿಪಬ್ಲಿಕ್</territory>
 			<territory type="DE">ಜರ್ಮನಿ</territory>
 			<territory type="DG">ಡೈಗೋ ಗಾರ್ಸಿಯ</territory>
 			<territory type="DJ">ಜಿಬೋಟಿ</territory>
@@ -5552,9 +5552,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>ಪೆರುವಿಯನ್ ನುಯೆವೊ ಸೊಲ್</displayName>
-				<displayName count="one">ಪೆರುವಿಯನ್ ನುಯೆವೊ ಸೊಲ್</displayName>
-				<displayName count="other">ಪೆರುವಿಯನ್ ನುಯೆವೊ ಸೊಲ್‍ಗಳು</displayName>
+				<displayName>ಪೆರುವಿಯನ್ ಸೊಲ್</displayName>
+				<displayName count="one">ಪೆರುವಿಯನ್ ಸೊಲ್</displayName>
+				<displayName count="other">ಪೆರುವಿಯನ್ ಸೊಲ್‍ಗಳು</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -5892,6 +5892,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} ದಿನ</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} ದಿನಗಳು</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0}ನೇ ಬಲತಿರುವನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

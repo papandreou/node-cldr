@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="ml"/>
 	</identity>
 	<localeDisplayNames>
@@ -781,8 +781,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">കുറാകാവോ</territory>
 			<territory type="CX">ക്രിസ്മസ് ദ്വീപ്</territory>
 			<territory type="CY">സൈപ്രസ്</territory>
-			<territory type="CZ">ചെക്ക് റിപ്പബ്ലിക്</territory>
-			<territory type="CZ" alt="variant">ചെക്കിയ</territory>
+			<territory type="CZ">ചെക്കിയ</territory>
+			<territory type="CZ" alt="variant">ചെക്ക് റിപ്പബ്ലിക്</territory>
 			<territory type="DE">ജർമനി</territory>
 			<territory type="DG">ഡീഗോ ഗ്രാഷ്യ</territory>
 			<territory type="DJ">ദിജിബൗട്ടി</territory>
@@ -2568,6 +2568,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>സാന്ത ഇസബേൽ</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>കോർഡിനേറ്റഡ് യൂണിവേഴ്‌സൽ ടൈം</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>അജ്ഞാത നഗരം</exemplarCity>
@@ -6022,15 +6027,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="other">പെറൂവിയൻ ഇൻറിസ്</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>പെറുവിയൻ ന്യൂവോ സോൾ</displayName>
-				<displayName count="one">പെറുവിയൻ ന്യൂവോ സോൾ</displayName>
-				<displayName count="other">പെറുവിയൻ ന്യൂവോ സോൾ</displayName>
+				<displayName>പെറുവിയൻ സോൾ</displayName>
+				<displayName count="one">പെറുവിയൻ സോൾ</displayName>
+				<displayName count="other">പെറുവിയൻ സോൾ</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
-				<displayName>പെറൂവിയൻ സോൾ</displayName>
-				<displayName count="one">പെറൂവിയൻ സോൾ</displayName>
-				<displayName count="other">പെറൂവിയൻ സോൾസ്</displayName>
+				<displayName>പെറൂവിയൻ സോൾ (1863–1965)</displayName>
+				<displayName count="one">പെറൂവിയൻ സോൾ (1863–1965)</displayName>
+				<displayName count="other">പെറൂവിയൻ സോൾസ് (1863–1965)</displayName>
 			</currency>
 			<currency type="PGK">
 				<displayName>പാപ്പുവ ന്യൂ ഗിനിയൻ കിന</displayName>
@@ -6566,6 +6571,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}-{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} വ്യക്തി</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} വ്യക്തികൾ</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0}-ാമത്തെ വലത്തേക്ക് തിരിയുക.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

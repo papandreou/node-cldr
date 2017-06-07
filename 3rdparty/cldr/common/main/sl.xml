@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="sl"/>
 	</identity>
 	<localeDisplayNames>
@@ -2609,6 +2609,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Isabel</exemplarCity>
 			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Univerzalni koordinirani čas</standard>
+				</long>
+			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>neznano mesto</exemplarCity>
 			</zone>
@@ -4795,7 +4800,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<list>;</list>
 			<percentSign>%</percentSign>
 			<plusSign>+</plusSign>
-			<minusSign>–</minusSign>
+			<minusSign>−</minusSign>
 			<exponential>e</exponential>
 			<superscriptingExponent>×</superscriptingExponent>
 			<perMille>‰</perMille>
@@ -6134,15 +6139,20 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>perujski inti</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>perujski novi sol</displayName>
-				<displayName count="one">perujski novi sol</displayName>
-				<displayName count="two">perujska nova sola</displayName>
-				<displayName count="few">perujski novi soli</displayName>
-				<displayName count="other">perujskih novih solov</displayName>
+				<displayName>perujski sol</displayName>
+				<displayName count="one">perujski sol</displayName>
+				<displayName count="two">perujska sola</displayName>
+				<displayName count="few">perujski soli</displayName>
+				<displayName count="other">perujskih solov</displayName>
 				<symbol draft="contributed">PEN</symbol>
 			</currency>
 			<currency type="PES">
-				<displayName>perujski sol</displayName>
+				<displayName>perujski sol (1863–1965)</displayName>
+				<displayName count="one">perujski sol (1863–1965)</displayName>
+				<displayName count="two">perujska sola (1863–1965)</displayName>
+				<displayName count="few">perujski soli (1863–1965)</displayName>
+				<displayName count="other">perujskih solov (1863–1965)</displayName>
+				<symbol draft="contributed">PES</symbol>
 			</currency>
 			<currency type="PGK">
 				<displayName>kina Papue Nove Gvineje</displayName>
@@ -6719,6 +6729,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">⩾{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} ura</pluralMinimalPairs>
+			<pluralMinimalPairs count="two">{0} uri</pluralMinimalPairs>
+			<pluralMinimalPairs count="few">{0} ure</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} ur</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">V {0}. križišču zavijte desno.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

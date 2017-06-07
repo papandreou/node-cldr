@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="lo"/>
 	</identity>
 	<localeDisplayNames>
@@ -798,8 +798,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">ຄູຣາຊາວ</territory>
 			<territory type="CX">ເກາະຄຣິສມາດ</territory>
 			<territory type="CY">ໄຊປຣັສ</territory>
-			<territory type="CZ">ສາທາລະນະລັດເຊັກ</territory>
-			<territory type="CZ" alt="variant">ເຊັກເຊຍ</territory>
+			<territory type="CZ">ເຊັກເຊຍ</territory>
+			<territory type="CZ" alt="variant">ສາທາລະນະລັດເຊັກ</territory>
 			<territory type="DE">ເຢຍລະມັນ</territory>
 			<territory type="DG">ດິເອໂກ ກາເຊຍ</territory>
 			<territory type="DJ">ຈິບູຕິ</territory>
@@ -1700,7 +1700,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yyyyMMM">G MMM y</dateFormatItem>
 						<dateFormatItem id="yyyyMMMd">G d MMM y</dateFormatItem>
 						<dateFormatItem id="yyyyMMMEd">E, G d MMM y</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">G y MMMM</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">G MMMM y</dateFormatItem>
 						<dateFormatItem id="yyyyQQQ">G QQQ y</dateFormatItem>
 						<dateFormatItem id="yyyyQQQQ">G y QQQQ</dateFormatItem>
 					</availableFormats>
@@ -2195,7 +2195,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMd">d MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E, d MMM y</dateFormatItem>
-						<dateFormatItem id="yMMMM">y MMMM</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
 						<dateFormatItem id="yw" count="other">ອາທິດທີ່ w ຂອງປີ y</dateFormatItem>
@@ -6669,8 +6669,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>ອິນຕິ ເປຣູ</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>ເປ​ຣູ​ວຽນ ນູ​ໂວ ໂຊ​ລ໌</displayName>
-				<displayName count="other">ເປ​ຣູ​ວຽນ ນູ​ໂວ ໂຊ​ລ໌</displayName>
+				<displayName>ເປ​ຣູ​ວຽນ ໂຊ​ລ໌</displayName>
+				<displayName count="other">ເປ​ຣູ​ວຽນ ໂຊ​ລ໌</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
@@ -7108,6 +7108,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="other">{0} ມື້</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">ລ້ຽວຂວາທຳອິດ.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">ລ້ຽວຂວາທີ {0}.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

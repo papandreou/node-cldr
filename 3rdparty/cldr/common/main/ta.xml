@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13204 $"/>
 		<language type="ta"/>
 	</identity>
 	<localeDisplayNames>
@@ -772,8 +772,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">குராகவ்</territory>
 			<territory type="CX">கிறிஸ்துமஸ் தீவு</territory>
 			<territory type="CY">சைப்ரஸ்</territory>
-			<territory type="CZ">செக் குடியரசு</territory>
-			<territory type="CZ" alt="variant">செசியா</territory>
+			<territory type="CZ">செசியா</territory>
+			<territory type="CZ" alt="variant">செக் குடியரசு</territory>
 			<territory type="DE">ஜெர்மனி</territory>
 			<territory type="DG">டியகோ கார்ஷியா</territory>
 			<territory type="DJ">ஜிபௌட்டி</territory>
@@ -6039,6 +6039,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} நாள்</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} நாட்கள்</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0}வது வலது திருப்பத்தை எடு.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">
@@ -6584,7 +6589,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<unit type="temperature-celsius">
 				<displayName>டிகிரி செல்சியஸ்</displayName>
 				<unitPattern count="one">{0} டிகிரி செல்சியஸ்</unitPattern>
-				<unitPattern count="other">{0}டிகிரி செல்சியஸ்</unitPattern>
+				<unitPattern count="other">{0} டிகிரி செல்சியஸ்</unitPattern>
 			</unit>
 			<unit type="temperature-fahrenheit">
 				<displayName>டிகிரி ஃபாரன்ஹீட்</displayName>

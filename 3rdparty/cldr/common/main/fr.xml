@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="fr"/>
 	</identity>
 	<localeDisplayNames>
@@ -947,8 +947,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Île Christmas</territory>
 			<territory type="CY">Chypre</territory>
-			<territory type="CZ">République tchèque</territory>
-			<territory type="CZ" alt="variant">Tchéquie</territory>
+			<territory type="CZ">Tchéquie</territory>
+			<territory type="CZ" alt="variant">République tchèque</territory>
 			<territory type="DE">Allemagne</territory>
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Djibouti</territory>
@@ -4597,6 +4597,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Isabel</exemplarCity>
 			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Temps universel coordonné</standard>
+				</long>
+			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>ville inconnue</exemplarCity>
 			</zone>
@@ -8212,13 +8217,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol draft="unconfirmed">PEI</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>nouveau sol péruvien</displayName>
-				<displayName count="one">nouveau sol péruvien</displayName>
-				<displayName count="other">nouveaux sols péruviens</displayName>
+				<displayName>sol péruvien</displayName>
+				<displayName count="one">sol péruvien</displayName>
+				<displayName count="other">sols péruviens</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
-				<displayName>sol péruvien</displayName>
+				<displayName>sol péruvien (1863–1985)</displayName>
 				<displayName count="one">sol péruvien (1863–1985)</displayName>
 				<displayName count="other">sols péruviens (1863–1985)</displayName>
 				<symbol draft="unconfirmed">PES</symbol>
@@ -8849,6 +8854,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">⩾{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} jour</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} jours</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">Prenez la {0}re à droite.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Prenez la {0}e à droite.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

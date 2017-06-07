@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="pa"/>
 	</identity>
 	<localeDisplayNames>
@@ -563,8 +563,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">ਕੁਰਾਕਾਓ</territory>
 			<territory type="CX">ਕ੍ਰਿਸਮਿਸ ਟਾਪੂ</territory>
 			<territory type="CY">ਸਾਇਪ੍ਰਸ</territory>
-			<territory type="CZ">ਚੈੱਕ ਗਣਰਾਜ</territory>
-			<territory type="CZ" alt="variant">ਚੈਕੀਆ</territory>
+			<territory type="CZ">ਚੈਕੀਆ</territory>
+			<territory type="CZ" alt="variant">ਚੈੱਕ ਗਣਰਾਜ</territory>
 			<territory type="DE">ਜਰਮਨੀ</territory>
 			<territory type="DG">ਡੀਇਗੋ ਗਾਰਸੀਆ</territory>
 			<territory type="DJ">ਜ਼ੀਬੂਤੀ</territory>
@@ -958,7 +958,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yyyyMMM">MMM y G</dateFormatItem>
 						<dateFormatItem id="yyyyMMMd">d MMM y G</dateFormatItem>
 						<dateFormatItem id="yyyyMMMEd">E, d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">G y MMMM</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">MMMM y G</dateFormatItem>
 						<dateFormatItem id="yyyyQQQ">QQQ y G</dateFormatItem>
 						<dateFormatItem id="yyyyQQQQ">QQQQ y G</dateFormatItem>
 					</availableFormats>
@@ -1423,7 +1423,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMd">d MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E, d MMM y</dateFormatItem>
-						<dateFormatItem id="yMMMM">y MMMM</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
 						<dateFormatItem id="yw" count="one">y ਦਾ w ਹਫ਼ਤਾ</dateFormatItem>
@@ -5461,9 +5461,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>ਪੇਰੂਵੀਅਨ ਨਿਊਵੋ ਸੋਲ</displayName>
-				<displayName count="one">ਪੇਰੂਵੀਅਨ ਨਿਊਵੋ ਸੋਲ</displayName>
-				<displayName count="other">ਪੇਰੂਵੀਅਨ ਨਿਊਵੋ ਸੋਲ</displayName>
+				<displayName>ਪੇਰੂਵੀਅਨ ਸੋਲ</displayName>
+				<displayName count="one">ਪੇਰੂਵੀਅਨ ਸੋਲ</displayName>
+				<displayName count="other">ਪੇਰੂਵੀਅਨ ਸੋਲ</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -5862,6 +5862,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} ਘੰਟਾ</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} ਘੰਟੇ</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">ਸਜੇ ਪਾਸੇ {0} ਮੋੜ ਲਵੋ</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

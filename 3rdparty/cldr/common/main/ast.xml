@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12876 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="ast"/>
 	</identity>
 	<localeDisplayNames>
@@ -8482,9 +8482,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol draft="contributed">PEI</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>sol nuevu peruanu</displayName>
-				<displayName count="one">sol nuevu peruanu</displayName>
-				<displayName count="other">soles nuevos peruanos</displayName>
+				<displayName>Sol peruanu</displayName>
+				<displayName count="one">sol peruanu</displayName>
+				<displayName count="other">soles peruanos</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
@@ -9140,6 +9140,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">⩾{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} día</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} díes</pluralMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

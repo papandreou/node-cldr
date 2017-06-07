@@ -6,12 +6,12 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA FILES OR SOFTWARE.
 
 Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in these Data Files or Software without prior written authorization of the copyright holder.
-$Revision: 13091 $
+$Revision: 13387 $
 -->
 
 <!ELEMENT ldml ( identity, ( alias | ( fallback*, localeDisplayNames?, layout?, contextTransforms?, characters?, delimiters?, measurement?, dates?, numbers?, units?, listPatterns?, collations?, posix?, characterLabels?, segmentations?, rbnf?, annotations?, metadata?, references?, special* ) ) ) >
 <!ATTLIST ldml version CDATA #IMPLIED >
-    <!--@METADATA -->
+    <!--@METADATA-->
     <!--@DEPRECATED-->
 <!ATTLIST ldml draft (approved | contributed | provisional | unconfirmed | true | false) #IMPLIED >
     <!--@METADATA-->
@@ -42,7 +42,7 @@ $Revision: 13091 $
 <!ELEMENT version EMPTY >
 <!ATTLIST version number CDATA #REQUIRED >
     <!--@METADATA-->
-<!ATTLIST version cldrVersion CDATA #FIXED "30.0.3" >
+<!ATTLIST version cldrVersion CDATA #FIXED "31.0.1" >
     <!--@VALUE-->
 <!ATTLIST version draft (approved | contributed | provisional | unconfirmed | true | false) #IMPLIED >
     <!--@METADATA-->
@@ -415,7 +415,7 @@ $Revision: 13091 $
 
 <!-- ######################################################### -->
 
-<!ELEMENT characters ( alias | ( exemplarCharacters*, ellipsis*, moreInformation*, stopwords*, indexLabels*, mapping*, special* ) ) >
+<!ELEMENT characters ( alias | ( exemplarCharacters*, ellipsis*, moreInformation*, stopwords*, indexLabels*, mapping*, parseLenients*, special* ) ) >
 <!ATTLIST characters draft (approved | contributed | provisional | unconfirmed | true | false) #IMPLIED >
     <!--@METADATA-->
     <!--@DEPRECATED-->
@@ -573,6 +573,16 @@ $Revision: 13091 $
 <!ATTLIST mapping validSubLocales CDATA #IMPLIED >
     <!--@VALUE-->
     <!--@DEPRECATED-->
+
+<!ELEMENT parseLenients ( alias | ( parseLenient*, special* ) ) >
+<!ATTLIST parseLenients scope (general | number | date) #REQUIRED >
+<!ATTLIST parseLenients level (lenient | stricter) #REQUIRED >
+
+<!ELEMENT parseLenient ( #PCDATA ) >
+<!ATTLIST parseLenient sample CDATA #REQUIRED >
+<!ATTLIST parseLenient alt NMTOKENS #IMPLIED >
+<!ATTLIST parseLenient draft (approved | contributed | provisional | unconfirmed) #IMPLIED >
+    <!--@METADATA-->
 
 <!-- ######################################################### -->
 
@@ -1505,7 +1515,7 @@ $Revision: 13091 $
     <!--@DEPRECATED-->
 
 <!ELEMENT field ( alias | ( displayName*, relative*, relativeTime*, relativePeriod*, special* ) ) >
-<!ATTLIST field type (era | year | year-short | year-narrow | quarter | quarter-short | quarter-narrow | month | month-short | month-narrow | week | week-short | week-narrow | day | day-short | day-narrow | weekday | sun | sun-short | sun-narrow | mon | mon-short | mon-narrow | tue | tue-short | tue-narrow | wed | wed-short | wed-narrow | thu | thu-short | thu-narrow | fri | fri-short | fri-narrow | sat | sat-short | sat-narrow | dayperiod | hour | hour-short | hour-narrow | minute | minute-short | minute-narrow | second | second-short | second-narrow | zone) #IMPLIED >
+<!ATTLIST field type (era | era-short | era-narrow | year | year-short | year-narrow | quarter | quarter-short | quarter-narrow | month | month-short | month-narrow | week | week-short | week-narrow | weekOfMonth | weekOfMonth-short | weekOfMonth-narrow | day | day-short | day-narrow | dayOfYear | dayOfYear-short | dayOfYear-narrow | weekday | weekday-short | weekday-narrow | weekdayOfMonth | weekdayOfMonth-short | weekdayOfMonth-narrow | sun | sun-short | sun-narrow | mon | mon-short | mon-narrow | tue | tue-short | tue-narrow | wed | wed-short | wed-narrow | thu | thu-short | thu-narrow | fri | fri-short | fri-narrow | sat | sat-short | sat-narrow | dayperiod | dayperiod-short | dayperiod-narrow | hour | hour-short | hour-narrow | minute | minute-short | minute-narrow | second | second-short | second-narrow | zone | zone-short | zone-narrow) #IMPLIED >
 <!ATTLIST field alt NMTOKENS #IMPLIED >
 <!ATTLIST field draft (approved | contributed | provisional | unconfirmed | true | false) #IMPLIED >
     <!--@METADATA-->
@@ -1783,7 +1793,7 @@ $Revision: 13091 $
 
 <!-- ######################################################### -->
 
-<!ELEMENT numbers ( alias | ( defaultNumberingSystem*, otherNumberingSystems*, minimumGroupingDigits*, symbols*, decimalFormats*, scientificFormats*, percentFormats*, currencyFormats*, currencies?, miscPatterns*, special* ) ) >
+<!ELEMENT numbers ( alias | ( defaultNumberingSystem*, otherNumberingSystems*, minimumGroupingDigits*, symbols*, decimalFormats*, scientificFormats*, percentFormats*, currencyFormats*, currencies?, miscPatterns*, minimalPairs*, special* ) ) >
 <!ATTLIST numbers alt NMTOKENS #IMPLIED >
 <!ATTLIST numbers draft (approved | contributed | provisional | unconfirmed | true | false) #IMPLIED >
     <!--@METADATA-->
@@ -2248,6 +2258,24 @@ $Revision: 13091 $
     <!--@DEPRECATED-->
 <!ATTLIST miscPatterns numberSystem CDATA #IMPLIED >
 
+<!ELEMENT minimalPairs ( alias | ( pluralMinimalPairs*, ordinalMinimalPairs*, special* ) ) >
+<!ATTLIST minimalPairs alt NMTOKENS #IMPLIED >
+<!ATTLIST minimalPairs draft (approved | contributed | provisional | unconfirmed) #IMPLIED >
+    <!--@METADATA-->
+    <!--@DEPRECATED-->
+
+<!ELEMENT pluralMinimalPairs ( #PCDATA ) >
+<!ATTLIST pluralMinimalPairs count NMTOKEN #IMPLIED >
+<!ATTLIST pluralMinimalPairs alt NMTOKENS #IMPLIED >
+<!ATTLIST pluralMinimalPairs draft (approved | contributed | provisional | unconfirmed) #IMPLIED >
+    <!--@METADATA-->
+
+<!ELEMENT ordinalMinimalPairs ( #PCDATA ) >
+<!ATTLIST ordinalMinimalPairs ordinal NMTOKEN #IMPLIED >
+<!ATTLIST ordinalMinimalPairs alt NMTOKENS #IMPLIED >
+<!ATTLIST ordinalMinimalPairs draft (approved | contributed | provisional | unconfirmed) #IMPLIED >
+    <!--@METADATA-->
+
 <!-- ######################################################### -->
 
 <!ELEMENT units ( alias | ( unit*, unitLength*, durationUnit*, special* ) ) >
@@ -2399,9 +2427,9 @@ $Revision: 13091 $
 
 <!ELEMENT collation ( alias | ( base?, import*, settings?, suppress_contractions?, optimize?, ( cr* | rules? ), special* ) ) >
 <!ATTLIST collation type NMTOKEN "standard" >
-<!ATTLIST collation visibility (internal | external) "external" >
+<!ATTLIST collation visibility (internal | external) #IMPLIED >
     <!--@VALUE-->
-    <!--@DEPRECATED:internal-->
+    <!--@DEPRECATED-->
 <!ATTLIST collation alt NMTOKENS #IMPLIED >
 <!ATTLIST collation draft (approved | contributed | provisional | unconfirmed | true | false) #IMPLIED >
     <!--@METADATA-->

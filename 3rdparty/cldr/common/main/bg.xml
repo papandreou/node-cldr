@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13006 $"/>
+		<version number="$Revision: 13375 $"/>
 		<language type="bg"/>
 	</identity>
 	<localeDisplayNames>
@@ -738,8 +738,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Кюрасао</territory>
 			<territory type="CX">остров Рождество</territory>
 			<territory type="CY">Кипър</territory>
-			<territory type="CZ">Чешка република</territory>
-			<territory type="CZ" alt="variant">Чехия</territory>
+			<territory type="CZ">Чехия</territory>
+			<territory type="CZ" alt="variant">Чешка република</territory>
 			<territory type="DE">Германия</territory>
 			<territory type="DG">Диего Гарсия</territory>
 			<territory type="DJ">Джибути</territory>
@@ -2555,6 +2555,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Санта Исабел</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Координирано универсално време</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>неизвестен</exemplarCity>
@@ -4830,10 +4835,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<currencyFormats numberSystem="latn">
 			<currencyFormatLength>
 				<currencyFormat type="standard">
-					<pattern>#0.00 ¤</pattern>
+					<pattern>0.00 ¤</pattern>
 				</currencyFormat>
 				<currencyFormat type="accounting">
-					<pattern>#0.00 ¤;(#0.00 ¤)</pattern>
+					<pattern>0.00 ¤;(0.00 ¤)</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
 			<currencyFormatLength type="short">
@@ -5858,13 +5863,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>Перуанско инти</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>Перуански нов сол</displayName>
-				<displayName count="one">перуански нов сол</displayName>
-				<displayName count="other">перуански нови сола</displayName>
+				<displayName>Перуански сол</displayName>
+				<displayName count="one">перуански сол</displayName>
+				<displayName count="other">перуански сола</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
-				<displayName>Перуански сол</displayName>
+				<displayName>Перуански сол (1863–1965)</displayName>
 				<displayName count="one">перуански сол (1863–1965)</displayName>
 				<displayName count="other">перуански сол (1863–1965)</displayName>
 			</currency>
@@ -6389,6 +6394,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">⩾ {0}</pattern>
 			<pattern type="range">{0} – {1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} ден</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} дена</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Завийте надясно по {0}-ата пресечка.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

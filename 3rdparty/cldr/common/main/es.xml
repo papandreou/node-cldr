@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12880 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="es"/>
 	</identity>
 	<localeDisplayNames>
@@ -771,8 +771,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Curazao</territory>
 			<territory type="CX">Isla de Navidad</territory>
 			<territory type="CY">Chipre</territory>
-			<territory type="CZ">República Checa</territory>
-			<territory type="CZ" alt="variant">Chequia</territory>
+			<territory type="CZ">Chequia</territory>
+			<territory type="CZ" alt="variant">República Checa</territory>
 			<territory type="DE">Alemania</territory>
 			<territory type="DG">Diego García</territory>
 			<territory type="DJ">Yibuti</territory>
@@ -2623,6 +2623,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Isabel</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Tiempo Universal Coordinado</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>ciudad desconocida</exemplarCity>
@@ -6032,9 +6037,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="other">intis peruanos</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>nuevo sol peruano</displayName>
-				<displayName count="one">nuevo sol peruano</displayName>
-				<displayName count="other">nuevos soles peruanos</displayName>
+				<displayName>sol peruano</displayName>
+				<displayName count="one">sol peruano</displayName>
+				<displayName count="other">soles peruanos</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
@@ -6578,6 +6583,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">Más de {0}</pattern>
 			<pattern type="range">{0}-{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} día</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} días</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Toma la {0}.ª a la derecha.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">
@@ -8273,7 +8283,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<characterLabel type="japanese_kana">Kana japoneses</characterLabel>
 		<characterLabel type="kanbun">Kanbun</characterLabel>
 		<characterLabel type="kanji">Kanji</characterLabel>
-		<characterLabel type="keycap">tecla 10</characterLabel>
+		<characterLabel type="keycap">tecla</characterLabel>
 		<characterLabel type="leftwards_arrows">Flechas hacia la izquierda</characterLabel>
 		<characterLabel type="leftwards_rightwards_arrows">Flechas hacia la izquierda y la derecha</characterLabel>
 		<characterLabel type="letterlike_symbols">Símbolos con letras</characterLabel>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12920 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="ka"/>
 	</identity>
 	<localeDisplayNames>
@@ -754,8 +754,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">კიურასაო</territory>
 			<territory type="CX">შობის კუნძული</territory>
 			<territory type="CY">კვიპროსი</territory>
-			<territory type="CZ">ჩეხეთის რესპუბლიკა</territory>
-			<territory type="CZ" alt="variant">ჩეხეთი</territory>
+			<territory type="CZ">ჩეხეთი</territory>
+			<territory type="CZ" alt="variant">ჩეხეთის რესპუბლიკა</territory>
 			<territory type="DE">გერმანია</territory>
 			<territory type="DG">დიეგო-გარსია</territory>
 			<territory type="DJ">ჯიბუტი</territory>
@@ -2727,6 +2727,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>სანტა ისაბელი</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>მსოფლიო კოორდინირებული დრო</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>უცნობი ქალაქი</exemplarCity>
@@ -5887,13 +5892,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName draft="contributed">პერუს ინტი</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>პერუს ახალი სოლი</displayName>
-				<displayName count="one">პერუს ახალი სოლი</displayName>
-				<displayName count="other">პერუს ახალი სოლი</displayName>
+				<displayName>პერუს სოლი</displayName>
+				<displayName count="one">პერუს სოლი</displayName>
+				<displayName count="other">პერუს სოლი</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
-				<displayName draft="contributed">პერუს სოლი</displayName>
+				<displayName draft="contributed">პერუს სოლი (1863–1965)</displayName>
 			</currency>
 			<currency type="PGK">
 				<displayName>პაპუა-ახალი გვინეის კინა</displayName>
@@ -6324,6 +6329,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}-{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">კალათში {0} X-ია. შეიძენთ მას?</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">კალათში {0} X-ია. შეიძენთ მათ?</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="many">მე-{0}</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">{0}-ლი</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0}-ე</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="am"/>
 	</identity>
 	<localeDisplayNames>
@@ -652,8 +652,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">ኩራሳዎ</territory>
 			<territory type="CX">የገና ደሴት</territory>
 			<territory type="CY">ሳይፕረስ</territory>
-			<territory type="CZ">ቼክ ሪፑብሊክ</territory>
-			<territory type="CZ" alt="variant">ቼቺያ</territory>
+			<territory type="CZ">ቼቺያ</territory>
+			<territory type="CZ" alt="variant">ቼክ ሪፑብሊክ</territory>
 			<territory type="DE">ጀርመን</territory>
 			<territory type="DG">ዲዬጎ ጋርሺያ</territory>
 			<territory type="DJ">ጂቡቲ</territory>
@@ -2839,6 +2839,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>ሳንታ ኢዛቤል</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>የተቀነባበረ ሁለገብ ሰዓት</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>ያልታወቀ ከተማ</exemplarCity>
@@ -5869,9 +5874,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>የፔሩቪያ ኑኤቮ ሶል</displayName>
-				<displayName count="one">የፔሩቪያ ኑኤቮ ሶል</displayName>
-				<displayName count="other">የፔሩቪያ ኑኤቮ ሶል</displayName>
+				<displayName>የፔሩቪያ ሶል</displayName>
+				<displayName count="one">የፔሩቪያ ሶል</displayName>
+				<displayName count="other">የፔሩቪያ ሶል</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -6218,6 +6223,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} ቀን</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} ቀናት</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">በቀኝ በኩል ባለው በ{0}ኛው መታጠፊያ ግባ።</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

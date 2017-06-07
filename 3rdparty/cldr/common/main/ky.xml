@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="ky"/>
 	</identity>
 	<localeDisplayNames>
@@ -554,8 +554,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Кюрасао</territory>
 			<territory type="CX">Крисмас аралы</territory>
 			<territory type="CY">Кипр</territory>
-			<territory type="CZ">Чех Республикасы</territory>
-			<territory type="CZ" alt="variant">Чехия</territory>
+			<territory type="CZ">Чехия</territory>
+			<territory type="CZ" alt="variant">Чех Республикасы</territory>
 			<territory type="DE">Германия</territory>
 			<territory type="DG">Диего Гарсия</territory>
 			<territory type="DJ">Джибути</territory>
@@ -5161,9 +5161,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>перу нуэво солу</displayName>
-				<displayName count="one">перу нуэво солу</displayName>
-				<displayName count="other">перу нуэво солу</displayName>
+				<displayName>перу солу</displayName>
+				<displayName count="one">перу солу</displayName>
+				<displayName count="other">перу солу</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -5499,6 +5499,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">Себетте {0} Х бар. Аны аласызбы?</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">Себетте {0} Х бар. Аларды аласызбы?</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0}-бурулуштан оңго бурулуңуз.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12876 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="yue"/>
 	</identity>
 	<localeDisplayNames>
@@ -880,8 +880,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">庫拉索</territory>
 			<territory type="CX">聖誕島</territory>
 			<territory type="CY">賽普勒斯</territory>
-			<territory type="CZ">捷克共和國</territory>
-			<territory type="CZ" alt="variant">捷克</territory>
+			<territory type="CZ">捷克</territory>
+			<territory type="CZ" alt="variant">捷克共和國</territory>
 			<territory type="DE">德國</territory>
 			<territory type="DG">迪亞哥加西亞島</territory>
 			<territory type="DJ">吉布地</territory>
@@ -7657,8 +7657,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol draft="contributed">PEI</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>秘魯新太陽幣</displayName>
-				<displayName count="other">秘魯新太陽幣</displayName>
+				<displayName>秘魯太陽幣</displayName>
+				<displayName count="other">秘魯太陽幣</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
@@ -8211,6 +8211,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}-{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="other">{0} 本書</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">第 {0} 本書</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

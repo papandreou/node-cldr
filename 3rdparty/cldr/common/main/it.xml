@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13260 $"/>
 		<language type="it"/>
 	</identity>
 	<localeDisplayNames>
@@ -887,8 +887,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Isola Christmas</territory>
 			<territory type="CY">Cipro</territory>
-			<territory type="CZ">Repubblica Ceca</territory>
-			<territory type="CZ" alt="variant">Cèchia</territory>
+			<territory type="CZ">Cèchia</territory>
+			<territory type="CZ" alt="variant">Repubblica Ceca</territory>
 			<territory type="DE">Germania</territory>
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Gibuti</territory>
@@ -1065,8 +1065,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="TH">Thailandia</territory>
 			<territory type="TJ">Tagikistan</territory>
 			<territory type="TK">Tokelau</territory>
-			<territory type="TL">Timor Leste</territory>
-			<territory type="TL" alt="variant">Timor Est</territory>
+			<territory type="TL">Timor Est</territory>
+			<territory type="TL" alt="variant">Timor Leste</territory>
 			<territory type="TM">Turkmenistan</territory>
 			<territory type="TN">Tunisia</territory>
 			<territory type="TO">Tonga</territory>
@@ -2707,6 +2707,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Isabel</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Tempo coordinato universale</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Città sconosciuta</exemplarCity>
@@ -4925,7 +4930,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</decimalFormatLength>
 			<decimalFormatLength type="long">
 				<decimalFormat>
-					<pattern type="1000" count="one">0 mila</pattern>
+					<pattern type="1000" count="one">0 mille</pattern>
 					<pattern type="1000" count="other">0 mila</pattern>
 					<pattern type="10000" count="one">00 mila</pattern>
 					<pattern type="10000" count="other">00 mila</pattern>
@@ -4943,7 +4948,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<pattern type="10000000000" count="other">00 miliardi</pattern>
 					<pattern type="100000000000" count="one">000 miliardi</pattern>
 					<pattern type="100000000000" count="other">000 miliardi</pattern>
-					<pattern type="1000000000000" count="one">0 mila miliardi</pattern>
+					<pattern type="1000000000000" count="one">0 mille miliardi</pattern>
 					<pattern type="1000000000000" count="other">0 mila miliardi</pattern>
 					<pattern type="10000000000000" count="one">00 mila miliardi</pattern>
 					<pattern type="10000000000000" count="other">00 mila miliardi</pattern>
@@ -5947,13 +5952,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>inti peruviano</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>nuovo sol peruviano</displayName>
-				<displayName count="one">nuovo sol peruviano</displayName>
-				<displayName count="other">nuovi sol peruviani</displayName>
+				<displayName>sol peruviano</displayName>
+				<displayName count="one">sol peruviano</displayName>
+				<displayName count="other">sol peruviani</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
-				<displayName>sol peruviano</displayName>
+				<displayName>sol peruviano (1863–1965)</displayName>
 			</currency>
 			<currency type="PGK">
 				<displayName>kina papuana</displayName>
@@ -6431,6 +6436,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">⩾{0}</pattern>
 			<pattern type="range">{0}-{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} giorno</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} giorni</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="many">Prendi l’{0}° a destra.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Prendi la {0}° a destra.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

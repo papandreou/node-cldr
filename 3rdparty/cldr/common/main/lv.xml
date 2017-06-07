@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="lv"/>
 	</identity>
 	<localeDisplayNames>
@@ -222,7 +222,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="ilo">iloku</language>
 			<language type="inh">ingušu</language>
 			<language type="io">ido</language>
-			<language type="is">īslandiešu</language>
+			<language type="is">islandiešu</language>
 			<language type="it">itāļu</language>
 			<language type="iu">inuītu</language>
 			<language type="ja">japāņu</language>
@@ -718,8 +718,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Kirasao</territory>
 			<territory type="CX">Ziemsvētku sala</territory>
 			<territory type="CY">Kipra</territory>
-			<territory type="CZ">Čehijas Republika</territory>
-			<territory type="CZ" alt="variant">Čehija</territory>
+			<territory type="CZ">Čehija</territory>
+			<territory type="CZ" alt="variant">Čehijas Republika</territory>
 			<territory type="DE">Vācija</territory>
 			<territory type="DG">Djego Garsijas atols</territory>
 			<territory type="DJ">Džibutija</territory>
@@ -779,7 +779,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="IO">Indijas okeāna Britu teritorija</territory>
 			<territory type="IQ">Irāka</territory>
 			<territory type="IR">Irāna</territory>
-			<territory type="IS">Īslande</territory>
+			<territory type="IS">Islande</territory>
 			<territory type="IT">Itālija</territory>
 			<territory type="JE">Džērsija</territory>
 			<territory type="JM">Jamaika</territory>
@@ -2511,6 +2511,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{0} ({1})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santaisabela</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Universālais koordinētais laiks</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>nezināma pilsēta</exemplarCity>
@@ -5416,10 +5421,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>IRR</symbol>
 			</currency>
 			<currency type="ISK">
-				<displayName>Īslandes krona</displayName>
-				<displayName count="zero">Īslandes kronas</displayName>
-				<displayName count="one">Īslandes krona</displayName>
-				<displayName count="other">Īslandes kronas</displayName>
+				<displayName>Islandes krona</displayName>
+				<displayName count="zero">Islandes kronas</displayName>
+				<displayName count="one">Islandes krona</displayName>
+				<displayName count="other">Islandes kronas</displayName>
 				<symbol>ISK</symbol>
 				<symbol alt="narrow" draft="contributed">kr</symbol>
 			</currency>
@@ -5768,10 +5773,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>Peru jaunais sols</displayName>
-				<displayName count="zero">Peru jaunie soli</displayName>
-				<displayName count="one">Peru jaunais sols</displayName>
-				<displayName count="other">Peru jaunie soli</displayName>
+				<displayName>Peru sols</displayName>
+				<displayName count="zero">Peru soli</displayName>
+				<displayName count="one">Peru sols</displayName>
+				<displayName count="other">Peru soli</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -6274,6 +6279,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">⩾{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="zero">{0} diennakšu</pluralMinimalPairs>
+			<pluralMinimalPairs count="one">{0} diennakts</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} diennaktis</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Dodieties {0}. pagriezienā pa labi.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

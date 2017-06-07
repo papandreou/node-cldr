@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="el"/>
 	</identity>
 	<localeDisplayNames>
@@ -775,8 +775,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Κουρασάο</territory>
 			<territory type="CX">Νήσος των Χριστουγέννων</territory>
 			<territory type="CY">Κύπρος</territory>
-			<territory type="CZ">Τσεχική Δημοκρατία</territory>
-			<territory type="CZ" alt="variant">Τσεχία</territory>
+			<territory type="CZ">Τσεχία</territory>
+			<territory type="CZ" alt="variant">Τσεχική Δημοκρατία</territory>
 			<territory type="DE">Γερμανία</territory>
 			<territory type="DG">Ντιέγκο Γκαρσία</territory>
 			<territory type="DJ">Τζιμπουτί</territory>
@@ -2521,6 +2521,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>[{1} ({0})]</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Σάντα Ιζαμπέλ</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Συντονισμένη Παγκόσμια Ώρα</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Άγνωστη πόλη</exemplarCity>
@@ -5965,15 +5970,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="other">ίντι Περού</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>Νέο Σολ Περού</displayName>
-				<displayName count="one">νέο σολ Περού</displayName>
-				<displayName count="other">νέα Σολ Περού</displayName>
+				<displayName>Σολ Περού</displayName>
+				<displayName count="one">σολ Περού</displayName>
+				<displayName count="other">Σολ Περού</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
-				<displayName>Σολ Περού</displayName>
-				<displayName count="one">σολ Περού</displayName>
-				<displayName count="other">σολ Περού</displayName>
+				<displayName>Σολ Περού (1863–1965)</displayName>
+				<displayName count="one">σολ Περού (1863–1965)</displayName>
+				<displayName count="other">σολ Περού (1863–1965)</displayName>
 			</currency>
 			<currency type="PGK">
 				<displayName>Κίνα Παπούας Νέας Γουινέας</displayName>
@@ -6524,6 +6529,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} ημέρα</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} ημέρες</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Στρίψτε στην {0}η γωνία δεξιά.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="te"/>
 	</identity>
 	<localeDisplayNames>
@@ -770,8 +770,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">కురాకవో</territory>
 			<territory type="CX">క్రిస్మస్ దీవి</territory>
 			<territory type="CY">సైప్రస్</territory>
-			<territory type="CZ">చెక్ రిపబ్లిక్</territory>
-			<territory type="CZ" alt="variant">చెక్‌చియ</territory>
+			<territory type="CZ">చెక్‌చియ</territory>
+			<territory type="CZ" alt="variant">చెక్ రిపబ్లిక్</territory>
 			<territory type="DE">జర్మనీ</territory>
 			<territory type="DG">డియాగో గార్సియా</territory>
 			<territory type="DJ">జిబౌటి</territory>
@@ -5610,9 +5610,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>పెరువియన్ న్యూవో సోల్</displayName>
-				<displayName count="one">పెరువియన్ న్యూవో సోల్</displayName>
-				<displayName count="other">పెరువియన్ న్యూవో సోల్‌లు</displayName>
+				<displayName>పెరువియన్ సోల్</displayName>
+				<displayName count="one">పెరువియన్ సోల్</displayName>
+				<displayName count="other">పెరువియన్ సోల్‌లు</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -5960,6 +5960,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} రోజు</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} రోజులు</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0}వ కుడి మలుపు తీసుకోండి.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

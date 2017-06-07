@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12944 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="bn"/>
 	</identity>
 	<localeDisplayNames>
@@ -766,8 +766,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">কিউরাসাও</territory>
 			<territory type="CX">ক্রিসমাস দ্বীপ</territory>
 			<territory type="CY">সাইপ্রাস</territory>
-			<territory type="CZ">চেক প্রজাতন্ত্র</territory>
-			<territory type="CZ" alt="variant">চেচিয়া</territory>
+			<territory type="CZ">চেচিয়া</territory>
+			<territory type="CZ" alt="variant">চেক প্রজাতন্ত্র</territory>
 			<territory type="DE">জার্মানি</territory>
 			<territory type="DG">দিয়েগো গার্সিয়া</territory>
 			<territory type="DJ">জিবুতি</territory>
@@ -2518,6 +2518,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>সান্তা ইসাবেল</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>স্থানাংকিত আন্তর্জাতিক সময়</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>অজানা শহর</exemplarCity>
@@ -5838,13 +5843,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>পেরুভিয়ান ইন্তি</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>পেরুভিয়ান সোল নুয়েভো</displayName>
-				<displayName count="one">পেরুভিয়ান সোল নুয়েভো</displayName>
-				<displayName count="other">পেরুভিয়ান সোল নুয়েভো</displayName>
+				<displayName>পেরুভিয়ান সোল</displayName>
+				<displayName count="one">পেরুভিয়ান সোল</displayName>
+				<displayName count="other">পেরুভিয়ান সোল</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
-				<displayName>পেরুভিয়ান সোল</displayName>
+				<displayName>পেরুভিয়ান সোল (1863–1965)</displayName>
+				<displayName count="one">পেরুভিয়ান সোল (1863–1965)</displayName>
+				<displayName count="other">পেরুভিয়ান সোল (1863–1965)</displayName>
 			</currency>
 			<currency type="PGK">
 				<displayName>পাপুয়া নিউ গিনিয়ান কিনা</displayName>
@@ -6304,6 +6311,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">সসে {0}টি আপেল খেল, সেটা ভাল</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">সসে {0}টি আপেল খেল, সেগুলি ভাল</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="few">ডান দিকে {0}র্থ বাঁকটি নিন।</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="many">ডান দিকে {0}ষ্ঠ বাঁকটি নিন।</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">ডান দিকে {0}ম বাঁকটি নিন।</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">ডান দিকে {0}তম বাঁকটি নিন।</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="two">ডান দিকে {0}য় বাঁকটি নিন।</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

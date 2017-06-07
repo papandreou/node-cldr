@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12876 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="ug"/>
 	</identity>
 	<localeDisplayNames>
@@ -4187,9 +4187,9 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 				<displayName count="other" draft="contributed">پېرۇ ئىنتىسى</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName draft="contributed">پېرۇ يېڭى سولى</displayName>
-				<displayName count="one" draft="contributed">پېرۇ يېڭى سولى</displayName>
-				<displayName count="other" draft="contributed">پېرۇ يېڭى سولى</displayName>
+				<displayName draft="contributed">پېرۇ سولى</displayName>
+				<displayName count="one" draft="contributed">پېرۇ سولى</displayName>
+				<displayName count="other" draft="contributed">پېرۇ سولى</displayName>
 			</currency>
 			<currency type="PES">
 				<displayName draft="contributed">پېرۇ سولى (1863–1965)</displayName>
@@ -4712,6 +4712,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0}  كىتاب</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} بېلىق كۆردۈم ۋە ئۇنى يەۋەتتىم.</pluralMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

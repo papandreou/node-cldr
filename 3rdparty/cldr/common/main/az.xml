@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="az"/>
 	</identity>
 	<localeDisplayNames>
@@ -757,8 +757,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Kurasao</territory>
 			<territory type="CX">Milad adası</territory>
 			<territory type="CY">Kipr</territory>
-			<territory type="CZ">Çex Respublikası</territory>
-			<territory type="CZ" alt="variant">Çexiya</territory>
+			<territory type="CZ">Çexiya</territory>
+			<territory type="CZ" alt="variant">Çex Respublikası</territory>
 			<territory type="DE">Almaniya</territory>
 			<territory type="DG">Dieqo Qarsiya</territory>
 			<territory type="DJ">Cibuti</territory>
@@ -1146,7 +1146,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yyyyMMM">G MMM y</dateFormatItem>
 						<dateFormatItem id="yyyyMMMd">G d MMM y</dateFormatItem>
 						<dateFormatItem id="yyyyMMMEd">G d MMM y, E</dateFormatItem>
-						<dateFormatItem id="yyyyMMMM">G y MMMM</dateFormatItem>
+						<dateFormatItem id="yyyyMMMM">G MMMM y</dateFormatItem>
 						<dateFormatItem id="yyyyQQQ">G y QQQ</dateFormatItem>
 						<dateFormatItem id="yyyyQQQQ">G y QQQQ</dateFormatItem>
 					</availableFormats>
@@ -1622,7 +1622,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMM">MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMd">d MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">d MMM y, E</dateFormatItem>
-						<dateFormatItem id="yMMMM">y MMMM</dateFormatItem>
+						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
 						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
 						<dateFormatItem id="yw" count="one">y, w 'həftə'</dateFormatItem>
@@ -2311,6 +2311,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Isabel</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Koordinasiya edilmiş ümumdünya vaxtı</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Naməlum Şəhər</exemplarCity>
@@ -5660,15 +5665,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="other">Peru inti</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>Peru Nuevo Solu</displayName>
-				<displayName count="one">Peru Nuevo solu</displayName>
-				<displayName count="other">Peru Nuevo solu</displayName>
-				<symbol>PEN</symbol>
-			</currency>
-			<currency type="PES">
 				<displayName>Peru Solu</displayName>
 				<displayName count="one">Peru solu</displayName>
 				<displayName count="other">Peru solu</displayName>
+				<symbol>PEN</symbol>
+			</currency>
+			<currency type="PES">
+				<displayName>Peru Solu (1863–1965)</displayName>
+				<displayName count="one">Peru solu (1863–1965)</displayName>
+				<displayName count="other">Peru solu (1863–1965)</displayName>
 			</currency>
 			<currency type="PGK">
 				<displayName>Papua Yeni Qvineya Kinası</displayName>
@@ -6193,6 +6198,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">Alış-veriş katınızda {0} X var. Almaq istəyirsiniz?</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">Alış-veriş kartınızda {0} X var. Almaq istəyirsiniz?</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="few">{0}-cü sağ döngəni seçin.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="many">{0}-cı sağ döngəni seçin.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">{0}-ci sağ döngəni seçin.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0}-cu sağ döngəni seçin.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

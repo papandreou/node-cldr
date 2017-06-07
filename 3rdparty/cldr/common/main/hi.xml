@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="hi"/>
 	</identity>
 	<localeDisplayNames>
@@ -763,8 +763,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">क्यूरासाओ</territory>
 			<territory type="CX">क्रिसमस द्वीप</territory>
 			<territory type="CY">साइप्रस</territory>
-			<territory type="CZ">चेक गणराज्य</territory>
-			<territory type="CZ" alt="variant">चेकिया</territory>
+			<territory type="CZ">चेकिया</territory>
+			<territory type="CZ" alt="variant">चेक गणराज्य</territory>
 			<territory type="DE">जर्मनी</territory>
 			<territory type="DG">डिएगो गार्सिया</territory>
 			<territory type="DJ">जिबूती</territory>
@@ -2805,6 +2805,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>सांता इसाबेल</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>समन्वित सार्वत्रिक समय</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>अज्ञात शहर</exemplarCity>
@@ -5895,9 +5900,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>पेरूवियन नुएवो सोल</displayName>
-				<displayName count="one">पेरूवियन नुएवो सोल</displayName>
-				<displayName count="other">पेरूवियन नुएवो सोल</displayName>
+				<displayName>पेरूवियन सोल</displayName>
+				<displayName count="one">पेरूवियन सोल</displayName>
+				<displayName count="other">पेरूवियन सोल</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -6271,6 +6276,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} घंटा</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} घंटे</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="few">{0}था दाहिना मोड़ लें.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="many">{0}ठा दाहिना मोड़ लें.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">{0}ला दाहिना मोड़ लें.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0}वां दाहिना मोड़ लें.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="two">{0}रा दाहिना मोड़ लें.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

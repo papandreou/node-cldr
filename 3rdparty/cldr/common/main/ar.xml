@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13286 $"/>
 		<language type="ar"/>
 	</identity>
 	<localeDisplayNames>
@@ -765,8 +765,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">كوراساو</territory>
 			<territory type="CX">جزيرة الكريسماس</territory>
 			<territory type="CY">قبرص</territory>
-			<territory type="CZ">جمهورية التشيك</territory>
-			<territory type="CZ" alt="variant">التشيك</territory>
+			<territory type="CZ">التشيك</territory>
+			<territory type="CZ" alt="variant">جمهورية التشيك</territory>
 			<territory type="DE">ألمانيا</territory>
 			<territory type="DG">دييغو غارسيا</territory>
 			<territory type="DJ">جيبوتي</territory>
@@ -1146,9 +1146,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	</layout>
 	<characters>
 		<exemplarCharacters>[\u064B \u064C \u064D \u064E \u064F \u0650 \u0651 \u0652 \u0670 ء أ ؤ إ ئ ا آ ب ة ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ى ي]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[\u200C\u200D\u200E\u200F پ چ ژ ڜ ڢ ڤ ڥ ٯ ڧ ڨ ک گ ی]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u0640 \u200C\u200D\u200E\u200F پ چ ژ ڜ ڢ ڤ ڥ ٯ ڧ ڨ ک گ ی]</exemplarCharacters>
 		<exemplarCharacters type="index">[ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — ، ؛ \: ! ؟ . ' &quot; ( ) \[ \]]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — ، ؛ \: ! ؟ . ' &quot; ( ) \[ \] « » \u2026]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -3468,6 +3468,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>سانتا إيزابيل</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>التوقيت العالمي المنسق</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>مدينة غير معروفة</exemplarCity>
@@ -7411,13 +7416,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol draft="contributed">PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>سول جديد البيرو</displayName>
-				<displayName count="zero">سول جديد البيرو</displayName>
-				<displayName count="one">سول جديد البيرو</displayName>
-				<displayName count="two">سول جديد البيرو</displayName>
-				<displayName count="few">سول جديد البيرو</displayName>
-				<displayName count="many">سول جديد البيرو</displayName>
-				<displayName count="other">سول جديد البيرو</displayName>
+				<displayName>سول البيرو</displayName>
+				<displayName count="zero">سول البيرو</displayName>
+				<displayName count="one">سول البيرو</displayName>
+				<displayName count="two">سول البيرو</displayName>
+				<displayName count="few">سول البيرو</displayName>
+				<displayName count="many">سول البيرو</displayName>
+				<displayName count="other">سول البيرو</displayName>
 				<symbol draft="contributed">PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -8234,6 +8239,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">+{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="zero">{0} كتاب</pluralMinimalPairs>
+			<pluralMinimalPairs count="one">ولد واحد حضر</pluralMinimalPairs>
+			<pluralMinimalPairs count="two">ولدان حضرا</pluralMinimalPairs>
+			<pluralMinimalPairs count="few">{0} أولاد حضروا</pluralMinimalPairs>
+			<pluralMinimalPairs count="many">{0} ولدًا حضروا</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} ولد حضروا</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">اتجه إلى المنعطف الـ {0} يمينًا.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

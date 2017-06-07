@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="pl"/>
 	</identity>
 	<localeDisplayNames>
@@ -3358,6 +3358,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Isabel</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Uniwersalny czas koordynowany</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Nieznane miasto</exemplarCity>
@@ -6943,15 +6948,20 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>inti peruwiański</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>nowy sol peruwiański</displayName>
-				<displayName count="one">nowy sol peruwiański</displayName>
-				<displayName count="few">nowe sole peruwiańskie</displayName>
-				<displayName count="many">nowych soli peruwiańskich</displayName>
-				<displayName count="other">nowego sola peruwiańskiego</displayName>
+				<displayName>sol peruwiański</displayName>
+				<displayName count="one">sol peruwiański</displayName>
+				<displayName count="few">sole peruwiańskie</displayName>
+				<displayName count="many">soli peruwiańskich</displayName>
+				<displayName count="other">sola peruwiańskiego</displayName>
 				<symbol draft="contributed">PEN</symbol>
 			</currency>
 			<currency type="PES">
-				<displayName>sol peruwiański</displayName>
+				<displayName>sol peruwiański (1863–1965)</displayName>
+				<displayName count="one">sol peruwiański (1863–1965)</displayName>
+				<displayName count="few">sole peruwiańskie (1863–1965)</displayName>
+				<displayName count="many">soli peruwiańskich (1863–1965)</displayName>
+				<displayName count="other">sola peruwiańskiego (1863–1965)</displayName>
+				<symbol draft="contributed">PES</symbol>
 			</currency>
 			<currency type="PGK">
 				<displayName>kina Papua Nowa Gwinea</displayName>
@@ -7562,6 +7572,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} miesiąc</pluralMinimalPairs>
+			<pluralMinimalPairs count="few">{0} miesiące</pluralMinimalPairs>
+			<pluralMinimalPairs count="many">{0} miesięcy</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} miesiąca</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Skręć w {0} w prawo.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

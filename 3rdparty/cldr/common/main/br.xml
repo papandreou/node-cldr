@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12876 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="br"/>
 	</identity>
 	<localeDisplayNames>
@@ -5566,12 +5566,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol draft="contributed">PEI</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>nuevo sol Perou</displayName>
-				<displayName count="one">nuevo sol Perou</displayName>
-				<displayName count="two">nuevo sol Perou</displayName>
-				<displayName count="few">nuevo sol Perou</displayName>
-				<displayName count="many">nuevo sol Perou</displayName>
-				<displayName count="other">nuevo sol Perou</displayName>
+				<displayName>sol Perou</displayName>
+				<displayName count="one">sol Perou</displayName>
+				<displayName count="two">sol Perou</displayName>
+				<displayName count="few">sol Perou</displayName>
+				<displayName count="many">sol Perou</displayName>
+				<displayName count="other">sol Perou</displayName>
 				<symbol draft="contributed">PEN</symbol>
 			</currency>
 			<currency type="PES">
@@ -6442,6 +6442,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">⩾{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} deiz</pluralMinimalPairs>
+			<pluralMinimalPairs count="two">{0} zeiz</pluralMinimalPairs>
+			<pluralMinimalPairs count="few">{0} deiz</pluralMinimalPairs>
+			<pluralMinimalPairs count="many">{0} a zeizioù</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} deiz</pluralMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

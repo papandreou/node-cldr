@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="ga"/>
 	</identity>
 	<localeDisplayNames>
@@ -6543,12 +6543,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PEI</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>Nuevo Sol Pheiriú</displayName>
-				<displayName count="one">nuevo sol Pheiriú</displayName>
-				<displayName count="two">nuevo sol Pheiriú</displayName>
-				<displayName count="few">nuevo sol Pheiriú</displayName>
-				<displayName count="many">nuevo sol Pheiriú</displayName>
-				<displayName count="other">nuevo sol Pheiriú</displayName>
+				<displayName>Sol Pheiriú</displayName>
+				<displayName count="one">sol Pheiriú</displayName>
+				<displayName count="two">sol Pheiriú</displayName>
+				<displayName count="few">sol Pheiriú</displayName>
+				<displayName count="many">sol Pheiriú</displayName>
+				<displayName count="other">sol Pheiriú</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
@@ -7291,6 +7291,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} ci, {0} gath</pluralMinimalPairs>
+			<pluralMinimalPairs count="two">{0} gi, {0} gath</pluralMinimalPairs>
+			<pluralMinimalPairs count="few">{0} chi, {0} cath</pluralMinimalPairs>
+			<pluralMinimalPairs count="many">{0} chi, {0} chath</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} ci, {0} cath</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">Glac an {0}ú chasadh ar dheis.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Glac an {0}ú casadh ar dheis.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">
