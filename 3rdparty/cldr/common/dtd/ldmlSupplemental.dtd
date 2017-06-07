@@ -7,7 +7,7 @@ THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
 
 Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in these Data Files or Software without prior written authorization of the copyright holder.
 
-    $Revision: 13091 $
+    $Revision: 13387 $
 -->
 
 <!ELEMENT supplementalData ( version, generation?, cldrVersion?, currencyData?, territoryContainment?, subdivisionContainment?, languageData?, territoryInfo?, postalCodeData?, calendarData?, calendarPreferenceData?, weekData?, timeData?, measurementData?, unitPreferenceData?, timezoneData?, characters?, transforms?, metadata?, codeMappings?, parentLocales?, likelySubtags?, metazoneInfo?, plurals?, telephoneCodeData?, numberingSystems?, bcp47KeywordMappings?, gender?, references?, languageMatching?, dayPeriodRuleSet*, metaZones?, primaryZones?, windowsZones?, coverageLevels?, idValidity?, rgScope? ) >
@@ -16,7 +16,7 @@ Except as contained in this notice, the name of a copyright holder shall not be 
     <!--@METADATA-->
 <!ATTLIST version number CDATA #REQUIRED >
     <!--@METADATA-->
-<!ATTLIST version cldrVersion CDATA #FIXED "30.0.3" >
+<!ATTLIST version cldrVersion CDATA #FIXED "31.0.1" >
     <!--@VALUE-->
 <!ATTLIST version unicodeVersion CDATA #FIXED "9.0.0" >
     <!--@VALUE-->
@@ -114,6 +114,7 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 <!ELEMENT subgroup EMPTY >
 <!ATTLIST subgroup type NMTOKEN #REQUIRED >
 <!ATTLIST subgroup subtype NMTOKEN #IMPLIED >
+    <!--@DEPRECATED-->
 <!ATTLIST subgroup contains NMTOKENS #IMPLIED >
     <!--@VALUE-->
 
@@ -159,6 +160,8 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 
 <!ELEMENT languagePopulation EMPTY >
 <!ATTLIST languagePopulation type NMTOKEN #REQUIRED >
+<!ATTLIST languagePopulation literacyPercent NMTOKEN #IMPLIED >
+    <!--@VALUE-->
 <!ATTLIST languagePopulation writingPercent NMTOKEN #IMPLIED >
     <!--@VALUE-->
 <!ATTLIST languagePopulation populationPercent NMTOKEN #REQUIRED >
@@ -854,17 +857,28 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 
 <!ELEMENT languageMatching ( languageMatches* ) >
 
-<!ELEMENT languageMatches ( languageMatch* ) >
+<!ELEMENT languageMatches ( paradigmLocales*, matchVariable*, languageMatch* ) >
 <!ATTLIST languageMatches type NMTOKEN #REQUIRED >
+
+<!ELEMENT paradigmLocales EMPTY >
+<!ATTLIST paradigmLocales locales NMTOKENS #REQUIRED >
+    <!--@VALUE-->
+
+<!ELEMENT matchVariable EMPTY >
+<!ATTLIST matchVariable id CDATA #REQUIRED >
+<!ATTLIST matchVariable value CDATA #REQUIRED >
+    <!--@VALUE-->
 
 <!ELEMENT languageMatch EMPTY >
     <!--@ORDERED-->
 <!ATTLIST languageMatch desired CDATA #REQUIRED >
+<!ATTLIST languageMatch supported CDATA #REQUIRED >
+<!ATTLIST languageMatch percent NMTOKEN #IMPLIED >
+    <!--@VALUE-->
+<!ATTLIST languageMatch distance NMTOKEN #IMPLIED >
+    <!--@VALUE-->
 <!ATTLIST languageMatch oneway (true | false) #IMPLIED >
     <!--@VALUE-->
-<!ATTLIST languageMatch percent NMTOKEN #REQUIRED >
-    <!--@VALUE-->
-<!ATTLIST languageMatch supported CDATA #REQUIRED >
 
 <!-- # Day Periods -->
 

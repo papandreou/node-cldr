@@ -6,9 +6,9 @@ describe('extractTerritoryInfo', function () {
         expect(cldr.extractTerritoryInfo(), 'to satisfy', {
             DE: {
                 id: 'DE',
-                gdp: 3748000000000,
+                gdp: 3979000000000,
                 literacyPercent: 99,
-                population: 80854400,
+                population: 80722800,
                 languages: expect.it('to have an item exhaustively satisfying', {
                     id: 'de',
                     populationPercent: 91,

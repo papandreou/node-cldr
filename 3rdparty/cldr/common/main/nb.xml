@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13007 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="nb"/>
 	</identity>
 	<localeDisplayNames>
@@ -934,8 +934,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Christmasøya</territory>
 			<territory type="CY">Kypros</territory>
-			<territory type="CZ">Den tsjekkiske republikk</territory>
-			<territory type="CZ" alt="variant">Tsjekkia</territory>
+			<territory type="CZ">Tsjekkia</territory>
+			<territory type="CZ" alt="variant">Den tsjekkiske republikk</territory>
 			<territory type="DE">Tyskland</territory>
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Djibouti</territory>
@@ -4051,6 +4051,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Isabel</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Koordinert universaltid</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>ukjent by</exemplarCity>
@@ -7745,21 +7750,21 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEI">
-				<displayName>peruvianske inti</displayName>
-				<displayName count="one">peruviansk inti</displayName>
-				<displayName count="other">peruvianske inti</displayName>
+				<displayName>peruanske inti</displayName>
+				<displayName count="one">peruansk inti</displayName>
+				<displayName count="other">peruanske inti</displayName>
 				<symbol draft="contributed">PEI</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>peruanske nuevo sol</displayName>
-				<displayName count="one">peruansk nuevo sol</displayName>
-				<displayName count="other">peruanske nuevo sol</displayName>
+				<displayName>peruanske sol</displayName>
+				<displayName count="one">peruansk sol</displayName>
+				<displayName count="other">peruanske sol</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
-				<displayName>peruvianske sol (1863–1965)</displayName>
-				<displayName count="one">peruviansk sol (1863–1965)</displayName>
-				<displayName count="other">peruvianske sol (1863–1965)</displayName>
+				<displayName>peruanske sol (1863–1965)</displayName>
+				<displayName count="one">peruansk sol (1863–1965)</displayName>
+				<displayName count="other">peruanske sol (1863–1965)</displayName>
 				<symbol draft="contributed">PES</symbol>
 			</currency>
 			<currency type="PGK">
@@ -8405,6 +8410,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">⩾{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} dag</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} dager</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Ta {0}. svingen til høyre.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

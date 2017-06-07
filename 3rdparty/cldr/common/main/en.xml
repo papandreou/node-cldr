@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13050 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="en"/>
 	</identity>
 	<localeDisplayNames>
@@ -917,8 +917,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Christmas Island</territory>
 			<territory type="CY">Cyprus</territory>
-			<territory type="CZ">Czech Republic</territory>
-			<territory type="CZ" alt="variant">Czechia</territory>
+			<territory type="CZ">Czechia</territory>
+			<territory type="CZ" alt="variant">Czech Republic</territory>
 			<territory type="DE">Germany</territory>
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Djibouti</territory>
@@ -1206,6 +1206,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<key type="d0">Transform Destination</key>
 			<key type="em">Emoji Presentation Style</key>
 			<key type="fw">First day of week</key>
+			<key type="h0">Mixed-in Language</key>
 			<key type="hc">Hour Cycle (12 vs 24)</key>
 			<key type="i0">Input Method</key>
 			<key type="k0">Keyboard</key>
@@ -1282,8 +1283,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<type key="colStrength" type="quaternary">Sort Accents/Case/Width/Kana</type>
 			<type key="colStrength" type="secondary">Sort Accents</type>
 			<type key="colStrength" type="tertiary">Sort Accents/Case/Width</type>
+			<type key="d0" type="accents">To Accented Characters From ASCII Sequence</type>
 			<type key="d0" type="ascii">To ASCII</type>
+			<type key="d0" type="casefold">To Casefolded</type>
 			<type key="d0" type="charname">To Unicode Character Names</type>
+			<type key="d0" type="fcc">To Unicode FCC</type>
+			<type key="d0" type="fcd">To Unicode FCD</type>
 			<type key="d0" type="fwidth">To Fullwidth</type>
 			<type key="d0" type="hex">To Hexadecimal Codes</type>
 			<type key="d0" type="hwidth">To Halfwidth</type>
@@ -1293,6 +1298,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<type key="d0" type="nfkc">To Unicode NFKC</type>
 			<type key="d0" type="nfkd">To Unicode NFKD</type>
 			<type key="d0" type="npinyin">To Pinyin With Numeric Tones</type>
+			<type key="d0" type="null">No Change</type>
+			<type key="d0" type="publish">To Publishing Characters From ASCII</type>
+			<type key="d0" type="remove">To Empty String</type>
 			<type key="d0" type="title">To Titlecase</type>
 			<type key="d0" type="upper">To Uppercase</type>
 			<type key="em" type="default">Use Default Presentation For Emoji Characters</type>
@@ -1305,10 +1313,44 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<type key="fw" type="thu">First Day of Week Is Thursday</type>
 			<type key="fw" type="tue">First Day of Week Is Tuesday</type>
 			<type key="fw" type="wed">First Day of Week Is Wednesday</type>
+			<type key="h0" type="hybrid">Hybrid Language</type>
 			<type key="hc" type="h11">12 Hour System (0–11)</type>
 			<type key="hc" type="h12">12 Hour System (1–12)</type>
 			<type key="hc" type="h23">24 Hour System (0–23)</type>
 			<type key="hc" type="h24">24 Hour System (1–24)</type>
+			<type key="i0" type="handwrit">Handwriting Input Method</type>
+			<type key="i0" type="pinyin">Pinyin Input Method</type>
+			<type key="i0" type="und">Unspecified Input Method</type>
+			<type key="i0" type="wubi">Wubi Input Method</type>
+			<type key="k0" type="101key">101-Key Keyboard</type>
+			<type key="k0" type="102key">102-Key Keyboard</type>
+			<type key="k0" type="600dpi">600 dpi Keyboard</type>
+			<type key="k0" type="768dpi">768 dpi Keyboard</type>
+			<type key="k0" type="android">Android Keyboard</type>
+			<type key="k0" type="azerty">AZERTY-Based Keyboard</type>
+			<type key="k0" type="chromeos">ChromeOS Keyboard</type>
+			<type key="k0" type="colemak">Colemak Keyboard</type>
+			<type key="k0" type="dvorak">Dvorak Keyboard</type>
+			<type key="k0" type="dvorakl">Dvorak Left-Handed Keyboard</type>
+			<type key="k0" type="dvorakr">Dvorak Right-Handed Keyboard</type>
+			<type key="k0" type="el220">Greek 220 Keyboard</type>
+			<type key="k0" type="el319">Greek 319 Keyboard</type>
+			<type key="k0" type="extended">Keyboard With Many Extra Characters</type>
+			<type key="k0" type="googlevk">Google Virtual Keyboard</type>
+			<type key="k0" type="isiri">Persian ISIRI Keyboard</type>
+			<type key="k0" type="legacy">Legacy Keyboard</type>
+			<type key="k0" type="lt1205">Lithuanian LST 1205 Keyboard</type>
+			<type key="k0" type="lt1582">Lithuanian LST 1582 Keyboard</type>
+			<type key="k0" type="nutaaq">Inuktitut Nutaaq Keyboard</type>
+			<type key="k0" type="osx">macOS Keyboard</type>
+			<type key="k0" type="patta">Thai Pattachote Keyboard</type>
+			<type key="k0" type="qwerty">QWERTY-Based Keyboard</type>
+			<type key="k0" type="qwertz">QWERTZ-Based Keyboard</type>
+			<type key="k0" type="ta99">Tamil 99 Keyboard</type>
+			<type key="k0" type="und">Unspecified Keyboard</type>
+			<type key="k0" type="var">Keyboard Variant</type>
+			<type key="k0" type="viqr">Vietnamese VIQR Keyboard</type>
+			<type key="k0" type="windows">Windows Keyboard</type>
 			<type key="kr" type="currency">Currency</type>
 			<type key="kr" type="digit">Digits</type>
 			<type key="kr" type="punct">Punctuation</type>
@@ -1324,8 +1366,17 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<type key="lw" type="breakall">Allow Line Breaks In All Words</type>
 			<type key="lw" type="keepall">Prevent Line Breaks In All Words</type>
 			<type key="lw" type="normal">Normal Line Breaks For Words</type>
-			<type key="m0" type="bgn">BGN</type>
-			<type key="m0" type="ungegn">UNGEGN</type>
+			<type key="m0" type="alaloc">US ALA-LOC Transliteration</type>
+			<type key="m0" type="bgn">US BGN Transliteration</type>
+			<type key="m0" type="buckwalt">Buckwalter Arabic Transliteration</type>
+			<type key="m0" type="din">German DIN Transliteration</type>
+			<type key="m0" type="gost">CIS GOST Transliteration</type>
+			<type key="m0" type="iso">ISO Transliteration</type>
+			<type key="m0" type="mcst">Korean MCST Transliteration</type>
+			<type key="m0" type="mns">Mongolian National Standard Transliteration</type>
+			<type key="m0" type="prprname">Personal Name Transliteration Variant</type>
+			<type key="m0" type="satts">Standard Arabic Technical Transliteration</type>
+			<type key="m0" type="ungegn">UN GEGN Transliteration</type>
 			<type key="ms" type="metric">Metric System</type>
 			<type key="ms" type="uksystem">Imperial Measurement System</type>
 			<type key="ms" type="ussystem">US Measurement System</type>
@@ -1410,8 +1461,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<type key="numbers" type="traditional">Traditional Numerals</type>
 			<type key="numbers" type="vaii">Vai Digits</type>
 			<type key="numbers" type="wara">Warang Citi Digits</type>
+			<type key="s0" type="accents">From Accented Characters To ASCII Sequence</type>
+			<type key="s0" type="ascii">From ASCII</type>
+			<type key="s0" type="hex">From Hexadecimal Codes</type>
+			<type key="s0" type="npinyin">From Pinyin With Numeric Tones</type>
+			<type key="s0" type="publish">From Publishing Punctuation To ASCII</type>
+			<type key="s0" type="zawgyi">From Zawgyi Myanmar Encoding</type>
 			<type key="ss" type="none">Sentence Breaks Without Abbreviation Handling</type>
 			<type key="ss" type="standard">Suppress Sentence Breaks After Standard Abbreviations</type>
+			<type key="t0" type="und">Unspecified Machine Translation</type>
 			<type key="va" type="posix">POSIX Compliant Locale</type>
 		</types>
 		<measurementSystemNames>
@@ -2465,6 +2523,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="era">
 				<displayName>era</displayName>
 			</field>
+			<field type="era-short">
+				<displayName>era</displayName>
+			</field>
 			<field type="year">
 				<displayName>year</displayName>
 				<relative type="-1">last year</relative>
@@ -2578,6 +2639,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">{0} wk. ago</relativeTimePattern>
 				</relativeTime>
 			</field>
+			<field type="weekOfMonth">
+				<displayName>week of month</displayName>
+			</field>
+			<field type="weekOfMonth-short">
+				<displayName>wk. of mo.</displayName>
+			</field>
 			<field type="day">
 				<displayName>day</displayName>
 				<relative type="-1">yesterday</relative>
@@ -2603,8 +2670,23 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">{0} days ago</relativeTimePattern>
 				</relativeTime>
 			</field>
+			<field type="dayOfYear">
+				<displayName>day of year</displayName>
+			</field>
+			<field type="dayOfYear-short">
+				<displayName>day of yr.</displayName>
+			</field>
 			<field type="weekday">
 				<displayName>day of the week</displayName>
+			</field>
+			<field type="weekday-short">
+				<displayName>day of wk.</displayName>
+			</field>
+			<field type="weekdayOfMonth">
+				<displayName>weekday of the month</displayName>
+			</field>
+			<field type="weekdayOfMonth-short">
+				<displayName>wkday. of mo.</displayName>
 			</field>
 			<field type="sun">
 				<relative type="-1">last Sunday</relative>
@@ -2879,6 +2961,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">{0} Sa ago</relativeTimePattern>
 				</relativeTime>
 			</field>
+			<field type="dayperiod-short">
+				<displayName>AM/PM</displayName>
+				<displayName alt="variant">am/pm</displayName>
+			</field>
 			<field type="dayperiod">
 				<displayName>AM/PM</displayName>
 				<displayName alt="variant">am/pm</displayName>
@@ -2956,6 +3042,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="zone">
 				<displayName>time zone</displayName>
 			</field>
+			<field type="zone-short">
+				<displayName>zone</displayName>
+			</field>
 		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
@@ -2964,6 +3053,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<regionFormat type="daylight">{0} Daylight Time</regionFormat>
 			<regionFormat type="standard">{0} Standard Time</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Coordinated Universal Time</standard>
+				</long>
+			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Unknown City</exemplarCity>
 			</zone>
@@ -4523,9 +4617,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="other">Cypriot pounds</displayName>
 			</currency>
 			<currency type="CZK">
-				<displayName>Czech Republic Koruna</displayName>
-				<displayName count="one">Czech Republic koruna</displayName>
-				<displayName count="other">Czech Republic korunas</displayName>
+				<displayName>Czech Koruna</displayName>
+				<displayName count="one">Czech koruna</displayName>
+				<displayName count="other">Czech korunas</displayName>
 			</currency>
 			<currency type="DDM">
 				<displayName>East German Mark</displayName>
@@ -5638,6 +5732,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<miscPatterns numberSystem="latn">
 			<pattern type="atLeast">{0}+</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} day</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} days</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="few">Take the {0}rd right.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">Take the {0}st right.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Take the {0}th right.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="two">Take the {0}nd right.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">
@@ -6051,6 +6153,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} mile-scandinavian</unitPattern>
 				<unitPattern count="other">{0} miles-scandinavian</unitPattern>
 			</unit>
+			<unit type="length-point">
+				<displayName>points</displayName>
+				<unitPattern count="one">{0} point</unitPattern>
+				<unitPattern count="other">{0} points</unitPattern>
+			</unit>
 			<unit type="light-lux">
 				<displayName>lux</displayName>
 				<unitPattern count="one">{0} lux</unitPattern>
@@ -6335,6 +6442,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} teaspoon</unitPattern>
 				<unitPattern count="other">{0} teaspoons</unitPattern>
 			</unit>
+			<coordinateUnit>
+				<coordinateUnitPattern type="east">{0} east</coordinateUnitPattern>
+				<coordinateUnitPattern type="north">{0} north</coordinateUnitPattern>
+				<coordinateUnitPattern type="south">{0} south</coordinateUnitPattern>
+				<coordinateUnitPattern type="west">{0} west</coordinateUnitPattern>
+			</coordinateUnit>
 		</unitLength>
 		<unitLength type="short">
 			<compoundUnit type="per">
@@ -6747,6 +6860,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} smi</unitPattern>
 				<unitPattern count="other">{0} smi</unitPattern>
 			</unit>
+			<unit type="length-point">
+				<displayName>points</displayName>
+				<unitPattern count="one">{0} pt</unitPattern>
+				<unitPattern count="other">{0} pt</unitPattern>
+			</unit>
 			<unit type="light-lux">
 				<displayName>lux</displayName>
 				<unitPattern count="one">{0} lx</unitPattern>
@@ -7027,6 +7145,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} tsp</unitPattern>
 				<unitPattern count="other">{0} tsp</unitPattern>
 			</unit>
+			<coordinateUnit>
+				<coordinateUnitPattern type="east">{0} E</coordinateUnitPattern>
+				<coordinateUnitPattern type="north">{0} N</coordinateUnitPattern>
+				<coordinateUnitPattern type="south">{0} S</coordinateUnitPattern>
+				<coordinateUnitPattern type="west">{0} W</coordinateUnitPattern>
+			</coordinateUnit>
 		</unitLength>
 		<unitLength type="narrow">
 			<unit type="acceleration-g-force">
@@ -7405,6 +7529,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0}smi</unitPattern>
 				<unitPattern count="other">{0}smi</unitPattern>
 			</unit>
+			<unit type="length-point">
+				<displayName>pts</displayName>
+				<unitPattern count="one">{0}pt</unitPattern>
+				<unitPattern count="other">{0}pt</unitPattern>
+			</unit>
 			<unit type="light-lux">
 				<displayName>lux</displayName>
 				<unitPattern count="one">{0}lx</unitPattern>
@@ -7685,6 +7814,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0}tsp</unitPattern>
 				<unitPattern count="other">{0}tsp</unitPattern>
 			</unit>
+			<coordinateUnit>
+				<coordinateUnitPattern type="east">{0}E</coordinateUnitPattern>
+				<coordinateUnitPattern type="north">{0}N</coordinateUnitPattern>
+				<coordinateUnitPattern type="south">{0}S</coordinateUnitPattern>
+				<coordinateUnitPattern type="west">{0}W</coordinateUnitPattern>
+			</coordinateUnit>
 		</unitLength>
 	</units>
 	<listPatterns>

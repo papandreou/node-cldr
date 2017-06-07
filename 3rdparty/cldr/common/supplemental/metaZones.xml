@@ -6,7 +6,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <supplementalData>
-	<version number="$Revision: 13016 $"/>
+	<version number="$Revision: 13290 $"/>
 
 	<metaZones>
 		<metazoneInfo>
@@ -638,6 +638,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<timezone type="America/Puerto_Rico">
 				<usesMetazone mzone="Atlantic"/>
 			</timezone>
+			<timezone type="America/Punta_Arenas">
+				<usesMetazone to="2016-12-03 23:00" mzone="Chile"/>
+			</timezone>
 			<timezone type="America/Rainy_River">
 				<usesMetazone mzone="America_Central"/>
 			</timezone>
@@ -753,7 +756,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<usesMetazone to="2010-03-04 15:00" from="2009-10-17 18:00" mzone="Casey"/>
 				<usesMetazone to="2011-10-27 18:00" from="2010-03-04 15:00" mzone="Australia_Western"/>
 				<usesMetazone to="2012-02-21 17:00" from="2011-10-27 18:00" mzone="Casey"/>
-				<usesMetazone from="2012-02-21 17:00" mzone="Australia_Western"/>
+				<usesMetazone to="2016-10-21 16:00" from="2012-02-21 17:00" mzone="Australia_Western"/>
+				<usesMetazone from="2016-10-21 16:00" mzone="Casey"/>
 			</timezone>
 			<timezone type="Antarctica/Davis">
 				<usesMetazone mzone="Davis"/>
@@ -773,7 +777,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</timezone>
 			<timezone type="Antarctica/Palmer">
 				<usesMetazone to="1982-05-01 03:00" mzone="Argentina"/>
-				<usesMetazone from="1982-05-01 03:00" mzone="Chile"/>
+				<usesMetazone to="2016-12-03 23:00" from="1982-05-01 03:00" mzone="Chile"/>
 			</timezone>
 			<timezone type="Antarctica/Rothera">
 				<usesMetazone mzone="Rothera"/>
@@ -818,6 +822,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<timezone type="Asia/Ashgabat">
 				<usesMetazone to="1991-10-26 20:00" mzone="Ashkhabad"/>
 				<usesMetazone from="1991-10-26 20:00" mzone="Turkmenistan"/>
+			</timezone>
+			<timezone type="Asia/Atyrau">
+				<usesMetazone from="2004-10-30 22:00" mzone="Kazakhstan_Western"/>
 			</timezone>
 			<timezone type="Asia/Baghdad">
 				<usesMetazone mzone="Arabian"/>
@@ -882,6 +889,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<timezone type="Asia/Dushanbe">
 				<usesMetazone to="1991-09-08 21:00" mzone="Dushanbe"/>
 				<usesMetazone from="1991-09-08 21:00" mzone="Tajikistan"/>
+			</timezone>
+			<timezone type="Asia/Famagusta">
+				<usesMetazone to="2016-09-07 21:00" mzone="Europe_Eastern"/>
 			</timezone>
 			<timezone type="Asia/Gaza">
 				<usesMetazone to="1995-12-31 22:00" mzone="Israel"/>
@@ -1155,6 +1165,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<timezone type="CST6CDT">
 				<usesMetazone mzone="America_Central"/>
 			</timezone>
+			<timezone type="Etc/GMT">
+				<usesMetazone mzone="GMT"/>
+			</timezone>
 			<timezone type="EST5EDT">
 				<usesMetazone mzone="America_Eastern"/>
 			</timezone>
@@ -1305,6 +1318,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</timezone>
 			<timezone type="Europe/Sarajevo">
 				<usesMetazone mzone="Europe_Central"/>
+			</timezone>
+			<timezone type="Europe/Saratov">
+				<usesMetazone to="2016-12-03 23:00" from="1992-03-28 22:00" mzone="Moscow"/>
 			</timezone>
 			<timezone type="Europe/Simferopol">
 				<usesMetazone to="1990-06-30 23:00" mzone="Moscow"/>
@@ -1655,7 +1671,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<mapZone other="Chamorro" territory="GU" type="Pacific/Guam"/>
 			<mapZone other="Chatham" territory="001" type="Pacific/Chatham"/>
 			<mapZone other="Chile" territory="001" type="America/Santiago"/>
-			<mapZone other="Chile" territory="AQ" type="Antarctica/Palmer"/>
 			<mapZone other="China" territory="001" type="Asia/Shanghai"/>
 			<mapZone other="Choibalsan" territory="001" type="Asia/Choibalsan"/>
 			<mapZone other="Christmas" territory="001" type="Indian/Christmas"/>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="vi"/>
 	</identity>
 	<localeDisplayNames>
@@ -829,8 +829,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Đảo Giáng Sinh</territory>
 			<territory type="CY">Síp</territory>
-			<territory type="CZ">Cộng hòa Séc</territory>
-			<territory type="CZ" alt="variant">Czechia</territory>
+			<territory type="CZ">Czechia</territory>
+			<territory type="CZ" alt="variant">Cộng hòa Séc</territory>
 			<territory type="DE">Đức</territory>
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Djibouti</territory>
@@ -3156,6 +3156,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Isabel</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Giờ phối hợp quốc tế</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Thành phố Không xác định</exemplarCity>
@@ -6420,8 +6425,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol draft="contributed">PEI</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>Nuevo Sol Peru</displayName>
-				<displayName count="other">Nuevo Sol Peru</displayName>
+				<displayName>Sol Peru</displayName>
+				<displayName count="other">Sol Peru</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
@@ -6912,6 +6917,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}-{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">Rẽ vào lối rẽ thứ nhất bên phải.</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">Rẽ vào lối rẽ thứ {0} bên phải.</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">Rẽ vào lối rẽ thứ nhất bên phải.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Rẽ vào lối rẽ thứ {0} bên phải.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">
@@ -8242,8 +8253,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	</listPatterns>
 	<posix>
 		<messages>
-			<yesstr>yes:c</yesstr>
-			<nostr>no:k</nostr>
+			<yesstr>có:c</yesstr>
+			<nostr>không:k</nostr>
 		</messages>
 	</posix>
 	<characterLabels>

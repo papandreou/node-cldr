@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12927 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="he"/>
 	</identity>
 	<localeDisplayNames>
@@ -703,8 +703,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">קוראסאו</territory>
 			<territory type="CX">האי כריסטמס</territory>
 			<territory type="CY">קפריסין</territory>
-			<territory type="CZ">הרפובליקה הצ׳כית</territory>
-			<territory type="CZ" alt="variant">צ׳כיה</territory>
+			<territory type="CZ">צ׳כיה</territory>
+			<territory type="CZ" alt="variant">הרפובליקה הצ׳כית</territory>
 			<territory type="DE">גרמניה</territory>
 			<territory type="DG">דייגו גרסיה</territory>
 			<territory type="DJ">ג׳יבוטי</territory>
@@ -2934,6 +2934,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>סנטה איסבל</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>זמן אוניברסלי מתואם</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>עיר לא ידועה</exemplarCity>
@@ -6368,11 +6373,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>סול פרואני חדש</displayName>
-				<displayName count="one">סול פרואני חדש</displayName>
-				<displayName count="two">סול פרואני חדש</displayName>
-				<displayName count="many">סול פרואני חדש</displayName>
-				<displayName count="other">סול פרואני חדש</displayName>
+				<displayName>סול פרואני</displayName>
+				<displayName count="one">סול פרואני</displayName>
+				<displayName count="two">סול פרואני</displayName>
+				<displayName count="many">סול פרואני</displayName>
+				<displayName count="other">סול פרואני</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -6908,6 +6913,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">⩾{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">שנה</pluralMinimalPairs>
+			<pluralMinimalPairs count="two">שנתיים</pluralMinimalPairs>
+			<pluralMinimalPairs count="many">{0} שנה</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} שנים</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">פנה ימינה בפנייה ה-{0}</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

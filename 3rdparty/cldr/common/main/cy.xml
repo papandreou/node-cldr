@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13006 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="cy"/>
 	</identity>
 	<localeDisplayNames>
@@ -694,8 +694,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Ynys y Nadolig</territory>
 			<territory type="CY">Cyprus</territory>
-			<territory type="CZ">Gweriniaeth Tsiec</territory>
-			<territory type="CZ" alt="variant">Tsiecia</territory>
+			<territory type="CZ">Tsiecia</territory>
+			<territory type="CZ" alt="variant">Gweriniaeth Tsiec</territory>
 			<territory type="DE">Yr Almaen</territory>
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Djibouti</territory>
@@ -6849,13 +6849,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol draft="contributed">PEI</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>Nuevo Sol Periw</displayName>
-				<displayName count="zero">nuevo sol Periw</displayName>
-				<displayName count="one">nuevo sol Periw</displayName>
-				<displayName count="two">nuevo sol Periw</displayName>
-				<displayName count="few">nuevo sol Periw</displayName>
-				<displayName count="many">nuevo sol Periw</displayName>
-				<displayName count="other">nuevo sol Periw</displayName>
+				<displayName>Sol Periw</displayName>
+				<displayName count="zero">sol Periw</displayName>
+				<displayName count="one">sol Periw</displayName>
+				<displayName count="two">sol Periw</displayName>
+				<displayName count="few">sol Periw</displayName>
+				<displayName count="many">sol Periw</displayName>
+				<displayName count="other">sol Periw</displayName>
 				<symbol draft="contributed">PEN</symbol>
 			</currency>
 			<currency type="PES">
@@ -7655,6 +7655,20 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="zero">{0} cŵn, {0} cathod</pluralMinimalPairs>
+			<pluralMinimalPairs count="one">{0} ci, {0} gath</pluralMinimalPairs>
+			<pluralMinimalPairs count="two">{0} gi, {0} gath</pluralMinimalPairs>
+			<pluralMinimalPairs count="few">{0} chi, {0} cath</pluralMinimalPairs>
+			<pluralMinimalPairs count="many">{0} chi, {0} chath</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} ci, {0} cath</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="few">{0}ydd ci</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="many">{0}ed ci</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">ci {0}af</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">ci rhif {0}</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="two">{0}il gi</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="zero">{0}fed ci</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

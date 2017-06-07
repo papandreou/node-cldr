@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="sk"/>
 	</identity>
 	<localeDisplayNames>
@@ -691,8 +691,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Vianočný ostrov</territory>
 			<territory type="CY">Cyprus</territory>
-			<territory type="CZ">Česká republika</territory>
-			<territory type="CZ" alt="variant">Česko</territory>
+			<territory type="CZ">Česko</territory>
+			<territory type="CZ" alt="variant">Česká republika</territory>
 			<territory type="DE">Nemecko</territory>
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Džibutsko</territory>
@@ -2555,6 +2555,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Isabel</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Koordinovaný svetový čas</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>neznáme mesto</exemplarCity>
@@ -6087,15 +6092,20 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>Peruvský inti</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>peruánsky nový sol</displayName>
-				<displayName count="one">peruánsky nový sol</displayName>
-				<displayName count="few">peruánske nové soly</displayName>
-				<displayName count="many">peruánskeho nového sola</displayName>
-				<displayName count="other">peruánskych nových solov</displayName>
+				<displayName>peruánsky sol</displayName>
+				<displayName count="one">peruánsky sol</displayName>
+				<displayName count="few">peruánske soly</displayName>
+				<displayName count="many">peruánskeho sola</displayName>
+				<displayName count="other">peruánskych solov</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
-				<displayName>Peruvský sol</displayName>
+				<displayName>peruánsky sol (1863–1965)</displayName>
+				<displayName count="one">peruánsky sol (1863–1965)</displayName>
+				<displayName count="few">peruánske soly (1863–1965)</displayName>
+				<displayName count="many">peruánskeho sola (1863–1965)</displayName>
+				<displayName count="other">peruánskych solov (1863–1965)</displayName>
+				<symbol>PES</symbol>
 			</currency>
 			<currency type="PGK">
 				<displayName>papuánska kina</displayName>
@@ -6681,6 +6691,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0} – {1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} deň</pluralMinimalPairs>
+			<pluralMinimalPairs count="few">{0} dni</pluralMinimalPairs>
+			<pluralMinimalPairs count="many">{0} dňa</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} dní</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Na {0}. križovatke odbočte doprava.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

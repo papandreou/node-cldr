@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13328 $"/>
 		<language type="si"/>
 	</identity>
 	<localeDisplayNames>
@@ -561,8 +561,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">කුරකාවෝ</territory>
 			<territory type="CX">ක්‍රිස්මස් දූපත</territory>
 			<territory type="CY">සයිප්‍රසය</territory>
-			<territory type="CZ">චෙක් ජනරජය</territory>
-			<territory type="CZ" alt="variant">චෙක්</territory>
+			<territory type="CZ">චෙක්</territory>
+			<territory type="CZ" alt="variant">චෙක් ජනරජය</territory>
 			<territory type="DE">ජර්මනිය</territory>
 			<territory type="DG">දියාගෝ ගාර්සියා</territory>
 			<territory type="DJ">ජිබුටි</territory>
@@ -5181,9 +5181,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>පේරු නියුවෝ සොල්</displayName>
-				<displayName count="one">පේරු නියුවෝ සොල්</displayName>
-				<displayName count="other">පේරු නියුවෝ සොල්</displayName>
+				<displayName>පේරු සොල්</displayName>
+				<displayName count="one">පේරු සොල්</displayName>
+				<displayName count="other">පේරු සොල්</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -5522,6 +5522,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} පොතක් ඇත. එය කියවීමි.</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">පොත් {0}ක් ඇත. ඒවා කියවීමි.</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0} වන හැරවුම දකුණට</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

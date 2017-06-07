@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12740 $"/>
+		<version number="$Revision: 13134 $"/>
 		<language type="gv"/>
 	</identity>
 	<localeDisplayNames>
@@ -269,5 +269,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</currencyFormat>
 			</currencyFormatLength>
 		</currencyFormats>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} thunnag/vuc/ooyl</pluralMinimalPairs>
+			<pluralMinimalPairs count="two">{0} hunnag/vuc/ooyl</pluralMinimalPairs>
+			<pluralMinimalPairs count="few">{0} thunnag/muc/ooyl</pluralMinimalPairs>
+			<pluralMinimalPairs count="many">{0} dy hunnagyn/dy vucyn/dy ooylyn</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} thunnagyn/mucyn/ooylyn</pluralMinimalPairs>
+		</minimalPairs>
 	</numbers>
 </ldml>

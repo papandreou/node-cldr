@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="hy"/>
 	</identity>
 	<localeDisplayNames>
@@ -2229,6 +2229,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Սանտա Իզաբել</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Համաշխարհային կոորդինացված ժամանակ</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Անհայտ քաղաք</exemplarCity>
@@ -5232,9 +5237,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>Պերուի նոր սոլ</displayName>
-				<displayName count="one">Պերուի նոր սոլ</displayName>
-				<displayName count="other">Պերուի նոր սոլ</displayName>
+				<displayName>Պերուի սոլ</displayName>
+				<displayName count="one">Պերուի սոլ</displayName>
+				<displayName count="other">Պերուի սոլ</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -5574,6 +5579,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">այդ {0} ժամը</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">այդ {0} ժամերը</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">Թեքվեք աջ {0}-ին խաչմերուկից:</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Թեքվեք աջ {0}-րդ խաչմերուկից:</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12920 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="eu"/>
 	</identity>
 	<localeDisplayNames>
@@ -560,8 +560,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Christmas uhartea</territory>
 			<territory type="CY">Zipre</territory>
-			<territory type="CZ">Txekiar Errepublika</territory>
-			<territory type="CZ" alt="variant">Txekia</territory>
+			<territory type="CZ">Txekia</territory>
+			<territory type="CZ" alt="variant">Txekiar Errepublika</territory>
 			<territory type="DE">Alemania</territory>
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Djibuti</territory>
@@ -1345,33 +1345,22 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 							<dayPeriod type="midnight">gauerdia</dayPeriod>
 							<dayPeriod type="am">AM</dayPeriod>
 							<dayPeriod type="pm">PM</dayPeriod>
-							<dayPeriod type="morning1">goizeko</dayPeriod>
-							<dayPeriod type="morning2">goiza</dayPeriod>
-							<dayPeriod type="afternoon1">arratsaldeko</dayPeriod>
-							<dayPeriod type="afternoon2">arratsaldea</dayPeriod>
-							<dayPeriod type="evening1">arratsaldeko</dayPeriod>
-							<dayPeriod type="night1">gaueko</dayPeriod>
-						</dayPeriodWidth>
-						<dayPeriodWidth type="narrow">
-							<dayPeriod type="midnight">gauerdia</dayPeriod>
-							<dayPeriod type="am">g</dayPeriod>
-							<dayPeriod type="pm">a</dayPeriod>
-							<dayPeriod type="morning1">goizeko</dayPeriod>
-							<dayPeriod type="morning2">goiza</dayPeriod>
-							<dayPeriod type="afternoon1">arratsaldeko</dayPeriod>
-							<dayPeriod type="afternoon2">arratsaldea</dayPeriod>
-							<dayPeriod type="evening1">arratsaldeko</dayPeriod>
-							<dayPeriod type="night1">gauean</dayPeriod>
+							<dayPeriod type="morning1">goiz.</dayPeriod>
+							<dayPeriod type="morning2">goizeko</dayPeriod>
+							<dayPeriod type="afternoon1">eguerd.</dayPeriod>
+							<dayPeriod type="afternoon2">arrats.</dayPeriod>
+							<dayPeriod type="evening1">iluntz.</dayPeriod>
+							<dayPeriod type="night1">gau.</dayPeriod>
 						</dayPeriodWidth>
 						<dayPeriodWidth type="wide">
 							<dayPeriod type="midnight">gauerdia</dayPeriod>
 							<dayPeriod type="am">AM</dayPeriod>
 							<dayPeriod type="pm">PM</dayPeriod>
-							<dayPeriod type="morning1">goizeko</dayPeriod>
-							<dayPeriod type="morning2">goiza</dayPeriod>
-							<dayPeriod type="afternoon1">arratsaldeko</dayPeriod>
-							<dayPeriod type="afternoon2">arratsaldea</dayPeriod>
-							<dayPeriod type="evening1">arratsaldeko</dayPeriod>
+							<dayPeriod type="morning1">goizaldeko</dayPeriod>
+							<dayPeriod type="morning2">goizeko</dayPeriod>
+							<dayPeriod type="afternoon1">eguerdiko</dayPeriod>
+							<dayPeriod type="afternoon2">arratsaldeko</dayPeriod>
+							<dayPeriod type="evening1">iluntzeko</dayPeriod>
 							<dayPeriod type="night1">gaueko</dayPeriod>
 						</dayPeriodWidth>
 					</dayPeriodContext>
@@ -1380,22 +1369,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 							<dayPeriod type="midnight">gauerdia</dayPeriod>
 							<dayPeriod type="am">AM</dayPeriod>
 							<dayPeriod type="pm">PM</dayPeriod>
-							<dayPeriod type="morning1">goizaldea</dayPeriod>
+							<dayPeriod type="morning1">goiz.</dayPeriod>
 							<dayPeriod type="morning2">goiza</dayPeriod>
-							<dayPeriod type="afternoon1">eguerdia</dayPeriod>
-							<dayPeriod type="afternoon2">arratsaldea</dayPeriod>
+							<dayPeriod type="afternoon1">eguerd.</dayPeriod>
+							<dayPeriod type="afternoon2">arrats.</dayPeriod>
 							<dayPeriod type="evening1">iluntz.</dayPeriod>
-							<dayPeriod type="night1">gau.</dayPeriod>
-						</dayPeriodWidth>
-						<dayPeriodWidth type="narrow">
-							<dayPeriod type="am">AM</dayPeriod>
-							<dayPeriod type="pm">PM</dayPeriod>
-							<dayPeriod type="morning1">goizaldea</dayPeriod>
-							<dayPeriod type="morning2">goiza</dayPeriod>
-							<dayPeriod type="afternoon1">eguerdia</dayPeriod>
-							<dayPeriod type="afternoon2">arratsaldea</dayPeriod>
-							<dayPeriod type="evening1">iluntz.</dayPeriod>
-							<dayPeriod type="night1">gau.</dayPeriod>
+							<dayPeriod type="night1">gaua</dayPeriod>
 						</dayPeriodWidth>
 						<dayPeriodWidth type="wide">
 							<dayPeriod type="midnight">gauerdia</dayPeriod>
@@ -2235,6 +2214,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Isabel</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Ordu Unibertsal Koordinatua</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Hiri ezezaguna</exemplarCity>
@@ -5263,9 +5247,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>Peruko sol berria</displayName>
-				<displayName count="one">Peruko sol berri</displayName>
-				<displayName count="other">Peruko sol berri</displayName>
+				<displayName>Peruko sol</displayName>
+				<displayName count="one">Peruko sol</displayName>
+				<displayName count="other">Peruko sol</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -5603,6 +5587,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">Nire {0} lagunarekin nago</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">Nire {0} lagunekin nago</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0}. bira eskuinetara</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

@@ -8,8 +8,12 @@ describe('extractFields', function () {
         expect(britishFields, 'to only have keys', [
             'day',
             'day-short',
+            'dayOfYear',
+            'dayOfYear-short',
             'dayperiod',
+            'dayperiod-short',
             'era',
+            'era-short',
             'fri',
             'fri-narrow',
             'fri-short',
@@ -49,11 +53,17 @@ describe('extractFields', function () {
             'week',
             'week-narrow',
             'week-short',
+            'weekday-short',
+            'weekdayOfMonth',
+            'weekdayOfMonth-short',
+            'weekOfMonth',
+            'weekOfMonth-short',
             'weekday',
             'year',
             'year-narrow',
             'year-short',
-            'zone'
+            'zone',
+            'zone-short'
         ]);
         expect(britishFields.dayperiod, 'to equal', {displayName: 'am/pm'});
         expect(britishFields.sat, 'to equal', {

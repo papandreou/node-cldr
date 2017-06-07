@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="gu"/>
 	</identity>
 	<localeDisplayNames>
@@ -779,8 +779,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">ક્યુરાસાઓ</territory>
 			<territory type="CX">ક્રિસમસ આઇલેન્ડ</territory>
 			<territory type="CY">સાયપ્રસ</territory>
-			<territory type="CZ">ચેક રીપબ્લિક</territory>
-			<territory type="CZ" alt="variant">ચેકીયા</territory>
+			<territory type="CZ">ચેકીયા</territory>
+			<territory type="CZ" alt="variant">ચેક રીપબ્લિક</territory>
 			<territory type="DE">જર્મની</territory>
 			<territory type="DG">ડિએગો ગારસિઆ</territory>
 			<territory type="DJ">જીબૌટી</territory>
@@ -2458,6 +2458,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>સાંતા ઇસાબેલ</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>સંકલિત યુનિવર્સલ સમય</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>અજ્ઞાત શહેર</exemplarCity>
@@ -5587,9 +5592,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>પેરુવિયન ન્યુવો સોલ</displayName>
-				<displayName count="one">પેરુવિયન ન્યુવો સોલ</displayName>
-				<displayName count="other">પેરુવિયન ન્યુવો સોલ</displayName>
+				<displayName>પેરુવિયન સોલ</displayName>
+				<displayName count="one">પેરુવિયન સોલ</displayName>
+				<displayName count="other">પેરુવિયન સોલ</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -5927,6 +5932,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}-{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} કિલોગ્રામ</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} કિલોગ્રામ્સ</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="few">જમણી બાજુએ {0}થો વળાંક લો.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="many">જમણી બાજુએ {0}ઠો વળાંક લો.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">જમણી બાજુએ {0}લો વળાંક લો.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">જમણી બાજુએ {0}મો વળાંક લો.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="two">જમણી બાજુએ {0}જો વળાંક લો.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12922 $"/>
+		<version number="$Revision: 13174 $"/>
 		<language type="zu"/>
 	</identity>
 	<localeDisplayNames>
@@ -569,8 +569,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">i-Curaçao</territory>
 			<territory type="CX">i-Christmas Island</territory>
 			<territory type="CY">i-Cyprus</territory>
-			<territory type="CZ">i-Czech Republic</territory>
-			<territory type="CZ" alt="variant">i-Czechia</territory>
+			<territory type="CZ">i-Czechia</territory>
+			<territory type="CZ" alt="variant">i-Czech Republic</territory>
 			<territory type="DE">i-Germany</territory>
 			<territory type="DG">i-Diego Garcia</territory>
 			<territory type="DJ">i-Djibouti</territory>
@@ -5563,6 +5563,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} usuku</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} izinsuku</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Thatha indlela ejikela kwesokudla engu-{0}</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

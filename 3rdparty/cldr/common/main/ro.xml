@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13260 $"/>
 		<language type="ro"/>
 	</identity>
 	<localeDisplayNames>
@@ -708,8 +708,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Insula Christmas</territory>
 			<territory type="CY">Cipru</territory>
-			<territory type="CZ">Republica Cehă</territory>
-			<territory type="CZ" alt="variant">Cehia</territory>
+			<territory type="CZ">Cehia</territory>
+			<territory type="CZ" alt="variant">Republica Cehă</territory>
 			<territory type="DE">Germania</territory>
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Djibouti</territory>
@@ -2673,6 +2673,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Isabel</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Timpul universal coordonat</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Oraș necunoscut</exemplarCity>
@@ -6120,17 +6125,17 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>inti peruvian</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>sol nou peruvian</displayName>
-				<displayName count="one">sol nou peruvian</displayName>
-				<displayName count="few">soli noi peruvieni</displayName>
-				<displayName count="other">soli noi peruvieni</displayName>
+				<displayName>sol peruvian</displayName>
+				<displayName count="one">sol peruvian</displayName>
+				<displayName count="few">soli peruvieni</displayName>
+				<displayName count="other">soli peruvieni</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
 				<displayName>sol peruvian (1863–1965)</displayName>
 				<displayName count="one">sol peruvian (1863–1965)</displayName>
-				<displayName count="few">soli Peru (1863–1965)</displayName>
-				<displayName count="other">soli Peru (1863–1965)</displayName>
+				<displayName count="few">soli peruvieni (1863–1965)</displayName>
+				<displayName count="other">soli peruvieni (1863–1965)</displayName>
 			</currency>
 			<currency type="PGK">
 				<displayName>kina din Papua-Noua Guinee</displayName>
@@ -6722,6 +6727,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">⩾{0}</pattern>
 			<pattern type="range">{0} - {1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} zi</pluralMinimalPairs>
+			<pluralMinimalPairs count="few">{0} zile</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} de zile</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">Faceți virajul nr. {0} la dreapta.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Faceți virajul al {0}-lea la dreapta.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

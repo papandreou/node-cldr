@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13058 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="root"/>
 	</identity>
 	<localeDisplayNames>
@@ -46,6 +46,25 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<ellipsis type="word-initial">… {0}</ellipsis>
 		<ellipsis type="word-medial">{0} … {1}</ellipsis>
 		<moreInformation>?</moreInformation>
+		<parseLenients scope="date" level="lenient">
+			<parseLenient sample="-">[\-./]</parseLenient>
+			<parseLenient sample=":">[\:∶]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="general" level="lenient">
+			<parseLenient sample=".">[.．․﹒ 。︒｡]</parseLenient>
+			<parseLenient sample="$">[$﹩＄$]</parseLenient>
+			<parseLenient sample="£">[£₤]</parseLenient>
+			<parseLenient sample="₹">[₨₹{Rs}{Rp}]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="number" level="lenient">
+			<parseLenient sample="-">[\-－﹣ −⁻₋ ➖‒]</parseLenient>
+			<parseLenient sample=",">[,，﹐︐ ، ٫ 、﹑︑､]</parseLenient>
+			<parseLenient sample="+">[+＋﬩﹢⁺₊ ➕]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="number" level="stricter">
+			<parseLenient sample=",">[,，﹐︐ ٫]</parseLenient>
+			<parseLenient sample=".">[.．․﹒ ｡]</parseLenient>
+		</parseLenients>
 	</characters>
 	<delimiters>
 		<quotationStart>“</quotationStart>
@@ -2361,6 +2380,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="era">
 				<displayName>Era</displayName>
 			</field>
+			<field type="era-short">
+				<alias source="locale" path="../field[@type='era']"/>
+			</field>
+			<field type="era-narrow">
+				<alias source="locale" path="../field[@type='era-short']"/>
+			</field>
 			<field type="year">
 				<displayName>Year</displayName>
 				<relative type="-1">last year</relative>
@@ -2434,6 +2459,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="week-narrow">
 				<alias source="locale" path="../field[@type='week-short']"/>
 			</field>
+			<field type="weekOfMonth">
+				<displayName>Week Of Month</displayName>
+			</field>
+			<field type="weekOfMonth-short">
+				<alias source="locale" path="../field[@type='weekOfMonth']"/>
+			</field>
+			<field type="weekOfMonth-narrow">
+				<alias source="locale" path="../field[@type='weekOfMonth-short']"/>
+			</field>
 			<field type="day">
 				<displayName>Day</displayName>
 				<relative type="-1">yesterday</relative>
@@ -2452,8 +2486,32 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="day-narrow">
 				<alias source="locale" path="../field[@type='day-short']"/>
 			</field>
+			<field type="dayOfYear">
+				<displayName>Day Of Year</displayName>
+			</field>
+			<field type="dayOfYear-short">
+				<alias source="locale" path="../field[@type='dayOfYear']"/>
+			</field>
+			<field type="dayOfYear-narrow">
+				<alias source="locale" path="../field[@type='dayOfYear-short']"/>
+			</field>
 			<field type="weekday">
 				<displayName>Day of the Week</displayName>
+			</field>
+			<field type="weekday-short">
+				<alias source="locale" path="../field[@type='weekday']"/>
+			</field>
+			<field type="weekday-narrow">
+				<alias source="locale" path="../field[@type='weekday-short']"/>
+			</field>
+			<field type="weekdayOfMonth">
+				<displayName>Weekday Of Month</displayName>
+			</field>
+			<field type="weekdayOfMonth-short">
+				<alias source="locale" path="../field[@type='weekdayOfMonth']"/>
+			</field>
+			<field type="weekdayOfMonth-narrow">
+				<alias source="locale" path="../field[@type='weekdayOfMonth-short']"/>
 			</field>
 			<field type="sun">
 				<relative type="-1">last Sunday</relative>
@@ -2574,8 +2632,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="sat-narrow">
 				<alias source="locale" path="../field[@type='sat-short']"/>
 			</field>
+			<field type="dayperiod-short">
+				<alias source="locale" path="../field[@type='dayperiod']"/>
+			</field>
 			<field type="dayperiod">
 				<displayName>Dayperiod</displayName>
+			</field>
+			<field type="dayperiod-narrow">
+				<alias source="locale" path="../field[@type='dayperiod-short']"/>
 			</field>
 			<field type="hour">
 				<displayName>Hour</displayName>
@@ -2628,6 +2692,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="zone">
 				<displayName>Zone</displayName>
 			</field>
+			<field type="zone-short">
+				<alias source="locale" path="../field[@type='zone']"/>
+			</field>
+			<field type="zone-narrow">
+				<alias source="locale" path="../field[@type='zone-short']"/>
+			</field>
 		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
@@ -2637,6 +2707,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<regionFormat type="daylight">{0} (+1)</regionFormat>
 			<regionFormat type="standard">{0} (+0)</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
+			<zone type="Etc/UTC">
+				<short>
+					<standard>UTC</standard>
+				</short>
+			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Unknown</exemplarCity>
 			</zone>
@@ -3327,7 +3402,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		</currencyFormats>
 		<currencyFormats numberSystem="arab">
 			<currencySpacing>
-				<alias source="locale" path="../../currencyFormats[@numberSystem='latn']/currencySpacing"/> 
+				<alias source="locale" path="../../currencyFormats[@numberSystem='latn']/currencySpacing"/>
 			</currencySpacing>
 			<currencyFormatLength>
 				<currencyFormat type="standard">
@@ -3947,6 +4022,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<miscPatterns numberSystem="vaii">
 			<alias source="locale" path="../miscPatterns[@numberSystem='latn']"/>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="other">{0}?</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0}?</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">
@@ -4296,6 +4375,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<unit type="length-mile-scandinavian">
 				<displayName>smi</displayName>
 				<unitPattern count="other">{0} smi</unitPattern>
+			</unit>
+			<unit type="length-point">
+				<displayName>pt</displayName>
+				<unitPattern count="other">{0} pt</unitPattern>
 			</unit>
 			<unit type="light-lux">
 				<displayName>lx</displayName>

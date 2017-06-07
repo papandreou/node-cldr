@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12944 $"/>
+		<version number="$Revision: 13260 $"/>
 		<language type="uz"/>
 	</identity>
 	<localeDisplayNames>
@@ -561,8 +561,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Kyurasao</territory>
 			<territory type="CX">Rojdestvo oroli</territory>
 			<territory type="CY">Kipr</territory>
-			<territory type="CZ">Chexiya Respublikasi</territory>
-			<territory type="CZ" alt="variant">Chexiya</territory>
+			<territory type="CZ">Chexiya</territory>
+			<territory type="CZ" alt="variant">Chexiya Respublikasi</territory>
 			<territory type="DE">Germaniya</territory>
 			<territory type="DG">Diyego-Garsiya</territory>
 			<territory type="DJ">Jibuti</territory>
@@ -5167,9 +5167,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>Peru yangi soli</displayName>
-				<displayName count="one">Peru yangi soli</displayName>
-				<displayName count="other">Peru yangi soli</displayName>
+				<displayName>Peru soli</displayName>
+				<displayName count="one">Peru soli</displayName>
+				<displayName count="other">Peru soli</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -5504,6 +5504,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">Savatingizda {0}X bor. Uni sotib olasizmi?</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">Savatingizda {0}X bor. Ularni sotib olasizmi?</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0}chi chorraxada oʼngga buriling.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

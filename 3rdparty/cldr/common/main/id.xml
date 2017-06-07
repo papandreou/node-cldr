@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13259 $"/>
 		<language type="id"/>
 	</identity>
 	<localeDisplayNames>
@@ -824,8 +824,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Curaçao</territory>
 			<territory type="CX">Pulau Christmas</territory>
 			<territory type="CY">Siprus</territory>
-			<territory type="CZ">Republik Cheska</territory>
-			<territory type="CZ" alt="variant">Cheska</territory>
+			<territory type="CZ">Cheska</territory>
+			<territory type="CZ" alt="variant">Republik Cheska</territory>
 			<territory type="DE">Jerman</territory>
 			<territory type="DG">Diego Garcia</territory>
 			<territory type="DJ">Jibuti</territory>
@@ -1260,7 +1260,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s t u v w x y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[å]</exemplarCharacters>
 		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[‐ – — , ; \: ! ? . … ' ‘ ’ “ ” ( ) \[ \] /]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ “ ” ( ) \[ \] /]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -3742,6 +3742,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>Santa Isabel</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>Waktu Universal Terkoordinasi</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Tidak Dikenal</exemplarCity>
@@ -7058,8 +7063,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PEI</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>Nuevo Sol Peru</displayName>
-				<displayName count="other">Nuevo Sol Peru</displayName>
+				<displayName>Sol Peru</displayName>
+				<displayName count="other">Sol Peru</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
@@ -7568,6 +7573,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">⩾{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="other">{0} hari</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Ambil belokan kanan ke-{0}.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

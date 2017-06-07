@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13050 $"/>
+		<version number="$Revision: 13262 $"/>
 		<language type="en"/>
 		<territory type="AU"/>
 	</identity>
@@ -16,9 +16,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="en_US">United States English</language>
 			<language type="ro_MD">Moldovan</language>
 		</languages>
-		<territories>
-			<territory type="CZ" alt="variant" draft="provisional">CZ</territory>
-		</territories>
 		<types>
 			<type key="calendar" type="dangi">Korean Calendar</type>
 			<type key="calendar" type="ethiopic">Ethiopian Calendar</type>
@@ -510,12 +507,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} degree</unitPattern>
 				<unitPattern count="other">{0} degrees</unitPattern>
 			</unit>
-			<coordinateUnit>
-				<coordinateUnitPattern type="east">{0} east</coordinateUnitPattern>
-				<coordinateUnitPattern type="north">{0} north</coordinateUnitPattern>
-				<coordinateUnitPattern type="south">{0} south</coordinateUnitPattern>
-				<coordinateUnitPattern type="west">{0} west</coordinateUnitPattern>
-			</coordinateUnit>
 		</unitLength>
 		<unitLength type="short">
 			<unit type="angle-degree">

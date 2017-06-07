@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="mr"/>
 	</identity>
 	<localeDisplayNames>
@@ -765,8 +765,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">क्युरासाओ</territory>
 			<territory type="CX">ख्रिसमस बेट</territory>
 			<territory type="CY">सायप्रस</territory>
-			<territory type="CZ">झेक प्रजासत्ताक</territory>
-			<territory type="CZ" alt="variant">झेकिया</territory>
+			<territory type="CZ">झेकिया</territory>
+			<territory type="CZ" alt="variant">झेक प्रजासत्ताक</territory>
 			<territory type="DE">जर्मनी</territory>
 			<territory type="DG">दिएगो गार्सिया</territory>
 			<territory type="DJ">जिबौटी</territory>
@@ -1121,7 +1121,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[\u093C ॐ \u0902 \u0901 ः अ आ इ ई उ ऊ ऋ ऌ ऍ ए ऐ ऑ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स ह ळ ऽ ा ि ी \u0941 \u0942 \u0943 \u0944 \u0945 \u0947 \u0948 ॉ ो ौ \u094D]</exemplarCharacters>
+		<exemplarCharacters>[{\u0931} \u093C ॐ \u0902 \u0901 ः अ आ इ ई उ ऊ ऋ ऌ ऍ ए ऐ ऑ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स ह ळ ऽ ा ि ी \u0941 \u0942 \u0943 \u0944 \u0945 \u0947 \u0948 ॉ ो ौ \u094D]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[\u200C\u200D]</exemplarCharacters>
 		<exemplarCharacters type="index">[\u200D ॐ \u0902 ः अ आ इ ई उ ऊ ऋ ऌ ए ऐ ऑ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स ह ळ ऽ \u0945 \u094D]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] @ * / \&amp; # ′ ″]</exemplarCharacters>
@@ -5567,9 +5567,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>PAB</symbol>
 			</currency>
 			<currency type="PEN">
-				<displayName>पेरुवियन नुइव्हो सोल</displayName>
-				<displayName count="one">पेरुवियन नुइव्हो सोल</displayName>
-				<displayName count="other">पेरुवियन नुइव्हो सोल्स</displayName>
+				<displayName>पेरुवियन सोल</displayName>
+				<displayName count="one">पेरुवियन सोल</displayName>
+				<displayName count="other">पेरुवियन सोल्स</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PGK">
@@ -5907,6 +5907,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">{0} घर</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} घरे</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="few">{0}थे उजवे वळण घ्या.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="one">{0}ले उजवे वळण घ्या.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">{0}वे उजवे वळण घ्या.</ordinalMinimalPairs>
+			<ordinalMinimalPairs ordinal="two">{0}रे उजवे वळण घ्या.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

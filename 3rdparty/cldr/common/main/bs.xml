@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2016 Unicode, Inc.
+<!-- Copyright © 1991-2017 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 12879 $"/>
+		<version number="$Revision: 13186 $"/>
 		<language type="bs"/>
 	</identity>
 	<localeDisplayNames>
@@ -800,8 +800,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="CW">Kurasao</territory>
 			<territory type="CX">Božićna Ostrva</territory>
 			<territory type="CY">Kipar</territory>
-			<territory type="CZ">Češka Republika</territory>
-			<territory type="CZ" alt="variant">Češka</territory>
+			<territory type="CZ">Češka</territory>
+			<territory type="CZ" alt="variant">Češka Republika</territory>
 			<territory type="DE">Njemačka</territory>
 			<territory type="DG">Dijego Garsija</territory>
 			<territory type="DJ">Džibuti</territory>
@@ -6522,10 +6522,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="other">peruanska inta</displayName>
 			</currency>
 			<currency type="PEN">
-				<displayName>Peruanski novi sol</displayName>
-				<displayName count="one">peruanski novi sol</displayName>
-				<displayName count="few">peruanska nova sola</displayName>
-				<displayName count="other">peruanskih novih sola</displayName>
+				<displayName>Peruanski sol</displayName>
+				<displayName count="one">peruanski sol</displayName>
+				<displayName count="few">peruanska sola</displayName>
+				<displayName count="other">peruanskih sola</displayName>
 				<symbol>PEN</symbol>
 			</currency>
 			<currency type="PES">
@@ -7216,6 +7216,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0} – {1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one">za {0} mjesec</pluralMinimalPairs>
+			<pluralMinimalPairs count="few">za {0} mjeseca</pluralMinimalPairs>
+			<pluralMinimalPairs count="many">za {0} mjeseci</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">za {0} mjeseci</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other">Skrenite na {0}. križanju desno.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">
