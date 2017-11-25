@@ -4,8 +4,8 @@ var expect = require('unexpected'),
 describe('extractListPatterns', function () {
     it('should extract the British English list patterns correctly', function () {
         var britishListPatterns = cldr.extractListPatterns('en_GB');
-        expect(britishListPatterns, 'to only have keys', ['default', 'unit', 'unitNarrow', 'unitShort', 'standardShort']);
-        expect(britishListPatterns.default, 'to equal', {
+        expect(britishListPatterns, 'to have keys', ['default', 'unit', 'unitNarrow', 'unitShort', 'standardShort']);
+        expect(britishListPatterns.default, 'to satisfy', {
             2: '{0} and {1}',
             start: '{0}, {1}',
             middle: '{0}, {1}',
@@ -15,8 +15,8 @@ describe('extractListPatterns', function () {
 
     it('should extract the American English list patterns correctly', function () {
         var britishListPatterns = cldr.extractListPatterns('en_US');
-        expect(britishListPatterns, 'to only have keys', ['default', 'unit', 'unitNarrow', 'unitShort']);
-        expect(britishListPatterns.default, 'to equal', {
+        expect(britishListPatterns, 'to have keys', ['default', 'unit', 'unitNarrow', 'unitShort']);
+        expect(britishListPatterns.default, 'to satisfy', {
             2: '{0} and {1}',
             start: '{0}, {1}',
             middle: '{0}, {1}',

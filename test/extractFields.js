@@ -5,7 +5,7 @@ describe('extractFields', function () {
     it('should extract the British English fields correctly', function () {
         var britishFields = cldr.extractFields('en_GB');
 
-        expect(britishFields, 'to only have keys', [
+        expect(britishFields, 'to have keys', [
             'day',
             'day-short',
             'dayOfYear',

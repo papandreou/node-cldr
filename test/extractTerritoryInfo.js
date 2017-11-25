@@ -6,16 +6,16 @@ describe('extractTerritoryInfo', function () {
         expect(cldr.extractTerritoryInfo(), 'to satisfy', {
             DE: {
                 id: 'DE',
-                gdp: 3979000000000,
-                literacyPercent: 99,
-                population: 80722800,
+                gdp: expect.it('to be a number').and('to be greater than', 2000000000000),
+                literacyPercent: expect.it('to be a number').and('to be greater than', 95),
+                population: expect.it('to be a number').and('to be greater than', 70000000),
                 languages: expect.it('to have an item exhaustively satisfying', {
                     id: 'de',
-                    populationPercent: 91,
+                    populationPercent: expect.it('to be a number'),
                     officialStatus: 'official'
                 }).and('to have an item exhaustively satisfying', {
                     id: 'fr',
-                    populationPercent: 18
+                    populationPercent: expect.it('to be a number')
                 })
             }
         });
