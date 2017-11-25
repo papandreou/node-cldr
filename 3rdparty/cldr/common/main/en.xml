@@ -4,10 +4,12 @@
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+
+Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/ for derived annotations.
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13259 $"/>
+		<version number="$Revision: 13744 $"/>
 		<language type="en"/>
 	</identity>
 	<localeDisplayNames>
@@ -105,6 +107,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="car">Carib</language>
 			<language type="cay">Cayuga</language>
 			<language type="cch">Atsam</language>
+			<language type="ccp">Chakma</language>
 			<language type="ce">Chechen</language>
 			<language type="ceb">Cebuano</language>
 			<language type="cgg">Chiga</language>
@@ -340,6 +343,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="ln">Lingala</language>
 			<language type="lo">Lao</language>
 			<language type="lol">Mongo</language>
+			<language type="lou">Louisiana Creole</language>
 			<language type="loz">Lozi</language>
 			<language type="lrc">Northern Luri</language>
 			<language type="lt">Lithuanian</language>
@@ -686,6 +690,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<script type="Geok">Georgian Khutsuri</script>
 			<script type="Geor">Georgian</script>
 			<script type="Glag">Glagolitic</script>
+			<script type="Gonm">Masaram Gondi</script>
 			<script type="Goth">Gothic</script>
 			<script type="Gran">Grantha</script>
 			<script type="Grek">Greek</script>
@@ -786,6 +791,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<script type="Sind">Khudawadi</script>
 			<script type="Sinh">Sinhala</script>
 			<script type="Sora">Sora Sompeng</script>
+			<script type="Soyo">Soyombo</script>
 			<script type="Sund">Sundanese</script>
 			<script type="Sylo">Syloti Nagri</script>
 			<script type="Syrc">Syriac</script>
@@ -816,6 +822,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<script type="Xsux">Sumero-Akkadian Cuneiform</script>
 			<script type="Xsux" alt="short">S-A Cuneiform</script>
 			<script type="Yiii">Yi</script>
+			<script type="Zanb">Zanabazar Square</script>
 			<script type="Zinh">Inherited</script>
 			<script type="Zmth">Mathematical Notation</script>
 			<script type="Zsye">Emoji</script>
@@ -855,6 +862,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="151">Eastern Europe</territory>
 			<territory type="154">Northern Europe</territory>
 			<territory type="155">Western Europe</territory>
+			<territory type="202">Sub-Saharan Africa</territory>
 			<territory type="419">Latin America</territory>
 			<territory type="AC">Ascension Island</territory>
 			<territory type="AD">Andorra</territory>
@@ -1399,6 +1407,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<type key="numbers" type="finance">Financial Numerals</type>
 			<type key="numbers" type="fullwide">Full-Width Digits</type>
 			<type key="numbers" type="geor">Georgian Numerals</type>
+			<type key="numbers" type="gonm">Masaram Gondi digits</type>
 			<type key="numbers" type="grek">Greek Numerals</type>
 			<type key="numbers" type="greklow">Greek Lowercase Numerals</type>
 			<type key="numbers" type="gujr">Gujarati Digits</type>
@@ -1505,6 +1514,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s t u v w x y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ö ø ō œ ú ù ŭ û ü ū ÿ]</exemplarCharacters>
 		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="numbers">[\- , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 	</characters>
 	<delimiters>
@@ -1619,8 +1629,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
+						<dateFormatItem id="Bh">h B</dateFormatItem>
+						<dateFormatItem id="Bhm">h:mm B</dateFormatItem>
+						<dateFormatItem id="Bhms">h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="E">ccc</dateFormatItem>
+						<dateFormatItem id="EBhm">E h:mm B</dateFormatItem>
+						<dateFormatItem id="EBhms">E h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="Ed">d E</dateFormatItem>
 						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
 						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
@@ -1803,8 +1818,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
+						<dateFormatItem id="Bh">h B</dateFormatItem>
+						<dateFormatItem id="Bhm">h:mm B</dateFormatItem>
+						<dateFormatItem id="Bhms">h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="E">ccc</dateFormatItem>
+						<dateFormatItem id="EBhm">E h:mm B</dateFormatItem>
+						<dateFormatItem id="EBhms">E h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="Ed">d E</dateFormatItem>
 						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
 						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
@@ -2209,8 +2229,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
+						<dateFormatItem id="Bh">h B</dateFormatItem>
+						<dateFormatItem id="Bhm">h:mm B</dateFormatItem>
+						<dateFormatItem id="Bhms">h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="E">ccc</dateFormatItem>
+						<dateFormatItem id="EBhm">E h:mm B</dateFormatItem>
+						<dateFormatItem id="EBhms">E h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="Ed">d E</dateFormatItem>
 						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
 						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
@@ -2250,8 +2275,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
-						<dateFormatItem id="yw" count="one">'week' w 'of' y</dateFormatItem>
-						<dateFormatItem id="yw" count="other">'week' w 'of' y</dateFormatItem>
+						<dateFormatItem id="yw" count="one">'week' w 'of' Y</dateFormatItem>
+						<dateFormatItem id="yw" count="other">'week' w 'of' Y</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Day">{0} ({2}: {1})</appendItem>
@@ -3053,6 +3078,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<regionFormat type="daylight">{0} Daylight Time</regionFormat>
 			<regionFormat type="standard">{0} Standard Time</regionFormat>
 			<fallbackFormat>{1} ({0})</fallbackFormat>
+			<zone type="Pacific/Honolulu">
+				<short>
+					<generic>HST</generic>
+					<standard>HST</standard>
+					<daylight>HDT</daylight>
+				</short>
+			</zone>
 			<zone type="Etc/UTC">
 				<long>
 					<standard>Coordinated Universal Time</standard>
@@ -3091,13 +3123,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</zone>
 			<zone type="Europe/Uzhgorod">
 				<exemplarCity>Uzhhorod</exemplarCity>
-			</zone>
-			<zone type="Pacific/Honolulu">
-				<short>
-					<generic>HST</generic>
-					<standard>HST</standard>
-					<daylight>HDT</daylight>
-				</short>
 			</zone>
 			<zone type="Asia/Saigon">
 				<exemplarCity>Ho Chi Minh City</exemplarCity>
@@ -3683,7 +3708,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</metazone>
 			<metazone type="Kyrgystan">
 				<long>
-					<standard>Kyrgystan Time</standard>
+					<standard>Kyrgyzstan Time</standard>
 				</long>
 			</metazone>
 			<metazone type="Lanka">
@@ -3770,9 +3795,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</metazone>
 			<metazone type="Mongolia">
 				<long>
-					<generic>Ulan Bator Time</generic>
-					<standard>Ulan Bator Standard Time</standard>
-					<daylight>Ulan Bator Summer Time</daylight>
+					<generic>Ulaanbaatar Time</generic>
+					<standard>Ulaanbaatar Standard Time</standard>
+					<daylight>Ulaanbaatar Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Moscow">
@@ -4561,6 +4586,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="one">Chilean peso</displayName>
 				<displayName count="other">Chilean pesos</displayName>
 			</currency>
+			<currency type="CNH">
+				<displayName>Chinese Yuan (offshore)</displayName>
+				<displayName count="one">Chinese yuan (offshore)</displayName>
+				<displayName count="other">Chinese yuan (offshore)</displayName>
+			</currency>
 			<currency type="CNX">
 				<displayName>Chinese People’s Bank Dollar</displayName>
 				<displayName count="one">Chinese People’s Bank dollar</displayName>
@@ -5223,9 +5253,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="other">Papua New Guinean kina</displayName>
 			</currency>
 			<currency type="PHP">
-				<displayName>Philippine Peso</displayName>
-				<displayName count="one">Philippine peso</displayName>
-				<displayName count="other">Philippine pesos</displayName>
+				<displayName>Philippine Piso</displayName>
+				<displayName count="one">Philippine piso</displayName>
+				<displayName count="other">Philippine pisos</displayName>
 			</currency>
 			<currency type="PKR">
 				<displayName>Pakistani Rupee</displayName>
@@ -5376,6 +5406,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>São Tomé &amp; Príncipe Dobra</displayName>
 				<displayName count="one">São Tomé &amp; Príncipe dobra</displayName>
 				<displayName count="other">São Tomé &amp; Príncipe dobras</displayName>
+			</currency>
+			<currency type="STN">
+				<displayName>São Tomé &amp; Príncipe Dobra (2018)</displayName>
+				<displayName count="one">São Tomé &amp; Príncipe dobra (2018)</displayName>
+				<displayName count="other">São Tomé &amp; Príncipe dobras (2018)</displayName>
 			</currency>
 			<currency type="SUR">
 				<displayName>Soviet Rouble</displayName>
@@ -7306,8 +7341,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="digital-byte">
 				<displayName>byte</displayName>
-				<unitPattern count="one">{0}byte</unitPattern>
-				<unitPattern count="other">{0}byte</unitPattern>
+				<unitPattern count="one">{0}B</unitPattern>
+				<unitPattern count="other">{0}B</unitPattern>
 			</unit>
 			<unit type="digital-bit">
 				<displayName>bit</displayName>
@@ -7828,6 +7863,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<listPatternPart type="middle">{0}, {1}</listPatternPart>
 			<listPatternPart type="end">{0}, and {1}</listPatternPart>
 			<listPatternPart type="2">{0} and {1}</listPatternPart>
+		</listPattern>
+		<listPattern type="or">
+			<listPatternPart type="start">{0}, {1}</listPatternPart>
+			<listPatternPart type="middle">{0}, {1}</listPatternPart>
+			<listPatternPart type="end">{0}, or {1}</listPatternPart>
+			<listPatternPart type="2">{0} or {1}</listPatternPart>
 		</listPattern>
 		<listPattern type="unit">
 			<listPatternPart type="start">{0}, {1}</listPatternPart>

@@ -6,7 +6,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 For terms of use, see http://www.unicode.org/copyright.html
 -->
 <supplementalData>
-	<version number="$Revision: 13231 $"/>
+	<version number="$Revision: 13664 $"/>
 	<transforms>
 		<transform source="Zawgyi" target="my" direction="forward" alias="my-t-my-s0-zawgyi">
 			<tRule><![CDATA[
@@ -264,6 +264,7 @@ $zmedialra → \u103C ;
 \u102F \u103A → \u102F;
 \u102D \u102E → \u102E;
 \u1036 \u1036+ → \u1036;
+\u103e \u103e+ → \u103e; # http://unicode.org/cldr/trac/ticket/10386
 
 # Remove space directly before diacritics.
 [:WSpace:] ([\u102b-\u1032\u1036-\u103e]) → $1;

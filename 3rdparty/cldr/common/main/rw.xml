@@ -7,7 +7,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13133 $"/>
+		<version number="$Revision: 13705 $"/>
 		<language type="rw"/>
 	</identity>
 	<localeDisplayNames>
@@ -67,7 +67,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="lo">Ikilawotiyani</language>
 			<language type="lt">Ikilituwaniya</language>
 			<language type="lv">Ikinyaletoviyani</language>
-			<language type="mk">Ikimasedoniyani</language>
+			<language type="mk">Ikimasedoniya</language>
 			<language type="ml">Ikimalayalami</language>
 			<language type="mn">Ikimongoli</language>
 			<language type="mr">Ikimarati</language>
@@ -119,13 +119,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="zu">Inyezulu</language>
 		</languages>
 		<territories>
-			<territory type="RW">Rwanda</territory>
-			<territory type="TO">Igitonga</territory>
+			<territory type="RW">U Rwanda</territory>
+			<territory type="TO">Tonga</territory>
 		</territories>
 	</localeDisplayNames>
 	<characters>
 		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s t u v w x y z]</exemplarCharacters>
 		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="numbers">[\- , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart>«</quotationStart>
@@ -516,7 +517,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMMM">y MMMM</dateFormatItem>
 						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
 						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
-						<dateFormatItem id="yw" count="other">'week' w 'of' y</dateFormatItem>
+						<dateFormatItem id="yw" count="other">'week' w 'of' Y</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Timezone">{0} {1}</appendItem>

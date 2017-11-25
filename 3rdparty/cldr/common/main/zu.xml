@@ -4,10 +4,12 @@
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+
+Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/ for derived annotations.
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13174 $"/>
+		<version number="$Revision: 13701 $"/>
 		<language type="zu"/>
 	</identity>
 	<localeDisplayNames>
@@ -587,6 +589,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="ES">i-Spain</territory>
 			<territory type="ET">i-Ethiopia</territory>
 			<territory type="EU">i-European Union</territory>
+			<territory type="EZ">EZ</territory>
 			<territory type="FI">i-Finland</territory>
 			<territory type="FJ">i-Fiji</territory>
 			<territory type="FK">i-Falkland Islands</territory>
@@ -778,7 +781,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="XK">i-Kosovo</territory>
 			<territory type="YE">i-Yemen</territory>
 			<territory type="YT">i-Mayotte</territory>
-			<territory type="ZA">i-South Africa</territory>
+			<territory type="ZA">iNingizimu Afrika</territory>
 			<territory type="ZM">i-Zambia</territory>
 			<territory type="ZW">iZimbabwe</territory>
 			<territory type="ZZ">iSifunda esingaziwa</territory>
@@ -915,15 +918,16 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<measurementSystemName type="US">i-US</measurementSystemName>
 		</measurementSystemNames>
 		<codePatterns>
-			<codePattern type="language">{0}</codePattern>
-			<codePattern type="script">{0}</codePattern>
-			<codePattern type="territory">{0}</codePattern>
+			<codePattern type="language">Ulimi: {0}</codePattern>
+			<codePattern type="script">Umbhalo: {0}</codePattern>
+			<codePattern type="territory">Isiyingi: {0}</codePattern>
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
 		<exemplarCharacters>[a b {bh} c {ch} d {dl} {dy} e f g {gc} {gq} {gx} h {hh} {hl} i j k {kh} {kl} {kp} l m n {nc} {ngc} {ngq} {ngx} {nhl} {nk} {nkc} {nkq} {nkx} {nq} {ntsh} {nx} {ny} o p {ph} q {qh} r {rh} s {sh} t {th} {tl} {ts} {tsh} u v w x {xh} y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ö ø ō œ ú ù ŭ û ü ū ÿ]</exemplarCharacters>
 		<exemplarCharacters type="index" draft="unconfirmed">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="numbers">[\- , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -931,6 +935,16 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<ellipsis type="word-initial">… {0}</ellipsis>
 		<ellipsis type="word-medial">{0} … {1}</ellipsis>
 		<moreInformation>?</moreInformation>
+		<parseLenients scope="date" level="lenient">
+			<parseLenient sample="-" draft="provisional">[\--/]</parseLenient>
+			<parseLenient sample=":" draft="contributed">[\:∶]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="general" level="lenient">
+			<parseLenient sample="." draft="contributed">[.․。︒﹒．｡]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="number" level="lenient">
+			<parseLenient sample="+" draft="contributed">[+⁺₊➕﬩﹢＋]</parseLenient>
+		</parseLenients>
 	</characters>
 	<delimiters>
 		<quotationStart>“</quotationStart>
@@ -985,9 +999,18 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
+						<dateFormatItem id="Bh">h B</dateFormatItem>
+						<dateFormatItem id="Bhm">h:mm B</dateFormatItem>
+						<dateFormatItem id="Bhms">h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="E">ccc</dateFormatItem>
+						<dateFormatItem id="EBhm">E h:mm B</dateFormatItem>
+						<dateFormatItem id="EBhms">E h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="Ed">d E</dateFormatItem>
+						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
+						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
+						<dateFormatItem id="Ehms">E h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="EHms">E HH:mm:ss</dateFormatItem>
 						<dateFormatItem id="Gy">y G</dateFormatItem>
 						<dateFormatItem id="GyMMM">MMM y G</dateFormatItem>
 						<dateFormatItem id="GyMMMd">MMM d, y G</dateFormatItem>
@@ -1155,7 +1178,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 							<month type="12">D</month>
 						</monthWidth>
 						<monthWidth type="wide">
-							<month type="1">UMasingana</month>
+							<month type="1">Januwari</month>
 							<month type="2">Februwari</month>
 							<month type="3">Mashi</month>
 							<month type="4">Ephreli</month>
@@ -1375,8 +1398,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 							<dayPeriod type="night1">ebusuku</dayPeriod>
 						</dayPeriodWidth>
 						<dayPeriodWidth type="narrow">
-							<dayPeriod type="am">a</dayPeriod>
-							<dayPeriod type="pm">p</dayPeriod>
+							<dayPeriod type="am">AM</dayPeriod>
+							<dayPeriod type="pm">PM</dayPeriod>
 							<dayPeriod type="morning1">entathakusa</dayPeriod>
 							<dayPeriod type="morning2">ekuseni</dayPeriod>
 							<dayPeriod type="afternoon1">emini</dayPeriod>
@@ -1474,8 +1497,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
+						<dateFormatItem id="Bh">h B</dateFormatItem>
+						<dateFormatItem id="Bhm">h:mm B</dateFormatItem>
+						<dateFormatItem id="Bhms">h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="E">ccc</dateFormatItem>
+						<dateFormatItem id="EBhm">E h:mm B</dateFormatItem>
+						<dateFormatItem id="EBhms">E h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="Ed">d E</dateFormatItem>
 						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
 						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
@@ -1503,7 +1531,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="MMMEd">E, MMM d</dateFormatItem>
 						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
 						<dateFormatItem id="MMMMW" count="one">'week' W 'of' MMM</dateFormatItem>
-						<dateFormatItem id="MMMMW" count="other">'week' W 'of' MMM</dateFormatItem>
+						<dateFormatItem id="MMMMW" count="other">'week' W 'of' MMMM</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y</dateFormatItem>
 						<dateFormatItem id="yM">y-MM</dateFormatItem>
@@ -1515,8 +1543,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
-						<dateFormatItem id="yw" count="one">'week' w 'of' y</dateFormatItem>
-						<dateFormatItem id="yw" count="other">'week' w 'of' y</dateFormatItem>
+						<dateFormatItem id="yw" count="one">'week' w 'of' Y</dateFormatItem>
+						<dateFormatItem id="yw" count="other">'week' w 'of' Y</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Timezone">{0} {1}</appendItem>
@@ -1573,7 +1601,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 							<greatestDifference id="M">MMM – MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
-							<greatestDifference id="d">MMM d – d</greatestDifference>
+							<greatestDifference id="d">MMM d–d</greatestDifference>
 							<greatestDifference id="M">MMM d – MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
@@ -1621,6 +1649,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		</calendars>
 		<fields>
 			<field type="era">
+				<displayName>Isikhathi</displayName>
+			</field>
+			<field type="era-short">
+				<displayName>Isikhathi</displayName>
+			</field>
+			<field type="era-narrow">
 				<displayName>Isikhathi</displayName>
 			</field>
 			<field type="year">
@@ -1770,6 +1804,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 				<relativePeriod>evikini le-{0}</relativePeriod>
 			</field>
+			<field type="weekOfMonth">
+				<displayName>Iviki leNyanga</displayName>
+			</field>
+			<field type="weekOfMonth-short">
+				<displayName>Iviki leNyanga</displayName>
+			</field>
+			<field type="weekOfMonth-narrow">
+				<displayName>Iviki leNyanga</displayName>
+			</field>
 			<field type="day">
 				<displayName>Usuku</displayName>
 				<relative type="-2">usuku olwandulela olwayizolo</relative>
@@ -1808,8 +1851,32 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">{0} izinsuku ezedlule</relativeTimePattern>
 				</relativeTime>
 			</field>
+			<field type="dayOfYear">
+				<displayName>Day Of Year</displayName>
+			</field>
+			<field type="dayOfYear-short">
+				<displayName>usuku lonyaka</displayName>
+			</field>
+			<field type="dayOfYear-narrow">
+				<displayName>usuku lonyaka</displayName>
+			</field>
 			<field type="weekday">
 				<displayName>Usuku evikini</displayName>
+			</field>
+			<field type="weekday-short">
+				<displayName>Usuku evikini</displayName>
+			</field>
+			<field type="weekday-narrow">
+				<displayName>Usuku evikini</displayName>
+			</field>
+			<field type="weekdayOfMonth">
+				<displayName>usuku lwenyanga</displayName>
+			</field>
+			<field type="weekdayOfMonth-short">
+				<displayName>usuku lwenyanga</displayName>
+			</field>
+			<field type="weekdayOfMonth-narrow">
+				<displayName>usuku lwenyanga</displayName>
 			</field>
 			<field type="sun">
 				<relative type="-1">iSonto eledlule</relative>
@@ -2084,7 +2151,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">ngeMgqibelo engu-{0} edlule</relativeTimePattern>
 				</relativeTime>
 			</field>
+			<field type="dayperiod-short">
+				<displayName>AM/PM</displayName>
+			</field>
 			<field type="dayperiod">
+				<displayName>AM/PM</displayName>
+			</field>
+			<field type="dayperiod-narrow">
 				<displayName>AM/PM</displayName>
 			</field>
 			<field type="hour">
@@ -2107,7 +2180,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">{0} ihora eledlule</relativeTimePattern>
-					<relativeTimePattern count="other">{0} amahora edlule</relativeTimePattern>
+					<relativeTimePattern count="other">emahoreni angu-{0} edlule</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="hour-narrow">
@@ -2192,6 +2265,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="zone">
 				<displayName>Isikhathi sendawo</displayName>
 			</field>
+			<field type="zone-short">
+				<displayName>Isikhathi sendawo</displayName>
+			</field>
+			<field type="zone-narrow">
+				<displayName>Isikhathi sendawo</displayName>
+			</field>
 		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
@@ -2203,6 +2282,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>i-Santa Isabel</exemplarCity>
+			</zone>
+			<zone type="Pacific/Honolulu">
+				<exemplarCity>i-Honolulu</exemplarCity>
+			</zone>
+			<zone type="Etc/UTC">
+				<long>
+					<standard>isikhathi somhlaba esididiyelwe</standard>
+				</long>
 			</zone>
 			<zone type="Etc/Unknown">
 				<exemplarCity>idolobha elingaziwa</exemplarCity>
@@ -2600,6 +2687,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="Asia/Nicosia">
 				<exemplarCity>i-Nicosia</exemplarCity>
 			</zone>
+			<zone type="Asia/Famagusta">
+				<exemplarCity>Famagusta</exemplarCity>
+			</zone>
 			<zone type="Europe/Prague">
 				<exemplarCity>i-Prague</exemplarCity>
 			</zone>
@@ -2857,6 +2947,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</zone>
 			<zone type="Asia/Oral">
 				<exemplarCity>i-Oral</exemplarCity>
+			</zone>
+			<zone type="Asia/Atyrau">
+				<exemplarCity>Atyrau</exemplarCity>
 			</zone>
 			<zone type="Asia/Aqtobe">
 				<exemplarCity>i-Aqtobe</exemplarCity>
@@ -3332,9 +3425,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="Pacific/Midway">
 				<exemplarCity>i-Midway</exemplarCity>
 			</zone>
-			<zone type="Pacific/Johnston">
-				<exemplarCity>i-Johnston</exemplarCity>
-			</zone>
 			<zone type="Pacific/Wake">
 				<exemplarCity>i-Wake</exemplarCity>
 			</zone>
@@ -3344,8 +3434,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="America/Nome">
 				<exemplarCity>i-Nome</exemplarCity>
 			</zone>
-			<zone type="Pacific/Honolulu">
-				<exemplarCity>i-Honolulu</exemplarCity>
+			<zone type="Pacific/Johnston">
+				<exemplarCity>i-Johnston</exemplarCity>
 			</zone>
 			<zone type="America/Anchorage">
 				<exemplarCity>i-Anchorage</exemplarCity>
@@ -4481,7 +4571,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<pattern>¤#,##0.00</pattern>
 				</currencyFormat>
 				<currencyFormat type="accounting">
-					<pattern>¤#,##0.00;(¤#,##0.00)</pattern>
+					<pattern>¤#,##0.00</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
 			<currencyFormatLength type="short">
@@ -4711,6 +4801,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="other">i-Chilean Peso</displayName>
 				<symbol draft="contributed">CLP</symbol>
 				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="CNH">
+				<displayName>CNH</displayName>
+				<displayName count="one">CNH</displayName>
+				<displayName count="other">CNH</displayName>
 			</currency>
 			<currency type="CNY">
 				<displayName>i-Chinese Yuan</displayName>
@@ -5971,6 +6066,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} smi</unitPattern>
 				<unitPattern count="other">{0} smi</unitPattern>
 			</unit>
+			<unit type="length-point">
+				<displayName>pt</displayName>
+				<unitPattern count="one">{0} pt</unitPattern>
+				<unitPattern count="other">{0} pt</unitPattern>
+			</unit>
 			<unit type="light-lux">
 				<displayName>lux</displayName>
 				<unitPattern count="one">{0} i-lux</unitPattern>
@@ -6658,6 +6758,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} smi</unitPattern>
 				<unitPattern count="other">{0} smi</unitPattern>
 			</unit>
+			<unit type="length-point">
+				<displayName>pt</displayName>
+				<unitPattern count="one">{0} pt</unitPattern>
+				<unitPattern count="other">{0} pt</unitPattern>
+			</unit>
 			<unit type="light-lux">
 				<displayName>lux</displayName>
 				<unitPattern count="one">{0} lx</unitPattern>
@@ -7081,6 +7186,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<listPatternPart type="middle">{0}, {1}</listPatternPart>
 			<listPatternPart type="end">{0}, ne-{1}</listPatternPart>
 			<listPatternPart type="2">{0} ne-{1}</listPatternPart>
+		</listPattern>
+		<listPattern type="or">
+			<listPatternPart type="start">{0}, {1}</listPatternPart>
+			<listPatternPart type="middle">{0}, {1}</listPatternPart>
+			<listPatternPart type="end">{0}, or {1}</listPatternPart>
+			<listPatternPart type="2">{0} or {1}</listPatternPart>
 		</listPattern>
 		<listPattern type="standard-short">
 			<listPatternPart type="start">{0}, {1}</listPatternPart>

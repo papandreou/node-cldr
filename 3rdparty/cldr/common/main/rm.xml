@@ -7,7 +7,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13186 $"/>
+		<version number="$Revision: 13701 $"/>
 		<language type="rm"/>
 	</identity>
 	<localeDisplayNames>
@@ -648,7 +648,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="BM" draft="contributed">Bermudas</territory>
 			<territory type="BN" draft="contributed">Brunei</territory>
 			<territory type="BO" draft="contributed">Bolivia</territory>
-			<territory type="BR" draft="contributed">Brasila</territory>
+			<territory type="BR">Brasilia</territory>
 			<territory type="BS" draft="contributed">Bahamas</territory>
 			<territory type="BT" draft="contributed">Bhutan</territory>
 			<territory type="BV" draft="contributed">Insla Bouvet</territory>
@@ -713,7 +713,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="GW" draft="contributed">Guinea-Bissau</territory>
 			<territory type="GY" draft="contributed">Guyana</territory>
 			<territory type="HK" draft="contributed">Regiun d’administraziun speziala da Hongkong, China</territory>
-			<territory type="HM" draft="contributed">Inslas da Heard e da McDonlad</territory>
+			<territory type="HM">Inslas da Heard e da McDonald</territory>
 			<territory type="HN" draft="contributed">Honduras</territory>
 			<territory type="HR" draft="contributed">Croazia</territory>
 			<territory type="HT" draft="contributed">Haiti</territory>
@@ -856,8 +856,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="VA" draft="contributed">Citad dal Vatican</territory>
 			<territory type="VC" draft="contributed">Saint Vincent e las Grenadinas</territory>
 			<territory type="VE" draft="contributed">Venezuela</territory>
-			<territory type="VG" draft="contributed">Inslas Verginas Britannicas</territory>
-			<territory type="VI" draft="contributed">Inslas Verginas Americanas</territory>
+			<territory type="VG">Inslas Virginas Britannicas</territory>
+			<territory type="VI">Inslas Virginas Americanas</territory>
 			<territory type="VN" draft="contributed">Vietnam</territory>
 			<territory type="VU" draft="contributed">Vanuatu</territory>
 			<territory type="WF" draft="contributed">Wallis e Futuna</territory>
@@ -947,6 +947,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<exemplarCharacters draft="contributed">[a à b c d e é è f g h i ì j k l m n o ò p q r s t u ù v w x y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary" draft="contributed">[á ă â å ä ā æ ç ĕ ê ë ē í ĭ î ï ī ñ ó ŏ ô ö ø ō œ ú ŭ û ü ū ÿ]</exemplarCharacters>
 		<exemplarCharacters type="index" draft="contributed">[A À B C D E É È F G H I Ì J K L M N O Ò P Q R S T U Ù V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="numbers">[. ’ % ‰ + − 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart draft="contributed">«</quotationStart>
@@ -1463,8 +1464,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMMM">y MMMM</dateFormatItem>
 						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
 						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
-						<dateFormatItem id="yw" count="one">'week' w 'of' y</dateFormatItem>
-						<dateFormatItem id="yw" count="other">'week' w 'of' y</dateFormatItem>
+						<dateFormatItem id="yw" count="one">'week' w 'of' Y</dateFormatItem>
+						<dateFormatItem id="yw" count="other">'week' w 'of' Y</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Timezone">{0} {1}</appendItem>

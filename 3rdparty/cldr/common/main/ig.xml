@@ -7,7 +7,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13133 $"/>
+		<version number="$Revision: 13701 $"/>
 		<language type="ig"/>
 	</identity>
 	<localeDisplayNames>
@@ -65,12 +65,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="KM">Comorosu</territory>
 			<territory type="LY">Libyia</territory>
 			<territory type="MV">Maldivesa</territory>
-			<territory type="NG">Nigeria</territory>
+			<territory type="NG">Naịjịrịa</territory>
 		</territories>
 	</localeDisplayNames>
 	<characters>
 		<exemplarCharacters>[a b {ch} d e ẹ f g {gb} {gh} {gw} h i ị j k {kp} {kw} l m n ṅ {nw} {ny} o ọ p r s {sh} t u ụ v w y z]</exemplarCharacters>
 		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="numbers">[\- , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart>“</quotationStart>
@@ -497,7 +498,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
-						<dateFormatItem id="yw" count="other">'week' w 'of' y</dateFormatItem>
+						<dateFormatItem id="yw" count="other">'week' w 'of' Y</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Timezone">{0} {1}</appendItem>
@@ -645,6 +646,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<decimal>٫</decimal>
 			<group>٬</group>
 			<list>؛</list>
+			<percentSign>٪‏</percentSign>
+			<plusSign>‏+</plusSign>
+			<minusSign>‏-</minusSign>
 			<superscriptingExponent>×</superscriptingExponent>
 			<perMille>؉</perMille>
 			<infinity>∞</infinity>

@@ -7,7 +7,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13133 $"/>
+		<version number="$Revision: 13701 $"/>
 		<language type="se"/>
 	</identity>
 	<localeDisplayNames>
@@ -470,6 +470,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<exemplarCharacters>[a á b c č d đ e f g h i j k l m n ŋ o p r s š t ŧ u v z ž]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[à ç é è í ń ñ ó ò q ú w x y ü ø æ å ä ã ö]</exemplarCharacters>
 		<exemplarCharacters type="index" draft="contributed">[A Á B C Č D Đ E É F G H I J K L M N Ŋ O P Q R S Š T Ŧ U V W X Y Z Ž Ø Æ Å Ä Ö]</exemplarCharacters>
+		<exemplarCharacters type="numbers">[  , % ‰ + − 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
 		<ellipsis type="final" draft="unconfirmed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="unconfirmed">…{0}</ellipsis>
 		<ellipsis type="medial" draft="unconfirmed">{0}…{1}</ellipsis>
@@ -853,9 +854,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMMM">y MMMM</dateFormatItem>
 						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
 						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
-						<dateFormatItem id="yw" count="one">'week' w 'of' y</dateFormatItem>
-						<dateFormatItem id="yw" count="two">'week' w 'of' y</dateFormatItem>
-						<dateFormatItem id="yw" count="other">'week' w 'of' y</dateFormatItem>
+						<dateFormatItem id="yw" count="one">'week' w 'of' Y</dateFormatItem>
+						<dateFormatItem id="yw" count="two">'week' w 'of' Y</dateFormatItem>
+						<dateFormatItem id="yw" count="other">'week' w 'of' Y</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Timezone">{0} {1}</appendItem>

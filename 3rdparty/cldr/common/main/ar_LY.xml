@@ -7,7 +7,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13133 $"/>
+		<version number="$Revision: 13706 $"/>
 		<language type="ar"/>
 		<territory type="LY"/>
 	</identity>
@@ -29,6 +29,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="UY" draft="contributed">أوروغواي</territory>
 		</territories>
 	</localeDisplayNames>
+	<characters>
+		<exemplarCharacters type="numbers">[\u200E \- , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
+	</characters>
 	<dates>
 		<calendars>
 			<calendar type="gregorian">
@@ -42,26 +45,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 							<dayPeriod type="evening1">مساءً</dayPeriod>
 							<dayPeriod type="night1">منتصف الليل</dayPeriod>
 							<dayPeriod type="night2">ل</dayPeriod>
-						</dayPeriodWidth>
-					</dayPeriodContext>
-					<dayPeriodContext type="stand-alone">
-						<dayPeriodWidth type="abbreviated">
-							<dayPeriod type="morning1">فجرًا</dayPeriod>
-							<dayPeriod type="morning2">ص</dayPeriod>
-							<dayPeriod type="afternoon1">ظهرًا</dayPeriod>
-							<dayPeriod type="afternoon2">بعد الظهر</dayPeriod>
-							<dayPeriod type="evening1">مساءً</dayPeriod>
-							<dayPeriod type="night1">منتصف الليل</dayPeriod>
-							<dayPeriod type="night2">ليلاً</dayPeriod>
-						</dayPeriodWidth>
-						<dayPeriodWidth type="narrow">
-							<dayPeriod type="morning1">فجرًا</dayPeriod>
-							<dayPeriod type="morning2">صباحًا</dayPeriod>
-							<dayPeriod type="afternoon1">ظهرًا</dayPeriod>
-							<dayPeriod type="afternoon2">بعد الظهر</dayPeriod>
-							<dayPeriod type="evening1">مساءً</dayPeriod>
-							<dayPeriod type="night1">منتصف الليل</dayPeriod>
-							<dayPeriod type="night2">ليلاً</dayPeriod>
 						</dayPeriodWidth>
 					</dayPeriodContext>
 				</dayPeriods>

@@ -4,10 +4,12 @@
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+
+Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/ for derived annotations.
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13259 $"/>
+		<version number="$Revision: 13701 $"/>
 		<language type="ka"/>
 	</identity>
 	<localeDisplayNames>
@@ -88,7 +90,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="chp">ჩიპევიანი</language>
 			<language type="chr">ჩეროკი</language>
 			<language type="chy">ჩეიენი</language>
-			<language type="ckb">სორანი ქურთული</language>
+			<language type="ckb">ცენტრალური ქურთული</language>
 			<language type="co">კორსიკული</language>
 			<language type="cop">კოპტური</language>
 			<language type="cr">კრი</language>
@@ -772,6 +774,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="ES">ესპანეთი</territory>
 			<territory type="ET">ეთიოპია</territory>
 			<territory type="EU">ევროკავშირი</territory>
+			<territory type="EZ">ევროზონა</territory>
 			<territory type="FI">ფინეთი</territory>
 			<territory type="FJ">ფიჯი</territory>
 			<territory type="FK">ფოლკლენდის კუნძულები</territory>
@@ -933,6 +936,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="TJ">ტაჯიკეთი</territory>
 			<territory type="TK">ტოკელაუ</territory>
 			<territory type="TL">ტიმორ-ლესტე</territory>
+			<territory type="TL" alt="variant">აღმოსავლეთ ტიმორი</territory>
 			<territory type="TM">თურქმენეთი</territory>
 			<territory type="TN">ტუნისი</territory>
 			<territory type="TO">ტონგა</territory>
@@ -1150,6 +1154,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<exemplarCharacters>[ა ბ გ დ ე ვ ზ თ ი კ ლ მ ნ ო პ ჟ რ ს ტ უ ფ ქ ღ ყ შ ჩ ც ძ წ ჭ ხ ჯ ჰ]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[ⴀ ⴁ ⴂ ⴃ ⴄ ⴅ ⴆ ჱ ⴡ ⴇ ⴈ ⴉ ⴊ ⴋ ⴌ ჲ ⴢ ⴍ ⴎ ⴏ ⴐ ⴑ ⴒ ჳ ⴣ ⴓ ⴔ ⴕ ⴖ ⴗ ⴘ ⴙ ⴚ ⴛ ⴜ ⴝ ⴞ ჴ ⴤ ⴟ ⴠ ჵ ⴥ ჶ ჷ ჸ ჹ ჺ]</exemplarCharacters>
 		<exemplarCharacters type="index">[ა ბ გ დ ე ვ ზ თ ი კ ლ მ ნ ო პ ჟ რ ს ტ უ ფ ქ ღ ყ შ ჩ ც ძ წ ჭ ხ ჯ ჰ]</exemplarCharacters>
+		<exemplarCharacters type="numbers">[  \- , % ‰ + 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ჻ ' ‘ ‚ “ „ « » ( ) \[ \] \{ \} § @ * / \&amp; # † ‡ ′ ″ №]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
@@ -1212,9 +1217,18 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
+						<dateFormatItem id="Bh">h B</dateFormatItem>
+						<dateFormatItem id="Bhm">h:mm B</dateFormatItem>
+						<dateFormatItem id="Bhms">h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="E">ccc</dateFormatItem>
+						<dateFormatItem id="EBhm">E h:mm B</dateFormatItem>
+						<dateFormatItem id="EBhms">E h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="Ed">d E</dateFormatItem>
+						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
+						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
+						<dateFormatItem id="Ehms">E h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="EHms">E HH:mm:ss</dateFormatItem>
 						<dateFormatItem id="Gy">y G</dateFormatItem>
 						<dateFormatItem id="GyMMM">MMM, y G</dateFormatItem>
 						<dateFormatItem id="GyMMMd">d MMM, y G</dateFormatItem>
@@ -1699,8 +1713,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
+						<dateFormatItem id="Bh">h B</dateFormatItem>
+						<dateFormatItem id="Bhm">h:mm B</dateFormatItem>
+						<dateFormatItem id="Bhms">h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="E">ccc</dateFormatItem>
+						<dateFormatItem id="EBhm">E h:mm B</dateFormatItem>
+						<dateFormatItem id="EBhms">E h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="Ed">d E</dateFormatItem>
 						<dateFormatItem id="Ehm">E, h:mm a</dateFormatItem>
 						<dateFormatItem id="EHm">E, HH:mm</dateFormatItem>
@@ -1740,8 +1759,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMMM">MMMM, y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ, y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ, y</dateFormatItem>
-						<dateFormatItem id="yw" count="one">კვირა w, y</dateFormatItem>
-						<dateFormatItem id="yw" count="other">კვირა w, y</dateFormatItem>
+						<dateFormatItem id="yw" count="one">კვირა w, Y</dateFormatItem>
+						<dateFormatItem id="yw" count="other">კვირა w, Y</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Timezone">{0} {1}</appendItem>
@@ -2119,6 +2138,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="era">
 				<displayName>ეპოქა</displayName>
 			</field>
+			<field type="era-short">
+				<displayName>ეპოქა</displayName>
+			</field>
+			<field type="era-narrow">
+				<displayName>ეპოქა</displayName>
+			</field>
 			<field type="year">
 				<displayName>წელი</displayName>
 				<relative type="-1">გასულ წელს</relative>
@@ -2284,6 +2309,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 				<relativePeriod>{0}-ის კვირაში</relativePeriod>
 			</field>
+			<field type="weekOfMonth">
+				<displayName>თვის კვირა</displayName>
+			</field>
+			<field type="weekOfMonth-short">
+				<displayName draft="provisional">თვ. კვირა</displayName>
+			</field>
+			<field type="weekOfMonth-narrow">
+				<displayName draft="provisional">თვ. კვირა</displayName>
+			</field>
 			<field type="day">
 				<displayName>დღე</displayName>
 				<relative type="-2">გუშინწინ</relative>
@@ -2332,8 +2366,32 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">{0} დღის წინ</relativeTimePattern>
 				</relativeTime>
 			</field>
+			<field type="dayOfYear">
+				<displayName>წლის დღე</displayName>
+			</field>
+			<field type="dayOfYear-short">
+				<displayName draft="provisional">წლ. დღე</displayName>
+			</field>
+			<field type="dayOfYear-narrow">
+				<displayName draft="provisional">წლ. დღე</displayName>
+			</field>
 			<field type="weekday">
 				<displayName>კვირის დღე</displayName>
+			</field>
+			<field type="weekday-short">
+				<displayName draft="provisional">კვ. დღე</displayName>
+			</field>
+			<field type="weekday-narrow">
+				<displayName draft="provisional">კვ. დღე</displayName>
+			</field>
+			<field type="weekdayOfMonth">
+				<displayName>კვირის დღე თვეში</displayName>
+			</field>
+			<field type="weekdayOfMonth-short">
+				<displayName draft="provisional">კვ. დღე თვეში</displayName>
+			</field>
+			<field type="weekdayOfMonth-narrow">
+				<displayName draft="provisional">კვ. დღე თვეში</displayName>
 			</field>
 			<field type="sun">
 				<relative type="-1">გასულ კვირას</relative>
@@ -2608,8 +2666,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">{0} შაბათის წინ</relativeTimePattern>
 				</relativeTime>
 			</field>
+			<field type="dayperiod-short">
+				<displayName draft="provisional">დღ. ნახევარი</displayName>
+			</field>
 			<field type="dayperiod">
 				<displayName>დღის ნახევარი</displayName>
+			</field>
+			<field type="dayperiod-narrow">
+				<displayName draft="provisional">დღ. ნახევარი</displayName>
 			</field>
 			<field type="hour">
 				<displayName>საათი</displayName>
@@ -2716,6 +2780,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="zone">
 				<displayName>დროის სარტყელი</displayName>
 			</field>
+			<field type="zone-short">
+				<displayName draft="provisional">დროის სარტყ.</displayName>
+			</field>
+			<field type="zone-narrow">
+				<displayName draft="provisional">დროის სარტყ.</displayName>
+			</field>
 		</fields>
 		<timeZoneNames>
 			<hourFormat>+HH:mm;-HH:mm</hourFormat>
@@ -2727,6 +2797,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<fallbackFormat>{1} ({0})</fallbackFormat>
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>სანტა ისაბელი</exemplarCity>
+			</zone>
+			<zone type="Pacific/Honolulu">
+				<exemplarCity>ჰონოლულუ</exemplarCity>
 			</zone>
 			<zone type="Etc/UTC">
 				<long>
@@ -3096,6 +3169,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="Pacific/Easter">
 				<exemplarCity>ისთერი</exemplarCity>
 			</zone>
+			<zone type="America/Punta_Arenas">
+				<exemplarCity>პუნტა-არენასი</exemplarCity>
+			</zone>
 			<zone type="America/Santiago">
 				<exemplarCity>სანტიაგო</exemplarCity>
 			</zone>
@@ -3128,6 +3204,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</zone>
 			<zone type="Asia/Nicosia">
 				<exemplarCity>ნიკოსია</exemplarCity>
+			</zone>
+			<zone type="Asia/Famagusta">
+				<exemplarCity>ფამაგუსტა</exemplarCity>
 			</zone>
 			<zone type="Europe/Prague">
 				<exemplarCity>პრაღა</exemplarCity>
@@ -3386,6 +3465,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</zone>
 			<zone type="Asia/Oral">
 				<exemplarCity>ორალი</exemplarCity>
+			</zone>
+			<zone type="Asia/Atyrau">
+				<exemplarCity>ატირაუ</exemplarCity>
 			</zone>
 			<zone type="Asia/Aqtobe">
 				<exemplarCity>აქტობე</exemplarCity>
@@ -3666,6 +3748,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="Europe/Volgograd">
 				<exemplarCity>ვოლგოგრადი</exemplarCity>
 			</zone>
+			<zone type="Europe/Saratov">
+				<exemplarCity>სარატოვი</exemplarCity>
+			</zone>
 			<zone type="Europe/Astrakhan">
 				<exemplarCity>ასტრახანი</exemplarCity>
 			</zone>
@@ -3861,9 +3946,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="Pacific/Midway">
 				<exemplarCity>მიდუეი</exemplarCity>
 			</zone>
-			<zone type="Pacific/Johnston">
-				<exemplarCity>ჯონსტონი</exemplarCity>
-			</zone>
 			<zone type="Pacific/Wake">
 				<exemplarCity>უეიკი</exemplarCity>
 			</zone>
@@ -3873,8 +3955,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="America/Nome">
 				<exemplarCity>ნომი</exemplarCity>
 			</zone>
-			<zone type="Pacific/Honolulu">
-				<exemplarCity>ჰონოლულუ</exemplarCity>
+			<zone type="Pacific/Johnston">
+				<exemplarCity>ჯონსტონი</exemplarCity>
 			</zone>
 			<zone type="America/Anchorage">
 				<exemplarCity>ენქორაჯი</exemplarCity>
@@ -4980,7 +5062,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<percentFormats numberSystem="latn">
 			<percentFormatLength>
 				<percentFormat>
-					<pattern>#,##0 %</pattern>
+					<pattern>#,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
@@ -5283,6 +5365,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="other">ჩილეს პესო</displayName>
 				<symbol>CLP</symbol>
 				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="CNH">
+				<displayName>ჩინური იუანი (ოფშორი)</displayName>
+				<displayName count="one">ჩინური იუანი (ოფშორი)</displayName>
+				<displayName count="other">ჩინური იუანი (ოფშორი)</displayName>
+				<symbol draft="contributed">CNH</symbol>
 			</currency>
 			<currency type="CNY">
 				<displayName>ჩინური იუანი</displayName>
@@ -6739,6 +6827,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} სკანდინავიური მილი</unitPattern>
 				<unitPattern count="other">{0} სკანდინავიური მილი</unitPattern>
 			</unit>
+			<unit type="length-point">
+				<displayName>პუნქტი</displayName>
+				<unitPattern count="one">{0} პუნქტი</unitPattern>
+				<unitPattern count="other">{0} პუნქტი</unitPattern>
+			</unit>
 			<unit type="light-lux">
 				<displayName>ლუქსი</displayName>
 				<unitPattern count="one">{0} ლუქსი</unitPattern>
@@ -7426,6 +7519,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} სკანდ. მილი</unitPattern>
 				<unitPattern count="other">{0} სკანდ. მილი</unitPattern>
 			</unit>
+			<unit type="length-point">
+				<displayName>პნქტ.</displayName>
+				<unitPattern count="one">{0} პნქტ.</unitPattern>
+				<unitPattern count="other">{0} პქნტ.</unitPattern>
+			</unit>
 			<unit type="light-lux">
 				<displayName>ლუქსი</displayName>
 				<unitPattern count="one">{0} ლუქსი</unitPattern>
@@ -7945,6 +8043,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<listPatternPart type="middle">{0}, {1}</listPatternPart>
 			<listPatternPart type="end">{0} და {1}</listPatternPart>
 			<listPatternPart type="2">{0} და {1}</listPatternPart>
+		</listPattern>
+		<listPattern type="or">
+			<listPatternPart type="start">{0}, {1}</listPatternPart>
+			<listPatternPart type="middle">{0}, {1}</listPatternPart>
+			<listPatternPart type="end">{0} ან {1}</listPatternPart>
+			<listPatternPart type="2">{0} ან {1}</listPatternPart>
 		</listPattern>
 		<listPattern type="standard-short">
 			<listPatternPart type="start">{0}, {1}</listPatternPart>

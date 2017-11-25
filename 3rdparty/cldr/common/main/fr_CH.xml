@@ -7,7 +7,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13248 $"/>
+		<version number="$Revision: 13706 $"/>
 		<language type="fr"/>
 		<territory type="CH"/>
 	</identity>
@@ -140,14 +140,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 							<dayPeriod type="evening1" draft="contributed">du soir</dayPeriod>
 							<dayPeriod type="night1" draft="contributed">du mat.</dayPeriod>
 						</dayPeriodWidth>
-						<dayPeriodWidth type="wide">
-							<dayPeriod type="midnight" draft="contributed">minuit</dayPeriod>
-							<dayPeriod type="noon" draft="contributed">midi</dayPeriod>
-							<dayPeriod type="morning1" draft="contributed">du matin</dayPeriod>
-							<dayPeriod type="afternoon1" draft="contributed">de l’après-midi</dayPeriod>
-							<dayPeriod type="evening1" draft="contributed">du soir</dayPeriod>
-							<dayPeriod type="night1" draft="contributed">du matin</dayPeriod>
-						</dayPeriodWidth>
 					</dayPeriodContext>
 					<dayPeriodContext type="stand-alone">
 						<dayPeriodWidth type="abbreviated">
@@ -225,5 +217,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
+		<currencyFormats numberSystem="latn">
+			<currencyFormatLength>
+				<currencyFormat type="standard">
+					<pattern draft="contributed">#,##0.00 ¤ ;-#,##0.00 ¤</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+		</currencyFormats>
 	</numbers>
 </ldml>

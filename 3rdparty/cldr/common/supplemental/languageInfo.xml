@@ -3,7 +3,7 @@
 <!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/) For terms 
 	of use, see http://www.unicode.org/copyright.html -->
 <supplementalData>
-	<version number="$Revision: 13235 $"/>
+	<version number="$Revision: 13628 $"/>
 	<languageMatching>
 		<languageMatches type="written">
 			<!-- Base Language Matches -->
@@ -333,6 +333,7 @@
 			<languageMatch desired="ar_*_$!maghreb"	supported="ar_*_$!maghreb"	distance="4"/>	<!-- ar; *; $!maghreb ⇒ ar; *; $!maghreb -->
 			<languageMatch desired="ar_*_*"	supported="ar_*_*"	distance="5"/>	<!-- ar; *; * ⇒ ar; *; * -->
 			<languageMatch desired="en_*_$enUS"	supported="en_*_$enUS"	distance="4"/>	<!-- en; *; $enUS ⇒ en; *; $enUS -->
+			<languageMatch desired="en_*_$!enUS"	supported="en_*_GB"	distance="3"/>	<!--  Make en_GB preferred... -->
 			<languageMatch desired="en_*_$!enUS"	supported="en_*_$!enUS"	distance="4"/>	<!-- en; *; $!enUS ⇒ en; *; $!enUS -->
 			<languageMatch desired="en_*_*"	supported="en_*_*"	distance="5"/>	<!-- en; *; * ⇒ en; *; * -->
 			<languageMatch desired="es_*_$americas"	supported="es_*_$americas"	distance="4"/>	<!-- es; *; $americas ⇒ es; *; $americas -->

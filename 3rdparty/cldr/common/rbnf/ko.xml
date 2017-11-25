@@ -7,7 +7,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
     <identity>
-        <version number="$Revision: 12722 $"/>
+        <version number="$Revision: 13484 $"/>
         <language type="ko"/>
     </identity>
     <rbnf>
@@ -264,6 +264,12 @@ For terms of use, see http://www.unicode.org/copyright.html
                 <rbnfrule value="0">=%%spellout-ordinal-native-smaller=;</rbnfrule>
                 <rbnfrule value="2">둘;</rbnfrule>
                 <rbnfrule value="3">=%%spellout-ordinal-native-smaller=;</rbnfrule>
+            </ruleset>
+        </rulesetGrouping>
+        <rulesetGrouping type="OrdinalRules">
+            <ruleset type="digits-ordinal">
+                <rbnfrule value="-x">−→→;</rbnfrule>
+                <rbnfrule value="0">=#,##0=번째;</rbnfrule>
             </ruleset>
         </rulesetGrouping>
     </rbnf>
