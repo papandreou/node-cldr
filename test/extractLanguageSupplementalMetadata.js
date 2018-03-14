@@ -10,12 +10,12 @@ describe('extractLanguageSupplementalMetadata', function () {
     });
     it('should return a reason', function () {
         expect(cldr.extractLanguageSupplementalMetadata(), 'to satisfy', {
-            no: { replacement: 'nb' },
+            no: { replacement: 'nb' }
         });
     });
     it('should return a replacement', function () {
         expect(cldr.extractLanguageSupplementalMetadata(), 'to satisfy', {
-            no: { reason: 'legacy' },
+            no: { reason: 'legacy' }
         });
     });
 });
