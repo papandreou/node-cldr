@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13733 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="yue"/>
 	</identity>
 	<localeDisplayNames>
@@ -3281,7 +3281,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</calendar>
 			<calendar type="japanese">
 				<eras>
-					<!-- per cldrbug 2835, accept provisional -->
 					<eraAbbr>
 						<era type="0">大化</era>
 						<era type="1">白雉</era>
@@ -3565,7 +3564,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
-						<!-- per cldrbug 2835, accept provisional with adjustments/additions -->
 						<dateFormatItem id="d">d日</dateFormatItem>
 						<dateFormatItem id="Ed">d日（E）</dateFormatItem>
 						<dateFormatItem id="Gy">Gy年</dateFormatItem>
@@ -5508,7 +5506,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="America/North_Dakota/Center">
 				<exemplarCity>北達科他州中心</exemplarCity>
 			</zone>
-			<!-- start zone translations added per ticket #2753 -->
 			<zone type="America/Chicago">
 				<exemplarCity>芝加哥</exemplarCity>
 			</zone>
@@ -5602,7 +5599,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="Africa/Harare">
 				<exemplarCity>哈拉雷</exemplarCity>
 			</zone>
-			<!-- end zone translations added per ticket #2753 -->
 			<metazone type="Acre">
 				<long>
 					<generic>艾克時間</generic>
@@ -6616,7 +6612,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</decimalFormatLength>
 			<decimalFormatLength type="long">
 				<decimalFormat>
-					<pattern type="1000" count="other">0</pattern>
+					<pattern type="1000" count="other">0千</pattern>
 					<pattern type="10000" count="other">0萬</pattern>
 					<pattern type="100000" count="other">00萬</pattern>
 					<pattern type="1000000" count="other">000萬</pattern>
@@ -6632,7 +6628,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</decimalFormatLength>
 			<decimalFormatLength type="short">
 				<decimalFormat>
-					<pattern type="1000" count="other">0</pattern>
+					<pattern type="1000" count="other">0千</pattern>
 					<pattern type="10000" count="other">0萬</pattern>
 					<pattern type="100000" count="other">00萬</pattern>
 					<pattern type="1000000" count="other">000萬</pattern>
@@ -6693,7 +6689,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</currencyFormatLength>
 			<currencyFormatLength type="short">
 				<currencyFormat type="standard">
-					<pattern type="1000" count="other">0</pattern>
+					<pattern type="1000" count="other">¤0千</pattern>
 					<pattern type="10000" count="other">¤0萬</pattern>
 					<pattern type="100000" count="other">¤00萬</pattern>
 					<pattern type="1000000" count="other">¤000萬</pattern>
@@ -7618,9 +7614,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>茅利塔尼亞烏吉亞 (1973–2017)</displayName>
+				<displayName count="other">茅利塔尼亞烏吉亞 (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>茅利塔尼亞烏吉亞</displayName>
 				<displayName count="other">茅利塔尼亞烏吉亞</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>馬爾他里拉</displayName>
@@ -7931,9 +7931,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>聖多美島和普林西比島多布拉 (1977–2017)</displayName>
+				<displayName count="other">聖多美島和普林西比島多布拉 (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>聖多美島和普林西比島多布拉</displayName>
 				<displayName count="other">聖多美島和普林西比島多布拉</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -10001,7 +10005,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<characterLabel type="sign_standard_symbols">標記/標準符號</characterLabel>
 		<characterLabel type="small_form_variant">小寫變體</characterLabel>
 		<characterLabel type="smiley">表情符號</characterLabel>
-		<characterLabel type="smileys_people">表情符號與人</characterLabel>
+		<characterLabel type="smileys_people">表情符號同人</characterLabel>
 		<characterLabel type="south_asian_scripts">南亞字體</characterLabel>
 		<characterLabel type="southeast_asian_scripts">東南亞字體</characterLabel>
 		<characterLabel type="spacing">空位</characterLabel>
@@ -10010,7 +10014,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<characterLabel type="technical_symbols">技術符號</characterLabel>
 		<characterLabel type="tone_marks">聲調符號</characterLabel>
 		<characterLabel type="travel">旅遊</characterLabel>
-		<characterLabel type="travel_places">旅遊和地點</characterLabel>
+		<characterLabel type="travel_places">旅遊同地點</characterLabel>
 		<characterLabel type="upwards_arrows">向上箭咀</characterLabel>
 		<characterLabel type="variant_forms">變化型</characterLabel>
 		<characterLabel type="vocalic_jamo">元音字母</characterLabel>

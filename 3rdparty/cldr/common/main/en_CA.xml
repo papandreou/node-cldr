@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13722 $"/>
+		<version number="$Revision: 13873 $"/>
 		<language type="en"/>
 		<territory type="CA"/>
 	</identity>
@@ -21,6 +21,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<types>
 			<type key="calendar" type="dangi">Korean Calendar</type>
 			<type key="calendar" type="ethiopic">Ethiopian Calendar</type>
+			<type key="d0" type="fwidth" draft="contributed">To Full Width</type>
+			<type key="d0" type="hwidth" draft="contributed">To Half Width</type>
+			<type key="d0" type="lower" draft="contributed">To Lower Case</type>
+			<type key="d0" type="title" draft="contributed">To Title Case</type>
+			<type key="d0" type="upper" draft="contributed">To Upper Case</type>
 		</types>
 	</localeDisplayNames>
 	<dates>
@@ -348,6 +353,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMEd" alt="variant">E, d/M/y</dateFormatItem>
 						<dateFormatItem id="yMMMd">MMM d, y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E, MMM d, y</dateFormatItem>
+						<dateFormatItem id="yw" count="one" draft="contributed">'week' w 'of' y</dateFormatItem>
+						<dateFormatItem id="yw" count="other" draft="contributed">'week' w 'of' y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatItem id="Md">
@@ -1299,6 +1306,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<characterLabel type="leftwards_rightwards_arrows" draft="contributed">leftward rightward arrow</characterLabel>
 		<characterLabel type="letterlike_symbols" draft="contributed">letter-like symbol</characterLabel>
 		<characterLabel type="limited_use" draft="contributed">limited use</characterLabel>
+		<characterLabel type="math_symbols" draft="contributed">math symbol</characterLabel>
 		<characterLabel type="nonspacing" draft="contributed">non-spacing</characterLabel>
 		<characterLabel type="rightwards_arrows" draft="contributed">rightward arrow</characterLabel>
 		<characterLabel type="upwards_arrows" draft="contributed">upward arrows</characterLabel>

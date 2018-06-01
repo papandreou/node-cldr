@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13686 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="ar"/>
 	</identity>
 	<localeDisplayNames>
@@ -709,6 +709,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">شرق أوروبا</territory>
 			<territory type="154">شمال أوروبا</territory>
 			<territory type="155">غرب أوروبا</territory>
+			<territory type="202" draft="contributed">202</territory>
 			<territory type="419">أمريكا اللاتينية</territory>
 			<territory type="AC">جزيرة أسينشيون</territory>
 			<territory type="AD">أندورا</territory>
@@ -5765,6 +5766,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 	</dates>
 	<numbers>
 		<defaultNumberingSystem>arab</defaultNumberingSystem>
+		<defaultNumberingSystem alt="latn">latn</defaultNumberingSystem>
 		<otherNumberingSystems>
 			<native>arab</native>
 		</otherNumberingSystems>
@@ -5980,7 +5982,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<percentFormats numberSystem="arab">
 			<percentFormatLength>
 				<percentFormat>
-					<pattern>#,##0 %</pattern>
+					<pattern>#,##0%</pattern>
 				</percentFormat>
 			</percentFormatLength>
 		</percentFormats>
@@ -7326,6 +7328,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol draft="contributed">MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>أوقية موريتانية - 1973-2017</displayName>
+				<displayName count="zero">أوقية موريتانية - 1973-2017</displayName>
+				<displayName count="one">أوقية موريتانية - 1973-2017</displayName>
+				<displayName count="two">أوقية موريتانية - 1973-2017</displayName>
+				<displayName count="few">أوقية موريتانية - 1973-2017</displayName>
+				<displayName count="many">أوقية موريتانية - 1973-2017</displayName>
+				<displayName count="other">أوقية موريتانية - 1973-2017</displayName>
+				<symbol>أ.م.‏</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>أوقية موريتانية</displayName>
 				<displayName count="zero">أوقية موريتانية</displayName>
 				<displayName count="one">أوقية موريتانية</displayName>
@@ -7333,7 +7345,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName count="few">أوقية موريتانية</displayName>
 				<displayName count="many">أوقية موريتانية</displayName>
 				<displayName count="other">أوقية موريتانية</displayName>
-				<symbol>أ.م.‏</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>ليرة مالطية</displayName>
@@ -7833,6 +7844,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>دوبرا ساو تومي وبرينسيبي - 1977-2017</displayName>
+				<displayName count="zero">دوبرا ساو تومي وبرينسيبي - 1977-2017</displayName>
+				<displayName count="one">دوبرا ساو تومي وبرينسيبي - 1977-2017</displayName>
+				<displayName count="two">دوبرا ساو تومي وبرينسيبي - 1977-2017</displayName>
+				<displayName count="few">دوبرا ساو تومي وبرينسيبي - 1977-2017</displayName>
+				<displayName count="many">دوبرا ساو تومي وبرينسيبي - 1977-2017</displayName>
+				<displayName count="other">دوبرا ساو تومي وبرينسيبي - 1977-2017</displayName>
+				<symbol draft="contributed">STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>دوبرا ساو تومي وبرينسيبي</displayName>
 				<displayName count="zero">دوبرا ساو تومي وبرينسيبي</displayName>
 				<displayName count="one">دوبرا ساو تومي وبرينسيبي</displayName>
@@ -7840,7 +7861,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName count="few">دوبرا ساو تومي وبرينسيبي</displayName>
 				<displayName count="many">دوبرا ساو تومي وبرينسيبي</displayName>
 				<displayName count="other">دوبرا ساو تومي وبرينسيبي</displayName>
-				<symbol draft="contributed">STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -11265,9 +11285,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabelPattern type="other">{0} - غير ذلك</characterLabelPattern>
 		<characterLabelPattern type="scripts">أنظمة الكتابة - {0}</characterLabelPattern>
 		<characterLabelPattern type="strokes" count="zero">{0} ضغطة</characterLabelPattern>
-		<characterLabelPattern type="strokes" count="one">ضغطة ({0})</characterLabelPattern>
-		<characterLabelPattern type="strokes" count="two">ضغطتان ({0})</characterLabelPattern>
-		<characterLabelPattern type="strokes" count="few">{0} ضغطات</characterLabelPattern>
+		<characterLabelPattern type="strokes" count="one">{0} ضغطة</characterLabelPattern>
+		<characterLabelPattern type="strokes" count="two">{0} ضغطة</characterLabelPattern>
+		<characterLabelPattern type="strokes" count="few">{0} ضغطة</characterLabelPattern>
 		<characterLabelPattern type="strokes" count="many">{0} ضغطة</characterLabelPattern>
 		<characterLabelPattern type="strokes" count="other">{0} ضغطة</characterLabelPattern>
 		<characterLabel type="activities">أنشطة</characterLabel>
@@ -11357,4 +11377,64 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">أنظمة كتابة غرب آسيا</characterLabel>
 		<characterLabel type="whitespace">مسافة بيضاء</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<styleName type="ital" subtype="1">متصل</styleName>
+		<styleName type="opsz" subtype="18">عنونة</styleName>
+		<styleName type="opsz" subtype="72">عرض</styleName>
+		<styleName type="opsz" subtype="144">ملصق</styleName>
+		<styleName type="slnt" subtype="-12">منحدر للخلف</styleName>
+		<styleName type="slnt" subtype="0">رأسي</styleName>
+		<styleName type="slnt" subtype="12">مائل</styleName>
+		<styleName type="slnt" subtype="24">منحدر زائد</styleName>
+		<styleName type="wdth" subtype="50">مكثف للغاية</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">مضغوط للغاية</styleName>
+		<styleName type="wdth" subtype="62.5">مكثف زائد</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">مضغوط زائد</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">ضيق زائد</styleName>
+		<styleName type="wdth" subtype="75">تكثيف</styleName>
+		<styleName type="wdth" subtype="75" alt="short">مكثف</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">مضغوط</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">ضيق</styleName>
+		<styleName type="wdth" subtype="87.5">شبه مكثف</styleName>
+		<styleName type="wdth" subtype="100">عادي</styleName>
+		<styleName type="wdth" subtype="112.5">شبه موسع</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">شبه ممتد</styleName>
+		<styleName type="wdth" subtype="125">تمديد</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">ممتد</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">عريض</styleName>
+		<styleName type="wdth" subtype="150">موسع زائد</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">ممتد زائد</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">واسع زائد</styleName>
+		<styleName type="wdth" subtype="200">موسع للغاية</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ممتد للغاية</styleName>
+		<styleName type="wght" subtype="100">رفيع</styleName>
+		<styleName type="wght" subtype="200">خفيف زائد</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">خفيف للغاية</styleName>
+		<styleName type="wght" subtype="300">فاتح</styleName>
+		<styleName type="wght" subtype="350">شبه خفيف</styleName>
+		<styleName type="wght" subtype="380">دفتر</styleName>
+		<styleName type="wght" subtype="400">عادي</styleName>
+		<styleName type="wght" subtype="500">متوسط</styleName>
+		<styleName type="wght" subtype="600">نصف عريض</styleName>
+		<styleName type="wght" subtype="700">عريض</styleName>
+		<styleName type="wght" subtype="800">عريض زائد</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">عريض للغاية</styleName>
+		<styleName type="wght" subtype="900">أسود</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">ثقيل</styleName>
+		<styleName type="wght" subtype="950">أسود زائد</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ثقيل للغاية</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">أسود للغاية</styleName>
+		<featureName type="afrc">كسور رأسية</featureName>
+		<featureName type="cpsp">تباعد الأحرف الاستهلالية</featureName>
+		<featureName type="dlig">أحرف مزدوجة اختيارية</featureName>
+		<featureName type="frac">كسور قطرية</featureName>
+		<featureName type="lnum">أرقام مصفوفة</featureName>
+		<featureName type="onum">أرقام قديمة النمط</featureName>
+		<featureName type="ordn">الأرقام الترتيبية</featureName>
+		<featureName type="pnum">الأرقام النسبية</featureName>
+		<featureName type="smcp">الأحرف الاستهلالية الصغيرة</featureName>
+		<featureName type="smcp" alt="short">أحرف استهلالية صغيرة</featureName>
+		<featureName type="tnum">أرقام مسطحة</featureName>
+		<featureName type="zero">الصفر المقسوم بشرطة مائلة</featureName>
+	</typographicNames>
 </ldml>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13701 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="ast"/>
 	</identity>
 	<localeDisplayNames>
@@ -1403,6 +1403,25 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<ellipsis type="word-initial">… {0}</ellipsis>
 		<ellipsis type="word-medial">{0}… {1}</ellipsis>
 		<moreInformation>?</moreInformation>
+		<parseLenients scope="date" level="lenient">
+			<parseLenient sample="-" draft="contributed">[\--/]</parseLenient>
+			<parseLenient sample=":" draft="contributed">[\:∶]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="general" level="lenient">
+			<parseLenient sample="." draft="contributed">[.․。︒﹒．｡]</parseLenient>
+			<parseLenient sample="$" draft="contributed">[\$﹩＄$]</parseLenient>
+			<parseLenient sample="£" draft="contributed">[£₤]</parseLenient>
+			<parseLenient sample="₹" draft="contributed">[₨₹{Rp}{Rs}]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="number" level="lenient">
+			<parseLenient sample="-" draft="contributed">[\-‒⁻₋−➖﹣－]</parseLenient>
+			<parseLenient sample="," draft="contributed">[,،٫、︐︑﹐﹑，､]</parseLenient>
+			<parseLenient sample="+" draft="contributed">[+⁺₊➕﬩﹢＋]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="number" level="stricter">
+			<parseLenient sample="," draft="contributed">[,٫︐﹐，]</parseLenient>
+			<parseLenient sample="." draft="contributed">[.․﹒．｡]</parseLenient>
+		</parseLenients>
 	</characters>
 	<delimiters>
 		<quotationStart>«</quotationStart>
@@ -2684,8 +2703,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMMM">LLLL 'de' y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ 'de' y</dateFormatItem>
-						<dateFormatItem id="yw" count="one">'selmana' w 'de' Y</dateFormatItem>
-						<dateFormatItem id="yw" count="other">'selmana' w 'de' Y</dateFormatItem>
+						<dateFormatItem id="yw" count="one">'selmana' w 'de' y</dateFormatItem>
+						<dateFormatItem id="yw" count="other">'selmana' w 'de' y</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Timezone">{0} {1}</appendItem>
@@ -8339,10 +8358,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>ouguiya mauritanu (1973–2017)</displayName>
+				<displayName count="one">ouguiya mauritanu (1973–2017)</displayName>
+				<displayName count="other">ouguiyas mauritanos (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>ouguiya mauritanu</displayName>
 				<displayName count="one">ouguiya mauritanu</displayName>
 				<displayName count="other">ouguiyas mauritanos</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Llira maltesa</displayName>
@@ -8709,10 +8733,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>dobra de Santu Tomé y Príncipe (1977–2017)</displayName>
+				<displayName count="one">dobra de Santu Tomé y Príncipe (1977–2017)</displayName>
+				<displayName count="other">dobras de Santu Tomé y Príncipe (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>dobra de Santu Tomé y Príncipe</displayName>
 				<displayName count="one">dobra de Santu Tomé y Príncipe</displayName>
 				<displayName count="other">dobras de Santu Tomé y Príncipe</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">

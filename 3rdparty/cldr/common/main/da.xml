@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="da"/>
 	</identity>
 	<localeDisplayNames>
@@ -43,6 +43,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="arc">aramæisk</language>
 			<language type="arn">mapudungun</language>
 			<language type="arp">arapaho</language>
+			<language type="ars">najd-arabisk</language>
 			<language type="arw">arawak</language>
 			<language type="as">assamesisk</language>
 			<language type="asa">asu</language>
@@ -147,6 +148,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="en_GB">britisk engelsk</language>
 			<language type="en_GB" alt="short">engelsk (UK)</language>
 			<language type="en_US">amerikansk engelsk</language>
+			<language type="en_US" alt="short" draft="contributed">en-US</language>
 			<language type="enm">middelengelsk</language>
 			<language type="eo">esperanto</language>
 			<language type="es">spansk</language>
@@ -751,6 +753,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Østeuropa</territory>
 			<territory type="154">Nordeuropa</territory>
 			<territory type="155">Vesteuropa</territory>
+			<territory type="202" draft="contributed">Afrika syd for Sahara</territory>
 			<territory type="419">Latinamerika</territory>
 			<territory type="AC">Ascensionøen</territory>
 			<territory type="AD">Andorra</territory>
@@ -1252,6 +1255,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 	</localeDisplayNames>
 	<contextTransforms>
 		<contextTransformUsage type="languages">
+			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
+		</contextTransformUsage>
+		<contextTransformUsage type="typographicNames">
+			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
 			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
 		</contextTransformUsage>
 	</contextTransforms>
@@ -6294,10 +6301,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>mauritansk ouguiya (1973–2017)</displayName>
+				<displayName count="one">mauritansk ouguiya (1973–2017)</displayName>
+				<displayName count="other">mauritanske ouguiya (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>mauritansk ouguiya</displayName>
 				<displayName count="one">mauritansk ouguiya</displayName>
 				<displayName count="other">mauritanske ouguiya</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Maltesisk lira</displayName>
@@ -6638,10 +6650,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>dobra fra Sao Tome og Principe (1977–2017)</displayName>
+				<displayName count="one">dobra fra Sao Tome og Principe (1977–2017)</displayName>
+				<displayName count="other">dobra fra Sao Tome og Principe (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>dobra fra Sao Tome og Principe</displayName>
 				<displayName count="one">dobra fra Sao Tome og Principe</displayName>
 				<displayName count="other">dobra fra Sao Tome og Principe</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -8941,4 +8958,65 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">vestasiatiske skriftsystemer</characterLabel>
 		<characterLabel type="whitespace">blanktegn</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">kursiv</axisName>
+		<axisName type="opsz">optisk størrelse</axisName>
+		<axisName type="slnt">skråtstilling</axisName>
+		<axisName type="wdth">bredde</axisName>
+		<axisName type="wght">vægt</axisName>
+		<styleName type="ital" subtype="1">kursiv</styleName>
+		<styleName type="opsz" subtype="18">titel</styleName>
+		<styleName type="opsz" subtype="72">vis</styleName>
+		<styleName type="opsz" subtype="144">plakat</styleName>
+		<styleName type="slnt" subtype="-12">bagud hældende</styleName>
+		<styleName type="slnt" subtype="0">oprejst</styleName>
+		<styleName type="slnt" subtype="12">hældende</styleName>
+		<styleName type="slnt" subtype="24">ekstra hældning</styleName>
+		<styleName type="wdth" subtype="50">ultrasmal</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ultrakomprimeret</styleName>
+		<styleName type="wdth" subtype="62.5">ekstra smal</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">ekstra komprimeret</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">ekstra snæver</styleName>
+		<styleName type="wdth" subtype="75">smal</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">komprimeret</styleName>
+		<styleName type="wdth" subtype="87.5">halvsmal</styleName>
+		<styleName type="wdth" subtype="100">normal</styleName>
+		<styleName type="wdth" subtype="112.5">halvudvidet</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">halvbred</styleName>
+		<styleName type="wdth" subtype="125">bred</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">udvidet</styleName>
+		<styleName type="wdth" subtype="150">ekstra udvidet</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">ekstra bred</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">ekstra bred</styleName>
+		<styleName type="wdth" subtype="200">ultraudvidet</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ultrabred</styleName>
+		<styleName type="wght" subtype="100">tynd</styleName>
+		<styleName type="wght" subtype="200">ekstra mager</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ultramager</styleName>
+		<styleName type="wght" subtype="300">lys</styleName>
+		<styleName type="wght" subtype="350">halvmager</styleName>
+		<styleName type="wght" subtype="380">bog</styleName>
+		<styleName type="wght" subtype="400">almindelig</styleName>
+		<styleName type="wght" subtype="500">medium</styleName>
+		<styleName type="wght" subtype="600">halvfed</styleName>
+		<styleName type="wght" subtype="700">fed</styleName>
+		<styleName type="wght" subtype="800">ekstra fed</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">ultrafed</styleName>
+		<styleName type="wght" subtype="900">sort</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">tung</styleName>
+		<styleName type="wght" subtype="950">ekstra sort</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ultrakraftig</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ultrasort</styleName>
+		<featureName type="afrc">lodrette brøker</featureName>
+		<featureName type="cpsp">afstand store bogstaver</featureName>
+		<featureName type="dlig">valgfrie ligaturer</featureName>
+		<featureName type="frac">diagonale brøker</featureName>
+		<featureName type="lnum">moderne tal</featureName>
+		<featureName type="onum">gammeldags tal</featureName>
+		<featureName type="ordn">ordinaltal</featureName>
+		<featureName type="pnum">proportionelle tal</featureName>
+		<featureName type="smcp">kapitæler</featureName>
+		<featureName type="tnum">tal i tabelformat</featureName>
+		<featureName type="zero">tallet nul</featureName>
+	</typographicNames>
 </ldml>

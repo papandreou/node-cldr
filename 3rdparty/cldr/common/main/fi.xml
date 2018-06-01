@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13767 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="fi"/>
 	</identity>
 	<localeDisplayNames>
@@ -48,6 +48,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="aro">araona</language>
 			<language type="arp">arapaho</language>
 			<language type="arq">algerianarabia</language>
+			<language type="ars">arabia – najd</language>
 			<language type="arw">arawak</language>
 			<language type="ary">marokonarabia</language>
 			<language type="arz">egyptinarabia</language>
@@ -860,6 +861,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Itä-Eurooppa</territory>
 			<territory type="154">Pohjois-Eurooppa</territory>
 			<territory type="155">Länsi-Eurooppa</territory>
+			<territory type="202" draft="contributed">Saharan eteläpuolinen Afrikka</territory>
 			<territory type="419">Latinalainen Amerikka</territory>
 			<territory type="AC">Ascension-saari</territory>
 			<territory type="AD">Andorra</territory>
@@ -1410,6 +1412,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		</contextTransformUsage>
 		<contextTransformUsage type="relative">
 			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+		</contextTransformUsage>
+		<contextTransformUsage type="typographicNames">
+			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
@@ -6406,9 +6412,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>ERN</symbol>
 			</currency>
 			<currency type="ESA">
-				<displayName>Espanjan peseta (A–tili)</displayName>
-				<displayName count="one">Espanjan peseta (A–tili)</displayName>
-				<displayName count="other">Espanjan pesetaa (A–tili)</displayName>
+				<displayName>Espanjan peseta (A-tili)</displayName>
+				<displayName count="one">Espanjan peseta (A-tili)</displayName>
+				<displayName count="other">Espanjan pesetaa (A-tili)</displayName>
 				<symbol>ESA</symbol>
 			</currency>
 			<currency type="ESB">
@@ -6927,10 +6933,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>Mauritanian ouguiya (1973–2017)</displayName>
+				<displayName count="one">Mauritanian ouguiya (1973–2017)</displayName>
+				<displayName count="other">Mauritanian ouguiyaa (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>Mauritanian ouguiya</displayName>
 				<displayName count="one">Mauritanian ouguiya</displayName>
 				<displayName count="other">Mauritanian ouguiyaa</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Maltan liira</displayName>
@@ -7298,10 +7309,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow">SSP</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>São Tomén ja Príncipen dobra (1977–2017)</displayName>
+				<displayName count="one">São Tomén ja Príncipen dobra (1977–2017)</displayName>
+				<displayName count="other">São Tomén ja Príncipen dobraa (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>São Tomén ja Príncipen dobra</displayName>
 				<displayName count="one">São Tomén ja Príncipen dobra</displayName>
 				<displayName count="other">São Tomén ja Príncipen dobraa</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow">STD</symbol>
 			</currency>
 			<currency type="SUR">
@@ -9948,7 +9965,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabelPattern type="scripts">kirjoitusjärjestelmät – {0}</characterLabelPattern>
 		<characterLabelPattern type="strokes" count="one">{0} piirtoviiva</characterLabelPattern>
 		<characterLabelPattern type="strokes" count="other">{0} piirtoviivaa</characterLabelPattern>
-		<characterLabel type="activities">toiminnot</characterLabel>
+		<characterLabel type="activities">toiminta</characterLabel>
 		<characterLabel type="african_scripts">afrikkalaiset kirjoitusjärjestelmät</characterLabel>
 		<characterLabel type="american_scripts">amerikkalaiset kirjoitusjärjestelmät</characterLabel>
 		<characterLabel type="animal">eläin</characterLabel>
@@ -10035,4 +10052,63 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">länsiaasialaiset kirjoitusjärjestelmät</characterLabel>
 		<characterLabel type="whitespace">tyhjämerkki</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">kursivoitu</axisName>
+		<axisName type="opsz">optinen koko</axisName>
+		<axisName type="slnt">kallistus</axisName>
+		<axisName type="wdth">leveys</axisName>
+		<axisName type="wght">paksuus</axisName>
+		<styleName type="ital" subtype="1">kursiivi</styleName>
+		<styleName type="opsz" subtype="18">otsikko</styleName>
+		<styleName type="opsz" subtype="72">näyttö</styleName>
+		<styleName type="opsz" subtype="144">juliste</styleName>
+		<styleName type="slnt" subtype="-12">taaksepäin kallistettu</styleName>
+		<styleName type="slnt" subtype="0">pysty</styleName>
+		<styleName type="slnt" subtype="12">vino</styleName>
+		<styleName type="slnt" subtype="24">extravino</styleName>
+		<styleName type="wdth" subtype="50">ultrakapea</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ultratiivis</styleName>
+		<styleName type="wdth" subtype="62.5">extrakapea</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">extratiivis</styleName>
+		<styleName type="wdth" subtype="75">kavennettu</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">pakattu</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">kapea</styleName>
+		<styleName type="wdth" subtype="87.5">semikapea</styleName>
+		<styleName type="wdth" subtype="100">normaali</styleName>
+		<styleName type="wdth" subtype="112.5">semilaaja</styleName>
+		<styleName type="wdth" subtype="125">laajennettu</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">leveä</styleName>
+		<styleName type="wdth" subtype="150">extralaaja</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">extraleveä</styleName>
+		<styleName type="wdth" subtype="200">ultralaaja</styleName>
+		<styleName type="wght" subtype="100">kapea</styleName>
+		<styleName type="wght" subtype="200">extraohut</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ultraohut</styleName>
+		<styleName type="wght" subtype="300">ohut</styleName>
+		<styleName type="wght" subtype="350">semiohut</styleName>
+		<styleName type="wght" subtype="380">kirja</styleName>
+		<styleName type="wght" subtype="400">normaali</styleName>
+		<styleName type="wght" subtype="500">keskipaksu</styleName>
+		<styleName type="wght" subtype="600">semilihava</styleName>
+		<styleName type="wght" subtype="600" alt="demi">demilihava</styleName>
+		<styleName type="wght" subtype="700">lihavoitu</styleName>
+		<styleName type="wght" subtype="800">extralihava</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">ultralihava</styleName>
+		<styleName type="wght" subtype="900">musta</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">paksu</styleName>
+		<styleName type="wght" subtype="950">extramusta</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ultrapaksu</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ultramusta</styleName>
+		<featureName type="afrc">pystysuuntaiset murtoluvut</featureName>
+		<featureName type="cpsp">versaalivälistys</featureName>
+		<featureName type="dlig">valinnaiset ligatuurit</featureName>
+		<featureName type="frac">vinoviivaiset murtoluvut</featureName>
+		<featureName type="lnum">otsikkonumerot</featureName>
+		<featureName type="onum">gemenanumerot</featureName>
+		<featureName type="ordn">järjestysluvut</featureName>
+		<featureName type="pnum">suhteelliset numerot</featureName>
+		<featureName type="smcp">kapiteelit</featureName>
+		<featureName type="tnum">sarkautuvat numerot</featureName>
+		<featureName type="zero">lävistetty nolla</featureName>
+	</typographicNames>
 </ldml>

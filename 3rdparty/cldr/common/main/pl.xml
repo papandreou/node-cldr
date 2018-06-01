@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13915 $"/>
 		<language type="pl"/>
 	</identity>
 	<localeDisplayNames>
@@ -48,6 +48,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="aro">araona</language>
 			<language type="arp">arapaho</language>
 			<language type="arq">algierski arabski</language>
+			<language type="ars">arabski nadżdyjski</language>
 			<language type="arw">arawak</language>
 			<language type="ary">marokański arabski</language>
 			<language type="arz">egipski arabski</language>
@@ -835,6 +836,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Europa Wschodnia</territory>
 			<territory type="154">Europa Północna</territory>
 			<territory type="155">Europa Zachodnia</territory>
+			<territory type="202" draft="contributed">Afryka Subsaharyjska</territory>
 			<territory type="419">Ameryka Łacińska</territory>
 			<territory type="AC">Wyspa Wniebowstąpienia</territory>
 			<territory type="AD">Andora</territory>
@@ -877,6 +879,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="CA">Kanada</territory>
 			<territory type="CC">Wyspy Kokosowe</territory>
 			<territory type="CD">Demokratyczna Republika Konga</territory>
+			<territory type="CD" alt="variant">Kongo (DRK)</territory>
 			<territory type="CF">Republika Środkowoafrykańska</territory>
 			<territory type="CG">Kongo</territory>
 			<territory type="CG" alt="variant">Republika Konga</territory>
@@ -1301,6 +1304,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
 		</contextTransformUsage>
 		<contextTransformUsage type="relative">
+			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
+		</contextTransformUsage>
+		<contextTransformUsage type="typographicNames">
 			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
 			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
 		</contextTransformUsage>
@@ -7044,12 +7051,19 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol draft="contributed">MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>ouguiya mauretańska (1973–2017)</displayName>
+				<displayName count="one">ouguiya mauretańska (1973–2017)</displayName>
+				<displayName count="few">ouguiya mauretańskie (1973–2017)</displayName>
+				<displayName count="many">ouguiya mauretańskich (1973–2017)</displayName>
+				<displayName count="other">ouguiya mauretańskiej (1973–2017)</displayName>
+				<symbol draft="contributed">MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>ouguiya mauretańska</displayName>
 				<displayName count="one">ouguiya mauretańska</displayName>
 				<displayName count="few">ouguiya mauretańskie</displayName>
 				<displayName count="many">ouguiya mauretańskich</displayName>
 				<displayName count="other">ouguiya mauretańskiej</displayName>
-				<symbol draft="contributed">MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>lira maltańska</displayName>
@@ -7452,12 +7466,20 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>dobra Wysp Świętego Tomasza i Książęcej (1977–2017)</displayName>
+				<displayName count="one">dobra Wysp Świętego Tomasza i Książęcej (1977–2017)</displayName>
+				<displayName count="few">dobry Wysp Świętego Tomasza i Książęcej (1977–2017)</displayName>
+				<displayName count="many">dobr Wysp Świętego Tomasza i Książęcej (1977–2017)</displayName>
+				<displayName count="other">dobry Wysp Świętego Tomasza i Książęcej (1977–2017)</displayName>
+				<symbol draft="contributed">STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>dobra Wysp Świętego Tomasza i Książęcej</displayName>
 				<displayName count="one">dobra Wysp Świętego Tomasza i Książęcej</displayName>
 				<displayName count="few">dobry Wysp Świętego Tomasza i Książęcej</displayName>
 				<displayName count="many">dobr Wysp Świętego Tomasza i Książęcej</displayName>
 				<displayName count="other">dobry Wysp Świętego Tomasza i Książęcej</displayName>
-				<symbol draft="contributed">STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -10283,4 +10305,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">zachodnioazjatyckie systemy pisma</characterLabel>
 		<characterLabel type="whitespace">biały znak</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">kursywa</axisName>
+		<axisName type="opsz">rozmiar optyczny</axisName>
+		<axisName type="slnt">pochylenie</axisName>
+		<axisName type="wdth">szerokość</axisName>
+		<axisName type="wght">grubość</axisName>
+	</typographicNames>
 </ldml>

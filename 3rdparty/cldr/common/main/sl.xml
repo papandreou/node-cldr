@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13701 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="sl"/>
 	</identity>
 	<localeDisplayNames>
@@ -395,6 +395,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="rm">retoromanščina</language>
 			<language type="rn">rundščina</language>
 			<language type="ro">romunščina</language>
+			<language type="ro_MD" draft="contributed">moldavščina</language>
 			<language type="rof">rombo</language>
 			<language type="rom">romščina</language>
 			<language type="root">rootščina</language>
@@ -686,6 +687,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Vzhodna Evropa</territory>
 			<territory type="154">Severna Evropa</territory>
 			<territory type="155">Zahodna Evropa</territory>
+			<territory type="202" draft="contributed">podsaharska Afrika</territory>
 			<territory type="419">Latinska Amerika</territory>
 			<territory type="AC">Otok Ascension</territory>
 			<territory type="AD">Andora</territory>
@@ -6815,12 +6817,19 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol draft="contributed">MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>mavretanska uguija (1973–2017)</displayName>
+				<displayName count="one">mavretanska uguija (1973–2017)</displayName>
+				<displayName count="two">mavretanski uguiji (1973–2017)</displayName>
+				<displayName count="few">mavretanske uguije (1973–2017)</displayName>
+				<displayName count="other">mavretanskih uguij (1973–2017)</displayName>
+				<symbol draft="contributed">MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>mavretanska uguija</displayName>
 				<displayName count="one">mavretanska uguija</displayName>
 				<displayName count="two">mavretanski uguiji</displayName>
 				<displayName count="few">mavretanske uguije</displayName>
 				<displayName count="other">mavretanskih uguij</displayName>
-				<symbol draft="contributed">MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>malteška lira</displayName>
@@ -7206,12 +7215,20 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>saotomejska dobra (1977–2017)</displayName>
+				<displayName count="one">saotomejska dobra (1977–2017)</displayName>
+				<displayName count="two">saotomejski dobri (1977–2017)</displayName>
+				<displayName count="few">saotomejske dobre (1977–2017)</displayName>
+				<displayName count="other">saotomejskih dober (1977–2017)</displayName>
+				<symbol draft="contributed">STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>saotomejska dobra</displayName>
 				<displayName count="one">saotomejska dobra</displayName>
 				<displayName count="two">saotomejski dobri</displayName>
 				<displayName count="few">saotomejske dobre</displayName>
 				<displayName count="other">saotomejskih dober</displayName>
-				<symbol draft="contributed">STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13701 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="pt"/>
 	</identity>
 	<localeDisplayNames>
@@ -43,6 +43,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="arc">aramaico</language>
 			<language type="arn">mapudungun</language>
 			<language type="arp">arapaho</language>
+			<language type="ars">árabe - Négede</language>
 			<language type="arw">arauaqui</language>
 			<language type="as">assamês</language>
 			<language type="asa">asu</language>
@@ -1187,6 +1188,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
 		</contextTransformUsage>
 		<contextTransformUsage type="relative">
+			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
+		</contextTransformUsage>
+		<contextTransformUsage type="typographicNames">
 			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
 			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
 		</contextTransformUsage>
@@ -6793,10 +6798,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>Ouguiya mauritana (1973–2017)</displayName>
+				<displayName count="one">Ouguiya mauritana (1973–2017)</displayName>
+				<displayName count="other">Ouguiyas mauritanas (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>Ouguiya mauritana</displayName>
 				<displayName count="one">Ouguiya mauritana</displayName>
 				<displayName count="other">Ouguiyas mauritanas</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Lira maltesa</displayName>
@@ -7138,10 +7148,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>Dobra de São Tomé e Príncipe (1977–2017)</displayName>
+				<displayName count="one">Dobra de São Tomé e Príncipe (1977–2017)</displayName>
+				<displayName count="other">Dobras de São Tomé e Príncipe (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>Dobra de São Tomé e Príncipe</displayName>
 				<displayName count="one">Dobra de São Tomé e Príncipe</displayName>
 				<displayName count="other">Dobras de São Tomé e Príncipe</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -9484,4 +9499,66 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">escrita do oeste asiático</characterLabel>
 		<characterLabel type="whitespace">espaço em branco</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">itálico</axisName>
+		<axisName type="opsz">tamanho óptico</axisName>
+		<axisName type="slnt">inclinação</axisName>
+		<axisName type="wdth">largura</axisName>
+		<axisName type="wght">peso</axisName>
+		<styleName type="ital" subtype="1">cursivo</styleName>
+		<styleName type="opsz" subtype="18">título</styleName>
+		<styleName type="opsz" subtype="72">decorativo</styleName>
+		<styleName type="opsz" subtype="144">pôster</styleName>
+		<styleName type="slnt" subtype="-12">inclinado inverso</styleName>
+		<styleName type="slnt" subtype="0">reto</styleName>
+		<styleName type="slnt" subtype="12">inclinado</styleName>
+		<styleName type="slnt" subtype="24">extrainclinado</styleName>
+		<styleName type="wdth" subtype="50">ultracondensado</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ultracomprimido</styleName>
+		<styleName type="wdth" subtype="62.5">extracondensado</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">extracomprimido</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">extraestreito</styleName>
+		<styleName type="wdth" subtype="75">condensado</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">comprimido</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">estreito</styleName>
+		<styleName type="wdth" subtype="87.5">semicondensado</styleName>
+		<styleName type="wdth" subtype="100">normal</styleName>
+		<styleName type="wdth" subtype="112.5">semiexpandido</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">semiestendido</styleName>
+		<styleName type="wdth" subtype="125">expandido</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">largo</styleName>
+		<styleName type="wdth" subtype="150">extraexpandido</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">extraestendido</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">extralargo</styleName>
+		<styleName type="wdth" subtype="200">ultraexpandido</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ultraestendido</styleName>
+		<styleName type="wght" subtype="100">fino</styleName>
+		<styleName type="wght" subtype="200">extraleve</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ultraleve</styleName>
+		<styleName type="wght" subtype="300">leve</styleName>
+		<styleName type="wght" subtype="350">semileve</styleName>
+		<styleName type="wght" subtype="380">livro</styleName>
+		<styleName type="wght" subtype="400">normal</styleName>
+		<styleName type="wght" subtype="500">médio</styleName>
+		<styleName type="wght" subtype="600">seminegrito</styleName>
+		<styleName type="wght" subtype="700">negrito</styleName>
+		<styleName type="wght" subtype="800">extranegrito</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">ultranegrito</styleName>
+		<styleName type="wght" subtype="900">preto</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">denso</styleName>
+		<styleName type="wght" subtype="950">extrapreto</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ultradenso</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ultrapreto</styleName>
+		<featureName type="afrc">frações verticais</featureName>
+		<featureName type="cpsp">espaçamento de maiúsculas</featureName>
+		<featureName type="dlig">ligaduras opcionais</featureName>
+		<featureName type="frac">frações diagonais</featureName>
+		<featureName type="lnum">números de revestimento</featureName>
+		<featureName type="onum">figuras em estilo antigo</featureName>
+		<featureName type="ordn">ordinais</featureName>
+		<featureName type="pnum">números proporcionais</featureName>
+		<featureName type="smcp">versalete</featureName>
+		<featureName type="tnum">números tabulares</featureName>
+		<featureName type="zero">zero cortado</featureName>
+	</typographicNames>
 </ldml>

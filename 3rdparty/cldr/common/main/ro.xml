@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="ro"/>
 	</identity>
 	<localeDisplayNames>
@@ -43,6 +43,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="arc">aramaică</language>
 			<language type="arn">mapuche</language>
 			<language type="arp">arapaho</language>
+			<language type="ars">arabă najdi</language>
 			<language type="arw">arawak</language>
 			<language type="as">asameză</language>
 			<language type="asa">asu</language>
@@ -650,6 +651,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Europa Orientală</territory>
 			<territory type="154">Europa Septentrională</territory>
 			<territory type="155">Europa Occidentală</territory>
+			<territory type="202" draft="contributed">Africa Subsahariană</territory>
 			<territory type="419">America Latină</territory>
 			<territory type="AC">Insula Ascension</territory>
 			<territory type="AD">Andorra</territory>
@@ -891,6 +893,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="TJ">Tadjikistan</territory>
 			<territory type="TK">Tokelau</territory>
 			<territory type="TL">Timorul de Est</territory>
+			<territory type="TL" alt="variant" draft="contributed">TL</territory>
 			<territory type="TM">Turkmenistan</territory>
 			<territory type="TN">Tunisia</territory>
 			<territory type="TO">Tonga</territory>
@@ -1100,6 +1103,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<codePattern type="territory">Regiune: {0}</codePattern>
 		</codePatterns>
 	</localeDisplayNames>
+	<contextTransforms>
+		<contextTransformUsage type="typographicNames">
+			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
+		</contextTransformUsage>
+	</contextTransforms>
 	<characters>
 		<exemplarCharacters>[a ă â b c d e f g h i î j k l m n o p r s ș t ț u v x z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[á à å ä ç é è ê ë ñ ö q ş ţ ü w y]</exemplarCharacters>
@@ -6624,11 +6633,17 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>ouguiya mauritană (1973–2017)</displayName>
+				<displayName count="one">ouguiya mauritană (1973–2017)</displayName>
+				<displayName count="few">ouguiya mauritane (1973–2017)</displayName>
+				<displayName count="other">ouguiya mauritane (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>ouguiya mauritană</displayName>
 				<displayName count="one">ouguiya mauritană</displayName>
 				<displayName count="few">ouguiya mauritane</displayName>
 				<displayName count="other">ouguiya mauritane</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>liră malteză</displayName>
@@ -6989,11 +7004,17 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>dobra Sao Tome și Principe (1977–2017)</displayName>
+				<displayName count="one">dobra Sao Tome și Principe (1977–2017)</displayName>
+				<displayName count="few">dobre Sao Tome și Principe (1977–2017)</displayName>
+				<displayName count="other">dobre Sao Tome și Principe (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>dobra Sao Tome și Principe</displayName>
 				<displayName count="one">dobra Sao Tome și Principe</displayName>
 				<displayName count="few">dobre Sao Tome și Principe</displayName>
 				<displayName count="other">dobre Sao Tome și Principe</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -9617,4 +9638,69 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">scriere vest-asiatică</characterLabel>
 		<characterLabel type="whitespace">spațiu alb</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<styleName type="ital" subtype="1">cursiv</styleName>
+		<styleName type="opsz" subtype="18">înclinare</styleName>
+		<styleName type="opsz" subtype="72">afișare</styleName>
+		<styleName type="opsz" subtype="144">poster</styleName>
+		<styleName type="slnt" subtype="-12">înclinat invers</styleName>
+		<styleName type="slnt" subtype="0">drept</styleName>
+		<styleName type="slnt" subtype="12">înclinat</styleName>
+		<styleName type="slnt" subtype="24">extraînclinat</styleName>
+		<styleName type="wdth" subtype="50">ultracondensat</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ultracomprimat</styleName>
+		<styleName type="wdth" subtype="50" alt="narrow">ultraîngust</styleName>
+		<styleName type="wdth" subtype="62.5">extracondensat</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">extracomprimat</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">extraîngust</styleName>
+		<styleName type="wdth" subtype="75">condensat</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">comprimat</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">îngust</styleName>
+		<styleName type="wdth" subtype="87.5">semicondensat</styleName>
+		<styleName type="wdth" subtype="87.5" alt="compressed">semicomprimat</styleName>
+		<styleName type="wdth" subtype="87.5" alt="narrow">semiîngust</styleName>
+		<styleName type="wdth" subtype="100">normal</styleName>
+		<styleName type="wdth" subtype="112.5">semidilatat</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">semiextins</styleName>
+		<styleName type="wdth" subtype="112.5" alt="wide">semilarg</styleName>
+		<styleName type="wdth" subtype="125">dilatat</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">extins</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">larg</styleName>
+		<styleName type="wdth" subtype="150">extradilatat</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">extraextins</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">extralarg</styleName>
+		<styleName type="wdth" subtype="200">ultradilatat</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ultraextins</styleName>
+		<styleName type="wdth" subtype="200" alt="wide">ultralarg</styleName>
+		<styleName type="wght" subtype="100">subțire</styleName>
+		<styleName type="wght" subtype="200">extraușor</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ultraușor</styleName>
+		<styleName type="wght" subtype="300">ușor</styleName>
+		<styleName type="wght" subtype="350">semiușor</styleName>
+		<styleName type="wght" subtype="380">carte</styleName>
+		<styleName type="wght" subtype="400">obișnuit</styleName>
+		<styleName type="wght" subtype="500">mediu</styleName>
+		<styleName type="wght" subtype="600">semialdin</styleName>
+		<styleName type="wght" subtype="600" alt="demi">demialdin</styleName>
+		<styleName type="wght" subtype="700">aldin</styleName>
+		<styleName type="wght" subtype="800">extraaldin</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">ultraaldin</styleName>
+		<styleName type="wght" subtype="900">negru</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">greu</styleName>
+		<styleName type="wght" subtype="950">extranegru</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ultragreu</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ultranegru</styleName>
+		<featureName type="afrc">fracții verticale</featureName>
+		<featureName type="cpsp">spațiere majuscule</featureName>
+		<featureName type="dlig">ligaturi opționale</featureName>
+		<featureName type="frac">fracții diagonale</featureName>
+		<featureName type="lnum">numere aliniate</featureName>
+		<featureName type="onum">cifre în stil vechi</featureName>
+		<featureName type="ordn">ordinale</featureName>
+		<featureName type="pnum">numere proporționale</featureName>
+		<featureName type="smcp">majuscule mici</featureName>
+		<featureName type="smcp" alt="short">minuscule</featureName>
+		<featureName type="tnum">numere tabulare</featureName>
+		<featureName type="zero">zero barat</featureName>
+	</typographicNames>
 </ldml>

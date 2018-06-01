@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13722 $"/>
+		<version number="$Revision: 13873 $"/>
 		<language type="es"/>
 		<territory type="US"/>
 	</identity>
@@ -150,24 +150,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="gregorian">
-				<months>
-					<monthContext type="format">
-						<monthWidth type="abbreviated">
-							<month type="1" draft="contributed">ene.</month>
-							<month type="2" draft="contributed">feb.</month>
-							<month type="3" draft="contributed">mar.</month>
-							<month type="4" draft="contributed">abr.</month>
-							<month type="5" draft="contributed">may.</month>
-							<month type="6" draft="contributed">jun.</month>
-							<month type="7" draft="contributed">jul.</month>
-							<month type="8" draft="contributed">ago.</month>
-							<month type="9" draft="contributed">sep.</month>
-							<month type="10" draft="contributed">oct.</month>
-							<month type="11" draft="contributed">nov.</month>
-							<month type="12" draft="contributed">dic.</month>
-						</monthWidth>
-					</monthContext>
-				</months>
 				<days>
 					<dayContext type="format">
 						<dayWidth type="narrow">
@@ -740,7 +722,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<decimalFormat>
 					<pattern type="1000" count="one" draft="contributed">0</pattern>
 					<pattern type="1000" count="other" draft="contributed">0</pattern>
-					<pattern type="10000" count="one" draft="contributed">00 K</pattern>
+					<pattern type="10000" count="one" draft="contributed">00 K</pattern>
 					<pattern type="10000" count="other" draft="contributed">00 K</pattern>
 					<pattern type="100000" count="one" draft="contributed">000 K</pattern>
 					<pattern type="100000" count="other" draft="contributed">000 K</pattern>
@@ -816,6 +798,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</currency>
 			<currency type="SSP">
 				<symbol alt="narrow" draft="contributed">£</symbol>
+			</currency>
+			<currency type="STN">
+				<displayName draft="contributed">dobra santotomense</displayName>
+				<displayName count="one" draft="contributed">dobra santotomense</displayName>
+				<displayName count="other" draft="contributed">dobra santotomense</displayName>
 			</currency>
 			<currency type="SYP">
 				<symbol alt="narrow" draft="contributed">£</symbol>
@@ -903,10 +890,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName draft="contributed">pt</displayName>
 				<unitPattern count="one" draft="contributed">{0} pt</unitPattern>
 				<unitPattern count="other" draft="contributed">{0} pt</unitPattern>
-			</unit>
-			<unit type="mass-microgram">
-				<unitPattern count="one" draft="contributed">{0} microgramo</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} microgramos</unitPattern>
 			</unit>
 			<unit type="power-gigawatt">
 				<displayName draft="contributed">gigavatios</displayName>
@@ -1001,18 +984,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one" draft="contributed">{0} CV</unitPattern>
 				<unitPattern count="other" draft="contributed">{0} CV</unitPattern>
 			</unit>
-			<unit type="temperature-celsius">
-				<unitPattern count="one" draft="contributed">{0} °C</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} °C</unitPattern>
-			</unit>
 			<unit type="volume-gallon-imperial">
 				<displayName draft="contributed">Imp. gal</displayName>
 				<unitPattern count="one" draft="contributed">{0} gal Imp.</unitPattern>
 				<unitPattern count="other" draft="contributed">{0} gal Imp.</unitPattern>
-			</unit>
-			<unit type="volume-cup">
-				<unitPattern count="one" draft="contributed">{0} tza.</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} tza.</unitPattern>
 			</unit>
 		</unitLength>
 		<unitLength type="narrow">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13722 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="he"/>
 	</identity>
 	<localeDisplayNames>
@@ -43,6 +43,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="arc">ארמית</language>
 			<language type="arn">אראוקנית</language>
 			<language type="arp">אראפהו</language>
+			<language type="ars">ערבית - נג׳ד</language>
 			<language type="arw">ארוואק</language>
 			<language type="as">אסאמית</language>
 			<language type="asa">אסו</language>
@@ -648,6 +649,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">מזרח אירופה</territory>
 			<territory type="154">צפון אירופה</territory>
 			<territory type="155">מערב אירופה</territory>
+			<territory type="202" draft="contributed">אפריקה שמדרום לסהרה</territory>
 			<territory type="419">אמריקה הלטינית</territory>
 			<territory type="AC">האי אסנשן</territory>
 			<territory type="AD">אנדורה</territory>
@@ -1092,6 +1094,25 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<ellipsis type="word-initial">… {0}</ellipsis>
 		<ellipsis type="word-medial">{0} … {1}</ellipsis>
 		<moreInformation>?</moreInformation>
+		<parseLenients scope="date" level="lenient">
+			<parseLenient sample="-" draft="contributed">[\--/]</parseLenient>
+			<parseLenient sample=":" draft="contributed">[\:∶]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="general" level="lenient">
+			<parseLenient sample="." draft="contributed">[.․。︒﹒．｡]</parseLenient>
+			<parseLenient sample="$" draft="contributed">[\$﹩＄$]</parseLenient>
+			<parseLenient sample="£" draft="contributed">[£₤]</parseLenient>
+			<parseLenient sample="₹" draft="contributed">[₨₹{Rp}{Rs}]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="number" level="lenient">
+			<parseLenient sample="-" draft="contributed">[\-‒⁻₋−➖﹣－]</parseLenient>
+			<parseLenient sample="," draft="contributed">[,،٫、︐︑﹐﹑，､]</parseLenient>
+			<parseLenient sample="+" draft="contributed">[+⁺₊➕﬩﹢＋]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="number" level="stricter">
+			<parseLenient sample="," draft="contributed">[,٫︐﹐，]</parseLenient>
+			<parseLenient sample="." draft="contributed">[.․﹒．｡]</parseLenient>
+		</parseLenients>
 	</characters>
 	<delimiters>
 		<quotationStart>”</quotationStart>
@@ -5191,6 +5212,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<daylight>שעון מערב גרינלנד (קיץ)</daylight>
 				</long>
 			</metazone>
+			<metazone type="Guam">
+				<long>
+					<standard draft="contributed">שעון גואם</standard>
+				</long>
+			</metazone>
 			<metazone type="Gulf">
 				<long>
 					<standard>שעון מדינות המפרץ</standard>
@@ -5463,6 +5489,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<generic>שעון פרננדו די נורוניה</generic>
 					<standard>שעון פרננדו די נורוניה (חורף)</standard>
 					<daylight>שעון פרננדו די נורוניה (קיץ)</daylight>
+				</long>
+			</metazone>
+			<metazone type="North_Mariana">
+				<long>
+					<standard draft="contributed">שעון איי מריאנה הצפוניים</standard>
 				</long>
 			</metazone>
 			<metazone type="Novosibirsk">
@@ -6842,12 +6873,19 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>אואוגויה מאוריטני (1973–2017)</displayName>
+				<displayName count="one">אואוגויה מאוריטני (1973–2017)</displayName>
+				<displayName count="two">אואוגויה מאוריטני (1973–2017)</displayName>
+				<displayName count="many">אואוגויה מאוריטני (1973–2017)</displayName>
+				<displayName count="other">אואוגויה מאוריטני (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>אואוגויה מאוריטני</displayName>
 				<displayName count="one">אואוגויה מאוריטני</displayName>
 				<displayName count="two">אואוגויה מאוריטני</displayName>
 				<displayName count="many">אואוגויה מאוריטני</displayName>
 				<displayName count="other">אואוגויה מאוריטני</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>לירה מלטית</displayName>
@@ -7207,12 +7245,20 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>דוברה של סן טומה ופרינסיפה (1977–2017)</displayName>
+				<displayName count="one">דוברה של סן טומה ופרינסיפה (1977–2017)</displayName>
+				<displayName count="two">דוברה של סן טומה ופרינסיפה (1977–2017)</displayName>
+				<displayName count="many">דוברה של סן טומה ופרינסיפה (1977–2017)</displayName>
+				<displayName count="other">דוברה של סן טומה ופרינסיפה (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>דוברה של סן טומה ופרינסיפה</displayName>
 				<displayName count="one">דוברה של סן טומה ופרינסיפה</displayName>
 				<displayName count="two">דוברה של סן טומה ופרינסיפה</displayName>
 				<displayName count="many">דוברה של סן טומה ופרינסיפה</displayName>
 				<displayName count="other">דוברה של סן טומה ופרינסיפה</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -10134,7 +10180,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="miscellaneous">שונות</characterLabel>
 		<characterLabel type="modern_scripts">סקריפטים מודרניים</characterLabel>
 		<characterLabel type="modifier">סימן מחליף</characterLabel>
-		<characterLabel type="musical_symbols">סמלים מוסיקליים</characterLabel>
+		<characterLabel type="musical_symbols">סמלים מוזיקליים</characterLabel>
 		<characterLabel type="nature">טבע</characterLabel>
 		<characterLabel type="nonspacing">ללא ריווח</characterLabel>
 		<characterLabel type="numbers">מספרים</characterLabel>
@@ -10165,7 +10211,65 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="variant_forms">חלופות</characterLabel>
 		<characterLabel type="vocalic_jamo">ג׳אמו ווקאלי</characterLabel>
 		<characterLabel type="weather">מזג אוויר</characterLabel>
-		<characterLabel type="western_asian_scripts" draft="provisional">מערכות כתב מערב אסייתיות</characterLabel>
+		<characterLabel type="western_asian_scripts" draft="contributed">סקריפטים ממערב אסיה</characterLabel>
 		<characterLabel type="whitespace">רווח לבן</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<styleName type="ital" subtype="1">מחובר</styleName>
+		<styleName type="opsz" subtype="18">כותרת</styleName>
+		<styleName type="opsz" subtype="72">צג</styleName>
+		<styleName type="opsz" subtype="144">פוסטר</styleName>
+		<styleName type="slnt" subtype="-12">נוטה לאחור</styleName>
+		<styleName type="slnt" subtype="0">זקוף</styleName>
+		<styleName type="slnt" subtype="12">נוטה</styleName>
+		<styleName type="slnt" subtype="24">אקסטרה נוטה</styleName>
+		<styleName type="wdth" subtype="50">אולטרה מוקטן</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">אולטרה מכווץ</styleName>
+		<styleName type="wdth" subtype="62.5">אקסטרה מוקטן</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">אקסטרה מכווץ</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">אקסטרה צר</styleName>
+		<styleName type="wdth" subtype="75">מוקטן</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">מכווץ</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">צר</styleName>
+		<styleName type="wdth" subtype="87.5">חצי מוקטן</styleName>
+		<styleName type="wdth" subtype="100">רגיל</styleName>
+		<styleName type="wdth" subtype="112.5">חצי מוגדל</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">חצי מורחב</styleName>
+		<styleName type="wdth" subtype="125">מורחב</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">רחב</styleName>
+		<styleName type="wdth" subtype="150">אקסטרה מוגדל</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">אקסטרה מורחב</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">אקסטרה רחב</styleName>
+		<styleName type="wdth" subtype="200">אולטרה מוגדל</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">אולטרה מורחב</styleName>
+		<styleName type="wght" subtype="100">דק</styleName>
+		<styleName type="wght" subtype="200">אקסטרה קל</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">אולטרה קל</styleName>
+		<styleName type="wght" subtype="300">קל</styleName>
+		<styleName type="wght" subtype="350">חצי קל</styleName>
+		<styleName type="wght" subtype="380">ספר</styleName>
+		<styleName type="wght" subtype="400">רגיל</styleName>
+		<styleName type="wght" subtype="500">בינוני</styleName>
+		<styleName type="wght" subtype="600">חצי עבה</styleName>
+		<styleName type="wght" subtype="600" alt="demi">עבה חלקית</styleName>
+		<styleName type="wght" subtype="700">עבה</styleName>
+		<styleName type="wght" subtype="800">אקסטרה עבה</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">אולטרה עבה</styleName>
+		<styleName type="wght" subtype="900">שחור</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">כבד</styleName>
+		<styleName type="wght" subtype="950">אקסטרה שחור</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">אולטרה כבד</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">אולטרה שחור</styleName>
+		<featureName type="afrc">שברים אנכיים</featureName>
+		<featureName type="cpsp">מרווח של אותיות רישיות</featureName>
+		<featureName type="dlig">משלבי אותיות אופציונליים</featureName>
+		<featureName type="frac">שברים אלכסוניים</featureName>
+		<featureName type="lnum">קווי מספרים</featureName>
+		<featureName type="onum">צורות בסגנון ישן</featureName>
+		<featureName type="ordn">מספרים סידוריים</featureName>
+		<featureName type="pnum">מספרים פרופורציונליים</featureName>
+		<featureName type="smcp">אותיות רישיות קטנות</featureName>
+		<featureName type="tnum">מספרי טבלה</featureName>
+		<featureName type="zero">אפס עם קו חוצה</featureName>
+	</typographicNames>
 </ldml>

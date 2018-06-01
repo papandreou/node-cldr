@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13742 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="zh"/>
 	</identity>
 	<localeDisplayNames>
@@ -43,6 +43,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="arc">阿拉米语</language>
 			<language type="arn">马普切语</language>
 			<language type="arp">阿拉帕霍语</language>
+			<language type="ars">纳吉迪阿拉伯文</language>
 			<language type="arw">阿拉瓦克语</language>
 			<language type="as">阿萨姆语</language>
 			<language type="asa">帕雷语</language>
@@ -130,7 +131,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="dsb">下索布语</language>
 			<language type="dua">都阿拉语</language>
 			<language type="dum">中古荷兰语</language>
-			<language type="dv">迪维西语</language>
+			<language type="dv">迪维希语</language>
 			<language type="dyo">朱拉语</language>
 			<language type="dyu">迪尤拉语</language>
 			<language type="dz">宗卡语</language>
@@ -305,7 +306,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="lua">卢巴-卢拉语</language>
 			<language type="lui">卢伊塞诺语</language>
 			<language type="lun">隆达语</language>
-			<language type="luo">卢欧语</language>
+			<language type="luo">卢奥语</language>
 			<language type="lus">米佐语</language>
 			<language type="luy">卢雅语</language>
 			<language type="lv">拉脱维亚语</language>
@@ -769,6 +770,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">东欧</territory>
 			<territory type="154">北欧</territory>
 			<territory type="155">西欧</territory>
+			<territory type="202">撒哈拉以南非洲</territory>
 			<territory type="419">拉丁美洲</territory>
 			<territory type="AC">阿森松岛</territory>
 			<territory type="AD">安道尔</territory>
@@ -9956,9 +9958,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>毛里塔尼亚乌吉亚 (1973–2017)</displayName>
+				<displayName count="other">毛里塔尼亚乌吉亚 (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>毛里塔尼亚乌吉亚</displayName>
 				<displayName count="other">毛里塔尼亚乌吉亚</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>马耳他里拉</displayName>
@@ -10268,9 +10274,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>圣多美和普林西比多布拉 (1977–2017)</displayName>
+				<displayName count="other">圣多美和普林西比多布拉 (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>圣多美和普林西比多布拉</displayName>
 				<displayName count="other">圣多美和普林西比多布拉</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -12467,4 +12477,68 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">西亚文字</characterLabel>
 		<characterLabel type="whitespace">空白区</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">斜体</axisName>
+		<axisName type="opsz">视觉大小</axisName>
+		<axisName type="slnt">倾斜</axisName>
+		<axisName type="wdth">宽度</axisName>
+		<axisName type="wght">直线宽度</axisName>
+		<styleName type="ital" subtype="1">草体</styleName>
+		<styleName type="opsz" subtype="18">标题</styleName>
+		<styleName type="opsz" subtype="72">展示体</styleName>
+		<styleName type="opsz" subtype="144">海报体</styleName>
+		<styleName type="slnt" subtype="-12">反斜体</styleName>
+		<styleName type="slnt" subtype="0">笔直体</styleName>
+		<styleName type="slnt" subtype="12">斜体</styleName>
+		<styleName type="slnt" subtype="24">特斜体</styleName>
+		<styleName type="wdth" subtype="50">极窄体</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">极密体</styleName>
+		<styleName type="wdth" subtype="62.5">特窄体</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">特密体</styleName>
+		<styleName type="wdth" subtype="75">紧缩体</styleName>
+		<styleName type="wdth" subtype="75" alt="short">窄体</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">压缩体</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">窄</styleName>
+		<styleName type="wdth" subtype="87.5">半窄体</styleName>
+		<styleName type="wdth" subtype="100">正常</styleName>
+		<styleName type="wdth" subtype="112.5">半阔体</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">半宽体</styleName>
+		<styleName type="wdth" subtype="125">阔体</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">扩展</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">宽</styleName>
+		<styleName type="wdth" subtype="150">特阔体</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">特宽体</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">特宽体</styleName>
+		<styleName type="wdth" subtype="200">极阔体</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">极宽体</styleName>
+		<styleName type="wght" subtype="100">细体</styleName>
+		<styleName type="wght" subtype="200">特细体</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">超细体</styleName>
+		<styleName type="wght" subtype="300">细体</styleName>
+		<styleName type="wght" subtype="350">半细体</styleName>
+		<styleName type="wght" subtype="380">图书</styleName>
+		<styleName type="wght" subtype="400">常规体</styleName>
+		<styleName type="wght" subtype="500">中等</styleName>
+		<styleName type="wght" subtype="600">半粗体</styleName>
+		<styleName type="wght" subtype="700">粗体</styleName>
+		<styleName type="wght" subtype="800">特粗体</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">极粗体</styleName>
+		<styleName type="wght" subtype="900">黑色</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">特黑体</styleName>
+		<styleName type="wght" subtype="950">加黑体</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">极特黑体</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">极黑体</styleName>
+		<featureName type="afrc">竖排分数</featureName>
+		<featureName type="cpsp">大写字母间距</featureName>
+		<featureName type="dlig">可选连字</featureName>
+		<featureName type="frac">对角线分数</featureName>
+		<featureName type="lnum">行内编号</featureName>
+		<featureName type="onum">旧式数字体</featureName>
+		<featureName type="ordn">序数</featureName>
+		<featureName type="pnum">成比例的数字</featureName>
+		<featureName type="smcp">小型大写</featureName>
+		<featureName type="smcp" alt="short">小型大写字母</featureName>
+		<featureName type="tnum">表格编号</featureName>
+		<featureName type="zero">带斜杠的零</featureName>
+	</typographicNames>
 </ldml>

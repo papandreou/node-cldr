@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13769 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="ur"/>
 	</identity>
 	<localeDisplayNames>
@@ -512,6 +512,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">مشرقی یورپ</territory>
 			<territory type="154">شمالی یورپ</territory>
 			<territory type="155">مغربی یورپ</territory>
+			<territory type="202" draft="contributed">سَب صحارن افریقہ</territory>
 			<territory type="419">لاطینی امریکہ</territory>
 			<territory type="AC">اسینشن آئلینڈ</territory>
 			<territory type="AD">انڈورا</territory>
@@ -1224,7 +1225,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
 						<dateFormatItem id="MMMEd">E، d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
 						<dateFormatItem id="y">y G</dateFormatItem>
 						<dateFormatItem id="yyyy">y G</dateFormatItem>
@@ -1629,17 +1630,17 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
-							<pattern>EEEE, MMMM d, y</pattern>
+							<pattern>EEEE، d MMMM، y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="long">
 						<dateFormat>
-							<pattern>MMMM d, y</pattern>
+							<pattern>d MMMM، y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="medium">
 						<dateFormat>
-							<pattern>MMM d, y</pattern>
+							<pattern>d MMM، y</pattern>
 						</dateFormat>
 					</dateFormatLength>
 					<dateFormatLength type="short">
@@ -1724,7 +1725,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="MMM">LLL</dateFormatItem>
 						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
 						<dateFormatItem id="MMMEd">E، d MMM</dateFormatItem>
-						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMd">d MMMM</dateFormatItem>
 						<dateFormatItem id="MMMMW" count="one">MMMM کا ہفتہ W</dateFormatItem>
 						<dateFormatItem id="MMMMW" count="other">MMMM کا ہفتہ W</dateFormatItem>
 						<dateFormatItem id="ms">mm:ss</dateFormatItem>
@@ -1825,7 +1826,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 							<greatestDifference id="y">MMM y – MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d">y MMM d–d</greatestDifference>
+							<greatestDifference id="d">d–d MMM y</greatestDifference>
 							<greatestDifference id="M">d MMM – d MMM، y</greatestDifference>
 							<greatestDifference id="y">d MMM، y – d MMM، y</greatestDifference>
 						</intervalFormatItem>
@@ -5826,10 +5827,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>موریطانیائی اوگوئیا (1973–2017)</displayName>
+				<displayName count="one">موریطانیائی اوگوئیا (1973–2017)</displayName>
+				<displayName count="other">موریطانیائی اوگوئیا (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>موریطانیائی اوگوئیا</displayName>
 				<displayName count="one">موریطانیائی اوگوئیا</displayName>
 				<displayName count="other">موریطانیائی اوگوئیا</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MUR">
 				<displayName>ماریشس کا روپیہ</displayName>
@@ -6076,10 +6082,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>ساؤ ٹوم اور پرنسپے ڈوبرا (1977–2017)</displayName>
+				<displayName count="one">ساؤ ٹوم اور پرنسپے ڈوبرا (1977–2017)</displayName>
+				<displayName count="other">ساؤ ٹوم اور پرنسپے ڈوبرا (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>ساؤ ٹوم اور پرنسپے ڈوبرا</displayName>
 				<displayName count="one">ساؤ ٹوم اور پرنسپے ڈوبرا</displayName>
 				<displayName count="other">ساؤ ٹوم اور پرنسپے ڈوبرا</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SYP">

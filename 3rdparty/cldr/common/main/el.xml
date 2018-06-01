@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="el"/>
 	</identity>
 	<localeDisplayNames>
@@ -43,6 +43,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="arc">Αραμαϊκά</language>
 			<language type="arn">Αραουκανικά</language>
 			<language type="arp">Αραπάχο</language>
+			<language type="ars">Αραβικά Νάτζντι</language>
 			<language type="arw">Αραγουάκ</language>
 			<language type="as">Ασαμικά</language>
 			<language type="asa">Άσου</language>
@@ -527,7 +528,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="was">Γουασό</language>
 			<language type="wbp">Γουαρλπίρι</language>
 			<language type="wo">Γουόλοφ</language>
-			<language type="wuu" draft="contributed">wuu</language>
+			<language type="wuu">Κινεζικά Γου</language>
 			<language type="xal">Καλμίκ</language>
 			<language type="xh">Κόσα</language>
 			<language type="xog">Σόγκα</language>
@@ -719,6 +720,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Ανατολική Ευρώπη</territory>
 			<territory type="154">Βόρεια Ευρώπη</territory>
 			<territory type="155">Δυτική Ευρώπη</territory>
+			<territory type="202" draft="contributed">202</territory>
 			<territory type="419">Λατινική Αμερική</territory>
 			<territory type="AC">Νήσος Ασενσιόν</territory>
 			<territory type="AD">Ανδόρα</territory>
@@ -767,6 +769,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="CG" alt="variant">Κονγκό (Δημοκρατία)</territory>
 			<territory type="CH">Ελβετία</territory>
 			<territory type="CI">Ακτή Ελεφαντοστού</territory>
+			<territory type="CI" alt="variant" draft="contributed">CI</territory>
 			<territory type="CK">Νήσοι Κουκ</territory>
 			<territory type="CL">Χιλή</territory>
 			<territory type="CM">Καμερούν</territory>
@@ -6566,10 +6569,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>Ουγκίγια Μαυριτανίας (1973–2017)</displayName>
+				<displayName count="one">ουγκίγια Μαυριτανίας (1973–2017)</displayName>
+				<displayName count="other">ουγκίγια Μαυριτανίας (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>Ουγκίγια Μαυριτανίας</displayName>
 				<displayName count="one">ουγκίγια Μαυριτανίας</displayName>
 				<displayName count="other">ουγκίγια Μαυριτανίας</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Λιρέτα Μάλτας</displayName>
@@ -6905,10 +6913,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>Ντόμπρα Σάο Τομέ και Πρίνσιπε (1977–2017)</displayName>
+				<displayName count="one">ντόμπρα Σάο Τομέ και Πρίνσιπε (1977–2017)</displayName>
+				<displayName count="other">ντόμπρα Σάο Τομέ και Πρίνσιπε (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>Ντόμπρα Σάο Τομέ και Πρίνσιπε</displayName>
 				<displayName count="one">ντόμπρα Σάο Τομέ και Πρίνσιπε</displayName>
 				<displayName count="other">ντόμπρα Σάο Τομέ και Πρίνσιπε</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -9028,4 +9041,62 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">γραφή Δυτικής Ασίας</characterLabel>
 		<characterLabel type="whitespace">κενό διάστημα</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<styleName type="ital" subtype="1">λοξά</styleName>
+		<styleName type="opsz" subtype="18">τίτλοι</styleName>
+		<styleName type="opsz" subtype="72">display</styleName>
+		<styleName type="opsz" subtype="144">αφίσα</styleName>
+		<styleName type="slnt" subtype="-12">επικλινή πίσω</styleName>
+		<styleName type="slnt" subtype="0">κατακόρυφα</styleName>
+		<styleName type="slnt" subtype="12">επικλινή</styleName>
+		<styleName type="slnt" subtype="24">πολύ επικλινή</styleName>
+		<styleName type="wdth" subtype="50">εξαιρετικά συμπυκνωμένα</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">εξαιρετικά συμπιεσμένα</styleName>
+		<styleName type="wdth" subtype="62.5">πολύ συμπυκνωμένα</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">πολύ συμπιεσμένα</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">πολύ στενά</styleName>
+		<styleName type="wdth" subtype="75">συμπυκνωμένα</styleName>
+		<styleName type="wdth" subtype="75" alt="short">συμπυκν</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">συμπιεσμένα</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">στενά</styleName>
+		<styleName type="wdth" subtype="87.5">ημισυμπυκνωμένα</styleName>
+		<styleName type="wdth" subtype="100">κανονικά</styleName>
+		<styleName type="wdth" subtype="112.5">ημιανεπτυγμένα</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">ημιεκτεταμένα</styleName>
+		<styleName type="wdth" subtype="125">εκτεταμένα</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">ευρέα</styleName>
+		<styleName type="wdth" subtype="150">πολύ ανεπτυγμένα</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">πολύ εκτεταμένα</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">πολύ ευρέα</styleName>
+		<styleName type="wdth" subtype="200">εξαιρετικά ανεπτυγμένα</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">εξαιρετικά εκτεταμένα</styleName>
+		<styleName type="wght" subtype="100">λεπτά</styleName>
+		<styleName type="wght" subtype="200">πολύ ελαφριά</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">εξαιρετικά ελαφριά</styleName>
+		<styleName type="wght" subtype="300">ελαφριά</styleName>
+		<styleName type="wght" subtype="350">ημιελαφριά</styleName>
+		<styleName type="wght" subtype="380">βιβλίο</styleName>
+		<styleName type="wght" subtype="400">κανονικά</styleName>
+		<styleName type="wght" subtype="500">μεσαία</styleName>
+		<styleName type="wght" subtype="600">ημιέντονα</styleName>
+		<styleName type="wght" subtype="700">έντονα</styleName>
+		<styleName type="wght" subtype="800">πολύ έντονα</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">εξαιρετικά έντονα</styleName>
+		<styleName type="wght" subtype="900">μαύρα</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">χοντρά</styleName>
+		<styleName type="wght" subtype="950">πολύ μαύρα</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">εξαιρετικά χοντρά</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">εξαιρετικά μαύρα</styleName>
+		<featureName type="afrc">κάθετα κλάσματα</featureName>
+		<featureName type="cpsp">διάστιχο κεφαλαίων</featureName>
+		<featureName type="dlig">προαιρετικά συμπλέγματα</featureName>
+		<featureName type="frac">διαγώνια κλάσματα</featureName>
+		<featureName type="lnum">ευθυγραμμισμένοι αριθμοί</featureName>
+		<featureName type="onum">αριθμοί παλαιού στιλ</featureName>
+		<featureName type="ordn">τακτικοί</featureName>
+		<featureName type="pnum">αναλογικοί αριθμοί</featureName>
+		<featureName type="smcp">μικρά κεφαλαία</featureName>
+		<featureName type="tnum">αριθμοί σε πίνακα</featureName>
+		<featureName type="zero">μηδέν με γραμμή</featureName>
+	</typographicNames>
 </ldml>

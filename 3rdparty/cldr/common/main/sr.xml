@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="sr"/>
 	</identity>
 	<localeDisplayNames>
@@ -696,6 +696,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Источна Европа</territory>
 			<territory type="154">Северна Европа</territory>
 			<territory type="155">Западна Европа</territory>
+			<territory type="202" draft="contributed">Африка јужно од Сахаре</territory>
 			<territory type="419">Латинска Америка</territory>
 			<territory type="AC">Острво Асенсион</territory>
 			<territory type="AD">Андора</territory>
@@ -6699,11 +6700,17 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>Мауританијска oгија (1973–2017)</displayName>
+				<displayName count="one">мауританијска oгија (1973–2017)</displayName>
+				<displayName count="few">мауританијскe oгијe (1973–2017)</displayName>
+				<displayName count="other">мауританијских oгијa (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>Мауританијска oгија</displayName>
 				<displayName count="one">мауританијска oгија</displayName>
 				<displayName count="few">мауританијскe oгијe</displayName>
 				<displayName count="other">мауританијских oгијa</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Малтешка лира</displayName>
@@ -6945,16 +6952,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName count="other">родежанских долара</displayName>
 			</currency>
 			<currency type="ROL">
-				<displayName>Румунски леј</displayName>
-				<displayName count="one">румунски леј</displayName>
-				<displayName count="few">румунскa леја</displayName>
-				<displayName count="other">румунских леја</displayName>
-			</currency>
-			<currency type="RON">
 				<displayName>Румунски леј (1952–2006)</displayName>
 				<displayName count="one">румунски леј (1952–2006)</displayName>
 				<displayName count="few">румунскa леја (1952–2006)</displayName>
 				<displayName count="other">румунских леја (1952–2006)</displayName>
+			</currency>
+			<currency type="RON">
+				<displayName>Румунски леј</displayName>
+				<displayName count="one">румунски леј</displayName>
+				<displayName count="few">румунскa леја</displayName>
+				<displayName count="other">румунских леја</displayName>
 				<symbol>RON</symbol>
 				<symbol alt="narrow" draft="contributed">lei</symbol>
 			</currency>
@@ -7101,11 +7108,18 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>Саотомска добра (1977–2017)</displayName>
+				<displayName count="one">саотомска добра (1977–2017)</displayName>
+				<displayName count="few">саотомске добре (1977–2017)</displayName>
+				<displayName count="other">саотомских добри (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>Саотомска добра</displayName>
 				<displayName count="one">саотомска добра</displayName>
 				<displayName count="few">саотомске добре</displayName>
 				<displayName count="other">саотомских добри</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -7563,6 +7577,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<pattern type="atLeast">⩾{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one" draft="contributed">{0} сат</pluralMinimalPairs>
+			<pluralMinimalPairs count="few" draft="contributed">{0} сата</pluralMinimalPairs>
+			<pluralMinimalPairs count="other" draft="contributed">{0} сати</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other" draft="contributed">Скрените у {0}. десно.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13701 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="hr"/>
 	</identity>
 	<localeDisplayNames>
@@ -43,6 +43,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="arc">aramejski</language>
 			<language type="arn">mapuche</language>
 			<language type="arp">arapaho</language>
+			<language type="ars">najdi arapski</language>
 			<language type="arw">aravački</language>
 			<language type="as">asamski</language>
 			<language type="asa">asu</language>
@@ -751,6 +752,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Istočna Europa</territory>
 			<territory type="154">Sjeverna Europa</territory>
 			<territory type="155">Zapadna Europa</territory>
+			<territory type="202" draft="contributed">Subsaharska Afrika</territory>
 			<territory type="419">Latinska Amerika</territory>
 			<territory type="AC">Otok Ascension</territory>
 			<territory type="AD">Andora</territory>
@@ -950,7 +952,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="PM">Sveti Petar i Mikelon</territory>
 			<territory type="PN">Otoci Pitcairn</territory>
 			<territory type="PR">Portoriko</territory>
-			<territory type="PS">Palestinsko Područje</territory>
+			<territory type="PS">Palestinsko područje</territory>
 			<territory type="PS" alt="short">Palestina</territory>
 			<territory type="PT">Portugal</territory>
 			<territory type="PW">Palau</territory>
@@ -7240,11 +7242,17 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>mauritanijska ouguja (1973–2017)</displayName>
+				<displayName count="one">mauritanijska ouguja (1973–2017)</displayName>
+				<displayName count="few">mauritanijske ouguje (1973–2017)</displayName>
+				<displayName count="other">mauritanijskih ouguja (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>mauritanijska ouguja</displayName>
 				<displayName count="one">mauritanijska ouguja</displayName>
 				<displayName count="few">mauritanijske ouguje</displayName>
 				<displayName count="other">mauritanijskih ouguja</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>malteška lira</displayName>
@@ -7669,11 +7677,18 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>dobra Svetog Tome i Principa (1977–2017)</displayName>
+				<displayName count="one">dobra Svetog Tome i Principa (1977–2017)</displayName>
+				<displayName count="few">dobre Svetog Tome i Principa (1977–2017)</displayName>
+				<displayName count="other">dobri Svetog Tome i Principa (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>dobra Svetog Tome i Principa</displayName>
 				<displayName count="one">dobra Svetog Tome i Principa</displayName>
 				<displayName count="few">dobre Svetog Tome i Principa</displayName>
 				<displayName count="other">dobri Svetog Tome i Principa</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -8186,6 +8201,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="range">{0} – {1}</pattern>
 		</miscPatterns>
+		<minimalPairs>
+			<pluralMinimalPairs count="one" draft="contributed">{0} dan</pluralMinimalPairs>
+			<pluralMinimalPairs count="few" draft="contributed">{0} dana</pluralMinimalPairs>
+			<pluralMinimalPairs count="other" draft="contributed">{0} dan/a</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other" draft="contributed">Skrenite {0}. desno.</ordinalMinimalPairs>
+		</minimalPairs>
 	</numbers>
 	<units>
 		<unitLength type="long">
@@ -10680,4 +10701,17 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">zapadnoazijsko pismo</characterLabel>
 		<characterLabel type="whitespace">bjelina</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<featureName type="afrc">okomiti razlomci</featureName>
+		<featureName type="cpsp">razmak između velikih slova</featureName>
+		<featureName type="dlig">opcionalne ligature</featureName>
+		<featureName type="frac">dijagonalni razlomci</featureName>
+		<featureName type="lnum">poravnati brojevi</featureName>
+		<featureName type="onum">staromodni oblici</featureName>
+		<featureName type="ordn">redni brojevi</featureName>
+		<featureName type="pnum">proporcionalni brojevi</featureName>
+		<featureName type="smcp">smanjena velika slova</featureName>
+		<featureName type="tnum">tablični brojevi</featureName>
+		<featureName type="zero">prekrižena nula</featureName>
+	</typographicNames>
 </ldml>

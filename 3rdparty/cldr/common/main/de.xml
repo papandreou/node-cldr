@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13711 $"/>
+		<version number="$Revision: 13941 $"/>
 		<language type="de"/>
 	</identity>
 	<localeDisplayNames>
@@ -48,6 +48,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="aro">Araona</language>
 			<language type="arp">Arapaho</language>
 			<language type="arq">Algerisches Arabisch</language>
+			<language type="ars">Nadschd-Arabisch</language>
 			<language type="arw">Arawak</language>
 			<language type="ary">Marokkanisches Arabisch</language>
 			<language type="arz">Ägyptisches Arabisch</language>
@@ -1314,6 +1315,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<codePattern type="territory">Region: {0}</codePattern>
 		</codePatterns>
 	</localeDisplayNames>
+	<contextTransforms>
+		<contextTransformUsage type="typographicNames">
+			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
+		</contextTransformUsage>
+	</contextTransforms>
 	<characters>
 		<exemplarCharacters>[a ä b c d e f g h i j k l m n o ö p q r s ß t u ü v w x y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[á à ă â å ã ā æ ç é è ĕ ê ë ē ğ í ì ĭ î ï İ ī ı ñ ó ò ŏ ô ø ō œ ş ú ù ŭ û ū ÿ]</exemplarCharacters>
@@ -2013,8 +2020,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<dayPeriodContext type="format">
 						<dayPeriodWidth type="abbreviated">
 							<dayPeriod type="midnight">Mitternacht</dayPeriod>
-							<dayPeriod type="am">AM</dayPeriod>
-							<dayPeriod type="pm">PM</dayPeriod>
+							<dayPeriod type="am">vorm.</dayPeriod>
+							<dayPeriod type="pm">nachm.</dayPeriod>
 							<dayPeriod type="morning1">morgens</dayPeriod>
 							<dayPeriod type="morning2">vormittags</dayPeriod>
 							<dayPeriod type="afternoon1">mittags</dayPeriod>
@@ -2035,8 +2042,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						</dayPeriodWidth>
 						<dayPeriodWidth type="wide">
 							<dayPeriod type="midnight">Mitternacht</dayPeriod>
-							<dayPeriod type="am">AM</dayPeriod>
-							<dayPeriod type="pm">PM</dayPeriod>
+							<dayPeriod type="am">vorm.</dayPeriod>
+							<dayPeriod type="pm">nachm.</dayPeriod>
 							<dayPeriod type="morning1">morgens</dayPeriod>
 							<dayPeriod type="morning2">vormittags</dayPeriod>
 							<dayPeriod type="afternoon1">mittags</dayPeriod>
@@ -5673,12 +5680,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</decimalFormatLength>
 			<decimalFormatLength type="short">
 				<decimalFormat>
-					<pattern type="1000" count="one">0 Tsd'.'</pattern>
-					<pattern type="1000" count="other">0 Tsd'.'</pattern>
-					<pattern type="10000" count="one">00 Tsd'.'</pattern>
-					<pattern type="10000" count="other">00 Tsd'.'</pattern>
-					<pattern type="100000" count="one">000 Tsd'.'</pattern>
-					<pattern type="100000" count="other">000 Tsd'.'</pattern>
+					<pattern type="1000" count="one">0</pattern>
+					<pattern type="1000" count="other">0</pattern>
+					<pattern type="10000" count="one">0</pattern>
+					<pattern type="10000" count="other">0</pattern>
+					<pattern type="100000" count="one">0</pattern>
+					<pattern type="100000" count="other">0</pattern>
 					<pattern type="1000000" count="one">0 Mio'.'</pattern>
 					<pattern type="1000000" count="other">0 Mio'.'</pattern>
 					<pattern type="10000000" count="one">00 Mio'.'</pattern>
@@ -5725,12 +5732,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</currencyFormatLength>
 			<currencyFormatLength type="short">
 				<currencyFormat type="standard">
-					<pattern type="1000" count="one">0 Tsd'.' ¤</pattern>
-					<pattern type="1000" count="other">0 Tsd'.' ¤</pattern>
-					<pattern type="10000" count="one">00 Tsd'.' ¤</pattern>
-					<pattern type="10000" count="other">00 Tsd'.' ¤</pattern>
-					<pattern type="100000" count="one">000 Tsd'.' ¤</pattern>
-					<pattern type="100000" count="other">000 Tsd'.' ¤</pattern>
+					<pattern type="1000" count="one">0</pattern>
+					<pattern type="1000" count="other">0</pattern>
+					<pattern type="10000" count="one">0</pattern>
+					<pattern type="10000" count="other">0</pattern>
+					<pattern type="100000" count="one">0</pattern>
+					<pattern type="100000" count="other">0</pattern>
 					<pattern type="1000000" count="one">0 Mio'.' ¤</pattern>
 					<pattern type="1000000" count="other">0 Mio'.' ¤</pattern>
 					<pattern type="10000000" count="one">00 Mio'.' ¤</pattern>
@@ -6828,10 +6835,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>Mauretanischer Ouguiya (1973–2017)</displayName>
+				<displayName count="one">Mauretanischer Ouguiya (1973–2017)</displayName>
+				<displayName count="other">Mauretanische Ouguiya (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>Mauretanischer Ouguiya</displayName>
 				<displayName count="one">Mauretanischer Ouguiya</displayName>
 				<displayName count="other">Mauretanische Ouguiya</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Maltesische Lira</displayName>
@@ -7196,10 +7208,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>São-toméischer Dobra (1977–2017)</displayName>
+				<displayName count="one">São-toméischer Dobra (1977–2017)</displayName>
+				<displayName count="other">São-toméische Dobra (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>São-toméischer Dobra</displayName>
 				<displayName count="one">São-toméischer Dobra</displayName>
 				<displayName count="other">São-toméische Dobra</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -9755,7 +9772,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="dash_connector">Gedankenstrich/Bindestrich</characterLabel>
 		<characterLabel type="digits">Stellen</characterLabel>
 		<characterLabel type="dingbats">Zierrat</characterLabel>
-		<characterLabel type="divination_symbols">Teilungszeichen</characterLabel>
+		<characterLabel type="divination_symbols">Wahrsagezeichen</characterLabel>
 		<characterLabel type="downwards_arrows">Abwärtspfeile</characterLabel>
 		<characterLabel type="downwards_upwards_arrows">Aufwärts-Abwärtspfeile</characterLabel>
 		<characterLabel type="east_asian_scripts">Ostasiatische Schriften</characterLabel>
@@ -9826,4 +9843,68 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">Westasiatische Schriften</characterLabel>
 		<characterLabel type="whitespace">Leerzeichen</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">Kursivstellung</axisName>
+		<axisName type="opsz">optische Größe</axisName>
+		<axisName type="slnt">Schrägstellung</axisName>
+		<axisName type="wdth">Breite</axisName>
+		<axisName type="wght">Stärke</axisName>
+		<styleName type="ital" subtype="1">kursiv</styleName>
+		<styleName type="opsz" subtype="8">Konsultationsgröße</styleName>
+		<styleName type="opsz" subtype="12">Lesegröße</styleName>
+		<styleName type="opsz" subtype="18">Schaugröße</styleName>
+		<styleName type="opsz" subtype="72">Plakatgröße</styleName>
+		<styleName type="opsz" subtype="144">Ferngröße</styleName>
+		<styleName type="slnt" subtype="-12">rückgeschrägt</styleName>
+		<styleName type="slnt" subtype="0">aufrecht</styleName>
+		<styleName type="slnt" subtype="12">schräg</styleName>
+		<styleName type="slnt" subtype="24">extraschräg</styleName>
+		<styleName type="wdth" subtype="50">ultragedrängt</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ultrakomprimiert</styleName>
+		<styleName type="wdth" subtype="50" alt="narrow">ultraschmal</styleName>
+		<styleName type="wdth" subtype="62.5">extragedrängt</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">extrakomprimiert</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">extraschmal</styleName>
+		<styleName type="wdth" subtype="75">gedrängt</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">komprimiert</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">schmal</styleName>
+		<styleName type="wdth" subtype="87.5">halbgedrängt</styleName>
+		<styleName type="wdth" subtype="87.5" alt="compressed">halbkomprimiert</styleName>
+		<styleName type="wdth" subtype="87.5" alt="narrow">halbschmal</styleName>
+		<styleName type="wdth" subtype="100">normal</styleName>
+		<styleName type="wdth" subtype="112.5">halbgedehnt</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">halbbreit</styleName>
+		<styleName type="wdth" subtype="112.5" alt="wide">halbweit</styleName>
+		<styleName type="wdth" subtype="125">gedehnt</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">breit</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">weit</styleName>
+		<styleName type="wdth" subtype="150">extragedehnt</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">extrabreit</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">extraweit</styleName>
+		<styleName type="wdth" subtype="200">ultragedehnt</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ultrabreit</styleName>
+		<styleName type="wdth" subtype="200" alt="wide">ultraweit</styleName>
+		<styleName type="wght" subtype="100">dünn</styleName>
+		<styleName type="wght" subtype="200">extramager</styleName>
+		<styleName type="wght" subtype="300">mager</styleName>
+		<styleName type="wght" subtype="350">halbmager</styleName>
+		<styleName type="wght" subtype="380">Buch</styleName>
+		<styleName type="wght" subtype="400">normal</styleName>
+		<styleName type="wght" subtype="600">halbfett</styleName>
+		<styleName type="wght" subtype="700">fett</styleName>
+		<styleName type="wght" subtype="800">extrafett</styleName>
+		<styleName type="wght" subtype="900">schwarz</styleName>
+		<styleName type="wght" subtype="950">extraschwarz</styleName>
+		<featureName type="afrc">vertikale Brüche</featureName>
+		<featureName type="cpsp">Versalabstand</featureName>
+		<featureName type="dlig">Zierligaturen</featureName>
+		<featureName type="frac">diagonale Brüche</featureName>
+		<featureName type="lnum">Versalziffern</featureName>
+		<featureName type="onum">Mediävalziffern</featureName>
+		<featureName type="ordn">Ordinalzeichen</featureName>
+		<featureName type="pnum">Proportionalziffern</featureName>
+		<featureName type="smcp">Kapitälchen</featureName>
+		<featureName type="tnum">Tabellenziffern</featureName>
+		<featureName type="zero">Null mit Schrägstrich</featureName>
+	</typographicNames>
 </ldml>

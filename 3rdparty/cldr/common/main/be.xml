@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="be"/>
 	</identity>
 	<localeDisplayNames>
@@ -110,9 +110,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="en_US" alt="short">англійская (ЗША)</language>
 			<language type="eo">эсперанта</language>
 			<language type="es">іспанская</language>
-			<language type="es_419">лацінаамерыканская іспанская</language>
-			<language type="es_ES">еўрапейская іспанская</language>
-			<language type="es_MX">мексіканская іспанская</language>
 			<language type="et">эстонская</language>
 			<language type="eu">баскская</language>
 			<language type="ewo">эвонда</language>
@@ -124,8 +121,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="fo">фарэрская</language>
 			<language type="fon">фон</language>
 			<language type="fr">французская</language>
-			<language type="fr_CA">канадская французская</language>
-			<language type="fr_CH">швейцарская французская</language>
 			<language type="fro">старафранцузская</language>
 			<language type="fur">фрыульская</language>
 			<language type="fy">заходняя фрызская</language>
@@ -321,7 +316,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="rm">рэтараманская</language>
 			<language type="rn">рундзі</language>
 			<language type="ro">румынская</language>
-			<language type="ro_MD">малдаўская румынская</language>
 			<language type="rof">ромба</language>
 			<language type="root">корань</language>
 			<language type="ru">руская</language>
@@ -426,6 +420,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="zap">сапатэк</language>
 			<language type="zgh">стандартная мараканская тамазіхт</language>
 			<language type="zh">кітайская</language>
+			<language type="zh_Hans">кітайская (спрошчаныя іерогліфы)</language>
+			<language type="zh_Hant">кітайская (традыцыйныя іерогліфы)</language>
 			<language type="zu">зулу</language>
 			<language type="zun">зуні</language>
 			<language type="zxx">няма моўнага матэрыялу</language>
@@ -509,6 +505,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Усходняя Еўропа</territory>
 			<territory type="154">Паўночная Еўропа</territory>
 			<territory type="155">Заходняя Еўропа</territory>
+			<territory type="202">Трапічная Афрыка</territory>
 			<territory type="419">Лацінская Амерыка</territory>
 			<territory type="AC">Востраў Узнясення</territory>
 			<territory type="AD">Андора</territory>
@@ -5577,12 +5574,19 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol draft="contributed">MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>маўрытанская ўгія (1973–2017)</displayName>
+				<displayName count="one">маўрытанская ўгія (1973–2017)</displayName>
+				<displayName count="few">маўрытанскія ўгіі (1973–2017)</displayName>
+				<displayName count="many">маўрытанскіх угій (1973–2017)</displayName>
+				<displayName count="other">маўрытанскай ўгіі (1973–2017)</displayName>
+				<symbol draft="contributed">MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>маўрытанская ўгія</displayName>
 				<displayName count="one">маўрытанская ўгія</displayName>
 				<displayName count="few">маўрытанскія ўгіі</displayName>
 				<displayName count="many">маўрытанскіх угій</displayName>
 				<displayName count="other">маўрытанскай ўгіі</displayName>
-				<symbol draft="contributed">MRO</symbol>
 			</currency>
 			<currency type="MUR">
 				<displayName>маўрыкійская рупія</displayName>
@@ -5895,12 +5899,20 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>добра Сан-Тамэ і Прынсіпі (1977–2017)</displayName>
+				<displayName count="one">добра Сан-Тамэ і Прынсіпі (1977–2017)</displayName>
+				<displayName count="few">добры Сан-Тамэ і Прынсіпі (1977–2017)</displayName>
+				<displayName count="many">добраў Сан-Тамэ і Прынсіпі (1977–2017)</displayName>
+				<displayName count="other">добры Сан-Тамэ і Прынсіпі (1977–2017)</displayName>
+				<symbol draft="contributed">STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>добра Сан-Тамэ і Прынсіпі</displayName>
 				<displayName count="one">добра Сан-Тамэ і Прынсіпі</displayName>
 				<displayName count="few">добры Сан-Тамэ і Прынсіпі</displayName>
 				<displayName count="many">добраў Сан-Тамэ і Прынсіпі</displayName>
 				<displayName count="other">добры Сан-Тамэ і Прынсіпі</displayName>
-				<symbol draft="contributed">STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SYP">

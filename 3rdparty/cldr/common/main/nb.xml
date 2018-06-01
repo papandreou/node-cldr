@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="nb"/>
 	</identity>
 	<localeDisplayNames>
@@ -48,6 +48,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="aro">araona</language>
 			<language type="arp">arapaho</language>
 			<language type="arq">algerisk arabisk</language>
+			<language type="ars">najdi-arabisk</language>
 			<language type="arw">arawak</language>
 			<language type="ary">marokkansk-arabisk</language>
 			<language type="arz">egyptisk arabisk</language>
@@ -877,6 +878,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Øst-Europa</territory>
 			<territory type="154">Nord-Europa</territory>
 			<territory type="155">Vest-Europa</territory>
+			<territory type="202" draft="contributed">Afrika sør for Sahara</territory>
 			<territory type="419">Latin-Amerika</territory>
 			<territory type="AC">Ascension</territory>
 			<territory type="AD">Andorra</territory>
@@ -1390,6 +1392,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 	<contextTransforms>
 		<contextTransformUsage type="relative">
 			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+		</contextTransformUsage>
+		<contextTransformUsage type="typographicNames">
+			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
@@ -6682,11 +6688,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</field>
 			<field type="day-narrow">
 				<displayName>d.</displayName>
-				<relative type="-2" draft="provisional">-2 d.</relative>
+				<relative type="-2" draft="contributed">-2 d.</relative>
 				<relative type="-1" draft="contributed">i går</relative>
 				<relative type="0" draft="contributed">i dag</relative>
 				<relative type="1" draft="contributed">i morgen</relative>
-				<relative type="2" draft="provisional">+2 d.</relative>
+				<relative type="2" draft="contributed">+2 d.</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">+{0} d.</relativeTimePattern>
 					<relativeTimePattern count="other">+{0} d.</relativeTimePattern>
@@ -12534,10 +12540,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>mauritanske ouguiya (1973–2017)</displayName>
+				<displayName count="one">mauritansk ouguiya (1973–2017)</displayName>
+				<displayName count="other">mauritanske ouguiya (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>mauritanske ouguiya</displayName>
 				<displayName count="one">mauritansk ouguiya</displayName>
 				<displayName count="other">mauritanske ouguiya</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>maltesiske lira</displayName>
@@ -12904,10 +12915,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>saotomesiske dobra (1977–2017)</displayName>
+				<displayName count="one">saotomesisk dobra (1977–2017)</displayName>
+				<displayName count="other">saotomesiske dobra (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>saotomesiske dobra</displayName>
 				<displayName count="one">saotomesisk dobra</displayName>
 				<displayName count="other">saotomesiske dobra</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -15518,4 +15535,63 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">vestasiatiske skriftsymboler</characterLabel>
 		<characterLabel type="whitespace">mellomrom</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">kursiv</axisName>
+		<axisName type="opsz">optisk størrelse</axisName>
+		<axisName type="slnt">helling</axisName>
+		<axisName type="wdth">bredde</axisName>
+		<axisName type="wght">tykkelse</axisName>
+		<styleName type="ital" subtype="1">kursiv</styleName>
+		<styleName type="opsz" subtype="18">tittel</styleName>
+		<styleName type="opsz" subtype="72">visning</styleName>
+		<styleName type="opsz" subtype="144">plakat</styleName>
+		<styleName type="slnt" subtype="-12">skråstilt bakover</styleName>
+		<styleName type="slnt" subtype="0">rett</styleName>
+		<styleName type="slnt" subtype="12">skråstilt</styleName>
+		<styleName type="slnt" subtype="24">ekstra skråstil</styleName>
+		<styleName type="wdth" subtype="50">ultrafortettet</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ultrakomprimert</styleName>
+		<styleName type="wdth" subtype="62.5">ekstra fortettet</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">ekstra komprimert</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">ekstra smal</styleName>
+		<styleName type="wdth" subtype="75">fortettet</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">komprimert</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">smalt</styleName>
+		<styleName type="wdth" subtype="87.5">semifortettet</styleName>
+		<styleName type="wdth" subtype="100">vanlig</styleName>
+		<styleName type="wdth" subtype="112.5">semiutvidet</styleName>
+		<styleName type="wdth" subtype="125">utvidet</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">bred</styleName>
+		<styleName type="wdth" subtype="150">ekstra utvidet</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">ekstra bred</styleName>
+		<styleName type="wdth" subtype="200">ultrautvidet</styleName>
+		<styleName type="wght" subtype="100">smal</styleName>
+		<styleName type="wght" subtype="200">ekstra tynn</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ultratynn</styleName>
+		<styleName type="wght" subtype="300">tynn</styleName>
+		<styleName type="wght" subtype="350">semitynn</styleName>
+		<styleName type="wght" subtype="380">bok</styleName>
+		<styleName type="wght" subtype="400">normal</styleName>
+		<styleName type="wght" subtype="500">medium</styleName>
+		<styleName type="wght" subtype="600">halvfet</styleName>
+		<styleName type="wght" subtype="700">fet</styleName>
+		<styleName type="wght" subtype="800">ekstra fet</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">ultrafet</styleName>
+		<styleName type="wght" subtype="900">svart</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">tykk</styleName>
+		<styleName type="wght" subtype="950">ekstra svart</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ultratykk</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ultrasvart</styleName>
+		<featureName type="afrc">vertikale brøker</featureName>
+		<featureName type="cpsp">stor bokstav-avstand</featureName>
+		<featureName type="dlig">valgfrie ligaturer</featureName>
+		<featureName type="frac">diagonale brøker</featureName>
+		<featureName type="lnum">sifre i moderne stil</featureName>
+		<featureName type="onum">tall i gammel stil</featureName>
+		<featureName type="ordn">ordenstall</featureName>
+		<featureName type="pnum">proporsjonale tall</featureName>
+		<featureName type="smcp">kapiteler</featureName>
+		<featureName type="tnum">tabellsifre</featureName>
+		<featureName type="zero">null med skråstrek</featureName>
+	</typographicNames>
 </ldml>

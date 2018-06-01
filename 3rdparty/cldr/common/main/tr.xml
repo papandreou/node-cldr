@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="tr"/>
 	</identity>
 	<localeDisplayNames>
@@ -48,6 +48,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="aro">Araona</language>
 			<language type="arp">Arapaho Dili</language>
 			<language type="arq">Cezayir Arapçası</language>
+			<language type="ars">Necd Arapçası</language>
 			<language type="arw">Arawak Dili</language>
 			<language type="ary">Fas Arapçası</language>
 			<language type="arz">Mısır Arapçası</language>
@@ -841,6 +842,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Doğu Avrupa</territory>
 			<territory type="154">Kuzey Avrupa</territory>
 			<territory type="155">Batı Avrupa</territory>
+			<territory type="202" draft="contributed">Sahra Altı Afrika</territory>
 			<territory type="419">Latin Amerika</territory>
 			<territory type="AC">Ascension Adası</territory>
 			<territory type="AD">Andorra</territory>
@@ -1337,6 +1339,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
 			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
 		</contextTransformUsage>
+		<contextTransformUsage type="typographicNames">
+			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
+		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
 		<exemplarCharacters>[a b c ç d e f g ğ h ı i İ j k l m n o ö p r s ş t u ü v y z]</exemplarCharacters>
@@ -1601,13 +1607,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
-						<dateFormatItem id="Bh" draft="provisional">B h</dateFormatItem>
-						<dateFormatItem id="Bhm" draft="provisional">B h:mm</dateFormatItem>
-						<dateFormatItem id="Bhms" draft="provisional">B h:mm:ss</dateFormatItem>
+						<dateFormatItem id="Bh" draft="contributed">B h</dateFormatItem>
+						<dateFormatItem id="Bhm" draft="contributed">B h:mm</dateFormatItem>
+						<dateFormatItem id="Bhms" draft="contributed">B h:mm:ss</dateFormatItem>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="E">ccc</dateFormatItem>
-						<dateFormatItem id="EBhm" draft="provisional">E B h:mm</dateFormatItem>
-						<dateFormatItem id="EBhms" draft="provisional">E B h:mm:ss</dateFormatItem>
+						<dateFormatItem id="EBhm" draft="contributed">E B h:mm</dateFormatItem>
+						<dateFormatItem id="EBhms" draft="contributed">E B h:mm:ss</dateFormatItem>
 						<dateFormatItem id="Ed">d E</dateFormatItem>
 						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
 						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
@@ -6637,10 +6643,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>Moritanya Ouguiyası (1973–2017)</displayName>
+				<displayName count="one">Moritanya ouguiyası (1973–2017)</displayName>
+				<displayName count="other">Moritanya ouguiyası (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>Moritanya Ouguiyası</displayName>
 				<displayName count="one">Moritanya ouguiyası</displayName>
 				<displayName count="other">Moritanya ouguiyası</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Malta Lirası</displayName>
@@ -6992,10 +7003,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>São Tomé ve Príncipe Dobrası (1977–2017)</displayName>
+				<displayName count="one">São Tomé ve Príncipe dobrası (1977–2017)</displayName>
+				<displayName count="other">São Tomé ve Príncipe dobrası (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>São Tomé ve Príncipe Dobrası</displayName>
 				<displayName count="one">São Tomé ve Príncipe dobrası</displayName>
 				<displayName count="other">São Tomé ve Príncipe dobrası</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -8522,7 +8539,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0} smi</unitPattern>
 			</unit>
 			<unit type="length-point">
-				<displayName draft="provisional">pt</displayName>
+				<displayName draft="contributed">punto</displayName>
 				<unitPattern count="one">{0} pt</unitPattern>
 				<unitPattern count="other">{0} pt</unitPattern>
 			</unit>
@@ -9585,4 +9602,61 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">Batı Asya alfabesi</characterLabel>
 		<characterLabel type="whitespace">boşluk</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">eğik</axisName>
+		<axisName type="opsz">optik boyut</axisName>
+		<axisName type="slnt">eğim</axisName>
+		<axisName type="wdth">genişlik</axisName>
+		<axisName type="wght">kalınlık</axisName>
+		<styleName type="ital" subtype="1">bitişik el yazısı</styleName>
+		<styleName type="opsz" subtype="18">büyük harf</styleName>
+		<styleName type="opsz" subtype="72">ekran</styleName>
+		<styleName type="opsz" subtype="144">poster</styleName>
+		<styleName type="slnt" subtype="-12">geriye eğik</styleName>
+		<styleName type="slnt" subtype="0">dik</styleName>
+		<styleName type="slnt" subtype="12">eğik</styleName>
+		<styleName type="slnt" subtype="24">ekstra eğik</styleName>
+		<styleName type="wdth" subtype="50">ultra sıkışık</styleName>
+		<styleName type="wdth" subtype="62.5">ekstra sıkışık</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">ekstra dar</styleName>
+		<styleName type="wdth" subtype="75">sıkışık</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">sıkıştırılmış</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">dar</styleName>
+		<styleName type="wdth" subtype="87.5">yarı sıkışık</styleName>
+		<styleName type="wdth" subtype="100">normal</styleName>
+		<styleName type="wdth" subtype="112.5">yarı geniş</styleName>
+		<styleName type="wdth" subtype="125">genişletilmiş</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">geniş</styleName>
+		<styleName type="wdth" subtype="150">ekstra geniş</styleName>
+		<styleName type="wdth" subtype="200">ultra geniş</styleName>
+		<styleName type="wght" subtype="100">ince</styleName>
+		<styleName type="wght" subtype="200">ekstra açık</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ultra açık</styleName>
+		<styleName type="wght" subtype="300">açık</styleName>
+		<styleName type="wght" subtype="350">yarı açık</styleName>
+		<styleName type="wght" subtype="380">kitap</styleName>
+		<styleName type="wght" subtype="400">normal</styleName>
+		<styleName type="wght" subtype="500">orta</styleName>
+		<styleName type="wght" subtype="600">yarı kalın</styleName>
+		<styleName type="wght" subtype="700">kalın</styleName>
+		<styleName type="wght" subtype="800">ekstra kalın</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">ultra kalın</styleName>
+		<styleName type="wght" subtype="900">siyah</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">koyu</styleName>
+		<styleName type="wght" subtype="950">ekstra siyah</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ultra koyu</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ultra siyah</styleName>
+		<featureName type="afrc">düşey kesirler</featureName>
+		<featureName type="cpsp">büyük harf aralığı</featureName>
+		<featureName type="dlig">isteğe bağlı birleşik harfler</featureName>
+		<featureName type="frac">çapraz kesirler</featureName>
+		<featureName type="lnum">hizalı rakamlar</featureName>
+		<featureName type="onum">eski stil resimler</featureName>
+		<featureName type="ordn">sıra sayıları</featureName>
+		<featureName type="pnum">sayılarla orantılı</featureName>
+		<featureName type="smcp">küçük büyük harfler</featureName>
+		<featureName type="smcp" alt="short">küçük büyük harf</featureName>
+		<featureName type="tnum">tablo rakamları</featureName>
+		<featureName type="zero">eğik çizgili sıfır</featureName>
+	</typographicNames>
 </ldml>

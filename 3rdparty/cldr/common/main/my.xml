@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="my"/>
 	</identity>
 	<localeDisplayNames>
@@ -520,6 +520,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">အရှေ့ ဥရောပ</territory>
 			<territory type="154">မြောက် ဥရောပ</territory>
 			<territory type="155">အနောက် ဥရောပ</territory>
+			<territory type="202">ဆာဟာရ-အောက်ပိုင်း အာဖရိက</territory>
 			<territory type="419">လက်တင်အမေရိက</territory>
 			<territory type="AC">အဆန်းရှင်းကျွန်း</territory>
 			<territory type="AD">အန်ဒိုရာ</territory>
@@ -1524,7 +1525,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="yMMMM">y MMMM</dateFormatItem>
 						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
 						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
-						<dateFormatItem id="yw" count="other">Y ခု w ပတ်မြောက်</dateFormatItem>
+						<dateFormatItem id="yw" count="other">y ခု w ပတ်မြောက်</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Timezone">{1} {0}</appendItem>
@@ -2187,16 +2188,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<standard>ညှိထားသည့် ကမ္ဘာ့ စံတော်ချိန်</standard>
 				</long>
 			</zone>
-			<!-- <zone type="Asia/Chongqing">
-				 <exemplarCity>ချောင်ချင်း</exemplarCity>
-				 </zone>
-				 <zone type="Asia/Harbin">
-				 <exemplarCity>ဟာဘင်</exemplarCity>
-				 </zone>
-				 <zone type="Asia/Kashgar">
-				 <exemplarCity>ခါရှီးဂ်</exemplarCity>
-				 </zone>
-			-->
 			<zone type="Etc/Unknown">
 				<exemplarCity>အမည်မသိသောမြို့</exemplarCity>
 			</zone>
@@ -4539,8 +4530,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol draft="contributed">NAf</symbol>
 			</currency>
 			<currency type="AOA">
-				<displayName>အင်ဂိုလာ ကန်ဇာ</displayName>
-				<displayName count="other">အင်ဂိုလာ ကန်ဇာ</displayName>
+				<displayName>အန်ဂိုလာ ကွမ်ဇာ</displayName>
+				<displayName count="other">အန်ဂိုလာ ကွမ်ဇာ</displayName>
 				<symbol draft="contributed">AOA</symbol>
 				<symbol alt="narrow" draft="contributed">Kz</symbol>
 			</currency>
@@ -5064,9 +5055,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol draft="contributed">MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>မော်ရီတေးနီးယား အူဂီးယာ (1973–2017)</displayName>
+				<displayName count="other">မော်ရီတေးနီးယား အူဂီးယာ (1973–2017)</displayName>
+				<symbol draft="contributed">MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>မော်ရီတေးနီးယား အူဂီးယာ</displayName>
 				<displayName count="other">မော်ရီတေးနီးယား အူဂီးယာ</displayName>
-				<symbol draft="contributed">MRO</symbol>
 			</currency>
 			<currency type="MUR">
 				<displayName>မောရစ်ရှ ရူပီး</displayName>
@@ -5277,9 +5272,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>ဆောင်တူမေးနှင့် ပရင်စီပီ ဒိုဘရာ (1977–2017)</displayName>
+				<displayName count="other">ဆောင်တူမေးနှင့် ပရင်စီပီ ဒိုဘရာ (1977–2017)</displayName>
+				<symbol draft="contributed">STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>ဆောင်တူမေးနှင့် ပရင်စီပီ ဒိုဘရာ</displayName>
 				<displayName count="other">ဆောင်တူမေးနှင့် ပရင်စီပီ ဒိုဘရာ</displayName>
-				<symbol draft="contributed">STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -5820,7 +5819,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<unit type="mass-kilogram">
 				<displayName>ကီလိုဂရမ်</displayName>
 				<unitPattern count="other">{0} ကီလိုဂရမ်</unitPattern>
-				<perUnitPattern>{0} လျှင် တစ်ကီလိုဂရမ်</perUnitPattern>
+				<perUnitPattern>တစ်ကီလိုဂရမ်လျှင် {0}</perUnitPattern>
 			</unit>
 			<unit type="mass-gram">
 				<displayName>ဂရမ်</displayName>

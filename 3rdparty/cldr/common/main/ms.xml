@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="ms"/>
 	</identity>
 	<localeDisplayNames>
@@ -41,6 +41,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="arn">Mapuche</language>
 			<language type="arp">Arapaho</language>
 			<language type="arq">Arab Algeria</language>
+			<language type="ars">Arab Najdi</language>
 			<language type="ary">Arab Maghribi</language>
 			<language type="arz">Arab Mesir</language>
 			<language type="as">Assam</language>
@@ -550,6 +551,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Eropah Timur</territory>
 			<territory type="154">Eropah Utara</territory>
 			<territory type="155">Eropah Barat</territory>
+			<territory type="202" draft="contributed">Afrika Sub-Sahara</territory>
 			<territory type="419">Amerika Latin</territory>
 			<territory type="AC">Pulau Ascension</territory>
 			<territory type="AD">Andorra</territory>
@@ -6137,9 +6139,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>Ouguiya Mauritania (1973–2017)</displayName>
+				<displayName count="other">Ouguiya Mauritania (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>Ouguiya Mauritania</displayName>
 				<displayName count="other">Ouguiya Mauritania</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MUR">
 				<displayName>Rupee Mauritius</displayName>
@@ -6344,9 +6350,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>Dobra Sao Tome dan Principe (1977–2017)</displayName>
+				<displayName count="other">Dobra Sao Tome dan Principe (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>Dobra Sao Tome dan Principe</displayName>
 				<displayName count="other">Dobra Sao Tome dan Principe</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SYP">
@@ -8122,4 +8132,64 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">Tiulisan Asia Barat</characterLabel>
 		<characterLabel type="whitespace">Ruang putih</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<styleName type="ital" subtype="1">kursif</styleName>
+		<styleName type="opsz" subtype="18">sendeng</styleName>
+		<styleName type="opsz" subtype="72">paparkan</styleName>
+		<styleName type="opsz" subtype="144">poster</styleName>
+		<styleName type="slnt" subtype="-12">dicondong belakang</styleName>
+		<styleName type="slnt" subtype="0">garis tegak</styleName>
+		<styleName type="slnt" subtype="12">dicondongkan</styleName>
+		<styleName type="slnt" subtype="24">lebih condong</styleName>
+		<styleName type="wdth" subtype="50">ultra dipadatkan</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ultra dimampatkan</styleName>
+		<styleName type="wdth" subtype="62.5">lebih dipadatkan</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">lebih dimampatkan</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">lebih sempit</styleName>
+		<styleName type="wdth" subtype="75">dipadatkan</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">dimampatkan</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">sempit</styleName>
+		<styleName type="wdth" subtype="87.5">semi dipadatkan</styleName>
+		<styleName type="wdth" subtype="100">biasa</styleName>
+		<styleName type="wdth" subtype="112.5">semi dikembangkan</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">semi diperluaskan</styleName>
+		<styleName type="wdth" subtype="125">dikembangkan</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">dilanjutkan</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">lebar</styleName>
+		<styleName type="wdth" subtype="150">lebih dikembangkan</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">lebih diperluaskan</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">lebih lebar</styleName>
+		<styleName type="wdth" subtype="200">ultra dikembangkan</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ultra diperluaskan</styleName>
+		<styleName type="wght" subtype="100">nipis</styleName>
+		<styleName type="wght" subtype="200">lebih cerah</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ultra nipis</styleName>
+		<styleName type="wght" subtype="300">cerah</styleName>
+		<styleName type="wght" subtype="350">semi cerah</styleName>
+		<styleName type="wght" subtype="380">buku</styleName>
+		<styleName type="wght" subtype="400">biasa</styleName>
+		<styleName type="wght" subtype="500">sederhana</styleName>
+		<styleName type="wght" subtype="600">separa tebal</styleName>
+		<styleName type="wght" subtype="600" alt="demi">demi tebal</styleName>
+		<styleName type="wght" subtype="700">Tebal</styleName>
+		<styleName type="wght" subtype="800">lebih tebal</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">ultra tebal</styleName>
+		<styleName type="wght" subtype="900">hitam</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">tebal</styleName>
+		<styleName type="wght" subtype="950">lebih hitam</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ultra tebal</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ultra hitam</styleName>
+		<featureName type="afrc">pecahan menegak</featureName>
+		<featureName type="cpsp">jarak huruf</featureName>
+		<featureName type="dlig">ligatur pilihan</featureName>
+		<featureName type="frac">pecahan pepenjuru</featureName>
+		<featureName type="lnum">nombor pembarisan</featureName>
+		<featureName type="onum">angka gaya lama</featureName>
+		<featureName type="ordn">ordinal</featureName>
+		<featureName type="pnum">nombor berkadar</featureName>
+		<featureName type="smcp">huruf besar kecil</featureName>
+		<featureName type="smcp" alt="short">huruf kecil</featureName>
+		<featureName type="tnum">nombor berjadual</featureName>
+		<featureName type="zero">sifar bergaris condong</featureName>
+	</typographicNames>
 </ldml>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13756 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="th"/>
 	</identity>
 	<localeDisplayNames>
@@ -48,6 +48,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="aro">อาเรานา</language>
 			<language type="arp">อาราปาโฮ</language>
 			<language type="arq">อาหรับแอลจีเรีย</language>
+			<language type="ars">อาหรับนัจญ์ดี</language>
 			<language type="arw">อาราวัก</language>
 			<language type="ary">อาหรับโมร็อกโก</language>
 			<language type="arz">อาหรับพื้นเมืองอียิปต์</language>
@@ -841,6 +842,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">ยุโรปตะวันออก</territory>
 			<territory type="154">ยุโรปเหนือ</territory>
 			<territory type="155">ยุโรปตะวันตก</territory>
+			<territory type="202" draft="contributed">แอฟริกาใต้สะฮารา</territory>
 			<territory type="419">ละตินอเมริกา</territory>
 			<territory type="AC">เกาะแอสเซนชัน</territory>
 			<territory type="AD">อันดอร์รา</territory>
@@ -7550,9 +7552,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>อูกียามอริเตเนีย (1973–2017)</displayName>
+				<displayName count="other">อูกียามอริเตเนีย (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>อูกียามอริเตเนีย</displayName>
 				<displayName count="other">อูกียามอริเตเนีย</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>ลีรามอลตา</displayName>
@@ -7839,9 +7845,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>ดอบราเซาตูเมและปรินซิปี (1977–2017)</displayName>
+				<displayName count="other">ดอบราเซาตูเมและปรินซิปี (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>ดอบราเซาตูเมและปรินซิปี</displayName>
 				<displayName count="other">ดอบราเซาตูเมและปรินซิปี</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -9637,4 +9648,64 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts" draft="contributed">สคริปต์เอเชียตะวันตก</characterLabel>
 		<characterLabel type="whitespace" draft="contributed">ช่องว่าง</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<styleName type="ital" subtype="1">เล่นหาง</styleName>
+		<styleName type="opsz" subtype="18">ตัวพิมพ์ใหญ่</styleName>
+		<styleName type="opsz" subtype="72">การแสดงผล</styleName>
+		<styleName type="opsz" subtype="144">รูปโปสเตอร์</styleName>
+		<styleName type="slnt" subtype="-12">เอนหลัง</styleName>
+		<styleName type="slnt" subtype="0">ตั้งตรง</styleName>
+		<styleName type="slnt" subtype="12">เอน</styleName>
+		<styleName type="slnt" subtype="24">เอนพิเศษ</styleName>
+		<styleName type="wdth" subtype="50">บีบมากที่สุด</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">บีบอัดมากที่สุด</styleName>
+		<styleName type="wdth" subtype="62.5">บีบพิเศษ</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">บีบอัดพิเศษ</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">แคบพิเศษ</styleName>
+		<styleName type="wdth" subtype="75">บีบ</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">บีบอัด</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">แบบแคบ</styleName>
+		<styleName type="wdth" subtype="87.5">กึ่งบีบ</styleName>
+		<styleName type="wdth" subtype="100">ปกติ</styleName>
+		<styleName type="wdth" subtype="112.5">กึ่งขยาย</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">กึ่งเสริม</styleName>
+		<styleName type="wdth" subtype="125">ขยายแล้ว</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">แบบขยาย</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">กว้าง</styleName>
+		<styleName type="wdth" subtype="150">ขยายพิเศษ</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">เสริมพิเศษ</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">กว้างพิเศษ</styleName>
+		<styleName type="wdth" subtype="200">ขยายมากที่สุด</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">เสริมมากที่สุด</styleName>
+		<styleName type="wght" subtype="100">ผอม</styleName>
+		<styleName type="wght" subtype="200">บางพิเศษ</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">บางมากที่สุด</styleName>
+		<styleName type="wght" subtype="300">บาง</styleName>
+		<styleName type="wght" subtype="350">กึ่งบาง</styleName>
+		<styleName type="wght" subtype="380">หนังสือ</styleName>
+		<styleName type="wght" subtype="400">ปกติ</styleName>
+		<styleName type="wght" subtype="500">ปานกลาง</styleName>
+		<styleName type="wght" subtype="600">กึ่งหนา</styleName>
+		<styleName type="wght" subtype="600" alt="demi">หนา demi</styleName>
+		<styleName type="wght" subtype="700">หนา</styleName>
+		<styleName type="wght" subtype="800">หนาพิเศษ</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">หนามากที่สุด</styleName>
+		<styleName type="wght" subtype="900">ดำ</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">หนัก</styleName>
+		<styleName type="wght" subtype="950">ดำพิเศษ</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">หนักมากที่สุด</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ดำมากที่สุด</styleName>
+		<featureName type="afrc">เศษส่วนแนวตั้ง</featureName>
+		<featureName type="cpsp">ระยะห่างตัวพิมพ์ใหญ่</featureName>
+		<featureName type="dlig">ลิเกเจอร์ทางเลือก</featureName>
+		<featureName type="frac">เศษส่วนทแยงมุม</featureName>
+		<featureName type="lnum">ตัวเลขบนเส้นบรรทัด</featureName>
+		<featureName type="onum">ตัวเลขลักษณะเก่า</featureName>
+		<featureName type="ordn">ตัวเลขบริบท</featureName>
+		<featureName type="pnum">ตัวเลขแบบสัดส่วน</featureName>
+		<featureName type="smcp">ตัวพิมพ์ใหญ่แบบเล็ก</featureName>
+		<featureName type="smcp" alt="short">ตัวพิมพ์ใหญ่เล็ก</featureName>
+		<featureName type="tnum">ตัวเลขแบบตาราง</featureName>
+		<featureName type="zero">เลขศูนย์เอียง</featureName>
+	</typographicNames>
 </ldml>

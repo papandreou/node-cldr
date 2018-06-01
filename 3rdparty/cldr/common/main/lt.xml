@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="lt"/>
 	</identity>
 	<localeDisplayNames>
@@ -840,6 +840,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Rytų Europa</territory>
 			<territory type="154">Šiaurės Europa</territory>
 			<territory type="155">Vakarų Europa</territory>
+			<territory type="202">Užsachario Afrika</territory>
 			<territory type="419">Lotynų Amerika</territory>
 			<territory type="AC">Dangun Žengimo sala</territory>
 			<territory type="AD">Andora</territory>
@@ -1327,6 +1328,25 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<ellipsis type="word-initial">… {0}</ellipsis>
 		<ellipsis type="word-medial">{0} … {1}</ellipsis>
 		<moreInformation>?</moreInformation>
+		<parseLenients scope="date" level="lenient">
+			<parseLenient sample="-" draft="contributed">[\--/]</parseLenient>
+			<parseLenient sample=":" draft="contributed">[\:∶]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="general" level="lenient">
+			<parseLenient sample="." draft="contributed">[.․。︒﹒．｡]</parseLenient>
+			<parseLenient sample="$" draft="contributed">[\$﹩＄$]</parseLenient>
+			<parseLenient sample="£" draft="contributed">[£₤]</parseLenient>
+			<parseLenient sample="₹" draft="contributed">[₨₹{Rp}{Rs}]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="number" level="lenient">
+			<parseLenient sample="-" draft="contributed">[\-‒⁻₋−➖﹣－]</parseLenient>
+			<parseLenient sample="," draft="contributed">[,،٫、︐︑﹐﹑，､]</parseLenient>
+			<parseLenient sample="+" draft="contributed">[+⁺₊➕﬩﹢＋]</parseLenient>
+		</parseLenients>
+		<parseLenients scope="number" level="stricter">
+			<parseLenient sample="," draft="contributed">[,٫︐﹐，]</parseLenient>
+			<parseLenient sample="." draft="contributed">[.․﹒．｡]</parseLenient>
+		</parseLenients>
 	</characters>
 	<delimiters>
 		<quotationStart>„</quotationStart>
@@ -8417,12 +8437,19 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>Mauritanijos ugija (1973–2017)</displayName>
+				<displayName count="one">Mauritanijos ugija (1973–2017)</displayName>
+				<displayName count="few">Mauritanijos ugijos (1973–2017)</displayName>
+				<displayName count="many">Mauritanijos ugijos (1973–2017)</displayName>
+				<displayName count="other">Mauritanijos ugijų (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>Mauritanijos ugija</displayName>
 				<displayName count="one">Mauritanijos ugija</displayName>
 				<displayName count="few">Mauritanijos ugijos</displayName>
 				<displayName count="many">Mauritanijos ugijos</displayName>
 				<displayName count="other">Mauritanijos ugijų</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Maltos lira</displayName>
@@ -8883,12 +8910,20 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>San Tomės ir Principės dobra (1977–2017)</displayName>
+				<displayName count="one">San Tomės ir Principės dobra (1977–2017)</displayName>
+				<displayName count="few">San Tomės ir Principės dobros (1977–2017)</displayName>
+				<displayName count="many">San Tomės ir Principės dobros (1977–2017)</displayName>
+				<displayName count="other">Sao Tomės ir Principės dobrų (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>San Tomės ir Principės dobra</displayName>
 				<displayName count="one">San Tomės ir Principės dobra</displayName>
 				<displayName count="few">San Tomės ir Principės dobros</displayName>
 				<displayName count="many">San Tomės ir Principės dobros</displayName>
 				<displayName count="other">Sao Tomės ir Principės dobrų</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">

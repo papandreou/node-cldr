@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="zh"/>
 		<script type="Hant"/>
 	</identity>
@@ -49,6 +49,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="aro">阿拉奧納文</language>
 			<language type="arp">阿拉帕霍文</language>
 			<language type="arq">阿爾及利亞阿拉伯文</language>
+			<language type="ars">納吉迪阿拉伯文</language>
 			<language type="arw">阿拉瓦克文</language>
 			<language type="ary">摩洛哥阿拉伯文</language>
 			<language type="arz">埃及阿拉伯文</language>
@@ -838,6 +839,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">東歐</territory>
 			<territory type="154">北歐</territory>
 			<territory type="155">西歐</territory>
+			<territory type="202" draft="contributed">撒哈拉撒沙漠以南非洲</territory>
 			<territory type="419">拉丁美洲</territory>
 			<territory type="AC">阿森松島</territory>
 			<territory type="AD">安道爾</territory>
@@ -12882,9 +12884,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>茅利塔尼亞烏吉亞 (1973–2017)</displayName>
+				<displayName count="other">茅利塔尼亞烏吉亞 (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>茅利塔尼亞烏吉亞</displayName>
 				<displayName count="other">茅利塔尼亞烏吉亞</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>馬爾他里拉</displayName>
@@ -13195,9 +13201,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>聖多美島和普林西比島多布拉 (1977–2017)</displayName>
+				<displayName count="other">聖多美島和普林西比島多布拉 (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>聖多美島和普林西比島多布拉</displayName>
 				<displayName count="other">聖多美島和普林西比島多布拉</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -15626,4 +15636,68 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">西亞語系</characterLabel>
 		<characterLabel type="whitespace">空白</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">斜體</axisName>
+		<axisName type="opsz">視覺大小</axisName>
+		<axisName type="slnt">傾斜</axisName>
+		<axisName type="wdth">寬度</axisName>
+		<axisName type="wght">線段寬度</axisName>
+		<styleName type="ital" subtype="1">草書體</styleName>
+		<styleName type="opsz" subtype="18">燙印體</styleName>
+		<styleName type="opsz" subtype="72">顯示體</styleName>
+		<styleName type="opsz" subtype="144">海報體</styleName>
+		<styleName type="slnt" subtype="-12">反斜體</styleName>
+		<styleName type="slnt" subtype="0">筆直體</styleName>
+		<styleName type="slnt" subtype="12">斜體</styleName>
+		<styleName type="slnt" subtype="24">加斜體</styleName>
+		<styleName type="wdth" subtype="50">極窄體</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">極纖細體</styleName>
+		<styleName type="wdth" subtype="62.5">特窄體</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">特纖細體</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">特瘦體</styleName>
+		<styleName type="wdth" subtype="75">窄體</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">纖細體</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">瘦體</styleName>
+		<styleName type="wdth" subtype="87.5">半窄體</styleName>
+		<styleName type="wdth" subtype="100">一般體</styleName>
+		<styleName type="wdth" subtype="112.5">半長體</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">半寬體</styleName>
+		<styleName type="wdth" subtype="125">長體</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">寬體</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">寬體</styleName>
+		<styleName type="wdth" subtype="150">加長體</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">加寬體</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">加寬體</styleName>
+		<styleName type="wdth" subtype="200">極長體</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">極寬體</styleName>
+		<styleName type="wght" subtype="100">細瘦體</styleName>
+		<styleName type="wght" subtype="200">特細體</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">極細體</styleName>
+		<styleName type="wght" subtype="300">細體</styleName>
+		<styleName type="wght" subtype="350">半細體</styleName>
+		<styleName type="wght" subtype="380">書寫體</styleName>
+		<styleName type="wght" subtype="400">標準體</styleName>
+		<styleName type="wght" subtype="500">中體</styleName>
+		<styleName type="wght" subtype="600">半粗體</styleName>
+		<styleName type="wght" subtype="600" alt="demi">略粗體</styleName>
+		<styleName type="wght" subtype="700">粗體</styleName>
+		<styleName type="wght" subtype="800">加粗體</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">極粗體</styleName>
+		<styleName type="wght" subtype="900">黑體</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">特黑體</styleName>
+		<styleName type="wght" subtype="950">加黑體</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">極特黑體</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">極黑體</styleName>
+		<featureName type="afrc">直式分數</featureName>
+		<featureName type="cpsp">大寫間距</featureName>
+		<featureName type="dlig">選擇性連字</featureName>
+		<featureName type="frac">對角線分數</featureName>
+		<featureName type="lnum">齊線數字</featureName>
+		<featureName type="onum">舊式數字</featureName>
+		<featureName type="ordn">順序</featureName>
+		<featureName type="pnum">等比例數字</featureName>
+		<featureName type="smcp">小型大寫字母</featureName>
+		<featureName type="tnum">表格數字</featureName>
+		<featureName type="zero">加斜線的零</featureName>
+	</typographicNames>
 </ldml>

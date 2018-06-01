@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13717 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="cy"/>
 	</identity>
 	<localeDisplayNames>
@@ -635,6 +635,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Dwyrain Ewrop</territory>
 			<territory type="154">Gogledd Ewrop</territory>
 			<territory type="155">Gorllewin Ewrop</territory>
+			<territory type="202">Affrica Is-Sahara</territory>
 			<territory type="419">America Ladin</territory>
 			<territory type="AC">Ynys Ascension</territory>
 			<territory type="AD">Andorra</territory>
@@ -653,7 +654,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="AW">Aruba</territory>
 			<territory type="AX">Ynysoedd Åland</territory>
 			<territory type="AZ">Azerbaijan</territory>
-			<territory type="BA">Bosnia a Herzegovina</territory>
+			<territory type="BA">Bosnia &amp; Herzegovina</territory>
 			<territory type="BB">Barbados</territory>
 			<territory type="BD">Bangladesh</territory>
 			<territory type="BE">Gwlad Belg</territory>
@@ -1472,12 +1473,22 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<dayPeriods>
 					<dayPeriodContext type="format">
 						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="midnight">canol nos</dayPeriod>
 							<dayPeriod type="am">yb</dayPeriod>
+							<dayPeriod type="noon">canol dydd</dayPeriod>
 							<dayPeriod type="pm">yh</dayPeriod>
+							<dayPeriod type="morning1">y bore</dayPeriod>
+							<dayPeriod type="afternoon1">y prynhawn</dayPeriod>
+							<dayPeriod type="evening1">yr hwyr</dayPeriod>
 						</dayPeriodWidth>
 						<dayPeriodWidth type="narrow">
+							<dayPeriod type="midnight">canol nos</dayPeriod>
 							<dayPeriod type="am">b</dayPeriod>
+							<dayPeriod type="noon">canol dydd</dayPeriod>
 							<dayPeriod type="pm">h</dayPeriod>
+							<dayPeriod type="morning1">yn y bore</dayPeriod>
+							<dayPeriod type="afternoon1">yn y prynhawn</dayPeriod>
+							<dayPeriod type="evening1">min nos</dayPeriod>
 						</dayPeriodWidth>
 						<dayPeriodWidth type="wide">
 							<dayPeriod type="midnight">canol nos</dayPeriod>
@@ -1491,12 +1502,22 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					</dayPeriodContext>
 					<dayPeriodContext type="stand-alone">
 						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="midnight">canol nos</dayPeriod>
 							<dayPeriod type="am">yb</dayPeriod>
+							<dayPeriod type="noon">canol dydd</dayPeriod>
 							<dayPeriod type="pm">yh</dayPeriod>
+							<dayPeriod type="morning1">bore</dayPeriod>
+							<dayPeriod type="afternoon1">prynhawn</dayPeriod>
+							<dayPeriod type="evening1">yr hwyr</dayPeriod>
 						</dayPeriodWidth>
 						<dayPeriodWidth type="narrow">
+							<dayPeriod type="midnight">canol nos</dayPeriod>
 							<dayPeriod type="am">yb</dayPeriod>
+							<dayPeriod type="noon">canol dydd</dayPeriod>
 							<dayPeriod type="pm">yh</dayPeriod>
+							<dayPeriod type="morning1">bore</dayPeriod>
+							<dayPeriod type="afternoon1">prynhawn</dayPeriod>
+							<dayPeriod type="evening1">min nos</dayPeriod>
 						</dayPeriodWidth>
 						<dayPeriodWidth type="wide">
 							<dayPeriod type="midnight">canol nos</dayPeriod>
@@ -6845,6 +6866,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol draft="contributed">MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>Ouguiya Mauritania (1973–2017)</displayName>
+				<displayName count="zero">ouguiya Mauritania (1973–2017)</displayName>
+				<displayName count="one">ouguiya Mauritania (1973–2017)</displayName>
+				<displayName count="two">ouguiya Mauritania (1973–2017)</displayName>
+				<displayName count="few">ouguiya Mauritania (1973–2017)</displayName>
+				<displayName count="many">ouguiya Mauritania (1973–2017)</displayName>
+				<displayName count="other">ouguiya Mauritania (1973–2017)</displayName>
+				<symbol draft="contributed">MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>Ouguiya Mauritania</displayName>
 				<displayName count="zero">ouguiya Mauritania</displayName>
 				<displayName count="one">ouguiya Mauritania</displayName>
@@ -6852,7 +6883,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName count="few">ouguiya Mauritania</displayName>
 				<displayName count="many">ouguiya Mauritania</displayName>
 				<displayName count="other">ouguiya Mauritania</displayName>
-				<symbol draft="contributed">MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<symbol draft="contributed">MTL</symbol>
@@ -7378,6 +7408,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>Dobra São Tomé a Príncipe (1977–2017)</displayName>
+				<displayName count="zero">dobra São Tomé a Príncipe (1977–2017)</displayName>
+				<displayName count="one">dobra São Tomé a Príncipe (1977–2017)</displayName>
+				<displayName count="two">dobra São Tomé a Príncipe (1977–2017)</displayName>
+				<displayName count="few">dobra São Tomé a Príncipe (1977–2017)</displayName>
+				<displayName count="many">dobra São Tomé a Príncipe (1977–2017)</displayName>
+				<displayName count="other">dobra São Tomé a Príncipe (1977–2017)</displayName>
+				<symbol draft="contributed">STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>Dobra São Tomé a Príncipe</displayName>
 				<displayName count="zero">dobra São Tomé a Príncipe</displayName>
 				<displayName count="one">dobra São Tomé a Príncipe</displayName>
@@ -7385,7 +7425,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName count="few">dobra São Tomé a Príncipe</displayName>
 				<displayName count="many">dobra São Tomé a Príncipe</displayName>
 				<displayName count="other">dobra São Tomé a Príncipe</displayName>
-				<symbol draft="contributed">STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SVC">

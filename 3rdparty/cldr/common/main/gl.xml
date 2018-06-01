@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13701 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="gl"/>
 	</identity>
 	<localeDisplayNames>
@@ -508,6 +508,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Europa do Leste</territory>
 			<territory type="154">Europa Setentrional</territory>
 			<territory type="155">Europa Occidental</territory>
+			<territory type="202">África subsahariana</territory>
 			<territory type="419">América Latina</territory>
 			<territory type="AC">Illa de Ascensión</territory>
 			<territory type="AD">Andorra</territory>
@@ -4579,8 +4580,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<pattern type="1000000" count="other">0 mill'.'</pattern>
 					<pattern type="10000000" count="one">00 mill'.'</pattern>
 					<pattern type="10000000" count="other">00 mill'.'</pattern>
-					<pattern type="100000000" count="one">000 mill'.'</pattern>
-					<pattern type="100000000" count="other">000 mill'.'</pattern>
+					<pattern type="100000000" count="one">000 mill</pattern>
+					<pattern type="100000000" count="other">000 mill</pattern>
 					<pattern type="1000000000" count="one">0</pattern>
 					<pattern type="1000000000" count="other">0</pattern>
 					<pattern type="10000000000" count="one">0</pattern>
@@ -5396,10 +5397,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>Ouguiya mauritano (1973–2017)</displayName>
+				<displayName count="one">ouguiya mauritano (1973–2017)</displayName>
+				<displayName count="other">ouguiyas mauritanos (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>Ouguiya mauritano</displayName>
 				<displayName count="one">ouguiya mauritano</displayName>
 				<displayName count="other">ouguiyas mauritanos</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MUR">
 				<displayName>Rupia mauriciana</displayName>
@@ -5668,10 +5674,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>Dobra de São Tomé e Príncipe (1977–2017)</displayName>
+				<displayName count="one">dobra de São Tomé e Príncipe (1977–2017)</displayName>
+				<displayName count="other">dobras de São Tomé e Príncipe (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>Dobra de São Tomé e Príncipe</displayName>
 				<displayName count="one">dobra de São Tomé e Príncipe</displayName>
 				<displayName count="other">dobras de São Tomé e Príncipe</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">

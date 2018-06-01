@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="sk"/>
 	</identity>
 	<localeDisplayNames>
@@ -43,6 +43,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="arc">aramejčina</language>
 			<language type="arn">mapudungun</language>
 			<language type="arp">arapažština</language>
+			<language type="ars">arabčina – nadžd</language>
 			<language type="arw">arawačtina</language>
 			<language type="as">ásamčina</language>
 			<language type="asa">asu</language>
@@ -637,6 +638,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">východná Európa</territory>
 			<territory type="154">severná Európa</territory>
 			<territory type="155">západná Európa</territory>
+			<territory type="202" draft="contributed">subsaharská Afrika</territory>
 			<territory type="419">Latinská Amerika</territory>
 			<territory type="AC">Ascension</territory>
 			<territory type="AD">Andorra</territory>
@@ -2564,6 +2566,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</field>
 			<field type="day-short">
 				<displayName>d.</displayName>
+				<relative type="-2" draft="contributed">predvčerom</relative>
+				<relative type="-1" draft="contributed">včera</relative>
+				<relative type="0" draft="contributed">dnes</relative>
+				<relative type="1" draft="contributed">zajtra</relative>
+				<relative type="2" draft="contributed">pozajtra</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">o {0} d.</relativeTimePattern>
 					<relativeTimePattern count="few">o {0} d.</relativeTimePattern>
@@ -2579,6 +2586,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</field>
 			<field type="day-narrow">
 				<displayName>d.</displayName>
+				<relative type="-2" draft="contributed">predvčerom</relative>
+				<relative type="-1" draft="contributed">včera</relative>
+				<relative type="0" draft="contributed">dnes</relative>
+				<relative type="1" draft="contributed">zajtra</relative>
+				<relative type="2" draft="contributed">pozajtra</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">o {0} d.</relativeTimePattern>
 					<relativeTimePattern count="few">o {0} d.</relativeTimePattern>
@@ -7044,12 +7056,19 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>mauritánska ukija (1973–2017)</displayName>
+				<displayName count="one">mauritánska ukija (1973–2017)</displayName>
+				<displayName count="few">mauritánske ukije (1973–2017)</displayName>
+				<displayName count="many">mauritánskej ukije (1973–2017)</displayName>
+				<displayName count="other">mauritánskych ukijí (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>mauritánska ukija</displayName>
 				<displayName count="one">mauritánska ukija</displayName>
 				<displayName count="few">mauritánske ukije</displayName>
 				<displayName count="many">mauritánskej ukije</displayName>
 				<displayName count="other">mauritánskych ukijí</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>maltská líra</displayName>
@@ -7532,12 +7551,20 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>svätotomášska dobra (1977–2017)</displayName>
+				<displayName count="one">svätotomášska dobra (1977–2017)</displayName>
+				<displayName count="few">svätotomášske dobry (1977–2017)</displayName>
+				<displayName count="many">svätotomášskej dobry (1977–2017)</displayName>
+				<displayName count="other">svätotomášskych dobier (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>svätotomášska dobra</displayName>
 				<displayName count="one">svätotomášska dobra</displayName>
 				<displayName count="few">svätotomášske dobry</displayName>
 				<displayName count="many">svätotomášskej dobry</displayName>
 				<displayName count="other">svätotomášskych dobier</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -10896,4 +10923,17 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">západoázijské písma</characterLabel>
 		<characterLabel type="whitespace">prázdne znaky</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<featureName type="afrc">zvislé zlomky</featureName>
+		<featureName type="cpsp">rozostupy veľkých písmen</featureName>
+		<featureName type="dlig">voliteľné ligatúry</featureName>
+		<featureName type="frac">diagonálne zlomky</featureName>
+		<featureName type="lnum">zarovnané čísla</featureName>
+		<featureName type="onum">skákavé číslice</featureName>
+		<featureName type="ordn">poradové čísla</featureName>
+		<featureName type="pnum">proporčné čísla</featureName>
+		<featureName type="smcp">kapitálky</featureName>
+		<featureName type="tnum">tabuľkové čísla</featureName>
+		<featureName type="zero">prečiarknutá nula</featureName>
+	</typographicNames>
 </ldml>

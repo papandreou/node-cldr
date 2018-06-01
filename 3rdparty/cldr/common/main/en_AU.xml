@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13706 $"/>
+		<version number="$Revision: 13873 $"/>
 		<language type="en"/>
 		<territory type="AU"/>
 	</identity>
@@ -308,6 +308,22 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="weekOfMonth-narrow">
 				<displayName draft="provisional">wk of mo</displayName>
 			</field>
+			<field type="day-short">
+				<relativeTime type="future">
+					<relativeTimePattern count="other">in {0} days</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">{0} days ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="day-narrow">
+				<relativeTime type="future">
+					<relativeTimePattern count="other">in {0} days</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">{0} days ago</relativeTimePattern>
+				</relativeTime>
+			</field>
 			<field type="dayOfYear-short">
 				<displayName>day of yr</displayName>
 			</field>
@@ -377,6 +393,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</relativeTime>
 			</field>
 			<field type="tue-narrow">
+				<relative type="-1">last Tu</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">in {0} Tu</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} Tu</relativeTimePattern>
@@ -846,6 +863,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<unit type="length-kilometer">
 				<displayName>kilometre</displayName>
 			</unit>
+			<unit type="length-decimeter">
+				<unitPattern count="other">{0} decimetres</unitPattern>
+			</unit>
+			<unit type="length-centimeter">
+				<unitPattern count="other">{0} centimetres</unitPattern>
+			</unit>
 			<unit type="length-micrometer">
 				<displayName>micrometres</displayName>
 			</unit>
@@ -956,6 +979,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<unit type="length-fathom">
 				<unitPattern count="one">{0} fm</unitPattern>
 				<unitPattern count="other">{0} fm</unitPattern>
+			</unit>
+			<unit type="mass-pound">
+				<unitPattern count="other">{0} lb</unitPattern>
 			</unit>
 			<unit type="mass-carat">
 				<unitPattern count="one">{0} CM</unitPattern>

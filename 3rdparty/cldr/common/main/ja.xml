@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13701 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="ja"/>
 	</identity>
 	<localeDisplayNames>
@@ -48,6 +48,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="aro">アラオナ語</language>
 			<language type="arp">アラパホー語</language>
 			<language type="arq">アルジェリア・アラビア語</language>
+			<language type="ars">ナジュド地方・アラビア語</language>
 			<language type="arw">アラワク語</language>
 			<language type="ary">モロッコ・アラビア語</language>
 			<language type="arz">エジプト・アラビア語</language>
@@ -835,6 +836,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">東ヨーロッパ</territory>
 			<territory type="154">北ヨーロッパ</territory>
 			<territory type="155">西ヨーロッパ</territory>
+			<territory type="202" draft="contributed">サブサハラアフリカ</territory>
 			<territory type="419">ラテンアメリカ</territory>
 			<territory type="AC">アセンション島</territory>
 			<territory type="AD">アンドラ</territory>
@@ -7956,9 +7958,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol draft="contributed">MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>モーリタニア ウギア (1973–2017)</displayName>
+				<displayName count="other">モーリタニア ウギア (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>モーリタニア ウギア</displayName>
 				<displayName count="other">モーリタニア ウギア</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>マルタ リラ</displayName>
@@ -8268,9 +8274,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>サントメ・プリンシペ ドブラ (1977–2017)</displayName>
+				<displayName count="other">サントメ・プリンシペ ドブラ (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>サントメ・プリンシペ ドブラ</displayName>
 				<displayName count="other">サントメ・プリンシペ ドブラ</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -10417,4 +10427,73 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">西アジアの文字</characterLabel>
 		<characterLabel type="whitespace">ホワイトスペース</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">イタリック</axisName>
+		<axisName type="opsz">オプティカルサイズ</axisName>
+		<axisName type="slnt">傾斜角</axisName>
+		<axisName type="wdth">字幅</axisName>
+		<axisName type="wght">太さ</axisName>
+		<styleName type="ital" subtype="1">カーシブ</styleName>
+		<styleName type="opsz" subtype="18">タイトル</styleName>
+		<styleName type="opsz" subtype="72">ディスプレイ</styleName>
+		<styleName type="opsz" subtype="144">ポスター</styleName>
+		<styleName type="slnt" subtype="-12">バック・スラント</styleName>
+		<styleName type="slnt" subtype="0">アップライト</styleName>
+		<styleName type="slnt" subtype="12">スラント</styleName>
+		<styleName type="slnt" subtype="24">エクストラ・スラント</styleName>
+		<styleName type="wdth" subtype="50">ウルトラ・コンデンス</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ウルトラ・コンプレス</styleName>
+		<styleName type="wdth" subtype="50" alt="narrow">ウルトラ・ナロー</styleName>
+		<styleName type="wdth" subtype="62.5">エクストラ・コンデンス</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">エクストラ・コンプレス</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">エクストラ・ナロー</styleName>
+		<styleName type="wdth" subtype="75">コンデンス</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">コンプレス</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">ナロー</styleName>
+		<styleName type="wdth" subtype="87.5">セミ・コンデンス</styleName>
+		<styleName type="wdth" subtype="87.5" alt="compressed">セミ・コンプレス</styleName>
+		<styleName type="wdth" subtype="87.5" alt="narrow">セミ・ナロー</styleName>
+		<styleName type="wdth" subtype="100">ノーマル</styleName>
+		<styleName type="wdth" subtype="112.5">セミ・エクスパンド</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">セミ・エクステンド</styleName>
+		<styleName type="wdth" subtype="112.5" alt="wide">セミ・ワイド</styleName>
+		<styleName type="wdth" subtype="125">エクスパンド</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">エクステンド</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">ワイド</styleName>
+		<styleName type="wdth" subtype="150">エクストラ・エクスパンド</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">エクストラ・エクステンド</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">エクストラ・ワイド</styleName>
+		<styleName type="wdth" subtype="200">ウルトラ・エクスパンド</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ウルトラ・エクステンド</styleName>
+		<styleName type="wdth" subtype="200" alt="wide">ウルトラ・ワイド</styleName>
+		<styleName type="wght" subtype="100">シン</styleName>
+		<styleName type="wght" subtype="200">エクストラ・ライト</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ウルトラ・ライト</styleName>
+		<styleName type="wght" subtype="300">ライト</styleName>
+		<styleName type="wght" subtype="350">セミ・ライト</styleName>
+		<styleName type="wght" subtype="380">ブック</styleName>
+		<styleName type="wght" subtype="400">レギュラー</styleName>
+		<styleName type="wght" subtype="500">ミディアム</styleName>
+		<styleName type="wght" subtype="600">セミ・ボールド</styleName>
+		<styleName type="wght" subtype="600" alt="demi">デミ・ボールド</styleName>
+		<styleName type="wght" subtype="700">ボールド</styleName>
+		<styleName type="wght" subtype="800">エクストラ・ボールド</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">ウルトラ・ボールド</styleName>
+		<styleName type="wght" subtype="900">ブラック</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">ヘビー</styleName>
+		<styleName type="wght" subtype="950">エクストラ・ブラック</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ウルトラ・ヘビー</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ウルトラ・ブラック</styleName>
+		<featureName type="afrc">縦書きの分数</featureName>
+		<featureName type="cpsp">大文字の間隔</featureName>
+		<featureName type="dlig">オプションのリガチャ</featureName>
+		<featureName type="frac">斜め書きの分数</featureName>
+		<featureName type="lnum">ライニング数字</featureName>
+		<featureName type="onum">古いスタイルの数字</featureName>
+		<featureName type="ordn">序数</featureName>
+		<featureName type="pnum">プロポーショナル数字</featureName>
+		<featureName type="smcp">小さな大文字</featureName>
+		<featureName type="tnum">表形式数字</featureName>
+		<featureName type="zero">スラッシュゼロ</featureName>
+	</typographicNames>
 </ldml>

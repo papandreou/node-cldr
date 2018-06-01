@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13722 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="ca"/>
 	</identity>
 	<localeDisplayNames>
@@ -46,6 +46,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="arn">mapudungu</language>
 			<language type="aro">araona</language>
 			<language type="arp">arapaho</language>
+			<language type="ars">àrab najdi</language>
 			<language type="arw">arauac</language>
 			<language type="arz">àrab egipci</language>
 			<language type="as">assamès</language>
@@ -803,6 +804,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Europa oriental</territory>
 			<territory type="154">Europa septentrional</territory>
 			<territory type="155">Europa occidental</territory>
+			<territory type="202" draft="contributed">Àfrica subsahariana</territory>
 			<territory type="419">Amèrica Llatina</territory>
 			<territory type="AC">Illa de l’Ascensió</territory>
 			<territory type="AD">Andorra</territory>
@@ -1290,6 +1292,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<codePattern type="territory">Regió: {0}</codePattern>
 		</codePatterns>
 	</localeDisplayNames>
+	<contextTransforms>
+		<contextTransformUsage type="typographicNames">
+			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
+		</contextTransformUsage>
+	</contextTransforms>
 	<characters>
 		<exemplarCharacters>[· a à b c ç d e é è f g h i í ï j k l m n o ó ò p q r s t u ú ü v w x y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[á ă â å ä ã ā æ ĕ ê ë ē ì ĭ î ī ŀ ñ º ŏ ô ö ø ō œ ù ŭ û ū ÿ]</exemplarCharacters>
@@ -6655,10 +6663,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>ouguiya maurità (1973–2017)</displayName>
+				<displayName count="one">ouguiya maurità (1973–2017)</displayName>
+				<displayName count="other">ouguiyas mauritans (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>ouguiya maurità</displayName>
 				<displayName count="one">ouguiya maurità</displayName>
 				<displayName count="other">ouguiyas mauritans</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>lira maltesa</displayName>
@@ -7019,10 +7032,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>dobra de São Tomé i Príncipe (1977–2017)</displayName>
+				<displayName count="one">dobra de São Tomé i Príncipe (1977–2017)</displayName>
+				<displayName count="other">dobras de São Tomé i Príncipe (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>dobra de São Tomé i Príncipe</displayName>
 				<displayName count="one">dobra de São Tomé i Príncipe</displayName>
 				<displayName count="other">dobras de São Tomé i Príncipe</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -9372,4 +9391,65 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">escriptures de l’Àsia Sud-occidental</characterLabel>
 		<characterLabel type="whitespace">espai en blanc</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<styleName type="ital" subtype="1">cursiva</styleName>
+		<styleName type="opsz" subtype="18">inclinada</styleName>
+		<styleName type="opsz" subtype="72">mostrar</styleName>
+		<styleName type="opsz" subtype="144">pòster</styleName>
+		<styleName type="slnt" subtype="0">cap per amunt</styleName>
+		<styleName type="slnt" subtype="12">inclinada</styleName>
+		<styleName type="slnt" subtype="24">extrainclinada</styleName>
+		<styleName type="wdth" subtype="50">ultracondensada</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ultracomprimida</styleName>
+		<styleName type="wdth" subtype="50" alt="narrow">ultraestreta</styleName>
+		<styleName type="wdth" subtype="62.5">extracondensada</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">extracomprimida</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">extraestreta</styleName>
+		<styleName type="wdth" subtype="75">condensada</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">comprimida</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">estreta</styleName>
+		<styleName type="wdth" subtype="87.5">semicondensada</styleName>
+		<styleName type="wdth" subtype="87.5" alt="compressed">semicomprimida</styleName>
+		<styleName type="wdth" subtype="87.5" alt="narrow">semiestreta</styleName>
+		<styleName type="wdth" subtype="100">normal</styleName>
+		<styleName type="wdth" subtype="112.5">semiexpandida</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">semiampliada</styleName>
+		<styleName type="wdth" subtype="125">expandit</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">ampliat</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">ample</styleName>
+		<styleName type="wdth" subtype="150">extraexpandida</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">extraampliada</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">extraampla</styleName>
+		<styleName type="wdth" subtype="200">ultraexpandida</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ultraampliada</styleName>
+		<styleName type="wght" subtype="100">prim</styleName>
+		<styleName type="wght" subtype="200">extralleugera</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ultrafina</styleName>
+		<styleName type="wght" subtype="300">fina</styleName>
+		<styleName type="wght" subtype="350">semilleugera</styleName>
+		<styleName type="wght" subtype="380">llibre</styleName>
+		<styleName type="wght" subtype="400">regular</styleName>
+		<styleName type="wght" subtype="500">mitjana</styleName>
+		<styleName type="wght" subtype="600">seminegreta</styleName>
+		<styleName type="wght" subtype="700">negreta</styleName>
+		<styleName type="wght" subtype="800">extra negreta</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">ultranegreta</styleName>
+		<styleName type="wght" subtype="900">negra</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">gruixuda</styleName>
+		<styleName type="wght" subtype="950">supernegra</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ultrapesant</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ultranegra</styleName>
+		<featureName type="afrc">fraccions verticals</featureName>
+		<featureName type="cpsp">espai entre majúscules</featureName>
+		<featureName type="dlig">lligadures opcionals</featureName>
+		<featureName type="frac">fraccions diagonals</featureName>
+		<featureName type="lnum">números alineats</featureName>
+		<featureName type="onum">xifres a l’antiga</featureName>
+		<featureName type="ordn">ordinals</featureName>
+		<featureName type="pnum">nombres proporcionals</featureName>
+		<featureName type="smcp">majúscules petites</featureName>
+		<featureName type="smcp" alt="short">minúscules</featureName>
+		<featureName type="tnum">números tabulars</featureName>
+		<featureName type="zero">zero amb barra</featureName>
+	</typographicNames>
 </ldml>

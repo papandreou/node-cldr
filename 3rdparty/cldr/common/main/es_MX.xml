@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13732 $"/>
+		<version number="$Revision: 13873 $"/>
 		<language type="es"/>
 		<territory type="MX"/>
 	</identity>
@@ -347,8 +347,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="GyMMMd">d MMM y G</dateFormatItem>
 						<dateFormatItem id="Hm">H:mm</dateFormatItem>
 						<dateFormatItem id="Hms">H:mm:ss</dateFormatItem>
-						<dateFormatItem id="Hmsv">H:mm:ss v</dateFormatItem>
-						<dateFormatItem id="Hmv">H:mm v</dateFormatItem>
 						<dateFormatItem id="MMd">d/MM</dateFormatItem>
 						<dateFormatItem id="MMdd">dd/MM</dateFormatItem>
 						<dateFormatItem id="MMMEd">E d 'de' MMM</dateFormatItem>
@@ -1015,6 +1013,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<currency type="SSP">
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
+			<currency type="STN">
+				<displayName draft="contributed">dobra santotomense</displayName>
+				<displayName count="one" draft="contributed">dobra santotomense</displayName>
+				<displayName count="other" draft="contributed">dobra santotomense</displayName>
+			</currency>
 			<currency type="SYP">
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
@@ -1124,10 +1127,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="light-lux">
 				<displayName draft="contributed">lux</displayName>
-			</unit>
-			<unit type="mass-microgram">
-				<unitPattern count="one" draft="contributed">{0} microgramo</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} microgramos</unitPattern>
 			</unit>
 			<unit type="power-gigawatt">
 				<displayName draft="contributed">gigavatios</displayName>
@@ -1278,10 +1277,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName draft="contributed">km/hora</displayName>
-			</unit>
-			<unit type="temperature-celsius">
-				<unitPattern count="one" draft="contributed">{0} °C</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} °C</unitPattern>
 			</unit>
 			<unit type="volume-gallon-imperial">
 				<displayName draft="contributed">Imp. gal</displayName>

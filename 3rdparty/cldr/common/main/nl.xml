@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13701 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="nl"/>
 	</identity>
 	<localeDisplayNames>
@@ -47,6 +47,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="aro">Araona</language>
 			<language type="arp">Arapaho</language>
 			<language type="arq">Algerijns Arabisch</language>
+			<language type="ars">Nadjdi-Arabisch</language>
 			<language type="arw">Arawak</language>
 			<language type="ary">Marokkaans Arabisch</language>
 			<language type="arz">Egyptisch Arabisch</language>
@@ -881,6 +882,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Oost-Europa</territory>
 			<territory type="154">Noord-Europa</territory>
 			<territory type="155">West-Europa</territory>
+			<territory type="202" draft="contributed">Sub-Saharaans Afrika</territory>
 			<territory type="419">Latijns-Amerika</territory>
 			<territory type="AC">Ascension</territory>
 			<territory type="AD">Andorra</territory>
@@ -1443,6 +1445,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
 		</contextTransformUsage>
 		<contextTransformUsage type="relative">
+			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
+		</contextTransformUsage>
+		<contextTransformUsage type="typographicNames">
 			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
 			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
 		</contextTransformUsage>
@@ -11807,10 +11813,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol draft="contributed">MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>Mauritaanse ouguiya (1973–2017)</displayName>
+				<displayName count="one">Mauritaanse ouguiya (1973–2017)</displayName>
+				<displayName count="other">Mauritaanse ouguiya (1973–2017)</displayName>
+				<symbol draft="contributed">MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>Mauritaanse ouguiya</displayName>
 				<displayName count="one">Mauritaanse ouguiya</displayName>
 				<displayName count="other">Mauritaanse ouguiya</displayName>
-				<symbol draft="contributed">MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Maltese lire</displayName>
@@ -12178,10 +12189,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>Santomese dobra (1977–2017)</displayName>
+				<displayName count="one">Santomese dobra (1977–2017)</displayName>
+				<displayName count="other">Santomese dobra (1977–2017)</displayName>
+				<symbol draft="contributed">STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>Santomese dobra</displayName>
 				<displayName count="one">Santomese dobra</displayName>
 				<displayName count="other">Santomese dobra</displayName>
-				<symbol draft="contributed">STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -15063,4 +15080,73 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">West-Aziatisch schrift</characterLabel>
 		<characterLabel type="whitespace">witruimte</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">cursief</axisName>
+		<axisName type="opsz">optisch formaat</axisName>
+		<axisName type="slnt">schuin</axisName>
+		<axisName type="wdth">breedte</axisName>
+		<axisName type="wght">dikte</axisName>
+		<styleName type="ital" subtype="1">cursief</styleName>
+		<styleName type="opsz" subtype="18">titel</styleName>
+		<styleName type="opsz" subtype="72">display</styleName>
+		<styleName type="opsz" subtype="144">poster</styleName>
+		<styleName type="slnt" subtype="-12">achteroverhellend</styleName>
+		<styleName type="slnt" subtype="0">rechtop</styleName>
+		<styleName type="slnt" subtype="12">hellend</styleName>
+		<styleName type="slnt" subtype="24">extra hellend</styleName>
+		<styleName type="wdth" subtype="50">ultraversmald</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ultragecomprimeerd</styleName>
+		<styleName type="wdth" subtype="50" alt="narrow">ultrasmal</styleName>
+		<styleName type="wdth" subtype="62.5">extraversmald</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">extragecomprimeerd</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">extrasmal</styleName>
+		<styleName type="wdth" subtype="75">versmald</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">gecomprimeerd</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">smal</styleName>
+		<styleName type="wdth" subtype="87.5">semiversmald</styleName>
+		<styleName type="wdth" subtype="87.5" alt="compressed">semigecomprimeerd</styleName>
+		<styleName type="wdth" subtype="87.5" alt="narrow">semismal</styleName>
+		<styleName type="wdth" subtype="100">normaal</styleName>
+		<styleName type="wdth" subtype="112.5">semiverbreed</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">semi-uitgerekt</styleName>
+		<styleName type="wdth" subtype="112.5" alt="wide">semibreed</styleName>
+		<styleName type="wdth" subtype="125">verbreed</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">uitgerekt</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">breed</styleName>
+		<styleName type="wdth" subtype="150">extraverbreed</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">extra-uitgerekt</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">extrabreed</styleName>
+		<styleName type="wdth" subtype="200">ultraverbreed</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ultra-uitgerekt</styleName>
+		<styleName type="wdth" subtype="200" alt="wide">ultrabreed</styleName>
+		<styleName type="wght" subtype="100">dun</styleName>
+		<styleName type="wght" subtype="200">extralicht</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ultralicht</styleName>
+		<styleName type="wght" subtype="300">licht</styleName>
+		<styleName type="wght" subtype="350">semilicht</styleName>
+		<styleName type="wght" subtype="380">boek</styleName>
+		<styleName type="wght" subtype="400">regulier</styleName>
+		<styleName type="wght" subtype="500">medium</styleName>
+		<styleName type="wght" subtype="600">semivet</styleName>
+		<styleName type="wght" subtype="600" alt="demi">halfvet</styleName>
+		<styleName type="wght" subtype="700">vet</styleName>
+		<styleName type="wght" subtype="800">extravet</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">ultravet</styleName>
+		<styleName type="wght" subtype="900">zwart</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">zwaar</styleName>
+		<styleName type="wght" subtype="950">extrazwart</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ultrazwaar</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ultrazwart</styleName>
+		<featureName type="afrc">verticale breuken</featureName>
+		<featureName type="cpsp">hoofdletterafstand</featureName>
+		<featureName type="dlig">optionele ligaturen</featureName>
+		<featureName type="frac">diagonale breuken</featureName>
+		<featureName type="lnum">tabelgetallen</featureName>
+		<featureName type="onum">uithangende cijfers</featureName>
+		<featureName type="ordn">rangtelwoorden</featureName>
+		<featureName type="pnum">proportionele cijfers</featureName>
+		<featureName type="smcp">kleinkapitaal</featureName>
+		<featureName type="tnum">tabelvormige cijfers</featureName>
+		<featureName type="zero">nul met schuine streep</featureName>
+	</typographicNames>
 </ldml>

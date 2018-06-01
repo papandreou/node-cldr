@@ -7,16 +7,16 @@ THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
 
 Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in these Data Files or Software without prior written authorization of the copyright holder.
 
-    $Revision: 13714 $
+    $Revision: 13905 $
 -->
 
-<!ELEMENT supplementalData ( version, generation?, cldrVersion?, currencyData?, territoryContainment?, subdivisionContainment?, languageData?, territoryInfo?, postalCodeData?, calendarData?, calendarPreferenceData?, weekData?, timeData?, measurementData?, unitPreferenceData?, timezoneData?, characters?, transforms?, metadata?, codeMappings?, parentLocales?, likelySubtags?, metazoneInfo?, plurals?, telephoneCodeData?, numberingSystems?, bcp47KeywordMappings?, gender?, references?, languageMatching?, dayPeriodRuleSet*, metaZones?, primaryZones?, windowsZones?, coverageLevels?, idValidity?, rgScope?, languageGroups?) >
+<!ELEMENT supplementalData ( version, generation?, cldrVersion?, currencyData?, territoryContainment?, subdivisionContainment?, languageData?, territoryInfo?, postalCodeData?, calendarData?, calendarPreferenceData?, weekData?, timeData?, measurementData?, unitPreferenceData?, timezoneData?, characters?, transforms?, metadata?, codeMappings?, parentLocales?, likelySubtags?, metazoneInfo?, plurals?, telephoneCodeData?, numberingSystems?, bcp47KeywordMappings?, gender?, references?, languageMatching?, dayPeriodRuleSet*, metaZones?, primaryZones?, windowsZones?, coverageLevels?, idValidity?, rgScope?, languageGroups? ) >
 
 <!ELEMENT version EMPTY >
     <!--@METADATA-->
 <!ATTLIST version number CDATA #REQUIRED >
     <!--@METADATA-->
-<!ATTLIST version cldrVersion CDATA #FIXED "32" >
+<!ATTLIST version cldrVersion CDATA #FIXED "33" >
     <!--@VALUE-->
 <!ATTLIST version unicodeVersion CDATA #FIXED "10.0.0" >
     <!--@VALUE-->
@@ -570,30 +570,40 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 
 <!ELEMENT distinguishing ( distinguishingItems* ) >
     <!--@METADATA-->
+    <!--@DEPRECATED-->
 <!ATTLIST distinguishing draft (approved | contributed | provisional | unconfirmed) #IMPLIED >
     <!--@METADATA-->
     <!--@DEPRECATED-->
 
 <!ELEMENT distinguishingItems EMPTY >
+    <!--@DEPRECATED-->
 <!ATTLIST distinguishingItems exclude (true | false) #IMPLIED >
     <!--@VALUE-->
+    <!--@DEPRECATED-->
 <!ATTLIST distinguishingItems elements NMTOKENS #IMPLIED >
     <!--@VALUE-->
+    <!--@DEPRECATED-->
 <!ATTLIST distinguishingItems attributes NMTOKENS #IMPLIED >
+    <!--@DEPRECATED-->
 <!ATTLIST distinguishingItems draft (approved | contributed | provisional | unconfirmed) #IMPLIED >
     <!--@METADATA-->
+    <!--@DEPRECATED-->
 
 <!ELEMENT blocking ( blockingItems* ) >
     <!--@METADATA-->
+    <!--@DEPRECATED-->
 <!ATTLIST blocking draft (approved | contributed | provisional | unconfirmed) #IMPLIED >
     <!--@METADATA-->
     <!--@DEPRECATED-->
 
 <!ELEMENT blockingItems EMPTY >
+    <!--@DEPRECATED-->
 <!ATTLIST blockingItems elements NMTOKENS #IMPLIED >
     <!--@VALUE-->
+    <!--@DEPRECATED-->
 <!ATTLIST blockingItems draft (approved | contributed | provisional | unconfirmed) #IMPLIED >
     <!--@METADATA-->
+    <!--@DEPRECATED-->
 
 <!ELEMENT coverageAdditions ( languageCoverage*, scriptCoverage*, territoryCoverage*, currencyCoverage*, timezoneCoverage* ) >
     <!--@DEPRECATED-->
@@ -658,8 +668,10 @@ Except as contained in this notice, the name of a copyright holder shall not be 
     <!--@DEPRECATED-->
 
 <!ELEMENT skipDefaultLocale EMPTY >
+    <!--@DEPRECATED-->
 <!ATTLIST skipDefaultLocale services NMTOKENS #IMPLIED >
     <!--@VALUE-->
+    <!--@DEPRECATED-->
 
 <!ELEMENT defaultContent EMPTY >
 <!ATTLIST defaultContent locales NMTOKENS #IMPLIED >

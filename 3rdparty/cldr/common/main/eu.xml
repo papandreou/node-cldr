@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13911 $"/>
 		<language type="eu"/>
 	</identity>
 	<localeDisplayNames>
@@ -24,7 +24,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="ace">acehnera</language>
 			<language type="ach">acholiera</language>
 			<language type="ada">adangmera</language>
-			<language type="ady">adyghera</language>
+			<language type="ady">adigera</language>
 			<language type="af">afrikaansa</language>
 			<language type="agq">aghemera</language>
 			<language type="ain">ainuera</language>
@@ -45,7 +45,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="awa">awadhiera</language>
 			<language type="ay">aimara</language>
 			<language type="az">azerbaijanera</language>
-			<language type="az" alt="short">azeriera</language>
+			<language type="az" alt="short">azerbaijanera</language>
 			<language type="ba">bashkirrera</language>
 			<language type="ban">baliera</language>
 			<language type="bas">basaa</language>
@@ -501,6 +501,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Europa ekialdea</territory>
 			<territory type="154">Europa iparraldea</territory>
 			<territory type="155">Europa mendebaldea</territory>
+			<territory type="202">Saharaz hegoaldeko Afrika</territory>
 			<territory type="419">Latinoamerika</territory>
 			<territory type="AC">Ascension uhartea</territory>
 			<territory type="AD">Andorra</territory>
@@ -549,6 +550,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="CG" alt="variant">Kongoko Errepublika</territory>
 			<territory type="CH">Suitza</territory>
 			<territory type="CI">Boli Kosta</territory>
+			<territory type="CI" alt="variant">CI</territory>
 			<territory type="CK">Cook uharteak</territory>
 			<territory type="CL">Txile</territory>
 			<territory type="CM">Kamerun</territory>
@@ -741,6 +743,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="TJ">Tajikistan</territory>
 			<territory type="TK">Tokelau</territory>
 			<territory type="TL">Ekialdeko Timor</territory>
+			<territory type="TL" alt="variant">TL</territory>
 			<territory type="TM">Turkmenistan</territory>
 			<territory type="TN">Tunisia</territory>
 			<territory type="TO">Tonga</territory>
@@ -5277,10 +5280,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>Mauritaniako ouguiya (1973–2017)</displayName>
+				<displayName count="one">Mauritaniako ouguiya (1973–2017)</displayName>
+				<displayName count="other">Mauritaniako ouguiya (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>Mauritaniako ouguiya</displayName>
 				<displayName count="one">Mauritaniako ouguiya</displayName>
 				<displayName count="other">Mauritaniako ouguiya</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MUR">
 				<displayName>Maurizio uharteetako errupia</displayName>
@@ -5520,10 +5528,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>Sao Tomeko eta Principeko dobra (1977–2017)</displayName>
+				<displayName count="one">Sao Tomeko eta Principeko dobra (1977–2017)</displayName>
+				<displayName count="other">Sao Tomeko eta Principeko dobra (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>Sao Tomeko eta Principeko dobra</displayName>
 				<displayName count="one">Sao Tomeko eta Principeko dobra</displayName>
 				<displayName count="other">Sao Tomeko eta Principeko dobra</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SYP">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13712 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="uk"/>
 	</identity>
 	<localeDisplayNames>
@@ -46,6 +46,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="aro">араона</language>
 			<language type="arp">арапахо</language>
 			<language type="arq">алжирська арабська</language>
+			<language type="ars">надждійська арабська</language>
 			<language type="arw">аравакська</language>
 			<language type="as">ассамська</language>
 			<language type="asa">асу</language>
@@ -736,6 +737,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Східна Європа</territory>
 			<territory type="154">Північна Європа</territory>
 			<territory type="155">Західна Європа</territory>
+			<territory type="202" draft="contributed">Африка на південь від Сахари</territory>
 			<territory type="419">Латинська Америка</territory>
 			<territory type="AC">Острів Вознесіння</territory>
 			<territory type="AD">Андорра</territory>
@@ -1214,6 +1216,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
 		</contextTransformUsage>
 		<contextTransformUsage type="relative">
+			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
+		</contextTransformUsage>
+		<contextTransformUsage type="typographicNames">
 			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
 			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
 		</contextTransformUsage>
@@ -7063,12 +7069,19 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol draft="contributed">MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>мавританська угія (1973–2017)</displayName>
+				<displayName count="one">мавританська угія (1973–2017)</displayName>
+				<displayName count="few">мавританські угії (1973–2017)</displayName>
+				<displayName count="many">мавританських угій (1973–2017)</displayName>
+				<displayName count="other">мавританської угії (1973–2017)</displayName>
+				<symbol>MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>мавританська угія</displayName>
 				<displayName count="one">мавританська угія</displayName>
 				<displayName count="few">мавританські угії</displayName>
 				<displayName count="many">мавританських угій</displayName>
 				<displayName count="other">мавританської угії</displayName>
-				<symbol>MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>мальтійська ліра</displayName>
@@ -7458,12 +7471,20 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>добра Сан-Томе і Прінсіпі (1977–2017)</displayName>
+				<displayName count="one">добра Сан-Томе і Прінсіпі (1977–2017)</displayName>
+				<displayName count="few">добри Сан-Томе і Принсіпі (1977–2017)</displayName>
+				<displayName count="many">добр Сан-Томе і Принсіпі (1977–2017)</displayName>
+				<displayName count="other">добри Сан-Томе і Прінсіпі (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>добра Сан-Томе і Прінсіпі</displayName>
 				<displayName count="one">добра Сан-Томе і Прінсіпі</displayName>
 				<displayName count="few">добри Сан-Томе і Принсіпі</displayName>
 				<displayName count="many">добр Сан-Томе і Принсіпі</displayName>
 				<displayName count="other">добри Сан-Томе і Прінсіпі</displayName>
-				<symbol>STD</symbol>
+				<symbol draft="contributed">STN</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -10418,4 +10439,66 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">західноазійське письмо</characterLabel>
 		<characterLabel type="whitespace">Пробіл</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">курсив</axisName>
+		<axisName type="opsz">оптичний розмір</axisName>
+		<axisName type="slnt">нахил</axisName>
+		<axisName type="wdth">ширина</axisName>
+		<axisName type="wght">щільність</axisName>
+		<styleName type="ital" subtype="1">курсив</styleName>
+		<styleName type="opsz" subtype="18">надписування</styleName>
+		<styleName type="opsz" subtype="72">вигляд</styleName>
+		<styleName type="opsz" subtype="144">плакат</styleName>
+		<styleName type="slnt" subtype="-12">нахилений вліво</styleName>
+		<styleName type="slnt" subtype="0">прямий</styleName>
+		<styleName type="slnt" subtype="12">нахилений</styleName>
+		<styleName type="slnt" subtype="24">дуже нахилений</styleName>
+		<styleName type="wdth" subtype="50">ультраущільнений</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ультрастиснений</styleName>
+		<styleName type="wdth" subtype="62.5">дуже ущільнений</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">дуже стиснений</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">дуже вузький</styleName>
+		<styleName type="wdth" subtype="75">ущільнений</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">компресований</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">вузький</styleName>
+		<styleName type="wdth" subtype="87.5">напівущільнений</styleName>
+		<styleName type="wdth" subtype="100">нормальний</styleName>
+		<styleName type="wdth" subtype="112.5">напіврозтягнений</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">напіврозширений</styleName>
+		<styleName type="wdth" subtype="125">розширений</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">широкий</styleName>
+		<styleName type="wdth" subtype="150">дуже розтягнений</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">дуже розширений</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">дуже широкий</styleName>
+		<styleName type="wdth" subtype="200">ультрарозтягнений</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ультрарозширений</styleName>
+		<styleName type="wght" subtype="100">тонкий</styleName>
+		<styleName type="wght" subtype="200">екстратонкий</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ультратонкий</styleName>
+		<styleName type="wght" subtype="300">тонкий</styleName>
+		<styleName type="wght" subtype="350">напівтонкий</styleName>
+		<styleName type="wght" subtype="380">книжний</styleName>
+		<styleName type="wght" subtype="400">звичайний</styleName>
+		<styleName type="wght" subtype="500">середній</styleName>
+		<styleName type="wght" subtype="600">напівжирний</styleName>
+		<styleName type="wght" subtype="700">жирний</styleName>
+		<styleName type="wght" subtype="800">дуже жирний</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">ультражирний</styleName>
+		<styleName type="wght" subtype="900">чорний</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">грубий</styleName>
+		<styleName type="wght" subtype="950">дуже чорний</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ультрагрубий</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ультрачорний</styleName>
+		<featureName type="afrc">вертикальні дроби</featureName>
+		<featureName type="cpsp">інтервал між заголовними</featureName>
+		<featureName type="dlig">необовʼязкові лігатури</featureName>
+		<featureName type="frac">діагональні дроби</featureName>
+		<featureName type="lnum">нумерація рядків</featureName>
+		<featureName type="onum">давні цифри</featureName>
+		<featureName type="ordn">порядкові</featureName>
+		<featureName type="pnum">пропорційні цифри</featureName>
+		<featureName type="smcp">малі заглавні</featureName>
+		<featureName type="tnum">табличні цифри</featureName>
+		<featureName type="zero">закреслений нуль</featureName>
+	</typographicNames>
 </ldml>

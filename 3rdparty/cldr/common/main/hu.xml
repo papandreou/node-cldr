@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2017 Unicode, Inc.
+<!-- Copyright © 1991-2018 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 13705 $"/>
+		<version number="$Revision: 13920 $"/>
 		<language type="hu"/>
 	</identity>
 	<localeDisplayNames>
@@ -43,6 +43,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="arc">arámi</language>
 			<language type="arn">mapucse</language>
 			<language type="arp">arapaho</language>
+			<language type="ars">nedzsdi arab</language>
 			<language type="arw">aravak</language>
 			<language type="as">asszámi</language>
 			<language type="asa">asu</language>
@@ -721,6 +722,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Kelet-Európa</territory>
 			<territory type="154">Észak-Európa</territory>
 			<territory type="155">Nyugat-Európa</territory>
+			<territory type="202" draft="contributed">Szubszaharai Afrika</territory>
 			<territory type="419">Latin-Amerika</territory>
 			<territory type="AC">Ascension-sziget</territory>
 			<territory type="AD">Andorra</territory>
@@ -1195,6 +1197,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<codePattern type="territory">Régió: {0}</codePattern>
 		</codePatterns>
 	</localeDisplayNames>
+	<contextTransforms>
+		<contextTransformUsage type="typographicNames">
+			<contextTransform type="stand-alone">titlecase-firstword</contextTransform>
+			<contextTransform type="uiListOrMenu">titlecase-firstword</contextTransform>
+		</contextTransformUsage>
+	</contextTransforms>
 	<characters>
 		<exemplarCharacters>[a á b c {cs} {ccs} d {dz} {ddz} {dzs} {ddzs} e é f g {gy} {ggy} h i í j k l {ly} {lly} m n {ny} {nny} o ó ö ő p r s {sz} {ssz} t {ty} {tty} u ú ü ű v z {zs} {zzs}]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[à ă â å ä ã ā æ ç è ĕ ê ë ē ì ĭ î ï ī ñ ò ŏ ô ø ō œ q ù ŭ û ū w x y ÿ]</exemplarCharacters>
@@ -6420,10 +6428,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>MOP</symbol>
 			</currency>
 			<currency type="MRO">
+				<displayName>mauritániai ouguiya (1973–2017)</displayName>
+				<displayName count="one">mauritániai ouguiya (1973–2017)</displayName>
+				<displayName count="other">mauritániai ouguiya (1973–2017)</displayName>
+				<symbol draft="contributed">MRO</symbol>
+			</currency>
+			<currency type="MRU">
 				<displayName>mauritániai ouguiya</displayName>
 				<displayName count="one">mauritániai ouguiya</displayName>
 				<displayName count="other">mauritániai ouguiya</displayName>
-				<symbol draft="contributed">MRO</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Máltai líra</displayName>
@@ -6734,10 +6747,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol alt="narrow" draft="contributed">£</symbol>
 			</currency>
 			<currency type="STD">
+				<displayName>São Tomé és Príncipe-i dobra (1977–2017)</displayName>
+				<displayName count="one">São Tomé és Príncipe-i dobra (1977–2017)</displayName>
+				<displayName count="other">São Tomé és Príncipe-i dobra (1977–2017)</displayName>
+				<symbol>STD</symbol>
+			</currency>
+			<currency type="STN">
 				<displayName>São Tomé és Príncipe-i dobra</displayName>
 				<displayName count="one">São Tomé és Príncipe-i dobra</displayName>
 				<displayName count="other">São Tomé és Príncipe-i dobra</displayName>
-				<symbol>STD</symbol>
 				<symbol alt="narrow" draft="contributed">Db</symbol>
 			</currency>
 			<currency type="SUR">
@@ -8899,4 +8917,67 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">nyugat-ázsiai írásrendszerek</characterLabel>
 		<characterLabel type="whitespace">térköz</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">dőlt</axisName>
+		<axisName type="opsz">optikai méret</axisName>
+		<axisName type="slnt">dőlés</axisName>
+		<axisName type="wdth">szélesség</axisName>
+		<axisName type="wght">súly</axisName>
+		<styleName type="ital" subtype="1">kurzív</styleName>
+		<styleName type="opsz" subtype="18">címstílus</styleName>
+		<styleName type="opsz" subtype="72">kijelző</styleName>
+		<styleName type="opsz" subtype="144">poszter</styleName>
+		<styleName type="slnt" subtype="-12">hátrafelé döntött</styleName>
+		<styleName type="slnt" subtype="0">függőleges</styleName>
+		<styleName type="slnt" subtype="12">dőlt</styleName>
+		<styleName type="slnt" subtype="24">extra döntött</styleName>
+		<styleName type="wdth" subtype="50">ultra sűrített</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ultra tömörített</styleName>
+		<styleName type="wdth" subtype="62.5">extra sűrített</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">extra tömörített</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">extra szűk</styleName>
+		<styleName type="wdth" subtype="75">sűrített</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">tömörített</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">szűk</styleName>
+		<styleName type="wdth" subtype="87.5">félig sűrített</styleName>
+		<styleName type="wdth" subtype="100">normál</styleName>
+		<styleName type="wdth" subtype="112.5">félig széthúzott</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">félig kibővített</styleName>
+		<styleName type="wdth" subtype="125">széthúzva</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">kiterjesztett</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">széles</styleName>
+		<styleName type="wdth" subtype="150">extra széthúzott</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">extra kibővített</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">extra széles</styleName>
+		<styleName type="wdth" subtype="200">ultra széthúzott</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ultra kibővített</styleName>
+		<styleName type="wght" subtype="100">vékony</styleName>
+		<styleName type="wght" subtype="200">extra vékony</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ultra vékony</styleName>
+		<styleName type="wght" subtype="300">vékony</styleName>
+		<styleName type="wght" subtype="350">félig vékony</styleName>
+		<styleName type="wght" subtype="380">könyv</styleName>
+		<styleName type="wght" subtype="400">szabályos</styleName>
+		<styleName type="wght" subtype="500">közepes</styleName>
+		<styleName type="wght" subtype="600">közepesen félkövér</styleName>
+		<styleName type="wght" subtype="700">félkövér</styleName>
+		<styleName type="wght" subtype="800">extra félkövér</styleName>
+		<styleName type="wght" subtype="800" alt="ultra">ultra félkövér</styleName>
+		<styleName type="wght" subtype="900">fekete</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">nehéz</styleName>
+		<styleName type="wght" subtype="950">extra fekete</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ultra vastag</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ultra fekete</styleName>
+		<featureName type="afrc">függőleges törtek</featureName>
+		<featureName type="cpsp">nagybetűtérköz</featureName>
+		<featureName type="dlig">kiegészítő ligatúrák</featureName>
+		<featureName type="frac">átlós törtek</featureName>
+		<featureName type="lnum">egyenletes számok</featureName>
+		<featureName type="onum">régi stílusú ábrák</featureName>
+		<featureName type="ordn">sorszámok</featureName>
+		<featureName type="pnum">arányos számok</featureName>
+		<featureName type="smcp">kiskapitálisok</featureName>
+		<featureName type="tnum">rögzített szélességű számok</featureName>
+		<featureName type="zero">áthúzott nulla</featureName>
+	</typographicNames>
 </ldml>
