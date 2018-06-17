@@ -609,6 +609,23 @@ cldr.extractCharacters('en_GB');
   moreInformation: '?' }
 ```
 
+### cldr.extractPluralClasses(localeId='root', 'cardinal'|'ordinal') ###
+
+Extract a list of available plural classes for a locale (See <a
+href="http://www.unicode.org/reports/tr35/tr35-29.html#Language_Plural_Rules">the
+LDML spec</a> for an explanation):
+
+```javascript
+cldr.extractPluralClasses('en_GB', 'cardinal')
+[ 'one', 'other' ]
+
+cldr.extractPluralRuleFunction('ar', 'cardinal')
+[ 'zero', 'one', 'two', 'few', 'many', 'other' ]
+
+cldr.extractPluralRuleFunction('ar', 'ordinal')
+[ 'other' ]
+```
+
 ### cldr.extractPluralRuleFunction(localeId='root', 'cardinal'|'ordinal') ###
 
 Extract a plural rule function for a locale (See <a
