@@ -10,7 +10,7 @@ CLDR</a> (Common Localization Data Repository), including:
 * Number formats, symbols, and digits for all number systems
 * Exemplar and ellipsis characters
 * Day names, month names, quarter names, era names, and cyclic names
-* Patterns for rendering lists of items
+* Patterns for rendering lists of items (see the [this-and-that](https://github.com/papandreou/this-and-that) module for an easy-to-consume version)
 * Display names for languages, time zones, territories, scripts and currencies
 * Plural rule functions (converted to JavaScript functions)
 * Rule-based number formatting functions (converted to JavaScript functions)
