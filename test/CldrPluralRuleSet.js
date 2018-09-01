@@ -1,18 +1,39 @@
 var unexpected = require('unexpected'),
-    uglifyJs = require('uglify-js'),
+    esprima = require('esprima'),
+    escodegen = require('escodegen'),
     CldrPluralRuleSet = require('../lib/CldrPluralRuleSet');
 
 describe('CldrPluralRuleSet', function () {
     var expect = unexpected.clone();
 
-    expect.addAssertion('to encode to', function (expect, subject, value) {
+    expect.addAssertion('<object> to encode to <function>', function (expect, subject, value) {
         var cldrPluralRuleSet = new CldrPluralRuleSet();
         Object.keys(subject).forEach(function (count) {
             cldrPluralRuleSet.addRule(subject[count], count);
-        }, this);
-        var beautifiedFunction = uglifyJs.uglify.gen_code(['toplevel', [['stat', ['function', null, ['n'], cldrPluralRuleSet.toJavaScriptFunctionBodyAst()]]]], {beautify: true});
+        });
+        var beautifiedFunction = escodegen.generate({
+            type: 'Program',
+            body: [
+                {
+                    type: 'ExpressionStatement',
+                    expression: {
+                        type: 'FunctionExpression',
+                        params: [
+                            {
+                                type: 'Identifier',
+                                name: 'n'
+                            }
+                        ],
+                        body: {
+                            type: 'BlockStatement',
+                            body: cldrPluralRuleSet.toJavaScriptFunctionBodyAst()
+                        }
+                    }
+                }
+            ]
+        });
         if (typeof value === 'function') {
-            value = uglifyJs.uglify.gen_code(uglifyJs.parser.parse('(' + value.toString() + ')'), {beautify: true});
+            value = escodegen.generate(esprima.parse('(' + value.toString() + ')'));
         }
         expect(beautifiedFunction, 'to equal', value);
     });
@@ -52,7 +73,7 @@ describe('CldrPluralRuleSet', function () {
                 if (typeof n === 'string') n = parseInt(n, 10);
                 if (i === 1 && v === 0) return 'one';
                 if (i === 2 && v === 0) return 'two';
-                if (v === 0 && !(n >= 0 && n <= 10) && n % 10 === 0) return 'many';
+                if (v === 0 && (!(n >= 0 && n <= 10) && n % 10 === 0)) return 'many';
                 return 'other';
                 /* eslint-enable */
             }
@@ -91,8 +112,8 @@ describe('CldrPluralRuleSet', function () {
                 var v = n.toString().replace(/^[^.]*\.?/, '').length,
                     f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
                 if (typeof n === 'string') n = parseInt(n, 10);
-                if (n % 10 === 0 || n % 100 === Math.floor(n % 100) && n % 100 >= 11 && n % 100 <= 19 || v === 2 && f % 100 === Math.floor(f % 100) && f % 100 >= 11 && f % 100 <= 19) return "zero";
-                if (n % 10 === 1 && !(n % 100 === 11) || v === 2 && f % 10 === 1 && !(f % 100 === 11) || !(v === 2) && f % 10 === 1) return 'one';
+                if (n % 10 === 0 || (n % 100 === Math.floor(n % 100) && (n % 100 >= 11 && n % 100 <= 19) || v === 2 && (f % 100 === Math.floor(f % 100) && (f % 100 >= 11 && f % 100 <= 19)))) return "zero";
+                if (n % 10 === 1 && !(n % 100 === 11) || (v === 2 && (f % 10 === 1 && !(f % 100 === 11)) || !(v === 2) && f % 10 === 1)) return 'one';
                 return 'other';
                 /* eslint-enable */
             }
@@ -113,11 +134,8 @@ describe('CldrPluralRuleSet', function () {
                 var i = Math.floor(Math.abs(n)), v = n.toString().replace(/^[^.]*\.?/, '').length,
                     f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
                 if (typeof n === 'string') n = parseInt(n, 10);
-                if (v === 0 && i % 10 === 1 && (!(i % 100 === 11)) || f % 10 === 1 && !(f % 100 === 11)) return 'one';
-                if (v === 0 && i % 10 === Math.floor(i % 10) && i % 10 >= 2 && i % 10 <= 4 &&
-                    (!(i % 100 >= 12 && i % 100 <= 14)) ||
-                    f % 10 === Math.floor(f % 10) && f % 10 >= 2 && f % 10 <= 4 &&
-                    !(f % 100 >= 12 && f % 100 <= 14)) return 'few';
+                if (v === 0 && (i % 10 === 1 && !(i % 100 === 11)) || f % 10 === 1 && !(f % 100 === 11)) return 'one';
+                if (v === 0 && (i % 10 === Math.floor(i % 10) && (i % 10 >= 2 && i % 10 <= 4) && !(i % 100 >= 12 && i % 100 <= 14)) || f % 10 === Math.floor(f % 10) && (f % 10 >= 2 && f % 10 <= 4) && !(f % 100 >= 12 && f % 100 <= 14)) return 'few';
                 return 'other'
                 /* eslint-enable */
             }

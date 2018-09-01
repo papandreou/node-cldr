@@ -1,20 +1,22 @@
 var unexpected = require('unexpected'),
-    uglifyJs = require('uglify-js'),
+    esprima = require('esprima'),
+    escodegen = require('escodegen'),
     cldr = require('../lib/cldr');
 
 function beautifyJavaScript(functionOrAst) {
     var ast;
     if (typeof functionOrAst === 'function') {
-        ast = uglifyJs.parser.parse(functionOrAst.toString().replace(/^function \(/, 'function anonymous('));
+        ast = esprima.parse(functionOrAst.toString().replace(/^function \(/, 'function anonymous('));
+
     } else {
         ast = functionOrAst;
     }
-    return uglifyJs.uglify.gen_code(ast, {beautify: true});
+    return escodegen.generate(ast);
 }
 
 describe('extractRbnfFunctionByType', function () {
     var expect = unexpected.clone();
-    expect.addAssertion('to have the same ast as', function (expect, subject, value) {
+    expect.addAssertion('<function> to have the same ast as <function>', function (expect, subject, value) {
         expect(beautifyJavaScript(subject), 'to equal', beautifyJavaScript(value));
     });
 
