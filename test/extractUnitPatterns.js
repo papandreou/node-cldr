@@ -1,17 +1,39 @@
-var expect = require('unexpected'),
-    cldr = require('../lib/cldr');
+var expect = require('unexpected');
 
-describe('extractUnitPatterns', function () {
-    it('should extract the British English patterns correctly', function () {
-        var britishUnitPatterns = cldr.extractUnitPatterns('en_GB');
-        expect(britishUnitPatterns, 'to only have keys', ['long', 'short', 'narrow']);
-        expect(britishUnitPatterns.long, 'to only have keys', ['unit', 'compoundUnit']);
-        expect(britishUnitPatterns.long.unit, 'to have keys', ['angleArcSecond', 'volumeLiter']);
-        expect(britishUnitPatterns.long.unit.volumeLiter, 'to have keys', ['one', 'other']);
-        expect(britishUnitPatterns.long.unit.volumeLiter.other, 'to equal', '{0} litres');
+var cldr = require('../lib/cldr');
 
-        expect(britishUnitPatterns.long.compoundUnit, 'to only have key', 'per');
-        expect(britishUnitPatterns.short.compoundUnit.per, 'to equal', '{0}/{1}');
-        expect(britishUnitPatterns.long.compoundUnit.per, 'to equal', '{0} per {1}');
-    });
+describe('extractUnitPatterns', function() {
+  it('should extract the British English patterns correctly', function() {
+    var britishUnitPatterns = cldr.extractUnitPatterns('en_GB');
+    expect(britishUnitPatterns, 'to only have keys', [
+      'long',
+      'short',
+      'narrow'
+    ]);
+    expect(britishUnitPatterns.long, 'to only have keys', [
+      'unit',
+      'compoundUnit'
+    ]);
+    expect(britishUnitPatterns.long.unit, 'to have keys', [
+      'angleArcSecond',
+      'volumeLiter'
+    ]);
+    expect(britishUnitPatterns.long.unit.volumeLiter, 'to have keys', [
+      'one',
+      'other'
+    ]);
+    expect(
+      britishUnitPatterns.long.unit.volumeLiter.other,
+      'to equal',
+      '{0} litres'
+    );
+
+    expect(britishUnitPatterns.long.compoundUnit, 'to only have key', 'per');
+    expect(britishUnitPatterns.short.compoundUnit.per, 'to equal', '{0}/{1}');
+    expect(
+      britishUnitPatterns.long.compoundUnit.per,
+      'to equal',
+      '{0} per {1}'
+    );
+  });
 });

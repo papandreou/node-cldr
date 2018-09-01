@@ -1,32 +1,43 @@
-var unexpected = require('unexpected'),
-    esprima = require('esprima'),
-    escodegen = require('escodegen'),
-    cldr = require('../lib/cldr');
+var unexpected = require('unexpected');
+
+var esprima = require('esprima');
+
+var escodegen = require('escodegen');
+
+var cldr = require('../lib/cldr');
 
 function beautifyJavaScript(functionOrAst) {
-    var ast;
-    if (typeof functionOrAst === 'function') {
-        ast = esprima.parse(functionOrAst.toString().replace(/^function \(/, 'function anonymous('));
-
-    } else {
-        ast = functionOrAst;
-    }
-    return escodegen.generate(ast);
+  var ast;
+  if (typeof functionOrAst === 'function') {
+    ast = esprima.parse(
+      functionOrAst.toString().replace(/^function \(/, 'function anonymous(')
+    );
+  } else {
+    ast = functionOrAst;
+  }
+  return escodegen.generate(ast);
 }
 
-describe('extractRbnfFunctionByType', function () {
-    var expect = unexpected.clone();
-    expect.addAssertion('<function> to have the same ast as <function>', function (expect, subject, value) {
-        expect(beautifyJavaScript(subject), 'to equal', beautifyJavaScript(value));
-    });
+describe('extractRbnfFunctionByType', function() {
+  var expect = unexpected.clone();
+  expect.addAssertion('<function> to have the same ast as <function>', function(
+    expect,
+    subject,
+    value
+  ) {
+    expect(beautifyJavaScript(subject), 'to equal', beautifyJavaScript(value));
+  });
 
-    describe('#renderSpelloutCardinal', function () {
-        describe('for Estonian', function () {
-            var estonianRbnfFunctionByType = cldr.extractRbnfFunctionByType('et');
+  describe('#renderSpelloutCardinal', function() {
+    describe('for Estonian', function() {
+      var estonianRbnfFunctionByType = cldr.extractRbnfFunctionByType('et');
 
-            it('should generate the correct code for the renderSpelloutCardinal rule', function () {
-                expect(estonianRbnfFunctionByType.renderSpelloutCardinal, 'to have the same ast as', function (n) {
-                    /* eslint-disable */
+      it('should generate the correct code for the renderSpelloutCardinal rule', function() {
+        expect(
+          estonianRbnfFunctionByType.renderSpelloutCardinal,
+          'to have the same ast as',
+          function(n) {
+            /* eslint-disable */
                     var isFractional = n !== Math.floor(n);
                     if (n < 0) return "miinus " + this.renderSpelloutCardinal(-n);
                     if (isFractional && n > 1) return this.renderSpelloutCardinal(Math.floor(n)) + " koma " + this.renderSpelloutCardinal(parseInt(String(n).replace(/\d*\./, ""), 10));
@@ -55,29 +66,55 @@ describe('extractRbnfFunctionByType', function () {
                     if (n >= 1) return "üks";
                     if (n >= 0) return "null"
                     /* eslint-enable */
-                });
-            });
+          }
+        );
+      });
 
-            it('should render the number 2439871 correctly (regression test for #12)', function () {
-                expect(estonianRbnfFunctionByType.renderSpelloutCardinal(2439871), 'to equal', 'kaks miljonit nelisada kolmkümmend üheksa tuhat kaheksasada seitsekümmend üks');
-            });
-        });
-
-
-        it('should render a number correctly in Danish', function () {
-            var danishRbnfFunctionByType = cldr.extractRbnfFunctionByType('da_dk');
-            danishRbnfFunctionByType.renderNumber = String;
-            expect(danishRbnfFunctionByType.renderSpelloutNumbering(2439871).replace(/\u00ad/g, ''), 'to equal', 'to millioner firehundrede og niogtredive tusinde ottehundrede og enoghalvfjerds');
-        });
-
-        // https://github.com/papandreou/node-cldr/issues/33
-        it('should render ordinals correctly in American English', function () {
-            var americanRbnfFunctionByType = cldr.extractRbnfFunctionByType('en_us');
-            americanRbnfFunctionByType.renderNumber = String;
-            expect(americanRbnfFunctionByType.renderDigitsOrdinal(1), 'to equal', '1st');
-            expect(americanRbnfFunctionByType.renderDigitsOrdinal(2), 'to equal', '2nd');
-            expect(americanRbnfFunctionByType.renderDigitsOrdinal(3), 'to equal', '3rd');
-            expect(americanRbnfFunctionByType.renderDigitsOrdinal(4), 'to equal', '4th');
-        });
+      it('should render the number 2439871 correctly (regression test for #12)', function() {
+        expect(
+          estonianRbnfFunctionByType.renderSpelloutCardinal(2439871),
+          'to equal',
+          'kaks miljonit nelisada kolmkümmend üheksa tuhat kaheksasada seitsekümmend üks'
+        );
+      });
     });
+
+    it('should render a number correctly in Danish', function() {
+      var danishRbnfFunctionByType = cldr.extractRbnfFunctionByType('da_dk');
+      danishRbnfFunctionByType.renderNumber = String;
+      expect(
+        danishRbnfFunctionByType
+          .renderSpelloutNumbering(2439871)
+          .replace(/\u00ad/g, ''),
+        'to equal',
+        'to millioner firehundrede og niogtredive tusinde ottehundrede og enoghalvfjerds'
+      );
+    });
+
+    // https://github.com/papandreou/node-cldr/issues/33
+    it('should render ordinals correctly in American English', function() {
+      var americanRbnfFunctionByType = cldr.extractRbnfFunctionByType('en_us');
+      americanRbnfFunctionByType.renderNumber = String;
+      expect(
+        americanRbnfFunctionByType.renderDigitsOrdinal(1),
+        'to equal',
+        '1st'
+      );
+      expect(
+        americanRbnfFunctionByType.renderDigitsOrdinal(2),
+        'to equal',
+        '2nd'
+      );
+      expect(
+        americanRbnfFunctionByType.renderDigitsOrdinal(3),
+        'to equal',
+        '3rd'
+      );
+      expect(
+        americanRbnfFunctionByType.renderDigitsOrdinal(4),
+        'to equal',
+        '4th'
+      );
+    });
+  });
 });

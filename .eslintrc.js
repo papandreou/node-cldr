@@ -1,13 +1,5 @@
 const config = {
-    "extends": [
-        "standard",
-        "prettier",
-        "prettier/standard"
-    ],
-    env: {
-        node: true,
-        mocha: true
-    }
+  extends: ['pretty-standard']
 };
 
 if (process.stdin.isTTY) {

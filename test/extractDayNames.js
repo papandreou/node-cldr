@@ -1,31 +1,48 @@
-var expect = require('unexpected'),
-    cldr = require('../lib/cldr');
+var expect = require('unexpected');
 
-describe('cldr.extractDayNames("en")', function () {
-    var englishDayNames = cldr.extractDayNames('en');
-    it('should have the correct names', function () {
-        expect(englishDayNames.format, 'to equal', {
-            wide: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+var cldr = require('../lib/cldr');
 
-            abbreviated: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+describe('cldr.extractDayNames("en")', function() {
+  var englishDayNames = cldr.extractDayNames('en');
+  it('should have the correct names', function() {
+    expect(englishDayNames.format, 'to equal', {
+      wide: [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+      ],
 
-            'short': ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+      abbreviated: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
 
-            // Aliased to ../../dayContext[@type='stand-alone']/dayWidth[@type='narrow']
-            narrow: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
-        });
+      short: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
 
-        expect(englishDayNames.standAlone, 'to equal', {
-            // Aliased to: ../../dayContext[@type='format']/dayWidth[@type='wide']
-            wide: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-
-            // Aliased to ../../dayContext[@type='format']/dayWidth[@type='abbreviated']
-            abbreviated: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-
-            // Aliased to: ../../dayContext[@type='format']/dayWidth[@type='short']
-            'short': ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-
-            narrow: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
-        });
+      // Aliased to ../../dayContext[@type='stand-alone']/dayWidth[@type='narrow']
+      narrow: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
     });
+
+    expect(englishDayNames.standAlone, 'to equal', {
+      // Aliased to: ../../dayContext[@type='format']/dayWidth[@type='wide']
+      wide: [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+      ],
+
+      // Aliased to ../../dayContext[@type='format']/dayWidth[@type='abbreviated']
+      abbreviated: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+
+      // Aliased to: ../../dayContext[@type='format']/dayWidth[@type='short']
+      short: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+
+      narrow: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+    });
+  });
 });
