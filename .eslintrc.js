@@ -3,8 +3,12 @@ const config = {
         "standard",
         "prettier",
         "prettier/standard"
-      ],
-    };
+    ],
+    env: {
+        node: true,
+        mocha: true
+    }
+};
 
 if (process.stdin.isTTY) {
   // Enable plugin-prettier when running in a terminal. Allows us to have
