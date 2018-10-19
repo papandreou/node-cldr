@@ -7,7 +7,7 @@ function beautifyJavaScript(functionOrAst) {
   var ast;
   if (typeof functionOrAst === 'function') {
     ast = esprima.parse(
-      functionOrAst.toString().replace(/^function \(/, 'function anonymous(')
+      functionOrAst.toString().replace(/^function\s*\(/, 'function anonymous(')
     );
   } else {
     ast = functionOrAst;
