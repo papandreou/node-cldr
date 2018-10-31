@@ -7,7 +7,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 14197 $"/>
+		<version number="$Revision: 14491 $"/>
 		<language type="br"/>
 	</identity>
 	<localeDisplayNames>
@@ -597,6 +597,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<script type="Hira">hiragana</script>
 			<script type="Hluw">hieroglifoù Anatolia</script>
 			<script type="Hrkt">silabennaouegoù japanek</script>
+			<script type="Hung">henhungarek</script>
 			<script type="Ital">henitalek</script>
 			<script type="Jamo">jamo</script>
 			<script type="Java">javanek</script>
@@ -608,13 +609,19 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<script type="Laoo">laosek</script>
 			<script type="Latg">latin gouezelek</script>
 			<script type="Latn">latin</script>
+			<script type="Lyci">likiek</script>
+			<script type="Lydi">lidiek</script>
+			<script type="Mani">manikeek</script>
 			<script type="Maya">hieroglifoù mayaek</script>
 			<script type="Mlym">malayalam</script>
 			<script type="Mong">mongolek</script>
 			<script type="Mymr">myanmar</script>
+			<script type="Narb">henarabek an Norzh</script>
 			<script type="Ogam">ogam</script>
 			<script type="Orya">oriya</script>
 			<script type="Runr">runek</script>
+			<script type="Samr">samaritek</script>
+			<script type="Sarb">henarabek ar Su</script>
 			<script type="Sinh">singhalek</script>
 			<script type="Sund">sundanek</script>
 			<script type="Syrc">siriek</script>
@@ -630,6 +637,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<script type="Ugar">ougaritek</script>
 			<script type="Vaii">vai</script>
 			<script type="Xpeo">persek kozh</script>
+			<script type="Xsux">gennheñvel</script>
 			<script type="Zmth">notadur jedoniel</script>
 			<script type="Zsye">fromlunioù</script>
 			<script type="Zsym">arouezioù</script>
@@ -981,6 +989,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<variant type="HSISTEMO">esperanteg sistem H</variant>
 			<variant type="IJEKAVSK">serbeg gant distagadur ijekavian</variant>
 			<variant type="ITIHASA">sanskriteg itihâsa</variant>
+			<variant type="IVANCHOV">reizhskrivadur Ivanchov</variant>
 			<variant type="JAUER">rannyezh romañchek Jauer</variant>
 			<variant type="JYUTPING">romanekadur kantonek Jyutping</variant>
 			<variant type="KKCOR">kerneveureg kumun</variant>
@@ -1156,6 +1165,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ c ç é è ĕ ë ē í ì ĭ î ï ī ó ò ŏ ô ö ø ō œ q ú ŭ û ü ū ÿ]</exemplarCharacters>
 		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P R S T U V W X Y Z]</exemplarCharacters>
 		<exemplarCharacters type="numbers">[  \- , % ‰ + 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
+		<exemplarCharacters type="punctuation" draft="contributed">[\- , ; \: ! ? . ( ) \[ \] \{ \}]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -6464,7 +6474,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">{0} Sa zo</relativeTimePattern>
 				</relativeTime>
 			</field>
+			<field type="dayperiod-short">
+				<displayName>AM/GM</displayName>
+			</field>
 			<field type="dayperiod">
+				<displayName>AM/GM</displayName>
+			</field>
+			<field type="dayperiod-narrow">
 				<displayName>AM/GM</displayName>
 			</field>
 			<field type="hour">
@@ -10824,14 +10840,22 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol draft="contributed">VEB</symbol>
 			</currency>
 			<currency type="VEF">
+				<displayName>bolivar Venezuela (2008–2018)</displayName>
+				<displayName count="one">bolivar Venezuela (2008–2018)</displayName>
+				<displayName count="two">volivar Venezuela (2008–2018)</displayName>
+				<displayName count="few">bolivar Venezuela (2008–2018)</displayName>
+				<displayName count="many">a volivaroù Venezuela (2008–2018)</displayName>
+				<displayName count="other">bolivar Venezuela (2008–2018)</displayName>
+				<symbol draft="contributed">VEF</symbol>
+				<symbol alt="narrow" draft="contributed">Bs</symbol>
+			</currency>
+			<currency type="VES">
 				<displayName>bolivar Venezuela</displayName>
 				<displayName count="one">bolivar Venezuela</displayName>
 				<displayName count="two">volivar Venezuela</displayName>
 				<displayName count="few">bolivar Venezuela</displayName>
 				<displayName count="many">a volivaroù Venezuela</displayName>
 				<displayName count="other">bolivar Venezuela</displayName>
-				<symbol draft="contributed">VEF</symbol>
-				<symbol alt="narrow" draft="contributed">Bs</symbol>
 			</currency>
 			<currency type="VND">
 				<displayName>dong Viêt Nam</displayName>
@@ -11133,7 +11157,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">
-			<pattern type="atLeast">⩾{0}</pattern>
+			<pattern type="atLeast">≥{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
 		<minimalPairs>
@@ -12616,11 +12640,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="length-fathom">
 				<displayName>fm</displayName>
-				<unitPattern count="one">{0} fm</unitPattern>
-				<unitPattern count="two">{0} fm</unitPattern>
-				<unitPattern count="few">{0} fm</unitPattern>
-				<unitPattern count="many">{0} fm</unitPattern>
-				<unitPattern count="other">{0} fm</unitPattern>
+				<unitPattern count="one">{0} fth</unitPattern>
+				<unitPattern count="two">{0} fth</unitPattern>
+				<unitPattern count="few">{0} fth</unitPattern>
+				<unitPattern count="many">{0} fth</unitPattern>
+				<unitPattern count="other">{0} fth</unitPattern>
 			</unit>
 			<unit type="length-nautical-mile">
 				<displayName>nmi</displayName>
@@ -13411,11 +13435,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="length-fathom">
 				<displayName>fm</displayName>
-				<unitPattern count="one">{0} fm</unitPattern>
-				<unitPattern count="two">{0} fm</unitPattern>
-				<unitPattern count="few">{0} fm</unitPattern>
-				<unitPattern count="many">{0} fm</unitPattern>
-				<unitPattern count="other">{0} fm</unitPattern>
+				<unitPattern count="one">{0} fth</unitPattern>
+				<unitPattern count="two">{0} fth</unitPattern>
+				<unitPattern count="few">{0} fth</unitPattern>
+				<unitPattern count="many">{0} fth</unitPattern>
+				<unitPattern count="other">{0} fth</unitPattern>
 			</unit>
 			<unit type="length-nautical-mile">
 				<displayName>nmi</displayName>

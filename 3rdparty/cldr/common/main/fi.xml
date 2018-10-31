@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 14197 $"/>
+		<version number="$Revision: 14491 $"/>
 		<language type="fi"/>
 	</identity>
 	<localeDisplayNames>
@@ -861,7 +861,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Itä-Eurooppa</territory>
 			<territory type="154">Pohjois-Eurooppa</territory>
 			<territory type="155">Länsi-Eurooppa</territory>
-			<territory type="202" draft="contributed">Saharan eteläpuolinen Afrikka</territory>
+			<territory type="202">Saharan eteläpuolinen Afrikka</territory>
 			<territory type="419">Latinalainen Amerikka</territory>
 			<territory type="AC">Ascension-saari</territory>
 			<territory type="AD">Andorra</territory>
@@ -1782,7 +1782,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="Bhms">h.mm.ss B</dateFormatItem>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="E">ccc</dateFormatItem>
-						<dateFormatItem id="EBhm">E h.mm. B</dateFormatItem>
+						<dateFormatItem id="EBhm">E h.mm B</dateFormatItem>
 						<dateFormatItem id="EBhms">E h.mm.ss B</dateFormatItem>
 						<dateFormatItem id="Ed">E d.</dateFormatItem>
 						<dateFormatItem id="Ehm">E h.mm a</dateFormatItem>
@@ -2306,6 +2306,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="GyMMM">LLL y G</dateFormatItem>
 						<dateFormatItem id="GyMMMd">d. MMM y G</dateFormatItem>
 						<dateFormatItem id="GyMMMEd">E d. MMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMMd">d. MMMM y G</dateFormatItem>
+						<dateFormatItem id="GyMMMMEd">E d. MMMM y G</dateFormatItem>
 						<dateFormatItem id="h">h a</dateFormatItem>
 						<dateFormatItem id="H">H</dateFormatItem>
 						<dateFormatItem id="hm">h.mm a</dateFormatItem>
@@ -2323,6 +2325,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="MMMd">d. MMM</dateFormatItem>
 						<dateFormatItem id="MMMEd">ccc d. MMM</dateFormatItem>
 						<dateFormatItem id="MMMMd">d. MMMM</dateFormatItem>
+						<dateFormatItem id="MMMMEd">ccc d. MMMM</dateFormatItem>
 						<dateFormatItem id="MMMMW" count="one">LLLL'n' W. 'viikko'</dateFormatItem>
 						<dateFormatItem id="MMMMW" count="other">LLLL'n' W. 'viikko'</dateFormatItem>
 						<dateFormatItem id="ms">m.ss</dateFormatItem>
@@ -2336,6 +2339,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="yMMMEd">E d. MMM y</dateFormatItem>
 						<dateFormatItem id="yMMMM">LLLL y</dateFormatItem>
 						<dateFormatItem id="yMMMMccccd">cccc d. MMMM y</dateFormatItem>
+						<dateFormatItem id="yMMMMd">d. MMMM y</dateFormatItem>
+						<dateFormatItem id="yMMMMEd">E d. MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y</dateFormatItem>
 						<dateFormatItem id="yw" count="one">'vuoden' Y 'viikko' w</dateFormatItem>
@@ -2406,6 +2411,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<intervalFormatItem id="MMMM">
 							<greatestDifference id="M">LLL–LLLL</greatestDifference>
 						</intervalFormatItem>
+						<intervalFormatItem id="MMMMd">
+							<greatestDifference id="d">d.–d. MMMM</greatestDifference>
+							<greatestDifference id="M">d. MMMM – d. MMMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMMEd">
+							<greatestDifference id="d">E d. – E d. MMMM</greatestDifference>
+							<greatestDifference id="M">E d. MMMM – E d. MMMM</greatestDifference>
+						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y–y</greatestDifference>
 						</intervalFormatItem>
@@ -2440,6 +2453,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">LLL–LLLL y</greatestDifference>
 							<greatestDifference id="y">LLLL y – LLLL y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMMd">
+							<greatestDifference id="d">d.–d. MMMM y</greatestDifference>
+							<greatestDifference id="M">d. MMMM – d. MMMM y</greatestDifference>
+							<greatestDifference id="y">d. MMMM y – d. MMMM y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMMEd">
+							<greatestDifference id="d">E d. – E d. MMMM y</greatestDifference>
+							<greatestDifference id="M">E d. MMMM – E d. MMMM y</greatestDifference>
+							<greatestDifference id="y">E d. MMMM y – E d. MMMM y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -6942,6 +6965,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>Mauritanian ouguiya</displayName>
 				<displayName count="one">Mauritanian ouguiya</displayName>
 				<displayName count="other">Mauritanian ouguiyaa</displayName>
+				<symbol draft="contributed">MRU</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Maltan liira</displayName>
@@ -7500,17 +7524,23 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<symbol>UZS</symbol>
 			</currency>
 			<currency type="VEB">
-				<displayName>Venezuelan bolivar (1871–2008)</displayName>
+				<displayName>Venezuelan bolívar (1871–2008)</displayName>
 				<displayName count="one">Venezuelan bolivar (1871–2008)</displayName>
 				<displayName count="other">Venezuelan bolivaria (1871–2008)</displayName>
 				<symbol>VEB</symbol>
 			</currency>
 			<currency type="VEF">
-				<displayName>Venezuelan bolivar</displayName>
-				<displayName count="one">Venezuelan bolivar</displayName>
-				<displayName count="other">Venezuelan bolivaria</displayName>
+				<displayName>Venezuelan bolívar (2008–2018)</displayName>
+				<displayName count="one">Venezuelan bolívar (2008–2018)</displayName>
+				<displayName count="other">Venezuelan bolívaria (2008–2018)</displayName>
 				<symbol>VEF</symbol>
 				<symbol alt="narrow">VEF</symbol>
+			</currency>
+			<currency type="VES">
+				<displayName>Venezuelan suvereeni bolívar</displayName>
+				<displayName count="one">Venezuelan suvereeni bolívar</displayName>
+				<displayName count="other">Venezuelan suvereenia bolívaria</displayName>
+				<symbol draft="contributed">VES</symbol>
 			</currency>
 			<currency type="VND">
 				<displayName>Vietnamin dong</displayName>
@@ -7758,7 +7788,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">
+			<pattern type="approximately">~{0}</pattern>
 			<pattern type="atLeast">vähintään {0}</pattern>
+			<pattern type="atMost">≤{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
 		<minimalPairs>
@@ -7877,6 +7909,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="one">{0} ppm</unitPattern>
 				<unitPattern count="other">{0} ppm</unitPattern>
 			</unit>
+			<unit type="concentr-percent">
+				<displayName draft="contributed">prosentit</displayName>
+				<unitPattern count="one" draft="contributed">{0} prosentti</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} prosenttia</unitPattern>
+			</unit>
+			<unit type="concentr-permille">
+				<displayName draft="contributed">promillet</displayName>
+				<unitPattern count="one" draft="contributed">{0} promille</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} promillea</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litrat / kilometri</displayName>
 				<unitPattern count="one">{0} litra / kilometri</unitPattern>
@@ -7896,6 +7938,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>mailit / br. gallona</displayName>
 				<unitPattern count="one">{0} maili / br. gallona</unitPattern>
 				<unitPattern count="other">{0} mailia / br. gallona</unitPattern>
+			</unit>
+			<unit type="digital-petabyte">
+				<displayName draft="contributed">petatavut</displayName>
+				<unitPattern count="one" draft="contributed">{0} petatavu</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} petatavua</unitPattern>
 			</unit>
 			<unit type="digital-terabyte">
 				<displayName>teratavut</displayName>
@@ -8303,6 +8350,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="one">{0} millibaari</unitPattern>
 				<unitPattern count="other">{0} millibaaria</unitPattern>
 			</unit>
+			<unit type="pressure-atmosphere">
+				<displayName draft="contributed">normaali-ilmakehät</displayName>
+				<unitPattern count="one" draft="contributed">{0} normaali-ilmakehä</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} normaali-ilmakehää</unitPattern>
+			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometrit tunnissa</displayName>
 				<unitPattern count="one">{0} kilometri tunnissa</unitPattern>
@@ -8474,6 +8526,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0} teelusikkaa</unitPattern>
 			</unit>
 			<coordinateUnit>
+				<displayName draft="contributed">pääilmansuunta</displayName>
 				<coordinateUnitPattern type="east">{0}I</coordinateUnitPattern>
 				<coordinateUnitPattern type="north">{0}P</coordinateUnitPattern>
 				<coordinateUnitPattern type="south">{0}E</coordinateUnitPattern>
@@ -8589,6 +8642,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="one">{0} ppm</unitPattern>
 				<unitPattern count="other">{0} ppm</unitPattern>
 			</unit>
+			<unit type="concentr-percent">
+				<displayName draft="contributed">%</displayName>
+				<unitPattern count="one" draft="contributed">{0} %</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} %</unitPattern>
+			</unit>
+			<unit type="concentr-permille">
+				<displayName draft="contributed">‰</displayName>
+				<unitPattern count="one" draft="contributed">{0} ‰</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} ‰</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
 				<unitPattern count="one">{0} l/km</unitPattern>
@@ -8608,6 +8671,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>mpg-br</displayName>
 				<unitPattern count="one">{0} mpg-br</unitPattern>
 				<unitPattern count="other">{0} mpg-br</unitPattern>
+			</unit>
+			<unit type="digital-petabyte">
+				<displayName>Pt</displayName>
+				<unitPattern count="one">{0} Pt</unitPattern>
+				<unitPattern count="other">{0} Pt</unitPattern>
 			</unit>
 			<unit type="digital-terabyte">
 				<displayName>Tt</displayName>
@@ -8878,8 +8946,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="length-fathom">
 				<displayName>fm</displayName>
-				<unitPattern count="one">{0} fm</unitPattern>
-				<unitPattern count="other">{0} fm</unitPattern>
+				<unitPattern count="one">{0} fth</unitPattern>
+				<unitPattern count="other">{0} fth</unitPattern>
 			</unit>
 			<unit type="length-nautical-mile">
 				<displayName>mpk</displayName>
@@ -9014,6 +9082,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>mbar</displayName>
 				<unitPattern count="one">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
+			</unit>
+			<unit type="pressure-atmosphere">
+				<displayName draft="contributed">atm</displayName>
+				<unitPattern count="one" draft="contributed">{0} atm</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} atm</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>
@@ -9186,6 +9259,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0} tl</unitPattern>
 			</unit>
 			<coordinateUnit>
+				<displayName draft="contributed">ilmansuunta</displayName>
 				<coordinateUnitPattern type="east">{0}I</coordinateUnitPattern>
 				<coordinateUnitPattern type="north">{0}P</coordinateUnitPattern>
 				<coordinateUnitPattern type="south">{0}E</coordinateUnitPattern>
@@ -9301,6 +9375,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="one">{0}ppm</unitPattern>
 				<unitPattern count="other">{0}ppm</unitPattern>
 			</unit>
+			<unit type="concentr-percent">
+				<displayName draft="contributed">%</displayName>
+				<unitPattern count="one" draft="contributed">{0} %</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} %</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>l/km</displayName>
 				<unitPattern count="one">{0}l/km</unitPattern>
@@ -9320,6 +9399,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>mpg-br</displayName>
 				<unitPattern count="one">{0}mpg-br</unitPattern>
 				<unitPattern count="other">{0}mpg-br</unitPattern>
+			</unit>
+			<unit type="digital-petabyte">
+				<displayName>Pt</displayName>
+				<unitPattern count="one">{0}Pt</unitPattern>
+				<unitPattern count="other">{0}Pt</unitPattern>
 			</unit>
 			<unit type="digital-terabyte">
 				<displayName>Tt</displayName>
@@ -9590,8 +9674,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="length-fathom">
 				<displayName>fm</displayName>
-				<unitPattern count="one">{0}fm</unitPattern>
-				<unitPattern count="other">{0}fm</unitPattern>
+				<unitPattern count="one">{0}fth</unitPattern>
+				<unitPattern count="other">{0}fth</unitPattern>
 			</unit>
 			<unit type="length-nautical-mile">
 				<displayName>mpk</displayName>
@@ -9893,6 +9977,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0}tl</unitPattern>
 			</unit>
 			<coordinateUnit>
+				<displayName draft="contributed">suunta</displayName>
 				<coordinateUnitPattern type="east">{0}I</coordinateUnitPattern>
 				<coordinateUnitPattern type="north">{0}P</coordinateUnitPattern>
 				<coordinateUnitPattern type="south">{0}E</coordinateUnitPattern>
@@ -10059,6 +10144,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<axisName type="wdth">leveys</axisName>
 		<axisName type="wght">paksuus</axisName>
 		<styleName type="ital" subtype="1">kursiivi</styleName>
+		<styleName type="opsz" subtype="8">kuvateksti</styleName>
+		<styleName type="opsz" subtype="12">teksti</styleName>
 		<styleName type="opsz" subtype="18">otsikko</styleName>
 		<styleName type="opsz" subtype="72">näyttö</styleName>
 		<styleName type="opsz" subtype="144">juliste</styleName>
@@ -10068,19 +10155,29 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<styleName type="slnt" subtype="24">extravino</styleName>
 		<styleName type="wdth" subtype="50">ultrakapea</styleName>
 		<styleName type="wdth" subtype="50" alt="compressed">ultratiivis</styleName>
+		<styleName type="wdth" subtype="50" alt="narrow">ultrakapea</styleName>
 		<styleName type="wdth" subtype="62.5">extrakapea</styleName>
 		<styleName type="wdth" subtype="62.5" alt="compressed">extratiivis</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">extrakapea</styleName>
 		<styleName type="wdth" subtype="75">kavennettu</styleName>
 		<styleName type="wdth" subtype="75" alt="compressed">pakattu</styleName>
 		<styleName type="wdth" subtype="75" alt="narrow">kapea</styleName>
 		<styleName type="wdth" subtype="87.5">semikapea</styleName>
+		<styleName type="wdth" subtype="87.5" alt="compressed">semikapea</styleName>
+		<styleName type="wdth" subtype="87.5" alt="narrow">semikapea</styleName>
 		<styleName type="wdth" subtype="100">normaali</styleName>
 		<styleName type="wdth" subtype="112.5">semilaaja</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">semilaajennettu</styleName>
+		<styleName type="wdth" subtype="112.5" alt="wide">semileveä</styleName>
 		<styleName type="wdth" subtype="125">laajennettu</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">laajennettu</styleName>
 		<styleName type="wdth" subtype="125" alt="wide">leveä</styleName>
 		<styleName type="wdth" subtype="150">extralaaja</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">extralaajennettu</styleName>
 		<styleName type="wdth" subtype="150" alt="wide">extraleveä</styleName>
 		<styleName type="wdth" subtype="200">ultralaaja</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ultralaajennettu</styleName>
+		<styleName type="wdth" subtype="200" alt="wide">ultraleveä</styleName>
 		<styleName type="wght" subtype="100">kapea</styleName>
 		<styleName type="wght" subtype="200">extraohut</styleName>
 		<styleName type="wght" subtype="200" alt="ultra">ultraohut</styleName>

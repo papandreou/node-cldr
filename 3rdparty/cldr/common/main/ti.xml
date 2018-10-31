@@ -7,7 +7,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision$"/>
+		<version number="$Revision: 14488 $"/>
 		<language type="ti"/>
 	</identity>
 	<localeDisplayNames>
@@ -615,9 +615,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dayWidth type="wide">
 							<day type="sun">ሰንበት</day>
 							<day type="mon">ሰኑይ</day>
-							<day type="tue">ሰሉስ</day>
+							<day type="tue">ሠሉስ</day>
 							<day type="wed">ረቡዕ</day>
-							<day type="thu">ሓሙስ</day>
+							<day type="thu">ኃሙስ</day>
 							<day type="fri">ዓርቢ</day>
 							<day type="sat">ቀዳም</day>
 						</dayWidth>
@@ -824,8 +824,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMMMM">MMMM y</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
-						<dateFormatItem id="yw" count="one">መበል w ሰሙን ናይ y</dateFormatItem>
-						<dateFormatItem id="yw" count="other">መበል w ሰሙን ናይ y</dateFormatItem>
+						<dateFormatItem id="yw" count="one">መበል w ሰሙን ናይ Y</dateFormatItem>
+						<dateFormatItem id="yw" count="other">መበል w ሰሙን ናይ Y</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Timezone">{0} {1}</appendItem>
@@ -3004,7 +3004,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">
-			<pattern type="atLeast">⩾{0}</pattern>
+			<pattern type="atLeast">≥{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
 	</numbers>

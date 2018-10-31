@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 14197 $"/>
+		<version number="$Revision: 14488 $"/>
 		<language type="bs"/>
 	</identity>
 	<localeDisplayNames>
@@ -215,7 +215,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="inh">ingušetski</language>
 			<language type="io">ido</language>
 			<language type="is">islandski</language>
-			<language type="it">talijanski</language>
+			<language type="it">italijanski</language>
 			<language type="iu">inuktitut</language>
 			<language type="ja">japanski</language>
 			<language type="jbo">lojban</language>
@@ -1457,7 +1457,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 							<month type="5">maj</month>
 							<month type="6">jun</month>
 							<month type="7">jul</month>
-							<month type="8">avg</month>
+							<month type="8">aug</month>
 							<month type="9">sep</month>
 							<month type="10">okt</month>
 							<month type="11">nov</month>
@@ -1485,7 +1485,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 							<month type="5">maj</month>
 							<month type="6">juni</month>
 							<month type="7">juli</month>
-							<month type="8">avgust</month>
+							<month type="8">august</month>
 							<month type="9">septembar</month>
 							<month type="10">oktobar</month>
 							<month type="11">novembar</month>
@@ -1501,7 +1501,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 							<month type="5">maj</month>
 							<month type="6">jun</month>
 							<month type="7">jul</month>
-							<month type="8">avg</month>
+							<month type="8">aug</month>
 							<month type="9">sep</month>
 							<month type="10">okt</month>
 							<month type="11">nov</month>
@@ -1529,7 +1529,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 							<month type="5">maj</month>
 							<month type="6">juni</month>
 							<month type="7">juli</month>
-							<month type="8">avgust</month>
+							<month type="8">august</month>
 							<month type="9">septembar</month>
 							<month type="10">oktobar</month>
 							<month type="11">novembar</month>
@@ -1661,9 +1661,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<dayPeriodContext type="format">
 						<dayPeriodWidth type="abbreviated">
 							<dayPeriod type="midnight">ponoć</dayPeriod>
-							<dayPeriod type="am">prijepodne</dayPeriod>
+							<dayPeriod type="am">AM</dayPeriod>
 							<dayPeriod type="noon">podne</dayPeriod>
-							<dayPeriod type="pm">popodne</dayPeriod>
+							<dayPeriod type="pm">PM</dayPeriod>
 							<dayPeriod type="morning1">ujutro</dayPeriod>
 							<dayPeriod type="afternoon1">poslijepodne</dayPeriod>
 							<dayPeriod type="evening1">navečer</dayPeriod>
@@ -1693,9 +1693,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<dayPeriodContext type="stand-alone">
 						<dayPeriodWidth type="abbreviated">
 							<dayPeriod type="midnight">ponoć</dayPeriod>
-							<dayPeriod type="am">prijepodne</dayPeriod>
+							<dayPeriod type="am">AM</dayPeriod>
 							<dayPeriod type="noon">podne</dayPeriod>
-							<dayPeriod type="pm">popodne</dayPeriod>
+							<dayPeriod type="pm">PM</dayPeriod>
 							<dayPeriod type="morning1">ujutro</dayPeriod>
 							<dayPeriod type="afternoon1">poslijepodne</dayPeriod>
 							<dayPeriod type="evening1">navečer</dayPeriod>
@@ -1726,11 +1726,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<eras>
 					<eraNames>
 						<era type="0">prije nove ere</era>
+						<era type="0" alt="variant">P.n.e.</era>
 						<era type="1">nove ere</era>
+						<era type="1" alt="variant">Nove ere</era>
 					</eraNames>
 					<eraAbbr>
 						<era type="0">p. n. e.</era>
+						<era type="0" alt="variant">p.n.e.</era>
 						<era type="1">n. e.</era>
+						<era type="1" alt="variant">n.e.</era>
 					</eraAbbr>
 					<eraNarrow>
 						<era type="0">p.n.e.</era>
@@ -1755,7 +1759,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					</dateFormatLength>
 					<dateFormatLength type="short">
 						<dateFormat>
-							<pattern>d.M.yy.</pattern>
+							<pattern>d. M. y.</pattern>
 						</dateFormat>
 					</dateFormatLength>
 				</dateFormats>
@@ -1853,9 +1857,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<dateFormatItem id="yMMMM">LLLL y.</dateFormatItem>
 						<dateFormatItem id="yQQQ">QQQ y.</dateFormatItem>
 						<dateFormatItem id="yQQQQ">QQQQ y.</dateFormatItem>
-						<dateFormatItem id="yw" count="one">w. 'sedmica' 'u' y.</dateFormatItem>
-						<dateFormatItem id="yw" count="few">w. 'sedmica' 'u' y.</dateFormatItem>
-						<dateFormatItem id="yw" count="other">w. 'sedmica' 'u' y.</dateFormatItem>
+						<dateFormatItem id="yw" count="one">w. 'sedmica' 'u' Y.</dateFormatItem>
+						<dateFormatItem id="yw" count="few">w. 'sedmica' 'u' Y.</dateFormatItem>
+						<dateFormatItem id="yw" count="other">w. 'sedmica' 'u' Y.</dateFormatItem>
 					</availableFormats>
 					<appendItems>
 						<appendItem request="Timezone">{0} {1}</appendItem>
@@ -7045,12 +7049,18 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName count="other">venecuelskih bolivara (1871–2008)</displayName>
 			</currency>
 			<currency type="VEF">
-				<displayName>Venecuelanski bolivar</displayName>
-				<displayName count="one">venecuelanski bolivar</displayName>
-				<displayName count="few">venecuelanska bolivara</displayName>
-				<displayName count="other">venecuelanskih bolivara</displayName>
+				<displayName>venecuelanski bolivar (2008–2018)</displayName>
+				<displayName count="one">venecuelanski bolivar (2008–2018)</displayName>
+				<displayName count="few">venecuelanska bolivara (2008–2018)</displayName>
+				<displayName count="other">venecuelanskih bolivara (2008–2018)</displayName>
 				<symbol>VEF</symbol>
 				<symbol alt="narrow" draft="contributed">Bs</symbol>
+			</currency>
+			<currency type="VES">
+				<displayName>venecuelanski bolivar</displayName>
+				<displayName count="one">venecuelanskih bolivara</displayName>
+				<displayName count="few">venecuelanska bolivara</displayName>
+				<displayName count="other">venecuelanskih bolivara</displayName>
 			</currency>
 			<currency type="VND">
 				<displayName>Vijetnamski dong</displayName>
@@ -7296,11 +7306,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">
+			<pattern type="approximately">~{0}</pattern>
 			<pattern type="atLeast">{0}+</pattern>
+			<pattern type="atMost">≤{0}</pattern>
 			<pattern type="range">{0} – {1}</pattern>
 		</miscPatterns>
 		<minimalPairs>
-			<ordinalMinimalPairs ordinal="other" draft="provisional">Skrenite na {0}. križanju desno.</ordinalMinimalPairs>
+			<pluralMinimalPairs count="one" draft="contributed">{0} sat</pluralMinimalPairs>
+			<pluralMinimalPairs count="few" draft="contributed">{0} sata</pluralMinimalPairs>
+			<pluralMinimalPairs count="other" draft="contributed">{0} sati</pluralMinimalPairs>
+			<ordinalMinimalPairs ordinal="other" draft="contributed">Skrenite na {0}. križanju desno.</ordinalMinimalPairs>
 		</minimalPairs>
 	</numbers>
 	<units>
@@ -7433,6 +7448,18 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="few">{0} dijela na milion</unitPattern>
 				<unitPattern count="other">{0} dijelova na milion</unitPattern>
 			</unit>
+			<unit type="concentr-percent">
+				<displayName>procenat</displayName>
+				<unitPattern count="one">{0} procenat</unitPattern>
+				<unitPattern count="few">{0} procenta</unitPattern>
+				<unitPattern count="other">{0} procenata</unitPattern>
+			</unit>
+			<unit type="concentr-permille">
+				<displayName>promil</displayName>
+				<unitPattern count="one">{0} promil</unitPattern>
+				<unitPattern count="few">{0} promila</unitPattern>
+				<unitPattern count="other">{0} promila</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>litri po kilometru</displayName>
 				<unitPattern count="one">{0} litar po kilometru</unitPattern>
@@ -7456,6 +7483,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="one">{0} milja po brit. galonu</unitPattern>
 				<unitPattern count="few">{0} milje po brit. galonu</unitPattern>
 				<unitPattern count="other">{0} milja po brit. galonu</unitPattern>
+			</unit>
+			<unit type="digital-petabyte">
+				<displayName>petabajti</displayName>
+				<unitPattern count="one">{0} petabajt</unitPattern>
+				<unitPattern count="few">{0} petabajta</unitPattern>
+				<unitPattern count="other">{0} petabajta</unitPattern>
 			</unit>
 			<unit type="digital-terabyte">
 				<displayName>terabajti</displayName>
@@ -7923,6 +7956,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="few">{0} milibara</unitPattern>
 				<unitPattern count="other">{0} milibara</unitPattern>
 			</unit>
+			<unit type="pressure-atmosphere">
+				<displayName>atmosfere</displayName>
+				<unitPattern count="one">{0} atmosfera</unitPattern>
+				<unitPattern count="few">{0} atmosfere</unitPattern>
+				<unitPattern count="other">{0} atmosfera</unitPattern>
+			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>kilometri na sat</displayName>
 				<unitPattern count="one">{0} kilometar na sat</unitPattern>
@@ -8121,6 +8160,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0} kašičica</unitPattern>
 			</unit>
 			<coordinateUnit>
+				<displayName>glavni pravac</displayName>
 				<coordinateUnitPattern type="east">{0} istok</coordinateUnitPattern>
 				<coordinateUnitPattern type="north">{0} sjever</coordinateUnitPattern>
 				<coordinateUnitPattern type="south">{0} jug</coordinateUnitPattern>
@@ -8256,6 +8296,18 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="few">{0} ppm</unitPattern>
 				<unitPattern count="other">{0} ppm</unitPattern>
 			</unit>
+			<unit type="concentr-percent">
+				<displayName>%</displayName>
+				<unitPattern count="one">{0}%</unitPattern>
+				<unitPattern count="few">{0}%</unitPattern>
+				<unitPattern count="other">{0}%</unitPattern>
+			</unit>
+			<unit type="concentr-permille">
+				<displayName>‰</displayName>
+				<unitPattern count="one">{0}‰</unitPattern>
+				<unitPattern count="few">{0}‰</unitPattern>
+				<unitPattern count="other">{0}‰</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>L/km</displayName>
 				<unitPattern count="one">{0} L/km</unitPattern>
@@ -8279,6 +8331,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="one">{0} mi/b. gal</unitPattern>
 				<unitPattern count="few">{0} mi/b. gal</unitPattern>
 				<unitPattern count="other">{0} mi/b. gal</unitPattern>
+			</unit>
+			<unit type="digital-petabyte">
+				<displayName>PB</displayName>
+				<unitPattern count="one">{0} PB</unitPattern>
+				<unitPattern count="few">{0} PB</unitPattern>
+				<unitPattern count="other">{0} PB</unitPattern>
 			</unit>
 			<unit type="digital-terabyte">
 				<displayName>TB</displayName>
@@ -8746,6 +8804,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="few">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
 			</unit>
+			<unit type="pressure-atmosphere">
+				<displayName>atm</displayName>
+				<unitPattern count="one">{0} atm</unitPattern>
+				<unitPattern count="few">{0} atm</unitPattern>
+				<unitPattern count="other">{0} atm</unitPattern>
+			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>
 				<unitPattern count="one">{0} km/h</unitPattern>
@@ -8944,6 +9008,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0} tsp</unitPattern>
 			</unit>
 			<coordinateUnit>
+				<displayName>pravac</displayName>
 				<coordinateUnitPattern type="east">{0} I</coordinateUnitPattern>
 				<coordinateUnitPattern type="north">{0} S</coordinateUnitPattern>
 				<coordinateUnitPattern type="south">{0} J</coordinateUnitPattern>
@@ -9003,6 +9068,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="one" draft="provisional">{0} ft²</unitPattern>
 				<unitPattern count="few" draft="provisional">{0} ft²</unitPattern>
 				<unitPattern count="other" draft="provisional">{0} ft²</unitPattern>
+			</unit>
+			<unit type="concentr-percent">
+				<displayName>%</displayName>
+				<unitPattern count="one">{0}%</unitPattern>
+				<unitPattern count="few">{0}%</unitPattern>
+				<unitPattern count="other">{0}%</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-100kilometers">
 				<displayName>L/100 km</displayName>
@@ -9208,6 +9279,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0}l</unitPattern>
 			</unit>
 			<coordinateUnit>
+				<displayName>pravac</displayName>
 				<coordinateUnitPattern type="east">{0}I</coordinateUnitPattern>
 				<coordinateUnitPattern type="north">{0}S</coordinateUnitPattern>
 				<coordinateUnitPattern type="south">{0}J</coordinateUnitPattern>
@@ -9368,4 +9440,74 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">Zapadnoazijska pisma</characterLabel>
 		<characterLabel type="whitespace">Prazan prostor</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">kurziv</axisName>
+		<axisName type="opsz">optička veličina</axisName>
+		<axisName type="slnt">zakrivljenost</axisName>
+		<axisName type="wdth">širina</axisName>
+		<axisName type="wght">debljina</axisName>
+		<styleName type="ital" subtype="1">kurziv</styleName>
+		<styleName type="opsz" subtype="8">veliko slovo</styleName>
+		<styleName type="opsz" subtype="12">tekst</styleName>
+		<styleName type="opsz" subtype="18">titling</styleName>
+		<styleName type="opsz" subtype="72">ukrasni</styleName>
+		<styleName type="opsz" subtype="144">poster</styleName>
+		<styleName type="slnt" subtype="-12">lijevo nagnut</styleName>
+		<styleName type="slnt" subtype="0">uspravan</styleName>
+		<styleName type="slnt" subtype="12">nagnut</styleName>
+		<styleName type="slnt" subtype="24">više nagnut</styleName>
+		<styleName type="wdth" subtype="50">najsuženiji</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">najsažetiji</styleName>
+		<styleName type="wdth" subtype="50" alt="narrow">najsuženiji</styleName>
+		<styleName type="wdth" subtype="62.5">više sužen</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">više sažet</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">jož uži</styleName>
+		<styleName type="wdth" subtype="75">sužen</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">sažet</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">sažet</styleName>
+		<styleName type="wdth" subtype="87.5">srednje sužen</styleName>
+		<styleName type="wdth" subtype="87.5" alt="compressed">srednje sažet</styleName>
+		<styleName type="wdth" subtype="87.5" alt="narrow">srednje uzak</styleName>
+		<styleName type="wdth" subtype="100">normalan</styleName>
+		<styleName type="wdth" subtype="112.5">srednje proširen</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">srednje proširen</styleName>
+		<styleName type="wdth" subtype="112.5" alt="wide">srednje širok</styleName>
+		<styleName type="wdth" subtype="125">proširen</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">proširen</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">širok</styleName>
+		<styleName type="wdth" subtype="150">više proširen</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">više proširen</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">još širi</styleName>
+		<styleName type="wdth" subtype="200">najviše proširen</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">najviše proširen</styleName>
+		<styleName type="wdth" subtype="200" alt="wide">najširi</styleName>
+		<styleName type="wght" subtype="100">tanak</styleName>
+		<styleName type="wght" subtype="200">još svjetliji</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">najsvjetliji</styleName>
+		<styleName type="wght" subtype="300">svijetao</styleName>
+		<styleName type="wght" subtype="350">srednje svijetao</styleName>
+		<styleName type="wght" subtype="380">book</styleName>
+		<styleName type="wght" subtype="400">običan</styleName>
+		<styleName type="wght" subtype="500">srednji</styleName>
+		<styleName type="wght" subtype="600">srednje podebljan</styleName>
+		<styleName type="wght" subtype="600" alt="demi">srednje podebljan</styleName>
+		<styleName type="wght" subtype="700">podebljan</styleName>
+		<styleName type="wght" subtype="800">više podebljan</styleName>
+		<styleName type="wght" subtype="900">crn</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">debeo</styleName>
+		<styleName type="wght" subtype="950">još crnji</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">najcrnji</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">najdeblji</styleName>
+		<featureName type="afrc">okomiti razlomci</featureName>
+		<featureName type="cpsp">razmak između velikih slova</featureName>
+		<featureName type="dlig">opcionalne ligature</featureName>
+		<featureName type="frac">dijagonalni razlomci</featureName>
+		<featureName type="lnum">poravnati brojevi</featureName>
+		<featureName type="onum">staromodni oblici</featureName>
+		<featureName type="ordn">redni brojevi</featureName>
+		<featureName type="pnum">proporcionalni brojevi</featureName>
+		<featureName type="smcp">smanjena velika slova</featureName>
+		<featureName type="tnum">tabelarni brojevi</featureName>
+		<featureName type="zero">prekrižena nula</featureName>
+	</typographicNames>
 </ldml>

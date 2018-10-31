@@ -7,7 +7,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 14197 $"/>
+		<version number="$Revision: 14394 $"/>
 		<language type="nn"/>
 	</identity>
 	<localeDisplayNames>
@@ -6111,11 +6111,16 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="other">venezuelanske bolivar (1871–2008)</displayName>
 			</currency>
 			<currency type="VEF">
+				<displayName>venezuelanske bolivar (2008–2018)</displayName>
+				<displayName count="one">venezuelansk bolivar (2008–2018)</displayName>
+				<displayName count="other">venezuelanske bolivar (2008–2018)</displayName>
+				<symbol draft="contributed">VEF</symbol>
+				<symbol alt="narrow" draft="contributed">Bs</symbol>
+			</currency>
+			<currency type="VES">
 				<displayName>venezuelanske bolivar</displayName>
 				<displayName count="one">venezuelansk bolivar</displayName>
 				<displayName count="other">venezuelanske bolivar</displayName>
-				<symbol draft="contributed">VEF</symbol>
-				<symbol alt="narrow" draft="contributed">Bs</symbol>
 			</currency>
 			<currency type="VND">
 				<displayName>vietnamesiske dong</displayName>
@@ -6297,7 +6302,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">
-			<pattern type="atLeast">⩾{0}</pattern>
+			<pattern type="atLeast">≥{0}</pattern>
 			<pattern type="range">{0}‒{1}</pattern>
 		</miscPatterns>
 		<minimalPairs>

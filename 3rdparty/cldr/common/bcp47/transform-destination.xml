@@ -5,7 +5,7 @@
 	For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldmlBCP47>
-	<version number="$Revision: 12970 $"/>
+	<version number="$Revision: 14062 $"/>
 	<keyword>
 		<key extension="t" name="d0" description="Transform destination for non-languages/scripts." since="29">
 			<type name="ascii" description="map as many characters to the closest ASCII character as possible" since="29"/>
@@ -29,6 +29,7 @@
 			<type name="npinyin" description="map pinyin written with tones to the numeric form" since="29" alias="numericPinyin"/>
 			<type name="null" description="make no change in the string" since="29"/>
 			<type name="remove" description="remove every character in the string" since="29"/>
+			<type name="zawgyi" description="map Unicode to Zawgyi Myanmar encoding" since="34"/>
 		</key>
 		<key extension="t" name="s0" description="Transform source for non-languages/scripts."  since="29">
 			<type name="accents" description="accented characters to map base + punctuation, etc" since="29"/>

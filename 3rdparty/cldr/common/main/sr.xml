@@ -9,7 +9,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 14197 $"/>
+		<version number="$Revision: 14394 $"/>
 		<language type="sr"/>
 	</identity>
 	<localeDisplayNames>
@@ -140,6 +140,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="enm">средњеенглески</language>
 			<language type="eo">есперанто</language>
 			<language type="es">шпански</language>
+			<language type="es_ES">шпански (Европа)</language>
 			<language type="et">естонски</language>
 			<language type="eu">баскијски</language>
 			<language type="ewo">евондо</language>
@@ -540,7 +541,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<script type="Blis">блисимболично писмо</script>
 			<script type="Bopo">бопомофо писмо</script>
 			<script type="Brah">браманско писмо</script>
-			<script type="Brai">Брајево писмо</script>
+			<script type="Brai">брајево писмо</script>
 			<script type="Bugi">бугинско писмо</script>
 			<script type="Buhd">бухидско писмо</script>
 			<script type="Cakm">чакманско писмо</script>
@@ -696,7 +697,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="151">Источна Европа</territory>
 			<territory type="154">Северна Европа</territory>
 			<territory type="155">Западна Европа</territory>
-			<territory type="202" draft="contributed">Африка јужно од Сахаре</territory>
+			<territory type="202">Африка јужно од Сахаре</territory>
 			<territory type="419">Латинска Америка</territory>
 			<territory type="AC">Острво Асенсион</territory>
 			<territory type="AD">Андора</territory>
@@ -2572,6 +2573,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</field>
 			<field type="day-short">
 				<displayName>д.</displayName>
+				<relative type="-2">прекјуче</relative>
+				<relative type="-1">јуче</relative>
+				<relative type="0">данас</relative>
+				<relative type="1">сутра</relative>
+				<relative type="2">прекосутра</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">за {0} д.</relativeTimePattern>
 					<relativeTimePattern count="few">за {0} д.</relativeTimePattern>
@@ -2585,6 +2591,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</field>
 			<field type="day-narrow">
 				<displayName>д.</displayName>
+				<relative type="-2">прекјуче</relative>
+				<relative type="-1">јуче</relative>
+				<relative type="0">данас</relative>
+				<relative type="1">сутра</relative>
+				<relative type="2">прекосутра</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">за {0} д.</relativeTimePattern>
 					<relativeTimePattern count="few">за {0} д.</relativeTimePattern>
@@ -6711,6 +6722,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName count="one">мауританијска oгија</displayName>
 				<displayName count="few">мауританијскe oгијe</displayName>
 				<displayName count="other">мауританијских oгијa</displayName>
+				<symbol draft="contributed">MRU</symbol>
 			</currency>
 			<currency type="MTL">
 				<displayName>Малтешка лира</displayName>
@@ -7323,12 +7335,19 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName count="other">венецуеланских боливара (1871–2008)</displayName>
 			</currency>
 			<currency type="VEF">
+				<displayName>Венецуелански боливар (2008–2018)</displayName>
+				<displayName count="one">венецуелански боливар (2008–2018)</displayName>
+				<displayName count="few">венецуеланска боливара (2008–2018)</displayName>
+				<displayName count="other">венецуеланских боливара (2008–2018)</displayName>
+				<symbol>VEF</symbol>
+				<symbol alt="narrow" draft="contributed">Bs</symbol>
+			</currency>
+			<currency type="VES">
 				<displayName>Венецуелански боливар</displayName>
 				<displayName count="one">венецуелански боливар</displayName>
 				<displayName count="few">венецуеланска боливара</displayName>
 				<displayName count="other">венецуеланских боливара</displayName>
-				<symbol>VEF</symbol>
-				<symbol alt="narrow" draft="contributed">Bs</symbol>
+				<symbol draft="contributed">VES</symbol>
 			</currency>
 			<currency type="VND">
 				<displayName>Вијетнамски донг</displayName>
@@ -7574,13 +7593,15 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">
-			<pattern type="atLeast">⩾{0}</pattern>
+			<pattern type="approximately" draft="contributed">~{0}</pattern>
+			<pattern type="atLeast">≥{0}</pattern>
+			<pattern type="atMost" draft="contributed">≤{0}</pattern>
 			<pattern type="range">{0}–{1}</pattern>
 		</miscPatterns>
 		<minimalPairs>
-			<pluralMinimalPairs count="one" draft="contributed">{0} сат</pluralMinimalPairs>
-			<pluralMinimalPairs count="few" draft="contributed">{0} сата</pluralMinimalPairs>
-			<pluralMinimalPairs count="other" draft="contributed">{0} сати</pluralMinimalPairs>
+			<pluralMinimalPairs count="one">{0} сат</pluralMinimalPairs>
+			<pluralMinimalPairs count="few">{0} сата</pluralMinimalPairs>
+			<pluralMinimalPairs count="other">{0} сати</pluralMinimalPairs>
 			<ordinalMinimalPairs ordinal="other" draft="contributed">Скрените у {0}. десно.</ordinalMinimalPairs>
 		</minimalPairs>
 	</numbers>
@@ -7714,6 +7735,18 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="few">{0} честице на милион</unitPattern>
 				<unitPattern count="other">{0} честица на милион</unitPattern>
 			</unit>
+			<unit type="concentr-percent">
+				<displayName>проценат</displayName>
+				<unitPattern count="one">{0} проценат</unitPattern>
+				<unitPattern count="few">{0} процената</unitPattern>
+				<unitPattern count="other">{0} процената</unitPattern>
+			</unit>
+			<unit type="concentr-permille">
+				<displayName>промил</displayName>
+				<unitPattern count="one">{0} промил</unitPattern>
+				<unitPattern count="few">{0} промила</unitPattern>
+				<unitPattern count="other">{0} промила</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>литри по километру</displayName>
 				<unitPattern count="one">{0} литар по километру</unitPattern>
@@ -7737,6 +7770,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="one">{0} миља по империјалном галону</unitPattern>
 				<unitPattern count="few">{0} миље по империјалном галону</unitPattern>
 				<unitPattern count="other">{0} миља по империјалном галону</unitPattern>
+			</unit>
+			<unit type="digital-petabyte">
+				<displayName>петабајти</displayName>
+				<unitPattern count="one">{0} петабајт</unitPattern>
+				<unitPattern count="few">{0} петабајта</unitPattern>
+				<unitPattern count="other">{0} петабајта</unitPattern>
 			</unit>
 			<unit type="digital-terabyte">
 				<displayName>терабајти</displayName>
@@ -8204,6 +8243,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="few">{0} милибара</unitPattern>
 				<unitPattern count="other">{0} милибара</unitPattern>
 			</unit>
+			<unit type="pressure-atmosphere">
+				<displayName>атмосфере</displayName>
+				<unitPattern count="one">{0} атмосфера</unitPattern>
+				<unitPattern count="few">{0} атмосфере</unitPattern>
+				<unitPattern count="other">{0} атмосфера</unitPattern>
+			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>километри на сат</displayName>
 				<unitPattern count="one">{0} километар на сат</unitPattern>
@@ -8402,6 +8447,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0} кашичица</unitPattern>
 			</unit>
 			<coordinateUnit>
+				<displayName>главни правац</displayName>
 				<coordinateUnitPattern type="east">{0}И</coordinateUnitPattern>
 				<coordinateUnitPattern type="north">{0}С</coordinateUnitPattern>
 				<coordinateUnitPattern type="south">{0}Ј</coordinateUnitPattern>
@@ -8537,6 +8583,18 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="few">{0} ppm</unitPattern>
 				<unitPattern count="other">{0} ppm</unitPattern>
 			</unit>
+			<unit type="concentr-percent">
+				<displayName>проценат</displayName>
+				<unitPattern count="one">{0}%</unitPattern>
+				<unitPattern count="few">{0}%</unitPattern>
+				<unitPattern count="other">{0}%</unitPattern>
+			</unit>
+			<unit type="concentr-permille">
+				<displayName>промил</displayName>
+				<unitPattern count="one">{0}‰</unitPattern>
+				<unitPattern count="few">{0}‰</unitPattern>
+				<unitPattern count="other">{0}‰</unitPattern>
+			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>L/km</displayName>
 				<unitPattern count="one">{0} L/km</unitPattern>
@@ -8560,6 +8618,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="one">{0} mpg Imp.</unitPattern>
 				<unitPattern count="few">{0} mpg Imp.</unitPattern>
 				<unitPattern count="other">{0} mpg Imp.</unitPattern>
+			</unit>
+			<unit type="digital-petabyte">
+				<displayName>PB</displayName>
+				<unitPattern count="one">{0} PB</unitPattern>
+				<unitPattern count="few">{0} PB</unitPattern>
+				<unitPattern count="other">{0} PB</unitPattern>
 			</unit>
 			<unit type="digital-terabyte">
 				<displayName>TB</displayName>
@@ -9027,6 +9091,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="few">{0} mbar</unitPattern>
 				<unitPattern count="other">{0} mbar</unitPattern>
 			</unit>
+			<unit type="pressure-atmosphere">
+				<displayName>atm</displayName>
+				<unitPattern count="one">{0} atm</unitPattern>
+				<unitPattern count="few">{0} atm</unitPattern>
+				<unitPattern count="other">{0} atm</unitPattern>
+			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>
 				<unitPattern count="one">{0} km/h</unitPattern>
@@ -9225,6 +9295,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0} кашич.</unitPattern>
 			</unit>
 			<coordinateUnit>
+				<displayName>правац</displayName>
 				<coordinateUnitPattern type="east">{0}И</coordinateUnitPattern>
 				<coordinateUnitPattern type="north">{0}С</coordinateUnitPattern>
 				<coordinateUnitPattern type="south">{0}Ј</coordinateUnitPattern>
@@ -9284,6 +9355,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="one" draft="contributed">{0} ft²</unitPattern>
 				<unitPattern count="few" draft="contributed">{0} ft²</unitPattern>
 				<unitPattern count="other" draft="contributed">{0} ft²</unitPattern>
+			</unit>
+			<unit type="concentr-percent">
+				<displayName>%</displayName>
+				<unitPattern count="one">{0}%</unitPattern>
+				<unitPattern count="few">{0}%</unitPattern>
+				<unitPattern count="other">{0}%</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-100kilometers">
 				<displayName>L/100km</displayName>
@@ -9490,6 +9567,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0} l</unitPattern>
 			</unit>
 			<coordinateUnit>
+				<displayName>правац</displayName>
 				<coordinateUnitPattern type="east">{0}И</coordinateUnitPattern>
 				<coordinateUnitPattern type="north">{0}С</coordinateUnitPattern>
 				<coordinateUnitPattern type="south">{0}Ј</coordinateUnitPattern>
@@ -9650,4 +9728,74 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<characterLabel type="western_asian_scripts">Западноазијска писма</characterLabel>
 		<characterLabel type="whitespace">Размак</characterLabel>
 	</characterLabels>
+	<typographicNames>
+		<axisName type="ital">курзив</axisName>
+		<axisName type="opsz">оптичка величина</axisName>
+		<axisName type="slnt">закривљеност</axisName>
+		<axisName type="wdth">ширина</axisName>
+		<axisName type="wght">дебљина</axisName>
+		<styleName type="ital" subtype="1">cursive</styleName>
+		<styleName type="opsz" subtype="8">caption</styleName>
+		<styleName type="opsz" subtype="12">text</styleName>
+		<styleName type="opsz" subtype="18">titling</styleName>
+		<styleName type="opsz" subtype="72">display</styleName>
+		<styleName type="opsz" subtype="144">poster</styleName>
+		<styleName type="slnt" subtype="-12">backslanted</styleName>
+		<styleName type="slnt" subtype="0">upright</styleName>
+		<styleName type="slnt" subtype="12">slanted</styleName>
+		<styleName type="slnt" subtype="24">extra-slanted</styleName>
+		<styleName type="wdth" subtype="50">ultracondensed</styleName>
+		<styleName type="wdth" subtype="50" alt="compressed">ultracompressed</styleName>
+		<styleName type="wdth" subtype="50" alt="narrow">ultranarrow</styleName>
+		<styleName type="wdth" subtype="62.5">extra-condensed</styleName>
+		<styleName type="wdth" subtype="62.5" alt="compressed">extra-compressed</styleName>
+		<styleName type="wdth" subtype="62.5" alt="narrow">extra-narrow</styleName>
+		<styleName type="wdth" subtype="75">condensed</styleName>
+		<styleName type="wdth" subtype="75" alt="compressed">compressed</styleName>
+		<styleName type="wdth" subtype="75" alt="narrow">compressed</styleName>
+		<styleName type="wdth" subtype="87.5">semicondensed</styleName>
+		<styleName type="wdth" subtype="87.5" alt="compressed">semicompressed</styleName>
+		<styleName type="wdth" subtype="87.5" alt="narrow">seminarrow</styleName>
+		<styleName type="wdth" subtype="100">normal</styleName>
+		<styleName type="wdth" subtype="112.5">semiexpanded</styleName>
+		<styleName type="wdth" subtype="112.5" alt="extended">semiextended</styleName>
+		<styleName type="wdth" subtype="112.5" alt="wide">semiwide</styleName>
+		<styleName type="wdth" subtype="125">expanded</styleName>
+		<styleName type="wdth" subtype="125" alt="extended">extended</styleName>
+		<styleName type="wdth" subtype="125" alt="wide">wide</styleName>
+		<styleName type="wdth" subtype="150">extra-expanded</styleName>
+		<styleName type="wdth" subtype="150" alt="extended">extra-extended</styleName>
+		<styleName type="wdth" subtype="150" alt="wide">extra-wide</styleName>
+		<styleName type="wdth" subtype="200">ultraexpanded</styleName>
+		<styleName type="wdth" subtype="200" alt="extended">ultraextended</styleName>
+		<styleName type="wdth" subtype="200" alt="wide">ultrawide</styleName>
+		<styleName type="wght" subtype="100">thin</styleName>
+		<styleName type="wght" subtype="200">extra-light</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ultralight</styleName>
+		<styleName type="wght" subtype="300">light</styleName>
+		<styleName type="wght" subtype="350">semilight</styleName>
+		<styleName type="wght" subtype="380">book</styleName>
+		<styleName type="wght" subtype="400">regular</styleName>
+		<styleName type="wght" subtype="500">medium</styleName>
+		<styleName type="wght" subtype="600">semibold</styleName>
+		<styleName type="wght" subtype="600" alt="demi">demibold</styleName>
+		<styleName type="wght" subtype="700">bold</styleName>
+		<styleName type="wght" subtype="800">extra-bold</styleName>
+		<styleName type="wght" subtype="900">black</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">heavy</styleName>
+		<styleName type="wght" subtype="950">extra-black</styleName>
+		<styleName type="wght" subtype="950" alt="ultrablack">ultrablack</styleName>
+		<styleName type="wght" subtype="950" alt="ultraheavy">ultraheavy</styleName>
+		<featureName type="afrc">vertical fractions</featureName>
+		<featureName type="cpsp">capital spacing</featureName>
+		<featureName type="dlig">optional ligatures</featureName>
+		<featureName type="frac">diagonal fractions</featureName>
+		<featureName type="lnum">lining numbers</featureName>
+		<featureName type="onum">old-style figures</featureName>
+		<featureName type="ordn">ordinals</featureName>
+		<featureName type="pnum">proportional numbers</featureName>
+		<featureName type="smcp">small capitals</featureName>
+		<featureName type="tnum">tabular numbers</featureName>
+		<featureName type="zero">slashed zero</featureName>
+	</typographicNames>
 </ldml>

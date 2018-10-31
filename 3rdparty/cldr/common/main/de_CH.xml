@@ -7,7 +7,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision$"/>
+		<version number="$Revision: 14450 $"/>
 		<language type="de"/>
 		<territory type="CH"/>
 	</identity>
@@ -15,6 +15,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<languages>
 			<language type="ace">Aceh-Sprache</language>
 			<language type="ach">Acholi-Sprache</language>
+			<language type="ars">Nadschd-Arabisch</language>
 			<language type="bas">Basaa-Sprache</language>
 			<language type="be">Weissrussisch</language>
 			<language type="bik">Bikol-Sprache</language>
@@ -77,10 +78,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="era-narrow">
 				<displayName>Epoche</displayName>
 			</field>
-			<field type="quarter">
-				<relative type="-1">letztes Quartal</relative>
-				<relative type="0">dieses Quartal</relative>
-			</field>
 			<field type="weekOfMonth">
 				<displayName>Woche im Monat</displayName>
 			</field>
@@ -107,9 +104,25 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 		</fields>
 		<timeZoneNames>
+			<zone type="Asia/Brunei">
+				<exemplarCity>Brunei</exemplarCity>
+			</zone>
+			<zone type="Asia/Macau">
+				<exemplarCity>Macao</exemplarCity>
+			</zone>
 			<zone type="Europe/Saratov">
 				<exemplarCity>Saratov</exemplarCity>
 			</zone>
+			<metazone type="Brunei">
+				<long>
+					<standard>Brunei-Zeit</standard>
+				</long>
+			</metazone>
+			<metazone type="Solomon">
+				<long>
+					<standard>Salomoninseln-Zeit</standard>
+				</long>
+			</metazone>
 		</timeZoneNames>
 	</dates>
 	<numbers>
@@ -130,6 +143,16 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<pattern>¤ #,##0.00;¤-#,##0.00</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
+			<currencyFormatLength type="short">
+				<currencyFormat type="standard">
+					<pattern type="1000" count="one">0</pattern>
+					<pattern type="1000" count="other">0</pattern>
+					<pattern type="10000" count="one">0</pattern>
+					<pattern type="10000" count="other">0</pattern>
+					<pattern type="100000" count="one">0</pattern>
+					<pattern type="100000" count="other">0</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
 		</currencyFormats>
 		<currencies>
 			<currency type="BYN">
@@ -146,14 +169,20 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<symbol>EUR</symbol>
 				<symbol alt="narrow" draft="contributed">EUR</symbol>
 			</currency>
-			<currency type="PEN">
-				<displayName>Peruanischer Neuer Sol</displayName>
-				<displayName count="one">Peruanischer Neuer Sol</displayName>
-			</currency>
 			<currency type="STN">
 				<displayName>São-toméischer Dobra (2018)</displayName>
 				<displayName count="one">São-toméischer Dobra (2018)</displayName>
 				<displayName count="other">São-toméischer Dobra (2018)</displayName>
+			</currency>
+			<currency type="VEF">
+				<displayName>Venezolanischer Bolívar</displayName>
+				<displayName count="one">Venezolanischer Bolívar</displayName>
+				<displayName count="other">Venezolanische Bolívares</displayName>
+			</currency>
+			<currency type="VES">
+				<displayName>VES</displayName>
+				<displayName count="one">VES</displayName>
+				<displayName count="other">VES</displayName>
 			</currency>
 		</currencies>
 	</numbers>
@@ -179,6 +208,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="other">{0} Kubikfuss</unitPattern>
 			</unit>
 			<unit type="volume-gallon-imperial">
+				<unitPattern count="one">{0} gal Imp.</unitPattern>
 				<unitPattern count="other">{0} gal Imp.</unitPattern>
 				<perUnitPattern>{0}/gal Imp.</perUnitPattern>
 			</unit>
@@ -201,5 +231,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<styleName type="opsz" subtype="18">Schaugrösse</styleName>
 		<styleName type="opsz" subtype="72">Plakatgrösse</styleName>
 		<styleName type="opsz" subtype="144">Ferngrösse</styleName>
+		<styleName type="wght" subtype="200" alt="ultra">ultralight</styleName>
+		<styleName type="wght" subtype="500">medium</styleName>
+		<styleName type="wght" subtype="600" alt="demi">demibold</styleName>
+		<styleName type="wght" subtype="900" alt="heavy">heavy</styleName>
 	</typographicNames>
 </ldml>
