@@ -45,6 +45,41 @@ describe('cldr.extractDateIntervalFormats("en")', function() {
       d: {
         d: 'd – d'
       },
+      Gy: { G: 'y G – y G', y: 'y – y G' },
+      GyM: {
+        G: 'M/y GGGGG – M/y GGGGG',
+        M: 'M/y – M/y GGGGG',
+        y: 'M/y – M/y GGGGG'
+      },
+      GyMd: {
+        d: 'M/d/y – M/d/y GGGGG',
+        G: 'M/d/y GGGGG – M/d/y GGGGG',
+        M: 'M/d/y – M/d/y GGGGG',
+        y: 'M/d/y – M/d/y GGGGG'
+      },
+      GyMEd: {
+        d: 'E, M/d/y – E, M/d/y GGGGG',
+        G: 'E, M/d/y GGGGG – E, M/d/y GGGGG',
+        M: 'E, M/d/y – E, M/d/y GGGGG',
+        y: 'E, M/d/y – E, M/d/y GGGGG'
+      },
+      GyMMM: {
+        G: 'MMM y G – MMM y G',
+        M: 'MMM – MMM y G',
+        y: 'MMM y – MMM y G'
+      },
+      GyMMMd: {
+        d: 'MMM d – d, y G',
+        G: 'MMM d, y G – MMM d, y G',
+        M: 'MMM d – MMM d, y G',
+        y: 'MMM d, y – MMM d, y G'
+      },
+      GyMMMEd: {
+        d: 'E, MMM d – E, MMM d, y G',
+        G: 'E, MMM d, y G – E, MMM d, y G',
+        M: 'E, MMM d – E, MMM d, y G',
+        y: 'E, MMM d, y – E, MMM d, y G'
+      },
       h: {
         a: 'h a – h a',
         h: 'h – h a'
