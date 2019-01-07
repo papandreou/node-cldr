@@ -19,14 +19,14 @@ describe('extractTerritoryContainmentGroups', function() {
     expect(
       Object.keys(territoryContainmentGroups),
       'to have items satisfying',
-      function(index) {
+      expect.it(function(index) {
         var item = territoryContainmentGroups[index];
         expect(
           index === '001' || ('parent' in item && Boolean(item.parent)),
           'to be',
           true
         );
-      }
+      })
     );
   });
 });
