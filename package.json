@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "preversion": "npm test",
     "ci": "npm test && npm run lint && npm run coverage",
-    "coverage": "istanbul cover --report text --report lcov -x lib/cldrPluralRuleTermFunctionByName.js _mocha"
+    "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -x lib/cldrPluralRuleTermFunctionByName.js -- npm test && echo google-chrome coverage/lcov-report/index.html"
   },
   "repository": {
     "type": "git",
