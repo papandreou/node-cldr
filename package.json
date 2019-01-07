@@ -37,8 +37,8 @@
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-standard": "^4.0.0",
-    "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
     "prettier": "^1.14.2",
     "unexpected": "^11.0.0",
     "unexpected-function-equality": "^2.0.0"
@@ -71,5 +71,10 @@
     "units"
   ],
   "author": "Andreas Lind <andreaslindpetersen@gmail.com>",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "nyc": {
+    "include": [
+      "lib/**"
+    ]
+  }
 }
