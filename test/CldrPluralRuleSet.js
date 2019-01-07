@@ -48,10 +48,10 @@ describe('CldrPluralRuleSet', function() {
   it('should encode some basic test cases correctly', function() {
     expect({ one: 'n is 4 or n is not 6' }, 'to encode to', function(n) {
       /* eslint-disable */
-                if (typeof n === 'string') n = parseInt(n, 10);
-                if (n === 4 || n !== 6) return 'one';
-                return 'other';
-                /* eslint-enable */
+      if (typeof n === 'string') n = parseInt(n, 10);
+      if (n === 4 || n !== 6) return 'one';
+      return 'other';
+      /* eslint-enable */
     });
 
     expect({}, 'to encode to', function(n) {
@@ -67,14 +67,14 @@ describe('CldrPluralRuleSet', function() {
       'to encode to',
       function(n) {
         /* eslint-disable */
-                var i = Math.floor(Math.abs(n)),
-                    v = n.toString().replace(/^[^.]*\.?/, '').length;
-                if (typeof n === 'string') n = parseInt(n, 10);
-                if (i === 1 && v === 0) return 'one';
-                if (i === 2 && v === 0) return 'two';
-                if (v === 0 && (!(n >= 0 && n <= 10) && n % 10 === 0)) return 'many';
-                return 'other';
-                /* eslint-enable */
+        var i = Math.floor(Math.abs(n)),
+          v = n.toString().replace(/^[^.]*\.?/, '').length;
+        if (typeof n === 'string') n = parseInt(n, 10);
+        if (i === 1 && v === 0) return 'one';
+        if (i === 2 && v === 0) return 'two';
+        if (v === 0 && (!(n >= 0 && n <= 10) && n % 10 === 0)) return 'many';
+        return 'other';
+        /* eslint-enable */
       }
     );
   });
@@ -89,12 +89,12 @@ describe('CldrPluralRuleSet', function() {
       'to encode to',
       function(n) {
         /* eslint-disable */
-                var i = Math.floor(Math.abs(n)),
-                    t = parseInt(n.toString().replace(/^[^.]*\.?|0+$/g, ''), 10) || 0;
-                if (typeof n === 'string') n = parseInt(n, 10);
-                if (n === 1 || !(t === 0) && (i === 0 || i === 1)) return 'one';
-                return 'other';
-                /* eslint-enable */
+        var i = Math.floor(Math.abs(n)),
+          t = parseInt(n.toString().replace(/^[^.]*\.?|0+$/g, ''), 10) || 0;
+        if (typeof n === 'string') n = parseInt(n, 10);
+        if (n === 1 || (!(t === 0) && (i === 0 || i === 1))) return 'one';
+        return 'other';
+        /* eslint-enable */
       }
     );
   });
@@ -112,13 +112,26 @@ describe('CldrPluralRuleSet', function() {
       'to encode to',
       function(n) {
         /* eslint-disable */
-                var v = n.toString().replace(/^[^.]*\.?/, '').length,
-                    f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
-                if (typeof n === 'string') n = parseInt(n, 10);
-                if (n % 10 === 0 || (n % 100 === Math.floor(n % 100) && (n % 100 >= 11 && n % 100 <= 19) || v === 2 && (f % 100 === Math.floor(f % 100) && (f % 100 >= 11 && f % 100 <= 19)))) return "zero";
-                if (n % 10 === 1 && !(n % 100 === 11) || (v === 2 && (f % 10 === 1 && !(f % 100 === 11)) || !(v === 2) && f % 10 === 1)) return 'one';
-                return 'other';
-                /* eslint-enable */
+        var v = n.toString().replace(/^[^.]*\.?/, '').length,
+          f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
+        if (typeof n === 'string') n = parseInt(n, 10);
+        if (
+          n % 10 === 0 ||
+          ((n % 100 === Math.floor(n % 100) &&
+            (n % 100 >= 11 && n % 100 <= 19)) ||
+            (v === 2 &&
+              (f % 100 === Math.floor(f % 100) &&
+                (f % 100 >= 11 && f % 100 <= 19))))
+        )
+          return 'zero';
+        if (
+          (n % 10 === 1 && !(n % 100 === 11)) ||
+          ((v === 2 && (f % 10 === 1 && !(f % 100 === 11))) ||
+            (!(v === 2) && f % 10 === 1))
+        )
+          return 'one';
+        return 'other';
+        /* eslint-enable */
       }
     );
   });
@@ -136,13 +149,27 @@ describe('CldrPluralRuleSet', function() {
       'to encode to',
       function(n) {
         /* eslint-disable */
-                var i = Math.floor(Math.abs(n)), v = n.toString().replace(/^[^.]*\.?/, '').length,
-                    f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
-                if (typeof n === 'string') n = parseInt(n, 10);
-                if (v === 0 && (i % 10 === 1 && !(i % 100 === 11)) || f % 10 === 1 && !(f % 100 === 11)) return 'one';
-                if (v === 0 && (i % 10 === Math.floor(i % 10) && (i % 10 >= 2 && i % 10 <= 4) && !(i % 100 >= 12 && i % 100 <= 14)) || f % 10 === Math.floor(f % 10) && (f % 10 >= 2 && f % 10 <= 4) && !(f % 100 >= 12 && f % 100 <= 14)) return 'few';
-                return 'other'
-                /* eslint-enable */
+        var i = Math.floor(Math.abs(n)),
+          v = n.toString().replace(/^[^.]*\.?/, '').length,
+          f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
+        if (typeof n === 'string') n = parseInt(n, 10);
+        if (
+          (v === 0 && (i % 10 === 1 && !(i % 100 === 11))) ||
+          (f % 10 === 1 && !(f % 100 === 11))
+        )
+          return 'one';
+        if (
+          (v === 0 &&
+            (i % 10 === Math.floor(i % 10) &&
+              (i % 10 >= 2 && i % 10 <= 4) &&
+              !(i % 100 >= 12 && i % 100 <= 14))) ||
+          (f % 10 === Math.floor(f % 10) &&
+            (f % 10 >= 2 && f % 10 <= 4) &&
+            !(f % 100 >= 12 && f % 100 <= 14))
+        )
+          return 'few';
+        return 'other';
+        /* eslint-enable */
       }
     );
   });
