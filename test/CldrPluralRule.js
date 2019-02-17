@@ -8,13 +8,16 @@ describe('CldrPluralRule', () => {
   const expect = unexpected.clone();
 
   // `value` is a string of JavaScript source code rather than an AST so the tests can be more compact:
-  expect.addAssertion('<string> to encode to <string>', (expect, subject, value) => {
-    expect(
-      escodegen.generate(new CldrPluralRule(subject).toJavaScriptAst()),
-      'to equal',
-      value
-    );
-  });
+  expect.addAssertion(
+    '<string> to encode to <string>',
+    (expect, subject, value) => {
+      expect(
+        escodegen.generate(new CldrPluralRule(subject).toJavaScriptAst()),
+        'to equal',
+        value
+      );
+    }
+  );
 
   it('should encode some assorted test cases correctly', () => {
     expect('n is 4 or n is not 6', 'to encode to', 'n === 4 || n !== 6');

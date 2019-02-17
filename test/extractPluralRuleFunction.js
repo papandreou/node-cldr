@@ -9,7 +9,8 @@ describe('extractPluralRuleFunction', () => {
     const romanianPluralRule = cldr.extractPluralRuleFunction('ro');
     expect(romanianPluralRule, 'to equal', function anonymous(n) {
       /* eslint-disable */
-      const i = Math.floor(Math.abs(n)), v = n.toString().replace(/^[^.]*\.?/, '').length;
+      const i = Math.floor(Math.abs(n)),
+        v = n.toString().replace(/^[^.]*\.?/, '').length;
       if (typeof n === 'string') n = parseInt(n, 10);
       if (i === 1 && v === 0) return 'one';
       if (

@@ -17,9 +17,16 @@ function beautifyJavaScript(functionOrAst) {
 
 describe('extractRbnfFunctionByType', () => {
   const expect = unexpected.clone();
-  expect.addAssertion('<function> to have the same ast as <function>', (expect, subject, value) => {
-    expect(beautifyJavaScript(subject), 'to equal', beautifyJavaScript(value));
-  });
+  expect.addAssertion(
+    '<function> to have the same ast as <function>',
+    (expect, subject, value) => {
+      expect(
+        beautifyJavaScript(subject),
+        'to equal',
+        beautifyJavaScript(value)
+      );
+    }
+  );
 
   describe('#renderSpelloutCardinal', () => {
     describe('for Estonian', () => {
@@ -148,7 +155,9 @@ describe('extractRbnfFunctionByType', () => {
 
     // https://github.com/papandreou/node-cldr/issues/33
     it('should render ordinals correctly in American English', () => {
-      const americanRbnfFunctionByType = cldr.extractRbnfFunctionByType('en_us');
+      const americanRbnfFunctionByType = cldr.extractRbnfFunctionByType(
+        'en_us'
+      );
       americanRbnfFunctionByType.renderNumber = String;
       expect(
         americanRbnfFunctionByType.renderDigitsOrdinal(1),
