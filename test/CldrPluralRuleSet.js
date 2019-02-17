@@ -9,40 +9,43 @@ const CldrPluralRuleSet = require('../lib/CldrPluralRuleSet');
 describe('CldrPluralRuleSet', () => {
   const expect = unexpected.clone();
 
-  expect.addAssertion('<object> to encode to <function>', (expect, subject, value) => {
-    const cldrPluralRuleSet = new CldrPluralRuleSet();
-    Object.keys(subject).forEach(count => {
-      cldrPluralRuleSet.addRule(subject[count], count);
-    });
-    const beautifiedFunction = escodegen.generate({
-      type: 'Program',
-      body: [
-        {
-          type: 'ExpressionStatement',
-          expression: {
-            type: 'FunctionExpression',
-            params: [
-              {
-                type: 'Identifier',
-                name: 'n'
+  expect.addAssertion(
+    '<object> to encode to <function>',
+    (expect, subject, value) => {
+      const cldrPluralRuleSet = new CldrPluralRuleSet();
+      Object.keys(subject).forEach(count => {
+        cldrPluralRuleSet.addRule(subject[count], count);
+      });
+      const beautifiedFunction = escodegen.generate({
+        type: 'Program',
+        body: [
+          {
+            type: 'ExpressionStatement',
+            expression: {
+              type: 'FunctionExpression',
+              params: [
+                {
+                  type: 'Identifier',
+                  name: 'n'
+                }
+              ],
+              body: {
+                type: 'BlockStatement',
+                body: cldrPluralRuleSet.toJavaScriptFunctionBodyAst()
               }
-            ],
-            body: {
-              type: 'BlockStatement',
-              body: cldrPluralRuleSet.toJavaScriptFunctionBodyAst()
             }
           }
-        }
-      ]
-    });
-    if (typeof value === 'function') {
-      value = escodegen.generate(esprima.parse('(' + value.toString() + ')'));
+        ]
+      });
+      if (typeof value === 'function') {
+        value = escodegen.generate(esprima.parse('(' + value.toString() + ')'));
+      }
+      expect(beautifiedFunction, 'to equal', value);
     }
-    expect(beautifiedFunction, 'to equal', value);
-  });
+  );
 
   it('should encode some basic test cases correctly', () => {
-    expect({ one: 'n is 4 or n is not 6' }, 'to encode to', n => {
+    expect({ one: 'n is 4 or n is not 6' }, 'to encode to', function(n) {
       /* eslint-disable */
       if (typeof n === 'string') n = parseInt(n, 10);
       if (n === 4 || n !== 6) return 'one';
@@ -50,7 +53,9 @@ describe('CldrPluralRuleSet', () => {
       /* eslint-enable */
     });
 
-    expect({}, 'to encode to', n => 'other');
+    expect({}, 'to encode to', function(n) {
+      return 'other';
+    });
 
     expect(
       {
@@ -59,9 +64,10 @@ describe('CldrPluralRuleSet', () => {
         many: 'v = 0 and n != 0..10 and n % 10 = 0'
       },
       'to encode to',
-      n => {
+      function(n) {
         /* eslint-disable */
-        const i = Math.floor(Math.abs(n)), v = n.toString().replace(/^[^.]*\.?/, '').length;
+        const i = Math.floor(Math.abs(n)),
+          v = n.toString().replace(/^[^.]*\.?/, '').length;
         if (typeof n === 'string') n = parseInt(n, 10);
         if (i === 1 && v === 0) return 'one';
         if (i === 2 && v === 0) return 'two';
@@ -80,9 +86,10 @@ describe('CldrPluralRuleSet', () => {
           ' @integer 0, 2~16, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0, 2.0~3.4, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …'
       },
       'to encode to',
-      n => {
+      function(n) {
         /* eslint-disable */
-        const i = Math.floor(Math.abs(n)), t = parseInt(n.toString().replace(/^[^.]*\.?|0+$/g, ''), 10) || 0;
+        const i = Math.floor(Math.abs(n)),
+          t = parseInt(n.toString().replace(/^[^.]*\.?|0+$/g, ''), 10) || 0;
         if (typeof n === 'string') n = parseInt(n, 10);
         if (n === 1 || (!(t === 0) && (i === 0 || i === 1))) return 'one';
         return 'other';
@@ -102,9 +109,10 @@ describe('CldrPluralRuleSet', () => {
           ' @integer 2~9, 22~29, 102, 1002, … @decimal 0.2~0.9, 1.2~1.9, 10.2, 100.2, 1000.2, …'
       },
       'to encode to',
-      n => {
+      function(n) {
         /* eslint-disable */
-        const v = n.toString().replace(/^[^.]*\.?/, '').length, f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
+        const v = n.toString().replace(/^[^.]*\.?/, '').length,
+          f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
         if (typeof n === 'string') n = parseInt(n, 10);
         if (
           n % 10 === 0 ||
@@ -138,9 +146,11 @@ describe('CldrPluralRuleSet', () => {
           ' @integer 0, 5~19, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0, 0.5~1.0, 1.5~2.0, 2.5~2.7, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …'
       },
       'to encode to',
-      n => {
+      function(n) {
         /* eslint-disable */
-        const i = Math.floor(Math.abs(n)), v = n.toString().replace(/^[^.]*\.?/, '').length, f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
+        const i = Math.floor(Math.abs(n)),
+          v = n.toString().replace(/^[^.]*\.?/, '').length,
+          f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
         if (typeof n === 'string') n = parseInt(n, 10);
         if (
           (v === 0 && (i % 10 === 1 && !(i % 100 === 11))) ||
