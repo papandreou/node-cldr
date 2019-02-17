@@ -1,8 +1,8 @@
-var expect = require('unexpected');
-var cldr = require('../lib/cldr');
+const expect = require('unexpected');
+const cldr = require('../lib/cldr');
 
-describe('extractVariantDisplayNames', function() {
-  it('should extract the American English variants correctly, even when the locale id is specified unnormalized', function() {
+describe('extractVariantDisplayNames', () => {
+  it('should extract the American English variants correctly, even when the locale id is specified unnormalized', () => {
     expect(cldr.extractVariantDisplayNames('en-us'), 'to satisfy', {
       '1901': 'Traditional German orthography',
       '1994': 'Standardized Resian orthography',

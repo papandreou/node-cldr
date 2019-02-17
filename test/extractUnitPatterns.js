@@ -1,10 +1,10 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('extractUnitPatterns', function() {
-  it('should extract the British English patterns correctly', function() {
-    var britishUnitPatterns = cldr.extractUnitPatterns('en_GB');
+describe('extractUnitPatterns', () => {
+  it('should extract the British English patterns correctly', () => {
+    const britishUnitPatterns = cldr.extractUnitPatterns('en_GB');
     expect(britishUnitPatterns, 'to only have keys', [
       'long',
       'short',

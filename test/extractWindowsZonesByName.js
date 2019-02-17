@@ -1,8 +1,8 @@
-var expect = require('unexpected');
-var cldr = require('../lib/cldr');
+const expect = require('unexpected');
+const cldr = require('../lib/cldr');
 
-describe('extractWindowsZonesByName', function() {
-  it('should extract an entry', function() {
+describe('extractWindowsZonesByName', () => {
+  it('should extract an entry', () => {
     expect(
       cldr.extractWindowsZonesByName('Antarctica/DumontDUrville'),
       'to satisfy',
@@ -16,7 +16,7 @@ describe('extractWindowsZonesByName', function() {
     );
   });
 
-  it('should find entries where the <mapZone type=...> mentions multiple time zones', function() {
+  it('should find entries where the <mapZone type=...> mentions multiple time zones', () => {
     expect(cldr.extractWindowsZonesByName('Australia/Brisbane'), 'to satisfy', [
       {
         name: 'Australia/Brisbane',

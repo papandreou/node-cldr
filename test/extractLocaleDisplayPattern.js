@@ -1,10 +1,10 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('extractLocaleDisplayPattern', function() {
-  it('should extract the British English patterns correctly', function() {
-    var britishLocaleDisplayPatterns = cldr.extractLocaleDisplayPattern(
+describe('extractLocaleDisplayPattern', () => {
+  it('should extract the British English patterns correctly', () => {
+    const britishLocaleDisplayPatterns = cldr.extractLocaleDisplayPattern(
       'en_GB'
     );
     expect(britishLocaleDisplayPatterns, 'to only have keys', [

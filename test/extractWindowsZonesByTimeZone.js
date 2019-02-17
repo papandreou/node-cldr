@@ -1,8 +1,8 @@
-var expect = require('unexpected');
-var cldr = require('../lib/cldr');
+const expect = require('unexpected');
+const cldr = require('../lib/cldr');
 
-describe('extractWindowsZonesByTimeZone', function() {
-  it('should foo', function() {
+describe('extractWindowsZonesByTimeZone', () => {
+  it('should foo', () => {
     expect(
       cldr.extractWindowsZonesByTimeZone('Vladivostok Standard Time'),
       'to satisfy',

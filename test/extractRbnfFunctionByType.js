@@ -1,10 +1,10 @@
-var unexpected = require('unexpected');
-var esprima = require('esprima');
-var escodegen = require('escodegen');
-var cldr = require('../lib/cldr');
+const unexpected = require('unexpected');
+const esprima = require('esprima');
+const escodegen = require('escodegen');
+const cldr = require('../lib/cldr');
 
 function beautifyJavaScript(functionOrAst) {
-  var ast;
+  let ast;
   if (typeof functionOrAst === 'function') {
     ast = esprima.parse(
       functionOrAst.toString().replace(/^function\s*\(/, 'function anonymous(')
@@ -15,27 +15,23 @@ function beautifyJavaScript(functionOrAst) {
   return escodegen.generate(ast);
 }
 
-describe('extractRbnfFunctionByType', function() {
-  var expect = unexpected.clone();
-  expect.addAssertion('<function> to have the same ast as <function>', function(
-    expect,
-    subject,
-    value
-  ) {
+describe('extractRbnfFunctionByType', () => {
+  const expect = unexpected.clone();
+  expect.addAssertion('<function> to have the same ast as <function>', (expect, subject, value) => {
     expect(beautifyJavaScript(subject), 'to equal', beautifyJavaScript(value));
   });
 
-  describe('#renderSpelloutCardinal', function() {
-    describe('for Estonian', function() {
-      var estonianRbnfFunctionByType = cldr.extractRbnfFunctionByType('et');
+  describe('#renderSpelloutCardinal', () => {
+    describe('for Estonian', () => {
+      const estonianRbnfFunctionByType = cldr.extractRbnfFunctionByType('et');
 
-      it('should generate the correct code for the renderSpelloutCardinal rule', function() {
+      it('should generate the correct code for the renderSpelloutCardinal rule', () => {
         expect(
           estonianRbnfFunctionByType.renderSpelloutCardinal,
           'to have the same ast as',
           function(n) {
             /* eslint-disable */
-            var isFractional = n !== Math.floor(n);
+            const isFractional = n !== Math.floor(n);
             if (n < 0) return 'miinus ' + this.renderSpelloutCardinal(-n);
             if (isFractional && n > 1)
               return (
@@ -129,7 +125,7 @@ describe('extractRbnfFunctionByType', function() {
         );
       });
 
-      it('should render the number 2439871 correctly (regression test for #12)', function() {
+      it('should render the number 2439871 correctly (regression test for #12)', () => {
         expect(
           estonianRbnfFunctionByType.renderSpelloutCardinal(2439871),
           'to equal',
@@ -138,8 +134,8 @@ describe('extractRbnfFunctionByType', function() {
       });
     });
 
-    it('should render a number correctly in Danish', function() {
-      var danishRbnfFunctionByType = cldr.extractRbnfFunctionByType('da_dk');
+    it('should render a number correctly in Danish', () => {
+      const danishRbnfFunctionByType = cldr.extractRbnfFunctionByType('da_dk');
       danishRbnfFunctionByType.renderNumber = String;
       expect(
         danishRbnfFunctionByType
@@ -151,8 +147,8 @@ describe('extractRbnfFunctionByType', function() {
     });
 
     // https://github.com/papandreou/node-cldr/issues/33
-    it('should render ordinals correctly in American English', function() {
-      var americanRbnfFunctionByType = cldr.extractRbnfFunctionByType('en_us');
+    it('should render ordinals correctly in American English', () => {
+      const americanRbnfFunctionByType = cldr.extractRbnfFunctionByType('en_us');
       americanRbnfFunctionByType.renderNumber = String;
       expect(
         americanRbnfFunctionByType.renderDigitsOrdinal(1),

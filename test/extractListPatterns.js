@@ -1,10 +1,10 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('extractListPatterns', function() {
-  it('should extract the British English list patterns correctly', function() {
-    var britishListPatterns = cldr.extractListPatterns('en_GB');
+describe('extractListPatterns', () => {
+  it('should extract the British English list patterns correctly', () => {
+    const britishListPatterns = cldr.extractListPatterns('en_GB');
     expect(britishListPatterns, 'to have keys', [
       'default',
       'unit',
@@ -20,8 +20,8 @@ describe('extractListPatterns', function() {
     });
   });
 
-  it('should extract the American English list patterns correctly', function() {
-    var britishListPatterns = cldr.extractListPatterns('en_US');
+  it('should extract the American English list patterns correctly', () => {
+    const britishListPatterns = cldr.extractListPatterns('en_US');
     expect(britishListPatterns, 'to have keys', [
       'default',
       'unit',

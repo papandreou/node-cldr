@@ -1,10 +1,10 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('extractNumberPatterns', function() {
-  it('should extract the British English patterns for latn number system correctly', function() {
-    var britishNumberPatterns = cldr.extractNumberFormats('en_GB', 'latn');
+describe('extractNumberPatterns', () => {
+  it('should extract the British English patterns for latn number system correctly', () => {
+    const britishNumberPatterns = cldr.extractNumberFormats('en_GB', 'latn');
     expect(britishNumberPatterns, 'to only have keys', [
       'scientific',
       'decimal',

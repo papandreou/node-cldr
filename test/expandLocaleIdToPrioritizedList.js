@@ -1,9 +1,9 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('cldr.expandLocaleIdToPrioritizedList("en_GB")', function() {
-  it('should resolve the prioritized list correctly', function() {
+describe('cldr.expandLocaleIdToPrioritizedList("en_GB")', () => {
+  it('should resolve the prioritized list correctly', () => {
     expect(cldr.expandLocaleIdToPrioritizedList('en-GB'), 'to equal', [
       'en_gb',
       'en_001',
@@ -12,8 +12,8 @@ describe('cldr.expandLocaleIdToPrioritizedList("en_GB")', function() {
   });
 });
 
-describe('cldr.expandLocaleIdToPrioritizedList("en-GB-oed")', function() {
-  it('should resolve the prioritized list correctly', function() {
+describe('cldr.expandLocaleIdToPrioritizedList("en-GB-oed")', () => {
+  it('should resolve the prioritized list correctly', () => {
     expect(cldr.expandLocaleIdToPrioritizedList('en-GB-oed'), 'to equal', [
       'en_gb_oed',
       'en_gb',

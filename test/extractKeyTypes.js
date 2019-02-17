@@ -1,10 +1,10 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('extractKeyTypes', function() {
-  it('should extract the British English keys and types correctly', function() {
-    var britishKeyTypes = cldr.extractKeyTypes('en_GB');
+describe('extractKeyTypes', () => {
+  it('should extract the British English keys and types correctly', () => {
+    const britishKeyTypes = cldr.extractKeyTypes('en_GB');
     // Just name a few of the keys
     expect(britishKeyTypes, 'to have keys', [
       'calendar',

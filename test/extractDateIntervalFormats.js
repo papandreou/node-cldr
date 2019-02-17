@@ -1,10 +1,10 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('cldr.extractDateIntervalFormats("en")', function() {
-  var englishDateIntervalFormats = cldr.extractDateIntervalFormats('en');
-  it('should extract the correct formats', function() {
+describe('cldr.extractDateIntervalFormats("en")', () => {
+  const englishDateIntervalFormats = cldr.extractDateIntervalFormats('en');
+  it('should extract the correct formats', () => {
     expect(englishDateIntervalFormats, 'to equal', {
       H: {
         H: 'HH – HH'

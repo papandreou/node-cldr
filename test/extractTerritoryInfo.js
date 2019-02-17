@@ -1,8 +1,8 @@
-var expect = require('unexpected');
-var cldr = require('../lib/cldr');
+const expect = require('unexpected');
+const cldr = require('../lib/cldr');
 
-describe('extractTerritoryInfo', function() {
-  it('should extract basic information about Germany', function() {
+describe('extractTerritoryInfo', () => {
+  it('should extract basic information about Germany', () => {
     expect(cldr.extractTerritoryInfo(), 'to satisfy', {
       DE: {
         id: 'DE',

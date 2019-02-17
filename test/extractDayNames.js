@@ -1,10 +1,10 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('cldr.extractDayNames("en")', function() {
-  var englishDayNames = cldr.extractDayNames('en');
-  it('should have the correct names', function() {
+describe('cldr.extractDayNames("en")', () => {
+  const englishDayNames = cldr.extractDayNames('en');
+  it('should have the correct names', () => {
     expect(englishDayNames.format, 'to equal', {
       wide: [
         'Sunday',

@@ -1,10 +1,10 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldrPluralRuleTermFunctionByName = require('../lib/cldrPluralRuleTermFunctionByName');
+const cldrPluralRuleTermFunctionByName = require('../lib/cldrPluralRuleTermFunctionByName');
 
 // http://unicode.org/reports/tr35/tr35-numbers.html#Operands
 
-var expectedOutputByTermAndInput = {
+const expectedOutputByTermAndInput = {
   i: {
     '1': 1,
     '1.0': 1,
@@ -52,12 +52,12 @@ var expectedOutputByTermAndInput = {
   }
 };
 
-describe('cldrPluralRuleTermFunctionByName', function() {
-  Object.keys(expectedOutputByTermAndInput).forEach(function(term) {
-    describe('#' + term, function() {
-      var expectedOutputByInput = expectedOutputByTermAndInput[term];
-      Object.keys(expectedOutputByInput).forEach(function(input) {
-        it('should compute ' + term + '(' + input + ')', function() {
+describe('cldrPluralRuleTermFunctionByName', () => {
+  Object.keys(expectedOutputByTermAndInput).forEach(term => {
+    describe('#' + term, () => {
+      const expectedOutputByInput = expectedOutputByTermAndInput[term];
+      Object.keys(expectedOutputByInput).forEach(input => {
+        it('should compute ' + term + '(' + input + ')', () => {
           expect(
             cldrPluralRuleTermFunctionByName[term](input),
             'to equal',

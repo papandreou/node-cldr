@@ -1,9 +1,9 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('extractLayout', function() {
-  it('should extract the Arabian layout', function() {
+describe('extractLayout', () => {
+  it('should extract the Arabian layout', () => {
     expect(cldr.extractLayout('ar'), 'to equal', {
       orientation: {
         characterOrder: 'right-to-left',
@@ -12,7 +12,7 @@ describe('extractLayout', function() {
     });
   });
 
-  it('should extract the American English layout', function() {
+  it('should extract the American English layout', () => {
     expect(cldr.extractLayout('en_US'), 'to equal', {
       orientation: {
         characterOrder: 'left-to-right',

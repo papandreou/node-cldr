@@ -1,10 +1,10 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('extractMeasurementSystemNames', function() {
-  it('should extract the British English measurement systems correctly', function() {
-    var britishMeasurementSystemNames = cldr.extractMeasurementSystemNames(
+describe('extractMeasurementSystemNames', () => {
+  it('should extract the British English measurement systems correctly', () => {
+    const britishMeasurementSystemNames = cldr.extractMeasurementSystemNames(
       'en_GB'
     );
     expect(britishMeasurementSystemNames, 'to only have keys', [

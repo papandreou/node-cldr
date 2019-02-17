@@ -1,24 +1,20 @@
-var unexpected = require('unexpected');
+const unexpected = require('unexpected');
 
-var esprima = require('esprima');
+const esprima = require('esprima');
 
-var escodegen = require('escodegen');
+const escodegen = require('escodegen');
 
-var CldrPluralRuleSet = require('../lib/CldrPluralRuleSet');
+const CldrPluralRuleSet = require('../lib/CldrPluralRuleSet');
 
-describe('CldrPluralRuleSet', function() {
-  var expect = unexpected.clone();
+describe('CldrPluralRuleSet', () => {
+  const expect = unexpected.clone();
 
-  expect.addAssertion('<object> to encode to <function>', function(
-    expect,
-    subject,
-    value
-  ) {
-    var cldrPluralRuleSet = new CldrPluralRuleSet();
-    Object.keys(subject).forEach(function(count) {
+  expect.addAssertion('<object> to encode to <function>', (expect, subject, value) => {
+    const cldrPluralRuleSet = new CldrPluralRuleSet();
+    Object.keys(subject).forEach(count => {
       cldrPluralRuleSet.addRule(subject[count], count);
     });
-    var beautifiedFunction = escodegen.generate({
+    const beautifiedFunction = escodegen.generate({
       type: 'Program',
       body: [
         {
@@ -45,8 +41,8 @@ describe('CldrPluralRuleSet', function() {
     expect(beautifiedFunction, 'to equal', value);
   });
 
-  it('should encode some basic test cases correctly', function() {
-    expect({ one: 'n is 4 or n is not 6' }, 'to encode to', function(n) {
+  it('should encode some basic test cases correctly', () => {
+    expect({ one: 'n is 4 or n is not 6' }, 'to encode to', n => {
       /* eslint-disable */
       if (typeof n === 'string') n = parseInt(n, 10);
       if (n === 4 || n !== 6) return 'one';
@@ -54,9 +50,7 @@ describe('CldrPluralRuleSet', function() {
       /* eslint-enable */
     });
 
-    expect({}, 'to encode to', function(n) {
-      return 'other';
-    });
+    expect({}, 'to encode to', n => 'other');
 
     expect(
       {
@@ -65,10 +59,9 @@ describe('CldrPluralRuleSet', function() {
         many: 'v = 0 and n != 0..10 and n % 10 = 0'
       },
       'to encode to',
-      function(n) {
+      n => {
         /* eslint-disable */
-        var i = Math.floor(Math.abs(n)),
-          v = n.toString().replace(/^[^.]*\.?/, '').length;
+        const i = Math.floor(Math.abs(n)), v = n.toString().replace(/^[^.]*\.?/, '').length;
         if (typeof n === 'string') n = parseInt(n, 10);
         if (i === 1 && v === 0) return 'one';
         if (i === 2 && v === 0) return 'two';
@@ -79,7 +72,7 @@ describe('CldrPluralRuleSet', function() {
     );
   });
 
-  it('should encode the Danish plural rule function from CLDR 24 correctly', function() {
+  it('should encode the Danish plural rule function from CLDR 24 correctly', () => {
     expect(
       {
         one: 'n = 1 or t != 0 and i = 0,1 @integer 1 @decimal 0.1~1.6',
@@ -87,10 +80,9 @@ describe('CldrPluralRuleSet', function() {
           ' @integer 0, 2~16, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0, 2.0~3.4, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …'
       },
       'to encode to',
-      function(n) {
+      n => {
         /* eslint-disable */
-        var i = Math.floor(Math.abs(n)),
-          t = parseInt(n.toString().replace(/^[^.]*\.?|0+$/g, ''), 10) || 0;
+        const i = Math.floor(Math.abs(n)), t = parseInt(n.toString().replace(/^[^.]*\.?|0+$/g, ''), 10) || 0;
         if (typeof n === 'string') n = parseInt(n, 10);
         if (n === 1 || (!(t === 0) && (i === 0 || i === 1))) return 'one';
         return 'other';
@@ -99,7 +91,7 @@ describe('CldrPluralRuleSet', function() {
     );
   });
 
-  it('should encode the Latvian plural rule function from CLDR 24 correctly', function() {
+  it('should encode the Latvian plural rule function from CLDR 24 correctly', () => {
     expect(
       {
         zero:
@@ -110,10 +102,9 @@ describe('CldrPluralRuleSet', function() {
           ' @integer 2~9, 22~29, 102, 1002, … @decimal 0.2~0.9, 1.2~1.9, 10.2, 100.2, 1000.2, …'
       },
       'to encode to',
-      function(n) {
+      n => {
         /* eslint-disable */
-        var v = n.toString().replace(/^[^.]*\.?/, '').length,
-          f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
+        const v = n.toString().replace(/^[^.]*\.?/, '').length, f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
         if (typeof n === 'string') n = parseInt(n, 10);
         if (
           n % 10 === 0 ||
@@ -136,7 +127,7 @@ describe('CldrPluralRuleSet', function() {
     );
   });
 
-  it('should encode the Slovak plural rule function from CLDR 29 correctly', function() {
+  it('should encode the Slovak plural rule function from CLDR 29 correctly', () => {
     expect(
       {
         one:
@@ -147,11 +138,9 @@ describe('CldrPluralRuleSet', function() {
           ' @integer 0, 5~19, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0, 0.5~1.0, 1.5~2.0, 2.5~2.7, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …'
       },
       'to encode to',
-      function(n) {
+      n => {
         /* eslint-disable */
-        var i = Math.floor(Math.abs(n)),
-          v = n.toString().replace(/^[^.]*\.?/, '').length,
-          f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
+        const i = Math.floor(Math.abs(n)), v = n.toString().replace(/^[^.]*\.?/, '').length, f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
         if (typeof n === 'string') n = parseInt(n, 10);
         if (
           (v === 0 && (i % 10 === 1 && !(i % 100 === 11))) ||

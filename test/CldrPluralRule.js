@@ -1,18 +1,14 @@
-var unexpected = require('unexpected');
+const unexpected = require('unexpected');
 
-var escodegen = require('escodegen');
+const escodegen = require('escodegen');
 
-var CldrPluralRule = require('../lib/CldrPluralRule');
+const CldrPluralRule = require('../lib/CldrPluralRule');
 
-describe('CldrPluralRule', function() {
-  var expect = unexpected.clone();
+describe('CldrPluralRule', () => {
+  const expect = unexpected.clone();
 
   // `value` is a string of JavaScript source code rather than an AST so the tests can be more compact:
-  expect.addAssertion('<string> to encode to <string>', function(
-    expect,
-    subject,
-    value
-  ) {
+  expect.addAssertion('<string> to encode to <string>', (expect, subject, value) => {
     expect(
       escodegen.generate(new CldrPluralRule(subject).toJavaScriptAst()),
       'to equal',
@@ -20,7 +16,7 @@ describe('CldrPluralRule', function() {
     );
   });
 
-  it('should encode some assorted test cases correctly', function() {
+  it('should encode some assorted test cases correctly', () => {
     expect('n is 4 or n is not 6', 'to encode to', 'n === 4 || n !== 6');
 
     expect(

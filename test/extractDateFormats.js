@@ -1,9 +1,9 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('cldr.extractDateFormats("en_GB")', function() {
-  it('should extract the correct British English date formats', function() {
+describe('cldr.extractDateFormats("en_GB")', () => {
+  it('should extract the correct British English date formats', () => {
     expect(cldr.extractDateFormats('en_GB'), 'to equal', {
       full: 'EEEE, d MMMM y',
       long: 'd MMMM y',

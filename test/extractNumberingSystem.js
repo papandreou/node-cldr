@@ -1,9 +1,9 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('extractNumberingSystem', function() {
-  it('should throw if the numbering system does not exist', function() {
+describe('extractNumberingSystem', () => {
+  it('should throw if the numbering system does not exist', () => {
     expect(
       () => cldr.extractNumberingSystem('foo'),
       'to error',
@@ -11,21 +11,21 @@ describe('extractNumberingSystem', function() {
     );
   });
 
-  it('should extract a numeric (digits-based) numbering system', function() {
+  it('should extract a numeric (digits-based) numbering system', () => {
     expect(cldr.extractNumberingSystem('fullwide'), 'to equal', {
       type: 'numeric',
       digits: ['０', '１', '２', '３', '４', '５', '６', '７', '８', '９']
     });
   });
 
-  it('should extract an algorithmic numbering system without a locale', function() {
+  it('should extract an algorithmic numbering system without a locale', () => {
     expect(cldr.extractNumberingSystem('ethi'), 'to equal', {
       type: 'algorithmic',
       rules: 'renderEthiopic'
     });
   });
 
-  it('should extract an algorithmic numbering system with a locale', function() {
+  it('should extract an algorithmic numbering system with a locale', () => {
     expect(cldr.extractNumberingSystem('jpan'), 'to equal', {
       type: 'algorithmic',
       rules: 'renderSpelloutCardinal',
@@ -33,7 +33,7 @@ describe('extractNumberingSystem', function() {
     });
   });
 
-  it('should extract an algorithmic numbering system with a locale and a sublocale', function() {
+  it('should extract an algorithmic numbering system with a locale and a sublocale', () => {
     expect(cldr.extractNumberingSystem('hantfin'), 'to equal', {
       type: 'algorithmic',
       rules: 'renderSpelloutCardinalFinancial',

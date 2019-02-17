@@ -1,10 +1,10 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('extractFields', function() {
-  it('should extract the British English fields correctly', function() {
-    var britishFields = cldr.extractFields('en_GB');
+describe('extractFields', () => {
+  it('should extract the British English fields correctly', () => {
+    const britishFields = cldr.extractFields('en_GB');
 
     expect(britishFields, 'to have keys', [
       'day',

@@ -1,9 +1,9 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('extractLanguageDisplayNames', function() {
-  it('should extract the American English patterns correctly, even when the locale id is specified unnormalized', function() {
+describe('extractLanguageDisplayNames', () => {
+  it('should extract the American English patterns correctly, even when the locale id is specified unnormalized', () => {
     expect(cldr.extractLanguageDisplayNames('en-us'), 'to satisfy', {
       fur: 'Friulian',
       fy: 'Western Frisian'

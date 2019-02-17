@@ -1,10 +1,10 @@
-var expect = require('unexpected');
+const expect = require('unexpected');
 
-var cldr = require('../lib/cldr');
+const cldr = require('../lib/cldr');
 
-describe('extractTimeZoneFormats', function() {
-  it('should extract the British English patterns correctly', function() {
-    var britishTimeZoneFormats = cldr.extractTimeZoneFormats('en_GB');
+describe('extractTimeZoneFormats', () => {
+  it('should extract the British English patterns correctly', () => {
+    const britishTimeZoneFormats = cldr.extractTimeZoneFormats('en_GB');
     expect(britishTimeZoneFormats, 'to only have keys', [
       'hour',
       'gmt',
