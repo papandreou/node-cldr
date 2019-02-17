@@ -750,7 +750,56 @@ Note that some of the generated functions expect to be able to call
 `this.renderNumber(<number>, <icuNumberFormat>);`. If there's demand
 for it, that can be made customizable, just file an issue.
 
+### cldr.extractNumberingSystem(numberingSystemId)
+
+Extract information about a numbering system. The supported numbering systems
+can be retrieved as `cldr.numberingSystemIds`.
+
+Most of the numbering systems will have a type of `numeric` and provide an array
+of digits that correspond to 0 through 9:
+
+```javascript
+cldr.extractNumberingSystem('bali');
+{ type: 'numeric',
+  digits: [ '᭐', '᭑', '᭒', '᭓', '᭔', '᭕', '᭖', '᭗', '᭘', '᭙' ] }
+```
+
+For other more complicated numbering systems, the `type` will be `algorithmic`
+and there will be a `rules` property that is a string starting with `render`. In
+that case, use the RBNF function (see above) of that name for producing a
+number. These RBNF functions are the same in every locale, so you can just pass
+`root`:
+
+```javascript
+cldr.extractNumberingSystem('cyrl')
+{ type: 'algorithmic', rules: 'renderCyrillicLower' }
+const rbnfs = cldr.extractRbnfFunctionByType('root', 'renderCyrillicLower')
+rbnfs.renderCyrillicLower(1234)
+'҂асл҃д'
+```
+
+Some of the `algorithmic` numbering systems will additionally refer to a
+specific locale:
+
+```javascript
+cldr.extractNumberingSystem('jpan');
+{ type: 'algorithmic',
+  rules: 'renderSpelloutCardinal',
+  locale: 'ja' }
+```
+
+In that case you should extract the RBNF rule from that specific locale to
+render the numbers:
+
+```javascript
+const rbnfs = cldr.extractRbnfFunctionByType('ja', 'renderSpelloutCardinal');
+const rbnfs.renderSpelloutCardinal(1234);
+'千二百三十四'
+```
+
 ### cldr.extractDigitsByNumberSystemId()
+
+**Deprecated**: Please use `extractNumberingSystem()` instead.
 
 Extract a hash of number system id => digits array. For some exotic
 number systems, 'digits' is a string starting with `render`. In that
