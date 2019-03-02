@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2018 Unicode, Inc.
+<!-- Copyright © 1991-2019 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 14418 $"/>
+		<version number="$Revision: 14843 $"/>
 		<language type="en"/>
 		<territory type="AU"/>
 	</identity>
@@ -21,8 +21,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		</languages>
 		<scripts>
 			<script type="Beng">Bengali</script>
-			<script type="Cham" draft="contributed">Cham</script>
-			<script type="Modi" draft="contributed">Modi</script>
 			<script type="Thai">Thai</script>
 		</scripts>
 		<types>
@@ -37,6 +35,18 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<calendars>
 			<calendar type="chinese">
 				<months>
+					<monthContext type="format">
+						<monthWidth type="narrow">
+							<month type="5">5</month>
+							<month type="6">6</month>
+							<month type="7">7</month>
+							<month type="8">8</month>
+							<month type="9">9</month>
+							<month type="10">10</month>
+							<month type="11">11</month>
+							<month type="12">12</month>
+						</monthWidth>
+					</monthContext>
 					<monthContext type="stand-alone">
 						<monthWidth type="abbreviated">
 							<month type="1">Mo1</month>
@@ -85,6 +95,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="gregorian">
+				<months>
+					<monthContext type="stand-alone">
+						<monthWidth type="abbreviated">
+							<month type="5">May</month>
+						</monthWidth>
+					</monthContext>
+				</months>
 				<days>
 					<dayContext type="format">
 						<dayWidth type="narrow">
@@ -117,11 +134,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 							<day type="sat">Sa.</day>
 						</dayWidth>
 						<dayWidth type="short">
-							<day type="sun">Su</day>
 							<day type="mon">Mon</day>
-							<day type="tue">Tu</day>
 							<day type="wed">Wed</day>
-							<day type="thu">Th</day>
 							<day type="fri">Fri</day>
 							<day type="sat">Sat</day>
 						</dayWidth>
@@ -194,27 +208,22 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<fields>
 			<field type="year-short">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} yr</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} yrs</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} yr ago</relativeTimePattern>
 					<relativeTimePattern count="other">{0} yrs ago</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="year-narrow">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} yr</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} yrs</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} yr ago</relativeTimePattern>
 					<relativeTimePattern count="other">{0} yrs ago</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="quarter-short">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} qtr</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} qtrs</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
@@ -224,7 +233,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="quarter-narrow">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} qtr</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} qtrs</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
@@ -256,21 +264,17 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="week-short">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} wk</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} wks</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} wk ago</relativeTimePattern>
 					<relativeTimePattern count="other">{0} wks ago</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week-narrow">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} wk</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} wks</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} wk ago</relativeTimePattern>
 					<relativeTimePattern count="other">{0} wks ago</relativeTimePattern>
 				</relativeTime>
 			</field>
@@ -281,6 +285,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<relative type="-1">yesterday</relative>
 				<relative type="0">today</relative>
 				<relative type="1">tomorrow</relative>
+			</field>
+			<field type="day-narrow">
+				<relativeTime type="future">
+					<relativeTimePattern count="other">in {0} days</relativeTimePattern>
+				</relativeTime>
 			</field>
 			<field type="weekdayOfMonth-short">
 				<displayName>wkday of mo.</displayName>
@@ -325,6 +334,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<relativeTimePattern count="other">{0} Wed. ago</relativeTimePattern>
 				</relativeTime>
 			</field>
+			<field type="wed-narrow">
+				<relativeTime type="past">
+					<relativeTimePattern count="one">{0} W ago</relativeTimePattern>
+				</relativeTime>
+			</field>
 			<field type="thu-short">
 				<relativeTime type="future">
 					<relativeTimePattern count="one">in {0} Thu.</relativeTimePattern>
@@ -358,22 +372,18 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<field type="hour-short">
 				<displayName>h</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} hr</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} hrs</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} hr ago</relativeTimePattern>
 					<relativeTimePattern count="other">{0} hrs ago</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="hour-narrow">
 				<displayName>h</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} hr</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} hrs</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} hr ago</relativeTimePattern>
 					<relativeTimePattern count="other">{0} hrs ago</relativeTimePattern>
 				</relativeTime>
 			</field>
@@ -434,6 +444,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<standard>Eastern Africa Time</standard>
 				</long>
 			</metazone>
+			<metazone type="Amazon">
+				<long>
+					<standard>Amazon Standard Time</standard>
+					<daylight>Amazon Summer Time</daylight>
+				</long>
+			</metazone>
 			<metazone type="Arabian">
 				<long>
 					<generic>Arabia Time</generic>
@@ -486,7 +502,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</metazone>
 			<metazone type="China">
 				<long>
-					<generic>China Time</generic>
 					<standard>China Standard Time</standard>
 					<daylight>China Summer Time</daylight>
 				</long>
@@ -496,6 +511,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<generic>Cook Island Time</generic>
 					<standard>Cook Island Standard Time</standard>
 					<daylight>Cook Island Summer Time</daylight>
+				</long>
+			</metazone>
+			<metazone type="Europe_Eastern">
+				<long>
+					<standard>Eastern European Standard Time</standard>
+					<daylight>Eastern European Summer Time</daylight>
 				</long>
 			</metazone>
 			<metazone type="Iran">
@@ -564,7 +585,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	<numbers>
 		<symbols numberSystem="latn">
 			<exponential>e</exponential>
-			<timeSeparator draft="contributed">.</timeSeparator>
 		</symbols>
 		<currencies>
 			<currency type="AUD">
@@ -714,9 +734,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="other">Venezuelan bolívars</displayName>
 			</currency>
 			<currency type="VES">
-				<displayName draft="provisional">VES</displayName>
-				<displayName count="one" draft="provisional">VES</displayName>
-				<displayName count="other" draft="provisional">VES</displayName>
+				<displayName draft="contributed">VES</displayName>
+				<displayName count="one" draft="contributed">VES</displayName>
+				<displayName count="other" draft="contributed">VES</displayName>
 			</currency>
 			<currency type="VND">
 				<displayName count="one">Vietnamese dong</displayName>
@@ -738,6 +758,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</currency>
 			<currency type="XPF">
 				<symbol draft="contributed">CFP</symbol>
+			</currency>
+			<currency type="XXX">
+				<displayName count="other">(unknown currency)</displayName>
 			</currency>
 		</currencies>
 	</numbers>
@@ -792,6 +815,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>arcsec.</displayName>
 				<unitPattern count="one">{0} arcsec.</unitPattern>
 				<unitPattern count="other">{0} arcsec.</unitPattern>
+			</unit>
+			<unit type="area-square-meter">
+				<unitPattern count="other">{0} m²</unitPattern>
 			</unit>
 			<unit type="concentr-milligram-per-deciliter">
 				<displayName>mg/dL</displayName>
@@ -901,6 +927,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<unit type="volume-cubic-centimeter">
 				<unitPattern count="one">{0} cm³</unitPattern>
 			</unit>
+			<unit type="volume-cubic-mile">
+				<unitPattern count="one">{0} mi³</unitPattern>
+			</unit>
 			<unit type="volume-megaliter">
 				<displayName>ML</displayName>
 				<unitPattern count="one">{0} ML</unitPattern>
@@ -969,20 +998,23 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0}L/100km</unitPattern>
 				<unitPattern count="other">{0}L/100km</unitPattern>
 			</unit>
+			<unit type="duration-year">
+				<unitPattern count="one">{0}y</unitPattern>
+			</unit>
 			<unit type="duration-minute">
 				<displayName>min.</displayName>
-				<unitPattern count="one">{0} min.</unitPattern>
-				<unitPattern count="other">{0} min.</unitPattern>
+				<unitPattern count="one">{0}min.</unitPattern>
+				<unitPattern count="other">{0}min.</unitPattern>
 			</unit>
 			<unit type="duration-second">
 				<displayName>sec.</displayName>
-				<unitPattern count="one">{0} s.</unitPattern>
-				<unitPattern count="other">{0} s.</unitPattern>
+				<unitPattern count="one">{0}s.</unitPattern>
+				<unitPattern count="other">{0}s.</unitPattern>
 			</unit>
 			<unit type="duration-millisecond">
 				<displayName>msec.</displayName>
-				<unitPattern count="one">{0} ms</unitPattern>
-				<unitPattern count="other">{0} ms</unitPattern>
+				<unitPattern count="one">{0}ms</unitPattern>
+				<unitPattern count="other">{0}ms</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<unitPattern count="one">{0} km/h</unitPattern>
@@ -1042,6 +1074,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		</listPattern>
 		<listPattern type="standard-short">
 			<listPatternPart type="end">{0} and {1}</listPatternPart>
+			<listPatternPart type="2" draft="provisional">{0} and {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
 	<characterLabels>
