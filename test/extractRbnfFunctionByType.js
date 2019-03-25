@@ -126,7 +126,7 @@ describe('extractRbnfFunctionByType', () => {
             if (n >= 3) return 'kolm';
             if (n >= 2) return 'kaks';
             if (n >= 1) return 'üks';
-            if (n >= 0) return 'null';
+            return 'null';
             /* eslint-enable */
           }
         );
@@ -178,6 +178,30 @@ describe('extractRbnfFunctionByType', () => {
         americanRbnfFunctionByType.renderDigitsOrdinal(4),
         'to equal',
         '4th'
+      );
+    });
+  });
+
+  // https://github.com/papandreou/node-cldr/issues/75
+  describe('with a rule set that does not contain a -x rule', function() {
+    it('should render a negative number correctly', function() {
+      const swedishRbnfFunctionByType = cldr.extractRbnfFunctionByType('sv');
+      swedishRbnfFunctionByType.renderNumber = String;
+      expect(
+        swedishRbnfFunctionByType.renderSpelloutCardinalNeuter(-3),
+        'to equal',
+        'minus tre'
+      );
+    });
+
+    it('should produce the expected function', function() {
+      const swedishRbnfFunctionByType = cldr.extractRbnfFunctionByType('sv');
+      expect(
+        swedishRbnfFunctionByType.renderSpelloutCardinalNeuter,
+        'to have the same ast as',
+        function(n) {
+          return this.renderSpelloutNumbering(n);
+        }
       );
     });
   });
