@@ -18,6 +18,13 @@ describe('extractNumberingSystem', () => {
     });
   });
 
+  it('should extract digits with high codepoints', () => {
+    expect(cldr.extractNumberingSystem('ahom'), 'to equal', {
+      type: 'numeric',
+      digits: ['𑜰', '𑜱', '𑜲', '𑜳', '𑜴', '𑜵', '𑜶', '𑜷', '𑜸', '𑜹']
+    });
+  });
+
   it('should extract an algorithmic numbering system without a locale', () => {
     expect(cldr.extractNumberingSystem('ethi'), 'to equal', {
       type: 'algorithmic',
