@@ -25,6 +25,10 @@ specification</a>, which describes the schema of the CLDR XML files.
 Comes bundled with the CLDR 34 release and isn't attempting to be backwards
 compatible with earlier versions.
 
+# Releases
+
+See the [changelog](CHANGELOG.md).
+
 # Usage
 
 Make sure you have <a href="http://nodejs.org/">node.js</a> and <a
