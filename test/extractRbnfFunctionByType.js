@@ -53,67 +53,87 @@ describe('extractRbnfFunctionByType', () => {
               return (
                 this.renderSpelloutCardinal(Math.floor(n / 1e15)) +
                 ' biljardit' +
-                (n === 2e15 ? '' : ' ' + this.renderSpelloutCardinal(n % 1e15))
+                (n % 2e15 === 0
+                  ? ''
+                  : ' ' + this.renderSpelloutCardinal(n % 1e15))
               );
             if (n >= 1e15)
               return (
                 this.renderSpelloutCardinal(Math.floor(n / 1e15)) +
                 ' biljard' +
-                (n === 1e15 ? '' : ' ' + this.renderSpelloutCardinal(n % 1e15))
+                (n % 1e15 === 0
+                  ? ''
+                  : ' ' + this.renderSpelloutCardinal(n % 1e15))
               );
             if (n >= 2e12)
               return (
                 this.renderSpelloutCardinal(Math.floor(n / 1e12)) +
                 ' biljonit' +
-                (n === 2e12 ? '' : ' ' + this.renderSpelloutCardinal(n % 1e12))
+                (n % 2e12 === 0
+                  ? ''
+                  : ' ' + this.renderSpelloutCardinal(n % 1e12))
               );
             if (n >= 1e12)
               return (
                 this.renderSpelloutCardinal(Math.floor(n / 1e12)) +
                 ' biljon' +
-                (n === 1e12 ? '' : ' ' + this.renderSpelloutCardinal(n % 1e12))
+                (n % 1e12 === 0
+                  ? ''
+                  : ' ' + this.renderSpelloutCardinal(n % 1e12))
               );
             if (n >= 2e9)
               return (
                 this.renderSpelloutCardinal(Math.floor(n / 1e9)) +
                 ' miljardit' +
-                (n === 2e9 ? '' : ' ' + this.renderSpelloutCardinal(n % 1e9))
+                (n % 2e9 === 0
+                  ? ''
+                  : ' ' + this.renderSpelloutCardinal(n % 1e9))
               );
             if (n >= 1e9)
               return (
                 this.renderSpelloutCardinal(Math.floor(n / 1e9)) +
                 ' miljard' +
-                (n === 1e9 ? '' : ' ' + this.renderSpelloutCardinal(n % 1e9))
+                (n % 1e9 === 0
+                  ? ''
+                  : ' ' + this.renderSpelloutCardinal(n % 1e9))
               );
             if (n >= 2e6)
               return (
                 this.renderSpelloutCardinal(Math.floor(n / 1e6)) +
                 ' miljonit' +
-                (n === 2e6 ? '' : ' ' + this.renderSpelloutCardinal(n % 1e6))
+                (n % 2e6 === 0
+                  ? ''
+                  : ' ' + this.renderSpelloutCardinal(n % 1e6))
               );
             if (n >= 1e6)
               return (
                 this.renderSpelloutCardinal(Math.floor(n / 1e6)) +
                 ' miljon' +
-                (n === 1e6 ? '' : ' ' + this.renderSpelloutCardinal(n % 1e6))
+                (n % 1e6 === 0
+                  ? ''
+                  : ' ' + this.renderSpelloutCardinal(n % 1e6))
               );
             if (n >= 1e3)
               return (
                 this.renderSpelloutCardinal(Math.floor(n / 1e3)) +
                 ' tuhat' +
-                (n === 1e3 ? '' : ' ' + this.renderSpelloutCardinal(n % 1e3))
+                (n % 1e3 === 0
+                  ? ''
+                  : ' ' + this.renderSpelloutCardinal(n % 1e3))
               );
             if (n >= 100)
               return (
                 this.renderSpelloutCardinal(Math.floor(n / 100)) +
                 'sada' +
-                (n === 100 ? '' : ' ' + this.renderSpelloutCardinal(n % 100))
+                (n % 100 === 0
+                  ? ''
+                  : ' ' + this.renderSpelloutCardinal(n % 100))
               );
             if (n >= 20)
               return (
                 this.renderSpelloutCardinal(Math.floor(n / 10)) +
                 'kümmend' +
-                (n === 20 ? '' : ' ' + this.renderSpelloutCardinal(n % 10))
+                (n % 20 === 0 ? '' : ' ' + this.renderSpelloutCardinal(n % 10))
               );
             if (n >= 11) return this.renderSpelloutCardinal(n % 10) + 'teist';
             if (n >= 10) return 'kümme';
@@ -204,5 +224,14 @@ describe('extractRbnfFunctionByType', () => {
         }
       );
     });
+  });
+
+  it('should foo', function() {
+    const swedishRbnfFunctionByType = cldr.extractRbnfFunctionByType('sv');
+    expect(
+      swedishRbnfFunctionByType.renderSpelloutCardinalNeuter(1800000),
+      'to equal',
+      'en miljon åtta\xadhundra\xadtusen'
+    );
   });
 });
