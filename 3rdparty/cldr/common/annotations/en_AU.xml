@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2018 Unicode, Inc.
+<!-- Copyright © 1991-2019 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 14453 $"/>
+		<version number="$Revision: 14800 $"/>
 		<language type="en"/>
 		<territory type="AU"/>
 	</identity>
 	<annotations>
-		<annotation cp="😱">face | face screaming in fear | fear | Munch | scared | scream</annotation>
-		<annotation cp="🥵">feverish | flushed | heat stroke | hot | hot face | red-faced | sweating</annotation>
 		<annotation cp="🤭">face with hand over mouth | whoops</annotation>
+		<annotation cp="🥵">feverish | flushed | heat stroke | hot | hot face | red-faced | sweating</annotation>
+		<annotation cp="😱">face | face screaming in fear | fear | Munch | scared | scream</annotation>
 		<annotation cp="😈">devil | face | fantasy | horns | smile</annotation>
+		<annotation cp="🖖">finger | hand | spock | vulcan | Vulcan salute</annotation>
+		<annotation cp="🖖" type="tts">Vulcan salute</annotation>
 		<annotation cp="👦">boy | young | young person</annotation>
 		<annotation cp="👧">girl | Virgo | young person | zodiac</annotation>
+		<annotation cp="👨‍🦼" draft="provisional">man in motorised wheelchair</annotation>
+		<annotation cp="👨‍🦼" type="tts" draft="provisional">man in motorised wheelchair</annotation>
+		<annotation cp="👩‍🦼" draft="provisional">woman in motorised wheelchair</annotation>
+		<annotation cp="👩‍🦼" type="tts" draft="provisional">woman in motorised wheelchair</annotation>
 		<annotation cp="👨‍💼">business man | manager | office worker | white collar</annotation>
 		<annotation cp="👩‍💼">business woman | manager | office worker | white collar</annotation>
 		<annotation cp="👨‍🎤">entertainer | man | performer | rock singer | star</annotation>
@@ -34,12 +40,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🤶">celebration | Christmas | Mrs Claus | Mrs Santa Claus</annotation>
 		<annotation cp="💇‍♂">haircut | hairdresser | man | man getting haircut</annotation>
 		<annotation cp="💇‍♀">haircut | hairdresser | woman | woman getting haircut</annotation>
-		<annotation cp="🧖‍♀">sauna | steam room | woman in steam room | woman in steamy room</annotation>
-		<annotation cp="🧖‍♀" type="tts">woman in steam room</annotation>
 		<annotation cp="🧖‍♂">man in steam room | man in steamy room | sauna | steam room</annotation>
 		<annotation cp="🧖‍♂" type="tts">man in steam room</annotation>
-		<annotation cp="🛀">bath | bathtub | person taking bath | tub</annotation>
-		<annotation cp="🛌">hotel | person in bed | sleep | sleeping</annotation>
+		<annotation cp="🧖‍♀">sauna | steam room | woman in steam room | woman in steamy room</annotation>
+		<annotation cp="🧖‍♀" type="tts">woman in steam room</annotation>
 		<annotation cp="🏌">ball | golf | golfer | person golfing</annotation>
 		<annotation cp="🏌‍♂">golf | golfer | man | man golfing</annotation>
 		<annotation cp="🏌‍♀">golf | golfer | woman | woman golfing</annotation>
@@ -59,22 +63,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🤹">balance | juggle | multi-task | skill</annotation>
 		<annotation cp="🤹‍♂">juggling | man | multi-task</annotation>
 		<annotation cp="🤹‍♀">juggling | multi-task | woman</annotation>
-		<annotation cp="🖖">finger | hand | spock | vulcan | Vulcan salute</annotation>
-		<annotation cp="🖖" type="tts">Vulcan salute</annotation>
-		<annotation cp="👔" type="tts">tie</annotation>
-		<annotation cp="👕">clothing | shirt | t-shirt | tee | tshirt</annotation>
-		<annotation cp="👖">clothing | jeans | pants | trousers</annotation>
-		<annotation cp="👗">clothing | dress | woman’s clothes</annotation>
-		<annotation cp="👙">bikini | clothing | swim suit | two-piece</annotation>
-		<annotation cp="👚">blouse | clothing | top | woman | woman’s clothes</annotation>
-		<annotation cp="👚" type="tts">blouse</annotation>
-		<annotation cp="👛">accessories | coin | purse</annotation>
-		<annotation cp="👜">accessories | bag | handbag | tote</annotation>
-		<annotation cp="👝">accessories | bag | clutch bag | pouch</annotation>
-		<annotation cp="👝" type="tts">pouch</annotation>
-		<annotation cp="👟">athletic | clothing | running shoe | shoe | sneaker | trainer</annotation>
-		<annotation cp="👟" type="tts">sneaker</annotation>
-		<annotation cp="🧢" type="tts">baseball cap</annotation>
+		<annotation cp="🛀">bath | bathtub | person taking bath | tub</annotation>
+		<annotation cp="🛌">hotel | person in bed | sleep | sleeping</annotation>
 		<annotation cp="🦌">deer | stag</annotation>
 		<annotation cp="🦏">rhino | rhinoceros</annotation>
 		<annotation cp="🐭">face | mouse | pet</annotation>
@@ -89,11 +79,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🐬">dolphin | porpoise</annotation>
 		<annotation cp="🐠">fish | reef fish | tropical</annotation>
 		<annotation cp="🐠" type="tts">reef fish</annotation>
-		<annotation cp="🦀">crab | crustacean | seafood | shellfish</annotation>
-		<annotation cp="🦞">bisque | claws | lobster | seafood | shellfish</annotation>
-		<annotation cp="🦐">prawn | seafood | shellfish | shrimp</annotation>
-		<annotation cp="🦐" type="tts">prawn</annotation>
-		<annotation cp="🦑">decapod | seafood | squid</annotation>
 		<annotation cp="🐌">mollusc | snail</annotation>
 		<annotation cp="🦋">butterfly | insect | moth</annotation>
 		<annotation cp="🐛">bug | caterpillar | insect | worm</annotation>
@@ -117,6 +102,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🥟">dumpling | empanada | gyōza | pastie | samosa</annotation>
 		<annotation cp="🥡">takeaway container | takeout</annotation>
 		<annotation cp="🥡" type="tts">takeaway container</annotation>
+		<annotation cp="🦀">crab | crustacean | seafood | shellfish</annotation>
+		<annotation cp="🦞">bisque | claws | lobster | seafood | shellfish</annotation>
+		<annotation cp="🦐">prawn | seafood | shellfish | shrimp</annotation>
+		<annotation cp="🦐" type="tts">prawn</annotation>
+		<annotation cp="🦑">decapod | seafood | squid</annotation>
 		<annotation cp="🍦">cream | dessert | ice cream | soft serve | sweet</annotation>
 		<annotation cp="🍦" type="tts">soft serve</annotation>
 		<annotation cp="🍧">dessert | granita | ice | sweet</annotation>
@@ -198,6 +188,20 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🎰" type="tts">pokie</annotation>
 		<annotation cp="♦">card | diamonds | game</annotation>
 		<annotation cp="♣">card | clubs | game</annotation>
+		<annotation cp="👔" type="tts">tie</annotation>
+		<annotation cp="👕">clothing | shirt | t-shirt | tee | tshirt</annotation>
+		<annotation cp="👖">clothing | jeans | pants | trousers</annotation>
+		<annotation cp="👗">clothing | dress | woman’s clothes</annotation>
+		<annotation cp="👙">bikini | clothing | swim suit | two-piece</annotation>
+		<annotation cp="👚">blouse | clothing | top | woman | woman’s clothes</annotation>
+		<annotation cp="👚" type="tts">blouse</annotation>
+		<annotation cp="👛">accessories | coin | purse</annotation>
+		<annotation cp="👜">accessories | bag | handbag | tote</annotation>
+		<annotation cp="👝">accessories | bag | clutch bag | pouch</annotation>
+		<annotation cp="👝" type="tts">pouch</annotation>
+		<annotation cp="👟">athletic | clothing | running shoe | shoe | sneaker | trainer</annotation>
+		<annotation cp="👟" type="tts">sneaker</annotation>
+		<annotation cp="🧢" type="tts">baseball cap</annotation>
 		<annotation cp="🔈">low | quiet | soft | speaker | volume</annotation>
 		<annotation cp="📻">AM | FM | radio | wireless</annotation>
 		<annotation cp="🎹">instrument | keyboard | music | organ | piano</annotation>
@@ -279,5 +283,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🔡" type="tts" draft="contributed">input Latin lowercase</annotation>
 		<annotation cp="🔤" draft="contributed">input Latin letters</annotation>
 		<annotation cp="🔤" type="tts" draft="contributed">input Latin letters</annotation>
+		<annotation cp="🦼" draft="provisional">mobility scooter</annotation>
+		<annotation cp="🦼" type="tts" draft="provisional">mobility scooter</annotation>
+		<annotation cp="🧃">drink carton | juice box</annotation>
+		<annotation cp="🧃" type="tts">drink carton</annotation>
+		<annotation cp="🧄">flavouring</annotation>
+		<annotation cp="🧅">flavouring</annotation>
+		<annotation cp="🧇">waffle with butter</annotation>
 	</annotations>
 </ldml>

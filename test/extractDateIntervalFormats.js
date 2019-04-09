@@ -6,6 +6,8 @@ describe('cldr.extractDateIntervalFormats("en")', () => {
   const englishDateIntervalFormats = cldr.extractDateIntervalFormats('en');
   it('should extract the correct formats', () => {
     expect(englishDateIntervalFormats, 'to equal', {
+      Bh: { B: 'h B – h B', h: 'h – h B' },
+      Bhm: { B: 'h:mm B – h:mm B', h: 'h:mm – h:mm B', m: 'h:mm – h:mm B' },
       H: {
         H: 'HH – HH'
       },

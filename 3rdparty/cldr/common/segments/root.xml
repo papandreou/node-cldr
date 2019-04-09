@@ -7,12 +7,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 14457 $"/>
+		<version number="$Revision: 14932 $"/>
 		<language type="root"/>
 	</identity>
 	<segmentations>
 		<segmentation type="GraphemeClusterBreak">
 			<variables>
+				<!-- VARIABLES -->
 				<variable id="$CR">\p{Grapheme_Cluster_Break=CR}</variable>
 				<variable id="$LF">\p{Grapheme_Cluster_Break=LF}</variable>
 				<variable id="$Control">\p{Grapheme_Cluster_Break=Control}</variable>
@@ -26,11 +27,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<variable id="$T">\p{Grapheme_Cluster_Break=T}</variable>
 				<variable id="$LV">\p{Grapheme_Cluster_Break=LV}</variable>
 				<variable id="$LVT">\p{Grapheme_Cluster_Break=LVT}</variable>
+				<!-- Note: The following may overlap with the above -->
+				<variable id="$Virama">[\p{Gujr}\p{sc=Telu}\p{sc=Mlym}\p{sc=Orya}\p{sc=Beng}\p{sc=Deva}&amp;\p{Indic_Syllabic_Category=Virama}]</variable>
+				<variable id="$LinkingConsonant">[\p{Gujr}\p{sc=Telu}\p{sc=Mlym}\p{sc=Orya}\p{sc=Beng}\p{sc=Deva}&amp;\p{Indic_Syllabic_Category=Consonant}]</variable>
 				<variable id="$ExtPict">\p{Extended_Pictographic}</variable>
 				<variable id="$ExtCccZwj">[[$Extend-\p{ccc=0}] $ZWJ]</variable>
 			</variables>
 			<segmentRules>
-				<!-- Rules -->
+				<!-- RULES -->
 				<!-- Break at the start and end of text, unless the text is empty. -->
 				<!-- Do not break between a CR and LF. Otherwise, break before and after controls. -->
 				<rule id="3"> $CR × $LF </rule>
@@ -40,22 +44,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<rule id="6"> $L × ( $L | $V | $LV | $LVT ) </rule>
 				<rule id="7"> ( $LV | $V ) × ( $V | $T ) </rule>
 				<rule id="8"> ( $LVT | $T) × $T </rule>
-				<!-- Do not break before extending characters or ZWJ. -->
 				<rule id="9"> × ($Extend | $ZWJ) </rule>
 				<!-- Only for extended grapheme clusters: Do not break before SpacingMarks, or after Prepend characters. -->
 				<rule id="9.1"> × $SpacingMark </rule>
 				<rule id="9.2"> $Prepend × </rule>
-				<!-- Do not break within emoji modifier sequences or emoji zwj sequences. -->
+				<rule id="9.3"> $LinkingConsonant $ExtCccZwj* $Virama $ExtCccZwj* × $LinkingConsonant </rule>
+				<!-- Do not break within emoji zwj sequences. -->
 				<rule id="11"> $ExtPict $Extend* $ZWJ × $ExtPict </rule>
 				<!-- Do not break within emoji flag sequences. That is, do not break between regional indicator (RI) symbols if there is an odd number of RI characters before the break point. -->
 				<rule id="12"> ^ ($RI $RI)* $RI × $RI </rule>
 				<rule id="13"> [^$RI] ($RI $RI)* $RI × $RI </rule>
+				<!-- Otherwise, break everywhere. -->
 			</segmentRules>
-			<!-- Otherwise, break everywhere. -->
 		</segmentation>
 		<segmentation type="LineBreak">
 			<variables>
-				<!-- Variables -->
+				<!-- VARIABLES -->
 				<variable id="$AI">\p{Line_Break=Ambiguous}</variable>
 				<variable id="$AL">\p{Line_Break=Alphabetic}</variable>
 				<variable id="$B2">\p{Line_Break=Break_Both}</variable>
@@ -100,7 +104,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<variable id="$EM">\p{Line_Break=E_Modifier}</variable>
 				<variable id="$ZWJ_O">\p{Line_Break=ZWJ}</variable>
 				<variable id="$ZWJ">\p{Line_Break=ZWJ}</variable>
-				<!-- Macros -->
+				<!-- SPECIAL EXTENSIONS -->
 				<variable id="$CM">[$CM1 $ZWJ]</variable>
 				<!-- LB 1  Assign a line breaking class to each code point of the input. -->
 				<!-- Resolve AI, CB, SA, SG, and XX into other line breaking classes depending on criteria outside the scope of this algorithm. -->
@@ -111,7 +115,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<!-- Treat X (CM|ZWJ* as if it were X. -->
 				<!-- Where X is any line break class except SP, BK, CR, LF, NL or ZW. -->
 				<variable id="$X">$CM*</variable>
-				<!-- Macros -->
+				<!-- MACROS -->
 				<variable id="$Spec1_">[$SP $BK $CR $LF $NL $ZW]</variable>
 				<variable id="$Spec2_">[^ $SP $BK $CR $LF $NL $ZW]</variable>
 				<variable id="$Spec3a_">[^ $SP $BA $HY $CM]</variable>
@@ -159,7 +163,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<variable id="$AL">($AL | ^ $CM | (?&lt;=$Spec1_) $CM)</variable>
 			</variables>
 			<segmentRules>
-				<!-- Rules -->
+				<!-- RULES -->
 				<!-- LB 4  Always break after hard line breaks (but never between CR and LF). -->
 				<rule id="4"> $BK ÷ </rule>
 				<!-- LB 5  Treat CR followed by LF, as well as CR, LF and NL as hard line breaks. -->
@@ -179,7 +183,6 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<!-- LB 9  Do not break a combining character sequence; treat it as if it has the LB class of the base character -->
 				<!-- in all of the following rules. (Where X is any line break class except SP, BK, CR, LF, NL or ZW.) -->
 				<rule id="9"> $Spec2_ × $CM </rule>
-				<!-- WARNING: this is done by modifying the variable values for all but SP.... That is, $AL is really ($AI $CM*)! -->
 				<!-- LB 11  Do not break before or after WORD JOINER and related characters. -->
 				<rule id="11.01"> × $WJ </rule>
 				<rule id="11.02"> $WJ × </rule>
@@ -188,33 +191,33 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<rule id="12.1"> $Spec3a_ × $GL </rule>
 				<rule id="12.2"> $Spec3b_ $CM+ × $GL </rule>
 				<rule id="12.3"> ^ $CM+ × $GL </rule>
-				<!-- LB 13  Do not break before ‘]’ or ‘!’ or ‘;’ or ‘/’, even after spaces. -->
+				<!-- LB 13  Do not break before \u2018]\u2019 or \u2018!\u2019 or \u2018;\u2019 or \u2018/\u2019, even after spaces. -->
 				<!-- Using customization 7. -->
 				<rule id="13.01"> × $EX </rule>
 				<rule id="13.02"> $Spec4_ × ($CL | $CP | $IS | $SY) </rule>
 				<rule id="13.03"> $Spec4_ $CM+ × ($CL | $CP | $IS | $SY) </rule>
 				<rule id="13.04"> ^ $CM+ × ($CL | $CP | $IS | $SY) </rule>
-				<!-- LB 14  Do not break after ‘[’, even after spaces. -->
+				<!-- LB 14  Do not break after \u2018[\u2019, even after spaces. -->
 				<rule id="14"> $OP $SP* × </rule>
-				<!-- LB 15  Do not break within ‘"[’, even with intervening spaces. -->
+				<!-- LB 15  Do not break within \u2018\"[\u2019, even with intervening spaces. -->
 				<rule id="15"> $QU $SP* × $OP </rule>
 				<!-- LB 16  Do not break between closing punctuation and a nonstarter (lb=NS), even with intervening spaces. -->
 				<rule id="16"> ($CL | $CP) $SP* × $NS </rule>
-				<!-- LB 17  Do not break within ‘——’, even with intervening spaces. -->
+				<!-- LB 17  Do not break within \u2018\u2014\u2014\u2019, even with intervening spaces. -->
 				<rule id="17"> $B2 $SP* × $B2 </rule>
 				<!-- LB 18  Break after spaces. -->
 				<rule id="18"> $SP ÷ </rule>
-				<!-- LB 19  Do not break before or after ‘"’. -->
+				<!-- LB 19  Do not break before or after \u2018\"\u2019. -->
 				<rule id="19.01"> × $QU </rule>
 				<rule id="19.02"> $QU × </rule>
 				<!-- LB 20  Break before and after unresolved CB. -->
 				<rule id="20.01"> ÷ $CB </rule>
 				<rule id="20.02"> $CB ÷ </rule>
 				<!-- LB 20.9  Don't break between Hyphens and Letters when there is a break preceding the hyphen. -->
-				<!-- Originally added as a Finnish tailoring, now promoted to default CLDR/ICU behavior. -->
+				<!-- Originally added as a Finnish tailoring, now promoted to default CLDR behavior. -->
 				<!-- Must be before LB 21. Note: this is not default UAX-14 behaviour. See ICU issue ICU-8151. -->
 				<!-- (Unlike in ICU, here we just check a limited set of known breaks, ignoring some cases like LB 14). -->
-				<rule id="20.09"> $Spec5_ ($HY | $HH) × $AL </rule>
+				<rule id="20.09"> $Spec5_ $HY × $AL </rule>
 				<!-- LB 21  Do not break before hyphen-minus, other hyphens, fixed-width spaces, small kana and other non-starters, or after acute accents. -->
 				<rule id="21.01"> × $BA </rule>
 				<rule id="21.02"> × $HY </rule>
@@ -255,9 +258,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<rule id="27.01"> $JL | $JV | $JT | $H2 | $H3 × $IN </rule>
 				<rule id="27.02"> $JL | $JV | $JT | $H2 | $H3 × $PO </rule>
 				<rule id="27.03"> $PR × $JL | $JV | $JT | $H2 | $H3 </rule>
-				<!-- LB 28  Do not break between alphabetics ("at"). -->
+				<!-- LB 28  Do not break between alphabetics (\"at\"). -->
 				<rule id="28"> ($AL | $HL) × ($AL | $HL) </rule>
-				<!-- LB 29  Do not break between numeric punctuation and alphabetics ("e.g."). -->
+				<!-- LB 29  Do not break between numeric punctuation and alphabetics (\"e.g.\"). -->
 				<rule id="29"> $IS × ($AL | $HL) </rule>
 				<!-- LB 30  Do not break between letters, numbers or ordinary symbols and opening or closing punctuation. -->
 				<rule id="30.01"> ($AL | $HL | $NU) × $OP </rule>
@@ -271,6 +274,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</segmentation>
 		<segmentation type="SentenceBreak">
 			<variables>
+				<!-- VARIABLES -->
 				<variable id="$CR">\p{Sentence_Break=CR}</variable>
 				<variable id="$LF">\p{Sentence_Break=LF}</variable>
 				<variable id="$Extend">\p{Sentence_Break=Extend}</variable>
@@ -286,10 +290,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<variable id="$Close">\p{Sentence_Break=Close}</variable>
 				<variable id="$SContinue">\p{Sentence_Break=SContinue}</variable>
 				<variable id="$Any">.</variable>
-				<!-- Expresses the negation in rule 8; can't do this with normal regex, but works with UnicodeSet, which is all we need. -->
+				<!-- SPECIAL EXTENSIONS -->
 				<!-- WARNING: For Rule 5, now add format and extend to everything but Sep, Format, and Extend -->
 				<variable id="$FE">[$Format $Extend]</variable>
-				<!-- Special rules -->
 				<variable id="$NotPreLower_">[^ $OLetter $Upper $Lower $Sep $CR $LF $STerm $ATerm]</variable>
 				<variable id="$Sp">($Sp $FE*)</variable>
 				<variable id="$Lower">($Lower $FE*)</variable>
@@ -300,12 +303,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<variable id="$STerm">($STerm $FE*)</variable>
 				<variable id="$Close">($Close $FE*)</variable>
 				<variable id="$SContinue">($SContinue $FE*)</variable>
-				<!-- Macros -->
+				<!-- MACROS -->
 				<variable id="$ParaSep">($Sep | $CR | $LF)</variable>
 				<variable id="$SATerm">($STerm | $ATerm)</variable>
 			</variables>
 			<segmentRules>
-				<!-- Rules -->
+				<!-- RULES -->
 				<!-- Break at the start and end of text, unless the text is empty. -->
 				<!-- Do not break within CRLF. -->
 				<rule id="3"> $CR × $LF </rule>
@@ -331,12 +334,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<!-- Otherwise, do not break -->
 				<rule id="998"> × $Any </rule>
 			</segmentRules>
-			<suppressions type="standard">
-				<!-- root suppression is empty. -->
-			</suppressions>
 		</segmentation>
 		<segmentation type="WordBreak">
 			<variables>
+				<!-- VARIABLES -->
 				<variable id="$CR">\p{Word_Break=CR}</variable>
 				<variable id="$LF">\p{Word_Break=LF}</variable>
 				<variable id="$Newline">\p{Word_Break=Newline}</variable>
@@ -355,15 +356,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<variable id="$Double_Quote">\p{Word_Break=Double_Quote}</variable>
 				<variable id="$Single_Quote">\p{Word_Break=Single_Quote}</variable>
 				<variable id="$ZWJ">\p{Word_Break=ZWJ}</variable>
+				<!-- Note: The following may overlap with the above -->
 				<variable id="$ExtPict">\p{Extended_Pictographic}</variable>
 				<variable id="$WSegSpace">\p{Word_Break=WSegSpace}</variable>
-				<!-- Macros -->
+				<!-- MACROS -->
 				<variable id="$AHLetter">($ALetter | $Hebrew_Letter)</variable>
 				<variable id="$MidNumLetQ">($MidNumLet | $Single_Quote)</variable>
-				<!-- WARNING: For Rule 4: Fixes for GC, Format -->
+				<!-- SPECIAL EXTENSIONS -->
 				<!-- Add format and extend to everything -->
 				<variable id="$FE">[$Format $Extend $ZWJ]</variable>
-				<!-- Special rules -->
 				<variable id="$NotBreak_">[^ $Newline $CR $LF ]</variable>
 				<variable id="$Katakana">($Katakana $FE*)</variable>
 				<variable id="$ALetter">($ALetter $FE*)</variable>
@@ -380,7 +381,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<variable id="$MidNumLetQ">($MidNumLetQ $FE*)</variable>
 			</variables>
 			<segmentRules>
-				<!-- Rules -->
+				<!-- RULES -->
 				<!-- Break at the start and end of text, unless the text is empty. -->
 				<!-- Do not break within CRLF. -->
 				<rule id="3"> $CR × $LF </rule>
@@ -394,7 +395,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<!-- WARNING: Implemented as don't break before format (except after linebreaks), -->
 				<!-- AND add format and extend in all variables definitions that appear after this point! -->
 				<rule id="4"> $NotBreak_ × [$Format $Extend $ZWJ] </rule>
-				<!-- Vanilla rules -->
+				<!-- VANILLA RULES -->
 				<!-- Do not break between most letters. -->
 				<rule id="5"> $AHLetter × $AHLetter </rule>
 				<!-- Do not break letters across certain punctuation. -->
@@ -418,8 +419,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<!-- Do not break within emoji flag sequences. That is, do not break between regional indicator (RI) symbols if there is an odd number of RI characters before the break point. -->
 				<rule id="15"> ^ ($RI $RI)* $RI × $RI </rule>
 				<rule id="16"> [^$RI] ($RI $RI)* $RI × $RI </rule>
+				<!-- Otherwise, break everywhere (including around ideographs). -->
 			</segmentRules>
-			<!-- Otherwise, break everywhere (including around ideographs). -->
 		</segmentation>
 	</segmentations>
 </ldml>

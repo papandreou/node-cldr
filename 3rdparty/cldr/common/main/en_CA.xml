@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2018 Unicode, Inc.
+<!-- Copyright © 1991-2019 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 14488 $"/>
+		<version number="$Revision: 14786 $"/>
 		<language type="en"/>
 		<territory type="CA"/>
 	</identity>
@@ -244,7 +244,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 							<month type="2">Feb.</month>
 							<month type="3">Mar.</month>
 							<month type="4">Apr.</month>
-							<month type="5">May</month>
 							<month type="6">Jun.</month>
 							<month type="7">Jul.</month>
 							<month type="8">Aug.</month>
@@ -295,6 +294,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						</dayPeriodWidth>
 						<dayPeriodWidth type="narrow">
 							<dayPeriod type="midnight">mid</dayPeriod>
+							<dayPeriod type="am" draft="contributed">a.m.</dayPeriod>
+							<dayPeriod type="pm" draft="contributed">pm</dayPeriod>
 							<dayPeriod type="morning1">mor</dayPeriod>
 							<dayPeriod type="afternoon1">aft</dayPeriod>
 							<dayPeriod type="evening1">eve</dayPeriod>
@@ -349,8 +350,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="yMEd" alt="variant">E, d/M/y</dateFormatItem>
 						<dateFormatItem id="yMMMd">MMM d, y</dateFormatItem>
 						<dateFormatItem id="yMMMEd">E, MMM d, y</dateFormatItem>
-						<dateFormatItem id="yw" count="one">'week' w 'of' Y</dateFormatItem>
-						<dateFormatItem id="yw" count="other">'week' w 'of' Y</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatItem id="Md">
@@ -538,11 +537,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="sun-narrow">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} Su</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} Su’s</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} Su ago</relativeTimePattern>
 					<relativeTimePattern count="other">{0} Su’s ago</relativeTimePattern>
 				</relativeTime>
 			</field>
@@ -554,19 +551,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<relativeTime type="past">
 					<relativeTimePattern count="one">{0} Mon. ago</relativeTimePattern>
 					<relativeTimePattern count="other">{0} Mon’s. ago</relativeTimePattern>
-				</relativeTime>
-			</field>
-			<field type="mon-narrow">
-				<relative type="-1">last Mo</relative>
-				<relative type="0">this Mo</relative>
-				<relative type="1">next Mo</relative>
-				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} Mo</relativeTimePattern>
-					<relativeTimePattern count="other">in {0} Mo’s</relativeTimePattern>
-				</relativeTime>
-				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} Mo ago</relativeTimePattern>
-					<relativeTimePattern count="other">{0} Mo’s ago</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="tue-short">
@@ -581,11 +565,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="tue-narrow">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} Tu</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} Tu’s</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} Tu ago</relativeTimePattern>
 					<relativeTimePattern count="other">{0} Tu’s ago</relativeTimePattern>
 				</relativeTime>
 			</field>
@@ -624,11 +606,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="thu-narrow">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} Th</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} Th’s</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} Th ago</relativeTimePattern>
 					<relativeTimePattern count="other">{0} Th’s ago</relativeTimePattern>
 				</relativeTime>
 			</field>
@@ -667,11 +647,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="sat-narrow">
 				<relativeTime type="future">
-					<relativeTimePattern count="one">in {0} Sa</relativeTimePattern>
 					<relativeTimePattern count="other">in {0} Sa’s</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} Sa ago</relativeTimePattern>
 					<relativeTimePattern count="other">{0} Sa’s ago</relativeTimePattern>
 				</relativeTime>
 			</field>
@@ -798,12 +776,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					<daylight>PDT</daylight>
 				</short>
 			</metazone>
-			<metazone type="Argentina">
-				<long>
-					<generic>Argentina Time</generic>
-					<standard>Argentina Standard Time</standard>
-				</long>
-			</metazone>
 			<metazone type="Atlantic">
 				<short>
 					<generic>AT</generic>
@@ -850,7 +822,16 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="energy-kilowatt-hour">
 				<unitPattern count="one">{0} kilowatt-hour</unitPattern>
-				<unitPattern count="other">{0} kilowatt-hours</unitPattern>
+			</unit>
+			<unit type="torque-newton-meter">
+				<displayName draft="contributed">newton-metres</displayName>
+				<unitPattern count="one" draft="contributed">{0} newton-metre</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} newton-metres</unitPattern>
+			</unit>
+			<unit type="volume-fluid-ounce-imperial">
+				<displayName draft="contributed">imp. fluid ounces</displayName>
+				<unitPattern count="one" draft="contributed">{0} imp. fluid ounce</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} imp. fluid ounces</unitPattern>
 			</unit>
 		</unitLength>
 		<unitLength type="short">
@@ -1179,6 +1160,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one" draft="contributed">{0} fl. oz.</unitPattern>
 				<unitPattern count="other" draft="contributed">{0} fl. oz.</unitPattern>
 			</unit>
+			<unit type="volume-fluid-ounce-imperial">
+				<displayName draft="contributed">imp. fl. oz.</displayName>
+				<unitPattern count="one" draft="contributed">{0} fl. oz. imp.</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} fl. oz. imp.</unitPattern>
+			</unit>
 			<unit type="volume-tablespoon">
 				<displayName draft="contributed">tbsp.</displayName>
 				<unitPattern count="one" draft="contributed">{0} tbsp.</unitPattern>
@@ -1188,6 +1174,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName draft="contributed">tsp.</displayName>
 				<unitPattern count="one" draft="contributed">{0} tsp.</unitPattern>
 				<unitPattern count="other" draft="contributed">{0} tsp.</unitPattern>
+			</unit>
+			<unit type="volume-barrel">
+				<unitPattern count="one" draft="contributed">{0} bbl.</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} bbl.</unitPattern>
 			</unit>
 		</unitLength>
 		<unitLength type="narrow">
@@ -1301,6 +1291,16 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 		</unitLength>
 	</units>
+	<listPatterns>
+		<listPattern type="standard-narrow">
+			<listPatternPart type="end" draft="contributed">{0}, and {1}</listPatternPart>
+			<listPatternPart type="2" draft="contributed">{0} and {1}</listPatternPart>
+		</listPattern>
+		<listPattern type="standard-short">
+			<listPatternPart type="end" draft="contributed">{0}, and {1}</listPatternPart>
+			<listPatternPart type="2" draft="contributed">{0} and {1}</listPatternPart>
+		</listPattern>
+	</listPatterns>
 	<characterLabels>
 		<characterLabel type="downwards_arrows" draft="contributed">downward arrow</characterLabel>
 		<characterLabel type="downwards_upwards_arrows" draft="contributed">downward upward arrow</characterLabel>

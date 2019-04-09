@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2018 Unicode, Inc.
+<!-- Copyright © 1991-2019 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 14418 $"/>
+		<version number="$Revision: 14786 $"/>
 		<language type="en"/>
 		<territory type="GB"/>
 	</identity>
@@ -15,6 +15,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<languages>
 			<language type="nds_NL">West Low German</language>
 		</languages>
+		<scripts>
+			<script type="Thai" draft="contributed">Thai</script>
+		</scripts>
 		<territories>
 			<territory type="BL">St Barthélemy</territory>
 			<territory type="KN">St Kitts &amp; Nevis</territory>
@@ -60,6 +63,24 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</dateTimeFormats>
 			</calendar>
 			<calendar type="gregorian">
+				<dayPeriods>
+					<dayPeriodContext type="format">
+						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="noon">noon</dayPeriod>
+						</dayPeriodWidth>
+						<dayPeriodWidth type="narrow">
+							<dayPeriod type="noon">n</dayPeriod>
+						</dayPeriodWidth>
+						<dayPeriodWidth type="wide">
+							<dayPeriod type="noon">noon</dayPeriod>
+						</dayPeriodWidth>
+					</dayPeriodContext>
+					<dayPeriodContext type="stand-alone">
+						<dayPeriodWidth type="narrow">
+							<dayPeriod type="pm">pm</dayPeriod>
+						</dayPeriodWidth>
+					</dayPeriodContext>
+				</dayPeriods>
 				<timeFormats>
 					<timeFormatLength type="full">
 						<timeFormat>
@@ -131,7 +152,27 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</dateTimeFormats>
 			</calendar>
 		</calendars>
-		<fields/>
+		<fields>
+			<field type="day">
+				<relative type="-1">yesterday</relative>
+				<relative type="0">today</relative>
+				<relative type="1">tomorrow</relative>
+			</field>
+			<field type="day-short">
+				<relative type="-1" draft="contributed">yesterday</relative>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">in {0} days</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">{0} days ago</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="day-narrow">
+				<relative type="-1" draft="contributed">yesterday</relative>
+				<relative type="0" draft="contributed">today</relative>
+				<relative type="1" draft="contributed">tomorrow</relative>
+			</field>
+		</fields>
 		<timeZoneNames>
 			<zone type="America/St_Barthelemy">
 				<exemplarCity>St Barthélemy</exemplarCity>
@@ -159,6 +200,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<zone type="America/St_Thomas">
 				<exemplarCity>St Thomas</exemplarCity>
 			</zone>
+			<metazone type="Australia_Central">
+				<long>
+					<generic>Central Australia Time</generic>
+					<standard>Australian Central Standard Time</standard>
+				</long>
+			</metazone>
 			<metazone type="Europe_Central">
 				<short>
 					<generic>CET</generic>
@@ -191,6 +238,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	</dates>
 	<numbers>
 		<currencies>
+			<currency type="MGA">
+				<displayName count="one" draft="contributed">Malagasy ariary</displayName>
+			</currency>
 			<currency type="SHP">
 				<displayName>St Helena Pound</displayName>
 				<displayName count="one">St Helena pound</displayName>
@@ -218,6 +268,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<unit type="concentr-permille">
 				<displayName draft="contributed">per mille</displayName>
 			</unit>
+			<unit type="mass-stone">
+				<unitPattern count="other" draft="contributed">{0} st</unitPattern>
+			</unit>
+			<unit type="volume-megaliter">
+				<unitPattern count="other" draft="contributed">{0} Ml</unitPattern>
+			</unit>
 		</unitLength>
 	</units>
 	<listPatterns>
@@ -229,6 +285,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		</listPattern>
 		<listPattern type="standard-short">
 			<listPatternPart type="end">{0} and {1}</listPatternPart>
+			<listPatternPart type="2">{0} and {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
+	<characterLabels>
+		<characterLabel type="math_symbols">maths symbol</characterLabel>
+	</characterLabels>
 </ldml>
