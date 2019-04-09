@@ -8,7 +8,8 @@
     "lint": "eslint . && prettier --check '**/*.{js,md}'",
     "preversion": "npm test",
     "ci": "npm test && npm run lint && npm run coverage",
-    "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -x lib/cldrPluralRuleTermFunctionByName.js -- npm test && echo google-chrome coverage/lcov-report/index.html"
+    "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -x lib/cldrPluralRuleTermFunctionByName.js -- npm test && echo google-chrome coverage/lcov-report/index.html",
+    "version": "offline-github-changelog --next=${npm_package_version} > CHANGELOG.md && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "mocha": "^6.0.0",
     "nyc": "^13.1.0",
+    "offline-github-changelog": "^1.6.0",
     "prettier": "~1.16.0",
     "unexpected": "^11.0.0",
     "unexpected-function-equality": "^2.0.0"
