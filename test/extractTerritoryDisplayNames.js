@@ -22,7 +22,7 @@ describe('extractSubdivisionDisplayNames', () => {
   const subdivisions_sv = cldr.extractSubdivisionDisplayNames('sv')
 
   it('should export an object code - name dictionay', () => {
-    expect(subdivisions_en, 'to have keys satisfying', /[A-Za-z0-9]{2,6}/);
+    expect(subdivisions_en, 'to have keys satisfying', /[A-Za-z0-9]{1,4}/);
   });
 
   it('should contain localized named', () => {
