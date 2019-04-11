@@ -207,6 +207,16 @@ cldr.extractLanguageDisplayNames('it').en;
 ('inglese');
 ```
 
+### cldr.extractSubdivisionDisplayNames(localeId='root')
+
+Extract a subnational territory ID => display name hash for a locale.
+For global regions and countries, see [extractTerritoryDisplayNames](#cldrextractterritorydisplaynameslocaleidroot)
+
+```javascript
+ cldr.extractSubdivisionDisplayNames('en').dk85
+('Zealand');
+```
+
 ### cldr.extractTimeZoneDisplayNames(localeId='root')
 
 Extract a time zone ID (Olson) => display name hash for a locale:
@@ -233,7 +243,9 @@ cldr.extractTimeZoneFormats('da');
 
 ### cldr.extractTerritoryDisplayNames(localeId='root')
 
-Extract a territory ID => display name hash for a locale:
+Extract a territory ID => display name hash for a locale.
+This method will return global regions and countries. For subnational
+divisions, see [extractSubdivisionDisplayNames](#cldrextractsubdivisiondisplaynameslocaleidroot).
 
 ```javascript
 cldr.extractTerritoryDisplayNames('fr').US;
