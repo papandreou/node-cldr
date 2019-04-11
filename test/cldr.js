@@ -7,6 +7,7 @@ const localeLessExtractors = new Set([
   'extractTerritories',
   'extractTerritoryInfo',
   'extractTerritoryContainmentGroups',
+  'extractSubdivisionContainmentGroups',
   'extractLanguageSupplementalData',
   'extractLanguageSupplementalMetadata',
   'extractNumberingSystem',

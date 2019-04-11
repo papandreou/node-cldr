@@ -207,6 +207,19 @@ cldr.extractLanguageDisplayNames('it').en;
 ('inglese');
 ```
 
+### cldr.extractSubdivisionDisplayNames(localeId)
+
+Extract a subnational territory ID => display name hash for a locale.
+Codes follow the BCP47 standard, e.g. `usca` for California, USA.
+Note that these codes are similar but not identical to ISO 3166-2 codes. Unlike ISO 3166-2, CLDR never reuses a code.
+
+For global regions and countries, see [extractTerritoryDisplayNames](#cldrextractterritorydisplaynameslocaleidroot)
+
+```javascript
+cldr.extractSubdivisionDisplayNames('en').dk85;
+('Zealand');
+```
+
 ### cldr.extractTimeZoneDisplayNames(localeId='root')
 
 Extract a time zone ID (Olson) => display name hash for a locale:
@@ -231,9 +244,11 @@ cldr.extractTimeZoneFormats('da');
   regions: { daylight: '{0} (+1)', standard: '{0} (+0)' } }
 ```
 
-### cldr.extractTerritoryDisplayNames(localeId='root')
+### cldr.extractTerritoryDisplayNames(localeId)
 
-Extract a territory ID => display name hash for a locale:
+Extract a territory ID => display name hash for a locale.
+This method will return global regions and countries. For subnational
+divisions, see [extractSubdivisionDisplayNames](#cldrextractsubdivisiondisplaynameslocaleidroot).
 
 ```javascript
 cldr.extractTerritoryDisplayNames('fr').US;
