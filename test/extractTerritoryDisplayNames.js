@@ -3,7 +3,7 @@ const cldr = require('../lib/cldr');
 
 describe('extractTerritoryDisplayNames', () => {
 
-  it('should export an object code - name dictionay', () => {
+  it('should export an object code - name dictionary', () => {
     const territories = cldr.extractTerritoryDisplayNames('en')
     expect(territories, 'to have keys satisfying', /[A-Z0-9]{2,3}/);
   });
