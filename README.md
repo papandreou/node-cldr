@@ -240,6 +240,34 @@ cldr.extractTerritoryDisplayNames('fr').US;
 ('États-Unis');
 ```
 
+### extractTerritoryContainmentGroups()
+
+Get a flattened tree structure with information about which territories are
+contained in other territories. The territories are given by their id, so the
+result is locale-independent. Consult `extractTerritoryDisplayNames` for the
+translated display names.
+
+```javascript
+cldr.extractTerritoryContainmentGroups()
+{ '142':
+   { type: '142',
+     contains: [ '145', '143', '030', '034', '035' ],
+     parent: '001' },
+  '143':
+   { type: '143',
+     contains: [ 'TM', 'TJ', 'KG', 'KZ', 'UZ' ],
+     parent: '142' },
+  [...]
+  '009':
+   { type: '009',
+     contains: [ '053', '054', '057', '061', 'QO' ],
+     parent: '001' },
+  QO:
+   { type: 'QO',
+     contains: [ 'AQ', 'AC', 'CP', 'DG', 'TA' ],
+     parent: '009' } }
+```
+
 ### cldr.extractCurrencyInfoById(localeId='root')
 
 Extract hash with currency ID keys mapping to currency info objects
