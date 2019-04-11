@@ -216,7 +216,7 @@ Note that these codes are similar but not identical to ISO 3166-2 codes. Unlike 
 For global regions and countries, see [extractTerritoryDisplayNames](#cldrextractterritorydisplaynameslocaleidroot)
 
 ```javascript
- cldr.extractSubdivisionDisplayNames('en').dk85
+cldr.extractSubdivisionDisplayNames('en').dk85;
 ('Zealand');
 ```
 
