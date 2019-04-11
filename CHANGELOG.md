@@ -1,3 +1,15 @@
+### v5.2.0 (2019-04-11)
+
+#### Pull requests
+
+- [#82](https://github.com/papandreou/node-cldr/pull/82) Subregions ([Andreas Lind](mailto:andreaslindpetersen@gmail.com), [rotsee](mailto:mejl@leowallentin.se))
+- [#80](https://github.com/papandreou/node-cldr/pull/80) Add a changelog ([Andreas Lind](mailto:andreas.lind@peakon.com), [Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+
+#### Commits to master
+
+- [Add docs for extractTerritoryContainmentGroups](https://github.com/papandreou/node-cldr/commit/092758f13c404281830b9e7dded0b31acc09363c) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [CLDR 34 =&gt; 35 in README](https://github.com/papandreou/node-cldr/commit/f82f40a2c233466a375c55c8acdd153fcf88168e) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+
 ### v5.1.0 (2019-04-09)
 
 - [#78](https://github.com/papandreou/node-cldr/pull/78) Update CLDR to release 35 ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
