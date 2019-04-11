@@ -8,7 +8,7 @@ describe('extractTerritoryDisplayNames', () => {
     expect(territories, 'to have keys satisfying', /[A-Z0-9]{2,3}/);
   });
 
-  it('should contain localized named', () => {
+  it('should contain localized names', () => {
     const territoriesEn = cldr.extractTerritoryDisplayNames('en')
     const territoriesSv = cldr.extractTerritoryDisplayNames('sv')
     expect(territoriesEn.MK, 'to equal', 'North Macedonia');
