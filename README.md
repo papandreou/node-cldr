@@ -210,6 +210,9 @@ cldr.extractLanguageDisplayNames('it').en;
 ### cldr.extractSubdivisionDisplayNames(localeId)
 
 Extract a subnational territory ID => display name hash for a locale.
+Codes follow the BCP47 standard, e.g. `usca` for California, USA.
+Note that these codes are similar but not identical to ISO 3166-2 codes. Unlike ISO 3166-2, CLDR never reuses a code.
+
 For global regions and countries, see [extractTerritoryDisplayNames](#cldrextractterritorydisplaynameslocaleidroot)
 
 ```javascript
