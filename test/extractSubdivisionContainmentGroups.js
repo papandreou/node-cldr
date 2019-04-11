@@ -1,7 +1,7 @@
 const expect = require('unexpected');
 const cldr = require('../lib/cldr');
 
-describe('extractTerritoryContainmentGroups', () => {
+describe('extractSubdivisionContainmentGroups', () => {
   let subdivisionContainmentGroups;
   before(() => {
     subdivisionContainmentGroups = cldr.extractSubdivisionContainmentGroups();
