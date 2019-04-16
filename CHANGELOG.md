@@ -1,5 +1,4 @@
-### v5.2.0 (2019-04-11)
-
+### v5.2.0
 #### Pull requests
 
 - [#82](https://github.com/papandreou/node-cldr/pull/82) Subregions ([Andreas Lind](mailto:andreaslindpetersen@gmail.com), [rotsee](mailto:mejl@leowallentin.se))
@@ -277,16 +276,96 @@
 
 ### v2.1.1 (2014-02-17)
 
+- [Update mocha to 1.17.1 and unexpected to 2.1.2.](https://github.com/papandreou/node-cldr/commit/075257ffd605f3b58d503d5d8556034112229dbd) ([Andreas Lind Petersen](mailto:andreas@one.com))
+
+### v2.1.0
+- [Release 2.1.0.](https://github.com/papandreou/node-cldr/commit/d221ee3943e7a6330e61d176e08f90810951772f) ([Andreas Lind Petersen](mailto:andreas@one.com))
+
+### v2.0.1
+- [Release 2.0.1.](https://github.com/papandreou/node-cldr/commit/efd0e1efbd9a51fd6e5824ec7bdf118d9bf2c8fe) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [extractListPattern: camelCase unit-narrow =&gt; unitNarrow etc. See \#9.](https://github.com/papandreou/node-cldr/commit/2ff979111efe0dbf9316f824e4f7d987ae8d0211) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Fixed extractUnitPatterns so it includes a compoundUnit property for each unit length and changed the structure to resemble the source data.](https://github.com/papandreou/node-cldr/commit/3c3b9f603c77303d73a9121566c56555bb407d8f) ([Andreas Lind Petersen](mailto:andreas@one.com))
+
+### v2.0.0
+- [Release 2.0.0.](https://github.com/papandreou/node-cldr/commit/ac89439c98d29bcff4b80eb721a981f185b23070) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Update mocha to 1.15.1 and explicitly add the --check-leaks switch now that it's no longer the default.](https://github.com/papandreou/node-cldr/commit/7acc2b003bb6731fdde8484000b24be8471e2470) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [README.md: Fixed extractRbnfFunctionByType example.](https://github.com/papandreou/node-cldr/commit/dbc090c24dc0aed8bab59770852f12c3a5fcc1dd) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [README.md: Clarify that node-cldr doesn't try to be backwards compatible with earlier versions than the bundled one.](https://github.com/papandreou/node-cldr/commit/3173328b0f0a2bde2daf2acbab1eb299f7c3216b) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Fixed \(and added tests for\) extractListPatterns \(\#9\).](https://github.com/papandreou/node-cldr/commit/4df19cc4a41b5df18f55f35533f451c8026fb34d) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [+4 more](https://github.com/papandreou/node-cldr/compare/v1.2.1...v2.0.0)
+
+### v1.2.1
+- [Release 1.2.1.](https://github.com/papandreou/node-cldr/commit/d29221d02a20878c30e6b37ae66e0a82d72db269) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Fixed and added test for cldr.extractFields, which no longer takes a calendar ID due to updates in CLDR 23.1 \(\#9\).](https://github.com/papandreou/node-cldr/commit/b7fab7436407c3cad21da4decf66c569ce0d6242) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Update mocha to 1.15.1 and explicitly add the --check-leaks switch now that it's no longer the default.](https://github.com/papandreou/node-cldr/commit/7e488e3f31f35c4ce2d7551ccf44f22c93e51098) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [README.md: Fixed extractRbnfFunctionByType example.](https://github.com/papandreou/node-cldr/commit/ad17866023e1e53feb2bd91d26bee520cef347ec) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Removed the extractDefaultDateTimePatternName method, which has been broken since the update to 23.1, and it doesn't seem like that data is available anymore. See \#9.](https://github.com/papandreou/node-cldr/commit/97f2f2e17052f4634c7394288676168c3188e584) ([Andreas Lind Petersen](mailto:andreas@one.com))
+
+### v1.2.0
+- [Release 1.2.0.](https://github.com/papandreou/node-cldr/commit/89acad79427bc7c1ab6f8ea997c5412160440ffc) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Test: Replace expect.js with unexpected.](https://github.com/papandreou/node-cldr/commit/8291c89262a0e4fba9d41b9a418d130f2eb057f4) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [package.json: Indent with 2 spaces.](https://github.com/papandreou/node-cldr/commit/afb2c81e0b7f5e4349be25cd7ff6935ddd689d74) ([Andreas Lind Petersen](mailto:andreas@one.com))
+
+### v1.1.0
+- [Release 1.1.0.](https://github.com/papandreou/node-cldr/commit/756fbc9114158b2eb5378f1ed13d905cb396be0c) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Update CLDR to 23.1.](https://github.com/papandreou/node-cldr/commit/96bc9f761d82e53e965343d6a5e53fac995ff28a) ([Andreas Lind Petersen](mailto:andreas@one.com))
+
+### v1.0.2
 #### Pull requests
 
 - [#5](https://github.com/papandreou/node-cldr/pull/5) Properly calculate divisors in rule-based number formatters ([Cameron Dutro](mailto:cdutro@twitter.com))
 
 #### Commits to master
 
-- [Update mocha to 1.17.1 and unexpected to 2.1.2.](https://github.com/papandreou/node-cldr/commit/075257ffd605f3b58d503d5d8556034112229dbd) ([Andreas Lind Petersen](mailto:andreas@one.com))
-- [Release 2.1.0.](https://github.com/papandreou/node-cldr/commit/d221ee3943e7a6330e61d176e08f90810951772f) ([Andreas Lind Petersen](mailto:andreas@one.com))
-- [Release 2.0.1.](https://github.com/papandreou/node-cldr/commit/efd0e1efbd9a51fd6e5824ec7bdf118d9bf2c8fe) ([Andreas Lind Petersen](mailto:andreas@one.com))
-- [extractListPattern: camelCase unit-narrow =&gt; unitNarrow etc. See \#9.](https://github.com/papandreou/node-cldr/commit/2ff979111efe0dbf9316f824e4f7d987ae8d0211) ([Andreas Lind Petersen](mailto:andreas@one.com))
-- [Fixed extractUnitPatterns so it includes a compoundUnit property for each unit length and changed the structure to resemble the source data.](https://github.com/papandreou/node-cldr/commit/3c3b9f603c77303d73a9121566c56555bb407d8f) ([Andreas Lind Petersen](mailto:andreas@one.com))
-- [+115 more](https://github.com/papandreou/node-cldr/compare/075257ffd605f3b58d503d5d8556034112229dbd%5E...v2.1.1)
+- [Release 1.0.2.](https://github.com/papandreou/node-cldr/commit/4dae7fad817eaf11336bf4a43cdd9818a714f1ee) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [README.md: standalone =&gt; standAlone in examples.](https://github.com/papandreou/node-cldr/commit/255df756d58f598692d42b2ef82d7f0aad10b8d2) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Update README.md](https://github.com/papandreou/node-cldr/commit/bc2dbaa500952900d11f3b4a45a7c11dad250218) ([Andreas Lind Petersen](mailto:andreas@one.com))
+
+### v1.0.1
+- [Release 1.0.1.](https://github.com/papandreou/node-cldr/commit/aaf2a8cf03040b7d01fb2e54a784d700755d268f) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [package.json: Added test and prepublish scripts so the test suite has to pass before a new version can be published.](https://github.com/papandreou/node-cldr/commit/8736387eff732710b116d0ce394af23ac7036f30) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Fixed test.](https://github.com/papandreou/node-cldr/commit/6ab160e999fa5b239a2f13ed4bc7d81b1b581b75) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Update libxmljs to 0.7.1 \(node.js 0.10 compatible\).](https://github.com/papandreou/node-cldr/commit/241e3c027bd1118d2973d9664f56358154ab2009) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Fixed typo in comment.](https://github.com/papandreou/node-cldr/commit/332a2535a6d8ca803265ad87ff49998ea9a687eb) ([Andreas Lind Petersen](mailto:andreas@one.com))
+
+### v1.0.0
+- [Release 1.0.0.](https://github.com/papandreou/node-cldr/commit/104365c620d37374a6ba656ae7377f741defe493) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Cldr.js =&gt; cldr.js now that it doesn't export a constructor.](https://github.com/papandreou/node-cldr/commit/89bafbb5342021ecb67fc09b66dcfb21dbdbabf8) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [load =&gt; preload](https://github.com/papandreou/node-cldr/commit/1719d04dcf565a2c33d417474ecbb03ebed4ea59) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Added the CLDR 22.1 files and changed the API so require\('cldr'\) returns an instance of the Cldr class pointing at the bundled files.](https://github.com/papandreou/node-cldr/commit/c38ff21670f72fa6727773cd4403b66012bc2d73) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Moved initialization of the file listings cache and the locale ids from the constructor to getters.](https://github.com/papandreou/node-cldr/commit/ebf34c6dcea9b03f18cfac108cfa02e96e9d3c38) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [+1 more](https://github.com/papandreou/node-cldr/compare/v0.1.0...v1.0.0)
+
+### v0.1.0
+- [Release 0.1.0.](https://github.com/papandreou/node-cldr/commit/7c8dc91b97b0769f90ddbcc1dc7ba99b9196a951) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [cldr.calendarIds: Report the Gregorian calendar as 'gregorian', not 'gregory'.](https://github.com/papandreou/node-cldr/commit/643960f7d55392414aa627bb53cc1241b777deec) ([Andreas Lind Petersen](mailto:andreas@one.com))
+
+### v0.0.5
+- [Release 0.0.5.](https://github.com/papandreou/node-cldr/commit/a1b8b54b7dd4e9545da47072b2309fbbc5d862e3) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Rewrote cldrPluralRuleToJavaScriptAst to be less of an ugly hack and to support the correct 'in' semantics. Fixes \#4.](https://github.com/papandreou/node-cldr/commit/c9f1b027fb036e5dacacf58db15266050ba2b193) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Removed -test suffix from test file name.](https://github.com/papandreou/node-cldr/commit/d5358fb45e1fccf67bf48e7a58240413597f4f97) ([Andreas Lind Petersen](mailto:andreas@one.com))
+
+### v0.0.4
+- [Release 0.0.4.](https://github.com/papandreou/node-cldr/commit/7055055c02ddc990b24c198f4e101074db6e1f63) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Cldr.extractNumberSymbols: Support older CLDR releases that don't have a numberSystem attribute on &lt;symbols&gt;.](https://github.com/papandreou/node-cldr/commit/d5cdd2b06e3cf48b7e34509637367c53eb36331b) ([Andreas Lind Petersen](mailto:andreas@one.com))
+
+### v0.0.3
+- [Release 0.0.3.](https://github.com/papandreou/node-cldr/commit/51931301309ca31e8c6ae56c5dc015f81ff056ce) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [extractMonthNames: Fixed ReferenceError caused by careless copy\/paste.](https://github.com/papandreou/node-cldr/commit/cfe1b18cc5ad1c55d5e20895cdf6c7367840b238) ([Andreas Lind Petersen](mailto:andreas@one.com))
+
+### v0.0.2
+- [Release 0.0.2.](https://github.com/papandreou/node-cldr/commit/4866aa641bb8a237e95a1d8511f6b7ef4321591e) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [README: Fixed typo](https://github.com/papandreou/node-cldr/commit/b82542532af28ecb04cd4951aa257d849d20ce86) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [README: camelcase =&gt; camelCase](https://github.com/papandreou/node-cldr/commit/5dab9360f3fcd50f4839985baf54328dc01e3d90) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Cleaned up camelCasing code.](https://github.com/papandreou/node-cldr/commit/34cd5b25f290b5c915ec716766638923357014d9) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Use the original query instead of aliasNode.path\(\) when building the query for following the alias. Fixes \#1.](https://github.com/papandreou/node-cldr/commit/61db1361e40a3c98b8e82c47a8a5d1c2b9174751) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [+12 more](https://github.com/papandreou/node-cldr/compare/v0.0.1...v0.0.2)
+
+### v0.0.1
+- [Added package.json, release 0.0.1.](https://github.com/papandreou/node-cldr/commit/a30bf16d71ae3b763e05aaf1a1fed4a78fb77739) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Added README.](https://github.com/papandreou/node-cldr/commit/91f3f694e52dc0367975abfc01782a4f696eb406) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [extractDateFormatItems: Removed accidentally copy\/pasted dateOrTime parameter.](https://github.com/papandreou/node-cldr/commit/bcd26e74de56999759e9e7ac00a143ee02163daf) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Added extractDateFormats and extractTimeFormats methods.](https://github.com/papandreou/node-cldr/commit/1c016c7e59f13f943169da7395c8dfe58a74fc8b) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [Cldr: Support instantiation without the 'new' operator.](https://github.com/papandreou/node-cldr/commit/8e933e96a4574c79bc4d65d77ff48e1cb98f72ba) ([Andreas Lind Petersen](mailto:andreas@one.com))
+- [+57 more](https://github.com/papandreou/node-cldr/compare/a30bf16d71ae3b763e05aaf1a1fed4a78fb77739%5E...v0.0.1)
 
