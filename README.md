@@ -207,6 +207,15 @@ cldr.extractLanguageDisplayNames('it').en;
 ('inglese');
 ```
 
+### cldr.extractSubdivisionAliases()
+
+Subdivision aliases contain deprecated or alternative subdivision codes. Note that the returned code may be either a territory code, (such as 'cn71' => 'TW'), or a subdivision code.
+
+```javascript
+cldr.extractSubdivisionAliases().czol;
+({ replacement: 'cz71', reason: 'deprecated' });
+```
+
 ### cldr.extractSubdivisionDisplayNames(localeId)
 
 Extract a subnational territory ID => display name hash for a locale.
@@ -242,6 +251,15 @@ cldr.extractTimeZoneFormats('da');
   region: 'Tidszone for {0}',
   fallback: '{1} ({0})',
   regions: { daylight: '{0} (+1)', standard: '{0} (+0)' } }
+```
+
+### cldr.extractTerritoryAliases()
+
+Territory aliases contain deprecated or alternative territory codes.
+
+```javascript
+cldr.extractTerritoryAliases().BU;
+({ replacement: 'MM', reason: 'deprecated' });
 ```
 
 ### cldr.extractTerritoryDisplayNames(localeId)
