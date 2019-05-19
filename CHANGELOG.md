@@ -1,3 +1,8 @@
+### v5.3.0
+#### Pull requests
+
+- [#82](https://github.com/papandreou/node-cldr/pull/86) Add extractTerritoryAliases() and extractSubdivisionAliases() methods
+
 ### v5.2.0
 #### Pull requests
 
