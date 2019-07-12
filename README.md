@@ -899,6 +899,23 @@ or secondary for the language.
   [...] }
 ```
 
+### cldr.extractWeekData()
+
+Extract supplemental week data, including what day should be considered the first day of the week. The data is grouped by terrotories and/or locales.
+
+```javascript
+{ firstDay:
+  [
+    { day='mon', territories=[ '001', 'AD', [...] ] },
+    { day='fri', territories=[ 'MV'] },
+    { day='sat', territories=[ 'AE', 'AF', [...] ] },
+    { day='sun', territories=[ 'AG', 'AR', [...] ] },
+    { day='sun', variant=true, territories=[ 'GB' ] },
+  ],
+  [...] }
+```
+
+
 ## License
 
 node-cldr is licensed under a standard 3-clause BSD license -- see the
