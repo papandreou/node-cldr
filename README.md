@@ -915,7 +915,6 @@ Extract supplemental week data, including what day should be considered the firs
   [...] }
 ```
 
-
 ## License
 
 node-cldr is licensed under a standard 3-clause BSD license -- see the
