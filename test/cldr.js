@@ -13,7 +13,8 @@ const localeLessExtractors = new Set([
   'extractLanguageSupplementalData',
   'extractLanguageSupplementalMetadata',
   'extractNumberingSystem',
-  'extractDigitsByNumberSystemId'
+  'extractDigitsByNumberSystemId',
+  'extractWeekData'
 ]);
 
 describe('cldr', function() {
