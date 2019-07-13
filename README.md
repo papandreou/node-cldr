@@ -901,7 +901,7 @@ or secondary for the language.
 
 ### cldr.extractWeekData()
 
-Extract supplemental week data, including what day should be considered the first day of the week. The data is grouped by terrotories and/or locales.
+Extract supplemental week data, including what day should be considered the first day of the week. The data is grouped by territories and/or locales.
 
 ```javascript
 { firstDay:
