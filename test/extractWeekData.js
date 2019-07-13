@@ -2,7 +2,6 @@ const expect = require('unexpected');
 const cldr = require('../lib/cldr');
 
 describe('cldr.extractWeekData()', () => {
-
   it('should extract arrays of data', () => {
     expect(cldr.extractWeekData(), 'to have keys', [
       'minDays',
@@ -49,5 +48,4 @@ describe('cldr.extractWeekData()', () => {
       'AF'
     );
   });
-
 });
