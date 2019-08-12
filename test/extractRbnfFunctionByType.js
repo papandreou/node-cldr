@@ -226,7 +226,8 @@ describe('extractRbnfFunctionByType', () => {
     });
   });
 
-  it('should foo', function() {
+  // https://github.com/papandreou/node-cldr/issues/76
+  it('should render long Swedish spellout cardinals', function() {
     const swedishRbnfFunctionByType = cldr.extractRbnfFunctionByType('sv');
     expect(
       swedishRbnfFunctionByType.renderSpelloutCardinalNeuter(1800000),
