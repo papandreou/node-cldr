@@ -13,6 +13,17 @@ describe('extractTerritoryDisplayNames', () => {
     expect(territoriesEn.MK, 'to equal', 'North Macedonia');
     expect(territoriesSv.MK, 'to equal', 'Nordmakedonien');
   });
+
+  it('should include the -alt-short and -alt-variant names', function() {
+    const territoriesEn = cldr.extractTerritoryDisplayNames('en');
+    expect(territoriesEn, 'to satisfy', {
+      UN: 'United Nations',
+      'UN-alt-short': 'UN',
+      US: 'United States',
+      'US-alt-short': 'US',
+      'FK-alt-variant': 'Falkland Islands (Islas Malvinas)'
+    });
+  });
 });
 
 describe('extractSubdivisionDisplayNames', () => {

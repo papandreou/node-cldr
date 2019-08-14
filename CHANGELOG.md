@@ -1,7 +1,36 @@
+### v5.4.0 (2019-08-12)
+
+#### Pull requests
+
+- [#95](https://github.com/papandreou/node-cldr/pull/95) Allow alternative territory names ([ENT8R](mailto:info.ent8r@gmail.com))
+- [#94](https://github.com/papandreou/node-cldr/pull/94) Upgrade eslint-plugin-mocha to version 6.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#90](https://github.com/papandreou/node-cldr/pull/90) Upgrade eslint-config-prettier to version 6.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#89](https://github.com/papandreou/node-cldr/pull/89) Upgrade eslint to version 6.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#88](https://github.com/papandreou/node-cldr/pull/88) Upgrade eslint-config-prettier to version 5.0.0 ([depfu[bot]](mailto:depfu[bot]@users.noreply.github.com))
+- [#87](https://github.com/papandreou/node-cldr/pull/87) Upgrade prettier to version 1.18.2 ([depfu[bot]](mailto:depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [Fix bad test description](https://github.com/papandreou/node-cldr/commit/90a019f311f66c624ba8ad57126b7ff2d3f3a062) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Add quick test for the -alt-\(short|variant\) territory names](https://github.com/papandreou/node-cldr/commit/55c3e6c6d77114cd5152f44f80e7699154822f6f) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Remove empty, long-unused file](https://github.com/papandreou/node-cldr/commit/abc9be0449687bb89114cc11cd10a81761810a2e) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [minor upgrades](https://github.com/papandreou/node-cldr/commit/3a4a4ca3d4b5ce33a7f1ec57eb2e8c18287d875f) ([rotsee](mailto:mejl@leowallentin.se))
+- [remove lodash where it was only used for merging two simple objects](https://github.com/papandreou/node-cldr/commit/4094e1720f4c12171267ddf58225a5d870b47d31) ([rotsee](mailto:mejl@leowallentin.se))
+- [+2 more](https://github.com/papandreou/node-cldr/compare/v5.3.0...v5.4.0)
+
 ### v5.3.0
 #### Pull requests
 
-- [#82](https://github.com/papandreou/node-cldr/pull/86) Add extractTerritoryAliases() and extractSubdivisionAliases() methods
+- [#84](https://github.com/papandreou/node-cldr/pull/84) Upgrade nyc to version 14.0.0 ([depfu[bot]](mailto:depfu[bot]@users.noreply.github.com))
+- [#83](https://github.com/papandreou/node-cldr/pull/83) Upgrade prettier to version 1.17.0 ([depfu[bot]](mailto:depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [minor upgrades](https://github.com/papandreou/node-cldr/commit/bb8a57edf4f3711551db2605e53c575b0334f323) ([rotsee](mailto:mejl@leowallentin.se))
+- [Drop node.js 6 support, add 12 \(semver-major\)](https://github.com/papandreou/node-cldr/commit/78676fb3886a9b787679d4404e92303aeb60630a) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Update eslint-plugin-node to version 9.0.1](https://github.com/papandreou/node-cldr/commit/f6403e4c8c78f6a91f660d41c1a6ceab7697e5c4) ([depfu[bot]](mailto:depfu[bot]@users.noreply.github.com))
+- [Update offline-github-changelog to ^1.6.1](https://github.com/papandreou/node-cldr/commit/b3e2f7155fc3c47dc0e57b1e747ebe1151bf4f6e) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Fix CHANGELOG](https://github.com/papandreou/node-cldr/commit/ca00d3eb71fe1641ad20e3f47d2ddf22860259d2) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
 
 ### v5.2.0
 #### Pull requests
