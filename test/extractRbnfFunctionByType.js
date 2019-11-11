@@ -169,7 +169,7 @@ describe('extractRbnfFunctionByType', () => {
           .renderSpelloutNumbering(2439871)
           .replace(/\u00ad/g, ''),
         'to equal',
-        'to millioner firehundrede og niogtredive tusinde ottehundrede og enoghalvfjerds'
+        'to millioner firehundrede og niogtredive tusind ottehundrede og enoghalvfjerds'
       );
     });
 
