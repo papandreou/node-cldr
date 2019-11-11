@@ -7,14 +7,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 14877 $"/>
+		<version number="$Revision$"/>
 		<language type="de"/>
 		<territory type="CH"/>
 	</identity>
 	<annotations>
-		<annotation cp="🤍">weisses Herz</annotation>
-		<annotation cp="🤍" type="tts">weisses Herz</annotation>
-		<annotation cp="🤎">braunes Herz</annotation>
 		<annotation cp="😃">Gesicht | grinsendes Gesicht mit grossen Augen | lol | lustig</annotation>
 		<annotation cp="😃" type="tts">grinsendes Gesicht mit grossen Augen</annotation>
 		<annotation cp="😅">Gesicht | Lachender Smiley mit kaltem Schweiss | lustig | Schweiss | schwitzen</annotation>
@@ -32,6 +29,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="😓" type="tts">Smiley mit kaltem Schweiss</annotation>
 		<annotation cp="👽">Alien | Ausserirdischer | Ausserirdisches Wesen | Gesicht | UFO</annotation>
 		<annotation cp="👽" type="tts">Ausserirdisches Wesen</annotation>
+		<annotation cp="🤎">braunes Herz</annotation>
+		<annotation cp="🤍">weisses Herz</annotation>
+		<annotation cp="🤍" type="tts">weisses Herz</annotation>
 		<annotation cp="💥">Comic | Kollision | Zusammenstoss</annotation>
 		<annotation cp="💥" type="tts">Zusammenstoss</annotation>
 		<annotation cp="💦">Comic | Schweiss | Schweisstropfen</annotation>
@@ -42,7 +42,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🤘" type="tts">Teufelsgruss</annotation>
 		<annotation cp="🦶">Fuss</annotation>
 		<annotation cp="🦶" type="tts">Fuss</annotation>
-		<annotation cp="👨‍🦯">Barrierefreiheit | blind | Mann</annotation>
+		<annotation cp="🧑‍🔧">Elektriker | Handwerker | Klempner | Mechaniker | Sanitär</annotation>
+		<annotation cp="🧑‍🏭">Arbeiter | Fabrik | Fliessband | Industrie</annotation>
+		<annotation cp="🧑‍💼">Architekt | Büroangestellte(r) | Business | Manager</annotation>
+		<annotation cp="🧑‍🔬">Biologe | Biologin | Ingenieur(in) | Physiker(in) | Wissenschaftler(in)</annotation>
 		<annotation cp="🧟‍♂">Zombiemann</annotation>
 		<annotation cp="🧟‍♂" type="tts">Zombiemann</annotation>
 		<annotation cp="🚶">Fussgänger(in) | gehen | gehend | wandern</annotation>
@@ -51,12 +54,16 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🚶‍♂" type="tts">Fussgänger</annotation>
 		<annotation cp="🚶‍♀">Frau | Fussgängerin | gehen | Spaziergang</annotation>
 		<annotation cp="🚶‍♀" type="tts">Fussgängerin</annotation>
+		<annotation cp="🧑‍🦯">Barrierefreiheit | blind | Person mit Langstock</annotation>
+		<annotation cp="🧑‍🦯" type="tts">Person mit Langstock</annotation>
+		<annotation cp="👨‍🦯">Barrierefreiheit | blind | Mann</annotation>
 		<annotation cp="👣">Abdruck | Fuss | Fussabdrücke</annotation>
 		<annotation cp="👣" type="tts">Fussabdrücke</annotation>
 		<annotation cp="🦳">weisses Haar</annotation>
 		<annotation cp="🦳" type="tts">weisses Haar</annotation>
 		<annotation cp="💐">Blumen | Blumenstrauss | Bouquet</annotation>
 		<annotation cp="💐" type="tts">Blumenstrauss</annotation>
+		<annotation cp="🌶" type="tts">Chili</annotation>
 		<annotation cp="🥨">verdreht</annotation>
 		<annotation cp="🍝">Nudeln mit Tomatensosse | Pasta | Restaurant</annotation>
 		<annotation cp="🍠">geröstet | Geröstete Süsskartoffel | Süsskartoffel</annotation>
@@ -74,8 +81,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🏺">Gefäss | kochen | Krug | Sternzeichen | Tierkreis | trinken | Vase</annotation>
 		<annotation cp="♨">Dampf | dampfend | heiss | heisse Quellen | Heisse Quellen | Quellen</annotation>
 		<annotation cp="♨" type="tts">Heisse Quellen</annotation>
-		<annotation cp="🌌">Galaxie | Milchstrasse</annotation>
-		<annotation cp="🌌" type="tts">Milchstrasse</annotation>
 		<annotation cp="🚃">Fahrzeug | Strassenbahn | Strassenbahnwagen | Tram | Wagen | Wagon | Zug</annotation>
 		<annotation cp="🚃" type="tts">Strassenbahnwagen</annotation>
 		<annotation cp="🚊">Strassenbahn | Tram</annotation>
@@ -84,6 +89,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🛣">Autobahn | Schnellstrasse</annotation>
 		<annotation cp="⭐">Stern | weisser mittelgrosser Stern</annotation>
 		<annotation cp="⭐" type="tts">weisser mittelgrosser Stern</annotation>
+		<annotation cp="🌌">Galaxie | Milchstrasse</annotation>
+		<annotation cp="🌌" type="tts">Milchstrasse</annotation>
 		<annotation cp="🌥">grosse Wolke | Sonne | Sonne hinter grosser Wolke | Wetter | Wolke</annotation>
 		<annotation cp="🌥" type="tts">Sonne hinter grosser Wolke</annotation>
 		<annotation cp="🔥">Flamme | heiss</annotation>
@@ -143,14 +150,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🔴" type="tts">Grosser roter Kreis</annotation>
 		<annotation cp="🔵">Ball | blau | Grosser blauer Kreis | Kreis</annotation>
 		<annotation cp="🔵" type="tts">Grosser blauer Kreis</annotation>
-		<annotation cp="⚪">Ball | Grosser weisser Kreis | Kreis | weiss</annotation>
-		<annotation cp="⚪" type="tts">Grosser weisser Kreis</annotation>
 		<annotation cp="⚫">Ball | Grosser schwarzer Kreis | Kreis | schwarz</annotation>
 		<annotation cp="⚫" type="tts">Grosser schwarzer Kreis</annotation>
-		<annotation cp="⬜">Grosses weisses Quadrat | Quadrat | weiss</annotation>
-		<annotation cp="⬜" type="tts">Grosses weisses Quadrat</annotation>
+		<annotation cp="⚪">Ball | Grosser weisser Kreis | Kreis | weiss</annotation>
+		<annotation cp="⚪" type="tts">Grosser weisser Kreis</annotation>
 		<annotation cp="⬛">Grosses schwarzes Quadrat | Quadrat | schwarz</annotation>
 		<annotation cp="⬛" type="tts">Grosses schwarzes Quadrat</annotation>
+		<annotation cp="⬜">Grosses weisses Quadrat | Quadrat | weiss</annotation>
+		<annotation cp="⬜" type="tts">Grosses weisses Quadrat</annotation>
 		<annotation cp="◼">Mittelgrosses schwarzes Quadrat | Quadrat | schwarz</annotation>
 		<annotation cp="◼" type="tts">Mittelgrosses schwarzes Quadrat</annotation>
 		<annotation cp="◻">Mittelgrosses weisses Quadrat | Quadrat | weiss</annotation>
@@ -167,5 +174,30 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🔳" type="tts">Weisse quadratische Schaltfläche</annotation>
 		<annotation cp="🏳">Fahne | wehen | Wehende weisse Fahne | weisse Fahne</annotation>
 		<annotation cp="🏳" type="tts">Wehende weisse Fahne</annotation>
+		<annotation cp="🏳‍⚧">Flagge | hellblau | pink | Transgender | Transgenderflagge | weiss</annotation>
+		<annotation cp="🏳‍⚧" type="tts">Transgenderflagge</annotation>
+		<annotation cp="🛗" type="tts">Lift</annotation>
+		<annotation cp="🥷">getarnt | Kämpfer | versteckt</annotation>
+		<annotation cp="🥸">Brille | Gesicht | Gesicht mit Maske | incognito | Maske | Nase</annotation>
+		<annotation cp="🥸" type="tts">Gesicht mit Maske</annotation>
+		<annotation cp="🦣">Aussterben | gross | Stosszahn | wollig</annotation>
+		<annotation cp="🦤">Aussterben | gross | Mauritius</annotation>
+		<annotation cp="🧋">Bubble | Milch | Perle | Tee</annotation>
+		<annotation cp="🩴">Flipflops | Zehensandale | Zehensandalen</annotation>
+		<annotation cp="🩴" type="tts">Flipflops</annotation>
+		<annotation cp="🪃">Australien | Bumerang | zurückkehren</annotation>
+		<annotation cp="🪄">Hexe | Magie | Zauberer</annotation>
+		<annotation cp="🪅">Feier | Fest | Party</annotation>
+		<annotation cp="🪆">Matroschka | Puppe | russisch</annotation>
+		<annotation cp="🪗">Akkordeon | Handorgel | Konzertina</annotation>
+		<annotation cp="🪝" type="tts">Haken</annotation>
+		<annotation cp="🪟">Aussicht | frische Luft | Öffnung | Rahmen | transparent</annotation>
+		<annotation cp="🪠">Klempner | Pümpel | Sanitär | Saugglocke | WC</annotation>
+		<annotation cp="🪠" type="tts">Saugglocke</annotation>
+		<annotation cp="🪤">Falle | Köder | Mäusefalle</annotation>
+		<annotation cp="🪧">Demonstration | Plakat | Protest | Transparent</annotation>
+		<annotation cp="🫁">atmen | Atmung | Ausatmen | Einatmen | Organ</annotation>
+		<annotation cp="🫑">Gemüse | Paprika | Peperoni</annotation>
+		<annotation cp="🫑" type="tts">Peperoni</annotation>
 	</annotations>
 </ldml>

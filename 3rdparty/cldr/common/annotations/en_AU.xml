@@ -7,7 +7,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 -->
 <ldml>
 	<identity>
-		<version number="$Revision: 14800 $"/>
+		<version number="$Revision$"/>
 		<language type="en"/>
 		<territory type="AU"/>
 	</identity>
@@ -20,10 +20,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🖖" type="tts">Vulcan salute</annotation>
 		<annotation cp="👦">boy | young | young person</annotation>
 		<annotation cp="👧">girl | Virgo | young person | zodiac</annotation>
-		<annotation cp="👨‍🦼" draft="provisional">man in motorised wheelchair</annotation>
-		<annotation cp="👨‍🦼" type="tts" draft="provisional">man in motorised wheelchair</annotation>
-		<annotation cp="👩‍🦼" draft="provisional">woman in motorised wheelchair</annotation>
-		<annotation cp="👩‍🦼" type="tts" draft="provisional">woman in motorised wheelchair</annotation>
 		<annotation cp="👨‍💼">business man | manager | office worker | white collar</annotation>
 		<annotation cp="👩‍💼">business woman | manager | office worker | white collar</annotation>
 		<annotation cp="👨‍🎤">entertainer | man | performer | rock singer | star</annotation>
@@ -40,6 +36,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🤶">celebration | Christmas | Mrs Claus | Mrs Santa Claus</annotation>
 		<annotation cp="💇‍♂">haircut | hairdresser | man | man getting haircut</annotation>
 		<annotation cp="💇‍♀">haircut | hairdresser | woman | woman getting haircut</annotation>
+		<annotation cp="🧑‍🦼" type="tts" draft="contributed">person in motorised wheelchair</annotation>
+		<annotation cp="👨‍🦼" draft="contributed">accessibility | man | man in motorised wheelchair | wheelchair</annotation>
+		<annotation cp="👨‍🦼" type="tts" draft="contributed">man in motorised wheelchair</annotation>
+		<annotation cp="👩‍🦼" draft="contributed">accessibility | wheelchair | woman | woman in motorised wheelchair</annotation>
+		<annotation cp="👩‍🦼" type="tts" draft="contributed">woman in motorised wheelchair</annotation>
 		<annotation cp="🧖‍♂">man in steam room | man in steamy room | sauna | steam room</annotation>
 		<annotation cp="🧖‍♂" type="tts">man in steam room</annotation>
 		<annotation cp="🧖‍♀">sauna | steam room | woman in steam room | woman in steamy room</annotation>
@@ -91,6 +92,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🥖">baguette | bread | food | french | French stick</annotation>
 		<annotation cp="🥖" type="tts">French stick</annotation>
 		<annotation cp="🥯">bagel | bakery</annotation>
+		<annotation cp="🧇">waffle with butter</annotation>
 		<annotation cp="🍔" type="tts">hamburger</annotation>
 		<annotation cp="🍟">chips | fries</annotation>
 		<annotation cp="🥙">falafel | flatbread | food | gyro | kebab | pita | pita roll | stuffed</annotation>
@@ -115,6 +117,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🍪" type="tts">cookie</annotation>
 		<annotation cp="🍮">baked custard | dessert | pudding | sweet</annotation>
 		<annotation cp="🍮" type="tts">baked custard</annotation>
+		<annotation cp="🧃">drink carton | juice box</annotation>
+		<annotation cp="🧃" type="tts">drink carton</annotation>
 		<annotation cp="🥢">chopsticks | pair of chopsticks</annotation>
 		<annotation cp="🗻">Fuji | mount Fuji | mountain</annotation>
 		<annotation cp="🗻" type="tts">mount Fuji</annotation>
@@ -124,8 +128,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="⛩" type="tts">Shinto shrine</annotation>
 		<annotation cp="🕋">Islam | Kaaba | Muslim | religion</annotation>
 		<annotation cp="🕋" type="tts">Kaaba</annotation>
-		<annotation cp="🌌">Milky Way | space</annotation>
-		<annotation cp="🌌" type="tts">Milky Way</annotation>
 		<annotation cp="🎠" type="tts">merry-go-round</annotation>
 		<annotation cp="🎪">big top | circus</annotation>
 		<annotation cp="🎪" type="tts">big top</annotation>
@@ -141,6 +143,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🚙" type="tts">four-wheel drive</annotation>
 		<annotation cp="🚛">articulated truck | lorry | semi | truck</annotation>
 		<annotation cp="🚛" type="tts">articulated truck</annotation>
+		<annotation cp="🦼" draft="provisional">mobility scooter</annotation>
+		<annotation cp="🦼" type="tts" draft="provisional">mobility scooter</annotation>
 		<annotation cp="🛣">freeway | highway | road</annotation>
 		<annotation cp="🛣" type="tts">freeway</annotation>
 		<annotation cp="⛽">diesel | fuel | gas | petrol pump | pump | station</annotation>
@@ -160,6 +164,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="⏲" type="tts">timer</annotation>
 		<annotation cp="🕰">clock</annotation>
 		<annotation cp="🕰" type="tts">clock</annotation>
+		<annotation cp="🌌">Milky Way | space</annotation>
+		<annotation cp="🌌" type="tts">Milky Way</annotation>
 		<annotation cp="⛱">beach | sand | sun | umbrella</annotation>
 		<annotation cp="⛱" type="tts">beach umbrella</annotation>
 		<annotation cp="🎉">celebration | party | popper | ta-da</annotation>
@@ -171,7 +177,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🏅">celebration | medal | sports</annotation>
 		<annotation cp="🎳">ball | game | tenpin bowling</annotation>
 		<annotation cp="🎳" type="tts">tenpin bowling</annotation>
-		<annotation cp="🏏" draft="contributed">cricket game</annotation>
 		<annotation cp="🥅">goal cage</annotation>
 		<annotation cp="🥅" type="tts">goal cage</annotation>
 		<annotation cp="⛳">flag | golf | hole</annotation>
@@ -179,7 +184,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🎣">fish | fishing | pole | rod</annotation>
 		<annotation cp="🎣" type="tts">fishing rod</annotation>
 		<annotation cp="🎿">ski | skiing | snow</annotation>
-		<annotation cp="🛷">sled | sledge | sleigh</annotation>
 		<annotation cp="🛷" type="tts">sled</annotation>
 		<annotation cp="🥌">curling | game | rock | stone</annotation>
 		<annotation cp="🧿">amulet | charm | evil-eye | nazar | talisman</annotation>
@@ -283,12 +287,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🔡" type="tts" draft="contributed">input Latin lowercase</annotation>
 		<annotation cp="🔤" draft="contributed">input Latin letters</annotation>
 		<annotation cp="🔤" type="tts" draft="contributed">input Latin letters</annotation>
-		<annotation cp="🦼" draft="provisional">mobility scooter</annotation>
-		<annotation cp="🦼" type="tts" draft="provisional">mobility scooter</annotation>
-		<annotation cp="🧃">drink carton | juice box</annotation>
-		<annotation cp="🧃" type="tts">drink carton</annotation>
-		<annotation cp="🧄">flavouring</annotation>
-		<annotation cp="🧅">flavouring</annotation>
-		<annotation cp="🧇">waffle with butter</annotation>
+		<annotation cp="🪡" type="tts" draft="contributed">needle and thread</annotation>
 	</annotations>
 </ldml>
