@@ -1,4 +1,17 @@
-### v5.4.0 (2019-08-12)
+### v5.5.0 (2019-11-11)
+
+#### Pull requests
+
+- [#100](https://github.com/papandreou/node-cldr/pull/100) Upgrade prettier to version 1.19.1 ([Andreas Lind](mailto:andreaslindpetersen@gmail.com), [depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#98](https://github.com/papandreou/node-cldr/pull/98) Upgrade eslint-plugin-node to version 10.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#97](https://github.com/papandreou/node-cldr/pull/97) Upgrade eslint-config-standard to version 14.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [upgrade escodegen to 1.12.0 where dynamic imports are supported](https://github.com/papandreou/node-cldr/commit/306ae9c43fbdbb6cd6e3c59c92a7997493cc86f8) ([rotsee](mailto:mejl@leowallentin.se))
+- [minor upgrades](https://github.com/papandreou/node-cldr/commit/a10862e0f30dd10baaddf7f04a2443932a66489a) ([rotsee](mailto:mejl@leowallentin.se))
+
+### v5.4.0 (2019-08-13)
 
 #### Pull requests
 
