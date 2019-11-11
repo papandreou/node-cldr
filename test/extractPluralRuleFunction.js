@@ -15,8 +15,8 @@ describe('extractPluralRuleFunction', () => {
       if (i === 1 && v === 0) return 'one';
       if (
         !(v === 0) ||
-        n === 0 ||
-          (n % 100 === Math.floor(n % 100) && n % 100 >= 2 && n % 100 <= 19)
+        (n === 0 ||
+          (n % 100 === Math.floor(n % 100) && (n % 100 >= 2 && n % 100 <= 19)))
       )
         return 'few';
       return 'other';

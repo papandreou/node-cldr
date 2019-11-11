@@ -71,7 +71,7 @@ describe('CldrPluralRuleSet', () => {
         if (typeof n === 'string') n = parseInt(n, 10);
         if (i === 1 && v === 0) return 'one';
         if (i === 2 && v === 0) return 'two';
-        if (v === 0 && !(n >= 0 && n <= 10) && n % 10 === 0) return 'many';
+        if (v === 0 && (!(n >= 0 && n <= 10) && n % 10 === 0)) return 'many';
         return 'other';
         /* eslint-enable */
       }
@@ -116,15 +116,17 @@ describe('CldrPluralRuleSet', () => {
         if (typeof n === 'string') n = parseInt(n, 10);
         if (
           n % 10 === 0 ||
-          (n % 100 === Math.floor(n % 100) && n % 100 >= 11 && n % 100 <= 19) ||
+          ((n % 100 === Math.floor(n % 100) &&
+            (n % 100 >= 11 && n % 100 <= 19)) ||
             (v === 2 &&
-              f % 100 === Math.floor(f % 100) && f % 100 >= 11 && f % 100 <= 19)
+              (f % 100 === Math.floor(f % 100) &&
+                (f % 100 >= 11 && f % 100 <= 19))))
         )
           return 'zero';
         if (
           (n % 10 === 1 && !(n % 100 === 11)) ||
-          (v === 2 && f % 10 === 1 && !(f % 100 === 11)) ||
-            (!(v === 2) && f % 10 === 1)
+          ((v === 2 && (f % 10 === 1 && !(f % 100 === 11))) ||
+            (!(v === 2) && f % 10 === 1))
         )
           return 'one';
         return 'other';
@@ -151,17 +153,17 @@ describe('CldrPluralRuleSet', () => {
           f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
         if (typeof n === 'string') n = parseInt(n, 10);
         if (
-          (v === 0 && i % 10 === 1 && !(i % 100 === 11)) ||
+          (v === 0 && (i % 10 === 1 && !(i % 100 === 11))) ||
           (f % 10 === 1 && !(f % 100 === 11))
         )
           return 'one';
         if (
           (v === 0 &&
-            i % 10 === Math.floor(i % 10) &&
-              i % 10 >= 2 && i % 10 <= 4 &&
-              !(i % 100 >= 12 && i % 100 <= 14)) ||
+            (i % 10 === Math.floor(i % 10) &&
+              (i % 10 >= 2 && i % 10 <= 4) &&
+              !(i % 100 >= 12 && i % 100 <= 14))) ||
           (f % 10 === Math.floor(f % 10) &&
-            f % 10 >= 2 && f % 10 <= 4 &&
+            (f % 10 >= 2 && f % 10 <= 4) &&
             !(f % 100 >= 12 && f % 100 <= 14))
         )
           return 'few';
