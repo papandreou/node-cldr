@@ -7,6 +7,7 @@ const cldr = require('../lib/cldr');
 describe('extractPluralRuleFunction', () => {
   it('should extract the Romanian plural rule function correctly', () => {
     const romanianPluralRule = cldr.extractPluralRuleFunction('ro');
+    // prettier-ignore
     expect(romanianPluralRule, 'to equal', function anonymous(n) {
       /* eslint-disable */
       const i = Math.floor(Math.abs(n)),
