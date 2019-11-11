@@ -71,6 +71,7 @@ describe('CldrPluralRuleSet', () => {
         if (typeof n === 'string') n = parseInt(n, 10);
         if (i === 1 && v === 0) return 'one';
         if (i === 2 && v === 0) return 'two';
+        // prettier-ignore
         if (v === 0 && (!(n >= 0 && n <= 10) && n % 10 === 0)) return 'many';
         return 'other';
         /* eslint-enable */
@@ -109,6 +110,7 @@ describe('CldrPluralRuleSet', () => {
           ' @integer 2~9, 22~29, 102, 1002, … @decimal 0.2~0.9, 1.2~1.9, 10.2, 100.2, 1000.2, …'
       },
       'to encode to',
+      // prettier-ignore
       function(n) {
         /* eslint-disable */
         const v = n.toString().replace(/^[^.]*\.?/, '').length,
@@ -146,6 +148,7 @@ describe('CldrPluralRuleSet', () => {
           ' @integer 0, 5~19, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0, 0.5~1.0, 1.5~2.0, 2.5~2.7, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …'
       },
       'to encode to',
+      // prettier-ignore
       function(n) {
         /* eslint-disable */
         const i = Math.floor(Math.abs(n)),
