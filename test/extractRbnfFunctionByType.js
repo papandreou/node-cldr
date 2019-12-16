@@ -44,9 +44,13 @@ describe('extractRbnfFunctionByType', () => {
               return (
                 this.renderSpelloutCardinal(Math.floor(n)) +
                 ' koma ' +
-                this.renderSpelloutCardinal(
-                  parseInt(String(n).replace(/\d*\./, ''), 10)
-                )
+                String(n)
+                  .replace(/\d*\./, '')
+                  .split(/(?:)/)
+                  .map(function(digit) {
+                    return this.renderSpelloutCardinal(parseInt(digit));
+                  }, this)
+                  .join(' ')
               );
             if (n >= 1e18) return this.renderNumber(n, '#,##0');
             if (n >= 2e15)
@@ -240,5 +244,15 @@ describe('extractRbnfFunctionByType', () => {
   it('should use the x.x rule when there is a fractional part', function() {
     const renderers = cldr.extractRbnfFunctionByType('en_GB');
     expect(renderers.renderSpelloutCardinal(0.6), 'to equal', 'zero point six');
+  });
+
+  // https://github.com/papandreou/node-cldr/issues/102
+  it('should interpret the x.x rule correctly', function() {
+    const renderers = cldr.extractRbnfFunctionByType('en_GB');
+    expect(
+      renderers.renderSpelloutCardinal(2.0095),
+      'to equal',
+      'two point zero zero nine five'
+    );
   });
 });
