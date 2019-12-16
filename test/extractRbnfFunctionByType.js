@@ -40,7 +40,7 @@ describe('extractRbnfFunctionByType', () => {
             /* eslint-disable */
             const isFractional = n !== Math.floor(n);
             if (n < 0) return 'miinus ' + this.renderSpelloutCardinal(-n);
-            if (isFractional && n > 1)
+            if (isFractional)
               return (
                 this.renderSpelloutCardinal(Math.floor(n)) +
                 ' koma ' +
@@ -234,5 +234,11 @@ describe('extractRbnfFunctionByType', () => {
       'to equal',
       'en miljon åtta\xadhundra\xadtusen'
     );
+  });
+
+  // https://github.com/papandreou/node-cldr/issues/102
+  it('should use the x.x rule when there is a fractional part', function() {
+    const renderers = cldr.extractRbnfFunctionByType('en_GB');
+    expect(renderers.renderSpelloutCardinal(0.6), 'to equal', 'zero point six');
   });
 });
