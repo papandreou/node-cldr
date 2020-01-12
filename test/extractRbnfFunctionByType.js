@@ -1,4 +1,4 @@
-const unexpected = require('unexpected');
+const expect = require('unexpected').clone();
 const esprima = require('esprima');
 const escodegen = require('escodegen');
 const cldr = require('../lib/cldr');
@@ -15,19 +15,14 @@ function beautifyJavaScript(functionOrAst) {
   return escodegen.generate(ast);
 }
 
-describe('extractRbnfFunctionByType', () => {
-  const expect = unexpected.clone();
-  expect.addAssertion(
-    '<function> to have the same ast as <function>',
-    (expect, subject, value) => {
-      expect(
-        beautifyJavaScript(subject),
-        'to equal',
-        beautifyJavaScript(value)
-      );
-    }
-  );
+expect.addAssertion(
+  '<function> to have the same ast as <function>',
+  (expect, subject, value) => {
+    expect(beautifyJavaScript(subject), 'to equal', beautifyJavaScript(value));
+  }
+);
 
+describe('extractRbnfFunctionByType', () => {
   describe('#renderSpelloutCardinal', () => {
     describe('for Estonian', () => {
       const estonianRbnfFunctionByType = cldr.extractRbnfFunctionByType('et');
