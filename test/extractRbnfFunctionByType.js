@@ -2,6 +2,7 @@ const unexpected = require('unexpected');
 const esprima = require('esprima');
 const escodegen = require('escodegen');
 const cldr = require('../lib/cldr');
+const sinon = require('sinon');
 
 function beautifyJavaScript(functionOrAst) {
   let ast;
@@ -254,5 +255,26 @@ describe('extractRbnfFunctionByType', () => {
       'to equal',
       'two point zero zero nine five'
     );
+  });
+
+  describe('with locales that have a non-latin default numbering system', function() {
+    it('should support a numbering system with different digits', function() {
+      const renderers = cldr.extractRbnfFunctionByType('ar');
+      expect(renderers.renderDigitsOrdinal(3), 'to equal', '٣.');
+    });
+
+    it('should support an algorithmic numbering system', function() {
+      // None of the locales in CLDR actually use one, so fake it:
+      sinon
+        .stub(cldr, 'extractDefaultNumberSystemId')
+        .withArgs('ar')
+        .returns('roman');
+      try {
+        const renderers = cldr.extractRbnfFunctionByType('ar');
+        expect(renderers.renderDigitsOrdinal(3), 'to equal', 'III.');
+      } finally {
+        cldr.extractDefaultNumberSystemId.restore();
+      }
+    });
   });
 });
