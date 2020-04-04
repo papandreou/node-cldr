@@ -14,21 +14,21 @@ describe('extractNumberingSystem', () => {
   it('should extract a numeric (digits-based) numbering system', () => {
     expect(cldr.extractNumberingSystem('fullwide'), 'to equal', {
       type: 'numeric',
-      digits: ['０', '１', '２', '３', '４', '５', '６', '７', '８', '９']
+      digits: ['０', '１', '２', '３', '４', '５', '６', '７', '８', '９'],
     });
   });
 
   it('should extract digits with high codepoints', () => {
     expect(cldr.extractNumberingSystem('ahom'), 'to equal', {
       type: 'numeric',
-      digits: ['𑜰', '𑜱', '𑜲', '𑜳', '𑜴', '𑜵', '𑜶', '𑜷', '𑜸', '𑜹']
+      digits: ['𑜰', '𑜱', '𑜲', '𑜳', '𑜴', '𑜵', '𑜶', '𑜷', '𑜸', '𑜹'],
     });
   });
 
   it('should extract an algorithmic numbering system without a locale', () => {
     expect(cldr.extractNumberingSystem('ethi'), 'to equal', {
       type: 'algorithmic',
-      rules: 'renderEthiopic'
+      rules: 'renderEthiopic',
     });
   });
 
@@ -36,7 +36,7 @@ describe('extractNumberingSystem', () => {
     expect(cldr.extractNumberingSystem('jpan'), 'to equal', {
       type: 'algorithmic',
       rules: 'renderSpelloutCardinal',
-      locale: 'ja'
+      locale: 'ja',
     });
   });
 
@@ -44,7 +44,7 @@ describe('extractNumberingSystem', () => {
     expect(cldr.extractNumberingSystem('hantfin'), 'to equal', {
       type: 'algorithmic',
       rules: 'renderSpelloutCardinalFinancial',
-      locale: 'zh_Hant'
+      locale: 'zh_Hant',
     });
   });
 });

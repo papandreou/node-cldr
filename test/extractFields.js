@@ -64,19 +64,19 @@ describe('extractFields', () => {
       'year-narrow',
       'year-short',
       'zone',
-      'zone-short'
+      'zone-short',
     ]);
     expect(britishFields.dayperiod, 'to equal', { displayName: 'am/pm' });
     expect(britishFields.sat, 'to equal', {
       relative: {
         0: 'this Saturday',
         1: 'next Saturday',
-        '-1': 'last Saturday'
+        '-1': 'last Saturday',
       },
       relativeTime: {
         future: { one: 'in {0} Saturday', other: 'in {0} Saturdays' },
-        past: { one: '{0} Saturday ago', other: '{0} Saturdays ago' }
-      }
+        past: { one: '{0} Saturday ago', other: '{0} Saturdays ago' },
+      },
     });
 
     expect(britishFields.week, 'to equal', {
@@ -84,18 +84,18 @@ describe('extractFields', () => {
       relative: {
         0: 'this week',
         1: 'next week',
-        '-1': 'last week'
+        '-1': 'last week',
       },
       relativeTime: {
         future: {
           one: 'in {0} week',
-          other: 'in {0} weeks'
+          other: 'in {0} weeks',
         },
         past: {
           one: '{0} week ago',
-          other: '{0} weeks ago'
-        }
-      }
+          other: '{0} weeks ago',
+        },
+      },
     });
   });
 });

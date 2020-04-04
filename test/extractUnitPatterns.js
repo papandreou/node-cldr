@@ -8,19 +8,19 @@ describe('extractUnitPatterns', () => {
     expect(britishUnitPatterns, 'to only have keys', [
       'long',
       'short',
-      'narrow'
+      'narrow',
     ]);
     expect(britishUnitPatterns.long, 'to only have keys', [
       'unit',
-      'compoundUnit'
+      'compoundUnit',
     ]);
     expect(britishUnitPatterns.long.unit, 'to have keys', [
       'angleArcSecond',
-      'volumeLiter'
+      'volumeLiter',
     ]);
     expect(britishUnitPatterns.long.unit.volumeLiter, 'to have keys', [
       'one',
-      'other'
+      'other',
     ]);
     expect(
       britishUnitPatterns.long.unit.volumeLiter.other,

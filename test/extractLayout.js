@@ -7,8 +7,8 @@ describe('extractLayout', () => {
     expect(cldr.extractLayout('ar'), 'to equal', {
       orientation: {
         characterOrder: 'right-to-left',
-        lineOrder: 'top-to-bottom'
-      }
+        lineOrder: 'top-to-bottom',
+      },
     });
   });
 
@@ -16,8 +16,8 @@ describe('extractLayout', () => {
     expect(cldr.extractLayout('en_US'), 'to equal', {
       orientation: {
         characterOrder: 'left-to-right',
-        lineOrder: 'top-to-bottom'
-      }
+        lineOrder: 'top-to-bottom',
+      },
     });
   });
 });

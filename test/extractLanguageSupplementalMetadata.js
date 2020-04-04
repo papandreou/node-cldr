@@ -6,17 +6,17 @@ describe('extractLanguageSupplementalMetadata', () => {
   it('should return an object with locale ids as keys and objects as values', () => {
     expect(cldr.extractLanguageSupplementalMetadata(), 'to satisfy', {
       no: {},
-      glv: {}
+      glv: {},
     });
   });
   it('should return a reason', () => {
     expect(cldr.extractLanguageSupplementalMetadata(), 'to satisfy', {
-      no: { replacement: 'nb' }
+      no: { replacement: 'nb' },
     });
   });
   it('should return a replacement', () => {
     expect(cldr.extractLanguageSupplementalMetadata(), 'to satisfy', {
-      no: { reason: 'legacy' }
+      no: { reason: 'legacy' },
     });
   });
 });

@@ -10,7 +10,7 @@ describe('extractMeasurementSystemNames', () => {
     expect(britishMeasurementSystemNames, 'to only have keys', [
       'metric',
       'UK',
-      'US'
+      'US',
     ]);
     expect(britishMeasurementSystemNames.metric, 'to equal', 'Metric');
     expect(britishMeasurementSystemNames.UK, 'to equal', 'UK');

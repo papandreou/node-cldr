@@ -13,7 +13,7 @@ describe('cldr.extractDayNames("en")', () => {
         'Wednesday',
         'Thursday',
         'Friday',
-        'Saturday'
+        'Saturday',
       ],
 
       abbreviated: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
@@ -21,7 +21,7 @@ describe('cldr.extractDayNames("en")', () => {
       short: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
 
       // Aliased to ../../dayContext[@type='stand-alone']/dayWidth[@type='narrow']
-      narrow: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+      narrow: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
     });
 
     expect(englishDayNames.standAlone, 'to equal', {
@@ -33,7 +33,7 @@ describe('cldr.extractDayNames("en")', () => {
         'Wednesday',
         'Thursday',
         'Friday',
-        'Saturday'
+        'Saturday',
       ],
 
       // Aliased to ../../dayContext[@type='format']/dayWidth[@type='abbreviated']
@@ -42,7 +42,7 @@ describe('cldr.extractDayNames("en")', () => {
       // Aliased to: ../../dayContext[@type='format']/dayWidth[@type='short']
       short: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
 
-      narrow: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+      narrow: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
     });
   });
 });

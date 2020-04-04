@@ -7,7 +7,7 @@ describe('cldr.expandLocaleIdToPrioritizedList("en_GB")', () => {
     expect(cldr.expandLocaleIdToPrioritizedList('en-GB'), 'to equal', [
       'en_gb',
       'en_001',
-      'en'
+      'en',
     ]);
   });
 });
@@ -18,7 +18,7 @@ describe('cldr.expandLocaleIdToPrioritizedList("en-GB-oed")', () => {
       'en_gb_oed',
       'en_gb',
       'en_001',
-      'en'
+      'en',
     ]);
   });
 });

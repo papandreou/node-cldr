@@ -32,7 +32,7 @@ describe('extractRbnfFunctionByType', () => {
         expect(
           estonianRbnfFunctionByType.renderSpelloutCardinal,
           'to have the same ast as',
-          function(n) {
+          function (n) {
             /* eslint-disable */
             const isFractional = n !== Math.floor(n);
             if (n < 0) return 'miinus ' + this.renderSpelloutCardinal(-n);
@@ -43,7 +43,7 @@ describe('extractRbnfFunctionByType', () => {
                 String(n)
                   .replace(/\d*\./, '')
                   .split(/(?:)/)
-                  .map(function(digit) {
+                  .map(function (digit) {
                     return this.renderSpelloutCardinal(parseInt(digit));
                   }, this)
                   .join(' ')
@@ -203,8 +203,8 @@ describe('extractRbnfFunctionByType', () => {
   });
 
   // https://github.com/papandreou/node-cldr/issues/75
-  describe('with a rule set that does not contain a -x rule', function() {
-    it('should render a negative number correctly', function() {
+  describe('with a rule set that does not contain a -x rule', function () {
+    it('should render a negative number correctly', function () {
       const swedishRbnfFunctionByType = cldr.extractRbnfFunctionByType('sv');
       swedishRbnfFunctionByType.renderNumber = String;
       expect(
@@ -214,12 +214,12 @@ describe('extractRbnfFunctionByType', () => {
       );
     });
 
-    it('should produce the expected function', function() {
+    it('should produce the expected function', function () {
       const swedishRbnfFunctionByType = cldr.extractRbnfFunctionByType('sv');
       expect(
         swedishRbnfFunctionByType.renderSpelloutCardinalNeuter,
         'to have the same ast as',
-        function(n) {
+        function (n) {
           return this.renderSpelloutNumbering(n);
         }
       );
@@ -227,7 +227,7 @@ describe('extractRbnfFunctionByType', () => {
   });
 
   // https://github.com/papandreou/node-cldr/issues/76
-  it('should render long Swedish spellout cardinals', function() {
+  it('should render long Swedish spellout cardinals', function () {
     const swedishRbnfFunctionByType = cldr.extractRbnfFunctionByType('sv');
     expect(
       swedishRbnfFunctionByType.renderSpelloutCardinalNeuter(1800000),
@@ -237,13 +237,13 @@ describe('extractRbnfFunctionByType', () => {
   });
 
   // https://github.com/papandreou/node-cldr/issues/102
-  it('should use the x.x rule when there is a fractional part', function() {
+  it('should use the x.x rule when there is a fractional part', function () {
     const renderers = cldr.extractRbnfFunctionByType('en_GB');
     expect(renderers.renderSpelloutCardinal(0.6), 'to equal', 'zero point six');
   });
 
   // https://github.com/papandreou/node-cldr/issues/102
-  it('should interpret the x.x rule correctly', function() {
+  it('should interpret the x.x rule correctly', function () {
     const renderers = cldr.extractRbnfFunctionByType('en_GB');
     expect(
       renderers.renderSpelloutCardinal(2.0095),
@@ -252,13 +252,13 @@ describe('extractRbnfFunctionByType', () => {
     );
   });
 
-  describe('with locales that have a non-latin default numbering system', function() {
-    it('should support a numbering system with different digits', function() {
+  describe('with locales that have a non-latin default numbering system', function () {
+    it('should support a numbering system with different digits', function () {
       const renderers = cldr.extractRbnfFunctionByType('ar');
       expect(renderers.renderDigitsOrdinal(3), 'to equal', '٣.');
     });
 
-    it('should support an algorithmic numbering system', function() {
+    it('should support an algorithmic numbering system', function () {
       // None of the locales in CLDR actually use one, so fake it:
       sinon
         .stub(cldr, 'extractDefaultNumberSystemId')

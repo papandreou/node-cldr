@@ -19,13 +19,13 @@ describe('extractTerritoryInfo', () => {
           .it('to have an item exhaustively satisfying', {
             id: 'de',
             populationPercent: expect.it('to be a number'),
-            officialStatus: 'official'
+            officialStatus: 'official',
           })
           .and('to have an item exhaustively satisfying', {
             id: 'fr',
-            populationPercent: expect.it('to be a number')
-          })
-      }
+            populationPercent: expect.it('to be a number'),
+          }),
+      },
     });
   });
 });

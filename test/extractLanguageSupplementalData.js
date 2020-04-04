@@ -6,23 +6,23 @@ describe('extractLanguageSupplementalData', () => {
   it('should return an object with locale ids as keys and objects as values', () => {
     expect(cldr.extractLanguageSupplementalData(), 'to satisfy', {
       en: {},
-      fr: {}
+      fr: {},
     });
   });
 
   it('should return a list of scripts for English', () => {
     expect(cldr.extractLanguageSupplementalData(), 'to satisfy', {
       en: {
-        scripts: ['Latn']
-      }
+        scripts: ['Latn'],
+      },
     });
   });
 
   it('should return a list of territories for English', () => {
     expect(cldr.extractLanguageSupplementalData(), 'to satisfy', {
       en: {
-        territories: expect.it('to contain', 'GB', 'US')
-      }
+        territories: expect.it('to contain', 'GB', 'US'),
+      },
     });
   });
 
@@ -30,9 +30,9 @@ describe('extractLanguageSupplementalData', () => {
     expect(cldr.extractLanguageSupplementalData(), 'to satisfy', {
       en: {
         secondary: {
-          scripts: ['Dsrt', 'Shaw']
-        }
-      }
+          scripts: ['Dsrt', 'Shaw'],
+        },
+      },
     });
   });
 
@@ -40,9 +40,9 @@ describe('extractLanguageSupplementalData', () => {
     expect(cldr.extractLanguageSupplementalData(), 'to satisfy', {
       en: {
         secondary: {
-          territories: expect.it('to contain', 'CZ', 'DE')
-        }
-      }
+          territories: expect.it('to contain', 'CZ', 'DE'),
+        },
+      },
     });
   });
 });
