@@ -12,7 +12,7 @@ const expectedOutputByTermAndInput = {
     '1.3': 1,
     '1.30': 1,
     '1.03': 1,
-    '1.230': 1
+    '1.230': 1,
   },
   v: {
     '1': 0,
@@ -21,7 +21,7 @@ const expectedOutputByTermAndInput = {
     '1.3': 1,
     '1.30': 2,
     '1.03': 2,
-    '1.230': 3
+    '1.230': 3,
   },
   w: {
     '1': 0,
@@ -30,7 +30,7 @@ const expectedOutputByTermAndInput = {
     '1.3': 1,
     '1.30': 1,
     '1.03': 2,
-    '1.230': 2
+    '1.230': 2,
   },
   f: {
     '1': 0,
@@ -39,7 +39,7 @@ const expectedOutputByTermAndInput = {
     '1.3': 3,
     '1.30': 30,
     '1.03': 3,
-    '1.230': 230
+    '1.230': 230,
   },
   t: {
     '1': 0,
@@ -48,15 +48,15 @@ const expectedOutputByTermAndInput = {
     '1.3': 3,
     '1.30': 3,
     '1.03': 3,
-    '1.230': 23
-  }
+    '1.230': 23,
+  },
 };
 
 describe('cldrPluralRuleTermFunctionByName', () => {
-  Object.keys(expectedOutputByTermAndInput).forEach(term => {
+  Object.keys(expectedOutputByTermAndInput).forEach((term) => {
     describe('#' + term, () => {
       const expectedOutputByInput = expectedOutputByTermAndInput[term];
-      Object.keys(expectedOutputByInput).forEach(input => {
+      Object.keys(expectedOutputByInput).forEach((input) => {
         it('should compute ' + term + '(' + input + ')', () => {
           expect(
             cldrPluralRuleTermFunctionByName[term](input),

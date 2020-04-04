@@ -8,7 +8,7 @@ describe('cldr.extractDateFormats("en_GB")', () => {
       full: 'EEEE, d MMMM y',
       long: 'd MMMM y',
       medium: 'd MMM y',
-      short: 'dd/MM/y'
+      short: 'dd/MM/y',
     });
   });
 });

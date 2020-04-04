@@ -10,8 +10,8 @@ describe('extractWindowsZonesByName', () => {
         {
           name: 'Antarctica/DumontDUrville',
           territory: 'AQ',
-          timeZone: 'West Pacific Standard Time'
-        }
+          timeZone: 'West Pacific Standard Time',
+        },
       ]
     );
   });
@@ -21,13 +21,13 @@ describe('extractWindowsZonesByName', () => {
       {
         name: 'Australia/Brisbane',
         territory: '001',
-        timeZone: 'E. Australia Standard Time'
+        timeZone: 'E. Australia Standard Time',
       },
       {
         name: 'Australia/Brisbane',
         territory: 'AU',
-        timeZone: 'E. Australia Standard Time'
-      }
+        timeZone: 'E. Australia Standard Time',
+      },
     ]);
   });
 });

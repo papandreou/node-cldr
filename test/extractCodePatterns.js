@@ -8,7 +8,7 @@ describe('extractCodePatterns', () => {
     expect(britishCodePatterns, 'to only have keys', [
       'language',
       'script',
-      'territory'
+      'territory',
     ]);
     expect(britishCodePatterns.language, 'to equal', 'Language: {0}');
     expect(britishCodePatterns.script, 'to equal', 'Script: {0}');

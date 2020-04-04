@@ -58,7 +58,7 @@ describe('extractVariantDisplayNames', () => {
       UCRCOR: 'Unified Revised Orthography',
       UNIFON: 'Unifon phonetic alphabet',
       VALENCIA: 'Valencian',
-      WADEGILE: 'Wade-Giles Romanization'
+      WADEGILE: 'Wade-Giles Romanization',
     });
   });
 });

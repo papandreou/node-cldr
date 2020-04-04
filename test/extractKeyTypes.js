@@ -11,17 +11,17 @@ describe('extractKeyTypes', () => {
       'colNumeric',
       'numbers',
       'timezone',
-      'x'
+      'x',
     ]);
     expect(britishKeyTypes.x, 'to only have keys', ['displayName']);
     expect(britishKeyTypes.x.displayName, 'to equal', 'Private-Use');
     expect(britishKeyTypes.colNumeric, 'to only have keys', [
       'displayName',
-      'types'
+      'types',
     ]);
     expect(britishKeyTypes.colNumeric, 'to only have keys', [
       'displayName',
-      'types'
+      'types',
     ]);
     expect(
       britishKeyTypes.colNumeric.displayName,
@@ -30,7 +30,7 @@ describe('extractKeyTypes', () => {
     );
     expect(britishKeyTypes.colNumeric.types, 'to only have keys', [
       'no',
-      'yes'
+      'yes',
     ]);
     expect(
       britishKeyTypes.colNumeric.types.no,

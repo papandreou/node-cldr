@@ -10,18 +10,18 @@ describe('extractWindowsZonesByTimeZone', () => {
         {
           name: 'Asia/Vladivostok',
           territory: '001',
-          timeZone: 'Vladivostok Standard Time'
+          timeZone: 'Vladivostok Standard Time',
         },
         {
           name: 'Asia/Vladivostok',
           territory: 'RU',
-          timeZone: 'Vladivostok Standard Time'
+          timeZone: 'Vladivostok Standard Time',
         },
         {
           name: 'Asia/Ust-Nera',
           territory: 'RU',
-          timeZone: 'Vladivostok Standard Time'
-        }
+          timeZone: 'Vladivostok Standard Time',
+        },
       ]
     );
   });

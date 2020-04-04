@@ -11,7 +11,7 @@ describe('extractTerritoryContainmentGroups', () => {
     expect(territoryContainmentGroups, 'to have properties', [
       '029',
       '019',
-      '001'
+      '001',
     ]);
   });
 
@@ -19,7 +19,7 @@ describe('extractTerritoryContainmentGroups', () => {
     expect(
       Object.keys(territoryContainmentGroups),
       'to have items satisfying',
-      expect.it(index => {
+      expect.it((index) => {
         const item = territoryContainmentGroups[index];
         expect(
           index === '001' || ('parent' in item && Boolean(item.parent)),

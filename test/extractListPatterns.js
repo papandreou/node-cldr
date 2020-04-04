@@ -10,13 +10,13 @@ describe('extractListPatterns', () => {
       'unit',
       'unitNarrow',
       'unitShort',
-      'standardShort'
+      'standardShort',
     ]);
     expect(britishListPatterns.default, 'to satisfy', {
       2: '{0} and {1}',
       start: '{0}, {1}',
       middle: '{0}, {1}',
-      end: '{0} and {1}'
+      end: '{0} and {1}',
     });
   });
 
@@ -26,13 +26,13 @@ describe('extractListPatterns', () => {
       'default',
       'unit',
       'unitNarrow',
-      'unitShort'
+      'unitShort',
     ]);
     expect(britishListPatterns.default, 'to satisfy', {
       2: '{0} and {1}',
       start: '{0}, {1}',
       middle: '{0}, {1}',
-      end: '{0}, and {1}'
+      end: '{0}, and {1}',
     });
   });
 });

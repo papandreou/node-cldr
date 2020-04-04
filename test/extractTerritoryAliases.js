@@ -13,7 +13,7 @@ describe('extractTerritoryAliases', () => {
   it('aliases are arrays of replacement rules', () => {
     expect(territoryAliases.BU, 'to have properties', [
       'replacement',
-      'reason'
+      'reason',
     ]);
     expect(territoryAliases.BU.replacement, 'to equal', 'MM');
     expect(territoryAliases.AN.replacement.split(' '), 'to have length', 3);
@@ -32,7 +32,7 @@ describe('extractSubdivisionAliases', () => {
   it('aliases are replacement rules', () => {
     expect(subdivisionAliases.fi01, 'to have properties', [
       'replacement',
-      'reason'
+      'reason',
     ]);
     expect(subdivisionAliases.fi01.replacement, 'to equal', 'AX');
     expect(subdivisionAliases.fi01.reason, 'to equal', 'overlong');

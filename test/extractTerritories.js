@@ -10,7 +10,7 @@ describe('extractTerritories', () => {
   it('should export an object with entries keyed by their ISO-3166-1 alpha-2 code, and all having the "alpha2Code" property', () => {
     expect(territories, 'to have keys satisfying', /[A-Z]{2,2}/);
 
-    Object.keys(territories).forEach(territoryId => {
+    Object.keys(territories).forEach((territoryId) => {
       expect(territoryId, 'to be', territories[territoryId].alpha2Code);
     });
   });
@@ -19,13 +19,13 @@ describe('extractTerritories', () => {
     it('should export the alpha3Code and numericCode properties as strings', () => {
       expect(territories.US, 'to satisfy', {
         alpha3Code: 'USA',
-        numericCode: '840'
+        numericCode: '840',
       });
     });
 
     it('should include zero-padding for territories with a numeric code lower than 100', () => {
       expect(territories.AT, 'to satisfy', {
-        numericCode: '040'
+        numericCode: '040',
       });
     });
   });
@@ -35,7 +35,7 @@ describe('extractTerritories', () => {
       // Picked IC (Canary Islands) which currently has neither
       expect(territories.IC, 'not to have properties', [
         'numericCode',
-        'alpha3Code'
+        'alpha3Code',
       ]);
     });
   });
@@ -44,12 +44,12 @@ describe('extractTerritories', () => {
     expect(territories, 'to satisfy', {
       BU: {
         numericCode: '104',
-        alpha3Code: 'BUR'
+        alpha3Code: 'BUR',
       },
       MM: {
         numericCode: '104',
-        alpha3Code: 'MMR'
-      }
+        alpha3Code: 'MMR',
+      },
     });
   });
 });

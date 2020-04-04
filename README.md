@@ -100,7 +100,7 @@ An array of calendar ids for which data is available. In CLDR release
   'iso8601',
   'japanese',
   'persian',
-  'roc'
+  'roc',
 ];
 ```
 
@@ -171,7 +171,7 @@ release 22.1:
   'thai',
   'tibt',
   'traditio',
-  'vaii'
+  'vaii',
 ];
 ```
 

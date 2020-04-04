@@ -10,7 +10,7 @@ describe('extractLocaleDisplayPattern', () => {
     expect(britishLocaleDisplayPatterns, 'to only have keys', [
       'localePattern',
       'localeSeparator',
-      'localeKeyTypePattern'
+      'localeKeyTypePattern',
     ]);
     expect(britishLocaleDisplayPatterns.localePattern, 'to equal', '{0} ({1})');
     expect(

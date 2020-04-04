@@ -14,19 +14,19 @@ const localeLessExtractors = new Set([
   'extractLanguageSupplementalMetadata',
   'extractNumberingSystem',
   'extractDigitsByNumberSystemId',
-  'extractWeekData'
+  'extractWeekData',
 ]);
 
-describe('cldr', function() {
-  describe('with invalid locale ids', function() {
+describe('cldr', function () {
+  describe('with invalid locale ids', function () {
     for (const propertyName in cldr) {
       if (
         /^extract/.test(propertyName) &&
         typeof cldr[propertyName] === 'function' &&
         !localeLessExtractors.has(propertyName)
       ) {
-        describe(propertyName, function() {
-          it('should disallow extracting from a non-existent top-level locale', function() {
+        describe(propertyName, function () {
+          it('should disallow extracting from a non-existent top-level locale', function () {
             expect(
               () => cldr[propertyName]('foobarquux'),
               'to throw',
@@ -34,7 +34,7 @@ describe('cldr', function() {
             );
           });
 
-          it('should disallow extracting from a non-existent sublocale', function() {
+          it('should disallow extracting from a non-existent sublocale', function () {
             expect(
               () => cldr[propertyName]('da_foobarquux'),
               'to throw',
