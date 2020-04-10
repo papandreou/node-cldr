@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2019 Unicode, Inc.
+<!-- Copyright © 1991-2020 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -110,9 +110,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="en_AU">inglés australiano</language>
 			<language type="en_CA">inglés canadense</language>
 			<language type="en_GB">inglés británico</language>
-			<language type="en_GB" alt="short">inglés (RU)</language>
 			<language type="en_US">inglés estadounidense</language>
-			<language type="en_US" alt="short">inglés (EUA)</language>
 			<language type="eo">esperanto</language>
 			<language type="es">español</language>
 			<language type="es_419">español de América</language>
@@ -792,11 +790,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="ZW">Zimbabwe</territory>
 			<territory type="ZZ">Rexión descoñecida</territory>
 		</territories>
-		<subdivisions>
-			<subdivision type="gbeng">Inglaterra</subdivision>
-			<subdivision type="gbsct">Escocia</subdivision>
-			<subdivision type="gbwls">Gales</subdivision>
-		</subdivisions>
 		<keys>
 			<key type="calendar">calendario</key>
 			<key type="cf">formato de moeda</key>
@@ -954,13 +947,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		</parseLenients>
 		<parseLenients scope="general" level="lenient">
 			<parseLenient sample="." draft="contributed">[.․。︒﹒．｡]</parseLenient>
-			<parseLenient sample="’" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="%" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="‰" draft="contributed">↑↑↑</parseLenient>
 			<parseLenient sample="$" draft="contributed">[\$﹩＄$]</parseLenient>
 			<parseLenient sample="£" draft="contributed">[£₤]</parseLenient>
-			<parseLenient sample="¥" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="₩" draft="contributed">↑↑↑</parseLenient>
 			<parseLenient sample="₹" draft="contributed">[₨₹{Rp}{Rs}]</parseLenient>
 		</parseLenients>
 		<parseLenients scope="number" level="lenient">
@@ -1807,9 +1795,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</field>
 			<field type="year-short">
 				<displayName>ano</displayName>
-				<relative type="-1">↑↑↑</relative>
+				<relative type="-1">o ano pasado</relative>
 				<relative type="0">este ano</relative>
-				<relative type="1">↑↑↑</relative>
+				<relative type="1">o próximo ano</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">en {0} ano</relativeTimePattern>
 					<relativeTimePattern count="other">en {0} anos</relativeTimePattern>
@@ -1891,9 +1879,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</field>
 			<field type="month-short">
 				<displayName>mes</displayName>
-				<relative type="-1">↑↑↑</relative>
-				<relative type="0">↑↑↑</relative>
-				<relative type="1">↑↑↑</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">en {0} mes</relativeTimePattern>
 					<relativeTimePattern count="other">en {0} meses</relativeTimePattern>
@@ -1950,7 +1935,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<field type="week-narrow">
 				<displayName>sem.</displayName>
 				<relative type="-1">a sem. pas.</relative>
-				<relative type="0">↑↑↑</relative>
+				<relative type="0">esta sem.</relative>
 				<relative type="1">a próx. sem.</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">en {0} sem.</relativeTimePattern>
@@ -1989,9 +1974,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</field>
 			<field type="day-short">
 				<displayName>día</displayName>
-				<relative type="-1">↑↑↑</relative>
-				<relative type="0">↑↑↑</relative>
-				<relative type="1">↑↑↑</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">en {0} día</relativeTimePattern>
 					<relativeTimePattern count="other">en {0} días</relativeTimePattern>
@@ -2003,9 +1985,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</field>
 			<field type="day-narrow">
 				<displayName>día</displayName>
-				<relative type="-1">↑↑↑</relative>
-				<relative type="0">↑↑↑</relative>
-				<relative type="1">↑↑↑</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">en {0} día</relativeTimePattern>
 					<relativeTimePattern count="other">en {0} días</relativeTimePattern>
@@ -2467,9 +2446,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<zone type="Asia/Kabul">
 				<exemplarCity>Cabul</exemplarCity>
 			</zone>
-			<zone type="America/Antigua">
-				<exemplarCity>↑↑↑</exemplarCity>
-			</zone>
 			<zone type="America/Anguilla">
 				<exemplarCity>Anguila</exemplarCity>
 			</zone>
@@ -2694,9 +2670,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</zone>
 			<zone type="America/Nassau">
 				<exemplarCity>Nassau</exemplarCity>
-			</zone>
-			<zone type="Asia/Thimphu">
-				<exemplarCity>↑↑↑</exemplarCity>
 			</zone>
 			<zone type="Africa/Gaborone">
 				<exemplarCity>Gaborone</exemplarCity>
@@ -5029,7 +5002,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>dólar canadense</displayName>
 				<displayName count="one">dólar canadense</displayName>
 				<displayName count="other">dólares canadenses</displayName>
-				<symbol>↑↑↑</symbol>
 				<symbol alt="narrow" draft="contributed">$</symbol>
 			</currency>
 			<currency type="CDF">
@@ -6074,9 +6046,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0} por {1}</compoundUnitPattern>
 			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
-			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName>forzas G</displayName>
 				<unitPattern count="one">{0} forza G</unitPattern>
@@ -6935,9 +6904,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
 			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
-			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName>forzas G</displayName>
 				<unitPattern count="one">{0} G</unitPattern>
@@ -7059,12 +7025,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0} ‰</unitPattern>
 			</unit>
 			<unit type="concentr-permyriad">
-				<displayName>↑↑↑</displayName>
 				<unitPattern count="one">{0} ‱</unitPattern>
 				<unitPattern count="other">{0} ‱</unitPattern>
 			</unit>
 			<unit type="concentr-mole">
-				<displayName>↑↑↑</displayName>
 				<unitPattern count="one">{0} mol</unitPattern>
 				<unitPattern count="other">{0} mol</unitPattern>
 			</unit>
@@ -7256,14 +7220,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other">{0} J</unitPattern>
 			</unit>
 			<unit type="energy-kilowatt-hour">
-				<displayName>↑↑↑</displayName>
 				<unitPattern count="one">{0} kWh</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="energy-electronvolt">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
+				<unitPattern count="other">{0} kWh</unitPattern>
 			</unit>
 			<unit type="energy-british-thermal-unit">
 				<displayName>BTU</displayName>
@@ -7277,13 +7235,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="force-pound-force">
 				<displayName>libra forza</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="force-newton">
 				<displayName>newton</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="frequency-gigahertz">
 				<displayName>GHz</displayName>
@@ -7304,16 +7258,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>Hz</displayName>
 				<unitPattern count="one">{0} Hz</unitPattern>
 				<unitPattern count="other">{0} Hz</unitPattern>
-			</unit>
-			<unit type="graphics-em">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-pixel">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="graphics-megapixel">
 				<displayName>Mpx</displayName>
@@ -7437,8 +7381,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="length-solar-radius">
 				<displayName>raios solares</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="light-lux">
 				<displayName>lux</displayName>
@@ -7447,8 +7389,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="light-solar-luminosity">
 				<displayName>luminosidades solares</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-metric-ton">
 				<displayName>t</displayName>
@@ -7463,7 +7403,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="mass-gram">
 				<displayName>gramos</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
+				<unitPattern count="one">{0} g</unitPattern>
 				<unitPattern count="other">{0} g</unitPattern>
 				<perUnitPattern>{0}/g</perUnitPattern>
 			</unit>
@@ -7506,18 +7446,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="mass-dalton">
 				<displayName>daltons</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-earth-mass">
 				<displayName>masas da Terra</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-solar-mass">
 				<displayName>masas solares</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="power-gigawatt">
 				<displayName>GW</displayName>
@@ -7567,7 +7501,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<unit type="pressure-bar">
 				<displayName>bar</displayName>
 				<unitPattern count="one">{0} bar</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
+				<unitPattern count="other">{0} bar</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
 				<displayName>mbar</displayName>
@@ -7579,25 +7513,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="one">{0} atm</unitPattern>
 				<unitPattern count="other">{0} atm</unitPattern>
 			</unit>
-			<unit type="pressure-pascal">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
 			<unit type="pressure-hectopascal">
 				<displayName>hPa</displayName>
 				<unitPattern count="one">{0} hPa</unitPattern>
 				<unitPattern count="other">{0} hPa</unitPattern>
-			</unit>
-			<unit type="pressure-kilopascal">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="pressure-megapascal">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/h</displayName>
@@ -7781,8 +7700,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="volume-barrel">
 				<displayName>barril</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<coordinateUnit>
 				<displayName>punto</displayName>
@@ -7795,9 +7712,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<unitLength type="narrow">
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
-			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="angle-arc-minute">
 				<unitPattern count="one">{0}′</unitPattern>
@@ -7933,23 +7847,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<listPatternPart type="end">{0} ou {1}</listPatternPart>
 			<listPatternPart type="2">{0} ou {1}</listPatternPart>
 		</listPattern>
-		<listPattern type="or-narrow">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
-			<listPatternPart type="2">↑↑↑</listPatternPart>
-		</listPattern>
-		<listPattern type="or-short">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
-			<listPatternPart type="2">↑↑↑</listPatternPart>
-		</listPattern>
 		<listPattern type="standard-narrow">
 			<listPatternPart type="start">{0}, {1}</listPatternPart>
 			<listPatternPart type="middle">{0}, {1}</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
-			<listPatternPart type="2">↑↑↑</listPatternPart>
 		</listPattern>
 		<listPattern type="standard-short">
 			<listPatternPart type="start">{0}, {1}</listPatternPart>

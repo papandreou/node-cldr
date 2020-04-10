@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2019 Unicode, Inc.
+<!-- Copyright © 1991-2020 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -637,9 +637,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="zh">จีน</language>
 			<language type="zh" alt="menu">จีนกลาง</language>
 			<language type="zh_Hans">จีนประยุกต์</language>
-			<language type="zh_Hans" alt="long">↑↑↑</language>
 			<language type="zh_Hant">จีนดั้งเดิม</language>
-			<language type="zh_Hant" alt="long">↑↑↑</language>
 			<language type="zu">ซูลู</language>
 			<language type="zun">ซูนิ</language>
 			<language type="zxx">ไม่มีข้อมูลภาษา</language>
@@ -1126,11 +1124,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="ZW">ซิมบับเว</territory>
 			<territory type="ZZ">ภูมิภาคที่ไม่รู้จัก</territory>
 		</territories>
-		<subdivisions>
-			<subdivision type="gbeng">อังกฤษ</subdivision>
-			<subdivision type="gbsct">สกอตแลนด์</subdivision>
-			<subdivision type="gbwls">เวลส์</subdivision>
-		</subdivisions>
 		<variants>
 			<variant type="1901">เยอรมันออร์โธกราฟีดั้งเดิม</variant>
 			<variant type="1994" draft="contributed">อักขระเรเซียนมาตราฐาน</variant>
@@ -1378,13 +1371,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		</parseLenients>
 		<parseLenients scope="general" level="lenient">
 			<parseLenient sample="." draft="contributed">[.․。︒﹒．｡]</parseLenient>
-			<parseLenient sample="’" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="%" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="‰" draft="contributed">↑↑↑</parseLenient>
 			<parseLenient sample="$" draft="contributed">[\$﹩＄$]</parseLenient>
 			<parseLenient sample="£" draft="contributed">[£₤]</parseLenient>
-			<parseLenient sample="¥" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="₩" draft="contributed">↑↑↑</parseLenient>
 			<parseLenient sample="₹" draft="contributed">[₨₹{Rp}{Rs}]</parseLenient>
 		</parseLenients>
 		<parseLenients scope="number" level="lenient">
@@ -2314,20 +2302,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<intervalFormats>
 						<intervalFormatFallback>{0} - {1}</intervalFormatFallback>
 						<intervalFormatItem id="Bh">
-							<greatestDifference id="B">↑↑↑</greatestDifference>
 							<greatestDifference id="h">h – h B</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="Bhm">
-							<greatestDifference id="B">↑↑↑</greatestDifference>
 							<greatestDifference id="h">h:mm – h:mm B</greatestDifference>
 							<greatestDifference id="m">h:mm – h:mm B</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d–d</greatestDifference>
-						</intervalFormatItem>
-						<intervalFormatItem id="Gy">
-							<greatestDifference id="G">↑↑↑</greatestDifference>
-							<greatestDifference id="y">↑↑↑</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="GyM">
 							<greatestDifference id="G">MM/GGGGG y – MM/GGGGG y</greatestDifference>
@@ -2901,20 +2883,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
 						<intervalFormatItem id="Bh">
-							<greatestDifference id="B">↑↑↑</greatestDifference>
 							<greatestDifference id="h">h – h B</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="Bhm">
-							<greatestDifference id="B">↑↑↑</greatestDifference>
 							<greatestDifference id="h">h:mm – h:mm B</greatestDifference>
 							<greatestDifference id="m">h:mm – h:mm B</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d–d</greatestDifference>
-						</intervalFormatItem>
-						<intervalFormatItem id="Gy">
-							<greatestDifference id="G">↑↑↑</greatestDifference>
-							<greatestDifference id="y">↑↑↑</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="GyM">
 							<greatestDifference id="G">MM/GGGGG y – MM/GGGGG y</greatestDifference>
@@ -3093,7 +3069,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 							<month type="5" draft="contributed">5</month>
 							<month type="6" draft="contributed">6</month>
 							<month type="7" draft="contributed">7</month>
-							<month type="7" yeartype="leap" draft="contributed">↑↑↑</month>
+							<month type="7" yeartype="leap" draft="contributed">7</month>
 							<month type="8" draft="contributed">8</month>
 							<month type="9" draft="contributed">9</month>
 							<month type="10" draft="contributed">10</month>
@@ -3143,7 +3119,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 							<month type="5" draft="contributed">5</month>
 							<month type="6" draft="contributed">6</month>
 							<month type="7" draft="contributed">7</month>
-							<month type="7" yeartype="leap" draft="contributed">↑↑↑</month>
+							<month type="7" yeartype="leap" draft="contributed">7</month>
 							<month type="8" draft="contributed">8</month>
 							<month type="9" draft="contributed">9</month>
 							<month type="10" draft="contributed">10</month>
@@ -4434,7 +4410,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				</relativeTime>
 			</field>
 			<field type="minute-short">
-				<displayName>↑↑↑</displayName>
 				<relativeTime type="future">
 					<relativeTimePattern count="other">ใน {0} นาที</relativeTimePattern>
 				</relativeTime>
@@ -8324,9 +8299,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}ต่อ{1}</compoundUnitPattern>
 			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
-			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName>แรง G</displayName>
 				<unitPattern count="other">{0} แรง G</unitPattern>
@@ -8622,10 +8594,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<unit type="frequency-hertz">
 				<displayName>เฮิรตซ์</displayName>
 				<unitPattern count="other">{0} เฮิรตซ์</unitPattern>
-			</unit>
-			<unit type="graphics-em">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="graphics-pixel">
 				<displayName>พิกเซล</displayName>
@@ -9021,9 +8989,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
 			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
-			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName>แรง G</displayName>
 				<unitPattern count="other">{0} G</unitPattern>
@@ -9115,15 +9080,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="concentr-percent">
 				<displayName>เปอร์เซ็นต์</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="concentr-permille">
 				<displayName>เปอร์มิลล์</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="concentr-permyriad">
 				<displayName>เปอร์มีเรียด</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="concentr-mole">
 				<displayName>โมล</displayName>
@@ -9147,7 +9109,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="digital-petabyte">
 				<displayName>PB</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="digital-terabyte">
 				<displayName>TB</displayName>
@@ -9286,7 +9247,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="energy-electronvolt">
 				<displayName>อิเล็กตรอนโวลต์</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="energy-british-thermal-unit">
 				<displayName>บีทียู</displayName>
@@ -9298,11 +9258,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="force-pound-force">
 				<displayName>แรงปอนด์</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="force-newton">
 				<displayName>นิวตัน</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="frequency-gigahertz">
 				<displayName>GHz</displayName>
@@ -9319,34 +9277,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<unit type="frequency-hertz">
 				<displayName>Hz</displayName>
 				<unitPattern count="other">{0} Hz</unitPattern>
-			</unit>
-			<unit type="graphics-em">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-pixel">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-megapixel">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-pixel-per-centimeter">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-pixel-per-inch">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-dot-per-centimeter">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-dot-per-inch">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="length-kilometer">
 				<displayName>กม.</displayName>
@@ -9427,7 +9357,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="length-solar-radius">
 				<displayName>รัศมีวงกลมของดวงอาทิตย์</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="light-lux">
 				<displayName>ลักซ์</displayName>
@@ -9435,7 +9364,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="light-solar-luminosity">
 				<displayName>ความสว่างดวงอาทิตย์</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-metric-ton">
 				<displayName>ต.</displayName>
@@ -9483,15 +9411,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="mass-dalton">
 				<displayName>ดัลตัน</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-earth-mass">
 				<displayName>มวลของโลก</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-solar-mass">
 				<displayName>มวลดวงอาทิตย์</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="power-gigawatt">
 				<displayName>กิกะวัตต์</displayName>
@@ -9541,21 +9466,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>บรรยากาศ</displayName>
 				<unitPattern count="other">{0} บรรยากาศ</unitPattern>
 			</unit>
-			<unit type="pressure-pascal">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
 			<unit type="pressure-hectopascal">
 				<displayName>เฮกโตปาสกาล</displayName>
 				<unitPattern count="other">{0} เฮกโตปาสกาล</unitPattern>
-			</unit>
-			<unit type="pressure-kilopascal">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="pressure-megapascal">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>กม./ชั่วโมง</displayName>
@@ -9588,14 +9501,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<unit type="temperature-kelvin">
 				<displayName>K</displayName>
 				<unitPattern count="other">{0} K</unitPattern>
-			</unit>
-			<unit type="torque-pound-foot">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="torque-newton-meter">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="volume-cubic-kilometer">
 				<displayName>ลบ.กม.</displayName>
@@ -9690,10 +9595,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>ฟลูอิดออนซ์</displayName>
 				<unitPattern count="other">{0} ฟลูอิดออนซ์</unitPattern>
 			</unit>
-			<unit type="volume-fluid-ounce-imperial">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
 			<unit type="volume-tablespoon">
 				<displayName>ชต.</displayName>
 				<unitPattern count="other">{0} ชต.</unitPattern>
@@ -9704,7 +9605,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="volume-barrel">
 				<displayName>บาร์เรล</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<coordinateUnit>
 				<displayName>ทิศหลัก</displayName>
@@ -9717,9 +9617,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<unitLength type="narrow">
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
-			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<unitPattern count="other">{0}G</unitPattern>
@@ -9750,10 +9647,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="area-square-foot">
 				<unitPattern count="other">{0}ตร.ฟุต</unitPattern>
-			</unit>
-			<unit type="concentr-percent">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-100kilometers">
 				<displayName>ล. /100 กม.</displayName>
@@ -9929,28 +9822,18 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<listPatternPart type="2">{0} หรือ {1}</listPatternPart>
 		</listPattern>
 		<listPattern type="or-narrow">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
 			<listPatternPart type="2">{0}หรือ{1}</listPatternPart>
 		</listPattern>
 		<listPattern type="or-short">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
 			<listPatternPart type="2">{0}หรือ{1}</listPatternPart>
 		</listPattern>
 		<listPattern type="standard-narrow">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
 			<listPatternPart type="2">{0}และ{1}</listPatternPart>
 		</listPattern>
 		<listPattern type="standard-short">
 			<listPatternPart type="start">{0} {1}</listPatternPart>
 			<listPatternPart type="middle">{0} {1}</listPatternPart>
 			<listPatternPart type="end">{0} และ{1}</listPatternPart>
-			<listPatternPart type="2">↑↑↑</listPatternPart>
 		</listPattern>
 		<listPattern type="unit">
 			<listPatternPart type="start">{0} {1}</listPatternPart>

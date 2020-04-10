@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2019 Unicode, Inc.
+<!-- Copyright © 1991-2020 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -116,7 +116,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="en_GB">брытанская англійская</language>
 			<language type="en_GB" alt="short">вялікабрытанская англійская</language>
 			<language type="en_US">амерыканская англійская</language>
-			<language type="en_US" alt="short">англійская (ЗША)</language>
 			<language type="eo">эсперанта</language>
 			<language type="es">іспанская</language>
 			<language type="es_419">лацінаамерыканская іспанская</language>
@@ -803,11 +802,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="ZW">Зімбабвэ</territory>
 			<territory type="ZZ">Невядомы рэгіён</territory>
 		</territories>
-		<subdivisions>
-			<subdivision type="gbeng">Англія</subdivision>
-			<subdivision type="gbsct">Шатландыя</subdivision>
-			<subdivision type="gbwls">Уэльс</subdivision>
-		</subdivisions>
 		<keys>
 			<key type="calendar">каляндар</key>
 			<key type="cf">фармат валюты</key>
@@ -906,30 +900,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<ellipsis type="word-initial">… {0}</ellipsis>
 		<ellipsis type="word-medial">{0} … {1}</ellipsis>
 		<moreInformation>?</moreInformation>
-		<parseLenients scope="date" level="lenient">
-			<parseLenient sample="-" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample=":" draft="contributed">↑↑↑</parseLenient>
-		</parseLenients>
-		<parseLenients scope="general" level="lenient">
-			<parseLenient sample="." draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="’" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="%" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="‰" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="$" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="£" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="¥" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="₩" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="₹" draft="contributed">↑↑↑</parseLenient>
-		</parseLenients>
-		<parseLenients scope="number" level="lenient">
-			<parseLenient sample="-" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="," draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="+" draft="contributed">↑↑↑</parseLenient>
-		</parseLenients>
-		<parseLenients scope="number" level="stricter">
-			<parseLenient sample="," draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="." draft="contributed">↑↑↑</parseLenient>
-		</parseLenients>
 	</characters>
 	<delimiters>
 		<quotationStart>«</quotationStart>
@@ -1768,7 +1738,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<field type="year-short">
 				<displayName>г.</displayName>
 				<relative type="-1">у мін. годзе</relative>
-				<relative type="0">↑↑↑</relative>
+				<relative type="0">у гэтым годзе</relative>
 				<relative type="1">у наст. годзе</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">праз {0} г.</relativeTimePattern>
@@ -1786,7 +1756,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<field type="year-narrow">
 				<displayName>г.</displayName>
 				<relative type="-1">у мін. годзе</relative>
-				<relative type="0">↑↑↑</relative>
+				<relative type="0">у гэтым годзе</relative>
 				<relative type="1">у наст. годзе</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">праз {0} г.</relativeTimePattern>
@@ -1991,9 +1961,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</field>
 			<field type="day-short">
 				<displayName>дзень</displayName>
-				<relative type="-1">↑↑↑</relative>
-				<relative type="0">↑↑↑</relative>
-				<relative type="1">↑↑↑</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">праз {0} дзень</relativeTimePattern>
 					<relativeTimePattern count="few">праз {0} дні</relativeTimePattern>
@@ -2009,9 +1976,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</field>
 			<field type="day-narrow">
 				<displayName>д.</displayName>
-				<relative type="-1">↑↑↑</relative>
-				<relative type="0">↑↑↑</relative>
-				<relative type="1">↑↑↑</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">праз {0} дзень</relativeTimePattern>
 					<relativeTimePattern count="few">праз {0} дні</relativeTimePattern>
@@ -6357,9 +6321,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
 			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
-			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName>паскарэнне свабоднага падзення</displayName>
 				<unitPattern count="one">{0} g</unitPattern>
@@ -8020,7 +7981,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<displayName>фунт-сілы</displayName>
 				<unitPattern count="one">{0} фунт-сіла</unitPattern>
 				<unitPattern count="few">{0} фунт-сілы</unitPattern>
-				<unitPattern count="many">↑↑↑</unitPattern>
+				<unitPattern count="many">{0} lbf</unitPattern>
 				<unitPattern count="other">{0} lbf</unitPattern>
 			</unit>
 			<unit type="force-newton">
@@ -8240,9 +8201,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="length-solar-radius">
 				<displayName>R☉</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="few">↑↑↑</unitPattern>
-				<unitPattern count="many">↑↑↑</unitPattern>
+				<unitPattern count="one">{0} R☉</unitPattern>
+				<unitPattern count="few">{0} R☉</unitPattern>
+				<unitPattern count="many">{0} R☉</unitPattern>
 				<unitPattern count="other">{0} R☉</unitPattern>
 			</unit>
 			<unit type="light-lux">
@@ -8254,9 +8215,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="light-solar-luminosity">
 				<displayName>L☉</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="few">↑↑↑</unitPattern>
-				<unitPattern count="many">↑↑↑</unitPattern>
+				<unitPattern count="one">{0} L☉</unitPattern>
+				<unitPattern count="few">{0} L☉</unitPattern>
+				<unitPattern count="many">{0} L☉</unitPattern>
 				<unitPattern count="other">{0} L☉</unitPattern>
 			</unit>
 			<unit type="mass-metric-ton">
@@ -8342,16 +8303,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="mass-earth-mass">
 				<displayName>M⊕</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="few">↑↑↑</unitPattern>
-				<unitPattern count="many">↑↑↑</unitPattern>
+				<unitPattern count="one">{0} M⊕</unitPattern>
+				<unitPattern count="few">{0} M⊕</unitPattern>
+				<unitPattern count="many">{0} M⊕</unitPattern>
 				<unitPattern count="other">{0} M⊕</unitPattern>
 			</unit>
 			<unit type="mass-solar-mass">
 				<displayName>M☉</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="few">↑↑↑</unitPattern>
-				<unitPattern count="many">↑↑↑</unitPattern>
+				<unitPattern count="one">{0} M☉</unitPattern>
+				<unitPattern count="few">{0} M☉</unitPattern>
+				<unitPattern count="many">{0} M☉</unitPattern>
 				<unitPattern count="other">{0} M☉</unitPattern>
 			</unit>
 			<unit type="power-gigawatt">
@@ -8735,9 +8696,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
 			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
-			</compoundUnit>
 			<unit type="concentr-percent">
 				<displayName>%</displayName>
 				<unitPattern count="one">{0}%</unitPattern>
@@ -8859,10 +8817,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="temperature-celsius">
 				<displayName>°C</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="few">↑↑↑</unitPattern>
-				<unitPattern count="many">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="volume-liter">
 				<displayName>л</displayName>
@@ -8901,24 +8855,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<listPatternPart type="middle">{0}, {1}</listPatternPart>
 			<listPatternPart type="end">{0} ці {1}</listPatternPart>
 			<listPatternPart type="2">{0} ці {1}</listPatternPart>
-		</listPattern>
-		<listPattern type="or-narrow">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
-			<listPatternPart type="2">↑↑↑</listPatternPart>
-		</listPattern>
-		<listPattern type="or-short">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
-			<listPatternPart type="2">↑↑↑</listPatternPart>
-		</listPattern>
-		<listPattern type="standard-narrow">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
-			<listPatternPart type="2">↑↑↑</listPatternPart>
 		</listPattern>
 		<listPattern type="standard-short">
 			<listPatternPart type="start">{0}, {1}</listPatternPart>

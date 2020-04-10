@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2019 Unicode, Inc.
+<!-- Copyright © 1991-2020 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -160,7 +160,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<language type="en_GB">британська англійська</language>
 			<language type="en_GB" alt="short">англійська (Брит.)</language>
 			<language type="en_US">англійська (США)</language>
-			<language type="en_US" alt="short">англійська (США)</language>
 			<language type="enm">середньоанглійська</language>
 			<language type="eo">есперанто</language>
 			<language type="es">іспанська</language>
@@ -1032,11 +1031,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<territory type="ZW">Зімбабве</territory>
 			<territory type="ZZ">Невідомий регіон</territory>
 		</territories>
-		<subdivisions>
-			<subdivision type="gbeng">Англія</subdivision>
-			<subdivision type="gbsct">Шотландія</subdivision>
-			<subdivision type="gbwls">Уельс</subdivision>
-		</subdivisions>
 		<variants>
 			<variant type="1901">Традиційна німецька орфографія</variant>
 			<variant type="1994">Стандартизована резьянська орфографія</variant>
@@ -1265,13 +1259,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		</parseLenients>
 		<parseLenients scope="general" level="lenient">
 			<parseLenient sample="." draft="contributed">[.․。︒﹒．｡]</parseLenient>
-			<parseLenient sample="’" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="%" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="‰" draft="contributed">↑↑↑</parseLenient>
 			<parseLenient sample="$" draft="contributed">[\$﹩＄$]</parseLenient>
 			<parseLenient sample="£" draft="contributed">[£₤]</parseLenient>
-			<parseLenient sample="¥" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="₩" draft="contributed">↑↑↑</parseLenient>
 			<parseLenient sample="₹" draft="contributed">[₨₹{Rp}{Rs}]</parseLenient>
 		</parseLenients>
 		<parseLenients scope="number" level="lenient">
@@ -8033,9 +8022,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0} на {1}</compoundUnitPattern>
 			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
-			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName>сила тяжіння</displayName>
 				<unitPattern count="one">{0} сила тяжіння</unitPattern>
@@ -8545,54 +8531,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="many">{0} герців</unitPattern>
 				<unitPattern count="other">{0} герца</unitPattern>
 			</unit>
-			<unit type="graphics-em">
-				<displayName draft="provisional">↑↑↑</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-pixel">
-				<displayName draft="provisional">↑↑↑</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
-			</unit>
 			<unit type="graphics-megapixel">
 				<displayName>мегапікселі</displayName>
 				<unitPattern count="one">{0} мегапіксель</unitPattern>
 				<unitPattern count="few">{0} Мп</unitPattern>
 				<unitPattern count="many">{0} Мп</unitPattern>
 				<unitPattern count="other">{0} мегапікселя</unitPattern>
-			</unit>
-			<unit type="graphics-pixel-per-centimeter">
-				<displayName draft="provisional">↑↑↑</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-pixel-per-inch">
-				<displayName draft="provisional">↑↑↑</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-dot-per-centimeter">
-				<displayName draft="provisional">↑↑↑</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-dot-per-inch">
-				<displayName draft="provisional">↑↑↑</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
 			</unit>
 			<unit type="length-kilometer">
 				<displayName>кілометри</displayName>
@@ -9407,10 +9351,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="concentr-permyriad">
 				<displayName>проміріада</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="few">↑↑↑</unitPattern>
-				<unitPattern count="many">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="concentr-mole">
 				<displayName>моль</displayName>
@@ -9750,16 +9690,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="graphics-em">
 				<displayName draft="provisional">em</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="provisional">↑↑↑</unitPattern>
+				<unitPattern count="one" draft="provisional">{0} em</unitPattern>
+				<unitPattern count="few" draft="provisional">{0} em</unitPattern>
+				<unitPattern count="many" draft="provisional">{0} em</unitPattern>
 				<unitPattern count="other" draft="provisional">{0} em</unitPattern>
 			</unit>
 			<unit type="graphics-pixel">
 				<displayName draft="provisional">px</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="provisional">↑↑↑</unitPattern>
+				<unitPattern count="one" draft="provisional">{0} px</unitPattern>
+				<unitPattern count="few" draft="provisional">{0} px</unitPattern>
+				<unitPattern count="many" draft="provisional">{0} px</unitPattern>
 				<unitPattern count="other" draft="provisional">{0} px</unitPattern>
 			</unit>
 			<unit type="graphics-megapixel">
@@ -9771,30 +9711,30 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="graphics-pixel-per-centimeter">
 				<displayName draft="provisional">ppcm</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="provisional">↑↑↑</unitPattern>
+				<unitPattern count="one" draft="provisional">{0} ppcm</unitPattern>
+				<unitPattern count="few" draft="provisional">{0} ppcm</unitPattern>
+				<unitPattern count="many" draft="provisional">{0} ppcm</unitPattern>
 				<unitPattern count="other" draft="provisional">{0} ppcm</unitPattern>
 			</unit>
 			<unit type="graphics-pixel-per-inch">
 				<displayName draft="provisional">ppi</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="provisional">↑↑↑</unitPattern>
+				<unitPattern count="one" draft="provisional">{0} ppi</unitPattern>
+				<unitPattern count="few" draft="provisional">{0} ppi</unitPattern>
+				<unitPattern count="many" draft="provisional">{0} ppi</unitPattern>
 				<unitPattern count="other" draft="provisional">{0} ppi</unitPattern>
 			</unit>
 			<unit type="graphics-dot-per-centimeter">
 				<displayName draft="provisional">dpcm</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="provisional">↑↑↑</unitPattern>
+				<unitPattern count="one" draft="provisional">{0} dpcm</unitPattern>
+				<unitPattern count="few" draft="provisional">{0} dpcm</unitPattern>
+				<unitPattern count="many" draft="provisional">{0} dpcm</unitPattern>
 				<unitPattern count="other" draft="provisional">{0} dpcm</unitPattern>
 			</unit>
 			<unit type="graphics-dot-per-inch">
 				<displayName draft="provisional">dpi</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="provisional">↑↑↑</unitPattern>
+				<unitPattern count="one" draft="provisional">{0} dpi</unitPattern>
+				<unitPattern count="few" draft="provisional">{0} dpi</unitPattern>
+				<unitPattern count="many" draft="provisional">{0} dpi</unitPattern>
 				<unitPattern count="other" draft="provisional">{0} dpi</unitPattern>
 			</unit>
 			<unit type="length-kilometer">
@@ -9930,10 +9870,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="length-solar-radius">
 				<displayName draft="contributed">радіус Сонця</displayName>
-				<unitPattern count="one" draft="contributed">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="contributed">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="contributed">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="contributed">↑↑↑</unitPattern>
 			</unit>
 			<unit type="light-lux">
 				<displayName>люкс</displayName>
@@ -9944,10 +9880,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="light-solar-luminosity">
 				<displayName>світності Сонця</displayName>
-				<unitPattern count="one" draft="contributed">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="contributed">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="contributed">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="contributed">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-metric-ton">
 				<displayName>метр. т</displayName>
@@ -10032,17 +9964,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="mass-earth-mass">
 				<displayName>маси Землі</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="few">↑↑↑</unitPattern>
-				<unitPattern count="many">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-solar-mass">
 				<displayName>маси Сонця</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="few">↑↑↑</unitPattern>
-				<unitPattern count="many">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="power-gigawatt">
 				<displayName>ГВт</displayName>
@@ -10432,9 +10356,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
 			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
-			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName draft="contributed">g-сила</displayName>
 				<unitPattern count="one" draft="contributed">{0} G</unitPattern>
@@ -10519,13 +10440,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</unit>
 			<unit type="concentr-permyriad">
 				<displayName draft="contributed">‱</displayName>
-				<unitPattern count="one" draft="contributed">↑↑↑</unitPattern>
-				<unitPattern count="few" draft="contributed">↑↑↑</unitPattern>
-				<unitPattern count="many" draft="contributed">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="contributed">↑↑↑</unitPattern>
 			</unit>
 			<unit type="concentr-mole">
-				<displayName draft="contributed">↑↑↑</displayName>
 				<unitPattern count="one" draft="contributed">{0}моль</unitPattern>
 				<unitPattern count="few" draft="contributed">{0}моль</unitPattern>
 				<unitPattern count="many" draft="contributed">{0}моль</unitPattern>
@@ -10630,7 +10546,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other" draft="contributed">{0}еВ</unitPattern>
 			</unit>
 			<unit type="energy-british-thermal-unit">
-				<displayName draft="contributed">↑↑↑</displayName>
 				<unitPattern count="one" draft="contributed">{0}Отб</unitPattern>
 				<unitPattern count="few" draft="contributed">{0}Отб</unitPattern>
 				<unitPattern count="many" draft="contributed">{0}Отб</unitPattern>
@@ -10959,14 +10874,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 				<unitPattern count="other" draft="contributed">{0} К</unitPattern>
 			</unit>
 			<unit type="torque-pound-foot">
-				<displayName draft="contributed">↑↑↑</displayName>
 				<unitPattern count="one" draft="contributed">{0}фн-фт</unitPattern>
 				<unitPattern count="few" draft="contributed">{0}фн-фт</unitPattern>
 				<unitPattern count="many" draft="contributed">{0}фн-фт</unitPattern>
 				<unitPattern count="other" draft="contributed">{0}фн-фт</unitPattern>
 			</unit>
 			<unit type="torque-newton-meter">
-				<displayName draft="contributed">↑↑↑</displayName>
 				<unitPattern count="one" draft="contributed">{0}Н·м</unitPattern>
 				<unitPattern count="few" draft="contributed">{0}Н·м</unitPattern>
 				<unitPattern count="many" draft="contributed">{0}Н·м</unitPattern>
@@ -11043,21 +10956,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<listPatternPart type="end">{0} або {1}</listPatternPart>
 			<listPatternPart type="2">{0} або {1}</listPatternPart>
 		</listPattern>
-		<listPattern type="or-narrow">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
-			<listPatternPart type="2">↑↑↑</listPatternPart>
-		</listPattern>
-		<listPattern type="or-short">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
-			<listPatternPart type="2">↑↑↑</listPatternPart>
-		</listPattern>
 		<listPattern type="standard-narrow">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
 			<listPatternPart type="end">{0}, {1}</listPatternPart>
 			<listPatternPart type="2">{0}, {1}</listPatternPart>
 		</listPattern>
@@ -11076,14 +10975,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<listPattern type="unit-narrow">
 			<listPatternPart type="start">{0}, {1}</listPatternPart>
 			<listPatternPart type="middle">{0}, {1}</listPatternPart>
-			<listPatternPart type="end" draft="provisional">↑↑↑</listPatternPart>
-			<listPatternPart type="2" draft="provisional">↑↑↑</listPatternPart>
 		</listPattern>
 		<listPattern type="unit-short">
 			<listPatternPart type="start">{0}, {1}</listPatternPart>
 			<listPatternPart type="middle">{0}, {1}</listPatternPart>
-			<listPatternPart type="end" draft="provisional">↑↑↑</listPatternPart>
-			<listPatternPart type="2" draft="provisional">↑↑↑</listPatternPart>
 		</listPattern>
 	</listPatterns>
 	<posix>

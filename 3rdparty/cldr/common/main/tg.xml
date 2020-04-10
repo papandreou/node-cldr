@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2019 Unicode, Inc.
+<!-- Copyright © 1991-2020 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -53,7 +53,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="en_GB">англисии британӣ</language>
 			<language type="en_GB" alt="short">англисӣ (ШМ)</language>
 			<language type="en_US">англисии америкоӣ</language>
-			<language type="en_US" alt="short">англисӣ (ИМ)</language>
 			<language type="eo">эсперанто</language>
 			<language type="es">испанӣ</language>
 			<language type="es_419">испании америкоии лотинӣ</language>
@@ -478,12 +477,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<exemplarCharacters type="numbers" draft="contributed">[\- ‑ , . % ‰ + 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
 		<exemplarCharacters type="punctuation" draft="contributed">[\- ‐ ‑ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 	</characters>
-	<delimiters>
-		<quotationStart>↑↑↑</quotationStart>
-		<quotationEnd>↑↑↑</quotationEnd>
-		<alternateQuotationStart>↑↑↑</alternateQuotationStart>
-		<alternateQuotationEnd>↑↑↑</alternateQuotationEnd>
-	</delimiters>
 	<dates>
 		<calendars>
 			<calendar type="generic">
@@ -779,10 +772,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				</quarters>
 				<dayPeriods>
 					<dayPeriodContext type="format">
-						<dayPeriodWidth type="abbreviated">
-							<dayPeriod type="am">↑↑↑</dayPeriod>
-							<dayPeriod type="pm">↑↑↑</dayPeriod>
-						</dayPeriodWidth>
 						<dayPeriodWidth type="wide">
 							<dayPeriod type="am">AM</dayPeriod>
 							<dayPeriod type="pm">PM</dayPeriod>
@@ -945,20 +934,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 							<month type="11">Дхул-Қ.</month>
 							<month type="12">Дхул-Ҳ.</month>
 						</monthWidth>
-						<monthWidth type="narrow">
-							<month type="1">↑↑↑</month>
-							<month type="2">↑↑↑</month>
-							<month type="3">↑↑↑</month>
-							<month type="4">↑↑↑</month>
-							<month type="5">↑↑↑</month>
-							<month type="6">↑↑↑</month>
-							<month type="7">↑↑↑</month>
-							<month type="8">↑↑↑</month>
-							<month type="9">↑↑↑</month>
-							<month type="10">↑↑↑</month>
-							<month type="11">↑↑↑</month>
-							<month type="12">↑↑↑</month>
-						</monthWidth>
 						<monthWidth type="wide">
 							<month type="1" draft="provisional">муҳаррам</month>
 							<month type="2" draft="provisional">сафар</month>
@@ -988,20 +963,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 							<month type="10">Шав.</month>
 							<month type="11">Дхул-Қ.</month>
 							<month type="12">Дхул-Ҳ.</month>
-						</monthWidth>
-						<monthWidth type="narrow">
-							<month type="1">↑↑↑</month>
-							<month type="2">↑↑↑</month>
-							<month type="3">↑↑↑</month>
-							<month type="4">↑↑↑</month>
-							<month type="5">↑↑↑</month>
-							<month type="6">↑↑↑</month>
-							<month type="7">↑↑↑</month>
-							<month type="8">↑↑↑</month>
-							<month type="9">↑↑↑</month>
-							<month type="10">↑↑↑</month>
-							<month type="11">↑↑↑</month>
-							<month type="12">↑↑↑</month>
 						</monthWidth>
 						<monthWidth type="wide">
 							<month type="1" draft="provisional">муҳаррам</month>
@@ -1145,15 +1106,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</field>
 			<field type="day-short">
 				<displayName>рӯз</displayName>
-				<relative type="-1">↑↑↑</relative>
-				<relative type="0">↑↑↑</relative>
-				<relative type="1">↑↑↑</relative>
 			</field>
 			<field type="day-narrow">
 				<displayName>рӯз</displayName>
-				<relative type="-1">↑↑↑</relative>
-				<relative type="0">↑↑↑</relative>
-				<relative type="1">↑↑↑</relative>
 			</field>
 			<field type="weekday">
 				<displayName>рӯзи ҳафта</displayName>
@@ -1455,10 +1410,4 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<listPatternPart type="2">{0}, {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
-	<posix>
-		<messages>
-			<yesstr>↑↑↑</yesstr>
-			<nostr>↑↑↑</nostr>
-		</messages>
-	</posix>
 </ldml>

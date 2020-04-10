@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2019 Unicode, Inc.
+<!-- Copyright © 1991-2020 Unicode, Inc.
 For terms of use, see http://www.unicode.org/copyright.html
 Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
@@ -13,7 +13,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	<localeDisplayNames>
 		<localeDisplayPattern>
 			<localePattern>{0} ({1})</localePattern>
-			<localeSeparator>↑↑↑</localeSeparator>
 			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
 		</localeDisplayPattern>
 		<languages>
@@ -106,7 +105,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="en_CA">کاناډايي انګلیسي</language>
 			<language type="en_GB">بريتانوی انګلیسي</language>
 			<language type="en_GB" alt="short">انګليسي (GB)</language>
-			<language type="en_US">انګليسي (متحده آيالات)</language>
 			<language type="en_US" alt="short">د متحده آيالاتو انګليسي</language>
 			<language type="eo">اسپرانتو</language>
 			<language type="es">هسپانوي</language>
@@ -777,9 +775,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<territory type="ZW">زیمبابوی</territory>
 			<territory type="ZZ">نامعلومه سيمه</territory>
 		</territories>
-		<subdivisions>
-			<subdivision type="gbeng">انګلېنډ</subdivision>
-		</subdivisions>
 		<keys>
 			<key type="calendar">جنتري</key>
 			<key type="cf">اسعارو بڼه</key>
@@ -880,41 +875,17 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
-		<ellipsis type="word-final">↑↑↑</ellipsis>
-		<ellipsis type="word-initial">↑↑↑</ellipsis>
-		<ellipsis type="word-medial">↑↑↑</ellipsis>
-		<moreInformation>↑↑↑</moreInformation>
 		<parseLenients scope="date" level="lenient">
-			<parseLenient sample="-" draft="contributed">↑↑↑</parseLenient>
 			<parseLenient sample=":" draft="contributed">[\:∶]</parseLenient>
 		</parseLenients>
 		<parseLenients scope="general" level="lenient">
-			<parseLenient sample="." draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="’" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="%" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="‰" draft="contributed">↑↑↑</parseLenient>
 			<parseLenient sample="$" draft="contributed">[\$﹩＄$]</parseLenient>
 			<parseLenient sample="£" draft="contributed">[£₤]</parseLenient>
-			<parseLenient sample="¥" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="₩" draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="₹" draft="contributed">↑↑↑</parseLenient>
 		</parseLenients>
 		<parseLenients scope="number" level="lenient">
 			<parseLenient sample="-" draft="contributed">[\-‒⁻₋−➖﹣－]</parseLenient>
-			<parseLenient sample="," draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="+" draft="contributed">↑↑↑</parseLenient>
-		</parseLenients>
-		<parseLenients scope="number" level="stricter">
-			<parseLenient sample="," draft="contributed">↑↑↑</parseLenient>
-			<parseLenient sample="." draft="contributed">↑↑↑</parseLenient>
 		</parseLenients>
 	</characters>
-	<delimiters>
-		<quotationStart>↑↑↑</quotationStart>
-		<quotationEnd>↑↑↑</quotationEnd>
-		<alternateQuotationStart>↑↑↑</alternateQuotationStart>
-		<alternateQuotationEnd>↑↑↑</alternateQuotationEnd>
-	</delimiters>
 	<dates>
 		<calendars>
 			<calendar type="generic">
@@ -1008,15 +979,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
-						<intervalFormatItem id="Bh">
-							<greatestDifference id="B">↑↑↑</greatestDifference>
-							<greatestDifference id="h">↑↑↑</greatestDifference>
-						</intervalFormatItem>
-						<intervalFormatItem id="Bhm">
-							<greatestDifference id="B">↑↑↑</greatestDifference>
-							<greatestDifference id="h">↑↑↑</greatestDifference>
-							<greatestDifference id="m">↑↑↑</greatestDifference>
-						</intervalFormatItem>
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d – d</greatestDifference>
 						</intervalFormatItem>
@@ -1428,7 +1390,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="long">
 						<dateTimeFormat>
-							<pattern>↑↑↑</pattern>
+							<pattern>{1} {0}</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="medium">
@@ -1445,8 +1407,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 						<dateFormatItem id="Bh">h B</dateFormatItem>
 						<dateFormatItem id="Bhm">h:mm B</dateFormatItem>
 						<dateFormatItem id="Bhms">h:mm:ss B</dateFormatItem>
-						<dateFormatItem id="d">↑↑↑</dateFormatItem>
-						<dateFormatItem id="E">↑↑↑</dateFormatItem>
 						<dateFormatItem id="EBhm">E h:mm B</dateFormatItem>
 						<dateFormatItem id="EBhms">E h:mm:ss B</dateFormatItem>
 						<dateFormatItem id="Ed">d, E</dateFormatItem>
@@ -1496,55 +1456,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 					</appendItems>
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
-						<intervalFormatItem id="Bh">
-							<greatestDifference id="B">↑↑↑</greatestDifference>
-							<greatestDifference id="h">↑↑↑</greatestDifference>
-						</intervalFormatItem>
-						<intervalFormatItem id="Bhm">
-							<greatestDifference id="B">↑↑↑</greatestDifference>
-							<greatestDifference id="h">↑↑↑</greatestDifference>
-							<greatestDifference id="m">↑↑↑</greatestDifference>
-						</intervalFormatItem>
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d–d</greatestDifference>
-						</intervalFormatItem>
-						<intervalFormatItem id="Gy">
-							<greatestDifference id="G">↑↑↑</greatestDifference>
-							<greatestDifference id="y">↑↑↑</greatestDifference>
-						</intervalFormatItem>
-						<intervalFormatItem id="GyM">
-							<greatestDifference id="G">↑↑↑</greatestDifference>
-							<greatestDifference id="M">↑↑↑</greatestDifference>
-							<greatestDifference id="y">↑↑↑</greatestDifference>
-						</intervalFormatItem>
-						<intervalFormatItem id="GyMd">
-							<greatestDifference id="d">↑↑↑</greatestDifference>
-							<greatestDifference id="G">↑↑↑</greatestDifference>
-							<greatestDifference id="M">↑↑↑</greatestDifference>
-							<greatestDifference id="y">↑↑↑</greatestDifference>
-						</intervalFormatItem>
-						<intervalFormatItem id="GyMEd">
-							<greatestDifference id="d">↑↑↑</greatestDifference>
-							<greatestDifference id="G">↑↑↑</greatestDifference>
-							<greatestDifference id="M">↑↑↑</greatestDifference>
-							<greatestDifference id="y">↑↑↑</greatestDifference>
-						</intervalFormatItem>
-						<intervalFormatItem id="GyMMM">
-							<greatestDifference id="G">↑↑↑</greatestDifference>
-							<greatestDifference id="M">↑↑↑</greatestDifference>
-							<greatestDifference id="y">↑↑↑</greatestDifference>
-						</intervalFormatItem>
-						<intervalFormatItem id="GyMMMd">
-							<greatestDifference id="d">↑↑↑</greatestDifference>
-							<greatestDifference id="G">↑↑↑</greatestDifference>
-							<greatestDifference id="M">↑↑↑</greatestDifference>
-							<greatestDifference id="y">↑↑↑</greatestDifference>
-						</intervalFormatItem>
-						<intervalFormatItem id="GyMMMEd">
-							<greatestDifference id="d">↑↑↑</greatestDifference>
-							<greatestDifference id="G">↑↑↑</greatestDifference>
-							<greatestDifference id="M">↑↑↑</greatestDifference>
-							<greatestDifference id="y">↑↑↑</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="h">
 							<greatestDifference id="a">h a – h a</greatestDifference>
@@ -4824,11 +4737,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		</otherNumberingSystems>
 		<minimumGroupingDigits draft="contributed">1</minimumGroupingDigits>
 		<symbols numberSystem="arabext">
-			<decimal draft="contributed">↑↑↑</decimal>
-			<group draft="contributed">↑↑↑</group>
 			<percentSign>٪</percentSign>
-			<plusSign draft="contributed">↑↑↑</plusSign>
-			<minusSign draft="contributed">↑↑↑</minusSign>
 			<exponential>×۱۰^</exponential>
 			<superscriptingExponent>×</superscriptingExponent>
 			<perMille>؉</perMille>
@@ -4848,19 +4757,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<infinity>∞</infinity>
 			<nan>NaN</nan>
 		</symbols>
-		<decimalFormats numberSystem="arabext">
-			<decimalFormatLength>
-				<decimalFormat>
-					<pattern draft="contributed">↑↑↑</pattern>
-				</decimalFormat>
-			</decimalFormatLength>
-		</decimalFormats>
 		<decimalFormats numberSystem="latn">
-			<decimalFormatLength>
-				<decimalFormat>
-					<pattern draft="contributed">↑↑↑</pattern>
-				</decimalFormat>
-			</decimalFormatLength>
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="one">0K</pattern>
@@ -4922,13 +4819,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<scientificFormatLength>
 				<scientificFormat>
 					<pattern>#E0</pattern>
-				</scientificFormat>
-			</scientificFormatLength>
-		</scientificFormats>
-		<scientificFormats numberSystem="latn">
-			<scientificFormatLength>
-				<scientificFormat>
-					<pattern>↑↑↑</pattern>
 				</scientificFormat>
 			</scientificFormatLength>
 		</scientificFormats>
@@ -4998,7 +4888,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>متحده عرب امارات درهم</displayName>
 				<displayName count="one">UAE درهم</displayName>
 				<displayName count="other">UAE درهمې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="AFA">
 				<displayName>افغانۍ (1927–2002)</displayName>
@@ -5015,790 +4904,595 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>البانوي لک</displayName>
 				<displayName count="one">البانوي لک</displayName>
 				<displayName count="other">البانوي لکي</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="AMD">
 				<displayName>ارمينيايي ډرام</displayName>
 				<displayName count="one">ارمينيايي ډرام</displayName>
 				<displayName count="other">ارمينيايي ډرامز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ANG">
 				<displayName>هالېنډي انټيليايي ګيلډر</displayName>
 				<displayName count="one">هالېنډې انټيليايي ګيلډر</displayName>
-				<displayName count="other">↑↑↑</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
+				<displayName count="other">هالېنډي انټيليايي ګيلډر</displayName>
 			</currency>
 			<currency type="AOA">
 				<displayName>انګولي کوانزا</displayName>
 				<displayName count="one">انګولي کوانزا</displayName>
 				<displayName count="other">انګولي کوانزې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ARS">
 				<displayName>ارجنټاين پسو</displayName>
 				<displayName count="one">ارجنټاين پسو</displayName>
 				<displayName count="other">ارجنټاين پسوز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="AUD">
 				<displayName>آسترالوي ډالر</displayName>
 				<displayName count="one">آسترالوي ډالر</displayName>
 				<displayName count="other">آسترالوي ډالرې</displayName>
 				<symbol draft="contributed">A$</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="AWG">
 				<displayName>اروبايي فلورن</displayName>
 				<displayName count="one">اروبايي فلورن</displayName>
 				<displayName count="other">اروبايي فلورن</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="AZN">
 				<displayName>آزربايجاني منت</displayName>
 				<displayName count="one">آزربايجاني منت</displayName>
 				<displayName count="other">آزربايجاني منتس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BAM">
 				<displayName>بوسنيا هرزګوينيايي بدلېدونکې مارک</displayName>
 				<displayName count="one">بوسنيا هرزګوينيايي بدلېدونکي مارک</displayName>
 				<displayName count="other">بوسنيا هرزګوينيايي بدلېدونکي مارکس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BBD">
 				<displayName>باربيډين ډالر</displayName>
 				<displayName count="one">باربيډين ډالر</displayName>
 				<displayName count="other">باربيډين ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BDT">
 				<displayName>بنګالۍ ټاکه</displayName>
 				<displayName count="one">بنګالۍ ټاکه</displayName>
 				<displayName count="other">بنګالۍ ټاکاس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BGN">
 				<displayName>بلغاري ليو</displayName>
 				<displayName count="one">بلغاري ليو</displayName>
 				<displayName count="other">بلغاري ليوا</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BHD">
 				<displayName>بحريني دينار</displayName>
 				<displayName count="one">بحريني دينار</displayName>
 				<displayName count="other">بحريني دينارونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BIF">
 				<displayName>برونډي فرانک</displayName>
 				<displayName count="one">برونډي فرانک</displayName>
 				<displayName count="other">برونډي فرانکس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BMD">
 				<displayName>برمودا ډالر</displayName>
 				<displayName count="one">برمودي ډالر</displayName>
 				<displayName count="other">برمودي ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BND">
 				<displayName>برونايي ډالر</displayName>
 				<displayName count="one">برونايي ډالر</displayName>
 				<displayName count="other">برونايي ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BOB">
 				<displayName>بوليوي بوليويانو</displayName>
 				<displayName count="one">بوليوي بوليويانو</displayName>
 				<displayName count="other">بوليوي بوليويانو</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BRL">
 				<displayName>برازيلي ريل</displayName>
 				<displayName count="one">برازيلي ريل</displayName>
 				<displayName count="other">برازيلي ريلز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BSD">
 				<displayName>بهاماسي ډالر</displayName>
 				<displayName count="one">بهاماسي ډالر</displayName>
 				<displayName count="other">بهاماسي ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BTN">
 				<displayName>بهوټانۍ انګولټرم</displayName>
 				<displayName count="one">بهوټانۍ انګولټرم</displayName>
 				<displayName count="other">بهوټانۍ انګولټرمس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BWP">
 				<displayName>بوټسواني پولا</displayName>
 				<displayName count="one">بوټسواني پولا</displayName>
 				<displayName count="other">بوټسواني پولاز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BYN">
 				<displayName>بلاروسي روبل</displayName>
 				<displayName count="one">بلاروسي روبل</displayName>
 				<displayName count="other">بلاروسي روبلز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 				<symbol alt="narrow" draft="contributed">р.</symbol>
 			</currency>
 			<currency type="BZD">
 				<displayName>بليز ډالر</displayName>
 				<displayName count="one">بليز ډالر</displayName>
 				<displayName count="other">بليز ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CAD">
 				<displayName>کاناډايي ډالر</displayName>
 				<displayName count="one">کاناډايي ډالر</displayName>
 				<displayName count="other">کاناډايي ډالرې</displayName>
 				<symbol draft="contributed">CA$</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CDF">
 				<displayName>کانګولي فرانک</displayName>
 				<displayName count="one">کانګولي فرانک</displayName>
 				<displayName count="other">کانګولي فرانکس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CHF">
 				<displayName>سويسي فرانک</displayName>
 				<displayName count="one">سويسي فرانک</displayName>
 				<displayName count="other">سويسي فرانکس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CLP">
 				<displayName>چلي پسو</displayName>
 				<displayName count="one">چلي پسو</displayName>
 				<displayName count="other">چلي پسوز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CNH">
 				<displayName>چيني يوان (آف شور)</displayName>
 				<displayName count="one">چيني يوان (آف شور)</displayName>
 				<displayName count="other">چيني يوان (آف شور)</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CNY">
 				<displayName>چيني يوان</displayName>
 				<displayName count="one">چيني يوان</displayName>
 				<displayName count="other">چيني يوان</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="COP">
 				<displayName>کولمبين پسو</displayName>
 				<displayName count="one">کولمبين پسو</displayName>
 				<displayName count="other">کولمبين پسوز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CRC">
 				<displayName>کوسټا ريکن کولون</displayName>
 				<displayName count="one">کوسټا ريکن کولون</displayName>
 				<displayName count="other">کوسټا ريکن کولونز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CUC">
 				<displayName>کيوبايي بدلېدونکي پسو</displayName>
 				<displayName count="one">کيوبايي بدلېدونکې پسو</displayName>
 				<displayName count="other">کيوبايي بدلېدونکې پسوز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CUP">
 				<displayName>کيوبايي پسو</displayName>
 				<displayName count="one">کيوبايي پسو</displayName>
 				<displayName count="other">کيوبايي پسوز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CVE">
 				<displayName>کيپ وردين اسکوډو</displayName>
 				<displayName count="one">کيپ وردين اسکوډو</displayName>
 				<displayName count="other">کيپ وردين اسکوډوز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CZK">
 				<displayName>چيک کرونا</displayName>
 				<displayName count="one">چيک کرونا</displayName>
 				<displayName count="other">چيک کروناز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="DJF">
 				<displayName>جبوتي فرانک</displayName>
 				<displayName count="one">جبوتي فرانک</displayName>
 				<displayName count="other">جبوتي فرانکس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="DKK">
 				<displayName>ډنمارکي کرون</displayName>
 				<displayName count="one">ډنمارکي کرون</displayName>
 				<displayName count="other">ډنمارکي کرونر</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="DOP">
 				<displayName>دومينيکا پسو</displayName>
 				<displayName count="one">دومينيکا پسو</displayName>
 				<displayName count="other">دومينيکا پسوز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="DZD">
 				<displayName>الجيرين دينار</displayName>
 				<displayName count="one">الجيرين دينار</displayName>
 				<displayName count="other">الجيرين دينارې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="EGP">
 				<displayName>مصري پونډ</displayName>
 				<displayName count="one">مصري پونډ</displayName>
 				<displayName count="other">مصري پونډونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ERN">
 				<displayName>ايريټرين نکفا</displayName>
 				<displayName count="one">ايريټرين نکفا</displayName>
 				<displayName count="other">ايريټرين نکفاس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ETB">
 				<displayName>ايتهوپيايي بر</displayName>
 				<displayName count="one">ايتهوپيايي بر</displayName>
 				<displayName count="other">ايتهوپيايي برز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="EUR">
 				<displayName>يورو</displayName>
 				<displayName count="one">يورو</displayName>
 				<displayName count="other">يوروز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="FJD">
 				<displayName>فجي ډالر</displayName>
 				<displayName count="one">فجي ډالر</displayName>
 				<displayName count="other">فجي ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="FKP">
 				<displayName>پاکلېنډ ټاپوګانو پونډ</displayName>
 				<displayName count="one">پاکلېنډ ټاپوګانو پونډ</displayName>
 				<displayName count="other">پاکلېنډ ټاپوګانو پونډز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GBP">
 				<displayName draft="provisional">برتانوې پونډ</displayName>
 				<displayName count="one" draft="provisional">برتانوې پونډ</displayName>
 				<displayName count="other" draft="provisional">برتانوې پونډونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GEL">
 				<displayName draft="provisional">جارجیاېي لارې</displayName>
 				<displayName count="one" draft="provisional">جارجیا لاري</displayName>
 				<displayName count="other" draft="provisional">جارجیاېي لارېز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GHS">
 				<displayName>ګانين سيډي</displayName>
 				<displayName count="one">ګانين سيډي</displayName>
 				<displayName count="other">ګانين سيډيز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GIP">
 				<displayName>جبل الطارقي پونډ</displayName>
 				<displayName count="one">جبل الطارقي پونډ</displayName>
 				<displayName count="other">جبل الطارقي پونډونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GMD">
 				<displayName>ګيمبين دلاسې</displayName>
 				<displayName count="one">ګيمبين دلاسې</displayName>
 				<displayName count="other">ګيمبين دلاسېز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GNF">
 				<displayName>ګنې فرانک</displayName>
 				<displayName count="one">ګنې فرانک</displayName>
 				<displayName count="other">ګنې فرانکس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GTQ">
 				<displayName>ګويټيمالن کوټزل</displayName>
 				<displayName count="one">ګويټيمالن کوټزل</displayName>
 				<displayName count="other">ګويټيمالن کوټزلز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GYD">
 				<displayName>ګايانيز ډالر</displayName>
 				<displayName count="one">ګايانيز ډالر</displayName>
 				<displayName count="other">ګايانيز ډالرز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="HKD">
 				<displayName>هانګ کانګ ډالر</displayName>
 				<displayName count="one">هانګ کانګ ډالر</displayName>
 				<displayName count="other">هانګ کانګ ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="HNL">
 				<displayName>هونډوران ليمپيرا</displayName>
 				<displayName count="one">هونډوران ليمپيرا</displayName>
 				<displayName count="other">هونډوران ليمپيراز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="HRK">
 				<displayName>کروشيايي کونا</displayName>
 				<displayName count="one">کروشيايي کونا</displayName>
 				<displayName count="other">کروشيايي کوناز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="HTG">
 				<displayName>هيټي ګورډ</displayName>
 				<displayName count="one">هيټي ګورډ</displayName>
 				<displayName count="other">هيټي ګورډز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="HUF">
 				<displayName>هنګري فورنټ</displayName>
 				<displayName count="one">هنګري فورنټ</displayName>
 				<displayName count="other">هنګري فورنټز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="IDR">
 				<displayName>انډونيشي روپيا</displayName>
 				<displayName count="one">انډونيشي روپيا</displayName>
 				<displayName count="other">انډونيشي روپۍ</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ILS">
 				<displayName>اسرايلي نيو شيکل</displayName>
 				<displayName count="one">اسرايلي نيو شيکل</displayName>
 				<displayName count="other">اسرايلي نيو شيکلز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
-			</currency>
-			<currency type="INR">
-				<displayName draft="provisional">↑↑↑</displayName>
-				<displayName count="one" draft="provisional">↑↑↑</displayName>
-				<displayName count="other" draft="provisional">↑↑↑</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="IQD">
 				<displayName>عراقي دينار</displayName>
 				<displayName count="one">عراقي دينار</displayName>
 				<displayName count="other">عراقي دينارونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="IRR">
 				<displayName>ايراني ريال</displayName>
 				<displayName count="one">ايراني ريال</displayName>
 				<displayName count="other">ايراني ريالونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ISK">
 				<displayName>آيسلېنډي کرونا</displayName>
 				<displayName count="one">آيسلېنډي کرونا</displayName>
 				<displayName count="other">آيسلېنډي کرونر</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="JMD">
 				<displayName>جمايکايي ډالر</displayName>
 				<displayName count="one">جمايکايي ډالر</displayName>
 				<displayName count="other">جمايکايي ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="JOD">
 				<displayName>اردني دينار</displayName>
 				<displayName count="one">اردني دينار</displayName>
 				<displayName count="other">اردني دينارونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="JPY">
 				<displayName>جاپاني ين</displayName>
 				<displayName count="one">جاپاني ين</displayName>
 				<displayName count="other">جاپاني ين</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KES">
 				<displayName>کينيايي شيلنګ</displayName>
 				<displayName count="one">کينيايي شيلنګ</displayName>
 				<displayName count="other">کينيايي شيلنګز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KGS">
 				<displayName>کرغزستاني سوم</displayName>
 				<displayName count="one">کرغزستاني سوم</displayName>
 				<displayName count="other">کرغزستاني سومز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KHR">
 				<displayName>کمبوډي ريل</displayName>
 				<displayName count="one">کمبوډي ريل</displayName>
 				<displayName count="other">کمبوډي ريلس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KMF">
 				<displayName>کوموري فرانک</displayName>
 				<displayName count="one">کوموري فرانک</displayName>
 				<displayName count="other">کوموري فرانکس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KPW">
 				<displayName>شمالي کوريايي وان</displayName>
 				<displayName count="one">شمالي کوريايي وان</displayName>
 				<displayName count="other">شمالي کوريايي وان</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KRW">
 				<displayName>جنوبي کوريايي وان</displayName>
 				<displayName count="one">جنوبي کوريايي وان</displayName>
 				<displayName count="other">جنوبي کوريايي وان</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KWD">
 				<displayName>کويتي دينار</displayName>
 				<displayName count="one">کويتي دينار</displayName>
 				<displayName count="other">کويتي دينارونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KYD">
 				<displayName>کيمن ټاپوګانو ډالر</displayName>
 				<displayName count="one">کيمن ټاپوګانو ډالر</displayName>
 				<displayName count="other">کيمن ټاپوګانو ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KZT">
 				<displayName>قازقستاني ټينج</displayName>
 				<displayName count="one">قازقستاني ټينج</displayName>
 				<displayName count="other">قازقستاني ټينجز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="LAK">
 				<displayName draft="provisional">لاشې کپ</displayName>
 				<displayName count="one" draft="provisional">لاشې کپ</displayName>
 				<displayName count="other" draft="provisional">لاشې کپس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="LBP">
 				<displayName>لبناني پونډ</displayName>
 				<displayName count="one">لبناني پونډ</displayName>
 				<displayName count="other">لبناني پونډونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="LKR">
 				<displayName>سري لنکن روپۍ</displayName>
 				<displayName count="one">سري لنکن روپۍ</displayName>
 				<displayName count="other">سري لنکن روپۍ</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="LRD">
 				<displayName>لايبيرين ډالر</displayName>
 				<displayName count="one">لايبيرين ډالر</displayName>
 				<displayName count="other">لايبيرين ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="LYD">
 				<displayName>ليبياېي دينار</displayName>
 				<displayName count="one">ليبياېي دينار</displayName>
 				<displayName count="other">ليبياېي دينارونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MAD">
 				<displayName>مراکشي درهم</displayName>
 				<displayName count="one">مراکشي درهم</displayName>
 				<displayName count="other">مراکشي درهمونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MDL">
 				<displayName>مالډوي ليو</displayName>
 				<displayName count="one">مالډوي ليو</displayName>
 				<displayName count="other">مالډوي لي</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MGA">
 				<displayName>ملاګاسي ارياري</displayName>
 				<displayName count="one">ملاګاسي ارياري</displayName>
 				<displayName count="other">ملاګاسي ارياريز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MKD">
 				<displayName>مسيډونايي دينار</displayName>
 				<displayName count="one">مسيډونايي دينار</displayName>
 				<displayName count="other">مسيډونايي دينارې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MMK">
 				<displayName>ميانماري کيات</displayName>
 				<displayName count="one">ميانماري کيات</displayName>
 				<displayName count="other">ميانماري کياتې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MNT">
 				<displayName>منګوليايي توګريک</displayName>
 				<displayName count="one">منګوليايي توګريک</displayName>
 				<displayName count="other">منګوليايي توګريکس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MOP">
 				<displayName draft="provisional">مکانيز پټاکا</displayName>
 				<displayName count="one" draft="provisional">مکانيز پټاکا</displayName>
 				<displayName count="other" draft="provisional">مکانيز پټاکاز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MRU">
 				<displayName>موريشيسي ډالر</displayName>
 				<displayName count="one">موريشيسي ډالر</displayName>
 				<displayName count="other">موريشيسي ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MUR">
 				<displayName>موريشيسي روپۍ</displayName>
 				<displayName count="one">موريشيسي روپۍ</displayName>
 				<displayName count="other">موريشيسي روپۍ</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MVR">
 				<displayName>مالديپي روپيا</displayName>
 				<displayName count="one">مالديپي روپيا</displayName>
 				<displayName count="other">مالديپي روپيا</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MWK">
 				<displayName>ملاوي کواچا</displayName>
 				<displayName count="one">ملاوي کواچا</displayName>
 				<displayName count="other">ملاوي کواچاز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MXN">
 				<displayName>ميکسيکن پيسو</displayName>
 				<displayName count="one">ميکسيکن پيسو</displayName>
 				<displayName count="other">ميکسيکن پيسوز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MYR">
 				<displayName>ملايشي رنګټ</displayName>
 				<displayName count="one">ملايشي رنګټ</displayName>
 				<displayName count="other">ملايشي رنګټې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MZN">
 				<displayName>موزمبيقي ميټيکل</displayName>
 				<displayName count="one">موزمبيقي ميټيکل</displayName>
 				<displayName count="other">موزمبيقي ميټيکلز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="NAD">
 				<displayName>نيميبيايي ډالر</displayName>
 				<displayName count="one">بيميبيايي ډالر</displayName>
 				<displayName count="other">نيميبيايي ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="NGN">
 				<displayName>نايجيري نايرا</displayName>
 				<displayName count="one">نايجيري نايرا</displayName>
 				<displayName count="other">نايجيري نايراز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="NIO">
 				<displayName>نيکاراګون کورډوبا</displayName>
 				<displayName count="one">نيکاراګون کورډوبا</displayName>
 				<displayName count="other">نيکاراګون کورډوباز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 				<symbol alt="narrow" draft="contributed">C$</symbol>
 			</currency>
 			<currency type="NOK">
 				<displayName>نارويجين کرون</displayName>
 				<displayName count="one">نارويجين کرون</displayName>
 				<displayName count="other">نارويجين کرونر</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="NPR">
 				<displayName>نيپالي روپۍ</displayName>
 				<displayName count="one">نيپالي روپۍ</displayName>
 				<displayName count="other">نيپالي روپۍ</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="NZD">
 				<displayName>نيوزي لينډي ډالر</displayName>
 				<displayName count="one">نيوزي لينډي ډالر</displayName>
 				<displayName count="other">نيوزي لينډي ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="OMR">
 				<displayName>عماني ريال</displayName>
 				<displayName count="one">عماني ريال</displayName>
 				<displayName count="other">عماني ريالونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PAB">
 				<displayName>پانامۍ بالبوا</displayName>
 				<displayName count="one">پانامۍ بالبوا</displayName>
 				<displayName count="other">پانامۍ بالبوې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PEN">
 				<displayName>پيروين سول</displayName>
 				<displayName count="one">پيروين سول</displayName>
 				<displayName count="other">پيروين سولز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PGK">
 				<displayName>پاپوا نيوګاني کينا</displayName>
 				<displayName count="one">پاپوا نيوګاني کينا</displayName>
 				<displayName count="other">پاپوا نيوګاني کينا</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PHP">
 				<displayName>فلپاينۍ پسو</displayName>
 				<displayName count="one">فلپاينۍ پسو</displayName>
 				<displayName count="other">فلپاينۍ پسوز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PKR">
 				<displayName>پاکستانۍ کلداره</displayName>
 				<displayName count="one">پاکستانۍ کلداره</displayName>
 				<displayName count="other">پاکستانۍ کلدارې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PLN">
 				<displayName>پولينډي زلوټي</displayName>
 				<displayName count="one">پولينډي زلوټي</displayName>
 				<displayName count="other">پولينډي زلوټيز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PYG">
 				<displayName>پيراګوين ګوراني</displayName>
 				<displayName count="one">پيراګوين ګوراني</displayName>
 				<displayName count="other">پيراګوين ګوراني</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="QAR">
 				<displayName>قطري ريال</displayName>
 				<displayName count="one">قطري ريال</displayName>
 				<displayName count="other">قطري ريالونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="RON">
 				<displayName>روماني ليو</displayName>
 				<displayName count="one">روماني ليو</displayName>
 				<displayName count="other">روماني لي</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="RSD">
 				<displayName>سربيايي دينار</displayName>
 				<displayName count="one">سربيايي دينار</displayName>
 				<displayName count="other">سربيايي دينارې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="RUB">
 				<displayName>روسي روبل</displayName>
 				<displayName count="one">روسي روبل</displayName>
 				<displayName count="other">روسي روبلز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="RWF">
 				<displayName>روانډي فرانک</displayName>
 				<displayName count="one">روانډي فرانک</displayName>
 				<displayName count="other">روانډي فرانکس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SAR">
 				<displayName>سعودي ريال</displayName>
 				<displayName count="one">سعودي ريال</displayName>
 				<displayName count="other">سعودي ريالونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SBD">
 				<displayName>سولومن ټاپوګانو ډالر</displayName>
 				<displayName count="one">سولومن ټاپوګانو ډالر</displayName>
 				<displayName count="other">سولومن ټاپوګانو ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SCR">
 				<displayName>سيچيليسي روپۍ</displayName>
 				<displayName count="one">سيچيليسي روپۍ</displayName>
 				<displayName count="other">سيچيليسي روپۍ</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SDG">
 				<displayName>سوډاني پونډ</displayName>
 				<displayName count="one">سوډاني پونډ</displayName>
 				<displayName count="other">سوډاني پونډونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SEK">
 				<displayName>سويډني کرونا</displayName>
 				<displayName count="one">سويډني کرونا</displayName>
 				<displayName count="other">سويډني کرونر</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SGD">
 				<displayName>سنګاپور ډالر</displayName>
@@ -5811,54 +5505,41 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>سينټ هيلينا پونډ</displayName>
 				<displayName count="one">سينټ هيلينا پونډ</displayName>
 				<displayName count="other">سينټ هيلينا پونډونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SLL">
 				<displayName>سيرا ليوني ليون</displayName>
 				<displayName count="one">سيرا ليوني ليون</displayName>
 				<displayName count="other">سيرا ليوني ليونونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SOS">
 				<displayName>سومالي شيلنګ</displayName>
 				<displayName count="one">سومالي شيلنګ</displayName>
 				<displayName count="other">سومالي شيلنګز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SRD">
 				<displayName>سورينيمي ډالر</displayName>
 				<displayName count="one">سورينيمي ډالر</displayName>
 				<displayName count="other">سورينيمي ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SSP">
 				<displayName draft="provisional">جنوب سوډاني پونډ</displayName>
 				<displayName count="one" draft="provisional">جنوب سوډاني پونډ</displayName>
 				<displayName count="other" draft="provisional">جنوب سوډاني پونډونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="STN">
 				<displayName>ساو ټوم او پرينسپي ډوبرا</displayName>
 				<displayName count="one">ساو ټوم او پرينسپي ډوبرا</displayName>
 				<displayName count="other">ساو ټوم او پرينسپي ډوبراس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SYP">
 				<displayName>سوريايي پونډ</displayName>
 				<displayName count="one">سوريايي پونډ</displayName>
 				<displayName count="other">سوريايي پونډونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SZL">
 				<displayName>سوازي ليلانګيني</displayName>
 				<displayName count="one">سوازي ليلانګيني</displayName>
 				<displayName count="other">سوازي ايمالانګيني</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="THB">
 				<displayName>تهايي بات</displayName>
@@ -5871,137 +5552,108 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>تاجکستاني سوموني</displayName>
 				<displayName count="one">تاجکستاني سوموني</displayName>
 				<displayName count="other">تاجکستاني سومونيونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TMT">
 				<displayName>ترکمانستاني منت</displayName>
 				<displayName count="one">ترکمانستاني منت</displayName>
 				<displayName count="other">ترکمانستاني منت</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TND">
 				<displayName draft="provisional">تونسي دينار</displayName>
 				<displayName count="one" draft="provisional">تونسي دينار</displayName>
 				<displayName count="other" draft="provisional">تونسي دينار</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TOP">
 				<displayName>ټونګن پانګا</displayName>
 				<displayName count="one">ټونګن پانګا</displayName>
 				<displayName count="other">ټونګن پانګا</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TRY">
 				<displayName>ترکي ليرا</displayName>
 				<displayName count="one">ترکي ليرا</displayName>
 				<displayName count="other">ترکي ليرا</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
-				<symbol alt="variant" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TTD">
 				<displayName>ټرينيډاډ او ټوباګو ډالر</displayName>
 				<displayName count="one">ټرينيډاډ او ټوباګو ډالر</displayName>
 				<displayName count="other">ټرينيډاډ او ټوباګو ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TWD">
 				<displayName>نيو تائيواني ډالر</displayName>
 				<displayName count="one">نيو تائيواني ډالر</displayName>
 				<displayName count="other">نيو تائيواني ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TZS">
 				<displayName>تنزاني شيلنګ</displayName>
 				<displayName count="one">تنزاني شيلنګ</displayName>
 				<displayName count="other">تنزاني شيلنګز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="UAH">
 				<displayName>اوکرايني هريونيا</displayName>
 				<displayName count="one">اوکرايني هريونيا</displayName>
 				<displayName count="other">اوکرايني هريونياز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="UGX">
 				<displayName>يوګانډي شيلنګ</displayName>
 				<displayName count="one">يوګانډي شيلنګ</displayName>
 				<displayName count="other">يوګانډي شيلنګز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="USD">
 				<displayName>امريکايي ډالر</displayName>
 				<displayName count="one">امريکايي ډالر</displayName>
 				<displayName count="other">امريکايي ډالرې</displayName>
 				<symbol draft="contributed">$</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="UYU">
 				<displayName>يوراګوي پسو</displayName>
 				<displayName count="one">يوراګوي پسو</displayName>
 				<displayName count="other">يوراګوي پسوز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="UZS">
 				<displayName>ازبکستاني سوم</displayName>
 				<displayName count="one">ازبکستاني سوم</displayName>
 				<displayName count="other">ازبکستاني سوم</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="VES">
 				<displayName>وينزويلي بوليوار</displayName>
 				<displayName count="one">وينزويلي بوليوار</displayName>
 				<displayName count="other">وينزويلي بوليوارز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="VND">
 				<displayName>ويتنامي ډونګ</displayName>
 				<displayName count="one">ويتنامي ډونګ</displayName>
 				<displayName count="other">ويتنامي ډونګ</displayName>
 				<symbol draft="contributed">₫</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="VUV">
 				<displayName>ونواتو واتو</displayName>
 				<displayName count="one">ونواتو واتو</displayName>
 				<displayName count="other">ونواتو واتوس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="WST">
 				<displayName>سموون تالا</displayName>
 				<displayName count="one">سموون تالا</displayName>
 				<displayName count="other">سموون تالا</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="XAF">
 				<displayName>مرکزي افريقايي CFA فرانک</displayName>
 				<displayName count="one">مرکزي افريقايي CFA فرانک</displayName>
 				<displayName count="other">مرکزي افريقايي CFA فرانکس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="XCD">
 				<displayName>ختيځ کربين ډالر</displayName>
 				<displayName count="one">ختيځ کربين ډالر</displayName>
 				<displayName count="other">ختيځ کربين ډالرې</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="XOF">
 				<displayName>ختيځ افريقايي CFA فرانک</displayName>
 				<displayName count="one">ختيځ افريقايي CFA فرانک</displayName>
 				<displayName count="other">ختيځ افريقايي CFA فرانکس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="XPF">
 				<displayName>CFP فرانک</displayName>
 				<displayName count="one">CFP فرانک</displayName>
 				<displayName count="other">CFP فرانکس</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="XXX">
 				<displayName>نامعلومه مروجه پېسې</displayName>
@@ -6012,28 +5664,22 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>يمني ريال</displayName>
 				<displayName count="one">يمني ريال</displayName>
 				<displayName count="other">يمني ريالونه</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ZAR">
 				<displayName>جنوبي افريقاېي رنډ</displayName>
 				<displayName count="one">جنوبي افريقاېي رنډ</displayName>
 				<displayName count="other">جنوبي افريقاېي رنډ</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ZMW">
 				<displayName>زيمبي کواچا</displayName>
 				<displayName count="one">زيمبي کواچا</displayName>
 				<displayName count="other">زيمبي کواچاز</displayName>
-				<symbol draft="contributed">↑↑↑</symbol>
-				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">
 			<pattern type="approximately">~{0}</pattern>
 			<pattern type="atLeast">{0}+</pattern>
 			<pattern type="atMost">≤{0}</pattern>
-			<pattern type="range">↑↑↑</pattern>
 		</miscPatterns>
 		<minimalPairs>
 			<pluralMinimalPairs count="one" draft="contributed">{0} ورځ</pluralMinimalPairs>
@@ -6045,9 +5691,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<unitLength type="long">
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}في {1}</compoundUnitPattern>
-			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName>د جاذبې قوه</displayName>
@@ -6288,28 +5931,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="other">{0} ورځې</unitPattern>
 				<perUnitPattern>{0} په هره ورځ کې</perUnitPattern>
 			</unit>
-			<unit type="duration-hour">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
-				<perUnitPattern draft="provisional">↑↑↑</perUnitPattern>
-			</unit>
 			<unit type="duration-minute">
 				<displayName>دقيقې</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
-				<perUnitPattern draft="provisional">↑↑↑</perUnitPattern>
 			</unit>
 			<unit type="duration-second">
 				<displayName>ثانيې</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
-				<perUnitPattern draft="provisional">↑↑↑</perUnitPattern>
-			</unit>
-			<unit type="duration-millisecond">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="duration-microsecond">
 				<displayName>مايکرو ثانيه</displayName>
@@ -6381,11 +6007,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} بريتانوي ترمل يونټ</unitPattern>
 				<unitPattern count="other">{0} بريتانوي ترمل يونټس</unitPattern>
 			</unit>
-			<unit type="energy-therm-us">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
 			<unit type="force-pound-force">
 				<displayName>د قوې پاونډز</displayName>
 				<unitPattern count="one">{0} د قوې پاونډ</unitPattern>
@@ -6416,40 +6037,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} هرټز</unitPattern>
 				<unitPattern count="other">{0} هرټز</unitPattern>
 			</unit>
-			<unit type="graphics-em">
-				<displayName draft="provisional">↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-pixel">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
 			<unit type="graphics-megapixel">
 				<displayName>ميګا فکسلسز</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-pixel-per-centimeter">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-pixel-per-inch">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-dot-per-centimeter">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-dot-per-inch">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="length-kilometer">
 				<displayName>کيلو ميتره</displayName>
@@ -6553,8 +6142,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="light-lux">
 				<displayName>لکس</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
 			</unit>
 			<unit type="light-solar-luminosity">
 				<displayName>لمريز ځلښتونه</displayName>
@@ -6675,11 +6262,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} د پارې انچ</unitPattern>
 				<unitPattern count="other">{0} د پارې انچې</unitPattern>
 			</unit>
-			<unit type="pressure-bar">
-				<displayName draft="provisional">↑↑↑</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
-			</unit>
 			<unit type="pressure-millibar">
 				<displayName>ملي بارز</displayName>
 				<unitPattern count="one">{0} ملي بار</unitPattern>
@@ -6692,8 +6274,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="pressure-pascal">
 				<displayName>پاسکیلز</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="pressure-hectopascal">
 				<displayName>هيکټو پاسکیلز</displayName>
@@ -6828,16 +6408,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} ملي ليټر</unitPattern>
 				<unitPattern count="other">{0} ملي ليټرز</unitPattern>
 			</unit>
-			<unit type="volume-pint-metric">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="volume-cup-metric">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
 			<unit type="volume-acre-foot">
 				<displayName>اکړ فټ</displayName>
 				<unitPattern count="one">{0} اکړ فټ</unitPattern>
@@ -6849,31 +6419,15 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="other">{0} ګيلنز</unitPattern>
 				<perUnitPattern>{0} في ګيلن</perUnitPattern>
 			</unit>
-			<unit type="volume-gallon-imperial">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-				<perUnitPattern>↑↑↑</perUnitPattern>
-			</unit>
 			<unit type="volume-quart">
 				<displayName>څلورمه</displayName>
 				<unitPattern count="one">{0} څلورمه</unitPattern>
 				<unitPattern count="other">{0} څلورمه</unitPattern>
 			</unit>
-			<unit type="volume-pint">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
 			<unit type="volume-cup">
 				<displayName>پيالې</displayName>
 				<unitPattern count="one">{0} پياله</unitPattern>
 				<unitPattern count="other">{0} پيالې</unitPattern>
-			</unit>
-			<unit type="volume-fluid-ounce">
-				<displayName draft="provisional">↑↑↑</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
 			</unit>
 			<unit type="volume-fluid-ounce-imperial">
 				<displayName>امپيريل مايع اونس</displayName>
@@ -6882,8 +6436,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="volume-tablespoon">
 				<displayName>د ميز کاچوغه</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
-				<unitPattern count="other" draft="provisional">↑↑↑</unitPattern>
 			</unit>
 			<unit type="volume-teaspoon">
 				<displayName>د ميز کاچوغې</displayName>
@@ -6907,16 +6459,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
 			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
-			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName>د جاذبې قوه</displayName>
 				<unitPattern count="one">{0} G</unitPattern>
 				<unitPattern count="other">{0} G</unitPattern>
 			</unit>
 			<unit type="acceleration-meter-per-second-squared">
-				<displayName>↑↑↑</displayName>
 				<unitPattern count="one">{0} m/s²</unitPattern>
 				<unitPattern count="other">{0} m/s²</unitPattern>
 			</unit>
@@ -7032,8 +6580,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="concentr-permyriad">
 				<displayName>زرمه</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="concentr-mole">
 				<displayName>مول</displayName>
@@ -7234,28 +6780,17 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="energy-electronvolt">
 				<displayName>اليکټران وولټ</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="energy-british-thermal-unit">
 				<displayName>BTU</displayName>
 				<unitPattern count="one">{0} Btu</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="energy-therm-us">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
+				<unitPattern count="other">{0} Btu</unitPattern>
 			</unit>
 			<unit type="force-pound-force">
 				<displayName>پاونډ قوه</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="force-newton">
 				<displayName>نيوټن</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="frequency-gigahertz">
 				<displayName>GHz</displayName>
@@ -7276,41 +6811,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>Hz</displayName>
 				<unitPattern count="one">{0} Hz</unitPattern>
 				<unitPattern count="other">{0} Hz</unitPattern>
-			</unit>
-			<unit type="graphics-em">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-pixel">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-megapixel">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-pixel-per-centimeter">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-pixel-per-inch">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-dot-per-centimeter">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="graphics-dot-per-inch">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="length-kilometer">
 				<displayName>km</displayName>
@@ -7409,8 +6909,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="length-solar-radius">
 				<displayName>لمريزې وړانګې</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="light-lux">
 				<displayName>lx</displayName>
@@ -7419,8 +6917,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="light-solar-luminosity">
 				<displayName>لمريز ځلښتونه</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-metric-ton">
 				<displayName>t</displayName>
@@ -7478,18 +6974,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="mass-dalton">
 				<displayName>ډالټنز</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-earth-mass">
 				<displayName>د زمکې حجمونه</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-solar-mass">
 				<displayName>لمريز حجم</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="power-gigawatt">
 				<displayName>GW</displayName>
@@ -7538,7 +7028,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="pressure-bar">
 				<displayName draft="provisional">bar</displayName>
-				<unitPattern count="one" draft="provisional">↑↑↑</unitPattern>
+				<unitPattern count="one" draft="provisional">{0} bar</unitPattern>
 				<unitPattern count="other" draft="provisional">{0} bar</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
@@ -7551,25 +7041,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="one">{0} atm</unitPattern>
 				<unitPattern count="other">{0} atm</unitPattern>
 			</unit>
-			<unit type="pressure-pascal">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
 			<unit type="pressure-hectopascal">
 				<displayName>hPa</displayName>
 				<unitPattern count="one">{0} hPa</unitPattern>
 				<unitPattern count="other">{0} hPa</unitPattern>
-			</unit>
-			<unit type="pressure-kilopascal">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="pressure-megapascal">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/hour</displayName>
@@ -7610,16 +7085,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName>K</displayName>
 				<unitPattern count="one">{0} K</unitPattern>
 				<unitPattern count="other">{0} K</unitPattern>
-			</unit>
-			<unit type="torque-pound-foot">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
-			</unit>
-			<unit type="torque-newton-meter">
-				<displayName>↑↑↑</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="volume-cubic-kilometer">
 				<displayName>km³</displayName>
@@ -7738,8 +7203,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="volume-fluid-ounce-imperial">
 				<displayName>امپيريل مايع اونس</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="volume-tablespoon">
 				<displayName>tbsp</displayName>
@@ -7753,8 +7216,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			</unit>
 			<unit type="volume-barrel">
 				<displayName>بېرل</displayName>
-				<unitPattern count="one">↑↑↑</unitPattern>
-				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<coordinateUnit>
 				<displayName>اړخ</displayName>
@@ -7767,9 +7228,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<unitLength type="narrow">
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
-			</compoundUnit>
-			<compoundUnit type="times">
-				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="concentr-percent">
 				<displayName>سلنه</displayName>
@@ -7862,7 +7320,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<unitPattern count="other">{0}°C</unitPattern>
 			</unit>
 			<unit type="volume-liter">
-				<displayName>↑↑↑</displayName>
 				<unitPattern count="one">{0}L</unitPattern>
 				<unitPattern count="other">{0}L</unitPattern>
 			</unit>
@@ -7891,34 +7348,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<listPatternPart type="end">{0}، او {1}</listPatternPart>
 			<listPatternPart type="2">{0} او {1}</listPatternPart>
 		</listPattern>
-		<listPattern type="or">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
-			<listPatternPart type="2">↑↑↑</listPatternPart>
-		</listPattern>
-		<listPattern type="or-narrow">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
-			<listPatternPart type="2">↑↑↑</listPatternPart>
-		</listPattern>
-		<listPattern type="or-short">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
-			<listPatternPart type="2">↑↑↑</listPatternPart>
-		</listPattern>
 		<listPattern type="standard-narrow">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
 			<listPatternPart type="2">{0}، {1}</listPatternPart>
 		</listPattern>
 		<listPattern type="standard-short">
-			<listPatternPart type="start">↑↑↑</listPatternPart>
-			<listPatternPart type="middle">↑↑↑</listPatternPart>
-			<listPatternPart type="end">↑↑↑</listPatternPart>
 			<listPatternPart type="2">{0} او {1}</listPatternPart>
 		</listPattern>
 		<listPattern type="unit">
@@ -7948,7 +7381,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	</posix>
 	<characterLabels>
 		<characterLabelPattern type="all">{0} - ټول</characterLabelPattern>
-		<characterLabelPattern type="category-list">↑↑↑</characterLabelPattern>
 		<characterLabelPattern type="compatibility">{0} - مطابقت</characterLabelPattern>
 		<characterLabelPattern type="enclosed">{0} - منسلک</characterLabelPattern>
 		<characterLabelPattern type="extended">{0} - غځېدلی</characterLabelPattern>
