@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2019 Unicode, Inc.
-For terms of use, see http://www.unicode.org/copyright.html
-Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+<!--
+Copyright © 1991-2015 Unicode, Inc.
 CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
 -->
 <ldml>
 	<identity>
@@ -34,10 +34,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<variable id="$ExtCccZwj">[[$Extend-\p{ccc=0}] $ZWJ]</variable>
 			</variables>
 			<segmentRules>
-				<!-- RULES
-					 Break at the start and end of text, unless the text is empty.
-					 Do not break between a CR and LF. Otherwise, break before and after controls.
-				-->
+				<!-- RULES -->
+				<!-- Break at the start and end of text, unless the text is empty. -->
+				<!-- Do not break between a CR and LF. Otherwise, break before and after controls. -->
 				<rule id="3"> $CR × $LF </rule>
 				<rule id="4"> ( $Control | $CR | $LF ) ÷ </rule>
 				<rule id="5"> ÷ ( $Control | $CR | $LF ) </rule>
@@ -70,6 +69,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<variable id="$CB">\p{Line_Break=Contingent_Break}</variable>
 				<variable id="$CL">\p{Line_Break=Close_Punctuation}</variable>
 				<variable id="$CP">\p{Line_Break=CP}</variable>
+				<variable id="$CP30">[$CP - [\p{ea=F}\p{ea=W}\p{ea=H}]]</variable>
 				<variable id="$CM1">\p{Line_Break=Combining_Mark}</variable>
 				<variable id="$CR">\p{Line_Break=Carriage_Return}</variable>
 				<variable id="$EX">\p{Line_Break=Exclamation}</variable>
@@ -89,6 +89,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<variable id="$NS">\p{Line_Break=Nonstarter}</variable>
 				<variable id="$NU">\p{Line_Break=Numeric}</variable>
 				<variable id="$OP">\p{Line_Break=Open_Punctuation}</variable>
+				<variable id="$OP30">[$OP - [\p{ea=F}\p{ea=W}\p{ea=H}]]</variable>
 				<variable id="$PO">\p{Line_Break=Postfix_Numeric}</variable>
 				<variable id="$PR">\p{Line_Break=Prefix_Numeric}</variable>
 				<variable id="$QU">\p{Line_Break=Quotation}</variable>
@@ -107,16 +108,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<variable id="$ZWJ">\p{Line_Break=ZWJ}</variable>
 				<!-- SPECIAL EXTENSIONS -->
 				<variable id="$CM">[$CM1 $ZWJ]</variable>
-				<!-- LB 1  Assign a line breaking class to each code point of the input.
-					 Resolve AI, CB, SA, SG, and XX into other line breaking classes depending on criteria outside the scope of this algorithm.
-					 NOTE: CB is ok to fall through, but must handle others here.
-				-->
+				<!-- LB 1  Assign a line breaking class to each code point of the input. -->
+				<!-- Resolve AI, CB, SA, SG, and XX into other line breaking classes depending on criteria outside the scope of this algorithm. -->
+				<!-- NOTE: CB is ok to fall through, but must handle others here. -->
 				<variable id="$AL">[$AI $AL $SG $XX $SA]</variable>
 				<variable id="$NS">[$NS $CJ]</variable>
-				<!-- WARNING: Fixes for Rule 9
-					 Treat X (CM|ZWJ* as if it were X.
-					 Where X is any line break class except SP, BK, CR, LF, NL or ZW.
-				-->
+				<!-- WARNING: Fixes for Rule 9 -->
+				<!-- Treat X (CM|ZWJ* as if it were X. -->
+				<!-- Where X is any line break class except SP, BK, CR, LF, NL or ZW. -->
 				<variable id="$X">$CM*</variable>
 				<!-- MACROS -->
 				<variable id="$Spec1_">[$SP $BK $CR $LF $NL $ZW]</variable>
@@ -133,6 +132,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<variable id="$CB">($CB $X)</variable>
 				<variable id="$CL">($CL $X)</variable>
 				<variable id="$CP">($CP $X)</variable>
+				<variable id="$CP30">($CP30 $X)</variable>
 				<variable id="$CM">($CM $X)</variable>
 				<variable id="$EX">($EX $X)</variable>
 				<variable id="$GL">($GL $X)</variable>
@@ -149,6 +149,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<variable id="$NS">($NS $X)</variable>
 				<variable id="$NU">($NU $X)</variable>
 				<variable id="$OP">($OP $X)</variable>
+				<variable id="$OP30">($OP30 $X)</variable>
 				<variable id="$PO">($PO $X)</variable>
 				<variable id="$PR">($PR $X)</variable>
 				<variable id="$QU">($QU $X)</variable>
@@ -161,15 +162,13 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<variable id="$EB">($EB $X)</variable>
 				<variable id="$EM">($EM $X)</variable>
 				<variable id="$ZWJ">($ZWJ $X)</variable>
-				<!-- OUT OF ORDER ON PURPOSE
-					 LB 10  Treat any remaining combining mark as AL.
-				-->
+				<!-- OUT OF ORDER ON PURPOSE -->
+				<!-- LB 10  Treat any remaining combining mark as AL. -->
 				<variable id="$AL">($AL | ^ $CM | (?&lt;=$Spec1_) $CM)</variable>
 			</variables>
 			<segmentRules>
-				<!-- RULES
-					 LB 4  Always break after hard line breaks (but never between CR and LF).
-				-->
+				<!-- RULES -->
+				<!-- LB 4  Always break after hard line breaks (but never between CR and LF). -->
 				<rule id="4"> $BK ÷ </rule>
 				<!-- LB 5  Treat CR followed by LF, as well as CR, LF and NL as hard line breaks. -->
 				<rule id="5.01"> $CR × $LF </rule>
@@ -185,9 +184,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<rule id="8"> $ZW $SP* ÷ </rule>
 				<!-- LB 8a  Don't break between ZWJ and IDs (for use in Emoji ZWJ sequences) -->
 				<rule id="8.1"> $ZWJ_O × </rule>
-				<!-- LB 9  Do not break a combining character sequence; treat it as if it has the LB class of the base character
-					 in all of the following rules. (Where X is any line break class except SP, BK, CR, LF, NL or ZW.)
-				-->
+				<!-- LB 9  Do not break a combining character sequence; treat it as if it has the LB class of the base character -->
+				<!-- in all of the following rules. (Where X is any line break class except SP, BK, CR, LF, NL or ZW.) -->
 				<rule id="9"> $Spec2_ × $CM </rule>
 				<!-- LB 11  Do not break before or after WORD JOINER and related characters. -->
 				<rule id="11.01"> × $WJ </rule>
@@ -197,9 +195,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<rule id="12.1"> $Spec3a_ × $GL </rule>
 				<rule id="12.2"> $Spec3b_ $CM+ × $GL </rule>
 				<rule id="12.3"> ^ $CM+ × $GL </rule>
-				<!-- LB 13  Do not break before \u2018]\u2019 or \u2018!\u2019 or \u2018;\u2019 or \u2018/\u2019, even after spaces.
-					 Using customization 7.
-				-->
+				<!-- LB 13  Do not break before \u2018]\u2019 or \u2018!\u2019 or \u2018;\u2019 or \u2018/\u2019, even after spaces. -->
+				<!-- Using customization 7. -->
 				<rule id="13.01"> × $EX </rule>
 				<rule id="13.02"> $Spec4_ × ($CL | $CP | $IS | $SY) </rule>
 				<rule id="13.03"> $Spec4_ $CM+ × ($CL | $CP | $IS | $SY) </rule>
@@ -220,11 +217,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<!-- LB 20  Break before and after unresolved CB. -->
 				<rule id="20.01"> ÷ $CB </rule>
 				<rule id="20.02"> $CB ÷ </rule>
-				<!-- LB 20.9  Don't break between Hyphens and Letters when there is a break preceding the hyphen.
-					 Originally added as a Finnish tailoring, now promoted to default CLDR behavior.
-					 Must be before LB 21. Note: this is not default UAX-14 behaviour. See ICU issue ICU-8151.
-					 (Unlike in ICU, here we just check a limited set of known breaks, ignoring some cases like LB 14).
-				-->
+				<!-- LB 20.9  Don't break between Hyphens and Letters when there is a break preceding the hyphen. -->
+				<!-- Originally added as a Finnish tailoring, now promoted to default CLDR behavior. -->
+				<!-- Must be before LB 21. Note: this is not default UAX-14 behaviour. See ICU issue ICU-8151. -->
+				<!-- (Unlike in ICU, here we just check a limited set of known breaks, ignoring some cases like LB 14). -->
 				<rule id="20.09"> $Spec5_ $HY × $AL </rule>
 				<!-- LB 21  Do not break before hyphen-minus, other hyphens, fixed-width spaces, small kana and other non-starters, or after acute accents. -->
 				<rule id="21.01"> × $BA </rule>
@@ -235,12 +231,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<rule id="21.1"> $HL ($HY | $BA) × </rule>
 				<!-- LB 21b Don’t break between Solidus and Hebrew letters. -->
 				<rule id="21.2"> $SY × $HL </rule>
-				<!-- LB 22  Do not break between two ellipses, or between letters, numbers or exclamations and ellipsis. -->
-				<rule id="22.01"> ($AL | $HL) × $IN </rule>
-				<rule id="22.02"> $EX × $IN </rule>
-				<rule id="22.03"> ($ID | $EB | $EM) × $IN </rule>
-				<rule id="22.04"> $IN × $IN </rule>
-				<rule id="22.05"> $NU × $IN </rule>
+				<!-- LB 22  Do not break before ellipsis. -->
+				<rule id="22.01"> × $IN </rule>
 				<!-- LB 23  Do not break between digits and letters. -->
 				<rule id="23.02"> ($AL | $HL) × $NU </rule>
 				<rule id="23.03"> $NU × ($AL | $HL) </rule>
@@ -250,10 +242,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<!-- LB24 Do not break between numeric prefix/postfix and letters, or between letters and prefix/postfix. -->
 				<rule id="24.02"> ($PR | $PO) × ($AL | $HL) </rule>
 				<rule id="24.03"> ($AL | $HL) × ($PR | $PO) </rule>
-				<!-- Using customization 7
-					 LB Alternative: ( PR | PO) ? ( OP | HY ) ? NU (NU | SY | IS) * (CL | CP) ? ( PR | PO) ?
-					 Insert × every place it could go. However, make sure that at least one thing is concrete, otherwise would cause $NU to not break before or after
-				-->
+				<!-- Using customization 7 -->
+				<!-- LB Alternative: ( PR | PO) ? ( OP | HY ) ? NU (NU | SY | IS) * (CL | CP) ? ( PR | PO) ? -->
+				<!-- Insert × every place it could go. However, make sure that at least one thing is concrete, otherwise would cause $NU to not break before or after -->
 				<rule id="25.01"> ($PR | $PO) × ( $OP | $HY )? $NU </rule>
 				<rule id="25.02"> ( $OP | $HY ) × $NU </rule>
 				<rule id="25.03"> $NU × ($NU | $SY | $IS) </rule>
@@ -271,9 +262,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<rule id="28"> ($AL | $HL) × ($AL | $HL) </rule>
 				<!-- LB 29  Do not break between numeric punctuation and alphabetics (\"e.g.\"). -->
 				<rule id="29"> $IS × ($AL | $HL) </rule>
-				<!-- LB 30  Do not break between letters, numbers or ordinary symbols and opening or closing punctuation. -->
-				<rule id="30.01"> ($AL | $HL | $NU) × $OP </rule>
-				<rule id="30.02"> $CP × ($AL | $HL | $NU) </rule>
+				<!-- LB 30  Do not break between letters, numbers or ordinary symbols and non-East-Asian opening or closing punctuation. -->
+				<rule id="30.01"> ($AL | $HL | $NU) × $OP30 </rule>
+				<rule id="30.02"> $CP30 × ($AL | $HL | $NU) </rule>
 				<!-- LB 30a  Break between two Regional Indicators if and only if there is an even number of them before the point being considered. -->
 				<rule id="30.11"> ^ ($RI $RI)* $RI × $RI </rule>
 				<rule id="30.12"> [^$RI] ($RI $RI)* $RI × $RI </rule>
@@ -299,9 +290,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<variable id="$Close">\p{Sentence_Break=Close}</variable>
 				<variable id="$SContinue">\p{Sentence_Break=SContinue}</variable>
 				<variable id="$Any">.</variable>
-				<!-- SPECIAL EXTENSIONS
-					 WARNING: For Rule 5, now add format and extend to everything but Sep, Format, and Extend
-				-->
+				<!-- SPECIAL EXTENSIONS -->
+				<!-- WARNING: For Rule 5, now add format and extend to everything but Sep, Format, and Extend -->
 				<variable id="$FE">[$Format $Extend]</variable>
 				<variable id="$NotPreLower_">[^ $OLetter $Upper $Lower $Sep $CR $LF $STerm $ATerm]</variable>
 				<variable id="$Sp">($Sp $FE*)</variable>
@@ -318,23 +308,20 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<variable id="$SATerm">($STerm | $ATerm)</variable>
 			</variables>
 			<segmentRules>
-				<!-- RULES
-					 Break at the start and end of text, unless the text is empty.
-					 Do not break within CRLF.
-				-->
+				<!-- RULES -->
+				<!-- Break at the start and end of text, unless the text is empty. -->
+				<!-- Do not break within CRLF. -->
 				<rule id="3"> $CR × $LF </rule>
 				<!-- Break after paragraph separators. -->
 				<rule id="4"> $ParaSep ÷ </rule>
-				<!-- Ignore Format and Extend characters, except after sot, ParaSep, and within CRLF. (See Section 6.2, Replacing Ignore Rules.) This also has the effect of: Any × (Format | Extend)
-					 WARNING: Implemented as don't break before format (except after linebreaks),
-					 AND add format and extend in all variables definitions that appear after this point!
-				-->
+				<!-- Ignore Format and Extend characters, except after sot, ParaSep, and within CRLF. (See Section 6.2, Replacing Ignore Rules.) This also has the effect of: Any × (Format | Extend) -->
+				<!-- WARNING: Implemented as don't break before format (except after linebreaks), -->
+				<!-- AND add format and extend in all variables definitions that appear after this point! -->
 				<rule id="5"> × [$Format $Extend] </rule>
-				<!-- Do not break after full stop in certain contexts. [See note below.]
-					 Do not break after ambiguous terminators like period, if immediately followed by a number or lowercase letter,
-					 is between uppercase letters, or if the first following letter (optionally after certain punctuation) is lowercase.
-					 For example, a period may be an abbreviation or numeric period, and not mark the end of a sentence.
-				-->
+				<!-- Do not break after full stop in certain contexts. [See note below.] -->
+				<!-- Do not break after ambiguous terminators like period, if immediately followed by a number or lowercase letter, -->
+				<!-- is between uppercase letters, or if the first following letter (optionally after certain punctuation) is lowercase. -->
+				<!-- For example, a period may be an abbreviation or numeric period, and not mark the end of a sentence. -->
 				<rule id="6"> $ATerm × $Numeric </rule>
 				<rule id="7"> ($Upper | $Lower) $ATerm × $Upper </rule>
 				<rule id="8"> $ATerm $Close* $Sp* × $NotPreLower_* $Lower </rule>
@@ -375,9 +362,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<!-- MACROS -->
 				<variable id="$AHLetter">($ALetter | $Hebrew_Letter)</variable>
 				<variable id="$MidNumLetQ">($MidNumLet | $Single_Quote)</variable>
-				<!-- SPECIAL EXTENSIONS
-					 Add format and extend to everything
-				-->
+				<!-- SPECIAL EXTENSIONS -->
+				<!-- Add format and extend to everything -->
 				<variable id="$FE">[$Format $Extend $ZWJ]</variable>
 				<variable id="$NotBreak_">[^ $Newline $CR $LF ]</variable>
 				<variable id="$Katakana">($Katakana $FE*)</variable>
@@ -395,10 +381,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<variable id="$MidNumLetQ">($MidNumLetQ $FE*)</variable>
 			</variables>
 			<segmentRules>
-				<!-- RULES
-					 Break at the start and end of text, unless the text is empty.
-					 Do not break within CRLF.
-				-->
+				<!-- RULES -->
+				<!-- Break at the start and end of text, unless the text is empty. -->
+				<!-- Do not break within CRLF. -->
 				<rule id="3"> $CR × $LF </rule>
 				<!-- Otherwise break before and after Newlines (including CR and LF) -->
 				<rule id="3.1"> ($Newline | $CR | $LF) ÷ </rule>
@@ -406,14 +391,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<!-- Do not break within emoji zwj sequences. -->
 				<rule id="3.3"> $ZWJ × $ExtPict </rule>
 				<rule id="3.4"> $WSegSpace × $WSegSpace </rule>
-				<!-- Ignore Format and Extend characters, except after sot, CR, LF, and Newline. (See Section 6.2, Replacing Ignore Rules.) This also has the effect of: Any × (Format | Extend)
-					 WARNING: Implemented as don't break before format (except after linebreaks),
-					 AND add format and extend in all variables definitions that appear after this point!
-				-->
+				<!-- Ignore Format and Extend characters, except after sot, CR, LF, and Newline. (See Section 6.2, Replacing Ignore Rules.) This also has the effect of: Any × (Format | Extend) -->
+				<!-- WARNING: Implemented as don't break before format (except after linebreaks), -->
+				<!-- AND add format and extend in all variables definitions that appear after this point! -->
 				<rule id="4"> $NotBreak_ × [$Format $Extend $ZWJ] </rule>
-				<!-- VANILLA RULES
-					 Do not break between most letters.
-				-->
+				<!-- VANILLA RULES -->
+				<!-- Do not break between most letters. -->
 				<rule id="5"> $AHLetter × $AHLetter </rule>
 				<!-- Do not break letters across certain punctuation. -->
 				<rule id="6"> $AHLetter × ($MidLetter | $MidNumLetQ) $AHLetter </rule>

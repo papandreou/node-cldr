@@ -103,7 +103,9 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 			<language type="en_AU">anglese australian</language>
 			<language type="en_CA">anglese canadian</language>
 			<language type="en_GB">anglese britannic</language>
+			<language type="en_GB" alt="short">anglese (GB)</language>
 			<language type="en_US">anglese american</language>
+			<language type="en_US" alt="short">anglese (SUA)</language>
 			<language type="eo">esperanto</language>
 			<language type="es">espaniol</language>
 			<language type="es_419">espaniol latinoamerican</language>
@@ -2885,6 +2887,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		</timeZoneNames>
 	</dates>
 	<numbers>
+		<defaultNumberingSystem draft="contributed">↑↑↑</defaultNumberingSystem>
+		<otherNumberingSystems>
+			<native draft="contributed">↑↑↑</native>
+		</otherNumberingSystems>
 		<minimumGroupingDigits draft="contributed">2</minimumGroupingDigits>
 		<symbols numberSystem="latn">
 			<decimal>,</decimal>
@@ -3452,6 +3458,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 				<displayName count="one" draft="contributed">rublos russe</displayName>
 				<displayName count="other" draft="contributed">rublos russe</displayName>
 				<symbol draft="contributed">₽</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="RWF">
 				<displayName>franco ruandese</displayName>

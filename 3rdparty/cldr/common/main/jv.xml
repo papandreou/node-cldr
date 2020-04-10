@@ -57,6 +57,8 @@ terms of use, see http://www.unicode.org/copyright.html
 			<language type="da">Dansk</language>
 			<language type="dav">Taita</language>
 			<language type="de">Jérman</language>
+			<language type="de_AT">↑↑↑</language>
+			<language type="de_CH">↑↑↑</language>
 			<language type="dje">Zarma</language>
 			<language type="dsb">Sorbia Non Standar</language>
 			<language type="dua">Duala</language>
@@ -66,7 +68,12 @@ terms of use, see http://www.unicode.org/copyright.html
 			<language type="ee">Ewe</language>
 			<language type="el">Yunani</language>
 			<language type="en">Inggris</language>
+			<language type="en_AU">↑↑↑</language>
+			<language type="en_CA">↑↑↑</language>
+			<language type="en_GB">↑↑↑</language>
 			<language type="en_GB" alt="short">Inggris (Britania)</language>
+			<language type="en_US">↑↑↑</language>
+			<language type="en_US" alt="short">Inggris (AS)</language>
 			<language type="eo">Esperanto</language>
 			<language type="es">Spanyol</language>
 			<language type="es_419">Spanyol (Amerika Latin)</language>
@@ -81,6 +88,8 @@ terms of use, see http://www.unicode.org/copyright.html
 			<language type="fil">Tagalog</language>
 			<language type="fo">Faroe</language>
 			<language type="fr">Prancis</language>
+			<language type="fr_CA">↑↑↑</language>
+			<language type="fr_CH">↑↑↑</language>
 			<language type="fur">Friulian</language>
 			<language type="fy">Frisia Sisih Kulon</language>
 			<language type="ga">Irlandia</language>
@@ -183,6 +192,8 @@ terms of use, see http://www.unicode.org/copyright.html
 			<language type="prg">Prusia</language>
 			<language type="ps">Pashto</language>
 			<language type="pt">Portugis</language>
+			<language type="pt_BR">↑↑↑</language>
+			<language type="pt_PT">↑↑↑</language>
 			<language type="qu">Quechua</language>
 			<language type="rm">Roman</language>
 			<language type="rn">Rundi</language>
@@ -277,6 +288,7 @@ terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hebr">Ibrani</script>
 			<script type="Hira">Hiragana</script>
 			<script type="Hrkt">Silabaris Jepang</script>
+			<script type="Jamo">↑↑↑</script>
 			<script type="Jpan">Jepang</script>
 			<script type="Kana">Katakana</script>
 			<script type="Khmr">Khmer</script>
@@ -290,6 +302,7 @@ terms of use, see http://www.unicode.org/copyright.html
 			<script type="Orya">Odia</script>
 			<script type="Sinh">Sinhala</script>
 			<script type="Taml">Tamil</script>
+			<script type="Telu">↑↑↑</script>
 			<script type="Thaa">Thaana</script>
 			<script type="Thai">Thailand</script>
 			<script type="Tibt">Tibetan</script>
@@ -379,6 +392,7 @@ terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CG" alt="variant">Républik Kongo</territory>
 			<territory type="CH">Switserlan</territory>
 			<territory type="CI">Pasisir Gadhing</territory>
+			<territory type="CI" alt="variant">↑↑↑</territory>
 			<territory type="CK">Kapuloan Cook</territory>
 			<territory type="CL">Cilé</territory>
 			<territory type="CM">Kamerun</territory>
@@ -607,6 +621,11 @@ terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ZW">Simbabwe</territory>
 			<territory type="ZZ">Daerah Ora Dikenali</territory>
 		</territories>
+		<subdivisions>
+			<subdivision type="gbeng">Inggris</subdivision>
+			<subdivision type="gbsct">Skotlandia</subdivision>
+			<subdivision type="gbwls">Wales</subdivision>
+		</subdivisions>
 		<keys>
 			<key type="calendar">Tanggalan</key>
 			<key type="cf">Format Mata Uang</key>
@@ -701,6 +720,8 @@ terms of use, see http://www.unicode.org/copyright.html
 		<exemplarCharacters>[a â å b c d e é è ê g h i ì j k l m n o ò p r s t u ù w y]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[f q v x z]</exemplarCharacters>
 		<exemplarCharacters type="index">[A Â Å B C D E É È Ê G H I Ì J K L M N O Ò P R S T U Ù W Y]</exemplarCharacters>
+		<exemplarCharacters type="numbers" draft="contributed">↑↑↑</exemplarCharacters>
+		<exemplarCharacters type="punctuation" draft="contributed">↑↑↑</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -709,14 +730,28 @@ terms of use, see http://www.unicode.org/copyright.html
 		<ellipsis type="word-medial">{0} … {1}</ellipsis>
 		<moreInformation>?</moreInformation>
 		<parseLenients scope="date" level="lenient">
+			<parseLenient sample="-" draft="contributed">↑↑↑</parseLenient>
 			<parseLenient sample=":" draft="contributed">[\:∶]</parseLenient>
 		</parseLenients>
 		<parseLenients scope="general" level="lenient">
+			<parseLenient sample="." draft="contributed">↑↑↑</parseLenient>
+			<parseLenient sample="’" draft="contributed">↑↑↑</parseLenient>
+			<parseLenient sample="%" draft="contributed">↑↑↑</parseLenient>
+			<parseLenient sample="‰" draft="contributed">↑↑↑</parseLenient>
 			<parseLenient sample="$" draft="contributed">[\$﹩＄$]</parseLenient>
 			<parseLenient sample="£" draft="contributed">[£₤]</parseLenient>
+			<parseLenient sample="¥" draft="contributed">↑↑↑</parseLenient>
+			<parseLenient sample="₩" draft="contributed">↑↑↑</parseLenient>
+			<parseLenient sample="₹" draft="contributed">↑↑↑</parseLenient>
 		</parseLenients>
 		<parseLenients scope="number" level="lenient">
 			<parseLenient sample="-" draft="contributed">[\-‒⁻₋−➖﹣－]</parseLenient>
+			<parseLenient sample="," draft="contributed">↑↑↑</parseLenient>
+			<parseLenient sample="+" draft="contributed">↑↑↑</parseLenient>
+		</parseLenients>
+		<parseLenients scope="number" level="stricter">
+			<parseLenient sample="," draft="contributed">↑↑↑</parseLenient>
+			<parseLenient sample="." draft="contributed">↑↑↑</parseLenient>
 		</parseLenients>
 	</characters>
 	<delimiters>
@@ -772,8 +807,13 @@ terms of use, see http://www.unicode.org/copyright.html
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
+						<dateFormatItem id="Bh">↑↑↑</dateFormatItem>
+						<dateFormatItem id="Bhm">↑↑↑</dateFormatItem>
+						<dateFormatItem id="Bhms">↑↑↑</dateFormatItem>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="E">ccc</dateFormatItem>
+						<dateFormatItem id="EBhm">↑↑↑</dateFormatItem>
+						<dateFormatItem id="EBhms">↑↑↑</dateFormatItem>
 						<dateFormatItem id="Ed">E, d</dateFormatItem>
 						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
 						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
@@ -811,6 +851,15 @@ terms of use, see http://www.unicode.org/copyright.html
 					</availableFormats>
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="Bh">
+							<greatestDifference id="B">↑↑↑</greatestDifference>
+							<greatestDifference id="h">↑↑↑</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Bhm">
+							<greatestDifference id="B">↑↑↑</greatestDifference>
+							<greatestDifference id="h">↑↑↑</greatestDifference>
+							<greatestDifference id="m">↑↑↑</greatestDifference>
+						</intervalFormatItem>
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d – d</greatestDifference>
 						</intervalFormatItem>
@@ -1006,7 +1055,7 @@ terms of use, see http://www.unicode.org/copyright.html
 				<days>
 					<dayContext type="format">
 						<dayWidth type="abbreviated">
-							<day type="sun">Ahad</day>
+							<day type="sun">↑↑↑</day>
 							<day type="mon">Sen</day>
 							<day type="tue">Sel</day>
 							<day type="wed">Rab</day>
@@ -1016,12 +1065,12 @@ terms of use, see http://www.unicode.org/copyright.html
 						</dayWidth>
 						<dayWidth type="narrow">
 							<day type="sun">A</day>
-							<day type="mon">S</day>
-							<day type="tue">S</day>
+							<day type="mon">↑↑↑</day>
+							<day type="tue">↑↑↑</day>
 							<day type="wed">R</day>
 							<day type="thu">K</day>
 							<day type="fri">J</day>
-							<day type="sat">S</day>
+							<day type="sat">↑↑↑</day>
 						</dayWidth>
 						<dayWidth type="short">
 							<day type="sun">Ahad</day>
@@ -1047,9 +1096,9 @@ terms of use, see http://www.unicode.org/copyright.html
 							<day type="sun">Ahad</day>
 							<day type="mon">Sen</day>
 							<day type="tue">Sel</day>
-							<day type="wed">Rab</day>
+							<day type="wed">↑↑↑</day>
 							<day type="thu">Kam</day>
-							<day type="fri">Jum</day>
+							<day type="fri">↑↑↑</day>
 							<day type="sat">Sab</day>
 						</dayWidth>
 						<dayWidth type="narrow">
@@ -1059,24 +1108,24 @@ terms of use, see http://www.unicode.org/copyright.html
 							<day type="wed">R</day>
 							<day type="thu">K</day>
 							<day type="fri">J</day>
-							<day type="sat">S</day>
+							<day type="sat">↑↑↑</day>
 						</dayWidth>
 						<dayWidth type="short">
 							<day type="sun">Ahad</day>
-							<day type="mon">Sen</day>
-							<day type="tue">Sel</day>
-							<day type="wed">Rab</day>
-							<day type="thu">Kam</day>
+							<day type="mon">↑↑↑</day>
+							<day type="tue">↑↑↑</day>
+							<day type="wed">↑↑↑</day>
+							<day type="thu">↑↑↑</day>
 							<day type="fri">Jum</day>
 							<day type="sat">Sab</day>
 						</dayWidth>
 						<dayWidth type="wide">
 							<day type="sun">Ahad</day>
-							<day type="mon">Senin</day>
+							<day type="mon">↑↑↑</day>
 							<day type="tue">Selasa</day>
-							<day type="wed">Rabu</day>
-							<day type="thu">Kamis</day>
-							<day type="fri">Jumat</day>
+							<day type="wed">↑↑↑</day>
+							<day type="thu">↑↑↑</day>
+							<day type="fri">↑↑↑</day>
 							<day type="sat">Sabtu</day>
 						</dayWidth>
 					</dayContext>
@@ -1233,8 +1282,13 @@ terms of use, see http://www.unicode.org/copyright.html
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
+						<dateFormatItem id="Bh">↑↑↑</dateFormatItem>
+						<dateFormatItem id="Bhm">↑↑↑</dateFormatItem>
+						<dateFormatItem id="Bhms">↑↑↑</dateFormatItem>
 						<dateFormatItem id="d">d</dateFormatItem>
 						<dateFormatItem id="E">ccc</dateFormatItem>
+						<dateFormatItem id="EBhm">↑↑↑</dateFormatItem>
+						<dateFormatItem id="EBhms">↑↑↑</dateFormatItem>
 						<dateFormatItem id="Ed">E, d</dateFormatItem>
 						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
 						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
@@ -1280,6 +1334,15 @@ terms of use, see http://www.unicode.org/copyright.html
 					</appendItems>
 					<intervalFormats>
 						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="Bh">
+							<greatestDifference id="B">↑↑↑</greatestDifference>
+							<greatestDifference id="h">↑↑↑</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Bhm">
+							<greatestDifference id="B">↑↑↑</greatestDifference>
+							<greatestDifference id="h">↑↑↑</greatestDifference>
+							<greatestDifference id="m">↑↑↑</greatestDifference>
+						</intervalFormatItem>
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d – d</greatestDifference>
 						</intervalFormatItem>
@@ -1418,6 +1481,12 @@ terms of use, see http://www.unicode.org/copyright.html
 			<field type="era">
 				<displayName>era</displayName>
 			</field>
+			<field type="era-short">
+				<displayName>↑↑↑</displayName>
+			</field>
+			<field type="era-narrow">
+				<displayName>↑↑↑</displayName>
+			</field>
 			<field type="year">
 				<displayName>taun</displayName>
 				<relative type="-1">taun wingi</relative>
@@ -1432,9 +1501,21 @@ terms of use, see http://www.unicode.org/copyright.html
 			</field>
 			<field type="year-short">
 				<displayName>taun</displayName>
+				<relative type="-1">↑↑↑</relative>
+				<relative type="0">↑↑↑</relative>
+				<relative type="1">↑↑↑</relative>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
 			</field>
 			<field type="year-narrow">
 				<displayName>taun</displayName>
+				<relative type="-1">↑↑↑</relative>
+				<relative type="0">↑↑↑</relative>
+				<relative type="1">↑↑↑</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="other">ing {0} taun</relativeTimePattern>
 				</relativeTime>
@@ -1486,9 +1567,21 @@ terms of use, see http://www.unicode.org/copyright.html
 			</field>
 			<field type="month-short">
 				<displayName>sasi</displayName>
+				<relative type="-1">↑↑↑</relative>
+				<relative type="0">↑↑↑</relative>
+				<relative type="1">↑↑↑</relative>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
 			</field>
 			<field type="month-narrow">
 				<displayName>sasi</displayName>
+				<relative type="-1">↑↑↑</relative>
+				<relative type="0">↑↑↑</relative>
+				<relative type="1">↑↑↑</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="other">ing {0} sasi</relativeTimePattern>
 				</relativeTime>
@@ -1511,6 +1604,9 @@ terms of use, see http://www.unicode.org/copyright.html
 			</field>
 			<field type="week-short">
 				<displayName>pekan</displayName>
+				<relative type="-1">↑↑↑</relative>
+				<relative type="0">↑↑↑</relative>
+				<relative type="1">↑↑↑</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="other">ing {0} pekan</relativeTimePattern>
 				</relativeTime>
@@ -1521,6 +1617,9 @@ terms of use, see http://www.unicode.org/copyright.html
 			</field>
 			<field type="week-narrow">
 				<displayName>pekan</displayName>
+				<relative type="-1">↑↑↑</relative>
+				<relative type="0">↑↑↑</relative>
+				<relative type="1">↑↑↑</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="other">ing {0} pekan</relativeTimePattern>
 				</relativeTime>
@@ -1552,15 +1651,24 @@ terms of use, see http://www.unicode.org/copyright.html
 			</field>
 			<field type="day-short">
 				<displayName>dino</displayName>
-				<relative type="-1">wingi</relative>
+				<relative type="-1">↑↑↑</relative>
 				<relative type="0">dino iki</relative>
-				<relative type="1">sesuk</relative>
+				<relative type="1">↑↑↑</relative>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
 			</field>
 			<field type="day-narrow">
 				<displayName>dino</displayName>
-				<relative type="-1">wingi</relative>
+				<relative type="-1">↑↑↑</relative>
 				<relative type="0">dino iki</relative>
-				<relative type="1">sesuk</relative>
+				<relative type="1">↑↑↑</relative>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="other">{0} dino kepungkur</relativeTimePattern>
 				</relativeTime>
@@ -1577,8 +1685,17 @@ terms of use, see http://www.unicode.org/copyright.html
 			<field type="weekday">
 				<displayName>dino sepekan</displayName>
 			</field>
+			<field type="weekday-short">
+				<displayName>↑↑↑</displayName>
+			</field>
+			<field type="weekday-narrow">
+				<displayName>↑↑↑</displayName>
+			</field>
 			<field type="weekdayOfMonth">
 				<displayName>dina jroning sasi</displayName>
+			</field>
+			<field type="weekdayOfMonth-short">
+				<displayName>↑↑↑</displayName>
 			</field>
 			<field type="weekdayOfMonth-narrow">
 				<displayName>dino jroning sasi</displayName>
@@ -1603,6 +1720,17 @@ terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="other">{0} Ahad kepungkur</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="sun-narrow">
+				<relative type="-1">↑↑↑</relative>
+				<relative type="0">↑↑↑</relative>
+				<relative type="1">↑↑↑</relative>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="mon">
@@ -1660,6 +1788,17 @@ terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">{0} Sel. kepungkur</relativeTimePattern>
 				</relativeTime>
 			</field>
+			<field type="tue-narrow">
+				<relative type="-1">↑↑↑</relative>
+				<relative type="0">↑↑↑</relative>
+				<relative type="1">↑↑↑</relative>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+			</field>
 			<field type="wed">
 				<relative type="-1">Rebo wingi</relative>
 				<relative type="0">Rebo iki</relative>
@@ -1680,6 +1819,17 @@ terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="other">{0} Reb. kepungkur</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="wed-narrow">
+				<relative type="-1">↑↑↑</relative>
+				<relative type="0">↑↑↑</relative>
+				<relative type="1">↑↑↑</relative>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="thu">
@@ -1704,6 +1854,17 @@ terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">{0} Kms. kepungkur</relativeTimePattern>
 				</relativeTime>
 			</field>
+			<field type="thu-narrow">
+				<relative type="-1">↑↑↑</relative>
+				<relative type="0">↑↑↑</relative>
+				<relative type="1">↑↑↑</relative>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+			</field>
 			<field type="fri">
 				<relative type="-1">Jemuwah wingi</relative>
 				<relative type="0">Jemuwah iki</relative>
@@ -1724,6 +1885,17 @@ terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="other">{0} Jem. kepungkur</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="fri-narrow">
+				<relative type="-1">↑↑↑</relative>
+				<relative type="0">↑↑↑</relative>
+				<relative type="1">↑↑↑</relative>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="sat">
@@ -1755,9 +1927,18 @@ terms of use, see http://www.unicode.org/copyright.html
 				<relativeTime type="future">
 					<relativeTimePattern count="other">ing {0} St</relativeTimePattern>
 				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+			</field>
+			<field type="dayperiod-short">
+				<displayName>↑↑↑</displayName>
 			</field>
 			<field type="dayperiod">
 				<displayName>isuk/wengi</displayName>
+			</field>
+			<field type="dayperiod-narrow">
+				<displayName>↑↑↑</displayName>
 			</field>
 			<field type="hour">
 				<displayName>jam</displayName>
@@ -1771,6 +1952,12 @@ terms of use, see http://www.unicode.org/copyright.html
 			</field>
 			<field type="hour-short">
 				<displayName>jam</displayName>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
 			</field>
 			<field type="hour-narrow">
 				<displayName>jam</displayName>
@@ -1821,6 +2008,12 @@ terms of use, see http://www.unicode.org/copyright.html
 			</field>
 			<field type="second-short">
 				<displayName>detik</displayName>
+				<relativeTime type="future">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
+				<relativeTime type="past">
+					<relativeTimePattern count="other">↑↑↑</relativeTimePattern>
+				</relativeTime>
 			</field>
 			<field type="second-narrow">
 				<displayName>detik</displayName>
@@ -1833,6 +2026,12 @@ terms of use, see http://www.unicode.org/copyright.html
 			</field>
 			<field type="zone">
 				<displayName>zona wektu</displayName>
+			</field>
+			<field type="zone-short">
+				<displayName>↑↑↑</displayName>
+			</field>
+			<field type="zone-narrow">
+				<displayName>↑↑↑</displayName>
 			</field>
 		</fields>
 		<timeZoneNames>
@@ -4018,10 +4217,13 @@ terms of use, see http://www.unicode.org/copyright.html
 		<otherNumberingSystems>
 			<native>java</native>
 		</otherNumberingSystems>
+		<minimumGroupingDigits draft="contributed">↑↑↑</minimumGroupingDigits>
 		<symbols numberSystem="latn">
 			<decimal>,</decimal>
 			<group>.</group>
 			<percentSign>%</percentSign>
+			<plusSign>↑↑↑</plusSign>
+			<minusSign>↑↑↑</minusSign>
 			<exponential>E</exponential>
 			<superscriptingExponent>×</superscriptingExponent>
 			<perMille>‰</perMille>
@@ -4029,6 +4231,11 @@ terms of use, see http://www.unicode.org/copyright.html
 			<nan>NaN</nan>
 		</symbols>
 		<decimalFormats numberSystem="latn">
+			<decimalFormatLength>
+				<decimalFormat>
+					<pattern>↑↑↑</pattern>
+				</decimalFormat>
+			</decimalFormatLength>
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="other">0 èwu</pattern>
@@ -4056,6 +4263,9 @@ terms of use, see http://www.unicode.org/copyright.html
 					<pattern type="1000000000" count="other">0M</pattern>
 					<pattern type="10000000000" count="other">00M</pattern>
 					<pattern type="100000000000" count="other">000M</pattern>
+					<pattern type="1000000000000" count="other">↑↑↑</pattern>
+					<pattern type="10000000000000" count="other">↑↑↑</pattern>
+					<pattern type="100000000000000" count="other">↑↑↑</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 		</decimalFormats>
@@ -4104,363 +4314,509 @@ terms of use, see http://www.unicode.org/copyright.html
 			<currency type="AED">
 				<displayName>Dirham Uni Emirat Arab</displayName>
 				<displayName count="other">Dirham Uni Emirat Arab</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="AFN">
 				<displayName>Afghani Afganistan</displayName>
 				<displayName count="other">Afghani Afganistan</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ALL">
 				<displayName>Lek Albania</displayName>
 				<displayName count="other">Lek Albania</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="AMD">
 				<displayName>Dram Armenia</displayName>
 				<displayName count="other">Dram Armenia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ANG">
 				<displayName>Guilder Antilla Walanda</displayName>
 				<displayName count="other">Guilder Antilla Walanda</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="AOA">
 				<displayName>Kwanza Angola</displayName>
 				<displayName count="other">Kwanza Angola</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ARS">
 				<displayName>Peso Argentina</displayName>
 				<displayName count="other">Peso Argentina</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="AUD">
 				<displayName>Dolar Australia</displayName>
 				<displayName count="other">Dolar Australia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="AWG">
 				<displayName>Florin Aruban</displayName>
 				<displayName count="other">Florin Aruban</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="AZN">
 				<displayName>Manat Azerbaijan</displayName>
 				<displayName count="other">Manat Azerbaijan</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BAM">
 				<displayName>Mark Konvertibel Bosnia-Herzegovina</displayName>
 				<displayName count="other">Mark Konvertibel Bosnia-Herzegovina</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BBD">
 				<displayName>Dolar Barbadian</displayName>
 				<displayName count="other">Dolar Barbadian</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BDT">
 				<displayName>Taka Bangladesh</displayName>
 				<displayName count="other">Taka Bangladesh</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BGN">
 				<displayName>Lev Bulgaria</displayName>
 				<displayName count="other">Lev Bulgaria</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BHD">
 				<displayName>Bahrain Dinar</displayName>
 				<displayName count="other">Bahrain Dinar</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BIF">
 				<displayName>Franc Burundi</displayName>
 				<displayName count="other">Franc Burundi</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BMD">
 				<displayName>Dolar Bermuda</displayName>
 				<displayName count="other">Dolar Bermuda</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BND">
 				<displayName>Dolar Brunai</displayName>
 				<displayName count="other">Dolar Brunai</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BOB">
 				<displayName>Boliviano Bolivia</displayName>
 				<displayName count="other">Boliviano Bolivia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BRL">
 				<displayName>Real Brasil</displayName>
 				<displayName count="other">Real Brasil</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BSD">
 				<displayName>Dolar Bahamian</displayName>
 				<displayName count="other">Dolar Bahamian</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BTN">
 				<displayName>Ngultrum Bhutan</displayName>
 				<displayName count="other">Ngultrum Bhutan</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BWP">
 				<displayName>Pula Botswana</displayName>
 				<displayName count="other">Pula Botswana</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BYN">
 				<displayName>Ruble Belarusia</displayName>
 				<displayName count="other">Ruble Belarusia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="BZD">
 				<displayName>Dolar Belise</displayName>
 				<displayName count="other">Dolar Belise</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CAD">
 				<displayName>Dolar Kanada</displayName>
 				<displayName count="other">Dolar Kanada</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CDF">
 				<displayName>Franc Kongo</displayName>
 				<displayName count="other">Franc Kongo</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CHF">
 				<displayName>Franc Swiss</displayName>
 				<displayName count="other">Franc Swiss</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CLP">
 				<displayName>Peso Chili</displayName>
 				<displayName count="other">Peso Chili</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CNH">
 				<displayName>Yuan Tyongkok (Jaban Rangkah)</displayName>
 				<displayName count="other">Yuan Tyongkok (Jaban Rangkah)</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CNY">
 				<displayName>Yuan Tyongkok</displayName>
 				<displayName count="other">Yuan Tyongkok</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="COP">
 				<displayName>Peso Kolumbia</displayName>
 				<displayName count="other">Peso Kolumbia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CRC">
 				<displayName>Colon Kosta Rika</displayName>
 				<displayName count="other">Colon Kosta Rika</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CUC">
 				<displayName>Peso Konvertibel Kuba</displayName>
 				<displayName count="other">Peso Konvertibel Kuba</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CUP">
 				<displayName>Peso Kuba</displayName>
 				<displayName count="other">Peso Kuba</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CVE">
 				<displayName>Escudo Tanjung Verde</displayName>
 				<displayName count="other">Escudo Tanjung Verde</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="CZK">
 				<displayName>Koruna Czech</displayName>
 				<displayName count="other">Koruna Czech</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="DJF">
 				<displayName>Franc Djibouti</displayName>
 				<displayName count="other">Franc Djibouti</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="DKK">
 				<displayName>Krone Denmark</displayName>
 				<displayName count="other">Krone Denmark</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="DOP">
 				<displayName>Peso Dominika</displayName>
 				<displayName count="other">Peso Dominika</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="DZD">
 				<displayName>Dinar Algeria</displayName>
 				<displayName count="other">Dinar Algeria</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="EGP">
 				<displayName>Pound Mesir</displayName>
 				<displayName count="other">Pound Mesir</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ERN">
 				<displayName>Nakfa Eritrea</displayName>
 				<displayName count="other">Nakfa Eritrea</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ETB">
 				<displayName>Birr Ethiopia</displayName>
 				<displayName count="other">Birr Ethiopia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="EUR">
 				<displayName>Euro</displayName>
 				<displayName count="other">Euro</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="FJD">
 				<displayName>Dolar Fiji</displayName>
 				<displayName count="other">Dolar Fiji</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="FKP">
 				<displayName>Pound Kepuloan Falkland</displayName>
 				<displayName count="other">Pound Kepuloan Falkland</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GBP">
 				<displayName>Pound Inggris</displayName>
 				<displayName count="other">Pound Inggris</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GEL">
 				<displayName>Lari Georgia</displayName>
 				<displayName count="other">Lari Georgia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GHS">
 				<displayName>Cedi Ghana</displayName>
 				<displayName count="other">Cedi Ghana</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GIP">
 				<displayName>Pound Gibraltar</displayName>
 				<displayName count="other">Pound Gibraltar</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GMD">
 				<displayName>Dalasi Gambia</displayName>
 				<displayName count="other">Dalasi Gambia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GNF">
 				<displayName>Franc Guinea</displayName>
 				<displayName count="other">Franc Guinea</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GTQ">
 				<displayName>Quetzal Guatemala</displayName>
 				<displayName count="other">Quetzal Guatemala</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="GYD">
 				<displayName>Dolar Guyana</displayName>
 				<displayName count="other">Dolar Guyana</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="HKD">
 				<displayName>Dolar Hong Kong</displayName>
 				<displayName count="other">Dolar Hong Kong</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="HNL">
 				<displayName>Lempira Honduras</displayName>
 				<displayName count="other">Lempira Honduras</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="HRK">
 				<displayName>Kuna Kroasia</displayName>
 				<displayName count="other">Kuna Kroasia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="HTG">
 				<displayName>Gourde Haiti</displayName>
 				<displayName count="other">Gourde Haiti</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="HUF">
 				<displayName>Forint Hungaria</displayName>
 				<displayName count="other">Forint Hungaria</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="IDR">
 				<displayName>Rupiah Indonesia</displayName>
 				<displayName count="other">Rupiah Indonesia</displayName>
 				<symbol>Rp</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ILS">
 				<displayName>Shekel Anyar Israel</displayName>
 				<displayName count="other">Shekel Anyar Israel</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="INR">
 				<displayName>Rupee India</displayName>
 				<displayName count="other">Rupee India</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="IQD">
 				<displayName>Dinar Irak</displayName>
 				<displayName count="other">Dinar Irak</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="IRR">
 				<displayName>Rial Iran</displayName>
 				<displayName count="other">Rial Iran</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ISK">
 				<displayName>Krona Islandia</displayName>
 				<displayName count="other">Krona Islandia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="JMD">
 				<displayName>Dolar Jamaika</displayName>
 				<displayName count="other">Dolar Jamaika</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="JOD">
 				<displayName>Dinar Yordania</displayName>
 				<displayName count="other">Dinar Yordania</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="JPY">
 				<displayName>Yen Jepang</displayName>
 				<displayName count="other">Yen Jepang</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KES">
 				<displayName>Shilling Kenya</displayName>
 				<displayName count="other">Shilling Kenya</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KGS">
 				<displayName>Som Kirgistan</displayName>
 				<displayName count="other">Som Kirgistan</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KHR">
 				<displayName>Riel Kamboja</displayName>
 				<displayName count="other">Riel Kamboja</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KMF">
 				<displayName>Franc Komoro</displayName>
 				<displayName count="other">Franc Komoro</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KPW">
 				<displayName>Won Korea Lor</displayName>
 				<displayName count="other">Won Korea Lor</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KRW">
 				<displayName>Won Korea Kidul</displayName>
 				<displayName count="other">Won Korea Kidul</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KWD">
 				<displayName>Dinar Kuwait</displayName>
 				<displayName count="other">Dinar Kuwait</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KYD">
 				<displayName>Dolar Kepuloan Caiman</displayName>
 				<displayName count="other">Dolar Kepuloan Caiman</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="KZT">
 				<displayName>Tenge Kasakhstan</displayName>
 				<displayName count="other">Tenge Kasakhstan</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="LAK">
 				<displayName>Kip Laos</displayName>
 				<displayName count="other">Kip Laos</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="LBP">
 				<displayName>Pound Libanon</displayName>
 				<displayName count="other">Pound Libanon</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="LKR">
 				<displayName>Rupee Sri Lanka</displayName>
 				<displayName count="other">Rupee Sri Lanka</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="LRD">
 				<displayName>Dolar Liberia</displayName>
 				<displayName count="other">Dolar Liberia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="LYD">
 				<displayName>Dinar Libya</displayName>
 				<displayName count="other">Dinar Libya</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MAD">
 				<displayName>Dirham Maroko</displayName>
 				<displayName count="other">Dirham Moroko</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MDL">
 				<displayName>Leu Moldova</displayName>
 				<displayName count="other">Leu Moldova</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MGA">
 				<displayName>Ariary Malagasi</displayName>
 				<displayName count="other">Ariary Malagasi</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MKD">
 				<displayName>Denar Masedonia</displayName>
 				<displayName count="other">Denar Masedonia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MMK">
 				<displayName>Kyat Myanmar</displayName>
 				<displayName count="other">Kyat Myanmar</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MNT">
 				<displayName>Tugrik Mongol</displayName>
 				<displayName count="other">Tugrik Mongol</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MOP">
 				<displayName>Pataca Macau</displayName>
 				<displayName count="other">MOP</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MRO">
 				<displayName>Ouguiya Mauritania (1973 - 2017)</displayName>
@@ -4470,218 +4826,305 @@ terms of use, see http://www.unicode.org/copyright.html
 			<currency type="MRU">
 				<displayName>Ouguiya Mauritania</displayName>
 				<displayName count="other">Ouguiya Mauritania</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MUR">
 				<displayName>Rupee Mauritius</displayName>
 				<displayName count="other">Rupee Mauritius</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MVR">
 				<displayName>Rufiyaa Maladewa</displayName>
 				<displayName count="other">Rufiyaa Maladewa</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MWK">
 				<displayName>Kwacha Malawi</displayName>
 				<displayName count="other">Kwacha Malawi</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MXN">
 				<displayName>Peso Meksiko</displayName>
 				<displayName count="other">Peso Meksiko</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MYR">
 				<displayName>Ringgit Malaysia</displayName>
 				<displayName count="other">Ringgit Malaysia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="MZN">
 				<displayName>Metical Mosambik</displayName>
 				<displayName count="other">Metical Mosambik</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="NAD">
 				<displayName>Dolar Namibia</displayName>
 				<displayName count="other">Dolar Namibia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="NGN">
 				<displayName>Naira Nigeria</displayName>
 				<displayName count="other">Naira Nigeria</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="NIO">
 				<displayName>Cordoba Nikaragua</displayName>
 				<displayName count="other">Cordoba Nikaragua</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="NOK">
 				<displayName>Krone Norwegia</displayName>
 				<displayName count="other">Krone Norwegia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="NPR">
 				<displayName>Rupee Nepal</displayName>
 				<displayName count="other">Rupee Nepal</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="NZD">
 				<displayName>Dolar Selandia Anyar</displayName>
 				<displayName count="other">Dolar Selandia Anyar</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="OMR">
 				<displayName>Rial Oman</displayName>
 				<displayName count="other">Rial Oman</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PAB">
 				<displayName>Balboa Panama</displayName>
 				<displayName count="other">Balboa Panama</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PEN">
 				<displayName>Sol Peru</displayName>
 				<displayName count="other">Sol Peru</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PGK">
 				<displayName>Kina Papua Nugini</displayName>
 				<displayName count="other">Kina Papua Nugini</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PHP">
 				<displayName>Piso Filipina</displayName>
 				<displayName count="other">Piso Filipina</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PKR">
 				<displayName>Rupee Pakistan</displayName>
 				<displayName count="other">Rupee Pakistan</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PLN">
 				<displayName>Zloty Polandia</displayName>
 				<displayName count="other">Zloty Polandia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="PYG">
 				<displayName>Guarani Paraguay</displayName>
 				<displayName count="other">Guarani Paraguay</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="QAR">
 				<displayName>Rial Qatar</displayName>
 				<displayName count="other">Rial Qatar</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="RON">
 				<displayName>Leu Rumania</displayName>
 				<displayName count="other">Leu Rumania</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="RSD">
 				<displayName>Dinar Serbia</displayName>
 				<displayName count="other">Dinar Serbia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="RUB">
 				<displayName>Rubel Rusia</displayName>
 				<displayName count="other">Rubel Rusia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="RWF">
 				<displayName>Franc Rwanda</displayName>
 				<displayName count="other">Franc Rwanda</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SAR">
 				<displayName>Riyal Saudi</displayName>
 				<displayName count="other">Riyal Saudi</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SBD">
 				<displayName>Dolar Kepuloan Solomon</displayName>
 				<displayName count="other">Dolar Kepuloan Solomon</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SCR">
 				<displayName>Rupee Seichelles</displayName>
 				<displayName count="other">Rupee Seichelles</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SDG">
 				<displayName>Pound Sudan</displayName>
 				<displayName count="other">Pound Sudan</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SEK">
 				<displayName>Krona Swedia</displayName>
 				<displayName count="other">Krona Swedia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SGD">
 				<displayName>Dolar Singapura</displayName>
 				<displayName count="other">Dolar Singapura</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SHP">
 				<displayName>Pound Santa Helena</displayName>
 				<displayName count="other">Pound Santa Helena</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SLL">
 				<displayName>Leone Sierra Leone</displayName>
 				<displayName count="other">Leone Sierra Leone</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SOS">
 				<displayName>Shilling Somalia</displayName>
 				<displayName count="other">Shilling Somalia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SRD">
 				<displayName>Dolar Suriname</displayName>
 				<displayName count="other">Dolar Suriname</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SSP">
 				<displayName>Pound Sudan Kidul</displayName>
 				<displayName count="other">Pound Sudan Kidul</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="STN">
 				<displayName>Dobra Sao Tome lan Principe</displayName>
 				<displayName count="other">Dobra Sao Tome lan Principe</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SYP">
 				<displayName>Pound Siria</displayName>
 				<displayName count="other">Pound Siria</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="SZL">
 				<displayName>Lilangeni Swasi</displayName>
 				<displayName count="other">Lilangeni Swasi</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="THB">
 				<displayName>Baht Thai</displayName>
 				<displayName count="other">Baht Thai</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TJS">
 				<displayName>Somoni Tajikistan</displayName>
 				<displayName count="other">Somoni Tajikistan</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TMT">
 				<displayName>Manat Turmenistan</displayName>
 				<displayName count="other">Manat Turmenistan</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TND">
 				<displayName>Dinar Tunisia</displayName>
 				<displayName count="other">Dinar Tunisia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TOP">
 				<displayName>Paʻanga Tonga</displayName>
 				<displayName count="other">Paʻanga Tonga</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TRY">
 				<displayName>Lira Turki</displayName>
 				<displayName count="other">Lira Turki</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
+				<symbol alt="variant" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TTD">
 				<displayName>Dolar Trinidad lan Tobago</displayName>
 				<displayName count="other">Dolar Trinidad lan Tobago</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TWD">
 				<displayName>Dolar Anyar Taiwan</displayName>
 				<displayName count="other">Dolar Anyar Taiwan</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="TZS">
 				<displayName>Shilling Tansania</displayName>
 				<displayName count="other">Shilling Tansania</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="UAH">
 				<displayName>Hryvnia Ukrania</displayName>
 				<displayName count="other">Hryvnia Ukrania</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="UGX">
 				<displayName>Shilling Uganda</displayName>
 				<displayName count="other">Shilling Uganda</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="USD">
 				<displayName>Dolar Amerika Serikat</displayName>
 				<displayName count="other">Dolar Amerika Serikat</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="UYU">
 				<displayName>Peso Uruguay</displayName>
 				<displayName count="other">Peso Uruguay</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="UZS">
 				<displayName>Som Usbekistan</displayName>
 				<displayName count="other">Som Usbekistan</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="VEF">
 				<displayName>Bolivar Venezuela (2008 - 2018)</displayName>
@@ -4692,34 +5135,44 @@ terms of use, see http://www.unicode.org/copyright.html
 			<currency type="VES">
 				<displayName>Bolivar Venezuela</displayName>
 				<displayName count="other">Bolivar Venezuela</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="VND">
 				<displayName>Dong Vietnam</displayName>
 				<displayName count="other">Dong Vietnam</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="VUV">
 				<displayName>Vatu Vanuatu</displayName>
 				<displayName count="other">Vatu Vanuatu</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="WST">
 				<displayName>Tala Samoa</displayName>
 				<displayName count="other">Tala Samoa</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="XAF">
 				<displayName>CFA Franc Afrika Tengah</displayName>
 				<displayName count="other">CFA Franc Afrika Tengah</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="XCD">
 				<displayName>Dolar Karibia Wetan</displayName>
 				<displayName count="other">Dolar Karibia Wetan</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="XOF">
 				<displayName>CFA Franc Afrika Kulon</displayName>
 				<displayName count="other">CFA Franc Afrika Kulon</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="XPF">
 				<displayName>Franc CFP</displayName>
 				<displayName count="other">Franc CFP</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="XXX">
 				<displayName>Dhuwit Ora Dikenali</displayName>
@@ -4728,18 +5181,25 @@ terms of use, see http://www.unicode.org/copyright.html
 			<currency type="YER">
 				<displayName>Rial Yaman</displayName>
 				<displayName count="other">Rial Yaman</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ZAR">
 				<displayName>Rand Afrika Kidul</displayName>
 				<displayName count="other">Rand Afrika Kidul</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 			<currency type="ZMW">
 				<displayName>Kwacha Sambia</displayName>
 				<displayName count="other">Kwacha Sambia</displayName>
+				<symbol draft="contributed">↑↑↑</symbol>
+				<symbol alt="narrow" draft="contributed">↑↑↑</symbol>
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">
+			<pattern type="approximately">↑↑↑</pattern>
 			<pattern type="atLeast">⩾{0}</pattern>
+			<pattern type="atMost">↑↑↑</pattern>
 			<pattern type="range">{0} – {1}</pattern>
 		</miscPatterns>
 		<minimalPairs>
@@ -4751,6 +5211,9 @@ terms of use, see http://www.unicode.org/copyright.html
 		<unitLength type="long">
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0} saben {1}</compoundUnitPattern>
+			</compoundUnit>
+			<compoundUnit type="times">
+				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName>tenaga-g</displayName>
@@ -4821,6 +5284,10 @@ terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} inci persegi</unitPattern>
 				<perUnitPattern>{0} saben inci persegi</perUnitPattern>
 			</unit>
+			<unit type="area-dunam">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
+			</unit>
 			<unit type="concentr-karat">
 				<displayName>karat</displayName>
 				<unitPattern count="other">{0} karat</unitPattern>
@@ -4848,6 +5315,10 @@ terms of use, see http://www.unicode.org/copyright.html
 			<unit type="concentr-permyriad">
 				<displayName>permiriad</displayName>
 				<unitPattern count="other">{0} permiriad</unitPattern>
+			</unit>
+			<unit type="concentr-mole">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>liter saben kilometer</displayName>
@@ -5042,6 +5513,7 @@ terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="graphics-em">
 				<displayName>tipografi em</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="graphics-pixel">
 				<displayName>piksel</displayName>
@@ -5050,6 +5522,14 @@ terms of use, see http://www.unicode.org/copyright.html
 			<unit type="graphics-megapixel">
 				<displayName>megapiksel</displayName>
 				<unitPattern count="other">{0} megapiksel</unitPattern>
+			</unit>
+			<unit type="graphics-pixel-per-centimeter">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
+			</unit>
+			<unit type="graphics-pixel-per-inch">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="graphics-dot-per-centimeter">
 				<displayName>titek saben sentimeter</displayName>
@@ -5240,6 +5720,10 @@ terms of use, see http://www.unicode.org/copyright.html
 				<displayName>inci saka raksa</displayName>
 				<unitPattern count="other">{0} inci saka raksa</unitPattern>
 			</unit>
+			<unit type="pressure-bar">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
+			</unit>
 			<unit type="pressure-millibar">
 				<displayName>milibar</displayName>
 				<unitPattern count="other">{0} milibar</unitPattern>
@@ -5425,6 +5909,9 @@ terms of use, see http://www.unicode.org/copyright.html
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
 			</compoundUnit>
+			<compoundUnit type="times">
+				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
+			</compoundUnit>
 			<unit type="acceleration-g-force">
 				<displayName>tenaga-g</displayName>
 				<unitPattern count="other">{0} G</unitPattern>
@@ -5494,6 +5981,10 @@ terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other">{0} inci²</unitPattern>
 				<perUnitPattern>{0}/inci²</perUnitPattern>
 			</unit>
+			<unit type="area-dunam">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
+			</unit>
 			<unit type="concentr-karat">
 				<displayName>karat</displayName>
 				<unitPattern count="other">{0} kt</unitPattern>
@@ -5520,6 +6011,11 @@ terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="concentr-permyriad">
 				<displayName>permiriad</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
+			</unit>
+			<unit type="concentr-mole">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="consumption-liter-per-kilometer">
 				<displayName>liter/km</displayName>
@@ -5607,6 +6103,7 @@ terms of use, see http://www.unicode.org/copyright.html
 			<unit type="duration-day">
 				<displayName>dina</displayName>
 				<unitPattern count="other">{0} dina</unitPattern>
+				<perUnitPattern>↑↑↑</perUnitPattern>
 			</unit>
 			<unit type="duration-hour">
 				<displayName>jam</displayName>
@@ -5677,9 +6174,11 @@ terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="energy-electronvolt">
 				<displayName>elektronvolt</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="energy-british-thermal-unit">
 				<displayName>BTU</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="energy-therm-us">
 				<displayName>takeran panas AS</displayName>
@@ -5687,9 +6186,11 @@ terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="force-pound-force">
 				<displayName>pon gaya</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="force-newton">
 				<displayName>newton</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="frequency-gigahertz">
 				<displayName>GHz</displayName>
@@ -5706,6 +6207,26 @@ terms of use, see http://www.unicode.org/copyright.html
 			<unit type="frequency-hertz">
 				<displayName>Hz</displayName>
 				<unitPattern count="other">{0} Hz</unitPattern>
+			</unit>
+			<unit type="graphics-em">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
+			</unit>
+			<unit type="graphics-pixel">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
+			</unit>
+			<unit type="graphics-megapixel">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
+			</unit>
+			<unit type="graphics-pixel-per-centimeter">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
+			</unit>
+			<unit type="graphics-pixel-per-inch">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="graphics-dot-per-centimeter">
 				<displayName>tscm</displayName>
@@ -5794,6 +6315,7 @@ terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="length-solar-radius">
 				<displayName>radii srengenge</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="light-lux">
 				<displayName>luk</displayName>
@@ -5801,6 +6323,7 @@ terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="light-solar-luminosity">
 				<displayName>luminositas srengenge</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-metric-ton">
 				<displayName>metrik ton</displayName>
@@ -5848,12 +6371,15 @@ terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="mass-dalton">
 				<displayName>dalton</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-earth-mass">
 				<displayName>massa Bumi</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="mass-solar-mass">
 				<displayName>massa srengenge</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="power-gigawatt">
 				<displayName>GW</displayName>
@@ -5891,6 +6417,10 @@ terms of use, see http://www.unicode.org/copyright.html
 				<displayName>inHg</displayName>
 				<unitPattern count="other">{0} inHg</unitPattern>
 			</unit>
+			<unit type="pressure-bar">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
+			</unit>
 			<unit type="pressure-millibar">
 				<displayName>mbar</displayName>
 				<unitPattern count="other">{0} mbar</unitPattern>
@@ -5899,9 +6429,21 @@ terms of use, see http://www.unicode.org/copyright.html
 				<displayName>atm</displayName>
 				<unitPattern count="other">{0} atm</unitPattern>
 			</unit>
+			<unit type="pressure-pascal">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
+			</unit>
 			<unit type="pressure-hectopascal">
 				<displayName>hPa</displayName>
 				<unitPattern count="other">{0} hPa</unitPattern>
+			</unit>
+			<unit type="pressure-kilopascal">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
+			</unit>
+			<unit type="pressure-megapascal">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<displayName>km/jam</displayName>
@@ -5938,6 +6480,10 @@ terms of use, see http://www.unicode.org/copyright.html
 			<unit type="torque-pound-foot">
 				<displayName>pon-kaki</displayName>
 				<unitPattern count="other">{0} pon-kaki</unitPattern>
+			</unit>
+			<unit type="torque-newton-meter">
+				<displayName>↑↑↑</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<unit type="volume-cubic-kilometer">
 				<displayName>km³</displayName>
@@ -6046,6 +6592,7 @@ terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="volume-barrel">
 				<displayName>barel</displayName>
+				<unitPattern count="other">↑↑↑</unitPattern>
 			</unit>
 			<coordinateUnit>
 				<displayName>arah</displayName>
@@ -6058,6 +6605,9 @@ terms of use, see http://www.unicode.org/copyright.html
 		<unitLength type="narrow">
 			<compoundUnit type="per">
 				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
+			</compoundUnit>
+			<compoundUnit type="times">
+				<compoundUnitPattern>↑↑↑</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="concentr-percent">
 				<displayName>%</displayName>
@@ -6166,6 +6716,24 @@ terms of use, see http://www.unicode.org/copyright.html
 			<listPatternPart type="end">{0}, utowo {1}</listPatternPart>
 			<listPatternPart type="2">{0} utowo {1}</listPatternPart>
 		</listPattern>
+		<listPattern type="or-narrow">
+			<listPatternPart type="start">↑↑↑</listPatternPart>
+			<listPatternPart type="middle">↑↑↑</listPatternPart>
+			<listPatternPart type="end">↑↑↑</listPatternPart>
+			<listPatternPart type="2">↑↑↑</listPatternPart>
+		</listPattern>
+		<listPattern type="or-short">
+			<listPatternPart type="start">↑↑↑</listPatternPart>
+			<listPatternPart type="middle">↑↑↑</listPatternPart>
+			<listPatternPart type="end">↑↑↑</listPatternPart>
+			<listPatternPart type="2">↑↑↑</listPatternPart>
+		</listPattern>
+		<listPattern type="standard-narrow">
+			<listPatternPart type="start">↑↑↑</listPatternPart>
+			<listPatternPart type="middle">↑↑↑</listPatternPart>
+			<listPatternPart type="end">↑↑↑</listPatternPart>
+			<listPatternPart type="2">↑↑↑</listPatternPart>
+		</listPattern>
 		<listPattern type="standard-short">
 			<listPatternPart type="start">{0}, {1}</listPatternPart>
 			<listPatternPart type="middle">{0}, {1}</listPatternPart>
@@ -6199,6 +6767,7 @@ terms of use, see http://www.unicode.org/copyright.html
 	</posix>
 	<characterLabels>
 		<characterLabelPattern type="all">{0} — kabeh</characterLabelPattern>
+		<characterLabelPattern type="category-list">↑↑↑</characterLabelPattern>
 		<characterLabelPattern type="compatibility">{0} — kompatibilitas</characterLabelPattern>
 		<characterLabelPattern type="enclosed">{0} — ketutup</characterLabelPattern>
 		<characterLabelPattern type="extended">{0} — didawakake</characterLabelPattern>
@@ -6221,27 +6790,35 @@ terms of use, see http://www.unicode.org/copyright.html
 		<characterLabel type="consonantal_jamo">jamo konsonan</characterLabel>
 		<characterLabel type="currency_symbols">simbol mata uang</characterLabel>
 		<characterLabel type="dash_connector">sengkang utawa panyambung</characterLabel>
+		<characterLabel type="digits">↑↑↑</characterLabel>
+		<characterLabel type="dingbats">↑↑↑</characterLabel>
 		<characterLabel type="divination_symbols">simbol divinasi</characterLabel>
 		<characterLabel type="downwards_arrows">panah mudhun</characterLabel>
 		<characterLabel type="downwards_upwards_arrows">panah munggah</characterLabel>
 		<characterLabel type="east_asian_scripts">skrip Asia Wetan</characterLabel>
+		<characterLabel type="emoji">↑↑↑</characterLabel>
 		<characterLabel type="european_scripts">skrip Eropa</characterLabel>
 		<characterLabel type="female">wadon</characterLabel>
 		<characterLabel type="flag">gendera</characterLabel>
 		<characterLabel type="flags">gendera</characterLabel>
 		<characterLabel type="food_drink">dhaharan &amp; unjukan</characterLabel>
+		<characterLabel type="format">↑↑↑</characterLabel>
 		<characterLabel type="format_whitespace">format &amp; spasi putih</characterLabel>
 		<characterLabel type="full_width_form_variant">varian amba-kebak</characterLabel>
 		<characterLabel type="geometric_shapes">wangunan geometris</characterLabel>
 		<characterLabel type="half_width_form_variant">varian amba setengah kebak</characterLabel>
 		<characterLabel type="han_characters">karakter Han</characterLabel>
 		<characterLabel type="han_radicals">radikal Han</characterLabel>
+		<characterLabel type="hanja">↑↑↑</characterLabel>
 		<characterLabel type="hanzi_simplified">Hanzi (ringkes)</characterLabel>
 		<characterLabel type="hanzi_traditional">Hanzi (tradisional)</characterLabel>
 		<characterLabel type="heart">ati</characterLabel>
 		<characterLabel type="historic_scripts">skrip tradisional</characterLabel>
 		<characterLabel type="ideographic_desc_characters">karakter desk. ideografis</characterLabel>
 		<characterLabel type="japanese_kana">kana Jepang</characterLabel>
+		<characterLabel type="kanbun">↑↑↑</characterLabel>
+		<characterLabel type="kanji">↑↑↑</characterLabel>
+		<characterLabel type="keycap">↑↑↑</characterLabel>
 		<characterLabel type="leftwards_arrows">panah ngiwa</characterLabel>
 		<characterLabel type="leftwards_rightwards_arrows">panah ngiwa nengen</characterLabel>
 		<characterLabel type="letterlike_symbols">simbol kaya huruf</characterLabel>
@@ -6268,6 +6845,7 @@ terms of use, see http://www.unicode.org/copyright.html
 		<characterLabel type="rightwards_arrows">panah nengen</characterLabel>
 		<characterLabel type="sign_standard_symbols">tandha utawa simbol</characterLabel>
 		<characterLabel type="small_form_variant">varian cilik</characterLabel>
+		<characterLabel type="smiley">↑↑↑</characterLabel>
 		<characterLabel type="smileys_people">smiley utawa wong</characterLabel>
 		<characterLabel type="south_asian_scripts">skrip Asia Kidul</characterLabel>
 		<characterLabel type="southeast_asian_scripts">skrip Asia Kidul Wetan</characterLabel>
