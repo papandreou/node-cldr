@@ -1,3 +1,23 @@
+### v5.6.0 (2020-04-10)
+
+#### Pull requests
+
+- [#111](https://github.com/papandreou/node-cldr/pull/111) Upgrade xmldom to version 0.3.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#110](https://github.com/papandreou/node-cldr/pull/110) Upgrade sinon to version 9.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#107](https://github.com/papandreou/node-cldr/pull/107) Upgrade mocha to version 7.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#106](https://github.com/papandreou/node-cldr/pull/106) Upgrade eslint-plugin-node to version 11.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#105](https://github.com/papandreou/node-cldr/pull/105) Upgrade nyc to version 15.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#104](https://github.com/papandreou/node-cldr/pull/104) Upgrade xmldom to version 0.2.1 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [Remove .DS\_Store files](https://github.com/papandreou/node-cldr/commit/cc097ad274aa4986f88d5040361c543d05cbd796) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+- [Get the data from https:\/\/github.com\/unicode-org\/cldr-staging\/tree\/release-36-1 instead](https://github.com/papandreou/node-cldr/commit/cdee58a2fc44a681d40f55df1dfb9fdc9e9adb8d) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+- [Update the CLDR version number in the README](https://github.com/papandreou/node-cldr/commit/ea47054a5d6480a658e309d91419c19ac4e4341b) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+- [Leave out .DS\_Store files](https://github.com/papandreou/node-cldr/commit/79dede8720ed229654be68144e5f73a066e54cc2) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+- [Update cldr to 36.1](https://github.com/papandreou/node-cldr/commit/1c86e3b7aae92c973984d1aad82d506c1ba3c6b0) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+- [+2 more](https://github.com/papandreou/node-cldr/compare/v5.5.4...v5.6.0)
+
 ### v5.5.0 (2019-11-11)
 
 #### Pull requests
