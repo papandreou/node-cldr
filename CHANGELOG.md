@@ -1,3 +1,17 @@
+### v5.7.0 (2020-07-24)
+
+#### Pull requests
+
+- [#118](https://github.com/papandreou/node-cldr/pull/118) Update CLDR to release 37 ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [#117](https://github.com/papandreou/node-cldr/pull/117) Upgrade unexpected-function-equality to version 3.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#115](https://github.com/papandreou/node-cldr/pull/115) Upgrade eslint-plugin-mocha to version 7.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#114](https://github.com/papandreou/node-cldr/pull/114) Upgrade eslint to version 7.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [Add \/3rdparty\/ to .prettierignore to fix the build](https://github.com/papandreou/node-cldr/commit/0bc650930e753fa646a5fcf2398112eb21bbcb54) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+- [Update prettier to ~2.0.4](https://github.com/papandreou/node-cldr/commit/60529a4fa5f49c5ab069bf6afdf81fe3a5e0b544) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+
 ### v5.6.0 (2020-04-10)
 
 #### Pull requests
