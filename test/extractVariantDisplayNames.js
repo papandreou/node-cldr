@@ -4,9 +4,9 @@ const cldr = require('../lib/cldr');
 describe('extractVariantDisplayNames', () => {
   it('should extract the American English variants correctly, even when the locale id is specified unnormalized', () => {
     expect(cldr.extractVariantDisplayNames('en-us'), 'to satisfy', {
-      '1901': 'Traditional German orthography',
-      '1994': 'Standardized Resian orthography',
-      '1996': 'German orthography of 1996',
+      1901: 'Traditional German orthography',
+      1994: 'Standardized Resian orthography',
+      1996: 'German orthography of 1996',
       '1606NICT': 'Late Middle French to 1606',
       '1694ACAD': 'Early Modern French',
       '1959ACAD': 'Academic',
