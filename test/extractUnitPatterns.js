@@ -28,7 +28,10 @@ describe('extractUnitPatterns', () => {
       '{0} litres'
     );
 
-    expect(britishUnitPatterns.long.compoundUnit, 'to only have key', 'per');
+    expect(britishUnitPatterns.long.compoundUnit, 'to have keys', [
+      'per',
+      'times',  
+    ]);
     expect(britishUnitPatterns.short.compoundUnit.per, 'to equal', '{0}/{1}');
     expect(
       britishUnitPatterns.long.compoundUnit.per,
