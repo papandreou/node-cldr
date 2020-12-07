@@ -13,6 +13,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<language type="id"/>
 	</identity>
 	<annotations>
+		<annotation cp="{">kurawal | kurung kurawal | kurung kurawal buka | tanda kurung</annotation>
+		<annotation cp="{" type="tts">kurung kurawal buka</annotation>
 		<annotation cp="🏻">tipe 1–2 | warna kulit | warna kulit cerah</annotation>
 		<annotation cp="🏻" type="tts">warna kulit cerah</annotation>
 		<annotation cp="🏼">tipe 3 | warna kulit | warna kulit cerah-sedang</annotation>
@@ -23,50 +25,320 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🏾" type="tts">warna kulit gelap-sedang</annotation>
 		<annotation cp="🏿">tipe 6 | warna kulit | warna kulit gelap</annotation>
 		<annotation cp="🏿" type="tts">warna kulit gelap</annotation>
+		<annotation cp="‾" draft="contributed">garis atas</annotation>
+		<annotation cp="‾" type="tts" draft="contributed">garis atas</annotation>
+		<annotation cp="_">dash | dash bawah | dash rendah | garis | garis bawah</annotation>
+		<annotation cp="_" type="tts">garis bawah</annotation>
+		<annotation cp="-">dash | minus | tanda hubung | tanda hubung-minus | tanda kurang</annotation>
+		<annotation cp="-" type="tts">tanda hubung-minus</annotation>
+		<annotation cp="‐">dash | tanda hubung</annotation>
+		<annotation cp="‐" type="tts">tanda hubung</annotation>
 		<annotation cp="–">en | en dash | tanda pisah</annotation>
 		<annotation cp="–" type="tts">en dash</annotation>
 		<annotation cp="—">em | em dash | tanda pisah</annotation>
 		<annotation cp="—" type="tts">em dash</annotation>
+		<annotation cp="―">batang | batang horizontal | dash | garis</annotation>
+		<annotation cp="―" type="tts">batang horizontal</annotation>
+		<annotation cp="・">katakana | tanda baca penghubung | tanda titik | titik tengah | titik tengah katakana</annotation>
+		<annotation cp="・" type="tts">titik tengah katakana</annotation>
+		<annotation cp=",">koma</annotation>
+		<annotation cp="," type="tts">koma</annotation>
+		<annotation cp="،">arab | koma</annotation>
+		<annotation cp="،" type="tts">koma arab</annotation>
+		<annotation cp="、">ideograf | koma</annotation>
+		<annotation cp="、" type="tts">koma ideograf</annotation>
+		<annotation cp=";">titik koma</annotation>
+		<annotation cp=";" type="tts">titik koma</annotation>
+		<annotation cp="؛">arab | titik koma | titik koma arab</annotation>
+		<annotation cp="؛" type="tts">titik koma arab</annotation>
+		<annotation cp=":">titik dua</annotation>
+		<annotation cp=":" type="tts">titik dua</annotation>
+		<annotation cp="!">dor | seru | tanda seru</annotation>
+		<annotation cp="!" type="tts">tanda seru</annotation>
+		<annotation cp="¡">dor | seru | tanda seru | tanda seru terbalik | terbalik</annotation>
+		<annotation cp="¡" type="tts">tanda seru terbalik</annotation>
+		<annotation cp="?">pertanyaan | tanda tanya</annotation>
+		<annotation cp="?" type="tts">tanda tanya</annotation>
+		<annotation cp="¿">pertanyaan | tanda tanya | tanda tanya terbalik | terbalik</annotation>
+		<annotation cp="¿" type="tts">tanda tanya terbalik</annotation>
+		<annotation cp="؟">arab | pertanyaan | tanda tanya | tanda tanya arab</annotation>
+		<annotation cp="؟" type="tts">tanda tanya arab</annotation>
+		<annotation cp="‽" draft="contributed">interobang</annotation>
+		<annotation cp="‽" type="tts" draft="contributed">interobang</annotation>
+		<annotation cp=".">dot | titik</annotation>
+		<annotation cp="." type="tts">titik</annotation>
+		<annotation cp="…">elipsis | penghilangan | titik-titik</annotation>
+		<annotation cp="…" type="tts">elipsis</annotation>
+		<annotation cp="。">ideografis | titik</annotation>
+		<annotation cp="。" type="tts">titik ideografis</annotation>
 		<annotation cp="·">interpunct | tengah | titik</annotation>
 		<annotation cp="·" type="tts">titik tengah</annotation>
+		<annotation cp="'">apostrof | apostrof mesin tik | kutipan | tanda petik tunggal</annotation>
+		<annotation cp="'" type="tts">apostrof mesin tik</annotation>
+		<annotation cp="‘">apostrof | apostrof kiri | kutipan | tanda petik | tanda petik tunggal</annotation>
+		<annotation cp="‘" type="tts">apostrof kiri</annotation>
+		<annotation cp="’">apostrof | apostrof kanan | kutipan | tanda petik | tanda petik tunggal</annotation>
+		<annotation cp="’" type="tts">apostrof kanan</annotation>
+		<annotation cp="‚">apostrof | apostrof kanan bawah | kutipan | tanda petik bawah</annotation>
+		<annotation cp="‚" type="tts">apostrof kanan bawah</annotation>
+		<annotation cp="“">kutipan | kutipan cerdas | tanda petik ganda | tanda petik kiri</annotation>
+		<annotation cp="“" type="tts">tanda petik kiri</annotation>
+		<annotation cp="”">kutipan | kutipan cerdas | tanda petik ganda | tanda petik kanan</annotation>
+		<annotation cp="”" type="tts">tanda petik kanan</annotation>
+		<annotation cp="„">kutipan | kutipan cerdas | tanda petik bawah | tanda petik ganda | tanda petik kanan bawah</annotation>
+		<annotation cp="„" type="tts">tanda petik kanan bawah</annotation>
 		<annotation cp="«">caret | chevron | guillemet kiri | kiri | sudut | tanda kurung | tanda petik</annotation>
 		<annotation cp="«" type="tts">guillemet kiri</annotation>
 		<annotation cp="»">caret | chevron | guillemet kanan | kanan | sudut | tanda kurung | tanda petik</annotation>
 		<annotation cp="»" type="tts">guillemet kanan</annotation>
+		<annotation cp=")">kurung | kurung lengkung | kurung tutup | tanda kurung</annotation>
+		<annotation cp=")" type="tts">kurung tutup</annotation>
+		<annotation cp="[">kurung | kurung siku buka | siku | tanda kurung</annotation>
+		<annotation cp="[" type="tts">kurung siku buka</annotation>
+		<annotation cp="]">kurung | kurung siku tutup | siku | tanda kurung</annotation>
+		<annotation cp="]" type="tts">kurung siku tutup</annotation>
+		<annotation cp="}">kurawal | kurung kurawal | kurung kurawal tutup | tanda kurung</annotation>
+		<annotation cp="}" type="tts">kurung kurawal tutup</annotation>
+		<annotation cp="〈">chevron | kurung lancip | kurung sudut | kurung sudut buka | tanda kurung | tuple</annotation>
+		<annotation cp="〈" type="tts">kurung sudut buka</annotation>
+		<annotation cp="〉">chevron | kurung lancip | kurung sudut | kurung sudut tutup | tanda kurung | tuple</annotation>
+		<annotation cp="〉" type="tts">kurung sudut tutup</annotation>
+		<annotation cp="《">kurung sudut ganda | kurung sudut ganda buka | tanda kurung</annotation>
+		<annotation cp="《" type="tts">kurung sudut ganda buka</annotation>
+		<annotation cp="》">kurung sudut ganda | kurung sudut ganda tutup | tanda kurung</annotation>
+		<annotation cp="》" type="tts">kurung sudut ganda tutup</annotation>
+		<annotation cp="「">kurung tekuk | kurung tekuk buka | tanda kurung</annotation>
+		<annotation cp="「" type="tts">kurung tekuk buka</annotation>
+		<annotation cp="」">kurung tekuk | kurung tekuk tutup | tanda kurung</annotation>
+		<annotation cp="」" type="tts">kurung tekuk tutup</annotation>
+		<annotation cp="『">kurung tekuk bolong | kurung tekuk bolong buka | tanda kurung</annotation>
+		<annotation cp="『" type="tts">kurung tekuk bolong buka</annotation>
+		<annotation cp="』">kurung tekuk bolong | kurung tekuk bolong tutup | tanda kurung</annotation>
+		<annotation cp="』" type="tts">kurung tekuk bolong tutup</annotation>
+		<annotation cp="【">kurung lensa | kurung lensa penuh buka | kurung lentikular | tanda kurung</annotation>
+		<annotation cp="【" type="tts">kurung lensa penuh buka</annotation>
+		<annotation cp="】">kurung lensa | kurung lensa penuh tutup | kurung lentikular | tanda kurung</annotation>
+		<annotation cp="】" type="tts">kurung lensa penuh tutup</annotation>
+		<annotation cp="〔">kurung tempurung | tanda kurung | tanda kurung tempurung | tanda kurung tempurung buka</annotation>
+		<annotation cp="〔" type="tts">tanda kurung tempurung buka</annotation>
+		<annotation cp="〕">kurung tempurung | tanda kurung | tanda kurung tempurung | tanda kurung tempurung tutup</annotation>
+		<annotation cp="〕" type="tts">tanda kurung tempurung tutup</annotation>
+		<annotation cp="〖">kurung lensa bolong | kurung lensa bolong buka | kurung lentikular bolong | tanda kurung</annotation>
+		<annotation cp="〖" type="tts">kurung lensa bolong buka</annotation>
+		<annotation cp="〗">kurung lensa bolong | kurung lensa bolong tutup | kurung lentikular bolong | tanda kurung</annotation>
+		<annotation cp="〗" type="tts">kurung lensa bolong tutup</annotation>
 		<annotation cp="§">bagian | paragraf | seksi | silcrow</annotation>
 		<annotation cp="§" type="tts">bagian</annotation>
+		<annotation cp="¶">alinea | paragraf | tanda paragraf</annotation>
+		<annotation cp="¶" type="tts">tanda paragraf</annotation>
+		<annotation cp="@">ampersat | et | tanda et | tanda et komersial</annotation>
+		<annotation cp="@" type="tts">tanda et</annotation>
+		<annotation cp="*">asterisk | bintang | bintang kecil | tanda bintang</annotation>
+		<annotation cp="*" type="tts">asterisk</annotation>
+		<annotation cp="/">garis | goresan | miring</annotation>
+		<annotation cp="/" type="tts">garis miring</annotation>
+		<annotation cp="\">garis miring | garis miring terbalik | terbalik</annotation>
+		<annotation cp="\" type="tts">garis miring terbalik</annotation>
+		<annotation cp="&amp;">ampersan | dan | et</annotation>
+		<annotation cp="&amp;" type="tts">ampersan</annotation>
+		<annotation cp="#">angka | hashtag | lb | pagar | pound | tanda pagar</annotation>
+		<annotation cp="#" type="tts">tanda pagar</annotation>
+		<annotation cp="%">per seratus | persen | persentase | perseratus</annotation>
+		<annotation cp="%" type="tts">persen</annotation>
+		<annotation cp="‰">per seribu | permil | perseribu</annotation>
+		<annotation cp="‰" type="tts">permil</annotation>
 		<annotation cp="†">dagger | obelisk | obelus | tanda dagger</annotation>
 		<annotation cp="†" type="tts">tanda dagger</annotation>
 		<annotation cp="‡">dagger | ganda | obelisk | obelus | tanda dagger ganda</annotation>
 		<annotation cp="‡" type="tts">tanda dagger ganda</annotation>
 		<annotation cp="•">bullet | titik</annotation>
 		<annotation cp="•" type="tts">bullet</annotation>
+		<annotation cp="‧">dash | tanda hubung | titik | titik hubung</annotation>
+		<annotation cp="‧" type="tts">titik hubung</annotation>
+		<annotation cp="′">prime</annotation>
+		<annotation cp="′" type="tts">prime</annotation>
+		<annotation cp="″">prime | prime ganda</annotation>
+		<annotation cp="″" type="tts">prime ganda</annotation>
+		<annotation cp="‴">prime | prime tripel</annotation>
+		<annotation cp="‴" type="tts">prime tripel</annotation>
+		<annotation cp="‸" draft="contributed">caret</annotation>
+		<annotation cp="‸" type="tts" draft="contributed">caret</annotation>
+		<annotation cp="※">tanda referensi</annotation>
+		<annotation cp="※" type="tts">tanda referensi</annotation>
+		<annotation cp="⁂" draft="contributed">asterisme</annotation>
+		<annotation cp="⁂" type="tts" draft="contributed">asterisme</annotation>
+		<annotation cp="`">aksen | nada | rendah | tanda aksen rendah</annotation>
+		<annotation cp="`" type="tts">tanda aksen rendah</annotation>
+		<annotation cp="´">aksen | nada | tanda aksen tirus | tirus</annotation>
+		<annotation cp="´" type="tts">tanda aksen tirus</annotation>
+		<annotation cp="^">aksen | baji | caret | chevron | hat | kontrol | pangkat | penunjuk | sirkumfleks | tanda xor</annotation>
+		<annotation cp="^" type="tts">aksen sirkumfleks</annotation>
+		<annotation cp="¨">diaeresis | trema | umlaut</annotation>
+		<annotation cp="¨" type="tts">diaeresis</annotation>
 		<annotation cp="°">derajat | jam | kadar</annotation>
 		<annotation cp="°" type="tts">derajat</annotation>
 		<annotation cp="℗">hak cipta | hak cipta rekaman suara | rekaman | suara</annotation>
 		<annotation cp="℗" type="tts">hak cipta rekaman suara</annotation>
 		<annotation cp="←">ke kiri | tanda panah | tanda panah mengarah ke kiri</annotation>
 		<annotation cp="←" type="tts">tanda panah mengarah ke kiri</annotation>
+		<annotation cp="↚" draft="contributed">panah arah kiri</annotation>
+		<annotation cp="↚" type="tts" draft="contributed">panah arah kiri</annotation>
 		<annotation cp="→">kanan | tanda panah | tanda panah mengarah ke kanan</annotation>
 		<annotation cp="→" type="tts">tanda panah mengarah ke kanan</annotation>
+		<annotation cp="↛" draft="contributed">panah arah kanan</annotation>
+		<annotation cp="↛" type="tts" draft="contributed">panah arah kanan</annotation>
 		<annotation cp="↑">ke atas | tanda panah | tanda panah mengarah ke atas</annotation>
 		<annotation cp="↑" type="tts">tanda panah mengarah ke atas</annotation>
 		<annotation cp="↓">ke bawah | tanda panah | tanda panah mengarah ke bawah</annotation>
 		<annotation cp="↓" type="tts">tanda panah mengarah ke bawah</annotation>
+		<annotation cp="↜" draft="contributed">gelombang panah arah kiri</annotation>
+		<annotation cp="↜" type="tts" draft="contributed">gelombang panah arah kiri</annotation>
+		<annotation cp="↝" draft="contributed">gelombang panah arah kanan</annotation>
+		<annotation cp="↝" type="tts" draft="contributed">gelombang panah arah kanan</annotation>
+		<annotation cp="↞" draft="contributed">panah dua mata arah kiri</annotation>
+		<annotation cp="↞" type="tts" draft="contributed">panah dua mata arah kiri</annotation>
+		<annotation cp="↟" draft="contributed">panah dua mata arah naik</annotation>
+		<annotation cp="↟" type="tts" draft="contributed">panah dua mata arah naik</annotation>
+		<annotation cp="↠" draft="contributed">panah dua mata arah kanan</annotation>
+		<annotation cp="↠" type="tts" draft="contributed">panah dua mata arah kanan</annotation>
+		<annotation cp="↡" draft="contributed">panah dua mata arah turun</annotation>
+		<annotation cp="↡" type="tts" draft="contributed">panah dua mata arah turun</annotation>
+		<annotation cp="↢" draft="contributed">anak panah ke kiri</annotation>
+		<annotation cp="↢" type="tts" draft="contributed">anak panah ke kiri</annotation>
+		<annotation cp="↣" draft="contributed">anak panah ke kanan</annotation>
+		<annotation cp="↣" type="tts" draft="contributed">anak panah ke kanan</annotation>
+		<annotation cp="↤" draft="contributed">panah ke kiri dari batang</annotation>
+		<annotation cp="↤" type="tts" draft="contributed">panah ke kiri dari batang</annotation>
+		<annotation cp="↥" draft="contributed">panah ke atas dari batang</annotation>
+		<annotation cp="↥" type="tts" draft="contributed">panah ke atas dari batang</annotation>
+		<annotation cp="↦" draft="contributed">panah ke kanan dari batang</annotation>
+		<annotation cp="↦" type="tts" draft="contributed">panah ke kanan dari batang</annotation>
+		<annotation cp="↧" draft="contributed">panah ke bawah dari batang</annotation>
+		<annotation cp="↧" type="tts" draft="contributed">panah ke bawah dari batang</annotation>
+		<annotation cp="↨" draft="contributed">panah naik turun berdudukan</annotation>
+		<annotation cp="↨" type="tts" draft="contributed">panah naik turun berdudukan</annotation>
+		<annotation cp="↫" draft="contributed">panah simpal ke kiri</annotation>
+		<annotation cp="↫" type="tts" draft="contributed">panah simpal ke kiri</annotation>
+		<annotation cp="↬" draft="contributed">panah simpal ke kanan</annotation>
+		<annotation cp="↬" type="tts" draft="contributed">panah simpal ke kanan</annotation>
+		<annotation cp="↭" draft="contributed">panah simpal kanan kiri</annotation>
+		<annotation cp="↭" type="tts" draft="contributed">panah simpal kanan kiri</annotation>
+		<annotation cp="↯" draft="contributed">panah zigzag turun</annotation>
+		<annotation cp="↯" type="tts" draft="contributed">panah zigzag turun</annotation>
+		<annotation cp="↰" draft="contributed">panah naik mata ke kiri</annotation>
+		<annotation cp="↰" type="tts" draft="contributed">panah naik mata ke kiri</annotation>
+		<annotation cp="↱" draft="contributed">panah naik mata ke kanan</annotation>
+		<annotation cp="↱" type="tts" draft="contributed">panah naik mata ke kanan</annotation>
+		<annotation cp="↲" draft="contributed">panah turun mata ke kiri</annotation>
+		<annotation cp="↲" type="tts" draft="contributed">panah turun mata ke kiri</annotation>
+		<annotation cp="↳" draft="contributed">panah turun mata ke kanan</annotation>
+		<annotation cp="↳" type="tts" draft="contributed">panah turun mata ke kanan</annotation>
+		<annotation cp="↴" draft="contributed">panah kanan siku turun</annotation>
+		<annotation cp="↴" type="tts" draft="contributed">panah kanan siku turun</annotation>
+		<annotation cp="↵" draft="contributed">panah turun siku ke kiri</annotation>
+		<annotation cp="↵" type="tts" draft="contributed">panah turun siku ke kiri</annotation>
+		<annotation cp="↶" draft="contributed">panah lengkung atas ke kiri</annotation>
+		<annotation cp="↶" type="tts" draft="contributed">panah lengkung atas ke kiri</annotation>
+		<annotation cp="↷" draft="contributed">panah lengkung atas ke kanan</annotation>
+		<annotation cp="↷" type="tts" draft="contributed">panah lengkung atas ke kanan</annotation>
+		<annotation cp="↸" draft="contributed">panah barat laut bilah panjang</annotation>
+		<annotation cp="↸" type="tts" draft="contributed">panah barat laut bilah panjang</annotation>
+		<annotation cp="↹" draft="contributed">panah ke batang kiri di atas panah ke batang kanan</annotation>
+		<annotation cp="↹" type="tts" draft="contributed">panah ke batang kiri di atas panah ke batang kanan</annotation>
+		<annotation cp="↺" draft="contributed">panah lingkar terbuka melawan arah jarum jam</annotation>
+		<annotation cp="↺" type="tts" draft="contributed">panah lingkar terbuka melawan arah jarum jam</annotation>
+		<annotation cp="↻" draft="contributed">panah lingkar terbuka searah jarum jam</annotation>
+		<annotation cp="↻" type="tts" draft="contributed">panah lingkar terbuka searah jarum jam</annotation>
+		<annotation cp="↼" draft="contributed">panah seruit atas ke kiri</annotation>
+		<annotation cp="↼" type="tts" draft="contributed">panah seruit atas ke kiri</annotation>
+		<annotation cp="↽" draft="contributed">panah seruit bawah ke kiri</annotation>
+		<annotation cp="↽" type="tts" draft="contributed">panah seruit bawah ke kiri</annotation>
+		<annotation cp="↾" draft="contributed">panah seruit kanan ke atas</annotation>
+		<annotation cp="↾" type="tts" draft="contributed">panah seruit kanan ke atas</annotation>
+		<annotation cp="↿" draft="contributed">panah seruit kiri ke atas</annotation>
+		<annotation cp="↿" type="tts" draft="contributed">panah seruit kiri ke atas</annotation>
+		<annotation cp="⇀" draft="contributed">panah seruit atas ke kanan</annotation>
+		<annotation cp="⇀" type="tts" draft="contributed">panah seruit atas ke kanan</annotation>
+		<annotation cp="⇁" draft="contributed">panah seruit bawah ke kanan</annotation>
+		<annotation cp="⇁" type="tts" draft="contributed">panah seruit bawah ke kanan</annotation>
+		<annotation cp="⇂" draft="contributed">panah seruit kanan ke bawah</annotation>
+		<annotation cp="⇂" type="tts" draft="contributed">panah seruit kanan ke bawah</annotation>
+		<annotation cp="⇃" draft="contributed">panah seruit kiri ke bawah</annotation>
+		<annotation cp="⇃" type="tts" draft="contributed">panah seruit kiri ke bawah</annotation>
+		<annotation cp="⇄" draft="contributed">panah ke kanan di atas panah ke kiri</annotation>
+		<annotation cp="⇄" type="tts" draft="contributed">panah ke kanan di atas panah ke kiri</annotation>
 		<annotation cp="⇅">ke atas | ke bawah | tanda panah | tanda panah mengarah ke atas dan ke bawah</annotation>
 		<annotation cp="⇅" type="tts">tanda panah mengarah ke atas dan ke bawah</annotation>
 		<annotation cp="⇆">ke kanan | ke kiri | tanda panah | tanda panah mengarah ke kiri di atas tanda panah mengarah ke kanan</annotation>
 		<annotation cp="⇆" type="tts">tanda panah mengarah ke kiri di atas tanda panah mengarah ke kanan</annotation>
+		<annotation cp="⇇" draft="contributed">sepasang panah ke kiri</annotation>
+		<annotation cp="⇇" type="tts" draft="contributed">sepasang panah ke kiri</annotation>
+		<annotation cp="⇈" draft="contributed">sepasang panah ke atas</annotation>
+		<annotation cp="⇈" type="tts" draft="contributed">sepasang panah ke atas</annotation>
+		<annotation cp="⇉" draft="contributed">sepasang panah ke kanan</annotation>
+		<annotation cp="⇉" type="tts" draft="contributed">sepasang panah ke kanan</annotation>
+		<annotation cp="⇊" draft="contributed">sepasang panah ke bawah</annotation>
+		<annotation cp="⇊" type="tts" draft="contributed">sepasang panah ke bawah</annotation>
+		<annotation cp="⇋" draft="contributed">panah seruit ke kiri di atas panah seruit ke kanan</annotation>
+		<annotation cp="⇋" type="tts" draft="contributed">panah seruit ke kiri di atas panah seruit ke kanan</annotation>
+		<annotation cp="⇌" draft="contributed">panah seruit ke kanan di atas panah seruit ke kiri</annotation>
+		<annotation cp="⇌" type="tts" draft="contributed">panah seruit ke kanan di atas panah seruit ke kiri</annotation>
+		<annotation cp="⇐" draft="contributed">panah ganda ke kiri</annotation>
+		<annotation cp="⇐" type="tts" draft="contributed">panah ganda ke kiri</annotation>
+		<annotation cp="⇍" draft="contributed">panah ganda ke kiri dicoret</annotation>
+		<annotation cp="⇍" type="tts" draft="contributed">panah ganda ke kiri dicoret</annotation>
+		<annotation cp="⇑" draft="contributed">panah ganda ke atas</annotation>
+		<annotation cp="⇑" type="tts" draft="contributed">panah ganda ke atas</annotation>
+		<annotation cp="⇒" draft="contributed">panah ganda ke kanan</annotation>
+		<annotation cp="⇒" type="tts" draft="contributed">panah ganda ke kanan</annotation>
+		<annotation cp="⇏" draft="contributed">panah ganda ke kanan dicoret</annotation>
+		<annotation cp="⇏" type="tts" draft="contributed">panah ganda ke kanan dicoret</annotation>
+		<annotation cp="⇓" draft="contributed">panah ganda ke bawah</annotation>
+		<annotation cp="⇓" type="tts" draft="contributed">panah ganda ke bawah</annotation>
+		<annotation cp="⇔" draft="contributed">panah ganda ke kanan kiri</annotation>
+		<annotation cp="⇔" type="tts" draft="contributed">panah ganda ke kanan kiri</annotation>
+		<annotation cp="⇎" draft="contributed">panah ganda ke kanan kiri dicoret</annotation>
+		<annotation cp="⇎" type="tts" draft="contributed">panah ganda ke kanan kiri dicoret</annotation>
+		<annotation cp="⇖" draft="contributed">panah ganda barat laut</annotation>
+		<annotation cp="⇖" type="tts" draft="contributed">panah ganda barat laut</annotation>
+		<annotation cp="⇗" draft="contributed">panah ganda timur laut</annotation>
+		<annotation cp="⇗" type="tts" draft="contributed">panah ganda timur laut</annotation>
+		<annotation cp="⇘" draft="contributed">panah ganda tenggara</annotation>
+		<annotation cp="⇘" type="tts" draft="contributed">panah ganda tenggara</annotation>
+		<annotation cp="⇙" draft="contributed">panah ganda barat daya</annotation>
+		<annotation cp="⇙" type="tts" draft="contributed">panah ganda barat daya</annotation>
+		<annotation cp="⇚" draft="contributed">panah tripel ke kiri</annotation>
+		<annotation cp="⇚" type="tts" draft="contributed">panah tripel ke kiri</annotation>
 		<annotation cp="∆">pertambahan | segitiga</annotation>
 		<annotation cp="∆" type="tts">pertambahan</annotation>
 		<annotation cp="∇">nabla | segitiga</annotation>
 		<annotation cp="∇" type="tts">nabla</annotation>
 		<annotation cp="∈">anggota | elemen | himpunan | keanggotaan | terdiri dari</annotation>
 		<annotation cp="∈" type="tts">anggota</annotation>
+		<annotation cp="+">plus | tambah | tanda plus</annotation>
+		<annotation cp="+" type="tts">tanda plus</annotation>
+		<annotation cp="±">plus-minus</annotation>
+		<annotation cp="±" type="tts">plus-minus</annotation>
 		<annotation cp="÷">bagi | obelus | pembagian | tanda pembagian</annotation>
 		<annotation cp="÷" type="tts">tanda pembagian</annotation>
 		<annotation cp="×">kali | perkalian | tanda perkalian</annotation>
 		<annotation cp="×" type="tts">tanda perkalian</annotation>
+		<annotation cp="&lt;">kurang dari | tag | tag pembuka</annotation>
+		<annotation cp="&lt;" type="tts">kurang dari</annotation>
+		<annotation cp="=">sama dengan</annotation>
+		<annotation cp="=" type="tts">sama dengan</annotation>
+		<annotation cp="≠">ketidaksamaan | ketidaksetaraan | tidak sama dengan</annotation>
+		<annotation cp="≠" type="tts">tidak sama dengan</annotation>
+		<annotation cp="&gt;">lebih dari | tag | tag penutup</annotation>
+		<annotation cp="&gt;" type="tts">lebih dari</annotation>
+		<annotation cp="¬">negasi | tidak</annotation>
+		<annotation cp="¬" type="tts">negasi</annotation>
+		<annotation cp="|">garis | garis tegak | garis vertikal | goresan | pipa | tanda pipa</annotation>
+		<annotation cp="|" type="tts">garis vertikal</annotation>
+		<annotation cp="~">tilde</annotation>
+		<annotation cp="~" type="tts">tilde</annotation>
+		<annotation cp="−">kurang | minus | tanda minus</annotation>
+		<annotation cp="−" type="tts">tanda minus</annotation>
 		<annotation cp="⁻">minus | superskrip</annotation>
 		<annotation cp="⁻" type="tts">minus superskrip</annotation>
 		<annotation cp="√">akar | bentuk akar | kuadrat | radikal | radiks</annotation>
@@ -77,8 +349,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="∩" type="tts">irisan</annotation>
 		<annotation cp="∪">gabungan | himpunan | koleksi</annotation>
 		<annotation cp="∪" type="tts">gabungan</annotation>
+		<annotation cp="≈">hampir sama dengan | pendekatan | perkiraan</annotation>
+		<annotation cp="≈" type="tts">hampir sama dengan</annotation>
 		<annotation cp="≡">persis | sama | setara dengan | tiga garis</annotation>
 		<annotation cp="≡" type="tts">setara dengan</annotation>
+		<annotation cp="≤">ketidaksamaan | kurang dari | kurang dari atau sama dengan | sama dengan</annotation>
+		<annotation cp="≤" type="tts">kurang dari atau sama dengan</annotation>
+		<annotation cp="≥">ketidaksamaan | lebih dari | lebih dari atau sama dengan | sama dengan</annotation>
+		<annotation cp="≥" type="tts">lebih dari atau sama dengan</annotation>
 		<annotation cp="⊂">himpunan | subhimpunan | subhimpunan dari</annotation>
 		<annotation cp="⊂" type="tts">subhimpunan dari</annotation>
 		<annotation cp="▲">ke atas | segitiga | segitiga solid mengarah ke atas | solid | tanda panah</annotation>
@@ -93,6 +371,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="●" type="tts">lingkaran solid</annotation>
 		<annotation cp="◯">cincin | lingkaran | lingkaran kosong besar</annotation>
 		<annotation cp="◯" type="tts">lingkaran kosong besar</annotation>
+		<annotation cp="♪">musik | not | not balok | seperdelapan</annotation>
+		<annotation cp="♪" type="tts">not seperdelapan</annotation>
+		<annotation cp="♭">mol | musik | nada mol | not | not balok</annotation>
+		<annotation cp="♭" type="tts">nada mol</annotation>
+		<annotation cp="♯">kres | musik | nada kres | not | not balok</annotation>
+		<annotation cp="♯" type="tts">nada kres</annotation>
 		<annotation cp="😀">bahagia | gembira | muka | senang | wajah</annotation>
 		<annotation cp="😀" type="tts">wajah gembira</annotation>
 		<annotation cp="😃">muka | mulut | senyum | terbuka | wajah | wajah tersenyum lebar</annotation>
@@ -135,7 +419,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="😚" type="tts">wajah memberikan ciuman dengan mata tertutup</annotation>
 		<annotation cp="😙">cium | mata | muka | senyum | wajah | wajah memberikan ciuman dengan mata bahagia</annotation>
 		<annotation cp="😙" type="tts">wajah memberikan ciuman dengan mata bahagia</annotation>
-		<annotation cp="🥲">air | bangga | bersyukur | lega | mata | tersentuh | tersenyum | wajah tersenyum dengan air mata</annotation>
+		<annotation cp="🥲">air mata | bangga | bersyukur | lega | mata | tersentuh | tersenyum | wajah tersenyum dengan air mata</annotation>
 		<annotation cp="🥲" type="tts">wajah tersenyum dengan air mata</annotation>
 		<annotation cp="😋">lezat | menikmati | nyam | senyum | wajah | wajah menikmati makanan</annotation>
 		<annotation cp="😋" type="tts">wajah menikmati</annotation>
@@ -175,6 +459,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🙄" type="tts">wajah dengan mata ke atas</annotation>
 		<annotation cp="😬">menyeringai | muka | seringai | wajah</annotation>
 		<annotation cp="😬" type="tts">wajah menyeringai</annotation>
+		<annotation cp="😮‍💨" draft="contributed">wajah mengembuskan napas</annotation>
+		<annotation cp="😮‍💨" type="tts" draft="contributed">wajah mengembuskan napas</annotation>
 		<annotation cp="🤥">bohong | muka | pinokio | wajah</annotation>
 		<annotation cp="🤥" type="tts">bohong</annotation>
 		<annotation cp="😌">lega | muka | wajah</annotation>
@@ -207,6 +493,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🥴" type="tts">wajah pusing karena mabuk</annotation>
 		<annotation cp="😵">muka | pusing | wajah</annotation>
 		<annotation cp="😵" type="tts">wajah pusing</annotation>
+		<annotation cp="😵‍💫" draft="contributed">wajah dengan mata berputar</annotation>
+		<annotation cp="😵‍💫" type="tts" draft="contributed">wajah dengan mata berputar</annotation>
 		<annotation cp="🤯">kaget | kepala meledak | takjub | terkejut</annotation>
 		<annotation cp="🤯" type="tts">kepala meledak</annotation>
 		<annotation cp="🤠">cowboy | cowgirl | koboi | topi | wajah koboi</annotation>
@@ -349,6 +637,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="❣" type="tts">tanda seru berbentuk hati</annotation>
 		<annotation cp="💔">hati | patah | putus</annotation>
 		<annotation cp="💔" type="tts">patah hati</annotation>
+		<annotation cp="❤‍🔥" draft="contributed">hati berapi-api</annotation>
+		<annotation cp="❤‍🔥" type="tts" draft="contributed">hati berapi-api</annotation>
+		<annotation cp="❤‍🩹" draft="contributed">mengobati hati terluka</annotation>
+		<annotation cp="❤‍🩹" type="tts" draft="contributed">mengobati hati terluka</annotation>
 		<annotation cp="❤">hati | hati merah</annotation>
 		<annotation cp="❤" type="tts">hati merah</annotation>
 		<annotation cp="🧡">hati | oranye</annotation>
@@ -507,16 +799,20 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="👧" type="tts">anak perempuan</annotation>
 		<annotation cp="🧑">dewasa | gender tak tentu | netral gender | orang</annotation>
 		<annotation cp="🧑" type="tts">dewasa</annotation>
-		<annotation cp="👱">orang berambut pirang | orang: rambut pirang | pirang</annotation>
+		<annotation cp="👱">orang berambut pirang | orang: rambut pirang | pirang | rambut</annotation>
 		<annotation cp="👱" type="tts">orang: rambut pirang</annotation>
-		<annotation cp="👨">bapak | laki-laki | pria</annotation>
+		<annotation cp="👨">orang dewasa | pria</annotation>
 		<annotation cp="👨" type="tts">pria</annotation>
-		<annotation cp="🧔">janggut | orang | pria | pria: berjenggot</annotation>
-		<annotation cp="🧔" type="tts">pria: berjenggot</annotation>
+		<annotation cp="🧔">janggut | orang | orang: janggut</annotation>
+		<annotation cp="🧔" type="tts">orang: janggut</annotation>
+		<annotation cp="🧔‍♂">janggut | pria | pria: janggut</annotation>
+		<annotation cp="🧔‍♂" type="tts">pria: janggut</annotation>
 		<annotation cp="👱‍♂">laki-laki | pirang | pria berambut pirang | pria: rambut pirang | rambut</annotation>
 		<annotation cp="👱‍♂" type="tts">pria berambut pirang</annotation>
 		<annotation cp="👩">ibu | perempuan | wanita</annotation>
 		<annotation cp="👩" type="tts">wanita</annotation>
+		<annotation cp="🧔‍♀">janggut | wanita | wanita: janggut</annotation>
+		<annotation cp="🧔‍♀" type="tts">wanita: janggut</annotation>
 		<annotation cp="👱‍♀">perempuan | pirang | rambut | wanita berambut pirang | wanita: rambut pirang</annotation>
 		<annotation cp="👱‍♀" type="tts">wanita berambut pirang</annotation>
 		<annotation cp="🧓">lanjut usia | netral gender | tua</annotation>
@@ -721,14 +1017,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="👲" type="tts">orang dengan topi Tionghoa</annotation>
 		<annotation cp="🧕">hijab | kerudung | mantilla | tichel | wanita dengan kerudung</annotation>
 		<annotation cp="🧕" type="tts">wanita dengan kerudung</annotation>
-		<annotation cp="🤵">cowok | ganteng | jas | mempelai pria | pria | pria bertuksedo | tuxedo</annotation>
-		<annotation cp="🤵" type="tts">pria bertuksedo</annotation>
+		<annotation cp="🤵">mempelai pria | orang | orang bertuksedo | tuksedo</annotation>
+		<annotation cp="🤵" type="tts">orang bertuksedo</annotation>
 		<annotation cp="🤵‍♂">pria | pria dewasa | pria dewasa bertuksedo | tuksedo | tuxedo</annotation>
 		<annotation cp="🤵‍♂" type="tts">pria dewasa bertuksedo</annotation>
 		<annotation cp="🤵‍♀">tuksedo | wanita | wanita bertuksedo</annotation>
 		<annotation cp="🤵‍♀" type="tts">wanita bertuksedo</annotation>
-		<annotation cp="👰">cadar | kawin | kerudung | nikah | pengantin | pengantin berpenutup kepala</annotation>
-		<annotation cp="👰" type="tts">pengantin berpenutup kepala</annotation>
+		<annotation cp="👰">cadar | mempelai wanita | nikah | orang | orang berpenutup kepala | pengantin</annotation>
+		<annotation cp="👰" type="tts">orang berpenutup kepala</annotation>
 		<annotation cp="👰‍♂">penutup kepala | pria | pria berpenutup kepala</annotation>
 		<annotation cp="👰‍♂" type="tts">pria berpenutup kepala</annotation>
 		<annotation cp="👰‍♀">penutup kepala | wanita | wanita berpenutup kepala</annotation>
@@ -1113,8 +1409,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🐇" type="tts">kelinci</annotation>
 		<annotation cp="🐿">tupai</annotation>
 		<annotation cp="🐿" type="tts">tupai</annotation>
-		<annotation cp="🦫">beaver | bendungan</annotation>
-		<annotation cp="🦫" type="tts">beaver</annotation>
+		<annotation cp="🦫">bendungan | biwara</annotation>
+		<annotation cp="🦫" type="tts">biwara</annotation>
 		<annotation cp="🦔">berduri | landak</annotation>
 		<annotation cp="🦔" type="tts">landak</annotation>
 		<annotation cp="🦇">binatang | kelelawar | vampir</annotation>
@@ -2527,8 +2823,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🗡" type="tts">belati</annotation>
 		<annotation cp="⚔">pedang | pedang bersilang | senjata | silang</annotation>
 		<annotation cp="⚔" type="tts">pedang bersilang</annotation>
-		<annotation cp="🔫">alat | pistol | revolver | senjata</annotation>
-		<annotation cp="🔫" type="tts">pistol</annotation>
+		<annotation cp="🔫">alat | pistol | pistol air | revolver | senjata</annotation>
+		<annotation cp="🔫" type="tts">pistol air</annotation>
 		<annotation cp="🪃">australia | berbalik | bumerang | melambung</annotation>
 		<annotation cp="🪃" type="tts">bumerang</annotation>
 		<annotation cp="🏹">busur | busur dan panah | panah | pemanah | Sagitarius | zodiak</annotation>
@@ -2719,6 +3015,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="↕" type="tts">tanda panah atas bawah</annotation>
 		<annotation cp="↔">panah | tanda panah kiri kanan</annotation>
 		<annotation cp="↔" type="tts">tanda panah kiri kanan</annotation>
+		<annotation cp="↮" draft="contributed">panah arah kanan kiri</annotation>
+		<annotation cp="↮" type="tts" draft="contributed">panah arah kanan kiri</annotation>
 		<annotation cp="↩">panah | tanda panah kanan melengkung ke kiri</annotation>
 		<annotation cp="↩" type="tts">tanda panah kanan melengkung ke kiri</annotation>
 		<annotation cp="↪">panah | tanda panah kanan melengkung ke kanan</annotation>
@@ -2845,28 +3143,28 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="♂" type="tts">simbol pria</annotation>
 		<annotation cp="⚧">simbol transgender | transgender</annotation>
 		<annotation cp="⚧" type="tts">simbol transgender</annotation>
-		<annotation cp="✖">batal | kali | perkalian | tanda perkalian tebal | x</annotation>
-		<annotation cp="✖" type="tts">tanda perkalian tebal</annotation>
-		<annotation cp="➕">matematika | tambah | tanda penjumlahan tebal</annotation>
-		<annotation cp="➕" type="tts">tanda penjumlahan tebal</annotation>
-		<annotation cp="➖">kurang | matematika | tanda pengurangan tebal</annotation>
-		<annotation cp="➖" type="tts">tanda pengurangan tebal</annotation>
-		<annotation cp="➗">matematika | pembagian | tanda pembagian tebal</annotation>
-		<annotation cp="➗" type="tts">tanda pembagian tebal</annotation>
+		<annotation cp="✖">batal | kali | perkalian | tanda | x</annotation>
+		<annotation cp="✖" type="tts">kali</annotation>
+		<annotation cp="➕">+ | matematika | plus | tambah | tanda</annotation>
+		<annotation cp="➕" type="tts">tambah</annotation>
+		<annotation cp="➖">- | − | kurang | matematika | minus | tanda</annotation>
+		<annotation cp="➖" type="tts">kurang</annotation>
+		<annotation cp="➗">÷ | bagi | matematika | pembagian | tanda</annotation>
+		<annotation cp="➗" type="tts">bagi</annotation>
 		<annotation cp="♾">selamanya | tak terbatas | tak terhingga | universal</annotation>
 		<annotation cp="♾" type="tts">tak terhingga</annotation>
 		<annotation cp="‼">bangbang | tanda | tanda baca | tanda seru | tanda seru ganda</annotation>
 		<annotation cp="‼" type="tts">tanda seru ganda</annotation>
 		<annotation cp="⁉">pertanyaan | tanda | tanda baca | tanda seru | tanda seru dan tanya</annotation>
 		<annotation cp="⁉" type="tts">tanda seru dan tanya</annotation>
-		<annotation cp="❓">pertanyaan | tanda | tanda baca | tanda tanya</annotation>
-		<annotation cp="❓" type="tts">tanda tanya</annotation>
+		<annotation cp="❓">pertanyaan | tanda | tanda baca | tanda tanya | tanda tanya merah</annotation>
+		<annotation cp="❓" type="tts">tanda tanya merah</annotation>
 		<annotation cp="❔">garis luar | pertanyaan | tanda | tanda baca | tanda tanya putih</annotation>
 		<annotation cp="❔" type="tts">tanda tanya putih</annotation>
 		<annotation cp="❕">garis luar | tanda | tanda baca | tanda seru | tanda seru putih</annotation>
 		<annotation cp="❕" type="tts">tanda seru putih</annotation>
-		<annotation cp="❗">tanda | tanda baca | tanda seru</annotation>
-		<annotation cp="❗" type="tts">tanda seru</annotation>
+		<annotation cp="❗">tanda | tanda baca | tanda seru | tanda seru merah</annotation>
+		<annotation cp="❗" type="tts">tanda seru merah</annotation>
 		<annotation cp="〰">garis bergelombang | gelombang | tanda baca | tanda pisah</annotation>
 		<annotation cp="〰" type="tts">garis bergelombang</annotation>
 		<annotation cp="💱">bank | kurs | mata uang | uang</annotation>
@@ -3077,16 +3375,28 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🏳‍⚧" type="tts">bendera transgender</annotation>
 		<annotation cp="🏴‍☠">bajak | bajak laut | bendera bajak laut | harta karun | Jolly Roger</annotation>
 		<annotation cp="🏴‍☠" type="tts">bendera bajak laut</annotation>
+		<annotation cp="¢">sen</annotation>
+		<annotation cp="¢" type="tts">sen</annotation>
+		<annotation cp="$">dolar | peso | uang | USD</annotation>
+		<annotation cp="$" type="tts">dolar</annotation>
 		<annotation cp="£">EGP | GBP | mata uang | pound</annotation>
 		<annotation cp="£" type="tts">pound</annotation>
 		<annotation cp="¥">CNY | JPY | mata uang | yen | yuan</annotation>
 		<annotation cp="¥" type="tts">yen</annotation>
+		<annotation cp="₥">mil | mill</annotation>
+		<annotation cp="₥" type="tts">mill</annotation>
+		<annotation cp="₩">KPW | KRW | won</annotation>
+		<annotation cp="₩" type="tts">won</annotation>
 		<annotation cp="€">EUR | euro | mata uang</annotation>
 		<annotation cp="€" type="tts">euro</annotation>
+		<annotation cp="₱">peso</annotation>
+		<annotation cp="₱" type="tts">peso</annotation>
 		<annotation cp="₹">mata uang | rupee | rupee india</annotation>
 		<annotation cp="₹" type="tts">rupee india</annotation>
 		<annotation cp="₽">mata uang | ruble</annotation>
 		<annotation cp="₽" type="tts">ruble</annotation>
+		<annotation cp="₿">bitcoin | BTC</annotation>
+		<annotation cp="₿" type="tts">bitcoin</annotation>
 		<annotation cp="¹">satu | superskrip</annotation>
 		<annotation cp="¹" type="tts">satu superskrip</annotation>
 		<annotation cp="²">dua | kuadrat | superskrip</annotation>

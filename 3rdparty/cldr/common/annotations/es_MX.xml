@@ -12,12 +12,212 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<territory type="MX"/>
 	</identity>
 	<annotations>
-		<annotation cp="«">angular | comilla | comilla angular de apertura | comilla de apertura | corchetes | izquierda</annotation>
+		<annotation cp="{" draft="contributed">llave de apertura</annotation>
+		<annotation cp="_">baja | bajo | guion | raya | subraya</annotation>
+		<annotation cp="-">guion | guion-menos | menos | raya</annotation>
+		<annotation cp="-" type="tts">guion-menos</annotation>
+		<annotation cp="‐">guion | raya</annotation>
+		<annotation cp="―">barra | barra horizontal | línea | raya</annotation>
+		<annotation cp="・">interpunto | katakana | medio | punto | punto centrado | puntos</annotation>
+		<annotation cp=".">punto | punto final | punto y aparte | punto y seguido</annotation>
+		<annotation cp="…">elipsis | omisión | puntos</annotation>
+		<annotation cp="…" type="tts">elipsis</annotation>
+		<annotation cp="'">apóstrofo | apóstrofo de ancho fijo | comilla | comilla simple</annotation>
+		<annotation cp="'" type="tts">apóstrofo de ancho fijo</annotation>
+		<annotation cp="‘">apóstrofo | apóstrofo izquierdo | comilla | comilla simple</annotation>
+		<annotation cp="‘" type="tts">apóstrofo izquierdo</annotation>
+		<annotation cp="’">ap´ostrofo derecho | apóstrofo | comilla | comilla simple</annotation>
+		<annotation cp="’" type="tts">ap´ostrofo derecho</annotation>
+		<annotation cp="‚">apóstrofo bajo | apóstrofo derecho bajo | cita | cita baja</annotation>
+		<annotation cp="‚" type="tts">apóstrofo derecho bajo</annotation>
+		<annotation cp="“">cita | comilla | comilla doble izquierda | doble</annotation>
+		<annotation cp="“" type="tts">comilla doble izquierda</annotation>
+		<annotation cp="”">cita | comilla | comilla doble derecha | doble</annotation>
+		<annotation cp="”" type="tts">comilla doble derecha</annotation>
+		<annotation cp="„">cita baja | comilla | comilla doble derecha baja | doble</annotation>
+		<annotation cp="„" type="tts">comilla doble derecha baja</annotation>
+		<annotation cp="«">angular | comilla | comilla angular de apertura | comilla de apertura | izquierda</annotation>
 		<annotation cp="«" type="tts">comilla angular de apertura</annotation>
-		<annotation cp="»">angular | comilla | comilla angular de cierre | comilla de cierre | corchetes | derecha</annotation>
+		<annotation cp="»">angular | comilla | comilla angular de cierre | comilla de cierre | derecha</annotation>
 		<annotation cp="»" type="tts">comilla angular de cierre</annotation>
+		<annotation cp=")">corchete | paréntesis | paréntesis de cierre | redondo</annotation>
+		<annotation cp="[" draft="contributed">corchete de apertura</annotation>
+		<annotation cp="]" draft="contributed">corchete de cierre</annotation>
+		<annotation cp="}" draft="contributed">llave de cierre</annotation>
+		<annotation cp="〈" draft="contributed">angular de apertura</annotation>
+		<annotation cp="〈" type="tts" draft="contributed">angular de apertura</annotation>
+		<annotation cp="〉" draft="contributed">angular de cierre</annotation>
+		<annotation cp="〉" type="tts" draft="contributed">angular de cierre</annotation>
+		<annotation cp="《" draft="contributed">doble angular de apertura</annotation>
+		<annotation cp="《" type="tts" draft="contributed">doble angular de apertura</annotation>
+		<annotation cp="》" draft="contributed">doble angular de cierre</annotation>
+		<annotation cp="》" type="tts" draft="contributed">doble angular de cierre</annotation>
+		<annotation cp="「" draft="contributed">comilla esquinada de apertura</annotation>
+		<annotation cp="「" type="tts" draft="contributed">comilla esquinada de apertura</annotation>
+		<annotation cp="」" draft="contributed">comilla esquinada de cierre</annotation>
+		<annotation cp="」" type="tts" draft="contributed">comilla esquinada de cierre</annotation>
+		<annotation cp="『" draft="contributed">corchea esquinada de apertura</annotation>
+		<annotation cp="『" type="tts" draft="contributed">corchea esquinada de apertura</annotation>
+		<annotation cp="』" draft="contributed">corchea esquinada de cierre</annotation>
+		<annotation cp="』" type="tts" draft="contributed">corchea esquinada de cierre</annotation>
+		<annotation cp="【" draft="contributed">corchete lenticular de apertura negro</annotation>
+		<annotation cp="【" type="tts" draft="contributed">corchete lenticular de apertura negro</annotation>
+		<annotation cp="】" draft="contributed">corchete lenticular de cierre negro</annotation>
+		<annotation cp="】" type="tts" draft="contributed">corchete lenticular de cierre negro</annotation>
+		<annotation cp="〔" draft="contributed">corchete caparazón tortuga de apertura</annotation>
+		<annotation cp="〕" draft="contributed">corchete caparazón tortuga de cierre</annotation>
+		<annotation cp="〖" draft="contributed">corchete lenticular de apertura blanco</annotation>
+		<annotation cp="〖" type="tts" draft="contributed">corchete lenticular de apertura blanco</annotation>
+		<annotation cp="〗" draft="contributed">corchete lenticular de cierre blanco</annotation>
+		<annotation cp="〗" type="tts" draft="contributed">corchete lenticular de cierre blanco</annotation>
+		<annotation cp="‧">guion | punto | punto de separación | raya</annotation>
+		<annotation cp="‧" type="tts">punto de separación</annotation>
+		<annotation cp="‸" draft="contributed">inserción</annotation>
+		<annotation cp="‸" type="tts" draft="contributed">inserción</annotation>
+		<annotation cp="↴" draft="contributed">Flecha hacia la derecha con la esquina hacia abajo</annotation>
+		<annotation cp="↴" type="tts" draft="contributed">Flecha hacia la derecha con la esquina hacia abajo</annotation>
+		<annotation cp="↵" draft="contributed">Flecha hacia abajo con la esquina hacia la izquierda</annotation>
+		<annotation cp="↵" type="tts" draft="contributed">Flecha hacia abajo con la esquina hacia la izquierda</annotation>
+		<annotation cp="↶" draft="contributed">Flecha de semicírculo superior en sentido antihorario</annotation>
+		<annotation cp="↶" type="tts" draft="contributed">Flecha de semicírculo superior en sentido antihorario</annotation>
+		<annotation cp="↷" draft="contributed">Flecha de semicírculo superior a la derecha</annotation>
+		<annotation cp="↷" type="tts" draft="contributed">Flecha de semicírculo superior a la derecha</annotation>
+		<annotation cp="↸" draft="contributed">Barra larga de flecha hacia el noroeste</annotation>
+		<annotation cp="↸" type="tts" draft="contributed">Barra larga de flecha hacia el noroeste</annotation>
+		<annotation cp="↹" draft="contributed">Barra de flecha hacia la izquierda sobre barra de flecha hacia la derecha</annotation>
+		<annotation cp="↹" type="tts" draft="contributed">Barra de flecha hacia la izquierda sobre barra de flecha hacia la derecha</annotation>
+		<annotation cp="↺" draft="contributed">Flecha de círculo abierto en sentido antihorario</annotation>
+		<annotation cp="↺" type="tts" draft="contributed">Flecha de círculo abierto en sentido antihorario</annotation>
+		<annotation cp="↻" draft="contributed">Flecha de círculo abierto en sentido horario</annotation>
+		<annotation cp="↻" type="tts" draft="contributed">Flecha de círculo abierto en sentido horario</annotation>
+		<annotation cp="↼" draft="contributed">Arpón a la izquierda con púa hacia arriba</annotation>
+		<annotation cp="↼" type="tts" draft="contributed">Arpón a la izquierda con púa hacia arriba</annotation>
+		<annotation cp="↽" draft="contributed">Arpón a la izquierda con púa hacia abajo</annotation>
+		<annotation cp="↽" type="tts" draft="contributed">Arpón a la izquierda con púa hacia abajo</annotation>
+		<annotation cp="↾" draft="contributed">Arpón hacia arriba con púa hacia la derecha</annotation>
+		<annotation cp="↾" type="tts" draft="contributed">Arpón hacia arriba con púa hacia la derecha</annotation>
+		<annotation cp="↿" draft="contributed">Arpón hacia arriba con púa hacia la izquierda</annotation>
+		<annotation cp="↿" type="tts" draft="contributed">Arpón hacia arriba con púa hacia la izquierda</annotation>
+		<annotation cp="⇀" draft="contributed">Arpón a la derecha con púa hacia arriba</annotation>
+		<annotation cp="⇀" type="tts" draft="contributed">Arpón a la derecha con púa hacia arriba</annotation>
+		<annotation cp="⇁" draft="contributed">Arpón a la derecha con púa hacia abajo</annotation>
+		<annotation cp="⇁" type="tts" draft="contributed">Arpón a la derecha con púa hacia abajo</annotation>
+		<annotation cp="⇂" draft="contributed">Arpón hacia abajo con púa hacia la derecha</annotation>
+		<annotation cp="⇂" type="tts" draft="contributed">Arpón hacia abajo con púa hacia la derecha</annotation>
+		<annotation cp="⇃" draft="contributed">Arpón hacia abajo con púa hacia la izquierda</annotation>
+		<annotation cp="⇃" type="tts" draft="contributed">Arpón hacia abajo con púa hacia la izquierda</annotation>
+		<annotation cp="⇄" draft="contributed">Flecha hacia la derecha sobre flecha hacia la izquierda</annotation>
+		<annotation cp="⇄" type="tts" draft="contributed">Flecha hacia la derecha sobre flecha hacia la izquierda</annotation>
+		<annotation cp="⇇" draft="contributed">Flechas pareadas a la izquierda</annotation>
+		<annotation cp="⇇" type="tts" draft="contributed">Flechas pareadas a la izquierda</annotation>
+		<annotation cp="⇈" draft="contributed">Flechas pareadas hacia arriba</annotation>
+		<annotation cp="⇈" type="tts" draft="contributed">Flechas pareadas hacia arriba</annotation>
+		<annotation cp="⇉" draft="contributed">Flechas pareadas hacia la derecha</annotation>
+		<annotation cp="⇉" type="tts" draft="contributed">Flechas pareadas hacia la derecha</annotation>
+		<annotation cp="⇊" draft="contributed">Flechas pareadas hacia abajo</annotation>
+		<annotation cp="⇊" type="tts" draft="contributed">Flechas pareadas hacia abajo</annotation>
+		<annotation cp="⇋" draft="contributed">Arpón hacia la izquierda sobre arpón hacia la derecha</annotation>
+		<annotation cp="⇋" type="tts" draft="contributed">Arpón hacia la izquierda sobre arpón hacia la derecha</annotation>
+		<annotation cp="⇌" draft="contributed">Arpón hacia la derecha sobre arpón hacia la izquierda</annotation>
+		<annotation cp="⇌" type="tts" draft="contributed">Arpón hacia la derecha sobre arpón hacia la izquierda</annotation>
+		<annotation cp="⇐" draft="contributed">Doble flecha hacia la izquierda</annotation>
+		<annotation cp="⇐" type="tts" draft="contributed">Doble flecha hacia la izquierda</annotation>
+		<annotation cp="⇍" draft="contributed">Doble flecha hacia la izquierda con trazo</annotation>
+		<annotation cp="⇍" type="tts" draft="contributed">Doble flecha hacia la izquierda con trazo</annotation>
+		<annotation cp="⇑" draft="contributed">Flecha doble hacia arriba</annotation>
+		<annotation cp="⇑" type="tts" draft="contributed">Flecha doble hacia arriba</annotation>
+		<annotation cp="⇒" draft="contributed">Doble flecha hacia la derecha</annotation>
+		<annotation cp="⇒" type="tts" draft="contributed">Doble flecha hacia la derecha</annotation>
+		<annotation cp="⇏" draft="contributed">Doble flecha hacia la derecha con trazo</annotation>
+		<annotation cp="⇏" type="tts" draft="contributed">Doble flecha hacia la derecha con trazo</annotation>
+		<annotation cp="⇓" draft="contributed">Doble flecha hacia abajo</annotation>
+		<annotation cp="⇓" type="tts" draft="contributed">Doble flecha hacia abajo</annotation>
+		<annotation cp="⇔" draft="contributed">Doble flecha bidireccional</annotation>
+		<annotation cp="⇔" type="tts" draft="contributed">Doble flecha bidireccional</annotation>
+		<annotation cp="⇎" draft="contributed">Doble flecha bidireccional con trazo</annotation>
+		<annotation cp="⇎" type="tts" draft="contributed">Doble flecha bidireccional con trazo</annotation>
+		<annotation cp="⇖" draft="contributed">Doble flecha en dirección noroeste</annotation>
+		<annotation cp="⇖" type="tts" draft="contributed">Doble flecha en dirección noroeste</annotation>
+		<annotation cp="⇗" draft="contributed">Doble flecha en dirección noreste</annotation>
+		<annotation cp="⇗" type="tts" draft="contributed">Doble flecha en dirección noreste</annotation>
+		<annotation cp="⇘" draft="contributed">Doble flecha en dirección sureste</annotation>
+		<annotation cp="⇘" type="tts" draft="contributed">Doble flecha en dirección sureste</annotation>
+		<annotation cp="⇙" draft="contributed">Doble flecha en dirección suroeste</annotation>
+		<annotation cp="⇙" type="tts" draft="contributed">Doble flecha en dirección suroeste</annotation>
+		<annotation cp="⇚" draft="contributed">Flecha triple hacia la izquierda</annotation>
+		<annotation cp="⇚" type="tts" draft="contributed">Flecha triple hacia la izquierda</annotation>
+		<annotation cp="⇛" draft="contributed">Flecha triple hacia la derecha</annotation>
+		<annotation cp="⇛" type="tts" draft="contributed">Flecha triple hacia la derecha</annotation>
+		<annotation cp="⇜" draft="contributed">Flecha garabateada hacia la izquierda</annotation>
+		<annotation cp="⇜" type="tts" draft="contributed">Flecha garabateada hacia la izquierda</annotation>
+		<annotation cp="⇝" draft="contributed">Flecha garabateada hacia la derecha</annotation>
+		<annotation cp="⇝" type="tts" draft="contributed">Flecha garabateada hacia la derecha</annotation>
+		<annotation cp="⇞" draft="contributed">Flecha hacia arriba con doble trazo</annotation>
+		<annotation cp="⇞" type="tts" draft="contributed">Flecha hacia arriba con doble trazo</annotation>
+		<annotation cp="⇟" draft="contributed">Flecha hacia abajo con doble trazo</annotation>
+		<annotation cp="⇟" type="tts" draft="contributed">Flecha hacia abajo con doble trazo</annotation>
+		<annotation cp="⇠" draft="contributed">Flecha punteada hacia la izquierda</annotation>
+		<annotation cp="⇠" type="tts" draft="contributed">Flecha punteada hacia la izquierda</annotation>
+		<annotation cp="⇡" draft="contributed">Flecha punteada hacia arriba</annotation>
+		<annotation cp="⇡" type="tts" draft="contributed">Flecha punteada hacia arriba</annotation>
+		<annotation cp="⇢" draft="contributed">Flecha punteada hacia la derecha</annotation>
+		<annotation cp="⇢" type="tts" draft="contributed">Flecha punteada hacia la derecha</annotation>
+		<annotation cp="⇣" draft="contributed">Flecha punteada hacia abajo</annotation>
+		<annotation cp="⇣" type="tts" draft="contributed">Flecha punteada hacia abajo</annotation>
+		<annotation cp="⇤" draft="contributed">Flecha hacia la izquierda hacia la barra</annotation>
+		<annotation cp="⇤" type="tts" draft="contributed">Flecha hacia la izquierda hacia la barra</annotation>
+		<annotation cp="⇥" draft="contributed">Flecha hacia la derecha hacia la barra</annotation>
+		<annotation cp="⇥" type="tts" draft="contributed">Flecha hacia la derecha hacia la barra</annotation>
+		<annotation cp="⇦" draft="contributed">Flecha blanca hacia la izquierda</annotation>
+		<annotation cp="⇦" type="tts" draft="contributed">Flecha blanca hacia la izquierda</annotation>
+		<annotation cp="⇧" draft="contributed">Flecha blanca hacia arriba</annotation>
+		<annotation cp="⇧" type="tts" draft="contributed">Flecha blanca hacia arriba</annotation>
+		<annotation cp="⇨" draft="contributed">Flecha blanca hacia la derecha</annotation>
+		<annotation cp="⇨" type="tts" draft="contributed">Flecha blanca hacia la derecha</annotation>
+		<annotation cp="⇩" draft="contributed">Flecha blanca hacia abajo</annotation>
+		<annotation cp="⇩" type="tts" draft="contributed">Flecha blanca hacia abajo</annotation>
+		<annotation cp="⇪" draft="contributed">Flecha blanca hacia arriba de la barra</annotation>
+		<annotation cp="⇪" type="tts" draft="contributed">Flecha blanca hacia arriba de la barra</annotation>
+		<annotation cp="⇵" draft="contributed">Flecha blanca hacia abajo de la barra</annotation>
+		<annotation cp="⇵" type="tts" draft="contributed">Flecha blanca hacia abajo de la barra</annotation>
+		<annotation cp="∀" draft="contributed">Para todos</annotation>
+		<annotation cp="∀" type="tts" draft="contributed">Para todos</annotation>
+		<annotation cp="∂" draft="contributed">Diferencial parcial</annotation>
+		<annotation cp="∂" type="tts" draft="contributed">Diferencial parcial</annotation>
+		<annotation cp="∃" draft="contributed">Existe</annotation>
+		<annotation cp="∃" type="tts" draft="contributed">Existe</annotation>
+		<annotation cp="∅" draft="contributed">Conjunto vacío</annotation>
+		<annotation cp="∅" type="tts" draft="contributed">Conjunto vacío</annotation>
+		<annotation cp="∉" draft="contributed">No es un elemento de</annotation>
+		<annotation cp="∉" type="tts" draft="contributed">No es un elemento de</annotation>
+		<annotation cp="∋" draft="contributed">Contiene como miembro</annotation>
+		<annotation cp="∋" type="tts" draft="contributed">Contiene como miembro</annotation>
+		<annotation cp="∎" draft="contributed">Fin de la prueba</annotation>
+		<annotation cp="∎" type="tts" draft="contributed">Fin de la prueba</annotation>
+		<annotation cp="∏" draft="contributed">Producto n-ario</annotation>
+		<annotation cp="∏" type="tts" draft="contributed">Producto n-ario</annotation>
+		<annotation cp="∑" draft="contributed">Suma n-aria</annotation>
+		<annotation cp="∑" type="tts" draft="contributed">Suma n-aria</annotation>
 		<annotation cp="÷" type="tts">división</annotation>
 		<annotation cp="×" type="tts">multiplicación</annotation>
+		<annotation cp="≮" draft="contributed">No menos que</annotation>
+		<annotation cp="≮" type="tts" draft="contributed">No menos que</annotation>
+		<annotation cp="≯" draft="contributed">No mayor que</annotation>
+		<annotation cp="≯" type="tts" draft="contributed">No mayor que</annotation>
+		<annotation cp="∓" draft="contributed">Signo menos o más</annotation>
+		<annotation cp="∓" type="tts" draft="contributed">Signo menos o más</annotation>
+		<annotation cp="∕" draft="contributed">Barra de división</annotation>
+		<annotation cp="∕" type="tts" draft="contributed">Barra de división</annotation>
+		<annotation cp="⁄" draft="contributed">Barra de fracciones</annotation>
+		<annotation cp="⁄" type="tts" draft="contributed">Barra de fracciones</annotation>
+		<annotation cp="∗" draft="contributed">Operador de asterisco</annotation>
+		<annotation cp="∗" type="tts" draft="contributed">Operador de asterisco</annotation>
+		<annotation cp="∘" draft="contributed">Operador de anillo</annotation>
+		<annotation cp="∘" type="tts" draft="contributed">Operador de anillo</annotation>
+		<annotation cp="∙" draft="contributed">Operador de bala</annotation>
+		<annotation cp="∙" type="tts" draft="contributed">Operador de bala</annotation>
+		<annotation cp="∝" draft="contributed">Proporcional a</annotation>
+		<annotation cp="∝" type="tts" draft="contributed">Proporcional a</annotation>
 		<annotation cp="😀">cara | cara sonriendo | contento | divertido | sonrisa</annotation>
 		<annotation cp="😀" type="tts">cara sonriendo</annotation>
 		<annotation cp="😃">boca abierta | cara sonriendo con ojos grandes | divertido | risa | sonrisa</annotation>
@@ -49,14 +249,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🥲">agradecido | aliviado | cara sonriente con lágrima | emocionado | lágrima | orgulloso | sonriente</annotation>
 		<annotation cp="😋">broma | cara saboreando comida | delicioso | rico | sonriente</annotation>
 		<annotation cp="😋" type="tts">cara saboreando comida</annotation>
-		<annotation cp="😜">cara sacando la lengua y guiñando un ojo</annotation>
 		<annotation cp="🤪">cara de loco | ojo grande | ojo pequeño</annotation>
 		<annotation cp="😝">cara con los ojos bien cerrados y sacando la lengua | cara con ojos cerrados y sacando la lengua</annotation>
 		<annotation cp="😝" type="tts">cara con ojos cerrados y sacando la lengua</annotation>
 		<annotation cp="🤑">cara con lengua de dinero</annotation>
 		<annotation cp="🤭">cara con mano sobre la boca | chanfle | risita | uy | vaya</annotation>
 		<annotation cp="🤐">boca | cara | cara con la boca cerrada con cierre | zipper</annotation>
-		<annotation cp="😏">cara sonriendo con superioridad</annotation>
 		<annotation cp="🙄">cara con ojos en blanco</annotation>
 		<annotation cp="🙄" type="tts">cara con ojos en blanco</annotation>
 		<annotation cp="😬">cara | cara haciendo mueca | cara haciendo una mueca | mueca</annotation>
@@ -82,7 +280,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="😟" type="tts">cara preocupada</annotation>
 		<annotation cp="😮">cara con boca abierta | empatía | sorpresa</annotation>
 		<annotation cp="😳">avergonzado | cara sonrojada | sonrojado | sorprendido | sorpresa | vergüenza</annotation>
-		<annotation cp="🥺">cara de súplica | ganas de llorar | ojos llorosos | suplicar</annotation>
+		<annotation cp="🥺">cara de por favor | cara de súplica | implorar | ojos adorables | piedad | por favor</annotation>
 		<annotation cp="🥺" type="tts">cara de súplica</annotation>
 		<annotation cp="😦">abierta | boca | cara | cara con el ceño fruncido y la boca abierta</annotation>
 		<annotation cp="😦" type="tts">cara con el ceño fruncido y la boca abierta</annotation>
@@ -91,7 +289,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="😨">cara asustada</annotation>
 		<annotation cp="😨" type="tts">cara asustada</annotation>
 		<annotation cp="😰">ansiedad | azul | cara | cara con ansiedad y sudor | frío | sudor</annotation>
-		<annotation cp="😥">cara triste pero aliviada</annotation>
 		<annotation cp="😢">cara llorando | llanto | llorar | triste | tristeza</annotation>
 		<annotation cp="😢" type="tts">cara llorando</annotation>
 		<annotation cp="😱">cara gritando de miedo | grito | horror | miedo | terror</annotation>
@@ -101,8 +298,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="😞" type="tts">cara decepcionada</annotation>
 		<annotation cp="😩">agotado | cansado | cara | cara agotada | cara de cansancio | exhausto</annotation>
 		<annotation cp="😩" type="tts">cara agotada</annotation>
-		<annotation cp="😫">cara cansada</annotation>
-		<annotation cp="😤">cara resoplando</annotation>
+		<annotation cp="😤">cara | cara resoplando | gané | mirada de triunfo | triunfo | victoria</annotation>
 		<annotation cp="😤" type="tts">cara resoplando</annotation>
 		<annotation cp="😡">cara | cara de enojo | cara de odio | enojado | enojo | ira | odio | rojo</annotation>
 		<annotation cp="😡" type="tts">cara de enojo</annotation>
@@ -179,12 +375,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🗯">burbuja | cómics | derecho | enojado | globo | globo de enojo derecho</annotation>
 		<annotation cp="💭">burbuja | cómics | globo | globo de pensamiento | pensamiento</annotation>
 		<annotation cp="💤">cómics | emoción | estar durmiendo | roncar | símbolo de sueño</annotation>
-		<annotation cp="🤚" draft="contributed">dorso de la mano</annotation>
+		<annotation cp="🤚">dorso | dorso de la mano | dorso de la mano alzado | mano</annotation>
 		<annotation cp="🤚" type="tts">dorso de la mano</annotation>
 		<annotation cp="🖐">dedos | mano | mano abierta | palma de la mano</annotation>
 		<annotation cp="✋">mano | mano abierta | mano levantada | palma de la mano</annotation>
 		<annotation cp="🖖">saludo | spock | star | trek | vulcano</annotation>
-		<annotation cp="👌" draft="contributed">señal de aprobación con la mano</annotation>
+		<annotation cp="👌">gesto | mano | ok | señal | señal de aprobación con la mano</annotation>
 		<annotation cp="👌" type="tts">señal de aprobación con la mano</annotation>
 		<annotation cp="🤌" draft="contributed">dedos unidos</annotation>
 		<annotation cp="🤌" type="tts" draft="contributed">dedos unidos</annotation>
@@ -195,10 +391,10 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🤘" type="tts">mano haciendo los cuernos</annotation>
 		<annotation cp="🤙">gesto | llamada | mano | mano haciendo el gesto de llamar</annotation>
 		<annotation cp="🤙" type="tts">mano haciendo el gesto de llamar</annotation>
-		<annotation cp="👈">apuntar | dedo | dorso | índice | índice hacia la izquierda | mano con dedo índice hacia la izquierda</annotation>
-		<annotation cp="👈" type="tts">mano con dedo índice hacia la izquierda</annotation>
-		<annotation cp="👉">apuntar | dedo | dorso | índice | índice hacia la derecha | mano con dedo índice hacia la derecha</annotation>
-		<annotation cp="👉" type="tts">mano con dedo índice hacia la derecha</annotation>
+		<annotation cp="👈">apuntar | dedo | dorso | índice | índice hacia la izquierda | mano apuntando índice a la izquierda | mano con dedo índice hacia la izquierda</annotation>
+		<annotation cp="👈" type="tts">mano apuntando índice a la izquierda</annotation>
+		<annotation cp="👉">apuntar | dedo | dorso | índice | índice hacia la derecha | mano apuntando índice a la derecha | mano con dedo índice hacia la derecha</annotation>
+		<annotation cp="👉" type="tts">mano apuntando índice a la derecha</annotation>
 		<annotation cp="👆">apuntar | dedo | dorso de mano con dedo índice hacia arriba | índice | mano | señalar</annotation>
 		<annotation cp="🖕">dedo | insulto | mano | mano con el dedo medio levantado | medio</annotation>
 		<annotation cp="🖕" type="tts">mano con el dedo medio levantado</annotation>
@@ -206,7 +402,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="☝">apuntar | arriba | dedo índice hacia arriba | índice | señalar</annotation>
 		<annotation cp="👍">+1 | de acuerdo | OK | pulgar | pulgar hacia arriba | señal de OK</annotation>
 		<annotation cp="👎">-1 | abajo | desacuerdo | mano | pulgar | pulgar hacia abajo</annotation>
-		<annotation cp="✊" draft="contributed">puño en alto</annotation>
+		<annotation cp="✊">cerrada | mano | piedra | puño | puño en alto | puño levantado</annotation>
 		<annotation cp="✊" type="tts">puño en alto</annotation>
 		<annotation cp="🤛">izquierda | puño | puño hacia la izquierda</annotation>
 		<annotation cp="🤛" type="tts">puño hacia la izquierda</annotation>
@@ -216,39 +412,38 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🙌" type="tts">manos levantadas celebrando</annotation>
 		<annotation cp="🙏">favor | gracias | manos en oración | oración | orar | rezar</annotation>
 		<annotation cp="💅">esmalte | pintarse las uñas | uñas</annotation>
-		<annotation cp="🤳" draft="contributed">selfi</annotation>
+		<annotation cp="🤳">cámara | celular | móvil | selfi | teléfono</annotation>
 		<annotation cp="🤳" type="tts">selfi</annotation>
+		<annotation cp="🦻">accesibilidad | audífono | oreja con audífono | oreja con prótesis auditiva | prótesis auditiva | sordo</annotation>
+		<annotation cp="🦻" type="tts">oreja con prótesis auditiva</annotation>
 		<annotation cp="🫀">cardiología | centro | latido | órgano | órgano cardíaco | pulso</annotation>
 		<annotation cp="🫀" type="tts">órgano cardíaco</annotation>
 		<annotation cp="🫁">aliento | exhalación | inhalación | órgano | pulmones | respiración</annotation>
 		<annotation cp="👶">bebé | cara | infante | nene</annotation>
-		<annotation cp="🧒" draft="contributed">joven</annotation>
 		<annotation cp="🧒" type="tts">joven</annotation>
-		<annotation cp="🧑" draft="contributed">persona</annotation>
-		<annotation cp="🧑" type="tts" draft="contributed">persona</annotation>
+		<annotation cp="👦">joven | niño</annotation>
+		<annotation cp="👧">chica | joven | niña | Virgo | zodiaco</annotation>
+		<annotation cp="🧑">género | neutro | persona | persona adulta</annotation>
+		<annotation cp="🧑" type="tts">persona</annotation>
 		<annotation cp="👱">cara | persona adulta rubia | persona rubia</annotation>
 		<annotation cp="👨">adulto | cara | hombre | persona | señor</annotation>
 		<annotation cp="🧔">barba | barbón | cara | hombre con barba | persona con barba</annotation>
 		<annotation cp="👱‍♂">cara | güero | hombre rubio | rubio</annotation>
 		<annotation cp="👱‍♀">cara | güera | mujer | mujer rubia</annotation>
-		<annotation cp="🧓" draft="contributed">persona mayor</annotation>
-		<annotation cp="🧓" type="tts" draft="contributed">persona mayor</annotation>
-		<annotation cp="🙍" draft="contributed">persona frunciendo el ceño</annotation>
-		<annotation cp="🙍" type="tts" draft="contributed">persona frunciendo el ceño</annotation>
-		<annotation cp="🙍‍♀" draft="contributed">mujer frunciendo el ceño</annotation>
-		<annotation cp="🙍‍♀" type="tts" draft="contributed">mujer frunciendo el ceño</annotation>
-		<annotation cp="🙎" draft="contributed">persona haciendo pucheros</annotation>
-		<annotation cp="🙎" type="tts" draft="contributed">persona haciendo pucheros</annotation>
-		<annotation cp="🙅" draft="contributed">persona haciendo el gesto de &quot;no&quot;</annotation>
-		<annotation cp="🙅" type="tts" draft="contributed">persona haciendo el gesto de &quot;no&quot;</annotation>
-		<annotation cp="🙆" draft="contributed">persona haciendo el gesto de &quot;de acuerdo&quot;</annotation>
-		<annotation cp="🙆" type="tts" draft="contributed">persona haciendo el gesto de &quot;de acuerdo&quot;</annotation>
+		<annotation cp="🧓">género | maduro | mayor | neutro | persona mayor | persona vieja</annotation>
+		<annotation cp="🧓" type="tts">persona mayor</annotation>
+		<annotation cp="🙍">cara | ceño | fruncido | persona frunciendo el ceño</annotation>
+		<annotation cp="🙍‍♀">cara | ceño | fruncido | mujer | mujer frunciendo el ceño</annotation>
+		<annotation cp="🙍‍♀" type="tts">mujer frunciendo el ceño</annotation>
+		<annotation cp="🙎">gesto | persona | persona haciendo pucheros | pucheros</annotation>
+		<annotation cp="🙅">brazos | cruzados | gesto | gesto de no | persona | persona haciendo el gesto de &quot;no&quot; | prohibido</annotation>
+		<annotation cp="🙅" type="tts">persona haciendo el gesto de &quot;no&quot;</annotation>
+		<annotation cp="🙆">bien | gesto | ok | persona gesto de &quot;de acuerdo&quot; | persona haciendo el gesto de &quot;de acuerdo&quot;</annotation>
+		<annotation cp="🙆" type="tts">persona haciendo el gesto de &quot;de acuerdo&quot;</annotation>
 		<annotation cp="💁">información | mesa | persona | persona de mostrador de información | persona en mostrador de información</annotation>
-		<annotation cp="💁" type="tts">persona de mostrador de información</annotation>
 		<annotation cp="💁‍♂">empleado | empleado de mostrador de información | hombre | hombre en mostrador de información | información | mesa</annotation>
 		<annotation cp="💁‍♀">empleada | empleada de mostrador de información | información | mesa | mujer | mujer en mostrador de información</annotation>
 		<annotation cp="🙋">levantar | mano | persona | persona levantando la mano | yo</annotation>
-		<annotation cp="🤦" draft="contributed">persona con la mano en la frente</annotation>
 		<annotation cp="🤦‍♂">exasperación | facepalm | hombre | hombre con la mano en la frente | incredulidad</annotation>
 		<annotation cp="🤦‍♀">exasperación | facepalm | incredulidad | mujer | mujer con la mano en la frente</annotation>
 		<annotation cp="🤷">duda | encogerse | hombros | ignorancia | indiferencia | persona encogida de hombros</annotation>
@@ -261,24 +456,19 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🧑‍⚖" type="tts" draft="contributed">juez</annotation>
 		<annotation cp="🧑‍🌾" draft="contributed">granjero</annotation>
 		<annotation cp="🧑‍🌾" type="tts" draft="contributed">granjero</annotation>
+		<annotation cp="👨‍🌾" type="tts">granjero hombre</annotation>
+		<annotation cp="👩‍🌾" type="tts">granjera mujer</annotation>
 		<annotation cp="🧑‍🍳" draft="contributed">cocinero</annotation>
 		<annotation cp="🧑‍🍳" type="tts" draft="contributed">cocinero</annotation>
-		<annotation cp="🧑‍🔧" draft="contributed">mecánico</annotation>
-		<annotation cp="🧑‍🔧" type="tts" draft="contributed">mecánico</annotation>
 		<annotation cp="🧑‍🏭" draft="contributed">obrero de fábrica</annotation>
 		<annotation cp="🧑‍🏭" type="tts" draft="contributed">obrero de fábrica</annotation>
 		<annotation cp="🧑‍💼" draft="contributed">oficinista</annotation>
-		<annotation cp="🧑‍🔬" draft="contributed">científico</annotation>
-		<annotation cp="🧑‍🔬" type="tts" draft="contributed">científico</annotation>
-		<annotation cp="🧑‍💻" draft="contributed">tecnólogo</annotation>
-		<annotation cp="🧑‍💻" type="tts" draft="contributed">tecnólogo</annotation>
 		<annotation cp="🧑‍🎤" draft="contributed">cantante</annotation>
 		<annotation cp="🧑‍🎨" draft="contributed">artista</annotation>
 		<annotation cp="🧑‍✈" draft="contributed">piloto</annotation>
 		<annotation cp="🧑‍🚀" draft="contributed">astronauta</annotation>
 		<annotation cp="🧑‍🚒" draft="contributed">bombero</annotation>
 		<annotation cp="👨‍🚒">bombero | bombero hombre</annotation>
-		<annotation cp="👩‍🚒">bombera</annotation>
 		<annotation cp="👮">agente | agente de policía | oficial | policía</annotation>
 		<annotation cp="👮‍♂">agente | agente de policía hombre | oficial hombre | policía</annotation>
 		<annotation cp="👮‍♀">agente | agente de policía mujer | oficial mujer | policía</annotation>
@@ -287,12 +477,12 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="💂‍♂">guardia hombre | hombre de guardia real | hombre de guardia real británica | hombre de la guardia real con sombrero | hombre vigilante</annotation>
 		<annotation cp="💂‍♀">guardia mujer | mujer de guardia real | mujer de la guardia real británica | mujer guardia real con sombrero | mujer vigilante</annotation>
 		<annotation cp="🥷">luchador | ninja | oculto | silencioso</annotation>
-		<annotation cp="👷" draft="contributed">persona obrera de construcción</annotation>
-		<annotation cp="👷" type="tts" draft="contributed">persona obrera de construcción</annotation>
-		<annotation cp="👷‍♂" draft="contributed">obrero de construcción</annotation>
-		<annotation cp="👷‍♂" type="tts" draft="contributed">obrero de construcción</annotation>
-		<annotation cp="👷‍♀" draft="contributed">obrera de construcción</annotation>
-		<annotation cp="👷‍♀" type="tts" draft="contributed">obrera de construcción</annotation>
+		<annotation cp="👷">cara | construcción | hombre | obrero | obrero de construcción | persona | persona obrera de construcción | trabajador</annotation>
+		<annotation cp="👷" type="tts">persona obrera de construcción</annotation>
+		<annotation cp="👷‍♂">albañil | construcción | hombre | obrero | obrero de construcción | profesional de la construcción hombre | trabajador</annotation>
+		<annotation cp="👷‍♂" type="tts">obrero de construcción</annotation>
+		<annotation cp="👷‍♀">albañila | construcción | mujer | obrera | obrera de construcción | profesional de la construcción mujer | trabajadora</annotation>
+		<annotation cp="👷‍♀" type="tts">obrera de construcción</annotation>
 		<annotation cp="🤴">cara | cuento | fantasía | persona | príncipe | realeza</annotation>
 		<annotation cp="👸">cara | cuento | fantasía | persona | princesa | realeza</annotation>
 		<annotation cp="👳">cara | persona | persona con turbante | turbante</annotation>
@@ -315,31 +505,28 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🧛‍♂">drácula | muerto viviente | vampiro | vampiro hombre</annotation>
 		<annotation cp="🧛‍♀">muerta viviente | vampiresa</annotation>
 		<annotation cp="🧟" draft="contributed">persona zombi</annotation>
-		<annotation cp="🧟" type="tts" draft="contributed">persona zombi</annotation>
+		<annotation cp="🧟" type="tts">persona zombi</annotation>
 		<annotation cp="🧟‍♂">muerto viviente | zombi hombre</annotation>
 		<annotation cp="🧟‍♀">muerta viviente | zombi hombre | zombi mujer</annotation>
-		<annotation cp="💆" draft="contributed">persona recibiendo masaje</annotation>
-		<annotation cp="💆" type="tts" draft="contributed">persona recibiendo masaje</annotation>
+		<annotation cp="💆">belleza | masaje | masaje facial | persona recibiendo masaje | relax | salón | spa</annotation>
+		<annotation cp="💆" type="tts">persona recibiendo masaje</annotation>
 		<annotation cp="💇" draft="contributed">persona cortándose el pelo</annotation>
-		<annotation cp="💇" type="tts" draft="contributed">persona cortándose el pelo</annotation>
+		<annotation cp="💇" type="tts">persona cortándose el pelo</annotation>
 		<annotation cp="💇‍♂">corte de pelo | hombre | hombre cortándose el pelo | pelo | peluquería | salón</annotation>
 		<annotation cp="💇‍♀">corte de pelo | mujer | mujer cortándose el pelo | pelo | peluquería | peluquero</annotation>
 		<annotation cp="🧑‍🦯" draft="contributed">Persona con bastón blanco</annotation>
 		<annotation cp="🧑‍🦯" type="tts" draft="contributed">Persona con bastón blanco</annotation>
-		<annotation cp="🧑‍🦼" draft="contributed">Persona en silla de ruedas motorizada</annotation>
-		<annotation cp="🧑‍🦼" type="tts" draft="contributed">Persona en silla de ruedas motorizada</annotation>
 		<annotation cp="🧑‍🦽" draft="contributed">persona en silla de ruedas manual</annotation>
-		<annotation cp="💃" draft="contributed">bailarina</annotation>
-		<annotation cp="💃" type="tts" draft="contributed">bailarina</annotation>
-		<annotation cp="🕺" draft="contributed">bailarín</annotation>
-		<annotation cp="🕺" type="tts" draft="contributed">bailarín</annotation>
+		<annotation cp="💃" type="tts">bailarina</annotation>
+		<annotation cp="🕺">bailar | bailarín | baile | hombre | hombre bailando</annotation>
+		<annotation cp="🕺" type="tts">bailarín</annotation>
 		<annotation cp="👯">conejita | conejo | mujer | mujeres de fiesta | orejas</annotation>
-		<annotation cp="🧖" draft="contributed">persona en sauna</annotation>
-		<annotation cp="🧖" type="tts" draft="contributed">persona en sauna</annotation>
-		<annotation cp="🧖‍♂" draft="contributed">hombre en sauna</annotation>
-		<annotation cp="🧖‍♂" type="tts" draft="contributed">hombre en sauna</annotation>
-		<annotation cp="🧖‍♀" draft="contributed">mujer en sauna</annotation>
-		<annotation cp="🧖‍♀" type="tts" draft="contributed">mujer en sauna</annotation>
+		<annotation cp="🧖">persona en sauna | persona en una sauna | sauna | vapor</annotation>
+		<annotation cp="🧖" type="tts">persona en sauna</annotation>
+		<annotation cp="🧖‍♂">hombre en sauna | hombre en una sauna | sauna | vapor</annotation>
+		<annotation cp="🧖‍♂" type="tts">hombre en sauna</annotation>
+		<annotation cp="🧖‍♀">mujer en sauna | mujer en una sauna | sauna | vapor</annotation>
+		<annotation cp="🧖‍♀" type="tts">mujer en sauna</annotation>
 		<annotation cp="⛷">deporte | esquí | esquiador | esquiar | nieve</annotation>
 		<annotation cp="🏌" draft="contributed">persona jugando al golf</annotation>
 		<annotation cp="🏌" type="tts" draft="contributed">persona jugando al golf</annotation>
@@ -377,13 +564,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🫂" type="tts" draft="contributed">personas que se abrazan</annotation>
 		<annotation cp="👣">cuerpo | huellas de pies | pie | pisada</annotation>
 		<annotation cp="👣" type="tts">huellas de pies</annotation>
-		<annotation cp="🦰" type="tts">pelirrojo</annotation>
-		<annotation cp="🦱">afro | pelo enrulado | rizos | rulos | tirabuzón</annotation>
-		<annotation cp="🦱" type="tts">pelo enrulado</annotation>
-		<annotation cp="🦳">anciano | cabello | canas | gris | pelo | pelo canoso</annotation>
-		<annotation cp="🦳" type="tts">pelo canoso</annotation>
 		<annotation cp="🦲">calvo | quimioterapia | rapado | sin cabello | sin pelo</annotation>
-		<annotation cp="🦲" type="tts">calvo</annotation>
 		<annotation cp="🦍">cara | gorila</annotation>
 		<annotation cp="🐶">cara | cara de perro | perro</annotation>
 		<annotation cp="🐕">animal | canino | mascota | perro</annotation>
@@ -881,15 +1062,17 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="➖" type="tts">signo de resta</annotation>
 		<annotation cp="➗" type="tts">signo de división</annotation>
 		<annotation cp="♾">eterno | ilimitado | infinito | universal</annotation>
+		<annotation cp="💲">dinero | divisa | dólar | símbolo | símbolo de dólar</annotation>
 		<annotation cp="♻">reciclado | reciclaje | reciclar | símbolo | símbolo de reciclaje</annotation>
 		<annotation cp="🔱">barco | emblema | emblema de tridente | navegación | neptuno | tridente</annotation>
 		<annotation cp="📛" draft="contributed">gafete</annotation>
-		<annotation cp="📛" type="tts" draft="contributed">gafete</annotation>
+		<annotation cp="📛" type="tts">gafete</annotation>
 		<annotation cp="🔰">bandera | hoja | japonés | principiante | símbolo japonés de principiante</annotation>
 		<annotation cp="☑">✓ | casilla | casilla seleccionada | marca | selección | verificación</annotation>
 		<annotation cp="✔">✓ | marca | marca de verificación | selección | verificación</annotation>
 		<annotation cp="✔" type="tts">marca de verificación</annotation>
-		<annotation cp="❌">× | cancelar | cruz | marca de cruz | marca de tachado | tachar</annotation>
+		<annotation cp="❌">× | cancelar | cruz | marca de cruz | marca de tachado | tachar | tache</annotation>
+		<annotation cp="❌" type="tts">tache</annotation>
 		<annotation cp="❇">chispa</annotation>
 		<annotation cp="©">autor | copyright | derechos | signo de derechos autor | símbolo de derechos de autor</annotation>
 		<annotation cp="©" type="tts">símbolo de derechos de autor</annotation>
@@ -898,16 +1081,27 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="™" type="tts">marca registrada</annotation>
 		<annotation cp="🈷">&quot;cantidad mensual&quot; en japonés | ideograma | japonés | mensual</annotation>
 		<annotation cp="🈷" type="tts">&quot;cantidad mensual&quot; en japonés</annotation>
+		<annotation cp="🉐">ganga | ideograma | ideograma japonés para &quot;ganga&quot; | japonés | kanji | oferta</annotation>
+		<annotation cp="㊗">enhorabuena | felicidades | ideograma | ideograma japonés para &quot;enhorabuena&quot; | japonés | kanji</annotation>
+		<annotation cp="🈵">ideograma | ideograma japonés para &quot;sin vacantes&quot; | japonés | kanji | lleno</annotation>
+		<annotation cp="🈵" type="tts">ideograma japonés para &quot;sin vacantes&quot;</annotation>
 		<annotation cp="🟤" draft="contributed">círculo café</annotation>
-		<annotation cp="🟤" type="tts" draft="contributed">círculo café</annotation>
+		<annotation cp="🟤" type="tts">círculo café</annotation>
 		<annotation cp="🟫" draft="contributed">cuadrado café</annotation>
-		<annotation cp="🟫" type="tts" draft="contributed">cuadrado café</annotation>
+		<annotation cp="🟫" type="tts">cuadrado café</annotation>
+		<annotation cp="🔹">cómic | diamante | diamante azul pequeño | flor | pétalo de flor | rombo con pétalo</annotation>
+		<annotation cp="🔹" type="tts">diamante azul pequeño</annotation>
+		<annotation cp="💠">cómic | diamante | diamante en flor | flor | rombo en flor</annotation>
+		<annotation cp="💠" type="tts">diamante en flor</annotation>
 		<annotation cp="🔳">borde | botón | cuadrado | cuadrado negro con borde blanco | marco</annotation>
 		<annotation cp="🔲">borde | botón | cuadrado | cuadrado blanco con borde negro | marco</annotation>
 		<annotation cp="🏁">bandera | bandera de cuadros | bandera de llegada | carrera | deporte | meta</annotation>
 		<annotation cp="🚩" draft="contributed">banderín triangular</annotation>
-		<annotation cp="🚩" type="tts" draft="contributed">banderín triangular</annotation>
+		<annotation cp="🚩" type="tts">banderín triangular</annotation>
 		<annotation cp="🏳‍🌈">arcoíris | bandera | bandera del arcoíris | bandera gay</annotation>
 		<annotation cp="🏴‍☠">bandera pirata | botín | calavera | Jolly Roger | pirata</annotation>
+		<annotation cp="₥" draft="contributed">mil</annotation>
+		<annotation cp="₥" type="tts" draft="contributed">mil</annotation>
+		<annotation cp="₩" draft="contributed">won</annotation>
 	</annotations>
 </ldml>

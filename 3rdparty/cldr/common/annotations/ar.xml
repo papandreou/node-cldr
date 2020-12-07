@@ -13,6 +13,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<language type="ar"/>
 	</identity>
 	<annotations>
+		<annotation cp="{">قوس | قوس حصر | قوس فتح متعرج | قوس متعرج</annotation>
+		<annotation cp="{" type="tts">قوس فتح متعرج</annotation>
 		<annotation cp="🏻">بشرة بلون فاتح | تعديل | جلد | رمز | لون | نوع جلد 1–2</annotation>
 		<annotation cp="🏻" type="tts">بشرة بلون فاتح</annotation>
 		<annotation cp="🏼">بشرة بلون فاتح ومعتدل | تعديل | جلد | رمز | لون | نوع جلد 3</annotation>
@@ -23,50 +25,322 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🏾" type="tts">بشرة بلون معتدل مائل للغامق</annotation>
 		<annotation cp="🏿">بشرة بلون غامق | تعديل | جلد | رمز | لون | نوع جلد 6</annotation>
 		<annotation cp="🏿" type="tts">بشرة بلون غامق</annotation>
+		<annotation cp="‾" draft="contributed">خط فوقي</annotation>
+		<annotation cp="‾" type="tts" draft="contributed">خط فوقي</annotation>
+		<annotation cp="_">تسطير | خط تحت السطر | خط تحتي | شرطة تحت السطر | شرطة سفلية</annotation>
+		<annotation cp="_" type="tts">خط تحت السطر</annotation>
+		<annotation cp="-">شرطة | ناقص | واصلة | واصلة-ناقص</annotation>
+		<annotation cp="-" type="tts">واصلة-ناقص</annotation>
+		<annotation cp="‐">شحطة | شرطة | واصلة</annotation>
+		<annotation cp="‐" type="tts">واصلة</annotation>
 		<annotation cp="–">شرطة | قصيرة</annotation>
 		<annotation cp="–" type="tts">شرطة قصيرة</annotation>
 		<annotation cp="—">شرطة | طويلة</annotation>
 		<annotation cp="—" type="tts">شرطة طويلة</annotation>
+		<annotation cp="―">خط | شرطة | شريط | شريط أفقي</annotation>
+		<annotation cp="―" type="tts">شريط أفقي</annotation>
+		<annotation cp="・">اليابان | كاتاكانا | نقاط | نقطة بالوسط | نقطة متوسطة | نقطة متوسطة بالكاتاكانا</annotation>
+		<annotation cp="・" type="tts">نقطة متوسطة بالكاتاكانا</annotation>
+		<annotation cp=",">فاصلة</annotation>
+		<annotation cp="," type="tts">فاصلة</annotation>
+		<annotation cp="،">عربية | فاصلة</annotation>
+		<annotation cp="،" type="tts">فاصلة عربية</annotation>
+		<annotation cp="、">أيدوغرافية | فاصلة</annotation>
+		<annotation cp="、" type="tts">فاصلة أيدوغرافية</annotation>
+		<annotation cp=";">فاصلة منقوطة</annotation>
+		<annotation cp=";" type="tts">فاصلة منقوطة</annotation>
+		<annotation cp="؛">عربية | فاصلة منقوطة | فاصلة منقوطة عربية</annotation>
+		<annotation cp="؛" type="tts">فاصلة منقوطة عربية</annotation>
+		<annotation cp=":">نقطتان</annotation>
+		<annotation cp=":" type="tts">نقطتان</annotation>
+		<annotation cp="!">تعجّب | علامة تعجّب | مفاجأة</annotation>
+		<annotation cp="!" type="tts">علامة تعجّب</annotation>
+		<annotation cp="¡">تعجّب | علامة تعجّب | علامة تعجّب مقلوبة | مفاجأة | مقلوبة | نقطة تعجّب</annotation>
+		<annotation cp="¡" type="tts">علامة تعجّب مقلوبة</annotation>
+		<annotation cp="?">استفهام | سؤال | علامة استفهام</annotation>
+		<annotation cp="?" type="tts">علامة استفهام</annotation>
+		<annotation cp="¿">استفهام | سؤال | علامة استفهام | علامة استفهام مقلوبة | مقلوبة</annotation>
+		<annotation cp="¿" type="tts">علامة استفهام مقلوبة</annotation>
+		<annotation cp="؟">استفهام | سؤال | عربية | علامة استفهام | علامة استفهام عربية</annotation>
+		<annotation cp="؟" type="tts">علامة استفهام عربية</annotation>
+		<annotation cp="‽" draft="contributed">علامة استفهام وتعجب</annotation>
+		<annotation cp="‽" type="tts" draft="contributed">علامة استفهام وتعجب</annotation>
+		<annotation cp=".">نقطة | نقطة نهاية</annotation>
+		<annotation cp="." type="tts">نقطة</annotation>
+		<annotation cp="…">ثلاث نقاط | حذف | علامة الحذف</annotation>
+		<annotation cp="…" type="tts">علامة الحذف</annotation>
+		<annotation cp="。">أيدوغرافية | نقطة | نقطة نهاية</annotation>
+		<annotation cp="。" type="tts">نقطة أيدوغرافية</annotation>
 		<annotation cp="·">متوسط | نقطة | نقطة متوسطة | وسط</annotation>
 		<annotation cp="·" type="tts">نقطة متوسطة</annotation>
+		<annotation cp="'">اقتباس | علامة اقتباس مفردة | فاصلة علوية | فاصلة علوية عمودية</annotation>
+		<annotation cp="'" type="tts">فاصلة علوية عمودية</annotation>
+		<annotation cp="‘">اقتباس | علامة اقتباس مفردة | فاصلة علوية | فاصلة علوية لليسار | فاصلة عليا</annotation>
+		<annotation cp="‘" type="tts">فاصلة علوية لليسار</annotation>
+		<annotation cp="’">اقتباس | علامة اقتباس مفردة | فاصلة علوية | فاصلة علوية لليمين | فاصلة عليا</annotation>
+		<annotation cp="’" type="tts">فاصلة علوية لليمين</annotation>
+		<annotation cp="‚">اقتباس | علامة اقتباس سفلية | فاصلة | فاصلة سفلية لليمين</annotation>
+		<annotation cp="‚" type="tts">فاصلة سفلية لليمين</annotation>
+		<annotation cp="“">اقتباس | علامة اقتباس مزدوجة | علامة اقتباس مزدوجة لليسار</annotation>
+		<annotation cp="“" type="tts">علامة اقتباس مزدوجة لليسار</annotation>
+		<annotation cp="”">اقتباس | علامة اقتباس مزدوجة | علامة اقتباس مزدوجة لليمين</annotation>
+		<annotation cp="”" type="tts">علامة اقتباس مزدوجة لليمين</annotation>
+		<annotation cp="„">اقتباس | علامة اقتباس | علامة اقتباس سفلية | علامة اقتباس مزدوجة | علامة اقتباس مزدوجة سفلية لليمين</annotation>
+		<annotation cp="„" type="tts">علامة اقتباس مزدوجة سفلية لليمين</annotation>
 		<annotation cp="«">أقواس معقوفة | اقتباس | تنصيص | شارة رتبة | علامة اقتباس يسرى | نهاية الاقتباس</annotation>
 		<annotation cp="«" type="tts">علامة اقتباس يسرى</annotation>
 		<annotation cp="»">أقواس معقوفة | اقتباس | بداية الاقتباس | تنصيص | شارة رتبة | علامة اقتباس يمنى</annotation>
 		<annotation cp="»" type="tts">علامة اقتباس يمنى</annotation>
+		<annotation cp=")">إغلاق | غلق | قوس | قوس إغلاق هلالي | قوس دائري | قوس هلالي</annotation>
+		<annotation cp=")" type="tts">قوس إغلاق هلالي</annotation>
+		<annotation cp="[">قوس فتح معقوف | قوس مستطيل | قوس معقوف</annotation>
+		<annotation cp="[" type="tts">قوس فتح معقوف</annotation>
+		<annotation cp="]">قوس إغلاق معقوف | قوس مستطيل | قوس معقوف</annotation>
+		<annotation cp="]" type="tts">قوس إغلاق معقوف</annotation>
+		<annotation cp="}">قوس | قوس إغلاق متعرج | قوس حصر | قوس متعرج</annotation>
+		<annotation cp="}" type="tts">قوس إغلاق متعرج</annotation>
+		<annotation cp="〈">فتح قوس تنصيص | قوس | قوس تنصيص | قوس زاوية | قوس مدبّب</annotation>
+		<annotation cp="〈" type="tts">فتح قوس تنصيص</annotation>
+		<annotation cp="〉">إغلاق قوس تنصيص | قوس | قوس تنصيص | قوس زاوية | قوس مدبّب</annotation>
+		<annotation cp="〉" type="tts">إغلاق قوس تنصيص</annotation>
+		<annotation cp="《">فتح قوس تنصيص مزدوج | قوس | قوس تنصيص مزدوج</annotation>
+		<annotation cp="《" type="tts">فتح قوس تنصيص مزدوج</annotation>
+		<annotation cp="》">إغلاق قوس تنصيص مزدوج | قوس | قوس تنصيص مزدوج</annotation>
+		<annotation cp="》" type="tts">إغلاق قوس تنصيص مزدوج</annotation>
+		<annotation cp="「">فتح قوس زاوية | قوس | قوس زاوية</annotation>
+		<annotation cp="「" type="tts">فتح قوس زاوية</annotation>
+		<annotation cp="」">إغلاق قوس زاوية | قوس | قوس زاوية</annotation>
+		<annotation cp="」" type="tts">إغلاق قوس زاوية</annotation>
+		<annotation cp="『">فتح قوس زاوية مجوّفة | قوس | قوس زاوية مجوّفة</annotation>
+		<annotation cp="『" type="tts">فتح قوس زاوية مجوّفة</annotation>
+		<annotation cp="』">إغلاق قوس زاوية مجوّفة | قوس | قوس زاوية مجوّفة</annotation>
+		<annotation cp="』" type="tts">إغلاق قوس زاوية مجوّفة</annotation>
+		<annotation cp="【">فتح قوس عدسة سوداء | قوس | قوس عدسة</annotation>
+		<annotation cp="【" type="tts">فتح قوس عدسة سوداء</annotation>
+		<annotation cp="】">إغلاق قوس عدسة سوداء | قوس | قوس عدسة</annotation>
+		<annotation cp="】" type="tts">إغلاق قوس عدسة سوداء</annotation>
+		<annotation cp="〔">قوس | قوس على شكل صدفة | قوس على شكل صدفة السلحفاة | قوس فتح على شكل صدفة السلحفاة</annotation>
+		<annotation cp="〔" type="tts">قوس فتح على شكل صدفة السلحفاة</annotation>
+		<annotation cp="〕">قوس | قوس إغلاق على شكل صدفة السلحفاة | قوس على شكل صدفة | قوس على شكل صدفة السلحفاة</annotation>
+		<annotation cp="〕" type="tts">قوس إغلاق على شكل صدفة السلحفاة</annotation>
+		<annotation cp="〖">فتح قوس عدسة مجوّفة | قوس | قوس عدسة مجوّفة</annotation>
+		<annotation cp="〖" type="tts">فتح قوس عدسة مجوّفة</annotation>
+		<annotation cp="〗">إغلاق قوس عدسة مجوّفة | قوس | قوس عدسة مجوّفة</annotation>
+		<annotation cp="〗" type="tts">إغلاق قوس عدسة مجوّفة</annotation>
 		<annotation cp="§">جزء | قسم | مقطع</annotation>
 		<annotation cp="§" type="tts">قسم</annotation>
+		<annotation cp="¶">علامة فقرة | فقرة</annotation>
+		<annotation cp="¶" type="tts">علامة فقرة</annotation>
+		<annotation cp="@">أروب | الربع | علامة آت</annotation>
+		<annotation cp="@" type="tts">علامة آت</annotation>
+		<annotation cp="*">علامة | نجمة</annotation>
+		<annotation cp="*" type="tts">نجمة</annotation>
+		<annotation cp="/">خط مائل | خط مائل للأمام | شرطة | شرطة مائلة للأمام | مائل | مائل ناحية اليمين</annotation>
+		<annotation cp="/" type="tts">شرطة</annotation>
+		<annotation cp="\">خط مائل | خط مال للخلف | شرطة مائلة للخلف | مائل ناحية اليسار</annotation>
+		<annotation cp="\" type="tts">شرطة مائلة للخلف</annotation>
+		<annotation cp="&amp;">علامة عطف | و | واو لاتينية</annotation>
+		<annotation cp="&amp;" type="tts">علامة عطف</annotation>
+		<annotation cp="#">باوند | رقم | علامة المربّع | مربّع | هاشتاغ | وسم</annotation>
+		<annotation cp="#" type="tts">علامة المربّع</annotation>
+		<annotation cp="%">بالمئة | مئوية | نسبة مئوية</annotation>
+		<annotation cp="%" type="tts">نسبة مئوية</annotation>
+		<annotation cp="‰">بالألف | في الألف</annotation>
+		<annotation cp="‰" type="tts">في الألف</annotation>
 		<annotation cp="†">إيضاح | حاشية | خنجر | رمز الخنجر</annotation>
 		<annotation cp="†" type="tts">رمز الخنجر</annotation>
 		<annotation cp="‡">إيضاح | حاشية | خنجر مزدوج | رمز الخنجر المزدوج</annotation>
 		<annotation cp="‡" type="tts">رمز الخنجر المزدوج</annotation>
 		<annotation cp="•">تعداد | نقطة</annotation>
 		<annotation cp="•" type="tts">نقطة تعداد</annotation>
+		<annotation cp="‧">شرطة | فصل | نقطة | نقطة فاصلة | واصلة</annotation>
+		<annotation cp="‧" type="tts">نقطة فاصلة</annotation>
+		<annotation cp="′">برايم | رمز أولي</annotation>
+		<annotation cp="′" type="tts">برايم</annotation>
+		<annotation cp="″">برايم | برايم مزدوج | رمز أولي</annotation>
+		<annotation cp="″" type="tts">برايم مزدوج</annotation>
+		<annotation cp="‴">برايم | برايم ثلاثي | رمز أولي</annotation>
+		<annotation cp="‴" type="tts">برايم ثلاثي</annotation>
+		<annotation cp="‸" draft="contributed">علامة الإقحام</annotation>
+		<annotation cp="‸" type="tts" draft="contributed">علامة الإقحام</annotation>
+		<annotation cp="※">علامة إسناد | علامة دليلية | علامة مرجعية</annotation>
+		<annotation cp="※" type="tts">علامة إسناد</annotation>
+		<annotation cp="⁂" draft="contributed">علامة نجمية</annotation>
+		<annotation cp="⁂" type="tts" draft="contributed">علامة نجمية</annotation>
+		<annotation cp="`">إطالة | نبر | نبر الإطالة | نبرة</annotation>
+		<annotation cp="`" type="tts">نبر الإطالة</annotation>
+		<annotation cp="´">حادة | نبر | نبرة</annotation>
+		<annotation cp="´" type="tts">نبرة حادة</annotation>
+		<annotation cp="^">الضرب المنطقي | رفع | علامة الاستثناء | مدة معقوفة | معقوفة</annotation>
+		<annotation cp="^" type="tts">مدة معقوفة</annotation>
+		<annotation cp="¨">علامة فك | نقطتان | نقطتان على الحرف</annotation>
+		<annotation cp="¨" type="tts">نقطتان على الحرف</annotation>
 		<annotation cp="°">حرارة | درجة | ساعة</annotation>
 		<annotation cp="°" type="tts">درجة</annotation>
 		<annotation cp="℗">تسجيل | حقوق الطبع والنشر | حقوق الطبع والنشر لتسجيل صوتي | صوت</annotation>
 		<annotation cp="℗" type="tts">حقوق الطبع والنشر لتسجيل صوتي</annotation>
 		<annotation cp="←">اتجاه لليسار | سهم | سهم متّجه لليسار | يسار</annotation>
 		<annotation cp="←" type="tts">سهم متّجه لليسار</annotation>
+		<annotation cp="↚" draft="contributed">سهم إلى اليسار مع خط مائل</annotation>
+		<annotation cp="↚" type="tts" draft="contributed">سهم إلى اليسار مع خط مائل</annotation>
 		<annotation cp="→">اتجاه لليمين | سهم | سهم متّجه لليمين | يمين</annotation>
 		<annotation cp="→" type="tts">سهم متّجه لليمين</annotation>
+		<annotation cp="↛" draft="contributed">سهم إلى اليمين مع خط مائل</annotation>
+		<annotation cp="↛" type="tts" draft="contributed">سهم إلى اليمين مع خط مائل</annotation>
 		<annotation cp="↑">أعلى | اتجاه للأعلى | سهم | سهم متّجه للأعلى</annotation>
 		<annotation cp="↑" type="tts">سهم متّجه للأعلى</annotation>
 		<annotation cp="↓">أسفل | اتجاه للأسفل | سهم | سهم متّجه للأسفل</annotation>
 		<annotation cp="↓" type="tts">سهم متّجه للأسفل</annotation>
+		<annotation cp="↜" draft="contributed">سهم متموج إلى اليسار</annotation>
+		<annotation cp="↜" type="tts" draft="contributed">سهم متموج إلى اليسار</annotation>
+		<annotation cp="↝" draft="contributed">سهم متموج إلى اليمين</annotation>
+		<annotation cp="↝" type="tts" draft="contributed">سهم متموج إلى اليمين</annotation>
+		<annotation cp="↞" draft="contributed">سهم ثنائي الرأس إلى اليسار</annotation>
+		<annotation cp="↞" type="tts" draft="contributed">سهم ثنائي الرأس إلى اليسار</annotation>
+		<annotation cp="↟" draft="contributed">سهم ثنائي الرأس إلى الأعلى</annotation>
+		<annotation cp="↟" type="tts" draft="contributed">سهم ثنائي الرأس إلى الأعلى</annotation>
+		<annotation cp="↠" draft="contributed">سهم ثنائي الرأس إلى اليمين</annotation>
+		<annotation cp="↠" type="tts" draft="contributed">سهم ثنائي الرأس إلى اليمين</annotation>
+		<annotation cp="↡" draft="contributed">سهم ثنائي الرأس إلى الأسفل</annotation>
+		<annotation cp="↡" type="tts" draft="contributed">سهم ثنائي الرأس إلى الأسفل</annotation>
+		<annotation cp="↢" draft="contributed">سهم إلى اليسار مع ذيل</annotation>
+		<annotation cp="↢" type="tts" draft="contributed">سهم إلى اليسار مع ذيل</annotation>
+		<annotation cp="↣" draft="contributed">سهم إلى اليمين مع ذيل</annotation>
+		<annotation cp="↣" type="tts" draft="contributed">سهم إلى اليمين مع ذيل</annotation>
+		<annotation cp="↤" draft="contributed">سهم إلى اليسار من شريط</annotation>
+		<annotation cp="↤" type="tts" draft="contributed">سهم إلى اليسار من شريط</annotation>
+		<annotation cp="↥" draft="contributed">سهم إلى الأعلى من شريط</annotation>
+		<annotation cp="↥" type="tts" draft="contributed">سهم إلى الأعلى من شريط</annotation>
+		<annotation cp="↦" draft="contributed">سهم إلى اليمين من شريط</annotation>
+		<annotation cp="↦" type="tts" draft="contributed">سهم إلى اليمين من شريط</annotation>
+		<annotation cp="↧" draft="contributed">سهم إلى الأسفل من شريط</annotation>
+		<annotation cp="↧" type="tts" draft="contributed">سهم إلى الأسفل من شريط</annotation>
+		<annotation cp="↨" draft="contributed">سهم إلى الأعلى والأسفل مع قاعدة</annotation>
+		<annotation cp="↨" type="tts" draft="contributed">سهم إلى الأعلى والأسفل مع قاعدة</annotation>
+		<annotation cp="↫" draft="contributed">سهم إلى اليسار مع حلقة</annotation>
+		<annotation cp="↫" type="tts" draft="contributed">سهم إلى اليسار مع حلقة</annotation>
+		<annotation cp="↬" draft="contributed">سهم إلى اليمين مع حلقة</annotation>
+		<annotation cp="↬" type="tts" draft="contributed">سهم إلى اليمين مع حلقة</annotation>
+		<annotation cp="↭" draft="contributed">سهم متموج إلى اليمين واليسار</annotation>
+		<annotation cp="↭" type="tts" draft="contributed">سهم متموج إلى اليمين واليسار</annotation>
+		<annotation cp="↯" draft="contributed">سهم متعرج إلى الأسفل</annotation>
+		<annotation cp="↯" type="tts" draft="contributed">سهم متعرج إلى الأسفل</annotation>
+		<annotation cp="↰" draft="contributed">سهم علوي مع طرف إلى اليسار</annotation>
+		<annotation cp="↰" type="tts" draft="contributed">سهم علوي مع طرف إلى اليسار</annotation>
+		<annotation cp="↱" draft="contributed">سهم علوي مع طرف إلى اليمين</annotation>
+		<annotation cp="↱" type="tts" draft="contributed">سهم علوي مع طرف إلى اليمين</annotation>
+		<annotation cp="↲" draft="contributed">سهم سفلي مع طرف إلى اليسار</annotation>
+		<annotation cp="↲" type="tts" draft="contributed">سهم سفلي مع طرف إلى اليسار</annotation>
+		<annotation cp="↳" draft="contributed">سهم سفلي مع طرف إلى اليمين</annotation>
+		<annotation cp="↳" type="tts" draft="contributed">سهم سفلي مع طرف إلى اليمين</annotation>
+		<annotation cp="↴" draft="contributed">سهم أيمن مع زاوية إلى الأسفل</annotation>
+		<annotation cp="↴" type="tts" draft="contributed">سهم أيمن مع زاوية إلى الأسفل</annotation>
+		<annotation cp="↵" draft="contributed">سهم سفلي مع زاوية إلى اليسار</annotation>
+		<annotation cp="↵" type="tts" draft="contributed">سهم سفلي مع زاوية إلى اليسار</annotation>
+		<annotation cp="↶" draft="contributed">سهم نصف دائرة علوية عكس اتجاه عقارب الساعة</annotation>
+		<annotation cp="↶" type="tts" draft="contributed">سهم نصف دائرة علوية عكس اتجاه عقارب الساعة</annotation>
+		<annotation cp="↷" draft="contributed">سهم نصف دائرة علوية في اتجاه عقارب الساعة</annotation>
+		<annotation cp="↷" type="tts" draft="contributed">سهم نصف دائرة علوية في اتجاه عقارب الساعة</annotation>
+		<annotation cp="↸" draft="contributed">سهم شمالي غربي إلى شريط طويل</annotation>
+		<annotation cp="↸" type="tts" draft="contributed">سهم شمالي غربي إلى شريط طويل</annotation>
+		<annotation cp="↹" draft="contributed">سهم أيسر إلى شريط فوق سهم أيمن إلى شريط</annotation>
+		<annotation cp="↹" type="tts" draft="contributed">سهم أيسر إلى شريط فوق سهم أيمن إلى شريط</annotation>
+		<annotation cp="↺" draft="contributed">سهم دائرة مفتوحة عكس اتجاه عقارب الساعة</annotation>
+		<annotation cp="↺" type="tts" draft="contributed">سهم دائرة مفتوحة عكس اتجاه عقارب الساعة</annotation>
+		<annotation cp="↻" draft="contributed">سهم دائرة مفتوحة في اتجاه عقارب الساعة</annotation>
+		<annotation cp="↻" type="tts" draft="contributed">سهم دائرة مفتوحة في اتجاه عقارب الساعة</annotation>
+		<annotation cp="↼" draft="contributed">حربة يسرى مع شوكة علوية</annotation>
+		<annotation cp="↼" type="tts" draft="contributed">حربة يسرى مع شوكة علوية</annotation>
+		<annotation cp="↽" draft="contributed">حربة يسرى مع شوكة سفلية</annotation>
+		<annotation cp="↽" type="tts" draft="contributed">حربة يسرى مع شوكة سفلية</annotation>
+		<annotation cp="↾" draft="contributed">حربة علوية مع شوكة يمنى</annotation>
+		<annotation cp="↾" type="tts" draft="contributed">حربة علوية مع شوكة يمنى</annotation>
+		<annotation cp="↿" draft="contributed">حربة علوية مع شوكة يسرى</annotation>
+		<annotation cp="↿" type="tts" draft="contributed">حربة علوية مع شوكة يسرى</annotation>
+		<annotation cp="⇀" draft="contributed">حربة يمنى مع شوكة علوية</annotation>
+		<annotation cp="⇀" type="tts" draft="contributed">حربة يمنى مع شوكة علوية</annotation>
+		<annotation cp="⇁" draft="contributed">حربة يمنى مع شوكة سفلية</annotation>
+		<annotation cp="⇁" type="tts" draft="contributed">حربة يمنى مع شوكة سفلية</annotation>
+		<annotation cp="⇂" draft="contributed">حربة سفلية مع شوكة يمنى</annotation>
+		<annotation cp="⇂" type="tts" draft="contributed">حربة سفلية مع شوكة يمنى</annotation>
+		<annotation cp="⇃" draft="contributed">حربة سفلية مع شوكة يسرى</annotation>
+		<annotation cp="⇃" type="tts" draft="contributed">حربة سفلية مع شوكة يسرى</annotation>
+		<annotation cp="⇄" draft="contributed">سهم إلى اليمين فوق سهم إلى اليسار</annotation>
+		<annotation cp="⇄" type="tts" draft="contributed">سهم إلى اليمين فوق سهم إلى اليسار</annotation>
 		<annotation cp="⇅">أسفل | أعلى | سهم | سهم للأعلى وسهم للأسفل | سهم متّجه للأعلى وآخر للأسفل</annotation>
 		<annotation cp="⇅" type="tts">سهم متّجه للأعلى وآخر للأسفل</annotation>
 		<annotation cp="⇆">سهم | سهم لليسار فوق سهم لليمين | سهم متّجه لليسار وتحته سهم متّجه لليمين | يسار | يمين</annotation>
 		<annotation cp="⇆" type="tts">سهم متّجه لليسار وتحته سهم متّجه لليمين</annotation>
+		<annotation cp="⇇" draft="contributed">سهمان مزدوجان إلى اليسار</annotation>
+		<annotation cp="⇇" type="tts" draft="contributed">سهمان مزدوجان إلى اليسار</annotation>
+		<annotation cp="⇈" draft="contributed">سهمان مزدوجان إلى الأعلى</annotation>
+		<annotation cp="⇈" type="tts" draft="contributed">سهمان مزدوجان إلى الأعلى</annotation>
+		<annotation cp="⇉" draft="contributed">سهمان مزدوجان إلى اليمين</annotation>
+		<annotation cp="⇉" type="tts" draft="contributed">سهمان مزدوجان إلى اليمين</annotation>
+		<annotation cp="⇊" draft="contributed">سهمان مزدوجان إلى الأسفل</annotation>
+		<annotation cp="⇊" type="tts" draft="contributed">سهمان مزدوجان إلى الأسفل</annotation>
+		<annotation cp="⇋" draft="contributed">حربة يسرى فوق حربة يمنى</annotation>
+		<annotation cp="⇋" type="tts" draft="contributed">حربة يسرى فوق حربة يمنى</annotation>
+		<annotation cp="⇌" draft="contributed">حربة يمنى فوق حربة يسرى</annotation>
+		<annotation cp="⇌" type="tts" draft="contributed">حربة يمنى فوق حربة يسرى</annotation>
+		<annotation cp="⇐" draft="contributed">سهم مزدوج إلى اليسار</annotation>
+		<annotation cp="⇐" type="tts" draft="contributed">سهم مزدوج إلى اليسار</annotation>
+		<annotation cp="⇍" draft="contributed">سهم مزدوج إلى اليسار مع خط</annotation>
+		<annotation cp="⇍" type="tts" draft="contributed">سهم مزدوج إلى اليسار مع خط</annotation>
+		<annotation cp="⇑" draft="contributed">سهم مزدوج إلى الأعلى</annotation>
+		<annotation cp="⇑" type="tts" draft="contributed">سهم مزدوج إلى الأعلى</annotation>
+		<annotation cp="⇒" draft="contributed">سهم مزدوج إلى اليمين</annotation>
+		<annotation cp="⇒" type="tts" draft="contributed">سهم مزدوج إلى اليمين</annotation>
+		<annotation cp="⇏" draft="contributed">سهم مزدوج إلى اليمين مع خط</annotation>
+		<annotation cp="⇏" type="tts" draft="contributed">سهم مزدوج إلى اليمين مع خط</annotation>
+		<annotation cp="⇓" draft="contributed">سهم مزدوج إلى الأسفل</annotation>
+		<annotation cp="⇓" type="tts" draft="contributed">سهم مزدوج إلى الأسفل</annotation>
+		<annotation cp="⇔" draft="contributed">سهم مزدوج إلى اليسار واليمين</annotation>
+		<annotation cp="⇔" type="tts" draft="contributed">سهم مزدوج إلى اليسار واليمين</annotation>
+		<annotation cp="⇎" draft="contributed">سهم مزدوج إلى اليسار واليمين مع خط</annotation>
+		<annotation cp="⇎" type="tts" draft="contributed">سهم مزدوج إلى اليسار واليمين مع خط</annotation>
+		<annotation cp="⇖" draft="contributed">سهم مزدوج إلى الشمال الغربي</annotation>
+		<annotation cp="⇖" type="tts" draft="contributed">سهم مزدوج إلى الشمال الغربي</annotation>
+		<annotation cp="⇗" draft="contributed">سهم مزدوج إلى الشمال الشرقي</annotation>
+		<annotation cp="⇗" type="tts" draft="contributed">سهم مزدوج إلى الشمال الشرقي</annotation>
+		<annotation cp="⇘" draft="contributed">سهم مزدوج إلى الجنوب الشرقي</annotation>
+		<annotation cp="⇘" type="tts" draft="contributed">سهم مزدوج إلى الجنوب الشرقي</annotation>
+		<annotation cp="⇙" draft="contributed">سهم مزدوج إلى الجنوب الغربي</annotation>
+		<annotation cp="⇙" type="tts" draft="contributed">سهم مزدوج إلى الجنوب الغربي</annotation>
+		<annotation cp="⇚" draft="contributed">سهم ثلاثي إلى اليسار</annotation>
+		<annotation cp="⇚" type="tts" draft="contributed">سهم ثلاثي إلى اليسار</annotation>
+		<annotation cp="⇛" draft="contributed">سهم ثلاثي إلى اليمين</annotation>
+		<annotation cp="⇛" type="tts" draft="contributed">سهم ثلاثي إلى اليمين</annotation>
 		<annotation cp="∆">زيادة | مثلث</annotation>
 		<annotation cp="∆" type="tts">زيادة</annotation>
 		<annotation cp="∇">دل | مؤثر دل | مثلث | نابلا</annotation>
 		<annotation cp="∇" type="tts">مؤثر دل</annotation>
 		<annotation cp="∈">انتماء | علاقة | عنصر | مجموعة | ينتمي</annotation>
 		<annotation cp="∈" type="tts">ينتمي</annotation>
+		<annotation cp="+">إضافة | جمع | علامة الجمع</annotation>
+		<annotation cp="+" type="tts">علامة الجمع</annotation>
+		<annotation cp="±">زائد-ناقص</annotation>
+		<annotation cp="±" type="tts">زائد-ناقص</annotation>
 		<annotation cp="÷">علامة القسمة | عملية حسابية | قسم | قسمة</annotation>
 		<annotation cp="÷" type="tts">علامة القسمة</annotation>
 		<annotation cp="×">ضرب | علامة الضرب | عملية حسابية | مضروب</annotation>
 		<annotation cp="×" type="tts">علامة الضرب</annotation>
+		<annotation cp="&lt;">أقل من | علامة | علامة فتح</annotation>
+		<annotation cp="&lt;" type="tts">أقل من</annotation>
+		<annotation cp="=">يساوي | يعادل</annotation>
+		<annotation cp="=" type="tts">يعادل</annotation>
+		<annotation cp="≠">لا يساوي | لا يعادل</annotation>
+		<annotation cp="≠" type="tts">لا يساوي</annotation>
+		<annotation cp="&gt;">أكبر من | علامة | علامة إغلاق</annotation>
+		<annotation cp="&gt;" type="tts">أكبر من</annotation>
+		<annotation cp="¬">غير | نفي</annotation>
+		<annotation cp="¬" type="tts">نفي</annotation>
+		<annotation cp="|">أنبوب | خرطوم | خط | خط رأسي | خط عمودي | شريط | شريط عمودي | عصا</annotation>
+		<annotation cp="|" type="tts">خط عمودي</annotation>
+		<annotation cp="~">تلدة</annotation>
+		<annotation cp="~" type="tts">تلدة</annotation>
+		<annotation cp="−">طرح | علامة الطرح | ناقص</annotation>
+		<annotation cp="−" type="tts">علامة الطرح</annotation>
 		<annotation cp="⁻">علامة ناقص علوية | علوي | ناقص</annotation>
 		<annotation cp="⁻" type="tts">علامة ناقص علوية</annotation>
 		<annotation cp="√">أساس | أصم | جذر | جذر تربيعي | عدد جذري | مربع</annotation>
@@ -77,8 +351,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="∩" type="tts">تقاطع</annotation>
 		<annotation cp="∪">اتحاد | دمج | مجموعة</annotation>
 		<annotation cp="∪" type="tts">اتحاد</annotation>
+		<annotation cp="≈">حوالي | يساوي تقريبًا | يقارب</annotation>
+		<annotation cp="≈" type="tts">يساوي تقريبًا</annotation>
 		<annotation cp="≡">علامة التساوي | مطابق | معامل ثلاثي المساواة | مماثل | يساوي</annotation>
 		<annotation cp="≡" type="tts">يساوي</annotation>
+		<annotation cp="≤">أقل من | أقل من أو يعادل | يساوي | يعادل</annotation>
+		<annotation cp="≤" type="tts">أقل من أو يعادل</annotation>
+		<annotation cp="≥">أكبر من | أكبر من أو يعادل | يساوي | يعادل</annotation>
+		<annotation cp="≥" type="tts">أكبر من أو يعادل</annotation>
 		<annotation cp="⊂">جزء | مجموعة | مجموعة فرعية | يحتوي</annotation>
 		<annotation cp="⊂" type="tts">يحتوي</annotation>
 		<annotation cp="▲">أعلى | سهم | مثلث | مثلث ممتلئ متّجه للأعلى | ممتلئ</annotation>
@@ -93,6 +373,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="●" type="tts">دائرة ممتلئة</annotation>
 		<annotation cp="◯">حلقة | دائرة | كبيرة | مجوّفة | مفرغة</annotation>
 		<annotation cp="◯" type="tts">دائرة مفرغة كبيرة</annotation>
+		<annotation cp="♪">ذات السن | موسيقى | نغمة</annotation>
+		<annotation cp="♪" type="tts">ذات السن</annotation>
+		<annotation cp="♭">بيمول | خفض | موسيقى | نغمة</annotation>
+		<annotation cp="♭" type="tts">خفض</annotation>
+		<annotation cp="♯">دييز | رفع | موسيقى | نغمة</annotation>
+		<annotation cp="♯" type="tts">رفع</annotation>
 		<annotation cp="😀">ابتسام | ضحك | وجه بابتسامة عريضة | وجه مبتسم</annotation>
 		<annotation cp="😀" type="tts">وجه بابتسامة عريضة</annotation>
 		<annotation cp="😃">ابتسام | وجه مبتسم بعينين كبيرتين | وجه مبتسم بفم مفتوح</annotation>
@@ -167,6 +453,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="😑" type="tts">وجه بدون تعبير</annotation>
 		<annotation cp="😶">بدون فم | وجه بدون فم</annotation>
 		<annotation cp="😶" type="tts">وجه بدون فم</annotation>
+		<annotation cp="😶‍🌫">رأس في الغيوم | شارد الذهن | وجه في الضباب | وجه في الغيوم</annotation>
+		<annotation cp="😶‍🌫" type="tts">وجه في الغيوم</annotation>
 		<annotation cp="😏">تكلف | ‫وجه بابتسامة متكلفة | وجه متكلف</annotation>
 		<annotation cp="😏" type="tts">‫وجه بابتسامة متكلفة</annotation>
 		<annotation cp="😒">غير سعيد | ‫وجه غير مستمتع</annotation>
@@ -175,6 +463,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🙄" type="tts">وجه بعينين تدوران</annotation>
 		<annotation cp="😬">عبوس | وجه متجهم</annotation>
 		<annotation cp="😬" type="tts">وجه متجهم</annotation>
+		<annotation cp="😮‍💨">راحة | زفير | صفير | همس | وجه يزفر الهواء | يتلهث</annotation>
+		<annotation cp="😮‍💨" type="tts">وجه يزفر الهواء</annotation>
 		<annotation cp="🤥">كذب | وجه | وجه كاذب</annotation>
 		<annotation cp="🤥" type="tts">وجه كاذب</annotation>
 		<annotation cp="😌">مطمئن | وجه مرتاح</annotation>
@@ -207,6 +497,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🥴" type="tts">وجه مصاب بدوار</annotation>
 		<annotation cp="😵">وجه دائخ | وجه مصاب بالدوار</annotation>
 		<annotation cp="😵" type="tts">وجه دائخ</annotation>
+		<annotation cp="😵‍💫">حلزون | دائخ | دوامة | لولبي | منوّم | وجه بعينين دائختين</annotation>
+		<annotation cp="😵‍💫" type="tts">وجه بعينين دائختين</annotation>
 		<annotation cp="🤯">وجه برأس منفجر</annotation>
 		<annotation cp="🤯" type="tts">وجه برأس منفجر</annotation>
 		<annotation cp="🤠">راعي بقر | قبعة | وجه | وجه بقبعة راعي بقر</annotation>
@@ -317,8 +609,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🙀" type="tts">‫وجه قطة مجهد</annotation>
 		<annotation cp="😿">بكاء | وجه قطة يبكي</annotation>
 		<annotation cp="😿" type="tts">وجه قطة يبكي</annotation>
-		<annotation cp="😾">تكشير | وجه قطة | وجه قطة مقطب</annotation>
-		<annotation cp="😾" type="tts">وجه قطة مقطب</annotation>
+		<annotation cp="😾">تكشير | وجه قطة | وجه قطة عابس</annotation>
+		<annotation cp="😾" type="tts">وجه قطة عابس</annotation>
 		<annotation cp="🙈">قرد | قرد يحجب عينيه</annotation>
 		<annotation cp="🙈" type="tts">قرد يحجب عينيه</annotation>
 		<annotation cp="🙉">قرد | قرد يحجب أذنيه</annotation>
@@ -349,6 +641,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="❣" type="tts">قلب على شكل علامة تعجب</annotation>
 		<annotation cp="💔">انكسار | قلب | قلب مكسور | مشاعر</annotation>
 		<annotation cp="💔" type="tts">قلب مكسور</annotation>
+		<annotation cp="❤‍🔥">القلب المقدس | حب | حريق | عشق | قلب | قلب يحترق</annotation>
+		<annotation cp="❤‍🔥" type="tts">قلب يحترق</annotation>
+		<annotation cp="❤‍🩹" draft="contributed">قلب يتعافى</annotation>
+		<annotation cp="❤‍🩹" type="tts" draft="contributed">قلب يتعافى</annotation>
 		<annotation cp="❤">قلب | قلب أحمر</annotation>
 		<annotation cp="❤" type="tts">قلب أحمر</annotation>
 		<annotation cp="🧡">برتقالة | قلب برتقالي</annotation>
@@ -513,10 +809,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="👨" type="tts">رجل</annotation>
 		<annotation cp="🧔">شخص بلحية | شخص مع لحية</annotation>
 		<annotation cp="🧔" type="tts">شخص بلحية</annotation>
+		<annotation cp="🧔‍♂">رجل | رجل بلحية | رجل مع لحية | لحية</annotation>
+		<annotation cp="🧔‍♂" type="tts">رجل بلحية</annotation>
 		<annotation cp="👱‍♂">أشقر | رجل | رجل أشقر الشعر</annotation>
 		<annotation cp="👱‍♂" type="tts">رجل أشقر</annotation>
 		<annotation cp="👩">أنثى | أنسة | بالغة | سيدة | شخص | كبيرة</annotation>
 		<annotation cp="👩" type="tts">سيدة</annotation>
+		<annotation cp="🧔‍♀">امرأة | امرأة بلحية | امرأة مع لحية | لحية</annotation>
+		<annotation cp="🧔‍♀" type="tts">امرأة بلحية</annotation>
 		<annotation cp="👱‍♀">امرأة | امرأة شقراء الشعر | شقراء</annotation>
 		<annotation cp="👱‍♀" type="tts">امرأة شقراء</annotation>
 		<annotation cp="🧓">بالغ أكبر في السن | عجوز | كبير في السن</annotation>
@@ -897,8 +1197,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🏌‍♂" type="tts">لاعب غولف</annotation>
 		<annotation cp="🏌‍♀">غولف | لاعبة غولف</annotation>
 		<annotation cp="🏌‍♀" type="tts">لاعبة غولف</annotation>
-		<annotation cp="🏄">رياضة | ‫شخص يركب أمواج</annotation>
-		<annotation cp="🏄" type="tts">‫شخص يركب أمواج</annotation>
+		<annotation cp="🏄">رياضة | ‫شخص يركب أمواج | شخص يركب الأمواج</annotation>
+		<annotation cp="🏄" type="tts">شخص يركب الأمواج</annotation>
 		<annotation cp="🏄‍♂">تزلج | راكب أمواج | ركوب أمواج</annotation>
 		<annotation cp="🏄‍♂" type="tts">راكب أمواج</annotation>
 		<annotation cp="🏄‍♀">راكبة أمواج | ركوب أمواج | سيدة</annotation>
@@ -1103,8 +1403,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🐭" type="tts">وجه فأر</annotation>
 		<annotation cp="🐁">حيوان | فأر</annotation>
 		<annotation cp="🐁" type="tts">فأر</annotation>
-		<annotation cp="🐀">حيوان | فأر كبير</annotation>
-		<annotation cp="🐀" type="tts">فأر كبير</annotation>
+		<annotation cp="🐀">جرذ | حيوان | فأر كبير</annotation>
+		<annotation cp="🐀" type="tts">جرذ</annotation>
 		<annotation cp="🐹">حيوان | همستر | وجه | ‫وجه حيوان الهمستر</annotation>
 		<annotation cp="🐹" type="tts">‫وجه حيوان الهمستر</annotation>
 		<annotation cp="🐰">أرنب | حيوان | وجه</annotation>
@@ -1489,8 +1789,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🧁" type="tts">كعكة صغيرة</annotation>
 		<annotation cp="🥧">فطيرة</annotation>
 		<annotation cp="🥧" type="tts">فطيرة</annotation>
-		<annotation cp="🍫">بار شيكولاتة | ‫لوح شيكولاتة | مطعم</annotation>
-		<annotation cp="🍫" type="tts">‫لوح شيكولاتة</annotation>
+		<annotation cp="🍫">بار شيكولاتة | لوح شوكولاتة | ‫لوح شيكولاتة | مطعم</annotation>
+		<annotation cp="🍫" type="tts">لوح شوكولاتة</annotation>
 		<annotation cp="🍬">حلوى | مطعم</annotation>
 		<annotation cp="🍬" type="tts">حلوى</annotation>
 		<annotation cp="🍭">حلاوة | مصاصة | مطعم</annotation>
@@ -2527,8 +2827,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🗡" type="tts">خنجر</annotation>
 		<annotation cp="⚔">سلاح | سيفان | سيفان متصالبان | معقوق</annotation>
 		<annotation cp="⚔" type="tts">سيفان متصالبان</annotation>
-		<annotation cp="🔫">طبنجة | مسدس</annotation>
-		<annotation cp="🔫" type="tts">مسدس</annotation>
+		<annotation cp="🔫">طبنجة | مسدس | مسدس ماء</annotation>
+		<annotation cp="🔫" type="tts">مسدس ماء</annotation>
 		<annotation cp="🪃">أستراليا | ارتداد | خذوف | كيد | مرتد</annotation>
 		<annotation cp="🪃" type="tts">خذوف مرتد</annotation>
 		<annotation cp="🏹">برج الرامي | رامي | سهم | قوس | قوس وسهم</annotation>
@@ -2719,6 +3019,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="↕" type="tts">سهم لأعلى وأسفل</annotation>
 		<annotation cp="↔">سهم | سهم لليسار واليمين</annotation>
 		<annotation cp="↔" type="tts">سهم لليسار واليمين</annotation>
+		<annotation cp="↮" draft="contributed">سهم إلى اليسار واليمين مع خط مائل</annotation>
+		<annotation cp="↮" type="tts" draft="contributed">سهم إلى اليسار واليمين مع خط مائل</annotation>
 		<annotation cp="↩">سهم | سهم أيمن بانحناء أيسر</annotation>
 		<annotation cp="↩" type="tts">سهم أيمن بانحناء أيسر</annotation>
 		<annotation cp="↪">سهم | سهم أيسر بانحناء أيمن</annotation>
@@ -2750,7 +3052,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="✡">داوود | دين | نجم | نجمة داوود | يهود | يهودي</annotation>
 		<annotation cp="✡" type="tts">نجمة داوود</annotation>
 		<annotation cp="☸">بوذي | دارما | دين | عجلة</annotation>
-		<annotation cp="☸" type="tts">عجلة</annotation>
+		<annotation cp="☸" type="tts">عجلة دارما</annotation>
 		<annotation cp="☯">تكامل | دين | نصفان متكاملان</annotation>
 		<annotation cp="☯" type="tts">نصفان متكاملان</annotation>
 		<annotation cp="✝">دين | صليب | صليب لاتيني | مسيحي</annotation>
@@ -2859,8 +3161,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="‼" type="tts">تعجب مزدوج</annotation>
 		<annotation cp="⁉">استفهام | التعجب | ترقيم | تعجب واستفهام | علامة</annotation>
 		<annotation cp="⁉" type="tts">تعجب واستفهام</annotation>
-		<annotation cp="❓">استفهام | علامة استفهام</annotation>
-		<annotation cp="❓" type="tts">علامة استفهام</annotation>
+		<annotation cp="❓">استفهام | علامة استفهام | علامة استفهام حمراء</annotation>
+		<annotation cp="❓" type="tts">علامة استفهام حمراء</annotation>
 		<annotation cp="❔">استفهام | علامة استفهام بيضاء</annotation>
 		<annotation cp="❔" type="tts">علامة استفهام بيضاء</annotation>
 		<annotation cp="❕">تعجب | ‫علامة تعجب بيضاء</annotation>
@@ -2965,8 +3267,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🈂" type="tts">الزر /خدمة برسوم/ باليابانية</annotation>
 		<annotation cp="🈷">الزر /مبلغ شهري/ باليابانية | اليابانية</annotation>
 		<annotation cp="🈷" type="tts">الزر /مبلغ شهري/ باليابانية</annotation>
-		<annotation cp="🈶">الزر /ليس مجاني/ باليابانية | يابان</annotation>
-		<annotation cp="🈶" type="tts">الزر /ليس مجاني/ باليابانية</annotation>
+		<annotation cp="🈶">الزر /غير مجاني/ باليابانية | يابان</annotation>
+		<annotation cp="🈶" type="tts">الزر /غير مجاني/ باليابانية</annotation>
 		<annotation cp="🈯">الزر /محجوز/ باليابانية | الياباني</annotation>
 		<annotation cp="🈯" type="tts">الزر /محجوز/ باليابانية</annotation>
 		<annotation cp="🉐">الزر /صفقة/ باليابانية | اليابان</annotation>
@@ -3077,16 +3379,28 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🏳‍⚧" type="tts">علم المتحولين جنسيًا</annotation>
 		<annotation cp="🏴‍☠">جولي روجر | علم قراصنة | قراصنة | قرصنة | كنز | كنوز</annotation>
 		<annotation cp="🏴‍☠" type="tts">علم قراصنة</annotation>
+		<annotation cp="¢">سنت</annotation>
+		<annotation cp="¢" type="tts">سنت</annotation>
+		<annotation cp="$">بيزو | دولار | دولار أمريكي | مال</annotation>
+		<annotation cp="$" type="tts">دولار</annotation>
 		<annotation cp="£">باوند | جنيه | جنيه إسترليني | جنيه مصري | عملة</annotation>
 		<annotation cp="£" type="tts">جنيه</annotation>
 		<annotation cp="¥">الصين | اليابان | رنمينبي | عملة | ين | يوان</annotation>
 		<annotation cp="¥" type="tts">ين</annotation>
+		<annotation cp="₥">ميل</annotation>
+		<annotation cp="₥" type="tts">ميل</annotation>
+		<annotation cp="₩">وون | وون كوري جنوبي | وون كوري شمالي</annotation>
+		<annotation cp="₩" type="tts">وون</annotation>
 		<annotation cp="€">أوروبا | عملة | يورو</annotation>
 		<annotation cp="€" type="tts">يورو</annotation>
+		<annotation cp="₱">بيزو</annotation>
+		<annotation cp="₱" type="tts">بيزو</annotation>
 		<annotation cp="₹">روبيه | عملة | هندي</annotation>
 		<annotation cp="₹" type="tts">روبيه هندي</annotation>
 		<annotation cp="₽">روبل | عملة</annotation>
 		<annotation cp="₽" type="tts">روبل</annotation>
+		<annotation cp="₿">BTC | بيتكوين</annotation>
+		<annotation cp="₿" type="tts">بيتكوين</annotation>
 		<annotation cp="¹">رقم واحد علوي | علوي | واحد</annotation>
 		<annotation cp="¹" type="tts">رقم واحد علوي</annotation>
 		<annotation cp="²">اثنان | رقم اثنين علوي | علوي | مربع</annotation>
