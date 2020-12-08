@@ -13,6 +13,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<language type="ca"/>
 	</identity>
 	<annotations>
+		<annotation cp="{">clau | clau d’obertura | clau esquerra | parèntesi</annotation>
+		<annotation cp="{" type="tts">clau d’obertura</annotation>
 		<annotation cp="🏻">clara | molt clara | pell | pell molt clara</annotation>
 		<annotation cp="🏻" type="tts">pell molt clara</annotation>
 		<annotation cp="🏼">bastant clara | pell | pell bastant clara</annotation>
@@ -23,36 +25,208 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🏾" type="tts">pell fosca</annotation>
 		<annotation cp="🏿">fosca | pell | pell molt fosca</annotation>
 		<annotation cp="🏿" type="tts">pell molt fosca</annotation>
+		<annotation cp="‾" draft="contributed">sobreratllat</annotation>
+		<annotation cp="‾" type="tts" draft="contributed">sobreratllat</annotation>
+		<annotation cp="_">caràcter de subratllat | guió | línia | ratlla | ratlla baixa</annotation>
+		<annotation cp="_" type="tts">ratlla baixa</annotation>
+		<annotation cp="-">guionet | guionet de menys | menys</annotation>
+		<annotation cp="-" type="tts">guionet de menys</annotation>
+		<annotation cp="‐">guió | guionet</annotation>
+		<annotation cp="‐" type="tts">guionet</annotation>
 		<annotation cp="–">guió | guió mitjà</annotation>
 		<annotation cp="–" type="tts">guió mitjà</annotation>
 		<annotation cp="—">guió | guió llarg</annotation>
 		<annotation cp="—" type="tts">guió llarg</annotation>
+		<annotation cp="―">barra | barra horitzontal | guió | línia</annotation>
+		<annotation cp="―" type="tts">barra horitzontal</annotation>
+		<annotation cp="・">katakana | punt | punt alçat | punt volat | punt volat katakana</annotation>
+		<annotation cp="・" type="tts">punt volat katakana</annotation>
+		<annotation cp=",">coma</annotation>
+		<annotation cp="," type="tts">coma</annotation>
+		<annotation cp="،">àrab | coma</annotation>
+		<annotation cp="،" type="tts">coma àrab</annotation>
+		<annotation cp="、">coma | ideogràfica</annotation>
+		<annotation cp="、" type="tts">coma ideogràfica</annotation>
+		<annotation cp=";">coma | punt | punt i coma</annotation>
+		<annotation cp=";" type="tts">punt i coma</annotation>
+		<annotation cp="؛">àrab | punt i coma | punt i coma àrab</annotation>
+		<annotation cp="؛" type="tts">punt i coma àrab</annotation>
+		<annotation cp=":">dos punts</annotation>
+		<annotation cp=":" type="tts">dos punts</annotation>
+		<annotation cp="!">bang | exclamació | signe d’exclamació</annotation>
+		<annotation cp="!" type="tts">signe d’exclamació</annotation>
+		<annotation cp="¡">bang | exclamació | invertit | obertura | signe d’exclamació | signe d’exclamació d’obertura</annotation>
+		<annotation cp="¡" type="tts">signe d’exclamació d’obertura</annotation>
+		<annotation cp="?">interrogació | interrogant | pregunta | signe d’interrogació</annotation>
+		<annotation cp="?" type="tts">signe d’interrogació</annotation>
+		<annotation cp="¿">obertura | pregunta | signe d’interrogació | signe d’interrogació d’obertura</annotation>
+		<annotation cp="¿" type="tts">signe d’interrogació d’obertura</annotation>
+		<annotation cp="؟">àrab | pregunta | signe d’interrogació àrab</annotation>
+		<annotation cp="؟" type="tts">signe d’interrogació àrab</annotation>
+		<annotation cp="‽" draft="contributed">signe exclarrogatiu</annotation>
+		<annotation cp="‽" type="tts" draft="contributed">signe exclarrogatiu</annotation>
+		<annotation cp=".">punt | punt final</annotation>
+		<annotation cp="." type="tts">punt</annotation>
+		<annotation cp="…">omissió | punts | punts suspensius</annotation>
+		<annotation cp="…" type="tts">punts suspensius</annotation>
+		<annotation cp="。">ideogràfic | punt</annotation>
+		<annotation cp="。" type="tts">punt ideogràfic</annotation>
 		<annotation cp="·">meitat | punt | punt alçat | punt volat</annotation>
 		<annotation cp="·" type="tts">punt volat</annotation>
+		<annotation cp="'">apòstrof | apòstrof tipogràfic | cometa | cometa simple</annotation>
+		<annotation cp="'" type="tts">apòstrof tipogràfic</annotation>
+		<annotation cp="‘">apòstrof | cometa | cometa esquerra | cometa simple</annotation>
+		<annotation cp="‘" type="tts">cometa esquerra</annotation>
+		<annotation cp="’">apòstrof | cometa | cometa dreta | cometa simple</annotation>
+		<annotation cp="’" type="tts">cometa dreta</annotation>
+		<annotation cp="‚">cometa | cometa baixa | cometa baixa dreta | cometa simple</annotation>
+		<annotation cp="‚" type="tts">cometa baixa dreta</annotation>
+		<annotation cp="“">cometa | cometa doble | cometa doble alta esquerra | cometes</annotation>
+		<annotation cp="“" type="tts">cometa doble alta esquerra</annotation>
+		<annotation cp="”">cometa | cometa doble | cometa doble alta dreta | cometes</annotation>
+		<annotation cp="”" type="tts">cometa doble alta dreta</annotation>
+		<annotation cp="„">cometa | cometa baixa | cometa doble | cometa doble baixa dreta | cometes</annotation>
+		<annotation cp="„" type="tts">cometa doble baixa dreta</annotation>
 		<annotation cp="«">angle | cometa | cometa llatina esquerra | esquerra | galó | parèntesi | signe d’inserció</annotation>
 		<annotation cp="«" type="tts">cometa llatina esquerra</annotation>
 		<annotation cp="»">angle | cometa | cometa llatina dreta | dreta | galó | parèntesi | signe d’inserció</annotation>
 		<annotation cp="»" type="tts">cometa llatina dreta</annotation>
+		<annotation cp=")">parèntesi | parèntesi de tancament</annotation>
+		<annotation cp=")" type="tts">parèntesi de tancament</annotation>
+		<annotation cp="[">claudàtor | claudàtor d’obertura | claudàtor esquerre</annotation>
+		<annotation cp="[" type="tts">claudàtor d’obertura</annotation>
+		<annotation cp="]">claudàtor | claudàtor de tancament | claudàtor dret</annotation>
+		<annotation cp="]" type="tts">claudàtor de tancament</annotation>
+		<annotation cp="}">clau | clau de tancament | clau dreta | parèntesi</annotation>
+		<annotation cp="}" type="tts">clau de tancament</annotation>
+		<annotation cp="〈">angle agut | obertura | parèntesi | parèntesi angular | parèntesi angular d’obertura</annotation>
+		<annotation cp="〈" type="tts">parèntesi angular d’obertura</annotation>
+		<annotation cp="〉">angle agut | parèntesi | parèntesi angular | parèntesi angular de tancament | tancament</annotation>
+		<annotation cp="〉" type="tts">parèntesi angular de tancament</annotation>
+		<annotation cp="《">parèntesi | parèntesi angular doble | parèntesi angular doble d’obertura</annotation>
+		<annotation cp="《" type="tts">parèntesi angular doble d’obertura</annotation>
+		<annotation cp="》">parèntesi | parèntesi angular doble | parèntesi angular doble de tancament</annotation>
+		<annotation cp="》" type="tts">parèntesi angular doble de tancament</annotation>
+		<annotation cp="「">parèntesi | semiclaudàtor | semiclaudàtor alt esquerre</annotation>
+		<annotation cp="「" type="tts">semiclaudàtor alt esquerre</annotation>
+		<annotation cp="」">parèntesi | semiclaudàtor | semiclaudàtor baix dret</annotation>
+		<annotation cp="」" type="tts">semiclaudàtor baix dret</annotation>
+		<annotation cp="『">claudàtor | semiclaudàtor buit | semiclaudàtor buit d’obertura</annotation>
+		<annotation cp="『" type="tts">semiclaudàtor buit d’obertura</annotation>
+		<annotation cp="』">claudàtor | semiclaudàtor buit | semiclaudàtor buit de tancament</annotation>
+		<annotation cp="』" type="tts">semiclaudàtor buit de tancament</annotation>
+		<annotation cp="【">claudàtor | claudàtor de lent | claudàtor de lent negre d’obertura | claudàtor lenticular</annotation>
+		<annotation cp="【" type="tts">claudàtor de lent negre d’obertura</annotation>
+		<annotation cp="】">claudàtor | claudàtor de lent | claudàtor lenticular | semiclaudàtor de lent negre de tancament</annotation>
+		<annotation cp="】" type="tts">semiclaudàtor de lent negre de tancament</annotation>
+		<annotation cp="〔">claudàtor | claudàtor de tortuga | claudàtor de tortuga d’obertura</annotation>
+		<annotation cp="〔" type="tts">claudàtor de tortuga d’obertura</annotation>
+		<annotation cp="〕">claudàtor | claudàtor de tortuga | claudàtor de tortuga de tancament</annotation>
+		<annotation cp="〕" type="tts">claudàtor de tortuga de tancament</annotation>
+		<annotation cp="〖">claudàtor | claudàtor de lent buit | claudàtor de lent buit d’obertura | claudàtor lenticular buit</annotation>
+		<annotation cp="〖" type="tts">claudàtor de lent buit d’obertura</annotation>
+		<annotation cp="〗">claudàtor | claudàtor de lent buit | claudàtor de lent buit de tancament | claudàtor lenticular buit</annotation>
+		<annotation cp="〗" type="tts">claudàtor de lent buit de tancament</annotation>
 		<annotation cp="§">paràgraf | part | secció</annotation>
 		<annotation cp="§" type="tts">secció</annotation>
+		<annotation cp="¶">antígraf | calderó | marca de paràgraf | paràgraf | peu de mosca</annotation>
+		<annotation cp="¶" type="tts">marca de paràgraf</annotation>
+		<annotation cp="@">a cuada | a encerclada | arrova | ensaïmada | rova</annotation>
+		<annotation cp="@" type="tts">arrova</annotation>
+		<annotation cp="*">asterisc | comodí | estrella</annotation>
+		<annotation cp="*" type="tts">asterisc</annotation>
+		<annotation cp="/">barra inclinada | barra obliqua | contrabarra</annotation>
+		<annotation cp="/" type="tts">barra inclinada</annotation>
+		<annotation cp="\">barra inversa | barra obliqua inversa</annotation>
+		<annotation cp="\" type="tts">barra inversa</annotation>
+		<annotation cp="&amp;">et | i | i comercial</annotation>
+		<annotation cp="&amp;" type="tts">et</annotation>
+		<annotation cp="#">coixinet | lliura | número | quadradet | xifra</annotation>
+		<annotation cp="#" type="tts">coixinet</annotation>
+		<annotation cp="%">percentatge | tant per cent</annotation>
+		<annotation cp="%" type="tts">tant per cent</annotation>
+		<annotation cp="‰">per mil</annotation>
+		<annotation cp="‰" type="tts">per mil</annotation>
 		<annotation cp="†">diesi | obelisc | obelos | signe d’obelisc</annotation>
 		<annotation cp="†" type="tts">signe d’obelisc</annotation>
 		<annotation cp="‡">diesi | dos | obelisc | obelos | signe d’obelisc de dos braços</annotation>
 		<annotation cp="‡" type="tts">signe d’obelisc de dos braços</annotation>
 		<annotation cp="•">pic | punt | punt de llista</annotation>
 		<annotation cp="•" type="tts">punt de llista</annotation>
+		<annotation cp="‧">guió | punt | punt de guió</annotation>
+		<annotation cp="‧" type="tts">punt de guió</annotation>
+		<annotation cp="′">prima</annotation>
+		<annotation cp="′" type="tts">prima</annotation>
+		<annotation cp="″">doble prima | prima</annotation>
+		<annotation cp="″" type="tts">doble prima</annotation>
+		<annotation cp="‴">prima | triple prima</annotation>
+		<annotation cp="‴" type="tts">triple prima</annotation>
+		<annotation cp="‸" draft="contributed">circumflex</annotation>
+		<annotation cp="‸" type="tts" draft="contributed">circumflex</annotation>
+		<annotation cp="※">marca de referència</annotation>
+		<annotation cp="※" type="tts">marca de referència</annotation>
+		<annotation cp="⁂" draft="contributed">asterisme</annotation>
+		<annotation cp="⁂" type="tts" draft="contributed">asterisme</annotation>
+		<annotation cp="`">accent | greu | to</annotation>
+		<annotation cp="`" type="tts">accent greu</annotation>
+		<annotation cp="´">accent | agut | to</annotation>
+		<annotation cp="´" type="tts">accent agut</annotation>
+		<annotation cp="^">accent | angle | barret | circumflex | control | punter</annotation>
+		<annotation cp="^" type="tts">accent circumflex</annotation>
+		<annotation cp="¨">dièresi</annotation>
+		<annotation cp="¨" type="tts">dièresi</annotation>
 		<annotation cp="°">grau | hora | prova</annotation>
 		<annotation cp="°" type="tts">grau</annotation>
 		<annotation cp="℗">copyright | enregistrament | enregistrament de so amb copyright | so</annotation>
 		<annotation cp="℗" type="tts">enregistrament de so amb copyright</annotation>
 		<annotation cp="←">esquerra | fletxa | fletxa que apunta cap a l’esquerra</annotation>
 		<annotation cp="←" type="tts">fletxa que apunta cap a l’esquerra</annotation>
+		<annotation cp="↚" draft="contributed">fletxa cap a l’esquerra amb traç</annotation>
+		<annotation cp="↚" type="tts" draft="contributed">fletxa cap a l’esquerra amb traç</annotation>
 		<annotation cp="→">dreta | fletxa | fletxa que apunta cap a la dreta</annotation>
 		<annotation cp="→" type="tts">fletxa que apunta cap a la dreta</annotation>
+		<annotation cp="↛" draft="contributed">fletxa cap a la dreta amb barra inclinada</annotation>
+		<annotation cp="↛" type="tts" draft="contributed">fletxa cap a la dreta amb barra inclinada</annotation>
 		<annotation cp="↑">amunt | fletxa | fletxa que apunta cap amunt</annotation>
 		<annotation cp="↑" type="tts">fletxa que apunta cap amunt</annotation>
 		<annotation cp="↓">avall | fletxa | fletxa que apunta cap avall</annotation>
 		<annotation cp="↓" type="tts">fletxa que apunta cap avall</annotation>
+		<annotation cp="↜" draft="contributed">fletxa ondulada cap a l’esquerra</annotation>
+		<annotation cp="↜" type="tts" draft="contributed">fletxa ondulada cap a l’esquerra</annotation>
+		<annotation cp="↝" draft="contributed">fletxa ondulada cap a la dreta</annotation>
+		<annotation cp="↝" type="tts" draft="contributed">fletxa ondulada cap a la dreta</annotation>
+		<annotation cp="↞" draft="contributed">fletxa cap a l’esquerra amb dues puntes</annotation>
+		<annotation cp="↞" type="tts" draft="contributed">fletxa cap a l’esquerra amb dues puntes</annotation>
+		<annotation cp="↟" draft="contributed">fletxa cap amunt amb dues puntes</annotation>
+		<annotation cp="↟" type="tts" draft="contributed">fletxa cap amunt amb dues puntes</annotation>
+		<annotation cp="↠" draft="contributed">fletxa cap a la dreta amb dues puntes</annotation>
+		<annotation cp="↠" type="tts" draft="contributed">fletxa cap a la dreta amb dues puntes</annotation>
+		<annotation cp="↡" draft="contributed">fletxa cap avall amb dues puntes</annotation>
+		<annotation cp="↡" type="tts" draft="contributed">fletxa cap avall amb dues puntes</annotation>
+		<annotation cp="↢" draft="contributed">fletxa cap a l’esquerra amb cua</annotation>
+		<annotation cp="↢" type="tts" draft="contributed">fletxa cap a l’esquerra amb cua</annotation>
+		<annotation cp="↣" draft="contributed">fletxa cap a la dreta amb cua</annotation>
+		<annotation cp="↣" type="tts" draft="contributed">fletxa cap a la dreta amb cua</annotation>
+		<annotation cp="↤" draft="contributed">fletxa des d’una barra cap a l’esquerra</annotation>
+		<annotation cp="↤" type="tts" draft="contributed">fletxa des d’una barra cap a l’esquerra</annotation>
+		<annotation cp="↥" draft="contributed">fletxa des d’una barra cap amunt</annotation>
+		<annotation cp="↥" type="tts" draft="contributed">fletxa des d’una barra cap amunt</annotation>
+		<annotation cp="↦" draft="contributed">fletxa des d’una barra cap a la dreta</annotation>
+		<annotation cp="↦" type="tts" draft="contributed">fletxa des d’una barra cap a la dreta</annotation>
+		<annotation cp="↧" draft="contributed">fletxa des d’una barra cap avall</annotation>
+		<annotation cp="↧" type="tts" draft="contributed">fletxa des d’una barra cap avall</annotation>
+		<annotation cp="↨" draft="contributed">fletxa amunt i avall amb una base</annotation>
+		<annotation cp="↨" type="tts" draft="contributed">fletxa amunt i avall amb una base</annotation>
+		<annotation cp="↫" draft="contributed">fletxa cap a l’esquerra amb bucle</annotation>
+		<annotation cp="↫" type="tts" draft="contributed">fletxa cap a l’esquerra amb bucle</annotation>
+		<annotation cp="↬" draft="contributed">fletxa cap a la dreta amb bucle</annotation>
+		<annotation cp="↬" type="tts" draft="contributed">fletxa cap a la dreta amb bucle</annotation>
+		<annotation cp="↭" draft="contributed">fletxa esquerra i dreta ondulada</annotation>
+		<annotation cp="↭" type="tts" draft="contributed">fletxa esquerra i dreta ondulada</annotation>
+		<annotation cp="↯" draft="contributed">fletxa cap avall en zig-zag</annotation>
+		<annotation cp="↯" type="tts" draft="contributed">fletxa cap avall en zig-zag</annotation>
+		<annotation cp="↰" draft="contributed">fletxa cap amunt amb punta cap a l’esquerra</annotation>
+		<annotation cp="↰" type="tts" draft="contributed">fletxa cap amunt amb punta cap a l’esquerra</annotation>
 		<annotation cp="⇅">amunt | avall | fletxa | fletxes que apunten cap amunt i cap avall</annotation>
 		<annotation cp="⇅" type="tts">fletxes que apunten cap amunt i cap avall</annotation>
 		<annotation cp="⇆">dreta | esquerra | fletxa | fletxa que apunta cap a l’esquerra sobre una fletxa que apunta cap a la dreta | fletxes cap a l’esquerra i la dreta</annotation>
@@ -63,10 +237,30 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="∇" type="tts">nabla</annotation>
 		<annotation cp="∈">conjunt | conté | element | element de | pertany a</annotation>
 		<annotation cp="∈" type="tts">element de</annotation>
+		<annotation cp="+">més | signe més | suma</annotation>
+		<annotation cp="+" type="tts">signe més</annotation>
+		<annotation cp="±">signe de més o menys</annotation>
+		<annotation cp="±" type="tts">signe de més o menys</annotation>
 		<annotation cp="÷">dividir | divisió | divisor | signe de divisió</annotation>
 		<annotation cp="÷" type="tts">signe de divisió</annotation>
 		<annotation cp="×">multiplicació | multiplicador | multiplicar | signe de multiplicació</annotation>
 		<annotation cp="×" type="tts">signe de multiplicació</annotation>
+		<annotation cp="&lt;">etiqueta | inferior a | menor que | més petit que | obertura</annotation>
+		<annotation cp="&lt;" type="tts">menor que</annotation>
+		<annotation cp="=">equival a | igual</annotation>
+		<annotation cp="=" type="tts">igual</annotation>
+		<annotation cp="≠">desigualtat | inequació | no és igual que</annotation>
+		<annotation cp="≠" type="tts">no és igual que</annotation>
+		<annotation cp="&gt;">etiqueta | major que | més gran que | superior a | tancament</annotation>
+		<annotation cp="&gt;" type="tts">major que</annotation>
+		<annotation cp="¬">negació | no</annotation>
+		<annotation cp="¬" type="tts">negació</annotation>
+		<annotation cp="|">barra vertical | línia vertical | pleca</annotation>
+		<annotation cp="|" type="tts">barra vertical</annotation>
+		<annotation cp="~">titlla</annotation>
+		<annotation cp="~" type="tts">titlla</annotation>
+		<annotation cp="−">menys | resta | signe menys</annotation>
+		<annotation cp="−" type="tts">signe menys</annotation>
 		<annotation cp="⁻">resta | superíndex</annotation>
 		<annotation cp="⁻" type="tts">superíndex resta</annotation>
 		<annotation cp="√">arrel | arrel quadrada | quadrat | radical | signe d’arrel</annotation>
@@ -77,8 +271,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="∩" type="tts">intersecció</annotation>
 		<annotation cp="∪">col·lecció | conjunt | unió</annotation>
 		<annotation cp="∪" type="tts">unió</annotation>
+		<annotation cp="≈">aproximació | aproximadament igual a</annotation>
+		<annotation cp="≈" type="tts">aproximació</annotation>
 		<annotation cp="≡">exacte | idèntic | idèntic a | triple</annotation>
 		<annotation cp="≡" type="tts">idèntic a</annotation>
+		<annotation cp="≤">angle | antilambda | desigualtat | igual | inferior | menor o igual a | menor que | més petit que</annotation>
+		<annotation cp="≤" type="tts">menor o igual a</annotation>
+		<annotation cp="≥">angle | antilambda | desigualtat | igual | major o igual a | major que | més gran que | superior</annotation>
+		<annotation cp="≥" type="tts">major o igual a</annotation>
 		<annotation cp="⊂">conjunt | subconjunt | subconjunt de</annotation>
 		<annotation cp="⊂" type="tts">subconjunt de</annotation>
 		<annotation cp="▲">amunt | fletxa | ple | triangle | triangle ple que apunta cap amunt</annotation>
@@ -93,6 +293,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="●" type="tts">cercle ple</annotation>
 		<annotation cp="◯">anell | cercle | cercle buit gran</annotation>
 		<annotation cp="◯" type="tts">cercle buit gran</annotation>
+		<annotation cp="♪">corxera | música | nota</annotation>
+		<annotation cp="♪" type="tts">corxera</annotation>
+		<annotation cp="♭">bemoll | música | nota</annotation>
+		<annotation cp="♭" type="tts">bemoll</annotation>
+		<annotation cp="♯">diesi | música | nota | sostingut</annotation>
+		<annotation cp="♯" type="tts">sostingut</annotation>
 		<annotation cp="😀">cara | cara molt somrient | rialla | somriure | ulls</annotation>
 		<annotation cp="😀" type="tts">cara molt somrient</annotation>
 		<annotation cp="😃">boca oberta | cara | cara molt somrient amb els ulls ben oberts | somriure</annotation>
@@ -167,6 +373,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="😑" type="tts">cara inexpressiva</annotation>
 		<annotation cp="😶">callada | callat | cara | cara sense boca | sense boca | silenci</annotation>
 		<annotation cp="😶" type="tts">cara sense boca</annotation>
+		<annotation cp="😶‍🌫">cap als núvols | cara entre núvols | distracció | distret</annotation>
+		<annotation cp="😶‍🌫" type="tts">cara entre núvols</annotation>
 		<annotation cp="😏">cara | cara somrient amb superioritat | somriure astut | superioritat</annotation>
 		<annotation cp="😏" type="tts">cara somrient amb superioritat</annotation>
 		<annotation cp="😒">avorriment | cara | cara de desaprovació | desaprovació</annotation>
@@ -175,6 +383,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🙄" type="tts">cara amb els ulls en blanc</annotation>
 		<annotation cp="😬">cara | cara que fa una ganyota amb les dents | dents | ganyota</annotation>
 		<annotation cp="😬" type="tts">cara que fa una ganyota amb les dents</annotation>
+		<annotation cp="😮‍💨">alleujament | cara que exhala | exhalar | xiulet | xiuxiueig</annotation>
+		<annotation cp="😮‍💨" type="tts">cara que exhala</annotation>
 		<annotation cp="🤥">cara | cara de mentider | mentider | nas | Pinotxo</annotation>
 		<annotation cp="🤥" type="tts">cara de mentider</annotation>
 		<annotation cp="😌">alleujament | cara | cara d’alleujament</annotation>
@@ -203,10 +413,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🥵" type="tts">cara de calor</annotation>
 		<annotation cp="🥶">cara blava | cara de fred | caramell | fred | gel | glaçat</annotation>
 		<annotation cp="🥶" type="tts">cara de fred</annotation>
-		<annotation cp="🥴">beguda | begut | boca ondulada | cara de mareig | embriac | embriaga | marejada | marejat | ulls desiguals</annotation>
+		<annotation cp="🥴">beguda | begut | boca ondulada | cara de mareig | embriac | embriaga | mareig</annotation>
 		<annotation cp="🥴" type="tts">cara de mareig</annotation>
 		<annotation cp="😵">cara | marejada | marejat</annotation>
 		<annotation cp="😵" type="tts">cara marejada</annotation>
+		<annotation cp="😵‍💫">cara amb ulls d’espiral | espiral | hipnosi | mareig | problema</annotation>
+		<annotation cp="😵‍💫" type="tts">cara amb ulls d’espiral</annotation>
 		<annotation cp="🤯">cap que explota | estupefacta | estupefacte</annotation>
 		<annotation cp="🤯" type="tts">cap que explota</annotation>
 		<annotation cp="🤠">barret | cara | cara amb barret de vaquer | cowboy | vaquer | vaquera</annotation>
@@ -349,6 +561,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="❣" type="tts">exclamació en forma de cor</annotation>
 		<annotation cp="💔">cor | trencar | trencat</annotation>
 		<annotation cp="💔" type="tts">cor trencat</annotation>
+		<annotation cp="❤‍🔥">amor | cor | cor en flames | cor sagrat | foc | luxúria</annotation>
+		<annotation cp="❤‍🔥" type="tts">cor en flames</annotation>
+		<annotation cp="❤‍🩹">cor | cor embenat | millor | millora | recuperació | salut</annotation>
+		<annotation cp="❤‍🩹" type="tts">cor embenat</annotation>
 		<annotation cp="❤">cor | cor vermell</annotation>
 		<annotation cp="❤" type="tts">cor vermell</annotation>
 		<annotation cp="🧡">cor taronja | taronja</annotation>
@@ -481,7 +697,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="👃" type="tts">nas</annotation>
 		<annotation cp="🧠">cervell | intel·ligent</annotation>
 		<annotation cp="🧠" type="tts">cervell</annotation>
-		<annotation cp="🫀">batec | cardiologia | centre | cor | òrgan | pols</annotation>
+		<annotation cp="🫀">batec | cardiologia | cor | òrgan | pols</annotation>
 		<annotation cp="🫀" type="tts">cor</annotation>
 		<annotation cp="🫁">exhalació | inhalació | òrgan | pulmons | respiració | respirar</annotation>
 		<annotation cp="🫁" type="tts">pulmons</annotation>
@@ -511,12 +727,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="👱" type="tts">persona: cabells rossos</annotation>
 		<annotation cp="👨">home | masculí</annotation>
 		<annotation cp="👨" type="tts">home</annotation>
-		<annotation cp="🧔">barba | home | home: barba | persona</annotation>
-		<annotation cp="🧔" type="tts">home: barba</annotation>
+		<annotation cp="🧔">barba | persona | persona: barba</annotation>
+		<annotation cp="🧔" type="tts">persona: barba</annotation>
+		<annotation cp="🧔‍♂">barba | home | home: barba</annotation>
+		<annotation cp="🧔‍♂" type="tts">home: barba</annotation>
 		<annotation cp="👱‍♂">cabell | home | home: cabell ros | ros</annotation>
 		<annotation cp="👱‍♂" type="tts">home: cabell ros</annotation>
 		<annotation cp="👩">dona | femení</annotation>
 		<annotation cp="👩" type="tts">dona</annotation>
+		<annotation cp="🧔‍♀">barba | dona | dona: barba</annotation>
+		<annotation cp="🧔‍♀" type="tts">dona: barba</annotation>
 		<annotation cp="👱‍♀">cabell | dona | dona: cabell ros | rossa</annotation>
 		<annotation cp="👱‍♀" type="tts">dona: cabell ros</annotation>
 		<annotation cp="🧓">adult | gran | persona</annotation>
@@ -629,9 +849,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="👩‍🔧" type="tts">mecànica</annotation>
 		<annotation cp="🧑‍🏭">fàbrica | industrial | operari | treballador</annotation>
 		<annotation cp="🧑‍🏭" type="tts">operari</annotation>
-		<annotation cp="👨‍🏭">fàbrica | home operari | industrial | masculí | operari | treballador</annotation>
+		<annotation cp="👨‍🏭">fàbrica | home operari | industrial | operari | treballador</annotation>
 		<annotation cp="👨‍🏭" type="tts">home operari</annotation>
-		<annotation cp="👩‍🏭">fàbrica | femení | industrial | operària | treballadora</annotation>
+		<annotation cp="👩‍🏭">fàbrica | industrial | operària | treballadora</annotation>
 		<annotation cp="👩‍🏭" type="tts">operària</annotation>
 		<annotation cp="🧑‍💼">arquitecte | negoci | oficina | treballador d’oficina</annotation>
 		<annotation cp="🧑‍💼" type="tts">treballador d’oficina</annotation>
@@ -739,7 +959,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🤱" type="tts">dona que alleta</annotation>
 		<annotation cp="👩‍🍼">alimentar | alletar | bebè | dona | dona que alleta un bebè</annotation>
 		<annotation cp="👩‍🍼" type="tts">dona que alleta un bebè</annotation>
-		<annotation cp="👨‍🍼">alimentar | alletar | bebè | dona | home que alleta un bebè</annotation>
+		<annotation cp="👨‍🍼">alimentar | alletar | bebè | home | home que alleta un bebè</annotation>
 		<annotation cp="👨‍🍼" type="tts">home que alleta un bebè</annotation>
 		<annotation cp="🧑‍🍼">alimentar | alletar | bebè | persona | persona que alleta un bebè</annotation>
 		<annotation cp="🧑‍🍼" type="tts">persona que alleta un bebè</annotation>
@@ -841,11 +1061,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="👨‍🦯" type="tts">home amb un bastó per a invidents</annotation>
 		<annotation cp="👩‍🦯">accessibilitat | dona | dona amb un bastó per a invidents | invident</annotation>
 		<annotation cp="👩‍🦯" type="tts">dona amb un bastó per a invidents</annotation>
-		<annotation cp="🧑‍🦼">accessibilitat | cadira de rodes elèctrica | persona amb una cadira de rodes elèctrica</annotation>
+		<annotation cp="🧑‍🦼">accessibilitat | cadira de rodes amb motor | cadira de rodes elèctrica | persona amb una cadira de rodes amb motor | persona amb una cadira de rodes elèctrica</annotation>
 		<annotation cp="🧑‍🦼" type="tts">persona amb una cadira de rodes elèctrica</annotation>
-		<annotation cp="👨‍🦼">accessibilitat | cadira de rodes | home | home amb una cadira de rodes elèctrica</annotation>
+		<annotation cp="👨‍🦼">accessibilitat | cadira de rodes | home | home amb una cadira de rodes amb motor | home amb una cadira de rodes elèctrica</annotation>
 		<annotation cp="👨‍🦼" type="tts">home amb una cadira de rodes elèctrica</annotation>
-		<annotation cp="👩‍🦼">accessibilitat | cadira de rodes | dona | dona amb una cadira de rodes elèctrica</annotation>
+		<annotation cp="👩‍🦼">accessibilitat | cadira de rodes | dona | dona amb una cadira de rodes amb motor | dona amb una cadira de rodes elèctrica</annotation>
 		<annotation cp="👩‍🦼" type="tts">dona amb una cadira de rodes elèctrica</annotation>
 		<annotation cp="🧑‍🦽">accessibilitat | cadira de rodes manual | persona amb una cadira de rodes manual</annotation>
 		<annotation cp="🧑‍🦽" type="tts">persona amb una cadira de rodes manual</annotation>
@@ -985,7 +1205,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="👭" type="tts">dones que s’agafen de la mà</annotation>
 		<annotation cp="👫">dona | home | home i dona que s’agafen de la mà | mans agafades | parella</annotation>
 		<annotation cp="👫" type="tts">home i dona que s’agafen de la mà</annotation>
-		<annotation cp="👬">bessons | Gèmini | home | homes | homes que s’agafen de la mà | mans agafades | parella | zodíac</annotation>
+		<annotation cp="👬">bessons | Gèmini | home | homes que s’agafen de la mà | mans agafades | parella | zodíac</annotation>
 		<annotation cp="👬" type="tts">homes que s’agafen de la mà</annotation>
 		<annotation cp="💏">parella | petó</annotation>
 		<annotation cp="💏" type="tts">petó</annotation>
@@ -1093,7 +1313,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🦒" type="tts">girafa</annotation>
 		<annotation cp="🐘">elefant</annotation>
 		<annotation cp="🐘" type="tts">elefant</annotation>
-		<annotation cp="🦣">extició | gran | llanut | mamut | ullal</annotation>
+		<annotation cp="🦣">extinció | gran | llanut | mamut | ullal</annotation>
 		<annotation cp="🦣" type="tts">mamut</annotation>
 		<annotation cp="🦏">rinoceront</annotation>
 		<annotation cp="🦏" type="tts">rinoceront</annotation>
@@ -1229,7 +1449,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🐞" type="tts">marieta</annotation>
 		<annotation cp="🦗">grill | llagosta</annotation>
 		<annotation cp="🦗" type="tts">grill</annotation>
-		<annotation cp="🪳">ballarola | corredora | cuca molla | cuca panissera | escarabat de cuina | insecte | panderola | panerola</annotation>
+		<annotation cp="🪳">ballarola | cuca molla | cuca panissera | escarabat de cuina | insecte | panderola | panerola</annotation>
 		<annotation cp="🪳" type="tts">panerola</annotation>
 		<annotation cp="🕷">aranya | insecte</annotation>
 		<annotation cp="🕷" type="tts">aranya</annotation>
@@ -1845,43 +2065,43 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🕐" type="tts">la una en punt</annotation>
 		<annotation cp="🕜">1.30 | 13.30 | dos quarts | dos quarts de dues | rellotge</annotation>
 		<annotation cp="🕜" type="tts">dos quarts de dues</annotation>
-		<annotation cp="🕑">14 | 14.00 | 2 | 2.00 | dues | en punt | les dues en punt | rellotge</annotation>
+		<annotation cp="🕑">14 | 14.00 | 2 | dues | en punt | les dues en punt | rellotge</annotation>
 		<annotation cp="🕑" type="tts">les dues en punt</annotation>
 		<annotation cp="🕝">14.30 | 2.30 | dos quarts | dos quarts de tres | rellotge</annotation>
 		<annotation cp="🕝" type="tts">dos quarts de tres</annotation>
-		<annotation cp="🕒">15 | 15.00 | 3 | 3.00 | en punt | les tres en punt | rellotge | tres</annotation>
+		<annotation cp="🕒">15 | 15.00 | 3 | en punt | les tres en punt | rellotge | tres</annotation>
 		<annotation cp="🕒" type="tts">les tres en punt</annotation>
 		<annotation cp="🕞">15.30 | 3.30 | dos quarts | dos quarts de quatre | rellotge</annotation>
 		<annotation cp="🕞" type="tts">dos quarts de quatre</annotation>
-		<annotation cp="🕓">16 | 16.00 | 4 | 4.00 | en punt | les quatre en punt | quatre | rellotge</annotation>
+		<annotation cp="🕓">16 | 16.00 | 4 | en punt | les quatre en punt | quatre | rellotge</annotation>
 		<annotation cp="🕓" type="tts">les quatre en punt</annotation>
 		<annotation cp="🕟">16.30 | 4.30 | dos quarts | dos quarts de cinc | rellotge</annotation>
 		<annotation cp="🕟" type="tts">dos quarts de cinc</annotation>
-		<annotation cp="🕔">17 | 17.00 | 5 | 5.00 | cinc | en punt | les cinc en punt | rellotge</annotation>
+		<annotation cp="🕔">17 | 17.00 | 5 | cinc | en punt | les cinc en punt | rellotge</annotation>
 		<annotation cp="🕔" type="tts">les cinc en punt</annotation>
 		<annotation cp="🕠">17.30 | 5.30 | dos quarts | dos quarts de sis | rellotge</annotation>
 		<annotation cp="🕠" type="tts">dos quarts de sis</annotation>
-		<annotation cp="🕕">18 | 18.00 | 6 | 6.00 | en punt | les sis en punt | rellotge | sis</annotation>
+		<annotation cp="🕕">18 | 18.00 | 6 | en punt | les sis en punt | rellotge | sis</annotation>
 		<annotation cp="🕕" type="tts">les sis en punt</annotation>
 		<annotation cp="🕡">18.30 | 6.30 | dos quarts | dos quarts de set | rellotge</annotation>
 		<annotation cp="🕡" type="tts">dos quarts de set</annotation>
-		<annotation cp="🕖">19 | 19.00 | 7 | 7.00 | en punt | les set en punt | rellotge | set</annotation>
+		<annotation cp="🕖">19 | 19.00 | 7 | en punt | les set en punt | rellotge | set</annotation>
 		<annotation cp="🕖" type="tts">les set en punt</annotation>
 		<annotation cp="🕢">19.30 | 7.30 | dos quarts | dos quarts de vuit | rellotge</annotation>
 		<annotation cp="🕢" type="tts">dos quarts de vuit</annotation>
-		<annotation cp="🕗">20 | 20.00 | 8 | 8.00 | en punt | les vuit en punt | rellotge | vuit</annotation>
+		<annotation cp="🕗">20 | 20.00 | 8 | en punt | les vuit en punt | rellotge | vuit</annotation>
 		<annotation cp="🕗" type="tts">les vuit en punt</annotation>
 		<annotation cp="🕣">20.30 | 8.30 | dos quarts | dos quarts de nou | rellotge</annotation>
 		<annotation cp="🕣" type="tts">dos quarts de nou</annotation>
-		<annotation cp="🕘">21 | 21.00 | 9 | 9.00 | en punt | les nou en punt | nou | rellotge</annotation>
+		<annotation cp="🕘">21 | 21.00 | 9 | en punt | les nou en punt | nou | rellotge</annotation>
 		<annotation cp="🕘" type="tts">les nou en punt</annotation>
 		<annotation cp="🕤">21.30 | 9.30 | dos quarts | dos quarts de deu | rellotge</annotation>
 		<annotation cp="🕤" type="tts">dos quarts de deu</annotation>
-		<annotation cp="🕙">10 | 10.00 | 22 | 22.00 | deu | en punt | les deu en punt | rellotge</annotation>
+		<annotation cp="🕙">10 | 10.00 | 22 | deu | en punt | les deu en punt | rellotge</annotation>
 		<annotation cp="🕙" type="tts">les deu en punt</annotation>
 		<annotation cp="🕥">10.30 | 22.30 | dos quarts | dos quarts d’onze | rellotge</annotation>
 		<annotation cp="🕥" type="tts">dos quarts d’onze</annotation>
-		<annotation cp="🕚">11 | 11.00 | 23 | 23.00 | en punt | les onze en punt | onze | rellotge</annotation>
+		<annotation cp="🕚">11 | 11.00 | 23 | en punt | les onze en punt | onze | rellotge</annotation>
 		<annotation cp="🕚" type="tts">les onze en punt</annotation>
 		<annotation cp="🕦">11.30 | 23.30 | dos quarts | dos quarts de dotze | rellotge</annotation>
 		<annotation cp="🕦" type="tts">dos quarts de dotze</annotation>
@@ -2527,8 +2747,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🗡" type="tts">daga</annotation>
 		<annotation cp="⚔">arma | creuades | espases</annotation>
 		<annotation cp="⚔" type="tts">espases creuades</annotation>
-		<annotation cp="🔫">arma | arma de foc | eina | pistola | revòlver</annotation>
-		<annotation cp="🔫" type="tts">pistola</annotation>
+		<annotation cp="🔫">arma | arma de foc | eina | pistola | pistola d’aigua | revòlver</annotation>
+		<annotation cp="🔫" type="tts">pistola d’aigua</annotation>
 		<annotation cp="🪃">Austràlia | bumerang | rebot | repercussió</annotation>
 		<annotation cp="🪃" type="tts">bumerang</annotation>
 		<annotation cp="🏹">arc | arc i fletxa | fletxa | Sagitari | zodíac</annotation>
@@ -2719,6 +2939,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="↕" type="tts">fletxa cap amunt i cap avall</annotation>
 		<annotation cp="↔">dreta | esquerra | fletxa | fletxa cap a l’esquerra i cap a la dreta</annotation>
 		<annotation cp="↔" type="tts">fletxa cap a l’esquerra i cap a la dreta</annotation>
+		<annotation cp="↮" draft="contributed">fletxa esquerra i dreta amb traç</annotation>
+		<annotation cp="↮" type="tts" draft="contributed">fletxa esquerra i dreta amb traç</annotation>
 		<annotation cp="↩">dreta | esquerra | fletxa | fletxa dreta que gira cap a l’esquerra | gir</annotation>
 		<annotation cp="↩" type="tts">fletxa dreta que gira cap a l’esquerra</annotation>
 		<annotation cp="↪">dreta | esquerra | fletxa | fletxa esquerra que gira cap a la dreta | gir</annotation>
@@ -2859,14 +3081,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="‼" type="tts">signe d’exclamació doble</annotation>
 		<annotation cp="⁉">! | !? | ? | exclamació | interrogació | pregunta | puntuació | signe | signe d’exclamació i d’interrogació</annotation>
 		<annotation cp="⁉" type="tts">signe d’exclamació i d’interrogació</annotation>
-		<annotation cp="❓">? | interrogació | puntuació | signe | signe d’interrogació</annotation>
-		<annotation cp="❓" type="tts">signe d’interrogació</annotation>
+		<annotation cp="❓">? | interrogació | puntuació | signe | signe d’interrogació | signe d’interrogació vermell</annotation>
+		<annotation cp="❓" type="tts">signe d’interrogació vermell</annotation>
 		<annotation cp="❔">? | blanc | interrogació | puntuació | signe | signe d’interrogació blanc</annotation>
 		<annotation cp="❔" type="tts">signe d’interrogació blanc</annotation>
 		<annotation cp="❕">! | blanc | exclamació | puntuació | signe | signe d’exclamació blanc</annotation>
 		<annotation cp="❕" type="tts">signe d’exclamació blanc</annotation>
-		<annotation cp="❗">! | exclamació | puntuació | signe | signe d’exclamació</annotation>
-		<annotation cp="❗" type="tts">signe d’exclamació</annotation>
+		<annotation cp="❗">! | exclamació | puntuació | signe | signe d’exclamació | signe d’exclamació vermell</annotation>
+		<annotation cp="❗" type="tts">signe d’exclamació vermell</annotation>
 		<annotation cp="〰">guió | ondulat | puntuació</annotation>
 		<annotation cp="〰" type="tts">guió ondulat</annotation>
 		<annotation cp="💱">canvi | canvi de divisa | divisa</annotation>
@@ -2887,11 +3109,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🔰" type="tts">símbol japonès de principiant</annotation>
 		<annotation cp="⭕">cercle | cercle buit vermell | gran | o | vermell</annotation>
 		<annotation cp="⭕" type="tts">cercle buit vermell</annotation>
-		<annotation cp="✅">✓ | botó | botó de marca de verificació | marca | verificació</annotation>
+		<annotation cp="✅">✓ | botó | botó de marca de verificació | marca | selecció | verificació</annotation>
 		<annotation cp="✅" type="tts">botó de marca de verificació</annotation>
-		<annotation cp="☑">✓ | casella | casella amb marca de verificació | verificació</annotation>
+		<annotation cp="☑">✓ | casella | casella amb marca de verificació | selecció | verificació</annotation>
 		<annotation cp="☑" type="tts">casella amb marca de verificació</annotation>
-		<annotation cp="✔">✓ | marca | marca de verificació | verificació</annotation>
+		<annotation cp="✔">✓ | marca | marca de verificació | selecció | verificació</annotation>
 		<annotation cp="✔" type="tts">marca de verificació</annotation>
 		<annotation cp="❌">× | cancel·lar | creu | marca | marca de creu | multiplicació | multiplicar | x</annotation>
 		<annotation cp="❌" type="tts">marca de creu</annotation>
@@ -3077,16 +3299,28 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🏳‍⚧" type="tts">bandera transgènere</annotation>
 		<annotation cp="🏴‍☠">bandera pirata | botí | Jolly Roger | pirata | tresor</annotation>
 		<annotation cp="🏴‍☠" type="tts">bandera pirata</annotation>
+		<annotation cp="¢">centau</annotation>
+		<annotation cp="¢" type="tts">centau</annotation>
+		<annotation cp="$">diners | dòlar | peso | USD</annotation>
+		<annotation cp="$" type="tts">dòlar</annotation>
 		<annotation cp="£">divisa | EGP | esterlina | GBP | lliura | moneda</annotation>
 		<annotation cp="£" type="tts">lliura</annotation>
 		<annotation cp="¥">CNY | ien | iuan | JPY | moneda</annotation>
 		<annotation cp="¥" type="tts">ien</annotation>
+		<annotation cp="₥">M | milió</annotation>
+		<annotation cp="₥" type="tts">milió</annotation>
+		<annotation cp="₩">KPW | KRW | won</annotation>
+		<annotation cp="₩" type="tts">won</annotation>
 		<annotation cp="€">divisa | EUR | euro | moneda</annotation>
 		<annotation cp="€" type="tts">euro</annotation>
+		<annotation cp="₱">peso</annotation>
+		<annotation cp="₱" type="tts">peso</annotation>
 		<annotation cp="₹">moneda | rupia | rupia índia</annotation>
 		<annotation cp="₹" type="tts">rupia índia</annotation>
 		<annotation cp="₽">moneda | ruble</annotation>
 		<annotation cp="₽" type="tts">ruble</annotation>
+		<annotation cp="₿">bitcoin | BTC</annotation>
+		<annotation cp="₿" type="tts">bitcoin</annotation>
 		<annotation cp="¹">superíndex | u</annotation>
 		<annotation cp="¹" type="tts">superíndex u</annotation>
 		<annotation cp="²">al quadrat | dos | superíndex</annotation>

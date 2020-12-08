@@ -13,6 +13,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<language type="ja"/>
 	</identity>
 	<annotations>
+		<annotation cp="{">カッコ | ブレース | 中括弧 | 波括弧 | 開き波括弧</annotation>
+		<annotation cp="{" type="tts">開き波括弧</annotation>
 		<annotation cp="🏻">肌の色 | 肌色1–2 | 薄い肌色</annotation>
 		<annotation cp="🏻" type="tts">薄い肌色</annotation>
 		<annotation cp="🏼">やや薄い肌色 | 肌の色 | 肌色3 | 薄い～中間の肌色</annotation>
@@ -23,36 +25,218 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🏾" type="tts">やや濃い肌色</annotation>
 		<annotation cp="🏿">濃い肌色 | 肌の色 | 肌色6</annotation>
 		<annotation cp="🏿" type="tts">濃い肌色</annotation>
+		<annotation cp="‾" draft="contributed">オーバーライン</annotation>
+		<annotation cp="‾" type="tts" draft="contributed">オーバーライン</annotation>
+		<annotation cp="_">アンダースコア | アンダーライン | 下線 | 記号</annotation>
+		<annotation cp="_" type="tts">アンダースコア</annotation>
+		<annotation cp="-">ダッシュ | ハイフンマイナス | マイナス | 記号</annotation>
+		<annotation cp="-" type="tts">ハイフンマイナス</annotation>
+		<annotation cp="‐">ダッシュ | ハイフン | 記号</annotation>
+		<annotation cp="‐" type="tts">ハイフン</annotation>
 		<annotation cp="–">enダッシュ | エヌダッシュ | ダッシュ</annotation>
 		<annotation cp="–" type="tts">enダッシュ</annotation>
 		<annotation cp="—">emダッシュ | エムダッシュ | ダッシュ</annotation>
 		<annotation cp="—" type="tts">emダッシュ</annotation>
-		<annotation cp="·">中点 | 中黒 | 点 | 黒丸</annotation>
-		<annotation cp="·" type="tts">中点</annotation>
+		<annotation cp="―">ダッシュ | ホリゾンタルバー | 横棒 | 記号</annotation>
+		<annotation cp="―" type="tts">ホリゾンタルバー</annotation>
+		<annotation cp="・">カタカナ | 中点 | 中黒 | 点</annotation>
+		<annotation cp="・" type="tts">中点</annotation>
+		<annotation cp=",">カンマ | コンマ | 記号</annotation>
+		<annotation cp="," type="tts">カンマ</annotation>
+		<annotation cp="،">アラビック カンマ | カンマ | コンマ | 記号</annotation>
+		<annotation cp="،" type="tts">アラビック カンマ</annotation>
+		<annotation cp="、">カンマ | コンマ | 点 | 記号 | 読点</annotation>
+		<annotation cp="、" type="tts">読点</annotation>
+		<annotation cp=";">コロン | セミコロン | 記号</annotation>
+		<annotation cp=";" type="tts">セミコロン</annotation>
+		<annotation cp="؛">アラビック セミコロン | セミコロン | 記号</annotation>
+		<annotation cp="؛" type="tts">アラビック セミコロン</annotation>
+		<annotation cp=":">コロン | 記号</annotation>
+		<annotation cp=":" type="tts">コロン</annotation>
+		<annotation cp="!">! | エクスクラメーションマーク | びっくりマーク | 感嘆符 | 約物 | 記号</annotation>
+		<annotation cp="!" type="tts">感嘆符</annotation>
+		<annotation cp="¡">エクスクラメーションマーク | びっくりマーク | 感嘆符 | 約物 | 記号 | 逆感嘆符</annotation>
+		<annotation cp="¡" type="tts">逆感嘆符</annotation>
+		<annotation cp="?">? | クエスチョンマーク | はてなマーク | 疑問符 | 約物 | 記号</annotation>
+		<annotation cp="?" type="tts">疑問符</annotation>
+		<annotation cp="¿">クエスチョンマーク | はてなマーク | 疑問符 | 約物 | 記号 | 逆疑問符</annotation>
+		<annotation cp="¿" type="tts">逆疑問符</annotation>
+		<annotation cp="؟">クエスチョンマーク | はてなマーク | 左右反転の疑問符 | 疑問符 | 約物 | 記号</annotation>
+		<annotation cp="؟" type="tts">左右反転の疑問符</annotation>
+		<annotation cp="‽" draft="contributed">インテロバング</annotation>
+		<annotation cp="‽" type="tts" draft="contributed">インテロバング</annotation>
+		<annotation cp=".">ドット | ピリオド | フルストップ | 終止符</annotation>
+		<annotation cp="." type="tts">ピリオド</annotation>
+		<annotation cp="…">三点リーダー | 点々 | 省略 | 省略記号</annotation>
+		<annotation cp="…" type="tts">省略記号</annotation>
+		<annotation cp="。">フルストップ | 丸 | 句点 | 約物 | 終止符</annotation>
+		<annotation cp="。" type="tts">句点</annotation>
+		<annotation cp="·">中点 | 中黒 | 半角中点 | 点 | 黒丸</annotation>
+		<annotation cp="·" type="tts">半角中点</annotation>
+		<annotation cp="'">アポストロフィ | ストレートアポストロフィ | 一重引用符 | 引用符</annotation>
+		<annotation cp="'" type="tts">ストレートアポストロフィ</annotation>
+		<annotation cp="‘">アポストロフィ | スマートクォート | 一重引用符 | 左アポストロフィ | 引用符</annotation>
+		<annotation cp="‘" type="tts">左アポストロフィ</annotation>
+		<annotation cp="’">アポストロフィ | スマートクォート | 一重引用符 | 右アポストロフィ | 引用符</annotation>
+		<annotation cp="’" type="tts">右アポストロフィ</annotation>
+		<annotation cp="‚">アポストロフィ | 下付き右アポストロフィ | 下付き引用符 | 引用符</annotation>
+		<annotation cp="‚" type="tts">下付き右アポストロフィ</annotation>
+		<annotation cp="“">クオーテーションマーク | スマートクォート | 二重引用符 | 左二重引用符 | 引用符</annotation>
+		<annotation cp="“" type="tts">左二重引用符</annotation>
+		<annotation cp="”">クオーテーションマーク | スマートクォート | 二重引用符 | 右二重引用符 | 引用符</annotation>
+		<annotation cp="”" type="tts">右二重引用符</annotation>
+		<annotation cp="„">クオーテーションマーク | スマートクォート | 下付き右二重引用符 | 下付き引用符 | 二重引用符 | 引用符</annotation>
+		<annotation cp="„" type="tts">下付き右二重引用符</annotation>
 		<annotation cp="«">カッコ | 二重ギュメ | 山パーレン | 左ギュメ | 左山括弧 | 引用符</annotation>
 		<annotation cp="«" type="tts">左山括弧</annotation>
 		<annotation cp="»">カッコ | 二重ギュメ | 右ギュメ | 右山括弧 | 山パーレン | 引用符</annotation>
 		<annotation cp="»" type="tts">右山括弧</annotation>
+		<annotation cp=")">カッコ | パーレン | 丸括弧 | 小括弧 | 括弧閉じ | 終わり括弧 | 閉じ括弧</annotation>
+		<annotation cp=")" type="tts">閉じ括弧</annotation>
+		<annotation cp="[">カッコ | ブラケット | 大括弧 | 角括弧 | 開き角括弧</annotation>
+		<annotation cp="[" type="tts">開き角括弧</annotation>
+		<annotation cp="]">カッコ | ブラケット | 大括弧 | 角括弧 | 閉じ角括弧</annotation>
+		<annotation cp="]" type="tts">閉じ角括弧</annotation>
+		<annotation cp="}">カッコ | ブレース | 中括弧 | 波括弧 | 閉じ波括弧</annotation>
+		<annotation cp="}" type="tts">閉じ波括弧</annotation>
+		<annotation cp="〈">カッコ | ギュメ | 山パーレン | 山括弧 | 山鉤 | 開き山括弧</annotation>
+		<annotation cp="〈" type="tts">開き山括弧</annotation>
+		<annotation cp="〉">カッコ | ギュメ | 山パーレン | 山括弧 | 山鉤 | 閉じ山括弧</annotation>
+		<annotation cp="〉" type="tts">閉じ山括弧</annotation>
+		<annotation cp="《">カッコ | 二重ギュメ | 二重山括弧 | 開き二重山括弧</annotation>
+		<annotation cp="《" type="tts">開き二重山括弧</annotation>
+		<annotation cp="》">カッコ | 二重ギュメ | 二重山括弧 | 閉じ二重山括弧</annotation>
+		<annotation cp="》" type="tts">閉じ二重山括弧</annotation>
+		<annotation cp="「">カッコ | 鉤括弧 | 開き鉤括弧</annotation>
+		<annotation cp="「" type="tts">開き鉤括弧</annotation>
+		<annotation cp="」">カッコ | 鉤括弧 | 閉じ鉤括弧</annotation>
+		<annotation cp="」" type="tts">閉じ鉤括弧</annotation>
+		<annotation cp="『">カッコ | 二重鉤括弧 | 開き二重鉤括弧</annotation>
+		<annotation cp="『" type="tts">開き二重鉤括弧</annotation>
+		<annotation cp="』">カッコ | 二重鉤括弧 | 閉じ二重鉤括弧</annotation>
+		<annotation cp="』" type="tts">閉じ二重鉤括弧</annotation>
+		<annotation cp="【">カッコ | 開き隅付き括弧 | 隅付き括弧 | 墨付き括弧</annotation>
+		<annotation cp="【" type="tts">開き隅付き括弧</annotation>
+		<annotation cp="】">カッコ | 閉じ隅付き括弧 | 隅付き括弧 | 墨付き括弧</annotation>
+		<annotation cp="】" type="tts">閉じ隅付き括弧</annotation>
+		<annotation cp="〔">カッコ | 亀の子括弧 | 亀甲パーレン | 亀甲括弧 | 開き亀甲括弧</annotation>
+		<annotation cp="〔" type="tts">開き亀甲括弧</annotation>
+		<annotation cp="〕">カッコ | 亀の子括弧 | 亀甲パーレン | 亀甲括弧 | 閉じ亀甲括弧</annotation>
+		<annotation cp="〕" type="tts">閉じ亀甲括弧</annotation>
+		<annotation cp="〖">カッコ | 白抜き | 開き白抜き隅付き括弧 | 隅付き括弧 | 墨付き括弧</annotation>
+		<annotation cp="〖" type="tts">開き白抜き隅付き括弧</annotation>
+		<annotation cp="〗">カッコ | 白抜き | 閉じ白抜き隅付き括弧 | 隅付き括弧 | 墨付き括弧</annotation>
+		<annotation cp="〗" type="tts">閉じ白抜き隅付き括弧</annotation>
 		<annotation cp="§">セクション | 段落 | 節 | 節記号 | 項</annotation>
 		<annotation cp="§" type="tts">節記号</annotation>
+		<annotation cp="¶">パラグラフ | ピルクロウ | 段落記号 | 記号</annotation>
+		<annotation cp="¶" type="tts">段落記号</annotation>
+		<annotation cp="@">アットマーク | 単価記号 | 記号</annotation>
+		<annotation cp="@" type="tts">アットマーク</annotation>
+		<annotation cp="*">アスタリスク | スター | ワイルドカード | 星印 | 記号</annotation>
+		<annotation cp="*" type="tts">アスタリスク</annotation>
+		<annotation cp="/">ストローク | スラッシュ | 斜線 | 記号</annotation>
+		<annotation cp="/" type="tts">スラッシュ</annotation>
+		<annotation cp="\">バックスラッシュ | 斜線 | 記号</annotation>
+		<annotation cp="\" type="tts">バックスラッシュ</annotation>
+		<annotation cp="&amp;">アンド | アンパサンド | 記号</annotation>
+		<annotation cp="&amp;" type="tts">アンパサンド</annotation>
+		<annotation cp="#">シャープ | ナンバーサイン | ハッシュマーク | 番号 | 記号</annotation>
+		<annotation cp="#" type="tts">ハッシュマーク</annotation>
+		<annotation cp="%">パーセント | 割合 | 百分率 | 記号</annotation>
+		<annotation cp="%" type="tts">パーセント</annotation>
+		<annotation cp="‰">パーミル | 割合 | 千分率 | 記号</annotation>
+		<annotation cp="‰" type="tts">パーミル</annotation>
 		<annotation cp="†">オベリスク | ダガー | 剣標 | 短剣符</annotation>
 		<annotation cp="†" type="tts">短剣符</annotation>
 		<annotation cp="‡">オベリスク | ダガー | ダブルダガー | 二重剣標 | 二重短剣符</annotation>
 		<annotation cp="‡" type="tts">二重短剣符</annotation>
 		<annotation cp="•">ビュレット | 点 | 箇条書き</annotation>
 		<annotation cp="•" type="tts">ビュレット</annotation>
+		<annotation cp="‧">ハイフネーション | 分綴 | 分綴点 | 点</annotation>
+		<annotation cp="‧" type="tts">分綴点</annotation>
+		<annotation cp="′">ダッシュ | プライム | 記号</annotation>
+		<annotation cp="′" type="tts">プライム</annotation>
+		<annotation cp="″">ダブルプライム | プライム | 記号</annotation>
+		<annotation cp="″" type="tts">ダブルプライム</annotation>
+		<annotation cp="‴">トリプルプライム | プライム | 記号</annotation>
+		<annotation cp="‴" type="tts">トリプルプライム</annotation>
+		<annotation cp="‸" draft="contributed">キャレット</annotation>
+		<annotation cp="‸" type="tts" draft="contributed">キャレット</annotation>
+		<annotation cp="※">※ | コメント | 注釈 | 米印 | 記号</annotation>
+		<annotation cp="※" type="tts">米印</annotation>
+		<annotation cp="⁂" draft="contributed">アステリズム</annotation>
+		<annotation cp="⁂" type="tts" draft="contributed">アステリズム</annotation>
+		<annotation cp="`">アクサングラーブ | アクセント | グレイヴ アクセント | 発音区別符号 | 記号</annotation>
+		<annotation cp="`" type="tts">グレイヴ アクセント</annotation>
+		<annotation cp="´">アキュート アクセント | アクサンテギュ | アクセント | 発音区別符号 | 記号</annotation>
+		<annotation cp="´" type="tts">アキュート アクセント</annotation>
+		<annotation cp="^">アクセント | キャレット | サーカムフレックス | 発音区別符号 | 記号</annotation>
+		<annotation cp="^" type="tts">サーカムフレックス</annotation>
+		<annotation cp="¨">アクセント | ウムラウト | ダイエリシス | トレマ | 発音区別符号 | 記号</annotation>
+		<annotation cp="¨" type="tts">ダイエリシス</annotation>
 		<annotation cp="°">度 | 時間 | 温度 | 角度</annotation>
 		<annotation cp="°" type="tts">度</annotation>
 		<annotation cp="℗">レコード | 原盤権 | 原盤権マーク | 著作権</annotation>
 		<annotation cp="℗" type="tts">原盤権マーク</annotation>
 		<annotation cp="←">左 | 左向矢印 | 左矢印 | 矢印</annotation>
 		<annotation cp="←" type="tts">左向矢印</annotation>
+		<annotation cp="↚" draft="contributed">斜線付き左向き矢印</annotation>
+		<annotation cp="↚" type="tts" draft="contributed">斜線付き左向き矢印</annotation>
 		<annotation cp="→">右 | 右向矢印 | 右矢印 | 矢印</annotation>
 		<annotation cp="→" type="tts">右向矢印</annotation>
+		<annotation cp="↛" draft="contributed">斜線付き右向き矢印</annotation>
+		<annotation cp="↛" type="tts" draft="contributed">斜線付き右向き矢印</annotation>
 		<annotation cp="↑">上 | 上向矢印 | 上矢印 | 矢印</annotation>
 		<annotation cp="↑" type="tts">上向矢印</annotation>
 		<annotation cp="↓">下 | 下向矢印 | 下矢印 | 矢印</annotation>
 		<annotation cp="↓" type="tts">下向矢印</annotation>
+		<annotation cp="↜" draft="contributed">左向き波線矢印</annotation>
+		<annotation cp="↜" type="tts" draft="contributed">左向き波線矢印</annotation>
+		<annotation cp="↝" draft="contributed">右向き波線矢印</annotation>
+		<annotation cp="↝" type="tts" draft="contributed">右向き波線矢印</annotation>
+		<annotation cp="↞" draft="contributed">左向き二重鏃矢印</annotation>
+		<annotation cp="↞" type="tts" draft="contributed">左向き二重鏃矢印</annotation>
+		<annotation cp="↟" draft="contributed">上向き二重鏃矢印</annotation>
+		<annotation cp="↟" type="tts" draft="contributed">上向き二重鏃矢印</annotation>
+		<annotation cp="↠" draft="contributed">右向き二重鏃矢印</annotation>
+		<annotation cp="↠" type="tts" draft="contributed">右向き二重鏃矢印</annotation>
+		<annotation cp="↡" draft="contributed">下向き二重鏃矢印</annotation>
+		<annotation cp="↡" type="tts" draft="contributed">下向き二重鏃矢印</annotation>
+		<annotation cp="↢" draft="contributed">尾付き左向き矢印</annotation>
+		<annotation cp="↢" type="tts" draft="contributed">尾付き左向き矢印</annotation>
+		<annotation cp="↣" draft="contributed">尾付き右向き矢印</annotation>
+		<annotation cp="↣" type="tts" draft="contributed">尾付き右向き矢印</annotation>
+		<annotation cp="↤" draft="contributed">棒からの左向き矢印</annotation>
+		<annotation cp="↤" type="tts" draft="contributed">棒からの左向き矢印</annotation>
+		<annotation cp="↥" draft="contributed">棒からの上向き矢印</annotation>
+		<annotation cp="↥" type="tts" draft="contributed">棒からの上向き矢印</annotation>
+		<annotation cp="↦" draft="contributed">棒からの右向き矢印</annotation>
+		<annotation cp="↦" type="tts" draft="contributed">棒からの右向き矢印</annotation>
+		<annotation cp="↧" draft="contributed">棒からの下向き矢印</annotation>
+		<annotation cp="↧" type="tts" draft="contributed">棒からの下向き矢印</annotation>
+		<annotation cp="↨" draft="contributed">下線付き上下矢印</annotation>
+		<annotation cp="↨" type="tts" draft="contributed">下線付き上下矢印</annotation>
+		<annotation cp="↫" draft="contributed">ループ付き左向き矢印</annotation>
+		<annotation cp="↫" type="tts" draft="contributed">ループ付き左向き矢印</annotation>
+		<annotation cp="↬" draft="contributed">ループ付き右向き矢印</annotation>
+		<annotation cp="↬" type="tts" draft="contributed">ループ付き右向き矢印</annotation>
+		<annotation cp="↭" draft="contributed">左右波線矢印</annotation>
+		<annotation cp="↭" type="tts" draft="contributed">左右波線矢印</annotation>
+		<annotation cp="↯" draft="contributed">下向きジグザグ矢印</annotation>
+		<annotation cp="↯" type="tts" draft="contributed">下向きジグザグ矢印</annotation>
+		<annotation cp="↰" draft="contributed">上向き左折矢印</annotation>
+		<annotation cp="↰" type="tts" draft="contributed">上向き左折矢印</annotation>
+		<annotation cp="↱" draft="contributed">上向き右折矢印</annotation>
+		<annotation cp="↱" type="tts" draft="contributed">上向き右折矢印</annotation>
+		<annotation cp="↲" draft="contributed">下向き左折矢印</annotation>
+		<annotation cp="↲" type="tts" draft="contributed">下向き左折矢印</annotation>
+		<annotation cp="↳" draft="contributed">下向き右折矢印</annotation>
+		<annotation cp="↳" type="tts" draft="contributed">下向き右折矢印</annotation>
+		<annotation cp="↴" draft="contributed">右向き下曲がり矢印</annotation>
+		<annotation cp="↴" type="tts" draft="contributed">右向き下曲がり矢印</annotation>
+		<annotation cp="↵" draft="contributed">下向き左曲がり矢印</annotation>
+		<annotation cp="↵" type="tts" draft="contributed">下向き左曲がり矢印</annotation>
 		<annotation cp="⇅">アップダウン | 上下矢印 | 上向矢印下向矢印 | 矢印</annotation>
 		<annotation cp="⇅" type="tts">上向矢印下向矢印</annotation>
 		<annotation cp="⇆">左右矢印 | 左向矢印右向矢印 | 往復 | 矢印</annotation>
@@ -63,10 +247,30 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="∇" type="tts">ナブラ</annotation>
 		<annotation cp="∈">元 | 包含 | 属する | 要素 | 集合</annotation>
 		<annotation cp="∈" type="tts">属する</annotation>
+		<annotation cp="+">プラス記号 | 加算 | 正符号 | 足す</annotation>
+		<annotation cp="+" type="tts">プラス記号</annotation>
+		<annotation cp="±">プラスマイナス | 複号</annotation>
+		<annotation cp="±" type="tts">プラスマイナス</annotation>
 		<annotation cp="÷">割り算 | 割り算記号 | 割る | 除算記号</annotation>
 		<annotation cp="÷" type="tts">除算記号</annotation>
 		<annotation cp="×">乗算記号 | 倍 | 掛ける | 掛け算 | 掛け算記号</annotation>
 		<annotation cp="×" type="tts">乗算記号</annotation>
+		<annotation cp="&lt;">より小さい | 不等号 | 小なり | 開始タグ</annotation>
+		<annotation cp="&lt;" type="tts">小なり</annotation>
+		<annotation cp="=">イコール | 等しい | 等号</annotation>
+		<annotation cp="=" type="tts">等号</annotation>
+		<annotation cp="≠">ノットイコール | 等しくない | 等号否定</annotation>
+		<annotation cp="≠" type="tts">等号否定</annotation>
+		<annotation cp="&gt;">より大きい | 不等号 | 大なり | 閉じタグ</annotation>
+		<annotation cp="&gt;" type="tts">大なり</annotation>
+		<annotation cp="¬">でない | 否定 | 否定記号</annotation>
+		<annotation cp="¬" type="tts">否定</annotation>
+		<annotation cp="|">バーティカルバー | パイプ | 否定論理積 | 棒 | 縦棒 | 縦線</annotation>
+		<annotation cp="|" type="tts">縦棒</annotation>
+		<annotation cp="~">チルダ | にょろ | 波線</annotation>
+		<annotation cp="~" type="tts">チルダ</annotation>
+		<annotation cp="−">マイナス記号 | 引く | 減算 | 負符号</annotation>
+		<annotation cp="−" type="tts">マイナス記号</annotation>
 		<annotation cp="⁻">マイナス | 上付きマイナス | 添え字</annotation>
 		<annotation cp="⁻" type="tts">上付きマイナス</annotation>
 		<annotation cp="√">ルート | 二乗根 | 平方根 | 根号</annotation>
@@ -77,8 +281,14 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="∩" type="tts">積集合</annotation>
 		<annotation cp="∪">合併集合 | 和集合 | 集合</annotation>
 		<annotation cp="∪" type="tts">和集合</annotation>
+		<annotation cp="≈">おおよそ等しい | ほぼ等しい | 約 | 近似</annotation>
+		<annotation cp="≈" type="tts">ほぼ等しい</annotation>
 		<annotation cp="≡">3本線 | 合同 | 合同記号 | 常に等しい | 恒等式</annotation>
 		<annotation cp="≡" type="tts">常に等しい</annotation>
+		<annotation cp="≤">より小さいか等しい | 不等号 | 以下 | 小なりイコール | 等号付き</annotation>
+		<annotation cp="≤" type="tts">小なりイコール</annotation>
+		<annotation cp="≥">より大きいか等しい | 不等号 | 以上 | 大なりイコール | 等号付き</annotation>
+		<annotation cp="≥" type="tts">大なりイコール</annotation>
 		<annotation cp="⊂">真部分集合 | 部分集合 | 集合</annotation>
 		<annotation cp="⊂" type="tts">真部分集合</annotation>
 		<annotation cp="▲">三角 | 上 | 上向黒三角 | 塗りつぶし | 矢印 | 黒三角</annotation>
@@ -93,6 +303,12 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="●" type="tts">黒丸</annotation>
 		<annotation cp="◯">中抜き | 丸 | 大きな白丸 | 白丸大 | 輪</annotation>
 		<annotation cp="◯" type="tts">白丸大</annotation>
+		<annotation cp="♪">八分音符 | 記号 | 音楽 | 音符</annotation>
+		<annotation cp="♪" type="tts">八分音符</annotation>
+		<annotation cp="♭">フラット | 記号 | 音楽 | 音符</annotation>
+		<annotation cp="♭" type="tts">フラット</annotation>
+		<annotation cp="♯">シャープ | 記号 | 音楽 | 音符</annotation>
+		<annotation cp="♯" type="tts">シャープ</annotation>
 		<annotation cp="😀">スマイル | にっこり | にっこり笑う | 笑う | 笑顔 | 顔</annotation>
 		<annotation cp="😀" type="tts">にっこり笑う</annotation>
 		<annotation cp="😃">スマイル | わーい | 笑顔 | 顔</annotation>
@@ -167,6 +383,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="😑" type="tts">無表情</annotation>
 		<annotation cp="😶">だんまり | 口なし | 口のない顔 | 沈黙 | 顔</annotation>
 		<annotation cp="😶" type="tts">口のない顔</annotation>
+		<annotation cp="😶‍🌫">うわの空 | ぼんやり | 夢中 | 放心状態 | 雲の中の顔 | 顔</annotation>
+		<annotation cp="😶‍🌫" type="tts">雲の中の顔</annotation>
 		<annotation cp="😏">にやり | ふっ | 薄笑いをする顔 | 顔</annotation>
 		<annotation cp="😏" type="tts">薄笑いをする顔</annotation>
 		<annotation cp="😒">ジト目 | しらけ | しらけた | しらける | 顔</annotation>
@@ -175,6 +393,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🙄" type="tts">上を見る顔</annotation>
 		<annotation cp="😬">いー | しかめっ面 | しかめ面 | しかめ顔 | 顔</annotation>
 		<annotation cp="😬" type="tts">しかめ面</annotation>
+		<annotation cp="😮‍💨">あきらめ | ため息 | ほっとした | 安心 | 息を吐く顔 | 顔</annotation>
+		<annotation cp="😮‍💨" type="tts">息を吐く顔</annotation>
 		<annotation cp="🤥">うそつきの顔 | ピノキオの顔 | 嘘つき | 顔</annotation>
 		<annotation cp="🤥" type="tts">うそつきの顔</annotation>
 		<annotation cp="😌">ほっ | ほっとした顔 | 安心 | 顔</annotation>
@@ -207,6 +427,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🥴" type="tts">ふらふらの顔</annotation>
 		<annotation cp="😵">ふらふら | めまい | 顔</annotation>
 		<annotation cp="😵" type="tts">めまい</annotation>
+		<annotation cp="😵‍💫">ふらふら | めまい | 渦巻き | 目がぐるぐる | 目が回る | 目を回した顔</annotation>
+		<annotation cp="😵‍💫" type="tts">目を回した顔</annotation>
 		<annotation cp="🤯">ショック | ぼんっ | 爆発 | 頭爆発 | 顔 | 驚き</annotation>
 		<annotation cp="🤯" type="tts">頭爆発</annotation>
 		<annotation cp="🤠">カウガール | カウボーイ | カウボーイの顔 | 顔</annotation>
@@ -349,6 +571,10 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="❣" type="tts">ハートのびっくり</annotation>
 		<annotation cp="💔">ハート | 別れた | 割れたハート | 失恋</annotation>
 		<annotation cp="💔" type="tts">割れたハート</annotation>
+		<annotation cp="❤‍🔥">ハート | 愛 | 火の付いた | 炎 | 燃えるハート | 聖なる心臓</annotation>
+		<annotation cp="❤‍🔥" type="tts">燃えるハート</annotation>
+		<annotation cp="❤‍🩹">ケガ | ハート | 傷ついた | 傷心 | 包帯 | 包帯を巻いたハート</annotation>
+		<annotation cp="❤‍🩹" type="tts">包帯を巻いたハート</annotation>
 		<annotation cp="❤">ハート | 赤いハート</annotation>
 		<annotation cp="❤" type="tts">赤いハート</annotation>
 		<annotation cp="🧡">オレンジのハート | ハート</annotation>
@@ -511,12 +737,16 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="👱" type="tts">金髪の人</annotation>
 		<annotation cp="👨">大人 | 男 | 男性 | 顔</annotation>
 		<annotation cp="👨" type="tts">男性</annotation>
-		<annotation cp="🧔">あごひげ | あごひげの男性 | ひげ | 男 | 顔</annotation>
-		<annotation cp="🧔" type="tts">あごひげの男性</annotation>
+		<annotation cp="🧔">あごひげ | あごひげの人 | ひげ | 人 | 顔</annotation>
+		<annotation cp="🧔" type="tts">あごひげの人</annotation>
+		<annotation cp="🧔‍♂">あごひげ | あごひげの男性 | ひげ | 男 | 顔</annotation>
+		<annotation cp="🧔‍♂" type="tts">あごひげの男性</annotation>
 		<annotation cp="👱‍♂">ブロンド | 男 | 男性 | 金髪 | 金髪の男性</annotation>
 		<annotation cp="👱‍♂" type="tts">金髪の男性</annotation>
 		<annotation cp="👩">大人 | 女 | 女性 | 顔</annotation>
 		<annotation cp="👩" type="tts">女性</annotation>
+		<annotation cp="🧔‍♀">あごひげ | あごひげの女性 | ひげ | 女 | 顔</annotation>
+		<annotation cp="🧔‍♀" type="tts">あごひげの女性</annotation>
 		<annotation cp="👱‍♀">ブロンド | 女 | 女性 | 金髪 | 金髪の女性</annotation>
 		<annotation cp="👱‍♀" type="tts">金髪の女性</annotation>
 		<annotation cp="🧓">お年寄り | 老人 | 顔 | 高齢者</annotation>
@@ -645,11 +875,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="👨‍🔬" type="tts">男性科学者</annotation>
 		<annotation cp="👩‍🔬">女 | 女性 | 女性科学者 | 科学者</annotation>
 		<annotation cp="👩‍🔬" type="tts">女性科学者</annotation>
-		<annotation cp="🧑‍💻">コンピュータ | デベロッパ | パソコン | プログラマ | 技術者</annotation>
+		<annotation cp="🧑‍💻">コンピュータ | パソコン | プログラマ | 技術者 | 開発者</annotation>
 		<annotation cp="🧑‍💻" type="tts">技術者</annotation>
-		<annotation cp="👨‍💻">コンピュータ | デベロッパ | パソコン | プログラマ | 男性 | 男性技術者</annotation>
+		<annotation cp="👨‍💻">コンピュータ | パソコン | プログラマ | 男性 | 男性技術者 | 開発者</annotation>
 		<annotation cp="👨‍💻" type="tts">男性技術者</annotation>
-		<annotation cp="👩‍💻">コンピュータ | デベロッパ | パソコン | プログラマ | 女性 | 女性技術者</annotation>
+		<annotation cp="👩‍💻">コンピュータ | パソコン | プログラマ | 女性 | 女性技術者 | 開発者</annotation>
 		<annotation cp="👩‍💻" type="tts">女性技術者</annotation>
 		<annotation cp="🧑‍🎤">アーティスト | シンガー | スター | ロッカー | 歌手</annotation>
 		<annotation cp="🧑‍🎤" type="tts">歌手</annotation>
@@ -721,13 +951,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="👲" type="tts">中華帽の男性</annotation>
 		<annotation cp="🧕">スカーフ | スカーフの女性 | ヒジャブ | ベール | 女 | 女性</annotation>
 		<annotation cp="🧕" type="tts">スカーフの女性</annotation>
-		<annotation cp="🤵">タキシード | タキシードの人 | 男 | 男性 | 結婚 | 花婿</annotation>
+		<annotation cp="🤵">タキシード | タキシードの人 | 結婚 | 花婿</annotation>
 		<annotation cp="🤵" type="tts">タキシードの人</annotation>
 		<annotation cp="🤵‍♂">タキシード | タキシードの男 | タキシードの男性 | 男 | 男性</annotation>
 		<annotation cp="🤵‍♂" type="tts">タキシードの男性</annotation>
 		<annotation cp="🤵‍♀">タキシード | タキシードの女 | タキシードの女性 | 女 | 女性</annotation>
 		<annotation cp="🤵‍♀" type="tts">タキシードの女性</annotation>
-		<annotation cp="👰">ベールの人 | 女 | 女性 | 結婚 | 花嫁 | 顔</annotation>
+		<annotation cp="👰">ベールの人 | 結婚 | 花嫁 | 顔</annotation>
 		<annotation cp="👰" type="tts">ベールの人</annotation>
 		<annotation cp="👰‍♂">ベール | ベールの男性 | 男 | 男性</annotation>
 		<annotation cp="👰‍♂" type="tts">ベールの男性</annotation>
@@ -979,7 +1209,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🛀" type="tts">風呂に入る人</annotation>
 		<annotation cp="🛌">ベッド | ベッドに寝る人 | ホテル | 寝る</annotation>
 		<annotation cp="🛌" type="tts">ベッドに寝る人</annotation>
-		<annotation cp="🧑‍🤝‍🧑">カップル | つなぐ | 人 | 友達 | 恋人 | 手 | 手をつなぐ | 手をつなぐ2人</annotation>
+		<annotation cp="🧑‍🤝‍🧑">カップル | 人 | 友達 | 恋人 | 手 | 手をつなぐ | 手をつなぐ2人</annotation>
 		<annotation cp="🧑‍🤝‍🧑" type="tts">手をつなぐ2人</annotation>
 		<annotation cp="👭">カップル | 友達 | 同性 | 女 | 恋人 | 手をつなぐ女性</annotation>
 		<annotation cp="👭" type="tts">手をつなぐ女性</annotation>
@@ -1009,7 +1239,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🦱" type="tts">巻き毛</annotation>
 		<annotation cp="🦳">グレー | 年配 | 白髪 | 老人 | 高齢者</annotation>
 		<annotation cp="🦳" type="tts">白髪</annotation>
-		<annotation cp="🦲">てい頭 | はげ頭 | 化学療法 | 坊主 | 毛がない</annotation>
+		<annotation cp="🦲">スキンヘッド | はげ頭 | 化学療法 | 坊主 | 毛がない</annotation>
 		<annotation cp="🦲" type="tts">はげ頭</annotation>
 		<annotation cp="🐵">サル | サルの顔 | 動物 | 猿 | 顔</annotation>
 		<annotation cp="🐵" type="tts">サルの顔</annotation>
@@ -1023,7 +1253,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🐶" type="tts">イヌの顔</annotation>
 		<annotation cp="🐕">イヌ | ペット | 動物 | 犬</annotation>
 		<annotation cp="🐕" type="tts">イヌ</annotation>
-		<annotation cp="🦮">アクセシビリティ | 犬 | 盲導犬 | 視覚 | 補助 | 障がい</annotation>
+		<annotation cp="🦮">アクセシビリティ | 犬 | 盲導犬 | 視覚 | 補助犬 | 障がい</annotation>
 		<annotation cp="🦮" type="tts">盲導犬</annotation>
 		<annotation cp="🐕‍🦺">アクセシビリティ | サービス | 介助犬 | 犬 | 補助</annotation>
 		<annotation cp="🐕‍🦺" type="tts">介助犬</annotation>
@@ -1267,7 +1497,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🌷" type="tts">チューリップ</annotation>
 		<annotation cp="🌱">双葉 | 新芽 | 芽</annotation>
 		<annotation cp="🌱" type="tts">新芽</annotation>
-		<annotation cp="🪴">ベランダ | 成長 | 植物 | 水やり | 緑 | 苗 | 鉢植え</annotation>
+		<annotation cp="🪴">ベランダ | 植木鉢 | 植物 | 水やり | 緑 | 苗 | 鉢植え</annotation>
 		<annotation cp="🪴" type="tts">鉢植え</annotation>
 		<annotation cp="🌲">常緑樹 | 木</annotation>
 		<annotation cp="🌲" type="tts">常緑樹</annotation>
@@ -1505,7 +1735,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🥛" type="tts">牛乳入りのコップ</annotation>
 		<annotation cp="☕">コーヒー | ホットドリンク | 温かい飲み物 | 紅茶 | 飲み物</annotation>
 		<annotation cp="☕" type="tts">温かい飲み物</annotation>
-		<annotation cp="🫖">お茶 | ティーポット | ポット | 茶器 | 飲み物</annotation>
+		<annotation cp="🫖">お茶 | ティーポット | 急須 | 茶器 | 飲み物</annotation>
 		<annotation cp="🫖" type="tts">ティーポット</annotation>
 		<annotation cp="🍵">お茶 | 湯飲み | 緑茶 | 飲み物</annotation>
 		<annotation cp="🍵" type="tts">湯飲み</annotation>
@@ -1635,17 +1865,17 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🗼" type="tts">東京タワー</annotation>
 		<annotation cp="🗽">アメリカ | ニューヨーク | 彫像 | 自由の女神</annotation>
 		<annotation cp="🗽" type="tts">自由の女神</annotation>
-		<annotation cp="⛪">キリスト教 | 建物 | 教会</annotation>
+		<annotation cp="⛪">キリスト教 | 宗教 | 建物 | 教会</annotation>
 		<annotation cp="⛪" type="tts">教会</annotation>
-		<annotation cp="🕌">イスラム教 | モスク | 建物</annotation>
+		<annotation cp="🕌">イスラム教 | モスク | 宗教 | 建物</annotation>
 		<annotation cp="🕌" type="tts">モスク</annotation>
 		<annotation cp="🛕">ヒンズー教 | ヒンドゥー教の寺院 | 宗教 | 寺 | 建物</annotation>
 		<annotation cp="🛕" type="tts">ヒンドゥー教の寺院</annotation>
-		<annotation cp="🕍">シナゴーグ | ユダヤ教 | 建物</annotation>
+		<annotation cp="🕍">シナゴーグ | ユダヤ教 | 宗教 | 建物</annotation>
 		<annotation cp="🕍" type="tts">シナゴーグ</annotation>
-		<annotation cp="⛩">建物 | 神社 | 神道 | 鳥居</annotation>
+		<annotation cp="⛩">宗教 | 建物 | 神社 | 神道 | 鳥居</annotation>
 		<annotation cp="⛩" type="tts">鳥居</annotation>
-		<annotation cp="🕋">イスラム教 | カーバ | メッカ | 建物 | 聖地</annotation>
+		<annotation cp="🕋">イスラム教 | カーバ | メッカ | 宗教 | 建物 | 聖地</annotation>
 		<annotation cp="🕋" type="tts">カーバ</annotation>
 		<annotation cp="⛲">噴水</annotation>
 		<annotation cp="⛲" type="tts">噴水</annotation>
@@ -2527,8 +2757,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🗡" type="tts">短刀</annotation>
 		<annotation cp="⚔">クロスした剣 | つるぎ | 刀 | 剣 | 武器</annotation>
 		<annotation cp="⚔" type="tts">クロスした剣</annotation>
-		<annotation cp="🔫">ピストル | リボルバー | 拳銃 | 武器 | 銃</annotation>
-		<annotation cp="🔫" type="tts">ピストル</annotation>
+		<annotation cp="🔫">ピストル | リボルバー | 拳銃 | 武器 | 水鉄砲 | 銃</annotation>
+		<annotation cp="🔫" type="tts">水鉄砲</annotation>
 		<annotation cp="🪃">オーストラリア | ブーメラン | 武器 | 玩具 | 跳ね返り | 返って来る</annotation>
 		<annotation cp="🪃" type="tts">ブーメラン</annotation>
 		<annotation cp="🏹">射手 | 弓矢 | 星座 | 武器 | 矢</annotation>
@@ -2719,6 +2949,8 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="↕" type="tts">上下矢印</annotation>
 		<annotation cp="↔">左右 | 左右矢印 | 矢印</annotation>
 		<annotation cp="↔" type="tts">左右矢印</annotation>
+		<annotation cp="↮" draft="contributed">斜線付き左右矢印</annotation>
+		<annotation cp="↮" type="tts" draft="contributed">斜線付き左右矢印</annotation>
 		<annotation cp="↩">カーブ | 右カーブ矢印 | 左 | 曲線 | 矢印</annotation>
 		<annotation cp="↩" type="tts">右カーブ矢印</annotation>
 		<annotation cp="↪">カーブ | 右 | 左カーブ矢印 | 曲線 | 矢印</annotation>
@@ -2860,13 +3092,13 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="⁉">! | ? | はてなマーク | びっくりマーク | 感嘆符疑問符 | 記号</annotation>
 		<annotation cp="⁉" type="tts">感嘆符疑問符</annotation>
 		<annotation cp="❓">? | クエスチョンマーク | はてなマーク | 疑問符 | 約物 | 記号 | 赤い疑問符</annotation>
-		<annotation cp="❓" type="tts">疑問符</annotation>
+		<annotation cp="❓" type="tts">赤い疑問符</annotation>
 		<annotation cp="❔">? | クエスチョンマーク | はてなマーク | 白い疑問符 | 約物 | 記号</annotation>
 		<annotation cp="❔" type="tts">白い疑問符</annotation>
 		<annotation cp="❕">! | エクスクラメーションマーク | びっくりマーク | 白い感嘆符 | 約物 | 記号</annotation>
 		<annotation cp="❕" type="tts">白い感嘆符</annotation>
 		<annotation cp="❗">! | エクスクラメーションマーク | びっくりマーク | 感嘆符 | 約物 | 記号 | 赤い感嘆符</annotation>
-		<annotation cp="❗" type="tts">感嘆符</annotation>
+		<annotation cp="❗" type="tts">赤い感嘆符</annotation>
 		<annotation cp="〰">波線 | 約物 | 記号</annotation>
 		<annotation cp="〰" type="tts">波線</annotation>
 		<annotation cp="💱">お金 | ドル | 両替 | 円 | 外貨両替 | 通貨</annotation>
@@ -3077,16 +3309,28 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 		<annotation cp="🏳‍⚧" type="tts">トランスジェンダーフラッグ</annotation>
 		<annotation cp="🏴‍☠">ジョリー・ロジャー | 宝物 | 海賊 | 海賊旗 | 略奪</annotation>
 		<annotation cp="🏴‍☠" type="tts">海賊旗</annotation>
+		<annotation cp="¢">クォーター | セント | ダイム | ニッケル | ペニー | 硬貨</annotation>
+		<annotation cp="¢" type="tts">セント</annotation>
+		<annotation cp="$">USD | アメリカドル | ドル | 合衆国ドル | 米ドル | 通貨</annotation>
+		<annotation cp="$" type="tts">ドル</annotation>
 		<annotation cp="£">EGP | GBP | エジプトポンド | ポンド | 英ポンド | 通貨</annotation>
 		<annotation cp="£" type="tts">ポンド</annotation>
 		<annotation cp="¥">CNY | JPY | 中国元 | 円 | 日本円 | 通貨</annotation>
 		<annotation cp="¥" type="tts">円</annotation>
+		<annotation cp="₥">ミル | 通貨</annotation>
+		<annotation cp="₥" type="tts">ミル</annotation>
+		<annotation cp="₩">KPW | KRW | ウォン | 北朝鮮ウォン | 通貨 | 韓国ウォン</annotation>
+		<annotation cp="₩" type="tts">ウォン</annotation>
 		<annotation cp="€">EUR | ユーロ | 通貨</annotation>
 		<annotation cp="€" type="tts">ユーロ</annotation>
+		<annotation cp="₱">フィリピンペソ | ペソ | メキシコペソ | 通貨</annotation>
+		<annotation cp="₱" type="tts">ペソ</annotation>
 		<annotation cp="₹">インドルピー | ルピー | 通貨</annotation>
 		<annotation cp="₹" type="tts">インドルピー</annotation>
 		<annotation cp="₽">ルーブル | ロシアルーブル | 通貨</annotation>
 		<annotation cp="₽" type="tts">ルーブル</annotation>
+		<annotation cp="₿">BTC | ビットコイン | 仮想通貨 | 通貨</annotation>
+		<annotation cp="₿" type="tts">ビットコイン</annotation>
 		<annotation cp="¹">1 | 上付き1 | 添え字</annotation>
 		<annotation cp="¹" type="tts">上付き1</annotation>
 		<annotation cp="²">2 | 2乗 | 上付き2 | 添え字</annotation>

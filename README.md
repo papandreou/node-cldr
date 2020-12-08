@@ -19,10 +19,10 @@ href="https://github.com/papandreou/inter">inter i18n library</a>, but can be
 used on its own.
 
 To understand the data itself, you might need to dive into the <a
-href="http://www.unicode.org/reports/tr35/tr35-29.html">LDML
+href="https://www.unicode.org/reports/tr35/tr35-61/tr35.html">LDML
 specification</a>, which describes the schema of the CLDR XML files.
 
-Comes bundled with the CLDR 37 release and isn't attempting to be backwards
+Comes bundled with the CLDR 38 release and isn't attempting to be backwards
 compatible with earlier versions.
 
 # Releases
