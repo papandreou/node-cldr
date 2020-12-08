@@ -30,7 +30,7 @@ describe('extractUnitPatterns', () => {
 
     expect(britishUnitPatterns.long.compoundUnit, 'to have keys', [
       'per',
-      'times',  
+      'times',
     ]);
     expect(britishUnitPatterns.short.compoundUnit.per, 'to equal', '{0}/{1}');
     expect(
