@@ -1,3 +1,14 @@
+### v5.8.0 (2020-12-12)
+
+#### Pull requests
+
+- [#134](https://github.com/papandreou/node-cldr/pull/134) Update CLDR to release 38 ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- Various minor updates
+
+#### Commits to master
+
+- [Fix parsing of weekData that never really worked](https://github.com/papandreou/node-cldr/commit/e298a0704f9158a682ac686869e6a82fa101ba53)
+
 ### v5.7.0 (2020-07-24)
 
 #### Pull requests
