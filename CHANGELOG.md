@@ -1,3 +1,16 @@
+### v6.1.0 (2021-04-19)
+
+#### Pull requests
+
+- [#141](https://github.com/papandreou/node-cldr/pull/141) Upgrade xmldom to version 0.6.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#139](https://github.com/papandreou/node-cldr/pull/139) Upgrade sinon to version 10.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#138](https://github.com/papandreou/node-cldr/pull/138) Upgrade xmldom to version 0.5.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [Adjust tests a bit](https://github.com/papandreou/node-cldr/commit/f20f7254571769acd67882d266f06214ff8709b3) ([Andreas Lind](mailto:andreas.lind@workday.com))
+- [Update to CLDR release 39](https://github.com/papandreou/node-cldr/commit/cf107069f5008e2bf8206a201b976d35fbbd51ed) ([Andreas Lind](mailto:andreas.lind@workday.com))
+
 ### v6.0.0 (2021-02-13)
 
 - [Drop support for node.js 8, add 14 \(semver-major\)](https://github.com/papandreou/node-cldr/commit/7f7f87b8c821435f389b70aa32fa01f0d26dc053) ([Andreas Lind](mailto:andreas.lind@peakon.com))
