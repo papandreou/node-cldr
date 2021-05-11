@@ -4,9 +4,8 @@ const cldr = require('../lib/cldr');
 
 describe('extractMeasurementSystemNames', () => {
   it('should extract the British English measurement systems correctly', () => {
-    const britishMeasurementSystemNames = cldr.extractMeasurementSystemNames(
-      'en_GB'
-    );
+    const britishMeasurementSystemNames =
+      cldr.extractMeasurementSystemNames('en_GB');
     expect(britishMeasurementSystemNames, 'to only have keys', [
       'metric',
       'UK',

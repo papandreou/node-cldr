@@ -175,9 +175,8 @@ describe('extractRbnfFunctionByType', () => {
 
     // https://github.com/papandreou/node-cldr/issues/33
     it('should render ordinals correctly in American English', () => {
-      const americanRbnfFunctionByType = cldr.extractRbnfFunctionByType(
-        'en_us'
-      );
+      const americanRbnfFunctionByType =
+        cldr.extractRbnfFunctionByType('en_us');
       americanRbnfFunctionByType.renderNumber = String;
       expect(
         americanRbnfFunctionByType.renderDigitsOrdinal(1),

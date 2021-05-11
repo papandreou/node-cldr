@@ -4,9 +4,8 @@ const cldr = require('../lib/cldr');
 
 describe('extractLocaleDisplayPattern', () => {
   it('should extract the British English patterns correctly', () => {
-    const britishLocaleDisplayPatterns = cldr.extractLocaleDisplayPattern(
-      'en_GB'
-    );
+    const britishLocaleDisplayPatterns =
+      cldr.extractLocaleDisplayPattern('en_GB');
     expect(britishLocaleDisplayPatterns, 'to only have keys', [
       'localePattern',
       'localeSeparator',
