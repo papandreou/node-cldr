@@ -1,3 +1,10 @@
+### v6.1.1 (2021-05-18)
+
+- [prettier --write '\*\*\/\*.js'](https://github.com/papandreou/node-cldr/commit/ae70f444795601d678fb443388c49323ce7f4ce8) ([Andreas Lind](mailto:andreas.lind@workday.com))
+- [Add support for new CLDR plural operands `e` and `c`.](https://github.com/papandreou/node-cldr/commit/c0305d14094966714656401389f051168087cf93) ([Paul Gschwendtner](mailto:paulgschwendtner@gmail.com))
+- [prettier --write '\*\*\/\*.{js,json,md}'](https://github.com/papandreou/node-cldr/commit/f3c9fd4a80e781109ff47b46357e50ae9f66fd0d) ([Andreas Lind](mailto:andreas.lind@workday.com))
+- [Update prettier to version 2.3.0](https://github.com/papandreou/node-cldr/commit/bf88ba5efa26bf66cc80c4868fedf7b87f8f6b88) ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
 ### v6.1.0 (2021-04-19)
 
 #### Pull requests
