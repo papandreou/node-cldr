@@ -50,6 +50,22 @@ const expectedOutputByTermAndInput = {
     1.03: 3,
     '1.230': 23,
   },
+  e: {
+    1: 0,
+    '1.0': 0,
+    '1.0.0': 0,
+    10e10: 0,
+    '10e10': 10,
+    '10': 0,
+  },
+  c: {
+    1: 0,
+    '1.0': 0,
+    '1.0.0': 0,
+    10e10: 0,
+    '10e10': 10,
+    '10': 0,
+  }
 };
 
 describe('cldrPluralRuleTermFunctionByName', () => {

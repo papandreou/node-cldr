@@ -135,6 +135,26 @@ describe('CldrPluralRuleSet', () => {
     );
   });
 
+  it('should encode the French plural rule function from CLDR 39 correctly', () => {
+    expect({
+      one: 'i = 0,1 @integer 0, 1 @decimal 0.0~1.5',
+      many: 'e = 0 and i != 0 and i % 1000000 = 0 and v = 0 or e != 0..5 @integer 1000000, 1c6, 2c6, 3c6, 4c6, 5c6, 6c6, … @decimal 1.0000001c6, 1.1c6, 2.0000001c6, 2.1c6, 3.0000001c6, 3.1c6, …',
+      other: ' @integer 2~17, 100, 1000, 10000, 100000, 1c3, 2c3, 3c3, 4c3, 5c3, 6c3, … @decimal 2.0~3.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, 1.0001c3, 1.1c3, 2.0001c3, 2.1c3, 3.0001c3, 3.1c3, …',
+    }, 'to encode to',
+    // prettier-ignore
+    function (n) {
+        /* eslint-disable */
+        const i = Math.floor(Math.abs(n)),
+          v = n.toString().replace(/^[^.]*\.?/, '').length,
+          e = (n = n.toString().match(/^\d+e(\d+)$/), n === null ? 0 : parseInt(n[1], 10));
+        if (typeof n === 'string') n = parseInt(n, 10);
+        if (i === 0 || i === 1) return 'one';
+        if (e === 0 && (!(i === 0) && (i % 1000000 === 0 && v === 0)) || !(e >= 0 && e <= 5)) return 'many';
+        return 'other';
+        /* eslint-enable */
+    });
+  });
+
   it('should encode the Slovak plural rule function from CLDR 29 correctly', () => {
     expect(
       {
