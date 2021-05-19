@@ -147,9 +147,10 @@ describe('CldrPluralRuleSet', () => {
       // prettier-ignore
       function (n) {
         /* eslint-disable */
+        let _tmpPlural;
         const i = Math.floor(Math.abs(n)),
           v = n.toString().replace(/^[^.]*\.?/, '').length,
-          e = (n = n.toString().match(/^\d+e(\d+)$/), n === null ? 0 : parseInt(n[1], 10));
+          e = (_tmpPlural = n.toString().match(/^\d+e(\d+)$/), _tmpPlural === null ? 0 : parseInt(_tmpPlural[1], 10));
         if (typeof n === 'string') n = parseInt(n, 10);
         if (i === 0 || i === 1) return 'one';
         if (e === 0 && (!(i === 0) && (i % 1000000 === 0 && v === 0)) || !(e >= 0 && e <= 5)) return 'many';
