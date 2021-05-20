@@ -57,6 +57,8 @@ const expectedOutputByTermAndInput = {
     10e10: 0,
     '10e10': 10,
     10: 0,
+    '10e-3': -3,
+    '10e+4': 4,
   },
   c: {
     1: 0,
@@ -65,6 +67,8 @@ const expectedOutputByTermAndInput = {
     10e10: 0,
     '10e10': 10,
     10: 0,
+    '10e-3': -3,
+    '10e+4': 4,
   },
 };
 

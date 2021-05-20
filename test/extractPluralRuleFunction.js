@@ -8,11 +8,12 @@ describe('extractPluralRuleFunction', () => {
   it('should extract the Romanian plural rule function correctly', () => {
     const romanianPluralRule = cldr.extractPluralRuleFunction('ro');
     // prettier-ignore
-    expect(romanianPluralRule, 'to equal', function anonymous(n) {
+    expect(romanianPluralRule, 'to equal', function anonymous(val) {
       /* eslint-disable */
-      const i = Math.floor(Math.abs(n)),
-        v = n.toString().replace(/^[^.]*\.?/, '').length;
-      if (typeof n === 'string') n = parseInt(n, 10);
+      const n = Number(val),
+        i = Math.floor(Math.abs(val)),
+        v = val.toString().replace(/^[^.]*\.?/, '').length;
+        if (isNaN(n)) throw Error('n is not a number');
       if (i === 1 && v === 0) return 'one';
       if (
         !(v === 0) ||
