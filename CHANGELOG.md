@@ -1,3 +1,7 @@
+### v7.0.0 (2021-05-20)
+
+- [#144](https://github.com/papandreou/node-cldr/pull/144) Do not accidentally override `n` operand when generating `e` and `c` operands ([Paul Gschwendtner](mailto:paulgschwendtner@gmail.com))
+
 ### v6.1.1 (2021-05-18)
 
 - [prettier --write '\*\*\/\*.js'](https://github.com/papandreou/node-cldr/commit/ae70f444795601d678fb443388c49323ce7f4ce8) ([Andreas Lind](mailto:andreas.lind@workday.com))
