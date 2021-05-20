@@ -26,7 +26,7 @@ describe('CldrPluralRuleSet', () => {
               params: [
                 {
                   type: 'Identifier',
-                  name: 'n',
+                  name: 'val',
                 },
               ],
               body: {
@@ -45,15 +45,17 @@ describe('CldrPluralRuleSet', () => {
   );
 
   it('should encode some basic test cases correctly', () => {
-    expect({ one: 'n is 4 or n is not 6' }, 'to encode to', function (n) {
-      /* eslint-disable */
-      if (typeof n === 'string') n = parseInt(n, 10);
+    expect({ one: 'n is 4 or n is not 6' }, 'to encode to', function (val) {
+      const n = Number(val);
+      if (isNaN(n)) throw Error('n is not a number');
       if (n === 4 || n !== 6) return 'one';
       return 'other';
       /* eslint-enable */
     });
 
-    expect({}, 'to encode to', function (n) {
+    expect({}, 'to encode to', function (val) {
+      const n = Number(val);
+      if (isNaN(n)) throw Error('n is not a number');
       return 'other';
     });
 
@@ -64,11 +66,12 @@ describe('CldrPluralRuleSet', () => {
         many: 'v = 0 and n != 0..10 and n % 10 = 0',
       },
       'to encode to',
-      function (n) {
+      function (val) {
         /* eslint-disable */
-        const i = Math.floor(Math.abs(n)),
-          v = n.toString().replace(/^[^.]*\.?/, '').length;
-        if (typeof n === 'string') n = parseInt(n, 10);
+        const n = Number(val),
+          i = Math.floor(Math.abs(val)),
+          v = val.toString().replace(/^[^.]*\.?/, '').length;
+        if (isNaN(n)) throw Error('n is not a number');
         if (i === 1 && v === 0) return 'one';
         if (i === 2 && v === 0) return 'two';
         // prettier-ignore
@@ -87,11 +90,12 @@ describe('CldrPluralRuleSet', () => {
           ' @integer 0, 2~16, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0, 2.0~3.4, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …',
       },
       'to encode to',
-      function (n) {
+      function (val) {
         /* eslint-disable */
-        const i = Math.floor(Math.abs(n)),
-          t = parseInt(n.toString().replace(/^[^.]*\.?|0+$/g, ''), 10) || 0;
-        if (typeof n === 'string') n = parseInt(n, 10);
+        const n = Number(val),
+          i = Math.floor(Math.abs(val)),
+          t = parseInt(val.toString().replace(/^[^.]*\.?|0+$/g, ''), 10) || 0;
+        if (isNaN(n)) throw Error('n is not a number');
         if (n === 1 || (!(t === 0) && (i === 0 || i === 1))) return 'one';
         return 'other';
         /* eslint-enable */
@@ -109,11 +113,12 @@ describe('CldrPluralRuleSet', () => {
       },
       'to encode to',
       // prettier-ignore
-      function(n) {
+      function (val) {
         /* eslint-disable */
-        const v = n.toString().replace(/^[^.]*\.?/, '').length,
-          f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
-        if (typeof n === 'string') n = parseInt(n, 10);
+        const n = Number(val),
+          v = val.toString().replace(/^[^.]*\.?/, '').length,
+          f = parseInt(val.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
+          if (isNaN(n)) throw Error('n is not a number');
         if (
           n % 10 === 0 ||
           ((n % 100 === Math.floor(n % 100) &&
@@ -145,12 +150,13 @@ describe('CldrPluralRuleSet', () => {
       },
       'to encode to',
       // prettier-ignore
-      function (n) {
+      function (val) {
         /* eslint-disable */
-        const i = Math.floor(Math.abs(n)),
-          v = n.toString().replace(/^[^.]*\.?/, '').length,
-          e = (n = n.toString().match(/^\d+e(\d+)$/), n === null ? 0 : parseInt(n[1], 10));
-        if (typeof n === 'string') n = parseInt(n, 10);
+        const n = Number(val),
+          i = Math.floor(Math.abs(val)),
+          v = val.toString().replace(/^[^.]*\.?/, '').length,
+          e = parseInt(val.toString().replace(/^[^e]*(e([-+]?\d+))?/, '$2')) || 0;
+          if (isNaN(n)) throw Error('n is not a number');
         if (i === 0 || i === 1) return 'one';
         if (e === 0 && (!(i === 0) && (i % 1000000 === 0 && v === 0)) || !(e >= 0 && e <= 5)) return 'many';
         return 'other';
@@ -169,12 +175,13 @@ describe('CldrPluralRuleSet', () => {
       },
       'to encode to',
       // prettier-ignore
-      function(n) {
+      function (val) {
         /* eslint-disable */
-        const i = Math.floor(Math.abs(n)),
-          v = n.toString().replace(/^[^.]*\.?/, '').length,
-          f = parseInt(n.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
-        if (typeof n === 'string') n = parseInt(n, 10);
+        const n = Number(val),
+          i = Math.floor(Math.abs(val)),
+          v = val.toString().replace(/^[^.]*\.?/, '').length,
+          f = parseInt(val.toString().replace(/^[^.]*\.?/, ''), 10) || 0;
+          if (isNaN(n)) throw Error('n is not a number');
         if (
           (v === 0 && (i % 10 === 1 && !(i % 100 === 11))) ||
           (f % 10 === 1 && !(f % 100 === 11))
