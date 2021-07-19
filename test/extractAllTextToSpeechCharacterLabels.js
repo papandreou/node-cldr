@@ -2,9 +2,9 @@ const expect = require('unexpected');
 
 const cldr = require('../lib/cldr');
 
-describe('extractAllTTSCharacterLabels', () => {
+describe('extractAllTextToSpeechCharacterLabels', () => {
   it('should extract all the Australian English text-to-speech character labels correctly', () => {
-    expect(cldr.extractAllTTSCharacterLabels('en_AU'), 'to satisfy', {
+    expect(cldr.extractAllTextToSpeechCharacterLabels('en_AU'), 'to satisfy', {
       '🖖': 'Vulcan salute',
       '🖖🏽': 'Vulcan salute: medium skin tone',
       '🤙': 'call-me hand',
