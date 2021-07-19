@@ -1,3 +1,9 @@
+### v7.1.0 (2021-07-19)
+
+- [#151](https://github.com/papandreou/node-cldr/pull/151) Add extractors for text-to-speech character labels ([Chris Wilkinson](mailto:chriswilkinson84@gmail.com))
+- [#146](https://github.com/papandreou/node-cldr/pull/146) Upgrade sinon to version 11.1.1 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#147](https://github.com/papandreou/node-cldr/pull/147) Upgrade eslint-plugin-mocha to version 9.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
 ### v7.0.0 (2021-05-20)
 
 - [#144](https://github.com/papandreou/node-cldr/pull/144) Do not accidentally override `n` operand when generating `e` and `c` operands ([Paul Gschwendtner](mailto:paulgschwendtner@gmail.com))
