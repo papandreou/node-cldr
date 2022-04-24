@@ -7,8 +7,8 @@ describe('extractAllTextToSpeechCharacterLabels', () => {
     expect(cldr.extractAllTextToSpeechCharacterLabels('en_AU'), 'to satisfy', {
       '🖖': 'Vulcan salute',
       '🖖🏽': 'Vulcan salute: medium skin tone',
-      '🤙': 'call-me hand',
-      '🤙🏽': 'call-me hand: medium skin tone',
+      '🤙': 'call me hand',
+      '🤙🏽': 'call me hand: medium skin tone',
       '👋': 'waving hand',
       '👋🏽': 'waving hand: medium skin tone',
     });
