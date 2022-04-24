@@ -6,5 +6,5 @@ This zipfile contains [CLDR](http://cldr.unicode.org) Common Data.
 
 See [LICENSE.txt](./LICENSE.txt)
 
->Copyright © 2019-2020 Unicode, Inc. All rights reserved.
+>Copyright © 2019-2022 Unicode, Inc. All rights reserved.
 >Distributed under the Terms of Use in https://www.unicode.org/copyright.html
