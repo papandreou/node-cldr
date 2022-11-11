@@ -1,3 +1,6 @@
+### v7.3.0 (2022-04-24)
+ - CLDR upgraded to v42
+
 ### v7.2.0 (2022-04-24)
 
 #### Pull requests
