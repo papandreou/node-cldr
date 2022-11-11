@@ -13,11 +13,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	</identity>
 	<annotations>
 		<annotation cp="{">brace | bracket | curly brace | curly bracket | gullwing | left curly bracket | open curly bracket</annotation>
-		<annotation cp="🏻">light skin tone | skin tone</annotation>
-		<annotation cp="🏼">medium-light skin tone | skin tone</annotation>
-		<annotation cp="🏽">medium skin tone | skin tone</annotation>
-		<annotation cp="🏾">medium-dark skin tone | skin tone</annotation>
-		<annotation cp="🏿">dark skin tone | skin tone</annotation>
 		<annotation cp="،">Arabic | comma</annotation>
 		<annotation cp="،" type="tts">Arabic comma</annotation>
 		<annotation cp="؛">Arabic | Arabic semicolon | semi-colon</annotation>
@@ -28,25 +23,24 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="’">apostrophe | curly quote | quote | right apostrophe | single quote | smart quote</annotation>
 		<annotation cp="“">curly quotes | double quote | left quotation mark | quotation | quote | smart quotation</annotation>
 		<annotation cp="”">curly quotes | double quote | quotation | quote | right quotation mark | smart quotation</annotation>
-		<annotation cp=")">bracket | close parenthesis | parens | parenthesis | round bracket</annotation>
+		<annotation cp=")">bracket | close parenthesis | paren | parens | parenthesis | right round bracket | round bracket</annotation>
 		<annotation cp="[">bracket | crotchet | left square bracket | open square bracket | square bracket</annotation>
 		<annotation cp="]">bracket | close square bracket | crotchet | right square bracket | square bracket</annotation>
 		<annotation cp="}">brace | bracket | close curly bracket | curly brace | curly bracket | gullwing | right curly bracket</annotation>
-		<annotation cp="〈">angle bracket | bracket | chevron | diamond brackets | left angle bracket | pointy bracket | tuple</annotation>
-		<annotation cp="〉">angle bracket | bracket | chevron | diamond brackets | pointy bracket | right angle bracket | tuple</annotation>
-		<annotation cp="《">bracket | double angle bracket | left double angle bracket</annotation>
-		<annotation cp="》">bracket | double angle bracket | right double angle bracket</annotation>
-		<annotation cp="「">bracket | corner bracket | left corner bracket</annotation>
-		<annotation cp="」">bracket | corner bracket | right corner bracket</annotation>
-		<annotation cp="『">bracket | hollow corner bracket | left hollow corner bracket</annotation>
-		<annotation cp="』">bracket | hollow corner bracket | right hollow corner bracket</annotation>
-		<annotation cp="【">bracket | left black lenticular bracket | lens bracket | lenticular bracket</annotation>
-		<annotation cp="】">bracket | lens bracket | lenticular bracket | right black lenticular bracket</annotation>
+		<annotation cp="〈">angle bracket | bracket | chevron | diamond brackets | left angle bracket | open angle bracket | pointy bracket | tuple</annotation>
+		<annotation cp="〉">angle bracket | bracket | chevron | close angle bracket | diamond brackets | pointy bracket | right angle bracket | tuple</annotation>
+		<annotation cp="《">bracket | double angle bracket | left double angle bracket | open double angle bracket</annotation>
+		<annotation cp="》">bracket | close double angle bracket | double angle bracket | right double angle bracket</annotation>
+		<annotation cp="「">bracket | corner bracket | left corner bracket | open corner bracket</annotation>
+		<annotation cp="」">bracket | close corner bracket | corner bracket | right corner bracket</annotation>
+		<annotation cp="『">bracket | hollow corner bracket | left hollow corner bracket | open hollow corner bracket</annotation>
+		<annotation cp="』">bracket | close hollow corner bracket | hollow corner bracket | right hollow corner bracket</annotation>
+		<annotation cp="【">bracket | left black lenticular bracket | lens bracket | lenticular bracket | open black lens bracket</annotation>
+		<annotation cp="】">bracket | close black lens bracket | lens bracket | lenticular bracket | right black lenticular bracket</annotation>
 		<annotation cp="〔">bracket | left tortoise shell bracket | open tortoise shell bracket | shell bracket | tortoise shell bracket</annotation>
 		<annotation cp="〕">bracket | close tortoise shell bracket | right tortoise shell bracket | shell bracket | tortoise shell bracket</annotation>
-		<annotation cp="〖">bracket | hollow lens bracket | hollow lenticular bracket | left hollow lenticular bracket</annotation>
-		<annotation cp="〗">bracket | hollow lens bracket | hollow lenticular bracket | right hollow lenticular bracket</annotation>
-		<annotation cp="@">ampersat | arobase | arroba | at mark | at sign | at-sign | commercial at | email | strudel</annotation>
+		<annotation cp="〖">bracket | hollow lens bracket | hollow lenticular bracket | left hollow lenticular bracket | open hollow lens bracket</annotation>
+		<annotation cp="〗">bracket | close hollow lens bracket | hollow lens bracket | hollow lenticular bracket | right hollow lenticular bracket</annotation>
 		<annotation cp="@" type="tts">at sign</annotation>
 		<annotation cp="%">per cent | per-cent | percent | percentage</annotation>
 		<annotation cp="↹">leftwards arrow to bar over rightwards arrow to bar</annotation>
@@ -58,6 +52,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="∎">end of proof | end proof | halmos | q.e.d. | qed | tombstone</annotation>
 		<annotation cp="∎" type="tts">end of proof</annotation>
 		<annotation cp="∑">mathematics | n-ary summation | sigma | summation</annotation>
+		<annotation cp="&lt;">less than | less-than sign | open tag | tag</annotation>
 		<annotation cp="&lt;" type="tts">less than</annotation>
 		<annotation cp="&gt;">close tag | greater than | greater-than sign | tag</annotation>
 		<annotation cp="&gt;" type="tts">greater than</annotation>
@@ -126,7 +121,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="▭">hollow rectangle | white rectangle</annotation>
 		<annotation cp="▮">black vertical rectangle | filled vertical rectangle</annotation>
 		<annotation cp="▰">black parallelogram | filled parallelogram</annotation>
-		<annotation cp="▲">arrow | black up-pointing triangle | triangle | up</annotation>
+		<annotation cp="▲">arrow | black up-pointing triangle | filled up-pointing triangle | triangle | up</annotation>
 		<annotation cp="△">hollow up-pointing triangle | white up-pointing triangle</annotation>
 		<annotation cp="▴">black up-pointing small triangle | filled up-pointing small triangle</annotation>
 		<annotation cp="▵">hollow up-pointing small triangle | white up-pointing small triangle</annotation>
@@ -135,7 +130,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="▹">hollow right-pointing small triangle | white right-pointing small triangle</annotation>
 		<annotation cp="►">black right-pointing pointer | filled right-pointing pointer</annotation>
 		<annotation cp="▻">hollow right-pointing pointer | white right-pointing pointer</annotation>
-		<annotation cp="▼">arrow | black down-pointing triangle | down | triangle</annotation>
+		<annotation cp="▼">arrow | black down-pointing triangle | down | filled down-pointing triangle | triangle</annotation>
 		<annotation cp="▽">hollow down-pointing triangle | white down-pointing triangle</annotation>
 		<annotation cp="▾">black down-pointing small triangle | filled down-pointing small triangle</annotation>
 		<annotation cp="▿">hollow down-pointing small triangle | white down-pointing small triangle</annotation>
@@ -193,35 +188,54 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="⪍" type="tts">less-than above similar or equal</annotation>
 		<annotation cp="⪚">double-line equal to or greater-than | inequality | mathematics</annotation>
 		<annotation cp="⪚" type="tts">double-line equal to or greater-than</annotation>
-		<annotation cp="🪪">credentials | ID | licence | security</annotation>
-		<annotation cp="🫤">disappointed | meh | sceptical | unsure</annotation>
-		<annotation cp="🫱">hand | right | rightward | rightwards</annotation>
-		<annotation cp="🫱" type="tts">rightward hand</annotation>
-		<annotation cp="🫲">hand | left | leftward | leftwards</annotation>
-		<annotation cp="🫲" type="tts">leftward hand</annotation>
-		<annotation cp="🛞">circle | turn | tyre</annotation>
-		<annotation cp="🟰">equality | math | maths</annotation>
 		<annotation cp="🙃">face | upside down | upside-down face</annotation>
 		<annotation cp="😍">eye | face | love | smile | smiling face with heart eyes | smiling face with heart-eyes</annotation>
 		<annotation cp="😍" type="tts">smiling face with heart eyes</annotation>
 		<annotation cp="😋">delicious | face | face savouring food | savoring | savouring | smile | yum</annotation>
+		<annotation cp="😋" type="tts">face savouring food</annotation>
 		<annotation cp="🤭">face with hand over mouth | oops | whoops</annotation>
+		<annotation cp="🫥">depressed | disappear | dotted line face | dotted-line face | hide | introvert | invisible</annotation>
+		<annotation cp="🫥" type="tts">dotted-line face</annotation>
+		<annotation cp="🤥">face | lie | lying face | Pinocchio</annotation>
 		<annotation cp="😷">cold | doctor | face | face with medical mask | ill | mask | sick</annotation>
-		<annotation cp="🤕">bandage | face | face with head bandage | hurt | injury</annotation>
+		<annotation cp="🤕">bandage | face | face with head bandage | face with head-bandage | hurt | injury</annotation>
 		<annotation cp="🤧">bless you | face | gesundheit | sneeze | sneezing face</annotation>
 		<annotation cp="😵‍💫">dizzy | face with spiral eyes | hypnotised | spiral | trouble | whoa</annotation>
+		<annotation cp="🤠">cowboy | cowboy-hat face | cowgirl | face | hat</annotation>
+		<annotation cp="🤠" type="tts">cowboy-hat face</annotation>
 		<annotation cp="😤">angry | face | face with steam from nose | frustration | triumph | won</annotation>
-		<annotation cp="😻">cat | eye | face | heart | love | smile | smiling cat face with heart eyes | smiling cat face with heart-eyes</annotation>
+		<annotation cp="👽">alien | creature | ET | extraterrestrial | face | fantasy | UFO</annotation>
+		<annotation cp="👾">alien | creature | ET | extraterrestrial | face | monster | UFO</annotation>
+		<annotation cp="😻">cat | eye | face | heart | love | smile | smiling cat face with heart eyes | smiling cat with heart-eyes</annotation>
 		<annotation cp="😻" type="tts">smiling cat face with heart eyes</annotation>
-		<annotation cp="🗨">dialogue | left speech bubble | speech</annotation>
+		<annotation cp="💯">100 | full | hundred | hundred percent | hundred points | one hundred | score</annotation>
+		<annotation cp="💬">balloon | bubble | comic | dialog | dialogue | speech</annotation>
+		<annotation cp="🗨">balloon | bubble | dialog | dialogue | left speech bubble | speech</annotation>
+		<annotation cp="🖖">finger | hand | Spock | Vulcan | Vulcan salute</annotation>
+		<annotation cp="🖖" type="tts">Vulcan salute</annotation>
+		<annotation cp="🫱">hand | right | rightward | rightwards</annotation>
+		<annotation cp="🫱" type="tts">rightward hand</annotation>
+		<annotation cp="🫲">hand | left | leftward | leftwards</annotation>
+		<annotation cp="🫲" type="tts">leftward hand</annotation>
+		<annotation cp="🫳">dismiss | drop | palm down hand | palm-down hand | shoo</annotation>
+		<annotation cp="🫳" type="tts">palm-down hand</annotation>
+		<annotation cp="🫴">beckon | catch | come | offer | palm up hand | palm-up hand</annotation>
+		<annotation cp="🫴" type="tts">palm-up hand</annotation>
+		<annotation cp="🫷">high five | leftward | leftward pushing hand | leftward-pushing hand | push | refuse | stop | wait</annotation>
+		<annotation cp="🫷" type="tts">leftward-pushing hand</annotation>
+		<annotation cp="🫸">high five | push | refuse | rightward | rightward pushing hand | rightward-pushing hand | stop | wait</annotation>
+		<annotation cp="🫸" type="tts">rightward-pushing hand</annotation>
 		<annotation cp="👌">hand | OK | perfect</annotation>
 		<annotation cp="🤞">cross | crossed fingers | finger | good luck | hand | luck</annotation>
 		<annotation cp="🤟">hand | ILY | love you gesture | love-you gesture</annotation>
 		<annotation cp="🤘">finger | hand | horns | rock on | sign of the horns</annotation>
-		<annotation cp="🤙">call | call me hand | call-me hand | hand</annotation>
+		<annotation cp="🤙">call | call me hand | call-me hand | hand | hang loose | Shaka</annotation>
+		<annotation cp="🤙" type="tts">call-me hand</annotation>
 		<annotation cp="🤛">fist | left-facing fist | leftward</annotation>
 		<annotation cp="🤜">fist | right-facing fist | rightward</annotation>
 		<annotation cp="🙏">ask | folded hands | hand | high five | please | pray | thanks</annotation>
+		<annotation cp="💪">biceps | comic | flex | flexed bicep | muscle</annotation>
+		<annotation cp="💪" type="tts">flexed bicep</annotation>
 		<annotation cp="🦻">accessibility | ear with hearing aid | hard of hearing | hearing impaired</annotation>
 		<annotation cp="👧">girl | young</annotation>
 		<annotation cp="🧏">accessibility | deaf | deaf person | ear | hear | hearing impaired</annotation>
@@ -231,38 +245,54 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🧑‍🚒">engine | fire | firefighter | firetruck | truck</annotation>
 		<annotation cp="👨‍🚒">fire truck | firefighter | fireman | man</annotation>
 		<annotation cp="👩‍🚒">engine | fire | firefighter | firetruck | firewoman | truck | woman</annotation>
+		<annotation cp="🤴">fairy tale | fantasy | prince</annotation>
 		<annotation cp="🎅">celebration | Christmas | Claus | Father | Santa</annotation>
 		<annotation cp="🤶">celebration | Christmas | Claus | Mother | Mrs.</annotation>
 		<annotation cp="🧑‍🎄">Claus, Christmas | Mx. Claus</annotation>
 		<annotation cp="🧑‍🎄" type="tts">Mx. Claus</annotation>
-		<annotation cp="💇">barber | beauty | haircut | parlour | person getting haircut</annotation>
+		<annotation cp="💇">barber | beauty | haircut | parlor | parlour | person getting haircut | salon</annotation>
 		<annotation cp="🏋">lifter | person lifting weights | weight | weightlifter</annotation>
 		<annotation cp="🤹">balance | juggle | multi-task | multitask | person juggling | skill</annotation>
 		<annotation cp="🤹‍♂">juggling | man | multi-task | multitask</annotation>
 		<annotation cp="🤹‍♀">juggling | multi-task | multitask | woman</annotation>
-		<annotation cp="👭">couple | hand | holding hands | two women holding hands | women</annotation>
-		<annotation cp="👬">couple | Gemini | holding hands | men | twins | two men holding hands | zodiac</annotation>
+		<annotation cp="👭">couple | hand | holding hands | two women holding hands | women | women holding hands</annotation>
+		<annotation cp="👬">couple | Gemini | holding hands | men | men holding hands | twins | two men holding hands | zodiac</annotation>
 		<annotation cp="🦳">gray | grey | hair | old | white</annotation>
 		<annotation cp="🐫">Bactrian | camel | hump | two-hump camel</annotation>
+		<annotation cp="🦣">extinct | extinction | large | mammoth | tusk | woolly</annotation>
 		<annotation cp="🐞" type="tts">ladybug</annotation>
 		<annotation cp="🌾">ear | grain | rice | sheaf | sheaf of rice</annotation>
+		<annotation cp="🍀" type="tts">four-leaf clover</annotation>
+		<annotation cp="🧄">flavoring | flavouring | garlic</annotation>
+		<annotation cp="🧅">flavoring | flavouring | onion</annotation>
 		<annotation cp="🌰">chestnut | nut | plant</annotation>
-		<annotation cp="🥐">bread | crescent roll | croissant | food | French</annotation>
+		<annotation cp="🫚">beer | ginger | root | spice</annotation>
+		<annotation cp="🫚" type="tts">ginger</annotation>
+		<annotation cp="🥐">bread | breakfast | crescent | croissant | food | French | roll</annotation>
 		<annotation cp="🥖">baguette | bread | food | French</annotation>
+		<annotation cp="🥞">breakfast | crepe | crêpe | food | hotcake | pancake | pancakes</annotation>
 		<annotation cp="🧇">breakfast | iron | unclear | vague | waffle</annotation>
 		<annotation cp="🥩">chop | cut of meat | lamb chop | pork chop | steak</annotation>
 		<annotation cp="🍟">French | fries</annotation>
 		<annotation cp="🍟" type="tts">French fries</annotation>
+		<annotation cp="🌭">frank | frankfurter | hot dog | hotdog | sausage</annotation>
 		<annotation cp="🌮">Mexican | taco</annotation>
 		<annotation cp="🌯">burrito | Mexican | wrap</annotation>
+		<annotation cp="🫔">Mexican | tamale | wrapped</annotation>
 		<annotation cp="🧆">chick pea | chickpea | falafel | meatball</annotation>
 		<annotation cp="🍥">cake | fish | fish cake with swirl | narutomaki | pastry | swirl</annotation>
-		<annotation cp="🍦">cream | dessert | ice | soft | sweet</annotation>
+		<annotation cp="🍦">cream | dessert | ice | icecream | soft | soft serve | soft-serve ice cream | sweet</annotation>
+		<annotation cp="🍦" type="tts">soft-serve ice cream</annotation>
 		<annotation cp="🍬">candy | dessert | sweet | sweets</annotation>
 		<annotation cp="🍶">bar | beverage | bottle | cup | drink | sake | saké</annotation>
+		<annotation cp="🍾">bar | bottle | bottle with popping cork | bubbly | cork | drink | popping</annotation>
+		<annotation cp="🍻">bar | beer | cheers | clink | clinking beer mugs | drink | mug</annotation>
+		<annotation cp="🥂">celebrate | cheers | clink | clinking glasses | drink | glass</annotation>
+		<annotation cp="🥃">glass | liquor | shot | tumbler | whiskey | whisky</annotation>
+		<annotation cp="🧋">boba | bubble | milk | pearl | tea</annotation>
 		<annotation cp="🍴">cooking | cutlery | fork | fork and knife | knife | knife and fork</annotation>
-		<annotation cp="🗻">Fuji | mount Fuji | mountain</annotation>
-		<annotation cp="🗻" type="tts">mount Fuji</annotation>
+		<annotation cp="🗻">Fuji | Mount Fuji | mountain</annotation>
+		<annotation cp="🗻" type="tts">Mount Fuji</annotation>
 		<annotation cp="🏛">classical | classical building | column</annotation>
 		<annotation cp="🏪">convenience | dépanneur | store</annotation>
 		<annotation cp="🗼">Tokyo | Tower</annotation>
@@ -276,11 +306,16 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="⛩" type="tts">Shinto shrine</annotation>
 		<annotation cp="🕋">Islam | kaaba | Kaaba | Muslim | religion</annotation>
 		<annotation cp="🕋" type="tts">Kaaba</annotation>
+		<annotation cp="🌃">night | night with stars | star | starry night</annotation>
+		<annotation cp="🏙">city | cityscape | skyline</annotation>
+		<annotation cp="🌆">city | cityscape at dusk | dusk | evening | landscape | skyline at dusk | sunset</annotation>
+		<annotation cp="🎠">carousel | horse | merry-go-round</annotation>
 		<annotation cp="🎡">amusement park | Ferris | theme park | wheel</annotation>
 		<annotation cp="🎡" type="tts">Ferris wheel</annotation>
 		<annotation cp="🚃">car | electric | railway | train | tram | trolley bus | trolleybus</annotation>
 		<annotation cp="🚄">high-speed train | railway | Shinkansen | speed | train</annotation>
 		<annotation cp="🚅">bullet | railway | Shinkansen | speed | train</annotation>
+		<annotation cp="🚇">metro | subway | tube | underground</annotation>
 		<annotation cp="🚇" type="tts">subway</annotation>
 		<annotation cp="🚊">car | streetcar | tram | tramcar | trolley | trolley bus | trolleybus</annotation>
 		<annotation cp="🚋">car | streetcar | tram | tramcar | trolley | trolley bus | trolleybus</annotation>
@@ -295,6 +330,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🛣" type="tts">highway</annotation>
 		<annotation cp="⛽" type="tts">gas pump</annotation>
 		<annotation cp="🛥" type="tts">motorboat</annotation>
+		<annotation cp="✈">aeroplane | airplane | flight</annotation>
+		<annotation cp="🛩">aeroplane | airplane | small airplane | small plane</annotation>
+		<annotation cp="🛫">aeroplane | airplane | check-in | departure | departures | flight departure | plane departure</annotation>
+		<annotation cp="🛬">aeroplane | airplane | airplane arrival | arrivals | arriving | flight arrival | landing | plan arrival</annotation>
+		<annotation cp="🛸">flying saucer | spaceship | UFO</annotation>
 		<annotation cp="🕧">12 | 12:30 | clock | half past twelve | thirty | twelve | twelve-thirty</annotation>
 		<annotation cp="🕧" type="tts">twelve thirty</annotation>
 		<annotation cp="🕜">1 | 1:30 | clock | half past one | one | one-thirty | thirty</annotation>
@@ -333,48 +373,62 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🥏">flying disc | Frisbee | ultimate</annotation>
 		<annotation cp="🏏">ball | bat | cricket | cricket match | game</annotation>
 		<annotation cp="🏒" type="tts">hockey</annotation>
+		<annotation cp="🏓">ball | bat | game | paddle | ping pong | ping-pong | table tennis</annotation>
+		<annotation cp="🥋">judo | karate | martial arts | martial arts uniform | MMA | taekwondo | uniform</annotation>
+		<annotation cp="🎣">fish | fishing pole | fishing rod | pole</annotation>
 		<annotation cp="🤿">diving | diving mask | scuba | snorkelling</annotation>
 		<annotation cp="🥌">curling rock | curling stone | game | rock</annotation>
 		<annotation cp="🥌" type="tts">curling rock</annotation>
-		<annotation cp="🧿">bead | charm | evil eye | nazar | nazar amulet | talisman</annotation>
+		<annotation cp="🎯">bull’s-eye | bullseye | dart | direct hit | game | hit | target</annotation>
+		<annotation cp="🎱">8 | ball | billiard | eight | game | magic 8 ball | pool 8 ball</annotation>
+		<annotation cp="🪆">doll | nesting | nesting dolls | Russia</annotation>
 		<annotation cp="🀄">game | Mahjong | Mahjong red dragon | red</annotation>
 		<annotation cp="🀄" type="tts">Mahjong red dragon</annotation>
 		<annotation cp="👕">clothing | shirt | t-shirt | T-shirt | tee-shirt | tshirt</annotation>
+		<annotation cp="👕" type="tts">T-shirt</annotation>
 		<annotation cp="🩱">bathing suit | one-piece swimsuit | swimming costume</annotation>
 		<annotation cp="🩴">beach sandal | flip-flop | sandal | thong | zōri</annotation>
 		<annotation cp="🩴" type="tts">flip-flop</annotation>
-		<annotation cp="🥿">ballet flat | flat shoe | pump | slip-on | slipper</annotation>
 		<annotation cp="🧢" type="tts">baseball cap</annotation>
 		<annotation cp="💎">diamond | gem | gem stone | gemstone | jewel</annotation>
 		<annotation cp="💎" type="tts">gemstone</annotation>
 		<annotation cp="📯" type="tts">post horn</annotation>
+		<annotation cp="💻">computer | laptop | PC | personal</annotation>
 		<annotation cp="💾">computer | disk | diskette | floppy</annotation>
+		<annotation cp="📺">television | TV | video</annotation>
+		<annotation cp="📼">tape | VHS | video | videocassette | videotape</annotation>
 		<annotation cp="💷">banknote | bill | currency | money | note | pound | sterling</annotation>
 		<annotation cp="✉">e-mail | email | envelope | letter</annotation>
-		<annotation cp="📫">closed | closed postbox with raised flag | mail | mailbox | post | post box | postbox</annotation>
-		<annotation cp="📪">closed | closed postbox with lowered flag | mail | mailbox | post | post box | postbox</annotation>
-		<annotation cp="📬">mail | mailbox | open | open postbox with raised flag | post | post box | postbox</annotation>
-		<annotation cp="📭">mail | mailbox | open | open postbox with lowered flag | post | post box | postbox</annotation>
+		<annotation cp="📫">closed | closed mailbox with raised flag | closed postbox with raised flag | mail | mailbox | post | post box | postbox</annotation>
+		<annotation cp="📪">closed | closed mailbox with lowered flag | closed postbox with lowered flag | mail | mailbox | post | post box | postbox</annotation>
+		<annotation cp="📬">mail | mailbox | open | open mailbox with raised flag | open postbox with raised flag | post | post box | postbox</annotation>
+		<annotation cp="📭">mail | mailbox | open | open mailbox with lowered flag | open postbox with lowered flag | post | post box | postbox</annotation>
 		<annotation cp="📮">mail | mailbox | post | post box | postbox</annotation>
 		<annotation cp="📮" type="tts">mailbox</annotation>
 		<annotation cp="📐">ruler | set | set square | triangle | triangular ruler</annotation>
 		<annotation cp="🔒">closed | locked | padlock</annotation>
 		<annotation cp="🔓">lock | open | padlock | unlock | unlocked</annotation>
-		<annotation cp="🦯">accessibility | blind | guide cane</annotation>
-		<annotation cp="🩹">injury | plaster | sticking plaster</annotation>
+		<annotation cp="🦯">accessibility | blind | guide cane | white cane</annotation>
+		<annotation cp="🧬">biologist | DNA | evolution | gene | genetics | life</annotation>
+		<annotation cp="🧬" type="tts">DNA</annotation>
+		<annotation cp="🩹">adhesive bandage | injury | plaster | sticking plaster</annotation>
+		<annotation cp="🩻">bones | doctor | medical | skeleton | X-ray</annotation>
+		<annotation cp="🩻" type="tts">X-ray</annotation>
 		<annotation cp="🛋">couch | couch and lamp | hotel | lamp | sofa | sofa and lamp</annotation>
 		<annotation cp="🚽">lavatory | toilet</annotation>
 		<annotation cp="🪤">bait | mouse | mousetrap | snare | trap</annotation>
 		<annotation cp="🪤" type="tts">mousetrap</annotation>
 		<annotation cp="🪒">cut-throat | razor | sharp | shave</annotation>
 		<annotation cp="🛒">basket | cart | shopping | trolley</annotation>
+		<annotation cp="⚰">casket | coffin | death</annotation>
+		<annotation cp="🧿">bead | charm | evil eye | nazar | nazar amulet | talisman</annotation>
+		<annotation cp="🪪">credentials | ID | identification card | licence | security</annotation>
 		<annotation cp="🚮">garbage | litter | litter bin | litter in bin sign | trash</annotation>
 		<annotation cp="🚹">bathroom | lavatory | men’s | men’s room | restroom | washroom | wc</annotation>
 		<annotation cp="🚺">bathroom | ladies’ room | lavatory | restroom | washroom | wc | women’s | women’s room</annotation>
 		<annotation cp="🚺" type="tts">ladies’ room</annotation>
 		<annotation cp="🚻">bathroom | lavatory | restroom | washroom | WC</annotation>
 		<annotation cp="🚻" type="tts">washroom</annotation>
-		<annotation cp="🚾">closet | lavatory | restroom | toilet | water | wc</annotation>
 		<annotation cp="✡">David | Jewish | Judaism | religion | star | Star of David</annotation>
 		<annotation cp="✡" type="tts">Star of David</annotation>
 		<annotation cp="☯">religion | Tao | Taoist | yang | yin</annotation>
@@ -389,11 +443,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🔽">arrow | button | down | downward button | downwards button | red</annotation>
 		<annotation cp="🔽" type="tts">downward button</annotation>
 		<annotation cp="📳">cell | mobile | mode | phone | telephone | vibrate | vibration</annotation>
-		<annotation cp="✖">× | cancel | heavy multiplication sign | multiplication | sign | x</annotation>
-		<annotation cp="⁉">! | !? | ? | interrobang | mark | punctuation | question</annotation>
+		<annotation cp="⁉">! | !? | ? | exclamation question mark | interrobang | mark | punctuation | question</annotation>
 		<annotation cp="✅">✓ | button | check | mark | tick</annotation>
 		<annotation cp="☑">✓ | box | check | check box with check | tick | tick box with tick</annotation>
 		<annotation cp="®">r | registered | trademark</annotation>
+		<annotation cp="™" type="tts">trademark</annotation>
 		<annotation cp="🔠">ABCD | input | Latin | letters | uppercase</annotation>
 		<annotation cp="🔠" type="tts">input Latin uppercase</annotation>
 		<annotation cp="🔡">abcd | input | Latin | letters | lowercase</annotation>
