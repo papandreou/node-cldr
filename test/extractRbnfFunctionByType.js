@@ -254,7 +254,7 @@ describe('extractRbnfFunctionByType', () => {
   describe('with locales that have a non-latin default numbering system', function () {
     it('should support a numbering system with different digits', function () {
       const renderers = cldr.extractRbnfFunctionByType('ar');
-      expect(renderers.renderDigitsOrdinal(3), 'to equal', '٣.');
+      expect(renderers.renderDigitsOrdinal(3), 'to equal', '٣');
     });
 
     it('should support an algorithmic numbering system', function () {
@@ -265,7 +265,7 @@ describe('extractRbnfFunctionByType', () => {
         .returns('roman');
       try {
         const renderers = cldr.extractRbnfFunctionByType('ar');
-        expect(renderers.renderDigitsOrdinal(3), 'to equal', 'III.');
+        expect(renderers.renderDigitsOrdinal(3), 'to equal', 'III');
       } finally {
         cldr.extractDefaultNumberSystemId.restore();
       }
