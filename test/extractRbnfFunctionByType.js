@@ -271,4 +271,16 @@ describe('extractRbnfFunctionByType', () => {
       }
     });
   });
+
+  describe('with the Russian RBNF rules', function () {
+    // Regression test for https://github.com/papandreou/node-cldr/issues/174
+    it('should render a number', function () {
+      const renderers = cldr.extractRbnfFunctionByType('ru');
+      expect(
+        renderers.renderSpelloutCardinalMasculine(123),
+        'to equal',
+        'сто двадцать три'
+      );
+    });
+  });
 });
