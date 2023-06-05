@@ -1,10 +1,20 @@
+### v7.4.1 (2023-06-05)
+
+- [Support more \[ ... \] variants in RBNF rules Fixes \#174](https://github.com/papandreou/node-cldr/commit/43a362a21ad3f43e02e75185db3bac532a457dbe) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Add vscode debugger launch config](https://github.com/papandreou/node-cldr/commit/54352b8e8be09ee43a1225ecc05a19c35bcb2c06) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [replace depracated environment](https://github.com/papandreou/node-cldr/commit/25ba30271adce04d164868ca97a2e1dd70b4de6a) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [syntax](https://github.com/papandreou/node-cldr/commit/2c6bbc4f027ec6f7a78319b2553200d8fd6feff9) ([rotsee](mailto:leo_wallentin@hotmail.com))
+
 ### v7.4.0 (2023-04-13)
 
- - CLDR upgraded to v43
+#### Pull requests
 
-### v7.3.0 (2022-11-11)
+- [#172](https://github.com/papandreou/node-cldr/pull/172)  ([rotsee](mailto:leo_wallentin@hotmail.com))
 
- - CLDR upgraded to v42
+#### Commits to master
+
+- [v7.4.0: CLDR 43](https://github.com/papandreou/node-cldr/commit/25efb35558c40d8bc523b591955c4091f90cfe2a) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [Fix CHANGELOG generation in preversion script now that an npm env var changed](https://github.com/papandreou/node-cldr/commit/8dd6ee35193df27c4cd0f85912f7827a720cd258) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
 
 ### v7.2.0 (2022-04-24)
 
