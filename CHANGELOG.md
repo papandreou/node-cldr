@@ -2,7 +2,7 @@
 
 - [Support more \[ ... \] variants in RBNF rules Fixes \#174](https://github.com/papandreou/node-cldr/commit/43a362a21ad3f43e02e75185db3bac532a457dbe) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
 - [Add vscode debugger launch config](https://github.com/papandreou/node-cldr/commit/54352b8e8be09ee43a1225ecc05a19c35bcb2c06) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
-- [replace depracated environment](https://github.com/papandreou/node-cldr/commit/25ba30271adce04d164868ca97a2e1dd70b4de6a) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [replace deprecated environment](https://github.com/papandreou/node-cldr/commit/25ba30271adce04d164868ca97a2e1dd70b4de6a) ([rotsee](mailto:leo_wallentin@hotmail.com))
 - [syntax](https://github.com/papandreou/node-cldr/commit/2c6bbc4f027ec6f7a78319b2553200d8fd6feff9) ([rotsee](mailto:leo_wallentin@hotmail.com))
 
 ### v7.4.0 (2023-04-13)
