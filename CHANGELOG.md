@@ -1,3 +1,9 @@
+### v7.5.0 (2023-11-04)
+
+#### Pull requests
+
+- [CLDR 44 and minor dependency upgrades](https://github.com/papandreou/node-cldr/pull/176)  ([rotsee](mailto:leo_wallentin@hotmail.com))
+
 ### v7.4.1 (2023-06-05)
 
 - [Support more \[ ... \] variants in RBNF rules Fixes \#174](https://github.com/papandreou/node-cldr/commit/43a362a21ad3f43e02e75185db3bac532a457dbe) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
