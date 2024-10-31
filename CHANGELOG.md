@@ -1,14 +1,26 @@
-### v7.5.0 (2023-11-04)
+### v7.6.0
 
 #### Pull requests
 
-- [CLDR 44 and minor dependency upgrades](https://github.com/papandreou/node-cldr/pull/176)  ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [#177](https://github.com/papandreou/node-cldr/pull/177) Update xpath → 0.0.34 \(unknown\) ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [CLDR 45](https://github.com/papandreou/node-cldr/commit/5e11f36e9efc09c8cc42f926209b21d071b84868) ([rotsee](mailto:mejl@leowallentin.se))
+- [CLDR45](https://github.com/papandreou/node-cldr/commit/83a673b8f5805a3ddc01adf0681a34d9b18e6319) ([rotsee](mailto:mejl@leowallentin.se))
+- [updated dev dependencies](https://github.com/papandreou/node-cldr/commit/f8af258798597e00ab9121b9dbf9e7d8320b5545) ([rotsee](mailto:mejl@leowallentin.se))
+- [Update README.md](https://github.com/papandreou/node-cldr/commit/6b516f68c1e4d5d368b3ad7ebed5affabf908394) ([Leo Wallentin](mailto:mejl@leowallentin.se))
+
+### v7.5.0
+
+- [#176](https://github.com/papandreou/node-cldr/pull/176)  ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [#175](https://github.com/papandreou/node-cldr/pull/175) Update xpath → 0.0.33 \(unknown\) ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
 
 ### v7.4.1 (2023-06-05)
 
 - [Support more \[ ... \] variants in RBNF rules Fixes \#174](https://github.com/papandreou/node-cldr/commit/43a362a21ad3f43e02e75185db3bac532a457dbe) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
 - [Add vscode debugger launch config](https://github.com/papandreou/node-cldr/commit/54352b8e8be09ee43a1225ecc05a19c35bcb2c06) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
-- [replace deprecated environment](https://github.com/papandreou/node-cldr/commit/25ba30271adce04d164868ca97a2e1dd70b4de6a) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [replace depracated environment](https://github.com/papandreou/node-cldr/commit/25ba30271adce04d164868ca97a2e1dd70b4de6a) ([rotsee](mailto:leo_wallentin@hotmail.com))
 - [syntax](https://github.com/papandreou/node-cldr/commit/2c6bbc4f027ec6f7a78319b2553200d8fd6feff9) ([rotsee](mailto:leo_wallentin@hotmail.com))
 
 ### v7.4.0 (2023-04-13)
@@ -54,12 +66,12 @@
 
 ### v7.0.0 (2021-05-20)
 
-- [#144](https://github.com/papandreou/node-cldr/pull/144) Do not accidentally override `n` operand when generating `e` and `c` operands ([Paul Gschwendtner](mailto:paulgschwendtner@gmail.com))
+- [#144](https://github.com/papandreou/node-cldr/pull/144) Do not accidentally override \`n\` operand when generating \`e\` and \`c\` operands ([Paul Gschwendtner](mailto:paulgschwendtner@gmail.com))
 
 ### v6.1.1 (2021-05-18)
 
 - [prettier --write '\*\*\/\*.js'](https://github.com/papandreou/node-cldr/commit/ae70f444795601d678fb443388c49323ce7f4ce8) ([Andreas Lind](mailto:andreas.lind@workday.com))
-- [Add support for new CLDR plural operands `e` and `c`.](https://github.com/papandreou/node-cldr/commit/c0305d14094966714656401389f051168087cf93) ([Paul Gschwendtner](mailto:paulgschwendtner@gmail.com))
+- [Add support for new CLDR plural operands \`e\` and \`c\`.](https://github.com/papandreou/node-cldr/commit/c0305d14094966714656401389f051168087cf93) ([Paul Gschwendtner](mailto:paulgschwendtner@gmail.com))
 - [prettier --write '\*\*\/\*.{js,json,md}'](https://github.com/papandreou/node-cldr/commit/f3c9fd4a80e781109ff47b46357e50ae9f66fd0d) ([Andreas Lind](mailto:andreas.lind@workday.com))
 - [Update prettier to version 2.3.0](https://github.com/papandreou/node-cldr/commit/bf88ba5efa26bf66cc80c4868fedf7b87f8f6b88) ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
 
