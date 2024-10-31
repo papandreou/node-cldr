@@ -22,12 +22,12 @@ describe('extractNumberPatterns', () => {
     expect(
       britishNumberPatterns.decimal.long,
       'to have keys',
-      [1000, 10000, 100000]
+      [1000, 10000, 100000],
     );
     expect(
       britishNumberPatterns.decimal.short,
       'to have keys',
-      [1000, 10000, 100000]
+      [1000, 10000, 100000],
     );
 
     expect(britishNumberPatterns.currency, 'to only have keys', [

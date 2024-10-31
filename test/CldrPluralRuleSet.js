@@ -41,7 +41,7 @@ describe('CldrPluralRuleSet', () => {
         value = escodegen.generate(esprima.parse('(' + value.toString() + ')'));
       }
       expect(beautifiedFunction, 'to equal', value);
-    }
+    },
   );
 
   it('should encode some basic test cases correctly', () => {
@@ -78,7 +78,7 @@ describe('CldrPluralRuleSet', () => {
         if (v === 0 && (!(n >= 0 && n <= 10) && n % 10 === 0)) return 'many';
         return 'other';
         /* eslint-enable */
-      }
+      },
     );
   });
 
@@ -99,7 +99,7 @@ describe('CldrPluralRuleSet', () => {
         if (n === 1 || (!(t === 0) && (i === 0 || i === 1))) return 'one';
         return 'other';
         /* eslint-enable */
-      }
+      },
     );
   });
 
@@ -136,7 +136,7 @@ describe('CldrPluralRuleSet', () => {
           return 'one';
         return 'other';
         /* eslint-enable */
-      }
+      },
     );
   });
 
@@ -161,7 +161,7 @@ describe('CldrPluralRuleSet', () => {
         if (e === 0 && (!(i === 0) && (i % 1000000 === 0 && v === 0)) || !(e >= 0 && e <= 5)) return 'many';
         return 'other';
         /* eslint-enable */
-    }
+    },
     );
   });
 
@@ -199,7 +199,7 @@ describe('CldrPluralRuleSet', () => {
           return 'few';
         return 'other';
         /* eslint-enable */
-      }
+      },
     );
   });
 });

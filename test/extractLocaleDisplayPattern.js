@@ -15,12 +15,12 @@ describe('extractLocaleDisplayPattern', () => {
     expect(
       britishLocaleDisplayPatterns.localeSeparator,
       'to equal',
-      '{0}, {1}'
+      '{0}, {1}',
     );
     expect(
       britishLocaleDisplayPatterns.localeKeyTypePattern,
       'to equal',
-      '{0}: {1}'
+      '{0}: {1}',
     );
   });
 });

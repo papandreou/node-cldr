@@ -30,7 +30,7 @@ describe('cldr', function () {
             expect(
               () => cldr[propertyName]('foobarquux'),
               'to throw',
-              'No data for locale id: foobarquux'
+              'No data for locale id: foobarquux',
             );
           });
 
@@ -38,7 +38,7 @@ describe('cldr', function () {
             expect(
               () => cldr[propertyName]('da_foobarquux'),
               'to throw',
-              'No data for locale id: da_foobarquux'
+              'No data for locale id: da_foobarquux',
             );
           });
         });

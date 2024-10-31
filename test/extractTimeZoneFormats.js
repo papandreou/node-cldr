@@ -25,12 +25,12 @@ describe('extractTimeZoneFormats', () => {
     expect(
       britishTimeZoneFormats.regions.daylight,
       'to equal',
-      '{0} Daylight Time'
+      '{0} Daylight Time',
     );
     expect(
       britishTimeZoneFormats.regions.standard,
       'to equal',
-      '{0} Standard Time'
+      '{0} Standard Time',
     );
   });
 });

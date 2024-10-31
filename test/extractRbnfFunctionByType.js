@@ -8,7 +8,7 @@ function beautifyJavaScript(functionOrAst) {
   let ast;
   if (typeof functionOrAst === 'function') {
     ast = esprima.parse(
-      functionOrAst.toString().replace(/^function\s*\(/, 'function anonymous(')
+      functionOrAst.toString().replace(/^function\s*\(/, 'function anonymous('),
     );
   } else {
     ast = functionOrAst;
@@ -20,7 +20,7 @@ expect.addAssertion(
   '<function> to have the same ast as <function>',
   (expect, subject, value) => {
     expect(beautifyJavaScript(subject), 'to equal', beautifyJavaScript(value));
-  }
+  },
 );
 
 describe('extractRbnfFunctionByType', () => {
@@ -148,7 +148,7 @@ describe('extractRbnfFunctionByType', () => {
             if (n >= 1) return 'üks';
             return 'null';
             /* eslint-enable */
-          }
+          },
         );
       });
 
@@ -156,7 +156,7 @@ describe('extractRbnfFunctionByType', () => {
         expect(
           estonianRbnfFunctionByType.renderSpelloutCardinal(2439871),
           'to equal',
-          'kaks miljonit nelisada kolmkümmend üheksa tuhat kaheksasada seitsekümmend üks'
+          'kaks miljonit nelisada kolmkümmend üheksa tuhat kaheksasada seitsekümmend üks',
         );
       });
     });
@@ -169,7 +169,7 @@ describe('extractRbnfFunctionByType', () => {
           .renderSpelloutNumbering(2439871)
           .replace(/\u00ad/g, ''),
         'to equal',
-        'to millioner firehundrede og niogtredive tusind ottehundrede og enoghalvfjerds'
+        'to millioner firehundrede og niogtredive tusind ottehundrede og enoghalvfjerds',
       );
     });
 
@@ -181,22 +181,22 @@ describe('extractRbnfFunctionByType', () => {
       expect(
         americanRbnfFunctionByType.renderDigitsOrdinal(1),
         'to equal',
-        '1st'
+        '1st',
       );
       expect(
         americanRbnfFunctionByType.renderDigitsOrdinal(2),
         'to equal',
-        '2nd'
+        '2nd',
       );
       expect(
         americanRbnfFunctionByType.renderDigitsOrdinal(3),
         'to equal',
-        '3rd'
+        '3rd',
       );
       expect(
         americanRbnfFunctionByType.renderDigitsOrdinal(4),
         'to equal',
-        '4th'
+        '4th',
       );
     });
   });
@@ -209,7 +209,7 @@ describe('extractRbnfFunctionByType', () => {
       expect(
         swedishRbnfFunctionByType.renderSpelloutCardinalNeuter(-3),
         'to equal',
-        'minus tre'
+        'minus tre',
       );
     });
 
@@ -220,7 +220,7 @@ describe('extractRbnfFunctionByType', () => {
         'to have the same ast as',
         function (n) {
           return this.renderSpelloutNumbering(n);
-        }
+        },
       );
     });
   });
@@ -231,7 +231,7 @@ describe('extractRbnfFunctionByType', () => {
     expect(
       swedishRbnfFunctionByType.renderSpelloutCardinalNeuter(1800000),
       'to equal',
-      'en miljon åtta\xadhundra\xadtusen'
+      'en miljon åtta\xadhundra\xadtusen',
     );
   });
 
@@ -247,7 +247,7 @@ describe('extractRbnfFunctionByType', () => {
     expect(
       renderers.renderSpelloutCardinal(2.0095),
       'to equal',
-      'two point zero zero nine five'
+      'two point zero zero nine five',
     );
   });
 
@@ -279,7 +279,7 @@ describe('extractRbnfFunctionByType', () => {
       expect(
         renderers.renderSpelloutCardinalMasculine(123),
         'to equal',
-        'сто двадцать три'
+        'сто двадцать три',
       );
     });
   });

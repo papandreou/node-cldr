@@ -25,7 +25,7 @@ describe('extractUnitPatterns', () => {
     expect(
       britishUnitPatterns.long.unit.volumeLiter.other,
       'to equal',
-      '{0} litres'
+      '{0} litres',
     );
 
     expect(britishUnitPatterns.long.compoundUnit, 'to have keys', [
@@ -36,7 +36,7 @@ describe('extractUnitPatterns', () => {
     expect(
       britishUnitPatterns.long.compoundUnit.per,
       'to equal',
-      '{0} per {1}'
+      '{0} per {1}',
     );
   });
 });

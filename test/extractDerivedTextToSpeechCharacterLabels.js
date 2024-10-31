@@ -11,7 +11,7 @@ describe('extractDerivedTextToSpeechCharacterLabels', () => {
         '🖖🏽': 'Vulcan salute: medium skin tone',
         '🤙🏽': 'call me hand: medium skin tone',
         '👋🏽': 'waving hand: medium skin tone',
-      }
+      },
     );
   });
 });

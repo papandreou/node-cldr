@@ -24,9 +24,9 @@ describe('extractTerritoryContainmentGroups', () => {
         expect(
           index === '001' || ('parent' in item && Boolean(item.parent)),
           'to be',
-          true
+          true,
         );
-      })
+      }),
     );
   });
 });

@@ -12,7 +12,7 @@ describe('extractWindowsZonesByName', () => {
           territory: 'AQ',
           timeZone: 'West Pacific Standard Time',
         },
-      ]
+      ],
     );
   });
 

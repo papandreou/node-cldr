@@ -26,7 +26,7 @@ describe('extractKeyTypes', () => {
     expect(
       britishKeyTypes.colNumeric.displayName,
       'to equal',
-      'Numeric Sorting'
+      'Numeric Sorting',
     );
     expect(britishKeyTypes.colNumeric.types, 'to only have keys', [
       'no',
@@ -35,12 +35,12 @@ describe('extractKeyTypes', () => {
     expect(
       britishKeyTypes.colNumeric.types.no,
       'to equal',
-      'Sort Digits Individually'
+      'Sort Digits Individually',
     );
     expect(
       britishKeyTypes.colNumeric.types.yes,
       'to equal',
-      'Sort Digits Numerically'
+      'Sort Digits Numerically',
     );
   });
 });

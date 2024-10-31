@@ -22,7 +22,7 @@ describe('extractWindowsZonesByTimeZone', () => {
           territory: 'RU',
           timeZone: 'Vladivostok Standard Time',
         },
-      ]
+      ],
     );
   });
 });

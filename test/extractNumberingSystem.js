@@ -7,7 +7,7 @@ describe('extractNumberingSystem', () => {
     expect(
       () => cldr.extractNumberingSystem('foo'),
       'to error',
-      'Unknown numbering system: foo'
+      'Unknown numbering system: foo',
     );
   });
 

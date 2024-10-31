@@ -81,7 +81,7 @@ describe('cldrPluralRuleTermFunctionByName', () => {
           expect(
             cldrPluralRuleTermFunctionByName[term](input),
             'to equal',
-            expectedOutputByInput[input]
+            expectedOutputByInput[input],
           );
         });
       });

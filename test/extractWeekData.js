@@ -18,21 +18,21 @@ describe('cldr.extractWeekData()', () => {
         .extractWeekData()
         .minDays.filter((x) => x.territories.includes('001')),
       'to have length',
-      1
+      1,
     );
     expect(
       cldr
         .extractWeekData()
         .weekendStart.filter((x) => x.territories.includes('001')),
       'to have length',
-      1
+      1,
     );
     expect(
       cldr
         .extractWeekData()
         .weekOfPreference.filter((x) => x.locales.includes('und')),
       'to have length',
-      1
+      1,
     );
   });
 
@@ -41,13 +41,13 @@ describe('cldr.extractWeekData()', () => {
       cldr.extractWeekData().firstDay.filter((x) => x.day === 'fri')[0]
         .territories,
       'to contain',
-      'MV'
+      'MV',
     );
     expect(
       cldr.extractWeekData().firstDay.filter((x) => x.day === 'sat')[0]
         .territories,
       'to contain',
-      'AF'
+      'AF',
     );
   });
 });
