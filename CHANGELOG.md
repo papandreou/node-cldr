@@ -6,10 +6,8 @@
 
 #### Commits to master
 
-- [CLDR 45](https://github.com/papandreou/node-cldr/commit/5e11f36e9efc09c8cc42f926209b21d071b84868) ([rotsee](mailto:mejl@leowallentin.se))
-- [CLDR45](https://github.com/papandreou/node-cldr/commit/83a673b8f5805a3ddc01adf0681a34d9b18e6319) ([rotsee](mailto:mejl@leowallentin.se))
+- [CLDR 45](https://cldr.unicode.org/downloads/cldr-45), with no major changes ([rotsee](mailto:mejl@leowallentin.se))
 - [updated dev dependencies](https://github.com/papandreou/node-cldr/commit/f8af258798597e00ab9121b9dbf9e7d8320b5545) ([rotsee](mailto:mejl@leowallentin.se))
-- [Update README.md](https://github.com/papandreou/node-cldr/commit/6b516f68c1e4d5d368b3ad7ebed5affabf908394) ([Leo Wallentin](mailto:mejl@leowallentin.se))
 
 ### v7.5.0
 
