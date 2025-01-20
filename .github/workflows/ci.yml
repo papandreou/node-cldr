@@ -5,15 +5,16 @@ name: Tests
 
 jobs:
   test:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     name: Node ${{ matrix.node }}
     strategy:
       matrix:
         node:
-          - '10'
-          - '12'
           - '14'
           - '16'
+          - '18'
+          - '20'
+          - '22'
     steps:
       - uses: actions/checkout@v2
       - name: Setup node
@@ -24,7 +25,7 @@ jobs:
       - run: npm test
 
   test-targets:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     name: ${{ matrix.targets.name }}
     strategy:
       matrix:
