@@ -253,7 +253,7 @@ describe('extractRbnfFunctionByType', () => {
 
   describe('with locales that have a non-latin default numbering system', function () {
     it('should support a numbering system with different digits', function () {
-      const renderers = cldr.extractRbnfFunctionByType('ar');
+      const renderers = cldr.extractRbnfFunctionByType('ar-SA');
       expect(renderers.renderDigitsOrdinal(3), 'to equal', '٣');
     });
 
