@@ -1,3 +1,17 @@
+### v7.7.0 (2025-01-26)
+
+#### Pull requests
+
+- [#180](https://github.com/papandreou/node-cldr/pull/180) CLDR 46 data update ([rotsee](mailto:leo_wallentin@hotmail.com))
+
+#### Commits to master
+
+- [Revert "7.7.0"](https://github.com/papandreou/node-cldr/commit/9e15e2673aacaa7a239c0c89da1b20214cd1ef77) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Update CI config to not run on node.js &lt;= 12, add node.js 18-22, drive-by update to ubuntu-latest](https://github.com/papandreou/node-cldr/commit/94eef6bccf355db2a73b8bcb65a76867ba86edb3) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [xmldom security vuln patch](https://github.com/papandreou/node-cldr/commit/befdf269f185ab67daa5efadc5dc1c50099879e0) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [prettier linting](https://github.com/papandreou/node-cldr/commit/1cdd24625fc06300eabb9bc916464bbab29c4f42) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [cleanup](https://github.com/papandreou/node-cldr/commit/67e3282fca40b7a159838a7563b59f7f9288eb57) ([rotsee](mailto:leo_wallentin@hotmail.com))
+
 ### v7.6.0
 
 #### Pull requests
@@ -6,8 +20,10 @@
 
 #### Commits to master
 
-- [CLDR 45](https://cldr.unicode.org/downloads/cldr-45), with no major changes ([rotsee](mailto:mejl@leowallentin.se))
-- [updated dev dependencies](https://github.com/papandreou/node-cldr/commit/f8af258798597e00ab9121b9dbf9e7d8320b5545) ([rotsee](mailto:mejl@leowallentin.se))
+- [CLDR 45](https://github.com/papandreou/node-cldr/commit/5e11f36e9efc09c8cc42f926209b21d071b84868) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [CLDR45](https://github.com/papandreou/node-cldr/commit/83a673b8f5805a3ddc01adf0681a34d9b18e6319) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [updated dev dependencies](https://github.com/papandreou/node-cldr/commit/f8af258798597e00ab9121b9dbf9e7d8320b5545) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [Update README.md](https://github.com/papandreou/node-cldr/commit/6b516f68c1e4d5d368b3ad7ebed5affabf908394) ([Leo Wallentin](mailto:leo_wallentin@hotmail.com))
 
 ### v7.5.0
 
@@ -64,12 +80,12 @@
 
 ### v7.0.0 (2021-05-20)
 
-- [#144](https://github.com/papandreou/node-cldr/pull/144) Do not accidentally override \`n\` operand when generating \`e\` and \`c\` operands ([Paul Gschwendtner](mailto:paulgschwendtner@gmail.com))
+- [#144](https://github.com/papandreou/node-cldr/pull/144) Do not accidentally override `n` operand when generating `e` and `c` operands ([Paul Gschwendtner](mailto:paulgschwendtner@gmail.com))
 
 ### v6.1.1 (2021-05-18)
 
 - [prettier --write '\*\*\/\*.js'](https://github.com/papandreou/node-cldr/commit/ae70f444795601d678fb443388c49323ce7f4ce8) ([Andreas Lind](mailto:andreas.lind@workday.com))
-- [Add support for new CLDR plural operands \`e\` and \`c\`.](https://github.com/papandreou/node-cldr/commit/c0305d14094966714656401389f051168087cf93) ([Paul Gschwendtner](mailto:paulgschwendtner@gmail.com))
+- [Add support for new CLDR plural operands `e` and `c`.](https://github.com/papandreou/node-cldr/commit/c0305d14094966714656401389f051168087cf93) ([Paul Gschwendtner](mailto:paulgschwendtner@gmail.com))
 - [prettier --write '\*\*\/\*.{js,json,md}'](https://github.com/papandreou/node-cldr/commit/f3c9fd4a80e781109ff47b46357e50ae9f66fd0d) ([Andreas Lind](mailto:andreas.lind@workday.com))
 - [Update prettier to version 2.3.0](https://github.com/papandreou/node-cldr/commit/bf88ba5efa26bf66cc80c4868fedf7b87f8f6b88) ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
 
