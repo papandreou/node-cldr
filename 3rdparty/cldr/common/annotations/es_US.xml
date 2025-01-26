@@ -412,7 +412,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="◈">rombo vacío conteniendo un rombo relleno</annotation>
 		<annotation cp="◈" type="tts">rombo vacío conteniendo un rombo relleno</annotation>
 		<annotation cp="◉">círculo punteado | círculo vacío con círculo relleno dentro | círculo vacío conteniendo un círculo relleno | círculos concéntricos rellenos | división | ojo de pez</annotation>
-		<annotation cp="◉" type="tts">círculo vacío conteniendo un círculo relleno</annotation>
+		<annotation cp="◉" type="tts">círculo vacío con círculo relleno dentro</annotation>
 		<annotation cp="◌">circulo discontinuo</annotation>
 		<annotation cp="◌" type="tts">circulo discontinuo</annotation>
 		<annotation cp="◐">círculo mitad izquierda rellena</annotation>
@@ -426,7 +426,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="◔">círculo cuadrante superior derecho relleno</annotation>
 		<annotation cp="◔" type="tts">círculo cuadrante superior derecho relleno</annotation>
 		<annotation cp="◕">círculo relleno menos cuadrante superior izquierdo</annotation>
-		<annotation cp="◕" type="tts">círculo relleno menos cuadrante superior izquierdo</annotation>
+		<annotation cp="◕" type="tts">círculo sin cuadrante superior izquierdo</annotation>
 		<annotation cp="◖">medio círculo relleno a la izquierda</annotation>
 		<annotation cp="◖" type="tts">medio círculo relleno a la izquierda</annotation>
 		<annotation cp="◗">medio círculo relleno a la derecha</annotation>
@@ -464,38 +464,35 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="⪺">posterior a arriba de casi igual</annotation>
 		<annotation cp="⪺" type="tts">posterior a arriba de casi igual</annotation>
 		<annotation cp="😃">abierta | boca | cara | cara sonriendo con ojos grandes | sonrisa</annotation>
-		<annotation cp="😃" type="tts">cara sonriendo con ojos grandes</annotation>
 		<annotation cp="😁">cara | cara radiante con ojos sonrientes | divertido | ojo | sonrisa</annotation>
-		<annotation cp="😁" type="tts">cara radiante con ojos sonrientes</annotation>
 		<annotation cp="😆">boca | cara | cara sonriendo con los ojos cerrados | carcajada | satisfecho | sonrisa</annotation>
-		<annotation cp="😆" type="tts">cara sonriendo con los ojos cerrados</annotation>
 		<annotation cp="😅">abierta | cara | cara sonriendo con sudor frío | frío | sonrisa | sudor</annotation>
-		<annotation cp="😅" type="tts">cara sonriendo con sudor frío</annotation>
 		<annotation cp="😂">cara | cara llorando de felicidad | carcajada | felicidad | lágrima | sonrisa</annotation>
 		<annotation cp="😂" type="tts">cara llorando de felicidad</annotation>
 		<annotation cp="🫠">cara que se derrite | derretir | desaparecer | disolverse | líquido</annotation>
 		<annotation cp="🫠" type="tts">cara que se derrite</annotation>
 		<annotation cp="😉">cara | cara guiñando el ojo | guiño</annotation>
-		<annotation cp="😉" type="tts">cara guiñando el ojo</annotation>
 		<annotation cp="😊">cara | cara feliz con ojos sonrientes | ojos sonrientes | sonrisa</annotation>
-		<annotation cp="😊" type="tts">cara feliz con ojos sonrientes</annotation>
 		<annotation cp="😇">ángel | aureola | cara | cara sonriendo con aureola | cara sonriente con aureola | inocente | sonriente con aureola | sonrisa</annotation>
 		<annotation cp="😇" type="tts">cara sonriente con aureola</annotation>
+		<annotation cp="🥰">amor | cara | carita | carita feliz con 3 corazones | corazón | corazones | enamorada | enamorado | la adoro | lo adoro | me encanta</annotation>
 		<annotation cp="😍">amor | cara | cara sonriente con ojos de corazón | ojo | sonrisa</annotation>
 		<annotation cp="😍" type="tts">cara sonriente con ojos de corazón</annotation>
+		<annotation cp="🤩">cara | emocionada | emocionado | emocionante | estrella | estrellados | hermosa | hermoso | increíble | ojos</annotation>
 		<annotation cp="😘">beso | cara | cara lanzando un beso</annotation>
 		<annotation cp="😗">beso | cara | cara dando un beso</annotation>
 		<annotation cp="😚">beso | cara | cara besando con los ojos cerrados | cerrados | ojos</annotation>
 		<annotation cp="😋">broma | cara saboreando comida | delicioso | rico | sonriente</annotation>
-		<annotation cp="😋" type="tts">cara saboreando comida</annotation>
+		<annotation cp="😛">broma | cara | cara feliz | cara sacando la lengua | divertido | lengua | lengua fuera | risa | sacar | sacar la lengua</annotation>
 		<annotation cp="😝">asco | broma | cara | cara con los ojos bien cerrados y sacando la lengua | cara con ojos cerrados y sacando la lengua | horrible | lengua | sacar la lengua</annotation>
 		<annotation cp="😝" type="tts">cara con ojos cerrados y sacando la lengua</annotation>
 		<annotation cp="🤭">cara con mano sobre la boca | ups | uy</annotation>
-		<annotation cp="🤔">cara | cara pensante | cara pensativa | duda | pensar</annotation>
 		<annotation cp="🤔" type="tts">cara pensativa</annotation>
 		<annotation cp="🫡">cara saludando | ejército | ok | saludo | si | soleado | tropas</annotation>
 		<annotation cp="🤐">boca | cara | cara con la boca cerrada con cierre | cara con la boca cerrada con cremallera | zipper</annotation>
+		<annotation cp="🤨">cara | cara subiendo la ceja | ceja arriba | ceño fruncido | confundida | confundido | desacuerdo | duda | dudo | fruncir el ceño</annotation>
 		<annotation cp="😏">cara | cara sonriendo con superioridad | creído</annotation>
+		<annotation cp="😒">aburrida | aburrido | cara | enojada | enojado | infeliz | molesta | molesto | mueca | poco divertido</annotation>
 		<annotation cp="🙄">cara | cara con ojos en blanco | ojos | volteando | voltear los ojos</annotation>
 		<annotation cp="🙄" type="tts">cara con ojos en blanco</annotation>
 		<annotation cp="😬">cara | cara haciendo una mueca | mueca</annotation>
@@ -504,12 +501,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🙂‍↕">cara afirmando | cara diciendo si | cara moviéndose verticalmente</annotation>
 		<annotation cp="🙂‍↕" type="tts">cara moviéndose verticalmente</annotation>
 		<annotation cp="😴">cara | cara durmiendo | sueño | zzz</annotation>
+		<annotation cp="🫩">cansancio | exhausto | sueño</annotation>
 		<annotation cp="😷">cara | cara con mascarilla médica | doctor | enfermo | mascarilla</annotation>
 		<annotation cp="😷" type="tts">cara con mascarilla médica</annotation>
 		<annotation cp="🤕">cara | cara con la cabeza vendada | dolor | herido | vendas</annotation>
-		<annotation cp="🤕" type="tts">cara con la cabeza vendada</annotation>
 		<annotation cp="🤧">cara | cara estornudando | estornudar | estornudo | resfrío</annotation>
-		<annotation cp="🤧" type="tts">cara estornudando</annotation>
 		<annotation cp="🥵">calor | cara con calor | cara de calor | cara roja | fiebre | golpe de calor | sudor</annotation>
 		<annotation cp="🥵" type="tts">cara de calor</annotation>
 		<annotation cp="🥴">boca ondulada | cara de mareo | intoxicado | mareado | ojos desbalanceados</annotation>
@@ -518,29 +514,29 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="😵" type="tts">cara noqueada</annotation>
 		<annotation cp="🤯">cabeza explotando | cerebro explotando | conmocionado | sorprendido</annotation>
 		<annotation cp="😎">brillante | cara | cara sonriendo con lentes de sol | cool | gafas de sol | lentes de sol | sol</annotation>
+		<annotation cp="🤓">anteojos | cara | cara de nerd | emoticón | experto | friqui | gafas | geek | inteligente | lentes</annotation>
 		<annotation cp="🫤">cara con boca diagonal | decepción | decepcionado | escéptico | inseguro</annotation>
 		<annotation cp="😮">abierta | boca | cara | cara con la boca abierta | empatía</annotation>
+		<annotation cp="😲">asombrada | asombrado | asombro | asustado | horrorizada | horrorizado | pasmado | sorprendida | sorprendido | sorpresa</annotation>
+		<annotation cp="🥺">cara | cara de ruego | ojos de cachorro | ojos grandes | ojos llorosos | piedad | por favor | por qué no | rogar | triste</annotation>
 		<annotation cp="😦">abierta | boca | cara | cara con el ceño fruncido y la boca abierta</annotation>
 		<annotation cp="😦" type="tts">cara con el ceño fruncido y la boca abierta</annotation>
 		<annotation cp="😧">angustiada | cara</annotation>
 		<annotation cp="😧" type="tts">cara angustiada</annotation>
 		<annotation cp="😰">azul | cara | cara con ansiedad y sudor | frío | precipitado | sudor</annotation>
+		<annotation cp="😥">aliviado | alivio | cara | cara triste pero aliviada | decepción | decepción y alivio | decepcionado | decepcionado pero aliviado | preocupacion | susto</annotation>
 		<annotation cp="😢">cara llorando | llanto | llorar | triste | tristeza</annotation>
-		<annotation cp="😢" type="tts">cara llorando</annotation>
 		<annotation cp="😭">cara | cara llorando fuerte | lágrima | llorar | sollozo | triste</annotation>
 		<annotation cp="😱">cara gritando de miedo | grito | horror | miedo | terror</annotation>
-		<annotation cp="😱" type="tts">cara gritando de miedo</annotation>
 		<annotation cp="😖">cara | cara de frustración | enojo | frustración</annotation>
 		<annotation cp="😣">cara | perseverante</annotation>
 		<annotation cp="😓">cara | cara alicaída con sudor | frío | sudor</annotation>
 		<annotation cp="😓" type="tts">cara alicaída con sudor</annotation>
 		<annotation cp="😩">agotada | cansada | cara | exhausta</annotation>
-		<annotation cp="😩" type="tts">cara agotada</annotation>
 		<annotation cp="🥱">aburrido | bostezo | cansada | cara de bostezo</annotation>
 		<annotation cp="😤">cara | cara resoplando | ganar | triunfo</annotation>
-		<annotation cp="😤" type="tts">cara resoplando</annotation>
 		<annotation cp="😠">cara | cara enfadada | enojado | enojo</annotation>
-		<annotation cp="😠" type="tts">cara enfadada</annotation>
+		<annotation cp="🤬">cara de enojo | decir groserías | decir malas palabras | disgusto | enfadada | enfadado | enojada | enojado | enojo | malas palabras | palabrotas</annotation>
 		<annotation cp="😈">cara | cara malvada sonriendo con cuernos | cuento de hadas | cuernos | fantasía | sonrisa</annotation>
 		<annotation cp="😈" type="tts">cara malvada sonriendo con cuernos</annotation>
 		<annotation cp="👿">cara | cara malvada enfadada con cuernos | demonio | diablo | fantasía</annotation>
@@ -559,14 +555,14 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="👽">alien | cara | creatura | extraterrestre | fantasía | OVNI</annotation>
 		<annotation cp="👾">alien | espacial | espacio | extraterrestre | fantasía | monstruo | OVNI</annotation>
 		<annotation cp="😸">cara | gato | gato sonriendo con ojos sonrientes | sonriente | sonrisa</annotation>
+		<annotation cp="😹">alegría | cara de gato | gato | gato llorando de risa | lágrimas | llorando</annotation>
+		<annotation cp="😻">animal | cara | cara de gato | cara de gato sonriendo con corazones en los ojos | corazón | corazones | enamorado | gato | gato sonriendo con ojos de corazón</annotation>
 		<annotation cp="🙀">asustado | cara | gato | oh | sorpresa</annotation>
 		<annotation cp="😿">cara | gato | lágrima | llorando | triste</annotation>
 		<annotation cp="😾">cara | cara de gato enfadado | gato | gato enfadado</annotation>
-		<annotation cp="😾" type="tts">gato enfadado</annotation>
 		<annotation cp="🙊">callado | cara | hablar | mono | mono con boca tapada | secreto | silencio</annotation>
 		<annotation cp="💌">amor | carta | carta de amor | corazón | correo</annotation>
 		<annotation cp="💘">corazón con flecha | cupido | flecha</annotation>
-		<annotation cp="❣">corazón | exclamación | exclamación con forma de corazón | puntuación</annotation>
 		<annotation cp="💔">corazón roto | roto</annotation>
 		<annotation cp="❤">corazón | corazón rojo</annotation>
 		<annotation cp="🧡">anaranjado | corazón anaranjado</annotation>
@@ -625,7 +621,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="👱">cabello | persona adulta rubia | rubia | rubio</annotation>
 		<annotation cp="👨">adulto | hombre</annotation>
 		<annotation cp="🧔">barba | persona | persona con barba</annotation>
-		<annotation cp="🧔‍♂">barba | hombre | hombre: barba</annotation>
 		<annotation cp="👱‍♂">hombre | hombre: rubio | rubio</annotation>
 		<annotation cp="👩">adulta | mujer</annotation>
 		<annotation cp="👱‍♀">mujer | mujer: rubia | rubia</annotation>
@@ -634,7 +629,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="👵">adulta | anciana | mujer | mujer mayor</annotation>
 		<annotation cp="🙍">ceño fruncido | gesto | persona frunciendo el ceño</annotation>
 		<annotation cp="🙍‍♀">ceño fruncido | gesto | mujer | mujer frunciendo el ceño</annotation>
-		<annotation cp="🙍‍♀" type="tts">mujer frunciendo el ceño</annotation>
 		<annotation cp="🙎">enojada | gesto | persona enojada</annotation>
 		<annotation cp="🙎" type="tts">persona enojada</annotation>
 		<annotation cp="🙎‍♂">enojado | gesto | hombre</annotation>
@@ -683,7 +677,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="👷">construcción | hombre | obrero | obrero de construcción | profesional de la construcción | trabajador</annotation>
 		<annotation cp="🤴">cuento | fantasía | príncipe</annotation>
 		<annotation cp="👸">cuento de hadas | fantasía | princesa</annotation>
-		<annotation cp="👳">persona con turbante | turbante</annotation>
 		<annotation cp="👲">gorro | gua pi mao | persona | persona con gorro chino | sombrero</annotation>
 		<annotation cp="🤵‍♂">esmoquin | hombre | hombre con esmoquin | hombre con esmoquín</annotation>
 		<annotation cp="🤵‍♂" type="tts">hombre con esmoquín</annotation>
@@ -705,6 +698,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="👨‍🦯" type="tts">hombre con bastón blanco</annotation>
 		<annotation cp="👩‍🦯">accesibilidad | ciega | invidente | mujer | mujer con bastón blanco</annotation>
 		<annotation cp="👩‍🦯" type="tts">mujer con bastón blanco</annotation>
+		<annotation cp="🏃">carrera | corredor | correr | deporte | deportista | maratón | persona | persona corriendo</annotation>
 		<annotation cp="💃">bailar | baile | mujer | mujer bailando</annotation>
 		<annotation cp="🕴">negocio | persona | persona en traje levitando | traje</annotation>
 		<annotation cp="🕴" type="tts">persona en traje levitando</annotation>
@@ -716,9 +710,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🏌">golf | pelota | persona jugando golf</annotation>
 		<annotation cp="🏌" type="tts">persona jugando golf</annotation>
 		<annotation cp="🏄">persona haciendo surf | surf | surfista</annotation>
-		<annotation cp="🏄" type="tts">persona haciendo surf</annotation>
 		<annotation cp="🚣">barca | bote | persona remando en un bote | remo</annotation>
-		<annotation cp="🚣" type="tts">persona remando en un bote</annotation>
 		<annotation cp="⛹">balón | botar | pelota | persona botando un balón</annotation>
 		<annotation cp="⛹" type="tts">persona botando un balón</annotation>
 		<annotation cp="🚵">bicicleta | bicicleta de montaña | ciclista | montaña | persona | persona en bicicleta de montaña</annotation>
@@ -749,6 +741,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🧑‍🧒‍🧒">familia: adulto | familia: adulto, infante, infante | infante</annotation>
 		<annotation cp="🧑‍🧒‍🧒" type="tts">familia: adulto, infante, infante</annotation>
 		<annotation cp="👣">huella | huellas | pisada | ropa</annotation>
+		<annotation cp="🫆" type="tts">huella digital</annotation>
 		<annotation cp="🦰" type="tts">pelirrojo</annotation>
 		<annotation cp="🦳">blanco | cana | gris | pelo | pelo canoso | viejo</annotation>
 		<annotation cp="🦳" type="tts">pelo canoso</annotation>
@@ -776,7 +769,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🐾" type="tts">huellas de pezuña</annotation>
 		<annotation cp="🐓">ave | gallo</annotation>
 		<annotation cp="🐤">ave | bebé | pollito</annotation>
-		<annotation cp="🐤" type="tts">pollito</annotation>
 		<annotation cp="🐥">ave | bebé | pollito | pollito de frente</annotation>
 		<annotation cp="🕊">ave | paloma | paz | vuelo</annotation>
 		<annotation cp="🦉">ave | búho | inteligente | lechuza | sabio</annotation>
@@ -805,6 +797,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🪴">casa | nutriendo | planta | planta en maceta | plantar | sin servir</annotation>
 		<annotation cp="🪴" type="tts">planta en maceta</annotation>
 		<annotation cp="🍀">4 | cuatro | hoja | trébol | trébol de cuatro hojas</annotation>
+		<annotation cp="🪾">árido | invierno | sequía</annotation>
 		<annotation cp="🍇">fruto | uva | uvas</annotation>
 		<annotation cp="🍌">banana | fruta | plátano</annotation>
 		<annotation cp="🍌" type="tts">plátano</annotation>
@@ -829,6 +822,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🫘">comida | frijoles | habichuela | legumbre</annotation>
 		<annotation cp="🍄‍🟫">champiñones | comida | cremini | hongo | hongo café | hongo portabello | hongos | vegetal</annotation>
 		<annotation cp="🍄‍🟫" type="tts">hongo portabello</annotation>
+		<annotation cp="🫜">betabel | jardín | nabo | raíz | vegetal</annotation>
+		<annotation cp="🫜" type="tts">betabel</annotation>
 		<annotation cp="🥐">comida | croissant | cuernito | desayuno | francés | pan</annotation>
 		<annotation cp="🥐" type="tts">cuernito</annotation>
 		<annotation cp="🥨">pretzel | trenza</annotation>
@@ -879,7 +874,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🍩">desayuno | dona | dulce | postre | rosquilla</annotation>
 		<annotation cp="🍪">dulce | galleta | postre</annotation>
 		<annotation cp="🎂">celebración | cumpleaños | dulce | panadería | pastel | pastel de cumpleaños | postre</annotation>
-		<annotation cp="🎂" type="tts">pastel de cumpleaños</annotation>
 		<annotation cp="🍰">dulce | pastel | pastel de frutas | postre | rebanada</annotation>
 		<annotation cp="🍰" type="tts">pastel de frutas</annotation>
 		<annotation cp="🥧">pay | relleno | repostería</annotation>
@@ -941,7 +935,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🚅">bala | ferrocarril | rápido | tren | velocidad</annotation>
 		<annotation cp="🚆">ferrocarril | tren</annotation>
 		<annotation cp="🚇">metro | subterráneo | transporte</annotation>
-		<annotation cp="🚇" type="tts">metro</annotation>
 		<annotation cp="🚞">ferrocarril | ferrocarril de montaña | montaña | transporte | tren | viajar</annotation>
 		<annotation cp="🚌">autobús | bus | vehículo</annotation>
 		<annotation cp="🚓">auto | carro | patrulla | policía</annotation>
@@ -1018,7 +1011,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="☀">brillante | rayos | sol | soleado</annotation>
 		<annotation cp="🌝">brillante | cara | llena | luna | luna llena con cara</annotation>
 		<annotation cp="⭐">estrella</annotation>
-		<annotation cp="⭐" type="tts">estrella</annotation>
 		<annotation cp="🌟">brillante | brillo | centellar | estrella</annotation>
 		<annotation cp="🌠">cayendo | estrella | fugaz</annotation>
 		<annotation cp="☁">clima | nube | nublado</annotation>
@@ -1115,6 +1107,8 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🎛" type="tts">botones de control</annotation>
 		<annotation cp="🎧">audífonos | auriculares | música</annotation>
 		<annotation cp="📻">entretenimiento | radio | video</annotation>
+		<annotation cp="🪉">amor | cupido | instrumento | música | orquesta</annotation>
+		<annotation cp="🪉" type="tts">harpa</annotation>
 		<annotation cp="📲">auricular | celular | flecha | móvil | teléfono | teléfono móvil con una flecha</annotation>
 		<annotation cp="📞">auricular | teléfono</annotation>
 		<annotation cp="📞" type="tts">auricular</annotation>
@@ -1133,7 +1127,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="📼">cinta | vhs | video | videocassette</annotation>
 		<annotation cp="📼" type="tts">videocassette</annotation>
 		<annotation cp="💡">cómic | electricidad | foco | idea | luz</annotation>
-		<annotation cp="💡" type="tts">foco</annotation>
 		<annotation cp="🔦">herramienta | linterna | luz</annotation>
 		<annotation cp="🏮">izakaya | linterna | linterna de papel roja | luz | roja</annotation>
 		<annotation cp="🏮" type="tts">linterna de papel roja</annotation>
@@ -1180,6 +1173,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="⛓‍💥">cadena | cadena rota | libertad | romper</annotation>
 		<annotation cp="🪝">agarrar | anzuelo | atrapar | gancho | garfio | punto de venta</annotation>
 		<annotation cp="🪝" type="tts">anzuelo</annotation>
+		<annotation cp="🪏">agujero | cuchara | pala | pica</annotation>
 		<annotation cp="🧫">bacterias | biología | biólogo | cultivo | laboratorio | placa de Petri</annotation>
 		<annotation cp="🧫" type="tts">placa de Petri</annotation>
 		<annotation cp="🧬">ADN | biólogo | evolución | gen | genética | vida</annotation>
@@ -1314,7 +1308,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="💲" type="tts">símbolo de dólar resaltado</annotation>
 		<annotation cp="⚕">asclepio | bastón | esculapio | medicina | símbolo de medicina</annotation>
 		<annotation cp="♻">reciclar | símbolo de reciclaje</annotation>
-		<annotation cp="⚜">flor de lis</annotation>
 		<annotation cp="🔱">ancla | barco | emblema | emblema de tridente | herramienta | tridente</annotation>
 		<annotation cp="📛">gafete | nombre</annotation>
 		<annotation cp="📛" type="tts">gafete</annotation>
@@ -1331,6 +1324,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="©">c | copyright | signo de derechos autor | signo de derechos de autor</annotation>
 		<annotation cp="®">marca registrada | r | signo de marca registrada</annotation>
 		<annotation cp="™">marca | marca comercial | registrada | símbolo | símbolo de marca comercial</annotation>
+		<annotation cp="🫟">mancha | pintura | salpicadura</annotation>
 		<annotation cp="🔠">ABCD | entrada | latín | letras | letras latinas mayúsculas | mayúsculas</annotation>
 		<annotation cp="🔡">abcd | entrada | latín | letras | letras latinas minúsculas | minúsculas</annotation>
 		<annotation cp="🔢">1234 | entrada | números</annotation>
@@ -1377,7 +1371,6 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🈵" type="tts">ideograma japonés para &quot;no vacante&quot;</annotation>
 		<annotation cp="🔴">círculo | geométrico | rojo</annotation>
 		<annotation cp="🔵">azul | círculo | geométrico</annotation>
-		<annotation cp="🟤">café | círculo | marrón</annotation>
 		<annotation cp="🟤" type="tts">círculo café</annotation>
 		<annotation cp="⚫">círculo | círculo negro | geométrico</annotation>
 		<annotation cp="⚪">círculo | círculo blanco | geométrico</annotation>
@@ -1412,6 +1405,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 		<annotation cp="🏁">bandera | bandera de cuadros | carrera</annotation>
 		<annotation cp="🏴">bandera negra | ondear</annotation>
 		<annotation cp="🏳">bandera blanca | ondear</annotation>
+		<annotation cp="🏳‍🌈">arcoiris | bandera | bisexual | gay | homesexual | lesbiana | lgbt | orgullo | trans | transgénero</annotation>
 		<annotation cp="₢">BRB | cruceiro | moneda</annotation>
 		<annotation cp="₣">fanco | franco francés | moneda</annotation>
 		<annotation cp="₤">lira | moneda</annotation>
