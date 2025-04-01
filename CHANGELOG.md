@@ -1,3 +1,17 @@
+### v7.8.0 (2025-04-01)
+
+#### Pull requests
+
+- [#181](https://github.com/papandreou/node-cldr/pull/181) CLDR 47 ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [#180](https://github.com/papandreou/node-cldr/pull/180) CLDR 46 data update ([rotsee](mailto:leo_wallentin@hotmail.com))
+
+#### Commits to master
+
+- [Update CI config to not run on node.js &lt;= 12, add node.js 18-22, drive-by update to ubuntu-latest](https://github.com/papandreou/node-cldr/commit/94eef6bccf355db2a73b8bcb65a76867ba86edb3) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [xmldom security vuln patch](https://github.com/papandreou/node-cldr/commit/befdf269f185ab67daa5efadc5dc1c50099879e0) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [prettier linting](https://github.com/papandreou/node-cldr/commit/1cdd24625fc06300eabb9bc916464bbab29c4f42) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [cleanup](https://github.com/papandreou/node-cldr/commit/67e3282fca40b7a159838a7563b59f7f9288eb57) ([rotsee](mailto:leo_wallentin@hotmail.com))
+
 ### v7.6.0
 
 #### Pull requests
@@ -6,8 +20,10 @@
 
 #### Commits to master
 
-- [CLDR 45](https://cldr.unicode.org/downloads/cldr-45), with no major changes ([rotsee](mailto:mejl@leowallentin.se))
-- [updated dev dependencies](https://github.com/papandreou/node-cldr/commit/f8af258798597e00ab9121b9dbf9e7d8320b5545) ([rotsee](mailto:mejl@leowallentin.se))
+- [CLDR 45](https://github.com/papandreou/node-cldr/commit/5e11f36e9efc09c8cc42f926209b21d071b84868) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [CLDR45](https://github.com/papandreou/node-cldr/commit/83a673b8f5805a3ddc01adf0681a34d9b18e6319) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [updated dev dependencies](https://github.com/papandreou/node-cldr/commit/f8af258798597e00ab9121b9dbf9e7d8320b5545) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [Update README.md](https://github.com/papandreou/node-cldr/commit/6b516f68c1e4d5d368b3ad7ebed5affabf908394) ([Leo Wallentin](mailto:leo_wallentin@hotmail.com))
 
 ### v7.5.0
 
