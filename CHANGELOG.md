@@ -1,12 +1,20 @@
+### v7.9.0 (2025-04-08)
+
+- [#182](https://github.com/papandreou/node-cldr/pull/182) Adding dayPeriodPatterns ([Andreas Lind](mailto:andreaslindpetersen@gmail.com), [rotsee](mailto:leo_wallentin@hotmail.com))
+
 ### v7.8.0 (2025-04-01)
+
+- [#181](https://github.com/papandreou/node-cldr/pull/181) CLDR 47 ([rotsee](mailto:leo_wallentin@hotmail.com))
+
+### v7.7.0 (2025-01-26)
 
 #### Pull requests
 
-- [#181](https://github.com/papandreou/node-cldr/pull/181) CLDR 47 ([rotsee](mailto:leo_wallentin@hotmail.com))
 - [#180](https://github.com/papandreou/node-cldr/pull/180) CLDR 46 data update ([rotsee](mailto:leo_wallentin@hotmail.com))
 
 #### Commits to master
 
+- [Revert "7.7.0"](https://github.com/papandreou/node-cldr/commit/9e15e2673aacaa7a239c0c89da1b20214cd1ef77) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
 - [Update CI config to not run on node.js &lt;= 12, add node.js 18-22, drive-by update to ubuntu-latest](https://github.com/papandreou/node-cldr/commit/94eef6bccf355db2a73b8bcb65a76867ba86edb3) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
 - [xmldom security vuln patch](https://github.com/papandreou/node-cldr/commit/befdf269f185ab67daa5efadc5dc1c50099879e0) ([rotsee](mailto:leo_wallentin@hotmail.com))
 - [prettier linting](https://github.com/papandreou/node-cldr/commit/1cdd24625fc06300eabb9bc916464bbab29c4f42) ([rotsee](mailto:leo_wallentin@hotmail.com))
