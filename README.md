@@ -453,6 +453,28 @@ cldr.extractDayPeriods('en_GB', 'gregorian');
      wide: { am: 'AM', pm: 'PM' } } }
 ```
 
+### cldr.extractDayPeriodRules(localeId='root')
+
+Extract a ruleset for locale-aware day periods,
+to be used with extractDayPeriods().
+
+```javascript
+cldr.extractDayPeriodRules('nl');
+{ format: [
+    { type: 'morning1', at: '', from: '06:00', before: '12:00' },
+    { type: 'afternoon1', at: '', from: '12:00', before: '18:00' },
+    { type: 'evening1', at: '', from: '18:00', before: '24:00' },
+    { type: 'night1', at: '', from: '00:00', before: '06:00' },
+  ],
+  standAlone: [
+    { type: 'midnight', at: '00:00', from: '', before: '' },
+    { type: 'morning1', at: '', from: '06:00', before: '12:00' },
+    { type: 'afternoon1', at: '', from: '12:00', before: '18:00' },
+    { type: 'evening1', at: '', from: '18:00', before: '24:00' },
+    { type: 'night1', at: '', from: '00:00', before: '06:00' }
+  ] }
+```
+
 ### cldr.extractCyclicNames(localeId='root', calendarId='gregorian')
 
 Extract a nested hash with cyclic names for a calendar and locale
