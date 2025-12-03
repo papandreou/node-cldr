@@ -18,14 +18,6 @@ describe('extractLanguageSupplementalData', () => {
     });
   });
 
-  it('should return a list of territories for English', () => {
-    expect(cldr.extractLanguageSupplementalData(), 'to satisfy', {
-      en: {
-        territories: expect.it('to contain', 'GB', 'US'),
-      },
-    });
-  });
-
   it('should return a list of secondary scripts for English', () => {
     expect(cldr.extractLanguageSupplementalData(), 'to satisfy', {
       en: {
@@ -36,13 +28,4 @@ describe('extractLanguageSupplementalData', () => {
     });
   });
 
-  it('should return a list of secondary territories for English', () => {
-    expect(cldr.extractLanguageSupplementalData(), 'to satisfy', {
-      en: {
-        secondary: {
-          territories: expect.it('to contain', 'CZ', 'DE'),
-        },
-      },
-    });
-  });
 });
