@@ -22,7 +22,7 @@ To understand the data itself, you might need to dive into the <a
 href="https://www.unicode.org/reports/tr35/tr35-61/tr35.html">LDML
 specification</a>, which describes the schema of the CLDR XML files.
 
-Comes bundled with the CLDR 47 release and isn't attempting to be backwards
+Comes bundled with the CLDR 48 release and isn't attempting to be backwards
 compatible with earlier versions.
 
 # Releases
