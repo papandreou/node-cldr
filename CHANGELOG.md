@@ -1,3 +1,12 @@
+### v8.0.0 (2025-12-03)
+
+- [lint](https://github.com/papandreou/node-cldr/commit/e694e41c53bbab40e90fc28d2dc62f77174a610d) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [CLDR 48](https://github.com/papandreou/node-cldr/commit/56a9368845813d849932ef8152a6187a301ec3d9) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [territories for languages deprecated in cldr 48](https://github.com/papandreou/node-cldr/commit/4e1f8d68b17728403c76b4cbde49295acddd8203) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [data updates](https://github.com/papandreou/node-cldr/commit/87b0ffb4db41862eb9a5c173d9d88c30de3ddb63) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [check in all cldr 48 data](https://github.com/papandreou/node-cldr/commit/34e0d1305ebe036bc3a16f0fa96c8a37aa82ddf4) ([rotsee](mailto:leo_wallentin@hotmail.com))
+- [+3 more](https://github.com/papandreou/node-cldr/compare/v7.9.0...v8.0.0)
+
 ### v7.9.0 (2025-04-08)
 
 - [#182](https://github.com/papandreou/node-cldr/pull/182) Adding dayPeriodPatterns ([Andreas Lind](mailto:andreaslindpetersen@gmail.com), [rotsee](mailto:leo_wallentin@hotmail.com))
