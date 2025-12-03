@@ -9,7 +9,6 @@ describe('extractLanguageSupplementalData', () => {
       fr: {},
     });
   });
-
   it('should return a list of scripts for English', () => {
     expect(cldr.extractLanguageSupplementalData(), 'to satisfy', {
       en: {
@@ -17,7 +16,6 @@ describe('extractLanguageSupplementalData', () => {
       },
     });
   });
-
   it('should return a list of secondary scripts for English', () => {
     expect(cldr.extractLanguageSupplementalData(), 'to satisfy', {
       en: {
@@ -27,5 +25,4 @@ describe('extractLanguageSupplementalData', () => {
       },
     });
   });
-
 });
