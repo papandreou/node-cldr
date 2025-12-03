@@ -42,7 +42,7 @@ describe('extractVariantDisplayNames', () => {
       OSOJS: 'Oseacco/Osojane dialect',
       OXENDICT: 'Oxford English Dictionary spelling',
       PAMAKA: 'Pamaka dialect',
-      PINYIN: 'Pinyin Romanization',
+      PINYIN: 'Pinyin romanization',
       POLYTON: 'Polytonic',
       POSIX: 'Computer',
       REVISED: 'Revised Orthography',
@@ -58,7 +58,7 @@ describe('extractVariantDisplayNames', () => {
       UCRCOR: 'Unified Revised Orthography',
       UNIFON: 'Unifon phonetic alphabet',
       VALENCIA: 'Valencian',
-      WADEGILE: 'Wade-Giles Romanization',
+      WADEGILE: 'Wade-Giles romanization',
     });
   });
 });
