@@ -31,4 +31,9 @@ describe('extractTimeZoneFormats', () => {
       '{0} Standard Time',
     );
   });
+
+  // mt.xml only defines <gmtFormat alt="utc">, which must not shadow root's plain <gmtFormat>
+  it('should not pick up alt variants of the gmt format', () => {
+    expect(cldr.extractTimeZoneFormats('mt').gmt, 'to equal', 'GMT{0}');
+  });
 });
