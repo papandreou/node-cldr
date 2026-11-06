@@ -8,14 +8,12 @@ describe('extractTimeZoneFormats', () => {
     expect(britishTimeZoneFormats, 'to only have keys', [
       'hour',
       'gmt',
-      'gmtZero',
       'region',
       'fallback',
       'regions',
     ]);
     expect(britishTimeZoneFormats.hour, 'to equal', ['+HH:mm', '-HH:mm']);
     expect(britishTimeZoneFormats.gmt, 'to equal', 'GMT{0}');
-    expect(britishTimeZoneFormats.gmtZero, 'to equal', 'GMT');
     expect(britishTimeZoneFormats.region, 'to equal', '{0} Time');
     expect(britishTimeZoneFormats.fallback, 'to equal', '{1} ({0})');
     expect(britishTimeZoneFormats.regions, 'to only have keys', [
