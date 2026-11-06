@@ -8,51 +8,9 @@ describe('cldr.extractDateIntervalFormats("en")', () => {
     expect(englishDateIntervalFormats, 'to equal', {
       Bh: { B: 'h B – h B', h: 'h – h B' },
       Bhm: { B: 'h:mm B – h:mm B', h: 'h:mm – h:mm B', m: 'h:mm – h:mm B' },
-      H: {
-        H: 'HH – HH',
-      },
-      Hm: {
-        H: 'HH:mm – HH:mm',
-        m: 'HH:mm – HH:mm',
-      },
-      Hmv: {
-        H: 'HH:mm – HH:mm v',
-        m: 'HH:mm – HH:mm v',
-      },
-      Hv: {
-        H: 'HH – HH v',
-      },
-      M: {
-        M: 'M – M',
-      },
-      MEd: {
-        M: 'E, M/d – E, M/d',
-        d: 'E, M/d – E, M/d',
-      },
-      MMM: {
-        M: 'MMM – MMM',
-      },
-      MMMEd: {
-        M: 'E, MMM d – E, MMM d',
-        d: 'E, MMM d – E, MMM d',
-      },
-      MMMd: {
-        M: 'MMM d – MMM d',
-        d: 'MMM d – d',
-      },
-      Md: {
-        M: 'M/d – M/d',
-        d: 'M/d – M/d',
-      },
-      d: {
-        d: 'd – d',
-      },
+      d: { d: 'd – d' },
       Gy: { G: 'y G – y G', y: 'y – y G' },
-      GyM: {
-        G: 'M/y G – M/y G',
-        M: 'M/y – M/y G',
-        y: 'M/y – M/y G',
-      },
+      GyM: { G: 'M/y G – M/y G', M: 'M/y – M/y G', y: 'M/y – M/y G' },
       GyMd: {
         d: 'M/d/y – M/d/y G',
         G: 'M/d/y G – M/d/y G',
@@ -82,59 +40,45 @@ describe('cldr.extractDateIntervalFormats("en")', () => {
         M: 'E, MMM d – E, MMM d, y G',
         y: 'E, MMM d, y – E, MMM d, y G',
       },
-      h: {
-        a: 'h a – h a',
-        h: 'h – h a',
-      },
-      hm: {
-        a: 'h:mm a – h:mm a',
-        h: 'h:mm – h:mm a',
-        m: 'h:mm – h:mm a',
-      },
+      h: { a: 'h a – h a', h: 'h – h a' },
+      H: { H: 'HH – HH' },
+      hm: { a: 'h:mm a – h:mm a', h: 'h:mm – h:mm a', m: 'h:mm – h:mm a' },
+      Hm: { H: 'HH:mm – HH:mm', m: 'HH:mm – HH:mm' },
       hmv: {
         a: 'h:mm a – h:mm a v',
         h: 'h:mm – h:mm a v',
         m: 'h:mm – h:mm a v',
       },
-      hv: {
-        a: 'h a – h a v',
-        h: 'h – h a v',
-      },
-      y: {
-        y: 'y – y',
-      },
-      yM: {
-        M: 'M/y – M/y',
-        y: 'M/y – M/y',
-      },
+      Hmv: { H: 'HH:mm – HH:mm v', m: 'HH:mm – HH:mm v' },
+      hv: { a: 'h a – h a v', h: 'h – h a v' },
+      Hv: { H: 'HH – HH v' },
+      M: { M: 'M – M' },
+      Md: { d: 'M/d – M/d', M: 'M/d – M/d' },
+      MEd: { d: 'E, M/d – E, M/d', M: 'E, M/d – E, M/d' },
+      MMM: { M: 'MMM – MMM' },
+      MMMd: { d: 'MMM d – d', M: 'MMM d – MMM d' },
+      MMMEd: { d: 'E, MMM d – E, MMM d', M: 'E, MMM d – E, MMM d' },
+      MMMMd: { d: 'MMMM d – d', M: 'MMMM d – MMMM d' },
+      y: { y: 'y – y' },
+      yM: { M: 'M/y – M/y', y: 'M/y – M/y' },
+      yMd: { d: 'M/d/y – M/d/y', M: 'M/d/y – M/d/y', y: 'M/d/y – M/d/y' },
       yMEd: {
-        M: 'E, M/d/y – E, M/d/y',
         d: 'E, M/d/y – E, M/d/y',
+        M: 'E, M/d/y – E, M/d/y',
         y: 'E, M/d/y – E, M/d/y',
       },
-      yMMM: {
-        M: 'MMM – MMM y',
-        y: 'MMM y – MMM y',
-      },
-      yMMMEd: {
-        M: 'E, MMM d – E, MMM d, y',
-        d: 'E, MMM d – E, MMM d, y',
-        y: 'E, MMM d, y – E, MMM d, y',
-      },
-      yMMMM: {
-        M: 'MMMM – MMMM y',
-        y: 'MMMM y – MMMM y',
-      },
+      yMMM: { M: 'MMM – MMM y', y: 'MMM y – MMM y' },
       yMMMd: {
-        M: 'MMM d – MMM d, y',
         d: 'MMM d – d, y',
+        M: 'MMM d – MMM d, y',
         y: 'MMM d, y – MMM d, y',
       },
-      yMd: {
-        M: 'M/d/y – M/d/y',
-        d: 'M/d/y – M/d/y',
-        y: 'M/d/y – M/d/y',
+      yMMMEd: {
+        d: 'E, MMM d – E, MMM d, y',
+        M: 'E, MMM d – E, MMM d, y',
+        y: 'E, MMM d, y – E, MMM d, y',
       },
+      yMMMM: { M: 'MMMM – MMMM y', y: 'MMMM y – MMMM y' },
     });
   });
 });
