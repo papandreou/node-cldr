@@ -8,14 +8,12 @@ describe('extractTimeZoneFormats', () => {
     expect(britishTimeZoneFormats, 'to only have keys', [
       'hour',
       'gmt',
-      'gmtZero',
       'region',
       'fallback',
       'regions',
     ]);
     expect(britishTimeZoneFormats.hour, 'to equal', ['+HH:mm', '-HH:mm']);
     expect(britishTimeZoneFormats.gmt, 'to equal', 'GMT{0}');
-    expect(britishTimeZoneFormats.gmtZero, 'to equal', 'GMT');
     expect(britishTimeZoneFormats.region, 'to equal', '{0} Time');
     expect(britishTimeZoneFormats.fallback, 'to equal', '{1} ({0})');
     expect(britishTimeZoneFormats.regions, 'to only have keys', [
@@ -32,5 +30,10 @@ describe('extractTimeZoneFormats', () => {
       'to equal',
       '{0} Standard Time',
     );
+  });
+
+  // mt.xml only defines <gmtFormat alt="utc">, which must not shadow root's plain <gmtFormat>
+  it('should not pick up alt variants of the gmt format', () => {
+    expect(cldr.extractTimeZoneFormats('mt').gmt, 'to equal', 'GMT{0}');
   });
 });
