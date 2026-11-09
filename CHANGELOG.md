@@ -1,3 +1,7 @@
+### v9.0.0 (2026-11-09)
+
+- [#185](https://github.com/papandreou/node-cldr/pull/185) CLDR 49 ([rotsee](mailto:leo_wallentin@hotmail.com))
+
 ### v8.0.0 (2025-12-03)
 
 - [lint](https://github.com/papandreou/node-cldr/commit/e694e41c53bbab40e90fc28d2dc62f77174a610d) ([rotsee](mailto:leo_wallentin@hotmail.com))
